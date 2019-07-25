@@ -1,0 +1,64 @@
+[
+
+    {
+        "id": 1,
+        "name": "Primeiros passos",
+        "descr": "Se adicionou no repositório da disciplina.",
+        "xp": 5,
+        "image_path": "assets/dia0.png",
+        "unique": true,
+        "type": "Tutorial"
+    },
+
+    
+
+    {
+        "id": 20,
+        "name": "Bug Report",
+        "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
+        "xp": 1,
+        "image_path": "assets/dia0.png",
+        "unique": false,
+        "type": "Code"
+    },
+    {
+        "id": 21,
+        "name": "Feature Request",
+        "descr": "Fez um pedido de nova funcionalidade a um software.",
+        "xp": 1,
+        "image_path": "assets/dia0.png",
+        "unique": false,
+        "type": "Code"
+    },
+    {
+        "id": 22,
+        "name": "Pull Request enviado",
+        "descr": "Enviou um pedido de modificação de acordo com os requisitos do projeto.",
+        "xp": 5,
+        "image_path": "assets/dia0.png",
+        "unique": false,
+        "type": "Code"
+    },
+    {
+        "id": 22,
+        "name": "Pull Request aceito!",
+        "descr": "Um pedido de modificação foi aceito. ",
+        "xp": 10,
+        "image_path": "assets/dia0.png",
+        "unique": false,
+        "type": "Code"
+    },
+
+
+
+    
+    {
+        "id": 40,
+        "name": "Participação em Evento",
+        "descr": "Participou de um evento da área de Tecnologia.",
+        "xp": 3,
+        "image_path": "assets/dia0.png",
+        "unique": false,
+        "type": "Community"
+    }
+]
