@@ -1,6 +1,8 @@
 
 from collections import namedtuple
+import json
 import pprint
+import os.path
 
 class Skill:
     def __init__(self, id, name, descr, xp, image_path, unique, type):
@@ -16,4 +18,9 @@ class Skill:
         return pprint.pformat(vars(self))
 
 
-Achievement = namedtuple('Achievement', ['skill_id', 'metadata'])
+Achievement = namedtuple('Achievement', ['skill', 'metadata'])
+
+skills_file = os.path.dirname(__file__) + '/all-skills.json'
+with open(skills_file) as f:
+    all_skills_json = json.load(f)
+all_skills = {sk['id']: Skill(**sk) for sk in all_skills_json}

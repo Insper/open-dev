@@ -4,14 +4,23 @@
         "id": 1,
         "name": "Primeiros passos",
         "descr": "Se adicionou no repositório da disciplina.",
-        "xp": 5,
-        "image_path": "assets/dia0.png",
+        "xp": 2,
+        "image_path": "assets/primeiros-passos.png",
+        "unique": true,
+        "type": "Tutorial"
+    },
+
+    {
+        "id": 2,
+        "name": "Expectativas",
+        "descr": "Completou atividade de expectativas da disciplina.",
+        "xp": 2,
+        "image_path": "assets/expectativas.png",
         "unique": true,
         "type": "Tutorial"
     },
 
     
-
     {
         "id": 20,
         "name": "Bug Report",

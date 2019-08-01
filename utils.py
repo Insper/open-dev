@@ -1,7 +1,6 @@
 from cryptography.fernet import Fernet
 import sys
 import json
-from skills import Skill
 
 def create_key(key_file):
     key = Fernet.generate_key()
@@ -52,11 +51,6 @@ def load_from_json(json_path, class_obj):
     return objs
 
 
-
-
-
-
 def load_all_data():
-    skills = load_from_json('skills/all-skills.json', Skill)
 
     return skills
