@@ -91,6 +91,7 @@ Com o usuário criado podemos adicionar a skill *Primeiros passos*. Você já de
 Isto abrirá um arquivo para edição no *Vi*. Veja o formato usado para incluir a skill e faça o mesmo para o seu usuário. 
 
 .. note::
+
     Se você quiser usar outro editor de texto pode setar a variável de ambiente ``EDITOR`` logo antes de chamar o ``dev-aberto.py``.
 
 Confira que sua skill foi corretamente adicionada usando o comando `compute-grade`. 
