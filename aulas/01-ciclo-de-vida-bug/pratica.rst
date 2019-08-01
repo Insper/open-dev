@@ -44,10 +44,10 @@ Para garantir que você está no diretório do seu fork, execute o comando::
 
     $ git remote -vv
 
-Os endereços mostrados devem ser os do seu *fork*, não os do projeto original. 
+Os endereços mostrados devem ser os do seu *fork*, não os do projeto original.
 
-Com o *fork* criado e estando no branch *issue-X* (você pode checar usando `git 
-branch` e mudar usando `git checkout issue-X`), vamos começar a realizar 
+Com o *fork* criado e estando no branch *issue-X* (você pode checar usando `git branch`
+e mudar usando `git checkout issue-X`), vamos começar a realizar
 modificações.
 
 Interagindo com o repositório da disciplina
@@ -68,7 +68,7 @@ A criação de usuários é feita com o comando::
 
     $ python3 dev-aberto.py new-user
 
-Isto criará 3 arquivos na pasta `students`: 
+Isto criará 3 arquivos na pasta `students`:
 
 * ``login``: informações básicas do usuário em formato JSON.
 * ``login-achievements``: arquivo criptografado contendo as entregas de cada aluno em formato JSON.
@@ -148,8 +148,4 @@ Parte 4 - Criando uma equipe
 
 Seu trabalho será criar uma equipe usando o comando `new-team`. Todas skills que envolvem equipes resultam na criação de um documento público. Por esta razão as skills de equipe não são criptografadas.
 
-Com a equipe criada, adicione a skill *Expectativas* . Assim como na skill anterior, use como exemplo o usuário do professor. Não se esqueça de adicionar ao seu PR a foto do mural criado no início da aula. 
-
-.. note:: 
-    A skill deverá ser adicionada no arquivo da equipe. Ela está adicionada ao 
-    usuário do professor simplesmente pois ele não tem amigos. 
+Com a equipe criada, adicione a skill *Expectativas* . Assim como na skill anterior, use como exemplo a equipe do professor (``igor-sozinho``). Não se esqueça de adicionar ao seu PR a foto do mural criado no início da aula. 
