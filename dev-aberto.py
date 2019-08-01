@@ -83,8 +83,9 @@ def new_team(team_name):
         students.append(student_login)
     
     t = Team(team_name, students, [])
+
     with open(f'students/team-{team_name}', 'w') as f:
-        json.dump(t.__dict__, f)
+        f.write(t.toJSON())
 
 @dev_aberto_cli.command()
 def list_teams():

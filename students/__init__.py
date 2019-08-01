@@ -60,7 +60,7 @@ class Team:
         self.name = name
         self.students = [all_students[st] for st in students]
         for st in students:
-            for ach in achievements[st]:
+            for ach in achievements:
                 skill = all_skills[int(ach['skill_id'])]
                 metadata = ach['metadata']
                 all_students[st].achievements.append(Achievement(skill, metadata))
@@ -73,6 +73,15 @@ class Team:
             vals = json.load(f)
         return Team(**vals)
 
+    def toJSON(self):
+        student_logins = json.dumps([st.login for st in self.students])
+        json_achievements = json.dumps(self.achievements)
+        return f'''
+{{
+    "name": "{self.name}",
+    "students": {student_logins},
+    "achievements": {json_achievements}
+}}'''
 
 student_folder = os.path.dirname(__file__)
 student_logins = [s.split('-')[0] for s in os.listdir(student_folder) if s.endswith('-achievements')]
