@@ -34,7 +34,7 @@ def write_string_to_file(filename, string):
         f.write(string)
 
 def load_from_file(filename):
-    with open(filename) as f:
+    with open(filename, encoding = "ISO-8859-1") as f:
         return f.read()
 
 
