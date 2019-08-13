@@ -30,11 +30,11 @@ def load_encrypted(filename, key):
         return cypher.decrypt(encrypted.encode('utf-8')).decode('utf-8')
 
 def write_string_to_file(filename, string):
-    with open(filename, 'w') as f:
+    with open(filename, 'w', encoding = "utf-8") as f:
         f.write(string)
 
 def load_from_file(filename):
-    with open(filename, encoding = "ISO-8859-1") as f:
+    with open(filename, encoding = "utf-8") as f:
         return f.read()
 
 
@@ -42,7 +42,7 @@ def load_from_file(filename):
 def load_from_json(json_path, class_obj):
     objs = []
 
-    with open(json_path) as f:
+    with open(json_path, encoding = "utf-8") as f:
         objs_json = json.load(f)
     
     for ob in objs_json:
