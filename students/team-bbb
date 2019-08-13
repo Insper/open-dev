@@ -1,0 +1,8 @@
+
+{
+    "name": "bbb",
+    "students": ["pedrocc4", "lucassa3", "gabrielvr"],
+    "achievements": [
+        {"skill_id": 2, "metadata": ""}
+    ]
+}
