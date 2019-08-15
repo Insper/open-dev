@@ -1,0 +1,19 @@
+## Principais do repositório
+__pycahce__
+*.key
+
+## Alguns outros gerados no gitignore.io
+# Checkpoint do jupyter
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Coisas de environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
