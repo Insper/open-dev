@@ -1,5 +1,4 @@
 [
-
     {
         "id": 1,
         "name": "Primeiros passos",
@@ -29,6 +28,36 @@
         "unique": true,
         "type": "Tutorial"
     },
+
+    {
+        "id": 4,
+        "name": "BUG simples",
+        "descr": "Enviou um PR corrigindo um bug simples.",
+        "xp": 3,
+        "image_path": "assets/bug-simples.png",
+        "unique": false,
+        "type": "Code"
+    },
+
+    {
+        "id": 5,
+        "name": "BUG complexo",
+        "descr": "Enviou um PR corrigindo um bug complexo.",
+        "xp": 10,
+        "image_path": "assets/bug-complexo.png",
+        "unique": false,
+        "type": "Code"
+    },
+    {
+        "id": 6,
+        "name": "Projeto não documentado",
+        "descr": "Conseguiu rodar o sistema flask de desafios.",
+        "xp": 2,
+        "image_path": "assets/sem-documentacao.png",
+        "unique": true,
+        "type": "Tutorial"
+
+    },
     
     {
         "id": 20,
@@ -44,24 +73,6 @@
         "name": "Feature Request",
         "descr": "Fez um pedido de nova funcionalidade a um software.",
         "xp": 1,
-        "image_path": "assets/dia0.png",
-        "unique": false,
-        "type": "Code"
-    },
-    {
-        "id": 22,
-        "name": "Pull Request enviado",
-        "descr": "Enviou um pedido de modificação de acordo com os requisitos do projeto.",
-        "xp": 5,
-        "image_path": "assets/dia0.png",
-        "unique": false,
-        "type": "Code"
-    },
-    {
-        "id": 22,
-        "name": "Pull Request aceito!",
-        "descr": "Um pedido de modificação foi aceito. ",
-        "xp": 10,
         "image_path": "assets/dia0.png",
         "unique": false,
         "type": "Code"
