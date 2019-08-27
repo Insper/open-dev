@@ -1,0 +1,7 @@
+site_name: Desenvolvimento Aberto 2019/2
+markdown_extensions:
+  - pymdownx.snippets:
+      check_paths: true
+      base_path: docs/_snippets
+  - pymdownx.emoji
+  - pymdownx.tasklist
