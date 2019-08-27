@@ -90,10 +90,12 @@ Cada *sprint* para trabalhar com projetos externos terá ao menos 3 aulas.
 
 ----
 
-# Mudança IV
+# Mudanças IV e V
 
-Será feita uma revisão nos critérios de aprovação após a AI. Isso é necessário para calibrar a disciplina. 
+4. Será feita uma revisão nos critérios de aprovação após a AI. Isso é necessário para calibrar a disciplina. 
 
+
+5. Presença será marcada 07:45
 ----
 
 # Issues do pandas
