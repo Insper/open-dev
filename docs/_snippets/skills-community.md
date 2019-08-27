@@ -1,20 +1,20 @@
 <table id="skills" class="pure-table pure-table-horizontal">
     <tbody>
-    {% for sk in skills %}
+    
         <tr>
             <td class="">
-                <img class="skill-img" src="{{ sk.image_path }}"/>
+                <img class="skill-img" src="assets/dia0.png"/>
             </td>
             <td>
-                {{ sk.name }}
+                Participação em Evento
             </td>
             <td>
-                {{ sk.descr }}
+                Participou de um evento da área de Tecnologia.
             </td>
             <td>
-                <span class="">{{ sk.xp }}XP</span>
+                <span class="">3XP</span>
             </td>
         </tr>
-    {% endfor %}
+    
 </tbody>
 </table>

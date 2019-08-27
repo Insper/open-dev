@@ -12,7 +12,7 @@ import sys
 
 from utils import load_key, create_key, write_string_to_file, load_encrypted, save_encrypted
 from students import Student, all_students, Team, all_teams
-from skills import Skill
+from skills import Skill, all_skills
 
 
 import click
@@ -91,6 +91,26 @@ def new_team(team_name):
 def list_teams():
     for t in all_teams:
         print(t.name)
+
+def render_skill_type(template, sk_type):
+    skills_type = [sk for sk in all_skills.values() if sk.type == sk_type.title()]
+    with open(f'docs/_snippets/skills-{sk_type}.md', 'w') as f:
+        f.write(template.render(skills=skills_type))
+
+@dev_aberto_cli.command()
+def build_site():
+    env = j2.Environment(loader=j2.FileSystemLoader('templates/'))
+
+    skill_template = env.get_template('skills.html')
+    render_skill_type(skill_template, 'tutorial')
+    render_skill_type(skill_template, 'code')
+    render_skill_type(skill_template, 'community')
+    render_skill_type(skill_template, 'docs')
+    
+    # TODO: chamar gh-deploy
+
+
+
 
 
 if __name__ == '__main__':
