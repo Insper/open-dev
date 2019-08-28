@@ -1,4 +1,11 @@
 site_name: Desenvolvimento Aberto 2019/2
+repo_url: https://github.com/insper/dev-aberto/
+
+nav:
+  - 'Home': 'index.md'
+  - 'Skills e avaliação': 'regras.md'
+  - 'Alunos': 'alunos.md'
+
 markdown_extensions:
   - pymdownx.snippets:
       check_paths: true
