@@ -4,7 +4,7 @@
         "name": "Primeiros passos",
         "descr": "Se adicionou no repositório da disciplina.",
         "xp": 2,
-        "image_path": "assets/primeiros-passos.png",
+        "image_path": "primeiros-passos.png",
         "unique": true,
         "type": "Tutorial"
     },
@@ -14,7 +14,7 @@
         "name": "Expectativas",
         "descr": "Completou atividade de expectativas da disciplina.",
         "xp": 2,
-        "image_path": "assets/expectativas.png",
+        "image_path": "expectativas.png",
         "unique": true,
         "type": "Tutorial"
     },
@@ -24,7 +24,7 @@
         "name": "Explorando o entorno de um projeto",
         "descr": "Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.",
         "xp": 2,
-        "image_path": "assets/entorno-projeto.png",
+        "image_path": "entorno-projeto.png",
         "unique": true,
         "type": "Tutorial"
     },
@@ -34,7 +34,7 @@
         "name": "BUG simples",
         "descr": "Enviou um PR corrigindo um bug simples.",
         "xp": 3,
-        "image_path": "assets/bug-simples.png",
+        "image_path": "bug-simples.png",
         "unique": false,
         "type": "Code"
     },
@@ -44,7 +44,7 @@
         "name": "BUG complexo",
         "descr": "Enviou um PR corrigindo um bug complexo.",
         "xp": 10,
-        "image_path": "assets/bug-complexo.png",
+        "image_path": "bug-complexo.png",
         "unique": false,
         "type": "Code"
     },
@@ -53,10 +53,9 @@
         "name": "Projeto não documentado",
         "descr": "Conseguiu rodar o sistema flask de desafios.",
         "xp": 2,
-        "image_path": "assets/sem-documentacao.png",
+        "image_path": "sem-documentacao.png",
         "unique": true,
         "type": "Tutorial"
-
     },
     
     {
@@ -64,7 +63,7 @@
         "name": "Bug Report",
         "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
         "xp": 1,
-        "image_path": "assets/dia0.png",
+        "image_path": "dia0.png",
         "unique": false,
         "type": "Code"
     },
@@ -73,7 +72,7 @@
         "name": "Feature Request",
         "descr": "Fez um pedido de nova funcionalidade a um software.",
         "xp": 1,
-        "image_path": "assets/dia0.png",
+        "image_path": "dia0.png",
         "unique": false,
         "type": "Code"
     },
@@ -86,7 +85,7 @@
         "name": "Participação em Evento",
         "descr": "Participou de um evento da área de Tecnologia.",
         "xp": 3,
-        "image_path": "assets/dia0.png",
+        "image_path": "dia0.png",
         "unique": false,
         "type": "Community"
     }

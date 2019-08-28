@@ -3,7 +3,7 @@
     
         <tr>
             <td class="">
-                <img class="skill-img" src="assets/bug-simples.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/bug-simples.png"/>
             </td>
             <td>
                 BUG simples
@@ -18,7 +18,7 @@
     
         <tr>
             <td class="">
-                <img class="skill-img" src="assets/bug-complexo.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/bug-complexo.png"/>
             </td>
             <td>
                 BUG complexo
@@ -33,7 +33,7 @@
     
         <tr>
             <td class="">
-                <img class="skill-img" src="assets/dia0.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/dia0.png"/>
             </td>
             <td>
                 Bug Report
@@ -48,7 +48,7 @@
     
         <tr>
             <td class="">
-                <img class="skill-img" src="assets/dia0.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/dia0.png"/>
             </td>
             <td>
                 Feature Request
