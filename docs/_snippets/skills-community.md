@@ -3,7 +3,7 @@
     
         <tr>
             <td class="">
-                <img class="skill-img" src="assets/dia0.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/dia0.png"/>
             </td>
             <td>
                 Participação em Evento

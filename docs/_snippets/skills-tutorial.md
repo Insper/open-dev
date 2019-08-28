@@ -3,7 +3,7 @@
     
         <tr>
             <td class="">
-                <img class="skill-img" src="assets/primeiros-passos.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/primeiros-passos.png"/>
             </td>
             <td>
                 Primeiros passos
@@ -18,7 +18,7 @@
     
         <tr>
             <td class="">
-                <img class="skill-img" src="assets/expectativas.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/expectativas.png"/>
             </td>
             <td>
                 Expectativas
@@ -33,7 +33,7 @@
     
         <tr>
             <td class="">
-                <img class="skill-img" src="assets/entorno-projeto.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/entorno-projeto.png"/>
             </td>
             <td>
                 Explorando o entorno de um projeto
@@ -48,7 +48,7 @@
     
         <tr>
             <td class="">
-                <img class="skill-img" src="assets/sem-documentacao.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/sem-documentacao.png"/>
             </td>
             <td>
                 Projeto não documentado
