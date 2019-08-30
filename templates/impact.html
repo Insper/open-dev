@@ -1,0 +1,6 @@
+{% for d in data %}
+## {{d.title()}}
+{% for el in data[d] %}
+* [{{el}}]({{el}})
+{% endfor %}
+{% endfor %}

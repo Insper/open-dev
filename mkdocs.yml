@@ -5,6 +5,7 @@ nav:
   - 'Home': 'index.md'
   - 'Skills e avaliação': 'regras.md'
   - 'Alunos': 'alunos.md'
+  - 'Impacto': 'impacto.md'
 
 markdown_extensions:
   - pymdownx.snippets:
