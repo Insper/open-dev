@@ -34,7 +34,7 @@
         "name": "BUG simples",
         "descr": "Enviou um PR corrigindo um bug simples.",
         "xp": 3,
-        "image_path": "bug-simples.png",
+        "image_path": "pikachu.png",
         "unique": false,
         "type": "Code"
     },
@@ -44,7 +44,7 @@
         "name": "BUG complexo",
         "descr": "Enviou um PR corrigindo um bug complexo.",
         "xp": 10,
-        "image_path": "bug-complexo.png",
+        "image_path": "raichu.png",
         "unique": false,
         "type": "Code"
     },
