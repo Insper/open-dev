@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Skills e avaliação - Desenvolvimento Aberto 2019/2</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="..">Desenvolvimento Aberto 2019/2</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="..">Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="./">Skills e avaliação</a>
+                            </li>
+                            <li >
+                                <a href="../alunos/">Alunos</a>
+                            </li>
+                            <li >
+                                <a href="../impacto/">Impacto</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="..">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../alunos/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/insper/dev-aberto/edit/master/docs/regras.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#avaliacao">Avaliação</a></li>
+        <li class="main "><a href="#skills-disponiveis">Skills disponíveis</a></li>
+            <li><a href="#tutorial">Tutorial</a></li>
+            <li><a href="#codigo">Código</a></li>
+            <li><a href="#traducao-e-documentacao">Tradução e documentação</a></li>
+            <li><a href="#comunidade">Comunidade</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="avaliacao">Avaliação</h1>
+<p>Como vocês podem ver na aula de apresentação, essa disciplina permite uma liberdade enorme e a maneira que isto está organizado é via gameficação. Cada participante cria um perfil no repositório e ganha skills (e <em>XP</em>) ao entregar as possíveis atividades. Toda entrega é feita via PR para o repositório da disciplina.</p>
+<p>A composição da nota é um misto da quantidade total de <em>XP</em> recebida por enviar tarefas, a quantidade de <em>XP</em> obtida por membros de seu grupo e alguns critérios de barreira. A tabela abaixo resume essas condições:</p>
+<table>
+<thead>
+<tr>
+<th>Conceito</th>
+<th>Pontuação</th>
+<th>Critérios extras</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I</td>
+<td>----</td>
+<td>Não fez alguma das atividades de tutorial</td>
+</tr>
+<tr>
+<td>D</td>
+<td>----</td>
+<td>Completou todas atividades de aula, mas não completou as atividades para o <em>C</em></td>
+</tr>
+<tr>
+<td>C</td>
+<td>60XP</td>
+<td>Obteve skill dos três tipos: <li>Contribuição de código</li><li>Tradução</li><li>Atividade de comunidade</li></td>
+</tr>
+<tr>
+<td>B</td>
+<td>100XP</td>
+<td><li>Contribuição de código aceita</li><li>Participação em evento de tecnologia</li></td>
+</tr>
+<tr>
+<td>A</td>
+<td>200XP</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Durante o semestre as pontuações da tabela acima podem passar por revisões para baixo, mas nunca para cima. </p>
+<h1 id="skills-disponiveis">Skills disponíveis</h1>
+<p>Cada skill se traduz em evidências para um dos objetivos de aprendizagem da disciplina. O conjunto de todas as skills feitas no semestre indica a proficiência dos estudantes em cada um dos objetivos. </p>
+<h2 id="tutorial">Tutorial</h2>
+<p>Nesta parte inicial são feitas atividades preparatórias que apoiam o desenvolvimento das skills de <strong>Código</strong>, <strong>Documentação e Tradução</strong> e <strong>Comunidade</strong>.</p>
+<table id="skills" class="pure-table pure-table-horizontal">
+    <tbody>
+
+        <tr>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/primeiros-passos.png"/>
+            </td>
+            <td>
+                Primeiros passos
+            </td>
+            <td>
+                Se adicionou no repositório da disciplina.
+            </td>
+            <td>
+                <span class="">2XP</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/expectativas.png"/>
+            </td>
+            <td>
+                Expectativas
+            </td>
+            <td>
+                Completou atividade de expectativas da disciplina.
+            </td>
+            <td>
+                <span class="">2XP</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                Explorando o entorno de um projeto
+            </td>
+            <td>
+                Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.
+            </td>
+            <td>
+                <span class="">2XP</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/mapa.png"/>
+            </td>
+            <td>
+                Projeto não documentado
+            </td>
+            <td>
+                Conseguiu rodar o sistema flask de desafios.
+            </td>
+            <td>
+                <span class="">2XP</span>
+            </td>
+        </tr>
+
+</tbody>
+</table>
+
+<h2 id="codigo">Código</h2>
+<p>Toda atividade que resulte em uma contribuição de código com projetos de software aberto é aceita na disciplina.  </p>
+<table id="skills" class="pure-table pure-table-horizontal">
+    <tbody>
+
+        <tr>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/pikachu.png"/>
+            </td>
+            <td>
+                BUG simples
+            </td>
+            <td>
+                Enviou um PR corrigindo um bug simples.
+            </td>
+            <td>
+                <span class="">3XP</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/raichu.png"/>
+            </td>
+            <td>
+                BUG complexo
+            </td>
+            <td>
+                Enviou um PR corrigindo um bug complexo.
+            </td>
+            <td>
+                <span class="">10XP</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                Bug Report
+            </td>
+            <td>
+                Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.
+            </td>
+            <td>
+                <span class="">1XP</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                Feature Request
+            </td>
+            <td>
+                Fez um pedido de nova funcionalidade a um software.
+            </td>
+            <td>
+                <span class="">1XP</span>
+            </td>
+        </tr>
+
+</tbody>
+</table>
+
+<h2 id="traducao-e-documentacao">Tradução e documentação</h2>
+<p>Contribuições para documentações e traduções de softwares e materiais de ensino ligados a tecnologia e software livres são aceitas neste eixo.</p>
+<table id="skills" class="pure-table pure-table-horizontal">
+    <tbody>
+
+</tbody>
+</table>
+
+<h2 id="comunidade">Comunidade</h2>
+<p>Um projeto de software também é definido pelas interações de todas as pessoas ao seu redor: usuários, desenvolvedores e tradutores. Neste quesito entram atividades de interação com pessoas em um âmbito menos acadêmico e mais profissional, como:</p>
+<ol>
+<li>participação em eventos</li>
+<li>palestras</li>
+<li>contribuições em projetos internos do Insper</li>
+</ol>
+<table id="skills" class="pure-table pure-table-horizontal">
+    <tbody>
+
+        <tr>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                Participação em Evento
+            </td>
+            <td>
+                Participou de um evento da área de Tecnologia.
+            </td>
+            <td>
+                <span class="">3XP</span>
+            </td>
+        </tr>
+
+</tbody>
+</table></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
