@@ -1,25 +1,18 @@
-<!--# Avaliação e atividades
-
-Como vocês podem ver na aula de apresentação, essa disciplina permite uma liberdade enorme e a maneira que isto está organizado é via gameficação. Cada participante cria um perfil no repositório e ganha skills ao entregar as possíveis atividades. Contanto que as seguintes regras sejam cumpridas, vale tudo.
-
-
-## Horários
-
-
-## Composição da nota 
-
-### Trabalhos em grupo
-
-Em todo o semestre trabalharemos em grupo, mas todas as entregas serão individuais. Seu desempenho no trabalho em grupo pode melhorar (e muito) sua nota e a de seus colegas. Por outro lado, é possível, mas não recomendado, 
-
-O objetivo é 
-
-## Skills
--->
-
 # Avaliação
 
-(mais informações sobre nota em breve)
+Como vocês podem ver na aula de apresentação, essa disciplina permite uma liberdade enorme e a maneira que isto está organizado é via gameficação. Cada participante cria um perfil no repositório e ganha skills (e *XP*) ao entregar as possíveis atividades. Toda entrega é feita via PR para o repositório da disciplina.
+
+A composição da nota é um misto da quantidade total de *XP* recebida por enviar tarefas, a quantidade de *XP* obtida por membros de seu grupo e alguns critérios de barreira. A tabela abaixo resume essas condições:
+
+Conceito | Pontuação            | Critérios extras
+-------- | -------------------- | ------------------------------------------
+I        | ----                 | Não fez alguma das atividades de tutorial
+D        | ----                 | Completou todas atividades de aula, mas não completou as atividades para o *C*
+C        | 60XP                 | Obteve skill dos três tipos: <li>Contribuição de código</li><li>Tradução</li><li>Atividade de comunidade</li>
+B        | 100XP                | <li>Contribuição de código aceita</li><li>Participação em evento de tecnologia</li>
+A        | 200XP                | 
+
+Durante o semestre as pontuações da tabela acima podem passar por revisões para baixo, mas nunca para cima. 
 
 # Skills disponíveis
 
