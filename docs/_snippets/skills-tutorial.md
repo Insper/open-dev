@@ -33,7 +33,7 @@
     
         <tr>
             <td class="">
-                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/entorno-projeto.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
             </td>
             <td>
                 Explorando o entorno de um projeto
@@ -48,7 +48,7 @@
     
         <tr>
             <td class="">
-                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/sem-documentacao.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/mapa.png"/>
             </td>
             <td>
                 Projeto não documentado
