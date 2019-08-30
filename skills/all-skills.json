@@ -24,7 +24,7 @@
         "name": "Explorando o entorno de um projeto",
         "descr": "Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.",
         "xp": 2,
-        "image_path": "entorno-projeto.png",
+        "image_path": "nop.png",
         "unique": true,
         "type": "Tutorial"
     },
@@ -53,7 +53,7 @@
         "name": "Projeto não documentado",
         "descr": "Conseguiu rodar o sistema flask de desafios.",
         "xp": 2,
-        "image_path": "sem-documentacao.png",
+        "image_path": "mapa.png",
         "unique": true,
         "type": "Tutorial"
     },
@@ -63,7 +63,7 @@
         "name": "Bug Report",
         "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
         "xp": 1,
-        "image_path": "dia0.png",
+        "image_path": "nop.png",
         "unique": false,
         "type": "Code"
     },
@@ -72,7 +72,7 @@
         "name": "Feature Request",
         "descr": "Fez um pedido de nova funcionalidade a um software.",
         "xp": 1,
-        "image_path": "dia0.png",
+        "image_path": "nop.png",
         "unique": false,
         "type": "Code"
     },
@@ -85,7 +85,7 @@
         "name": "Participação em Evento",
         "descr": "Participou de um evento da área de Tecnologia.",
         "xp": 3,
-        "image_path": "dia0.png",
+        "image_path": "nop.png",
         "unique": false,
         "type": "Community"
     }
