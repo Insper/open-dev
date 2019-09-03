@@ -101,7 +101,7 @@ def render_skill_type(template, sk_type):
         f.write(template.render(skills=skills_type))
 
 def parse_url(url):
-    m = re.match('https?://github.com/.*/(\w+)/pull/(\d+)', url)
+    m = re.match('https?://github.com/.*/([\w\-]+)/pull/(\d+)', url)
     if m:
         return PR(m.group(1), url)
     return PR('Outros', url)
