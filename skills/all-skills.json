@@ -59,6 +59,16 @@
     },
     
     {
+        "id": 7,
+        "name": "Tradução básica",
+        "descr": "Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando.",
+        "xp": 2,
+        "image_path": "nop.png",
+        "unique": true,
+        "type": "Tutorial"
+    },
+
+    {
         "id": 20,
         "name": "Bug Report",
         "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
@@ -78,7 +88,24 @@
     },
 
 
-
+    {
+        "id": 30,
+        "name": "Tradução aceita!",
+        "descr": "Fez uma tradução que foi aceita em um software aberto.",
+        "xp": 5,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Docs"
+    },
+    {
+        "id": 31,
+        "name": "Novas línguas",
+        "descr": "Adicionou suporte a traduções em um software que não era traduzível.",
+        "xp": 10,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Docs"
+    },
     
     {
         "id": 40,
