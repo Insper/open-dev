@@ -6,17 +6,20 @@ import os
 import json
 import pprint
 import io
-
+import re
 
 import sys
 
 from utils import load_key, create_key, write_string_to_file, load_encrypted, save_encrypted
 from students import Student, all_students, Team, all_teams
-from skills import Skill
+from skills import Skill, all_skills
 
 
 import click
 
+from collections import namedtuple
+
+PR = namedtuple('PR', ['project_name', 'url'])
 
 @click.group()
 def dev_aberto_cli():
@@ -91,6 +94,65 @@ def new_team(team_name):
 def list_teams():
     for t in all_teams:
         print(t.name)
+
+def render_skill_type(template, sk_type):
+    skills_type = [sk for sk in all_skills.values() if sk.type == sk_type.title()]
+    with open(f'docs/_snippets/skills-{sk_type}.md', 'w') as f:
+        f.write(template.render(skills=skills_type))
+
+def parse_url(url):
+    m = re.match('https?://github.com/.*/([\w\-]+)/pull/(\d+)', url)
+    if m:
+        return PR(m.group(1), url)
+    return PR('Outros', url)
+
+def dict_add_to_list(d, el, url):
+    if not el in d:
+        d[el] = []
+    d[el].append(url)
+
+@dev_aberto_cli.command()
+def build_site():
+    env = j2.Environment(loader=j2.FileSystemLoader('templates/'))
+
+    skill_template = env.get_template('skills.html')
+    render_skill_type(skill_template, 'tutorial')
+    render_skill_type(skill_template, 'code')
+    render_skill_type(skill_template, 'community')
+    render_skill_type(skill_template, 'docs')
+    
+    with open('docs/_snippets/alunos.md', 'w') as f:
+        for student in sorted(all_students.keys()):
+            student = all_students[student]
+            f.write(f'* [{student.name.title()}](mailto:{student.login}@al.insper.edu.br)\n') 
+        
+    impacto_template = env.get_template('impact.html')
+    
+    prs = {}
+    issues = {}
+    for student in all_students.values():
+        for ach in student.achievements:
+            if ach.skill.id in [4, 5]:
+                data = parse_url(ach.metadata)
+                dict_add_to_list(prs, data.project_name, data.url)
+
+            
+            if ach.skill.id in [20, 21]:
+                data = parse_url(ach.metadata)
+                dict_add_to_list(issues, data.project_name, data.url)
+    
+    with open('docs/_snippets/prs-enviados.md', 'w') as f:
+        f.write(impacto_template.render(data=prs))
+
+    with open('docs/_snippets/issues-abertas.md', 'w') as f:
+        f.write(impacto_template.render(data=issues))
+
+
+
+    # TODO: chamar gh-deploy
+
+
+
 
 
 if __name__ == '__main__':

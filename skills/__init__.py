@@ -11,6 +11,7 @@ class Skill:
         self.descr = descr
         self.xp = int(xp)
         self.image_path = image_path
+        self.full_image_path = 'https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/' + image_path
         self.unique = unique
         self.type = type
 

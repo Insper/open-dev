@@ -1,28 +1,20 @@
-{% extends "base.html" %}
-
-{% block title %} Skills {% endblock %}
-
-{% block content %}
-
-<p>
-    A tabela abaixo lista todas as skills disponíveis na disciplina. Esta lista estará em 
-    constante atualização durante o semestre. 
-</p>
-
-<!-- lista de skills aqui !-->
-
-<p>
-    Estudantes também podem adquirir pontos de experiência ao conquistar <i>badges</i>. 
-    Cada uma representa uma situação em que um estudante ou um grupo de estudantes demonstrou
-    maturidade no processo de desenvolvimento de software colaborativo. 
-</p>
-
-<!-- lista de badges aqui -->
-
-{% for sk in skills %}
-
-{{sk.name}}
-
-{% endfor %}
-
-{% endblock %}
+<table id="skills" class="pure-table pure-table-horizontal">
+    <tbody>
+    {% for sk in skills %}
+        <tr>
+            <td class="">
+                <img class="skill-img" src="{{ sk.full_image_path }}"/>
+            </td>
+            <td>
+                {{ sk.name }}
+            </td>
+            <td>
+                {{ sk.descr }}
+            </td>
+            <td>
+                <span class="">{{ sk.xp }}XP</span>
+            </td>
+        </tr>
+    {% endfor %}
+</tbody>
+</table>
