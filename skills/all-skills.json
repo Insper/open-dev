@@ -69,6 +69,16 @@
     },
 
     {
+        "id": 8,
+        "name": "Projeto Profissional",
+        "descr": "Reformou um código mal feito e criou uma página web para ele.",
+        "xp": 5,
+        "image_path": "nop.png",
+        "unique": true,
+        "type": "Tutorial"
+    },
+
+    {
         "id": 20,
         "name": "Bug Report",
         "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
