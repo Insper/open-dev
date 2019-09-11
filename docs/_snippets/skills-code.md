@@ -1,7 +1,16 @@
 <table id="skills" class="pure-table pure-table-horizontal">
+    <thead>
+        <td>ID</td>
+        <td></td>
+        <td>Descrição</td>
+        <td></td>
+    </thead>
     <tbody>
     
         <tr>
+            <td>
+                4
+            </td>
             <td class="">
                 <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/pikachu.png"/>
             </td>
@@ -17,6 +26,9 @@
         </tr>
     
         <tr>
+            <td>
+                5
+            </td>
             <td class="">
                 <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/raichu.png"/>
             </td>
@@ -32,6 +44,9 @@
         </tr>
     
         <tr>
+            <td>
+                20
+            </td>
             <td class="">
                 <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
             </td>
@@ -47,6 +62,9 @@
         </tr>
     
         <tr>
+            <td>
+                21
+            </td>
             <td class="">
                 <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
             </td>
