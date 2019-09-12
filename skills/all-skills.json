@@ -79,6 +79,16 @@
     },
 
     {
+        "id": 9,
+        "name": "Pacote Python",
+        "descr": "Criou um pacote python instalável via pip.",
+        "xp": 2,
+        "image_path": "nop.png",
+        "unique": true,
+        "type": "Tutorial"
+    },
+
+    {
         "id": 20,
         "name": "Bug Report",
         "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
@@ -122,6 +132,16 @@
         "name": "Participação em Evento",
         "descr": "Participou de um evento da área de Tecnologia.",
         "xp": 3,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Community"
+    },
+
+    {
+        "id": 41,
+        "name": "Metacontribuição",
+        "descr": "Fez uma contribuição simples no repositório da matéria.",
+        "xp": 2,
         "image_path": "nop.png",
         "unique": false,
         "type": "Community"
