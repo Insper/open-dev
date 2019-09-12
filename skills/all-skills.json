@@ -125,5 +125,15 @@
         "image_path": "nop.png",
         "unique": false,
         "type": "Community"
+    },
+
+    {
+        "id": 41,
+        "name": "Metacontribuição",
+        "descr": "Fez uma contribuição simples no repositório da matéria.",
+        "xp": 2,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Community"
     }
 ]
