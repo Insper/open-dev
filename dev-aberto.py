@@ -71,7 +71,24 @@ def edit_achievements(student_login):
 @dev_aberto_cli.command()
 @click.argument('student_login')
 def compute_grade(student_login):
-    print(all_students[student_login].compute_grade())
+    st = all_students[student_login]
+
+    env = j2.Environment(loader=j2.FileSystemLoader('templates/'))
+
+    feedback_template = env.get_template('report.md')
+    sk_tutorial = [sk for sk in all_skills.values() if sk.type == 'Tutorial']
+
+    for sk in sk_tutorial:
+        for ach in st.achievements:
+            if sk.id == ach.skill.id:
+                sk.done = True
+
+    with open(f'students/{student_login}-report.md', 'w') as f:
+        f.write(feedback_template.render(sk_tutorial=sk_tutorial,
+                                        tutorial_done=None, st=st))
+
+    print(st.compute_grade())
+
 
 
 @dev_aberto_cli.command()
@@ -106,7 +123,7 @@ def render_skill_type(template, sk_type):
         f.write(template.render(skills=skills_type))
 
 def parse_url(url):
-    m = re.match('https?://github.com/.*/([\w\-]+)/pull/(\d+)', url)
+    m = re.match(r'https?://github.com/.*/([\w\-]+)/pull/(\d+)', url)
     if m:
         return PR(m.group(1), url)
     return PR('Outros', url)
@@ -160,13 +177,6 @@ def build_site():
 
     with open('docs/_snippets/issues-abertas.md', 'w') as f:
         f.write(impacto_template.render(data=issues))
-
-
-
-    # TODO: chamar gh-deploy
-
-
-
 
 
 if __name__ == '__main__':
