@@ -133,6 +133,7 @@
             </td>
         </tr>
     
+<<<<<<< HEAD
         <tr>
             <td>
                 10
@@ -151,5 +152,7 @@
             </td>
         </tr>
     
+=======
+>>>>>>> Score card inicial
 </tbody>
 </table>
