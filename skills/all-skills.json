@@ -83,7 +83,7 @@
         "name": "Pacote Python",
         "descr": "Criou um pacote python instalável via pip.",
         "xp": 2,
-        "image_path": "nop.png",
+        "image_path": "cobra.png",
         "unique": true,
         "type": "Tutorial"
     },
@@ -103,7 +103,7 @@
         "name": "Bug Report",
         "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
         "xp": 1,
-        "image_path": "nop.png",
+        "image_path": "bug.png",
         "unique": false,
         "type": "Code"
     },
