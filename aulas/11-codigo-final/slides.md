@@ -95,7 +95,7 @@ Colocar no campo `metadata` um dicionário com a chave `shared_with`. Veja o exe
 
 # Aviso
 
-### A partir da semana da AI as skills de tutorial não contarão mais pontos
+### A partir de 09/10 as skills de tutorial não contarão mais pontos
 
 ### ....
 
