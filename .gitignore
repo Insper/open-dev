@@ -1,6 +1,10 @@
 ## Principais do repositório
-__pycahce__
+__pycache__
 *.key
+*pyc
+*.temp*
+.vscode
+
 
 ## Alguns outros gerados no gitignore.io
 # Checkpoint do jupyter
@@ -17,3 +21,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# mkdocs
+site/*
