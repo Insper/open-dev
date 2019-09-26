@@ -115,5 +115,41 @@
             </td>
         </tr>
     
+        <tr>
+            <td>
+                9
+            </td>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/cobra.png"/>
+            </td>
+            <td>
+                Pacote Python
+            </td>
+            <td>
+                Criou um pacote python instalável via pip.
+            </td>
+            <td>
+                <span class="">2XP</span>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                10
+            </td>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                Projeto DIY
+            </td>
+            <td>
+                Contribuiu com um projeto educacional livre do Insper
+            </td>
+            <td>
+                <span class="">5XP</span>
+            </td>
+        </tr>
+    
 </tbody>
 </table>
