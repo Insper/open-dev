@@ -33,7 +33,7 @@
         "id": 4,
         "name": "BUG simples",
         "descr": "Enviou um PR corrigindo um bug simples.",
-        "xp": 3,
+        "xp": 5,
         "image_path": "pikachu.png",
         "unique": false,
         "type": "Code"
@@ -116,6 +116,17 @@
         "unique": false,
         "type": "Code"
     },
+    {
+        "id": 22,
+        "name": "Contribuição aceita!",
+        "descr": "Um PR não trivial foi aceito por um projeto externo.",
+        "xp": 5,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Code"
+    },
+
+
 
 
     {
