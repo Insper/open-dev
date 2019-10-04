@@ -16,7 +16,7 @@ As seguintes atividades de sala de aula foram completadas e enviadas no reposit√
 ## C√≥digo
 
 <div class="skill-list-done" markdown="1">
-{% for sk in sk_code %}
+{% for sk in sk_code %} 
 {% if sk.done %}- [X] {{ sk.name}} {% else %}- [ ] {{ sk.name}}{% endif %}
 {% endfor %}
 </div>

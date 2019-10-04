@@ -7,6 +7,8 @@ import json
 import pprint
 import io
 import re
+import copy
+import markdown
 
 import sys
 
@@ -62,7 +64,7 @@ def edit_achievements(student_login):
     os.remove(f'students/{student_login}.temp')
 
 def load_skill_and_check_done(skill_name, st):
-    skill_list = [sk for sk in all_skills.values() if sk.type == skill_name]
+    skill_list = [copy.deepcopy(sk) for sk in all_skills.values() if sk.type == skill_name]
     for sk in skill_list:
         for ach in st.achievements:
             if sk.id == ach.skill.id:
@@ -73,6 +75,7 @@ def load_skill_and_check_done(skill_name, st):
 @dev_aberto_cli.command()
 @click.argument('student_login')
 def compute_grade(student_login):
+    print(f'{student_login}:', end='')
     st = all_students[student_login]
 
     env = j2.Environment(loader=j2.FileSystemLoader('templates/'))
@@ -86,18 +89,26 @@ def compute_grade(student_login):
 
     xp = st.compute_grade()
 
-    with open(f'students/{student_login}-report.md', 'w') as f:
-        f.write(feedback_template.render(sk_tutorial=sk_tutorial,
-                                         sk_code=sk_code,
-                                         sk_docs=sk_docs,
-                                         sk_comm=sk_comm,
-                                         xp_total=xp, st=st))
+    report = feedback_template.render(sk_tutorial=sk_tutorial,
+                                      sk_code=sk_code,
+                                      sk_docs=sk_docs,
+                                      sk_comm=sk_comm,
+                                      xp_total=xp, st=st)
+    html = markdown.markdown(report, extensions=['pymdownx.extra', 'pymdownx.tasklist'])
+    with open(f'students/{student_login}-report.html', 'w') as f:
+        f.write(html)
 
+    print(xp)
 
-    #TODO: gerar report em HTML 
+@dev_aberto_cli.command()
+@click.pass_context
+def report_cards(ctx):
+    print(ctx, all_students.keys())
+    for st_login in all_students.keys():
+        print('st_login', st_login)        
+        ctx.invoke(compute_grade, student_login=st_login)
 
-    print(st.compute_grade())
-
+    # TODO: envia e-mail
 
 @dev_aberto_cli.command()
 def list_users():
