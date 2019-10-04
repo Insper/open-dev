@@ -52,8 +52,11 @@ class Student:
     def compute_grade(self):
         total_xp = 0
         for ach in self.achievements:
-            total_xp += ach.xp()
-            
+            if 'shared_with' in ach.metadata:
+                total_xp += ach.skill.xp / (len(ach.metadata['shared_with'])+1)
+            else:
+                total_xp += ach.skill.xp
+
         return total_xp
     
 
