@@ -61,6 +61,14 @@ def edit_achievements(student_login):
 
     os.remove(f'students/{student_login}.temp')
 
+def load_skill_and_check_done(skill_name, st):
+    skill_list = [sk for sk in all_skills.values() if sk.type == skill_name]
+    for sk in skill_list:
+        for ach in st.achievements:
+            if sk.id == ach.skill.id:
+                sk.done = True
+    return skill_list
+
 
 @dev_aberto_cli.command()
 @click.argument('student_login')
@@ -70,22 +78,23 @@ def compute_grade(student_login):
     env = j2.Environment(loader=j2.FileSystemLoader('templates/'))
 
     feedback_template = env.get_template('report.md')
-    sk_tutorial = [sk for sk in all_skills.values() if sk.type == 'Tutorial']
+    
+    sk_tutorial = load_skill_and_check_done('Tutorial', st)
+    sk_docs = load_skill_and_check_done('Docs', st)
+    sk_code = load_skill_and_check_done('Code', st)
+    sk_comm = load_skill_and_check_done('Community', st)    
 
-    print(st.achievements)
-
-    for sk in sk_tutorial:
-
-        for ach in st.achievements:
-            if sk.id == ach.skill.id:
-                sk.done = True
-
+    xp = st.compute_grade()
 
     with open(f'students/{student_login}-report.md', 'w') as f:
         f.write(feedback_template.render(sk_tutorial=sk_tutorial,
-                                        tutorial_done=None, st=st))
+                                         sk_code=sk_code,
+                                         sk_docs=sk_docs,
+                                         sk_comm=sk_comm,
+                                         xp_total=xp, st=st))
 
 
+    #TODO: gerar report em HTML 
 
     print(st.compute_grade())
 

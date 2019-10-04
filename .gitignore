@@ -28,3 +28,6 @@ venv.bak/
 
 # mkdocs
 site/*
+
+students/*-report.md
+students/*-report.html
