@@ -24,25 +24,29 @@ class Student:
 
     @staticmethod
     def load(student_login):
-        key = load_key(f'students/{student_login}.key')
         json_dict = load_from_file(f'students/{student_login}')
         json_dict = json.loads(json_dict)
         s = Student(json_dict['login'], json_dict['name'], json_dict['avatar'], [])
+        return s
 
+    def load_skills(self):
+        key = load_key(f'students/{self.login}.key')
         if key:
-            json_achievements = load_encrypted(f'students/{student_login}-achievements', key)
+            json_achievements = load_encrypted(f'students/{self.login}-achievements', key)
             try:
                 json_achievements = json.loads(json_achievements)
                 for ach in json_achievements:
                     skill = all_skills[int(ach['skill_id'])]
                     metadata = ach['metadata']
-                    s.achievements.append(Achievement(skill, metadata))
+                    self.achievements.append(Achievement(skill, metadata))
+                    if 'shared_with' in metadata:
+                        for login in metadata['shared_with']:
+                            all_students[login].achievements.append(Achievement(skill, metadata))
+
 
             except json.JSONDecodeError:
-                print(f'Arquivo students/{student_login}-achievements mal formatado!')
-            s.has_key = True
-
-        return s
+                print(f'Arquivo students/{self.login}-achievements mal formatado!')
+            self.has_key = True
 
 
     def compute_grade(self):
@@ -62,7 +66,7 @@ class Team:
                 skill = all_skills[int(ach['skill_id'])]
                 metadata = ach['metadata']
                 all_students[st].achievements.append(Achievement(skill, metadata))
-
+                
         self.achievements = achievements
     
     @staticmethod
@@ -85,5 +89,7 @@ student_folder = os.path.dirname(__file__)
 student_logins = [s.split('-')[0] for s in os.listdir(student_folder) if s.endswith('-achievements')]
 
 all_students = {login:Student.load(login) for login in student_logins}
+
+[s.load_skills() for s in all_students.values()]
 
 all_teams = [Team.load(t[5:]) for t in os.listdir(student_folder) if t.startswith('team-')]
