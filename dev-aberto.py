@@ -133,7 +133,11 @@ def build_site():
     for student in all_students.values():
         for ach in student.achievements:
             if ach.skill.id in [4, 5]:
-                data = parse_url(ach.metadata)
+                if isinstance(ach.metadata, dict):
+                    url = ach.metadata['url']
+                else:
+                    url = ach.metadata
+                data = parse_url(url)
                 dict_add_to_list(prs, data.project_name, data.url)
 
             

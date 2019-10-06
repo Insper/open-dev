@@ -33,7 +33,7 @@
         "id": 4,
         "name": "BUG simples",
         "descr": "Enviou um PR corrigindo um bug simples.",
-        "xp": 3,
+        "xp": 5,
         "image_path": "pikachu.png",
         "unique": false,
         "type": "Code"
@@ -83,6 +83,16 @@
         "name": "Pacote Python",
         "descr": "Criou um pacote python instalável via pip.",
         "xp": 2,
+        "image_path": "cobra.png",
+        "unique": true,
+        "type": "Tutorial"
+    },
+
+    {
+        "id": 10,
+        "name": "Projeto DIY",
+        "descr": "Contribuiu com um projeto educacional livre do Insper",
+        "xp": 5,
         "image_path": "nop.png",
         "unique": true,
         "type": "Tutorial"
@@ -93,7 +103,7 @@
         "name": "Bug Report",
         "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
         "xp": 1,
-        "image_path": "nop.png",
+        "image_path": "bug.png",
         "unique": false,
         "type": "Code"
     },
@@ -106,6 +116,17 @@
         "unique": false,
         "type": "Code"
     },
+    {
+        "id": 22,
+        "name": "Contribuição aceita!",
+        "descr": "Um PR não trivial foi aceito por um projeto externo.",
+        "xp": 5,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Code"
+    },
+
+
 
 
     {

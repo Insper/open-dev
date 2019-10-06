@@ -7,11 +7,18 @@
 
 * [https://github.com/pandas-dev/pandas/pull/28172](https://github.com/pandas-dev/pandas/pull/28172)
 
+* [https://github.com/pandas-dev/pandas/pull/28264](https://github.com/pandas-dev/pandas/pull/28264)
+
 * [https://github.com/pandas-dev/pandas/pull/28091](https://github.com/pandas-dev/pandas/pull/28091)
 
 * [https://github.com/pandas-dev/pandas/pull/27934](https://github.com/pandas-dev/pandas/pull/27934)
 
 * [https://github.com/pandas-dev/pandas/pull/28032](https://github.com/pandas-dev/pandas/pull/28032)
+
+
+## Loopdocs
+
+* [https://github.com/LoopKit/loopdocs/pull/111](https://github.com/LoopKit/loopdocs/pull/111)
 
 
 ## Aos-Reminders
