@@ -12,7 +12,7 @@
                 30
             </td>
             <td class="">
-                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/traducao-aceita.png"/>
             </td>
             <td>
                 Tradução aceita!
@@ -30,7 +30,7 @@
                 31
             </td>
             <td class="">
-                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nova-lingua.png"/>
             </td>
             <td>
                 Novas línguas

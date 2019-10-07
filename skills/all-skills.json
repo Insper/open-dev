@@ -63,7 +63,7 @@
         "name": "Tradução básica",
         "descr": "Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando.",
         "xp": 2,
-        "image_path": "nop.png",
+        "image_path": "cli-pt-br.png",
         "unique": true,
         "type": "Tutorial"
     },
@@ -143,7 +143,7 @@
         "name": "Tradução aceita!",
         "descr": "Fez uma tradução que foi aceita em um software aberto.",
         "xp": 5,
-        "image_path": "nop.png",
+        "image_path": "traducao-aceita.png",
         "unique": false,
         "type": "Docs"
     },
@@ -152,7 +152,7 @@
         "name": "Novas línguas",
         "descr": "Adicionou suporte a traduções em um software que não era traduzível.",
         "xp": 10,
-        "image_path": "nop.png",
+        "image_path": "nova-lingua.png",
         "unique": false,
         "type": "Docs"
     },
