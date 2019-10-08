@@ -84,7 +84,7 @@
                 7
             </td>
             <td class="">
-                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/cli-pt-br.png"/>
             </td>
             <td>
                 Tradução básica
