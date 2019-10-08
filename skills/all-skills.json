@@ -33,7 +33,7 @@
         "id": 4,
         "name": "BUG simples",
         "descr": "Enviou um PR corrigindo um bug simples.",
-        "xp": 3,
+        "xp": 5,
         "image_path": "pikachu.png",
         "unique": false,
         "type": "Code"
@@ -63,7 +63,7 @@
         "name": "Tradução básica",
         "descr": "Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando.",
         "xp": 2,
-        "image_path": "nop.png",
+        "image_path": "cli-pt-br.png",
         "unique": true,
         "type": "Tutorial"
     },
@@ -116,6 +116,26 @@
         "unique": false,
         "type": "Code"
     },
+    {
+        "id": 22,
+        "name": "Contribuição aceita!",
+        "descr": "Um PR não trivial foi aceito por um projeto externo.",
+        "xp": 5,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Code"
+    },
+    {
+        "id": 23,
+        "name": "Issue indireta",
+        "descr": "Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias. ",
+        "xp": 2,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Code"
+    },
+
+
 
 
     {
@@ -123,7 +143,7 @@
         "name": "Tradução aceita!",
         "descr": "Fez uma tradução que foi aceita em um software aberto.",
         "xp": 5,
-        "image_path": "nop.png",
+        "image_path": "traducao-aceita.png",
         "unique": false,
         "type": "Docs"
     },
@@ -132,26 +152,62 @@
         "name": "Novas línguas",
         "descr": "Adicionou suporte a traduções em um software que não era traduzível.",
         "xp": 10,
-        "image_path": "nop.png",
+        "image_path": "nova-lingua.png",
         "unique": false,
         "type": "Docs"
     },
+    {
+        "id": 32,
+        "name": "Blogueiro",
+        "descr": "Criou tutorial de um software ou biblioteca em um blog (ou sites como Medium)",
+        "xp": 5,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Code"
+    },
+    {
+        "id": 33,
+        "name": "youtuber",
+        "descr": "Criou video tutorial de um software ou biblioteca.",
+        "xp": 5,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Code"
+    },
+
     
     {
         "id": 40,
         "name": "Participação em Evento",
         "descr": "Participou de um evento da área de Tecnologia.",
-        "xp": 3,
+        "xp": 7,
         "image_path": "nop.png",
         "unique": false,
         "type": "Community"
     },
-
     {
         "id": 41,
         "name": "Metacontribuição",
         "descr": "Fez uma contribuição simples no repositório da matéria.",
         "xp": 2,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Community"
+    },
+    {
+        "id": 42,
+        "name": "Palestrante",
+        "descr": "Fez uma palestra sobre bibliotecas ou softwares livres.",
+        "xp": 10,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Community"
+    },
+    {
+        "id": 43,
+        "name": "Helpdesk",
+        "descr": "Teve uma resposta aceita em sites como StackOverflow ou em listas de email",
+        "xp": 4,
         "image_path": "nop.png",
         "unique": false,
         "type": "Community"

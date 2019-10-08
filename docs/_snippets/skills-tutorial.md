@@ -84,7 +84,7 @@
                 7
             </td>
             <td class="">
-                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/cli-pt-br.png"/>
             </td>
             <td>
                 Tradução básica
@@ -109,6 +109,42 @@
             </td>
             <td>
                 Reformou um código mal feito e criou uma página web para ele.
+            </td>
+            <td>
+                <span class="">5XP</span>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                9
+            </td>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/cobra.png"/>
+            </td>
+            <td>
+                Pacote Python
+            </td>
+            <td>
+                Criou um pacote python instalável via pip.
+            </td>
+            <td>
+                <span class="">2XP</span>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                10
+            </td>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                Projeto DIY
+            </td>
+            <td>
+                Contribuiu com um projeto educacional livre do Insper
             </td>
             <td>
                 <span class="">5XP</span>
