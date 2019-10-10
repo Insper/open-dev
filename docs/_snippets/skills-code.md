@@ -1,7 +1,16 @@
 <table id="skills" class="pure-table pure-table-horizontal">
+    <thead>
+        <td>ID</td>
+        <td></td>
+        <td>Descrição</td>
+        <td></td>
+    </thead>
     <tbody>
     
         <tr>
+            <td>
+                4
+            </td>
             <td class="">
                 <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/pikachu.png"/>
             </td>
@@ -12,11 +21,14 @@
                 Enviou um PR corrigindo um bug simples.
             </td>
             <td>
-                <span class="">3XP</span>
+                <span class="">5XP</span>
             </td>
         </tr>
     
         <tr>
+            <td>
+                5
+            </td>
             <td class="">
                 <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/raichu.png"/>
             </td>
@@ -32,8 +44,11 @@
         </tr>
     
         <tr>
+            <td>
+                20
+            </td>
             <td class="">
-                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/bug.png"/>
             </td>
             <td>
                 Bug Report
@@ -47,6 +62,9 @@
         </tr>
     
         <tr>
+            <td>
+                21
+            </td>
             <td class="">
                 <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
             </td>
@@ -58,6 +76,78 @@
             </td>
             <td>
                 <span class="">1XP</span>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                22
+            </td>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                Contribuição aceita!
+            </td>
+            <td>
+                Um PR não trivial foi aceito por um projeto externo.
+            </td>
+            <td>
+                <span class="">5XP</span>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                23
+            </td>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                Issue indireta
+            </td>
+            <td>
+                Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias. 
+            </td>
+            <td>
+                <span class="">2XP</span>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                32
+            </td>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                Blogueiro
+            </td>
+            <td>
+                Criou tutorial de um software ou biblioteca em um blog (ou sites como Medium)
+            </td>
+            <td>
+                <span class="">5XP</span>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                33
+            </td>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                youtuber
+            </td>
+            <td>
+                Criou video tutorial de um software ou biblioteca.
+            </td>
+            <td>
+                <span class="">5XP</span>
             </td>
         </tr>
     
