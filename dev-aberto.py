@@ -67,6 +67,54 @@ def edit_achievements(student_login):
 
     os.remove(f'students/{student_login}.temp')
 
+@dev_aberto_cli.command()
+@click.argument('student_login')
+def add_achievement(student_login):
+    key = load_key(f'students/{student_login}.key')
+    json_achievements = load_encrypted(f'students/{student_login}-achievements', key)
+    
+    try:
+        json_achievements = json.loads(json_achievements)
+    except json.JSONDecodeError:
+        print(f'Arquivo students/{student_login}-achievements mal formatado!')
+        return
+
+    entry = {}
+    metadata = {}
+
+    skill_id = input("skill_id (int): ")
+    try:
+        skill_id = int(skill_id)
+        entry["skill_id"] = skill_id
+    except ValueError as e:
+        print("skill_id tem que ser um int")
+        return
+
+    metadata_url = input("metadata url: ")
+    if metadata_url != "":
+        metadata["url"] = metadata_url
+    
+    shared_with = input("shared_with (nomes separados por virgula): ")
+    if shared_with != "":
+        metadata["shared_with"] = shared_with.split(",")
+    else:
+        project = input("project (nomes separados por virgula): ")
+        if project != "":
+            metadata["project"] = project.split(",")
+
+    if metadata:
+        entry["metadata"] = metadata
+    else:
+        entry["metadata"] = ""
+
+    pprint.pprint(entry)
+
+    json_achievements.append(entry)
+
+    json_achievements = json.dumps(json_achievements, indent=4)
+    
+    save_encrypted(f'students/{student_login}-achievements', key, json_achievements)
+
 
 @dev_aberto_cli.command()
 @click.argument('student_login')
