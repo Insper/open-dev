@@ -24,3 +24,6 @@ venv.bak/
 
 # mkdocs
 site/*
+
+# reports de desempenho
+students/*-report*
