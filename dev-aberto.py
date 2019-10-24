@@ -137,12 +137,17 @@ def build_site():
                     url = ach.metadata['url']
                 else:
                     url = ach.metadata
+                print(url)
                 data = parse_url(url)
                 dict_add_to_list(prs, data.project_name, data.url)
 
             
             if ach.skill.id in [20, 21]:
-                data = parse_url(ach.metadata)
+                if isinstance(ach.metadata, dict):
+                    url = ach.metadata['url']
+                else:
+                    url = ach.metadata
+                data = parse_url(url)
                 dict_add_to_list(issues, data.project_name, data.url)
     
     with open('docs/_snippets/prs-enviados.md', 'w') as f:
