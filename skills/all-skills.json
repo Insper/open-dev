@@ -134,9 +134,15 @@
         "unique": false,
         "type": "Code"
     },
-
-
-
+    {
+        "id": 24,
+        "name": "Beta tester",
+        "descr": "Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue.",
+        "xp": 2,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Code"
+    },
 
     {
         "id": 30,
@@ -211,5 +217,24 @@
         "image_path": "nop.png",
         "unique": false,
         "type": "Community"
-    }
+    },
+    {
+        "id": 44,
+        "name": "Hacktoberfest",
+        "descr": "Teve 4 PRs feitos em Outubro e foi validado pelo site do evento.",
+        "xp": 15,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Community"
+    },
+    {
+        "id": 45,
+        "name": "Hacktoberfest groupie",
+        "descr": "Sua camiseta chegou a tempo para usá-la na disciplina e você veio com ela um dia.",
+        "xp": 1,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Community"
+    },
+    
 ]
