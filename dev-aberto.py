@@ -67,6 +67,14 @@ def edit_achievements(student_login):
 
     os.remove(f'students/{student_login}.temp')
 
+def load_skill_and_check_done(skill_name, st):
+    skill_list = [sk for sk in all_skills.values() if sk.type == skill_name]
+    for sk in skill_list:
+        for ach in st.achievements:
+            if sk.id == ach.skill.id:
+                sk.done = True
+    return skill_list
+
 
 @dev_aberto_cli.command()
 @click.argument('student_login')
@@ -83,9 +91,19 @@ def compute_grade(student_login):
             if sk.id == ach.skill.id:
                 sk.done = True
 
+    sk_tutorial = load_skill_and_check_done('Tutorial', st)
+    sk_docs = load_skill_and_check_done('Docs', st)
+    sk_code = load_skill_and_check_done('Code', st)
+    sk_comm = load_skill_and_check_done('Community', st)    
+
+    xp = st.compute_grade()
+
     with open(f'students/{student_login}-report.md', 'w') as f:
         f.write(feedback_template.render(sk_tutorial=sk_tutorial,
-                                        tutorial_done=None, st=st))
+                                         sk_code=sk_code,
+                                         sk_docs=sk_docs,
+                                         sk_comm=sk_comm,
+                                         xp_total=xp, st=st))
 
     print(st.compute_grade())
 

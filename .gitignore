@@ -31,3 +31,5 @@ site/*
 
 # reports de desempenho
 students/*-report*
+students/*-report.md
+students/*-report.html
