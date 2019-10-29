@@ -97,6 +97,15 @@
         "unique": true,
         "type": "Tutorial"
     },
+    {
+        "id": 11,
+        "name": "Apresentação Final",
+        "descr": "Fez uma apresentação de um tema relacionado a software livre e código aberto.",
+        "xp": 10,
+        "image_path": "nop.png",
+        "unique": true,
+        "type": "Tutorial"
+    },
 
     {
         "id": 20,
