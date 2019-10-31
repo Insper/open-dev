@@ -7,8 +7,8 @@ import json
 import pprint
 import io
 import re
-
 import sys
+import time
 
 from utils import load_key, create_key, write_string_to_file, load_encrypted, save_encrypted
 from students import Student, all_students, Team, all_teams
@@ -51,12 +51,18 @@ def edit_achievements(student_login):
         f.write(json_achievements)
     
     editor = os.getenv('EDITOR', default='vi')
-
-    os.system(f'{editor} students/{student_login}.temp')
-
-    with open(f'students/{student_login}.temp') as f:
-        json_achievements = f.read()
     
+    valid_json = False
+    while not valid_json:
+        os.system(f'{editor} students/{student_login}.temp')
+        with open(f'students/{student_login}.temp') as f:
+            json_achievements = f.read()
+        try:
+            _ = json.loads(json_achievements)
+            valid_json = True
+        except json.JSONDecodeError:
+            print("Arquivo mal formatado.")
+            time.sleep(2)
     save_encrypted(f'students/{student_login}-achievements', key, json_achievements)
 
     os.remove(f'students/{student_login}.temp')
