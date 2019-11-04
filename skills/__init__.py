@@ -18,8 +18,16 @@ class Skill:
     def __repr__(self):
         return pprint.pformat(vars(self))
 
-
-Achievement = namedtuple('Achievement', ['skill', 'metadata'])
+class Achievement:
+    def __init__(self, skill, metadata):
+        self.skill = skill
+        self.metadata = metadata
+    
+    def xp(self):
+        if 'xp' in self.metadata:
+            return float(self.metadata['xp'])
+        else:
+            return self.skill.xp
 
 skills_file = os.path.dirname(__file__) + '/all-skills.json'
 with open(skills_file) as f:

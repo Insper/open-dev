@@ -71,7 +71,6 @@ def edit_achievements(student_login):
 @dev_aberto_cli.command()
 @click.argument('student_login')
 def compute_grade(student_login):
-    
     print(all_students[student_login].compute_grade())
 
 
