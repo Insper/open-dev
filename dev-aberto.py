@@ -88,13 +88,7 @@ def compute_grade(student_login):
     env = j2.Environment(loader=j2.FileSystemLoader('templates/'))
 
     feedback_template = env.get_template('report.md')
-    sk_tutorial = [sk for sk in all_skills.values() if sk.type == 'Tutorial']
-
-    for sk in sk_tutorial:
-        for ach in st.achievements:
-            if sk.id == ach.skill.id:
-                sk.done = True
-
+    
     sk_tutorial = load_skill_and_check_done('Tutorial', st)
     sk_docs = load_skill_and_check_done('Docs', st)
     sk_code = load_skill_and_check_done('Code', st)
@@ -123,6 +117,15 @@ def report_cards(ctx):
 
     # TODO: envia e-mail
 
+@dev_aberto_cli.command()
+@click.pass_context
+def report_cards(ctx):
+    print(ctx, all_students.keys())
+    for st_login in all_students.keys():
+        print('st_login', st_login)        
+        ctx.invoke(compute_grade, student_login=st_login)
+
+    # TODO: envia e-mail
 
 @dev_aberto_cli.command()
 def list_users():
