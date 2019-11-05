@@ -117,6 +117,24 @@
     
         <tr>
             <td>
+                24
+            </td>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                Beta tester
+            </td>
+            <td>
+                Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue.
+            </td>
+            <td>
+                <span class="">2XP</span>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
                 32
             </td>
             <td class="">
