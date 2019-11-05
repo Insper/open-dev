@@ -3,6 +3,8 @@
 Esta página lista todas as skills obtidas por {{ st.name }} e os critérios de barreira que já foram alcançados. 
 
 #### Pontuação total: {{ xp_total }}
+#### Conceito atual: {{ conceito }}
+
 
 ## Tutorial
 

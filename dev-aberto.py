@@ -96,11 +96,16 @@ def compute_grade(student_login):
 
     xp = st.compute_grade()
 
+    conceito = 'I'
+    if all([sk.done for sk in sk_tutorial]):
+        conceito = 'D'
+    
+
     report = feedback_template.render(sk_tutorial=sk_tutorial,
                                       sk_code=sk_code,
                                       sk_docs=sk_docs,
                                       sk_comm=sk_comm,
-                                      xp_total=xp, st=st)
+                                      xp_total=xp, st=st, conceito=conceito)
     html = markdown.markdown(report, extensions=['pymdownx.extra', 'pymdownx.tasklist'])
     with open(f'students/{student_login}-report.html', 'w') as f:
         f.write(html)
