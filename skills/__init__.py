@@ -15,13 +15,17 @@ class Skill:
         self.unique = unique
         self.type = type
 
+    def __str__(self):
+        return self.name
+
     def __repr__(self):
         return pprint.pformat(vars(self))
 
 class Achievement:
-    def __init__(self, skill, metadata):
+    def __init__(self, skill, metadata, user):
         self.skill = skill
         self.metadata = metadata
+        self.user = user
     
     def xp(self):
         if 'xp' in self.metadata:

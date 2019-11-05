@@ -38,25 +38,30 @@ class Student:
                 for ach in json_achievements:
                     skill = all_skills[int(ach['skill_id'])]
                     metadata = ach['metadata']
-                    self.achievements.append(Achievement(skill, metadata))
+                    self.achievements.append(Achievement(skill, metadata, self))
                     if 'shared_with' in metadata:
                         for login in metadata['shared_with']:
-                            all_students[login].achievements.append(Achievement(skill, metadata))
+                            all_students[login].achievements.append(Achievement(skill, metadata, self))
 
 
             except json.JSONDecodeError:
                 print(f'Arquivo students/{self.login}-achievements mal formatado!')
             self.has_key = True
 
-
     def compute_grade(self):
         total_xp = 0
         for ach in self.achievements:
             if 'shared_with' in ach.metadata:
-                total_xp += ach.skill.xp / (len(ach.metadata['shared_with'])+1)
+                xp_achi = ach.xp() / (len(ach.metadata['shared_with'])+1)
             else:
-                total_xp += ach.skill.xp
+                xp_achi = ach.xp()
 
+            if ach.user != self:
+                print('Skill:', str(ach.skill), 'xp:', xp_achi, 'origem:', str(ach.user))
+            else:
+                print('Skill:', str(ach.skill), 'xp:', xp_achi)
+            total_xp += xp_achi
+            
         return total_xp
     
 
@@ -68,8 +73,8 @@ class Team:
             for ach in achievements:
                 skill = all_skills[int(ach['skill_id'])]
                 metadata = ach['metadata']
-                all_students[st].achievements.append(Achievement(skill, metadata))
-                
+                all_students[st].achievements.append(Achievement(skill, metadata, st))
+
         self.achievements = achievements
     
     @staticmethod

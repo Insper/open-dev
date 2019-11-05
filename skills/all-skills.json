@@ -152,6 +152,16 @@
         "unique": false,
         "type": "Code"
     },
+    {
+        "id": 25,
+        "name": "Contribuição (simples) aceita!",
+        "descr": "Um PR simples (só testes ou documentação) foi aceito por um projeto externo.",
+        "xp": 2,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Code"
+    },
+
 
     {
         "id": 30,
