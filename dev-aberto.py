@@ -116,6 +116,13 @@ def dict_add_to_list(d, el, url):
         d[el] = []
     d[el].append(url)
 
+def dict_add_to_dict(d, el, sub, url):
+    if not el in d:
+        d[el] = {}
+    if not sub in d[el]:
+        d[el][sub] = []
+    d[el][sub].append(url)
+
 @dev_aberto_cli.command()
 def build_site():
     env = j2.Environment(loader=j2.FileSystemLoader('templates/'))
@@ -133,8 +140,10 @@ def build_site():
         
     impacto_template = env.get_template('impact.html')
     
-    prs = {}
-    issues = {}
+
+    info = {}    
+    #info = {'projeto': {'Pull Requests': [],'issues': []}}
+
     for student in all_students.values():
         for ach in student.achievements:
             if ach.skill.id in [4, 5]:
@@ -144,7 +153,7 @@ def build_site():
                     url = ach.metadata
                 print(url)
                 data = parse_url(url)
-                dict_add_to_list(prs, data.project_name, data.url)
+                dict_add_to_dict(info, data.project_name, 'Pull Requests', data.url)
 
             
             if ach.skill.id in [20, 21]:
@@ -153,13 +162,14 @@ def build_site():
                 else:
                     url = ach.metadata
                 data = parse_url(url)
-                dict_add_to_list(issues, data.project_name, data.url)
+                dict_add_to_dict(info, data.project_name, 'Issues', data.url)
     
-    with open('docs/_snippets/prs-enviados.md', 'w') as f:
-        f.write(impacto_template.render(data=prs))
+    print(info)
 
-    with open('docs/_snippets/issues-abertas.md', 'w') as f:
-        f.write(impacto_template.render(data=issues))
+    with open('docs/_snippets/impacto.md', 'w') as f:
+        f.write(impacto_template.render(data=info))
+
+
 
 
 
