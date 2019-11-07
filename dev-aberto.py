@@ -163,8 +163,6 @@ def build_site():
                     url = ach.metadata
                 data = parse_url(url)
                 dict_add_to_dict(info, data.project_name, 'Issues', data.url)
-    
-    print(info)
 
     with open('docs/_snippets/impacto.md', 'w') as f:
         f.write(impacto_template.render(data=info))
