@@ -2,3 +2,4 @@ cryptography
 jinja2
 click
 markdown
+pymdown-extensions
