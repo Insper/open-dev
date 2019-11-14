@@ -19,7 +19,7 @@ import click
 
 from collections import namedtuple
 
-PR = namedtuple('PR', ['project_name', 'url'])
+PR = namedtuple('PR', ['project_name', 'url', 'status'])
 
 @click.group()
 def dev_aberto_cli():
@@ -106,10 +106,15 @@ def render_skill_type(template, sk_type):
         f.write(template.render(skills=skills_type))
 
 def parse_url(url):
-    m = re.match('https?://github.com/.*/([\w\-]+)/(pull|issues)/(\d+)', url)
+    m = re.match('https?://github.com/(.*)/([\w\-]+)/(pull|issues)/(\d+)', url)
     if m:
-        return PR(m.group(1), url)
-    return PR('Outros', url)
+        if m.group(3) == "pull":
+            pulls_issues = "pulls"
+        else:
+            pulls_issues = "issues"
+        status = "https://img.shields.io/github/"+ pulls_issues +"/detail/state/" + m.group(1)+"/"+m.group(2)+"/"+ m.group(4)+ "?label=%20"
+        return PR(m.group(2), url, status)
+    return PR('Outros', url, '')
 
 def dict_add_to_list(d, el, url):
     if not el in d:
@@ -152,8 +157,9 @@ def build_site():
                 else:
                     url = ach.metadata
                 print(url)
+
                 data = parse_url(url)
-                dict_add_to_dict(info, data.project_name, 'Pull Requests', data.url)
+                dict_add_to_dict(info, data.project_name, 'Pull Requests', data)
 
             
             if ach.skill.id in [20, 21]:
@@ -162,7 +168,7 @@ def build_site():
                 else:
                     url = ach.metadata
                 data = parse_url(url)
-                dict_add_to_dict(info, data.project_name, 'Issues', data.url)
+                dict_add_to_dict(info, data.project_name, 'Issues', data)
 
     with open('docs/_snippets/impacto.md', 'w') as f:
         f.write(impacto_template.render(data=info))
