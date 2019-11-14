@@ -1,9 +1,15 @@
 {% for d in data %}
 ## {{d.title()}}
 {% for el in data[d] %}
-## {{el.title()}}
+<h2> {{el.title()}}</h2>
+<ul style="list-style-type:none;">
 {% for sub in data[d][el] %}
-* [{{sub}}]({{sub}})
+{% if sub.status %}
+<li><a href={{sub.url}}> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src={{sub.status}}></span> - {{sub.url}}</a></li>  
+{% else %}
+<li><a href={{sub.url}}> {{sub.url}} </a></li>
+{% endif %}
 {% endfor %}
+</ul>
 {% endfor %}
 {% endfor %}
