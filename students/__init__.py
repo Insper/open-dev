@@ -14,6 +14,9 @@ class Student:
 
         self.achievements = achievements
 
+    def __str__(self):
+        return self.name
+
     def toJSON(self):
         return f'''
 {{
@@ -24,34 +27,43 @@ class Student:
 
     @staticmethod
     def load(student_login):
-        key = load_key(f'students/{student_login}.key')
         json_dict = load_from_file(f'students/{student_login}')
         json_dict = json.loads(json_dict)
         s = Student(json_dict['login'], json_dict['name'], json_dict['avatar'], [])
+        return s
 
+    def load_skills(self):
+        key = load_key(f'students/{self.login}.key')
         if key:
-            json_achievements = load_encrypted(f'students/{student_login}-achievements', key)
+            json_achievements = load_encrypted(f'students/{self.login}-achievements', key)
             try:
                 json_achievements = json.loads(json_achievements)
                 for ach in json_achievements:
                     skill = all_skills[int(ach['skill_id'])]
                     metadata = ach['metadata']
-                    s.achievements.append(Achievement(skill, metadata, s))
+                    self.achievements.append(Achievement(skill, metadata, self))
+                    if 'shared_with' in metadata:
+                        for login in metadata['shared_with']:
+                            all_students[login].achievements.append(Achievement(skill, metadata, self))
+
 
             except json.JSONDecodeError:
-                print(f'Arquivo students/{student_login}-achievements mal formatado!')
-            s.has_key = True
-
-        return s
+                print(f'Arquivo students/{self.login}-achievements mal formatado!')
+            self.has_key = True
 
     def compute_grade(self):
         total_xp = 0
         for ach in self.achievements:
-            if ach.user != self:
-                print('Skill:', str(ach.skill), 'xp:', ach.xp(), 'origem:', str(ach.user))
+            if 'shared_with' in ach.metadata:
+                xp_achi = ach.xp() / (len(ach.metadata['shared_with'])+1)
             else:
-                print('Skill:', str(ach.skill), 'xp:', ach.xp())
-            total_xp += ach.xp()
+                xp_achi = ach.xp()
+
+            if ach.user != self:
+                print('Skill:', str(ach.skill), 'xp:', xp_achi, 'origem:', str(ach.user))
+            else:
+                print('Skill:', str(ach.skill), 'xp:', xp_achi)
+            total_xp += xp_achi
             
         return total_xp
     
@@ -88,5 +100,7 @@ student_folder = os.path.dirname(__file__)
 student_logins = [s.split('-')[0] for s in os.listdir(student_folder) if s.endswith('-achievements')]
 
 all_students = {login:Student.load(login) for login in student_logins}
+
+[s.load_skills() for s in all_students.values()]
 
 all_teams = [Team.load(t[5:]) for t in os.listdir(student_folder) if t.startswith('team-')]

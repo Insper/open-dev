@@ -6,6 +6,10 @@ __pycache__
 .vscode
 
 
+site/*
+.vscode
+
+
 ## Alguns outros gerados no gitignore.io
 # Checkpoint do jupyter
 .ipynb_checkpoints
@@ -27,3 +31,5 @@ site/*
 
 # reports de desempenho
 students/*-report*
+students/*-report.md
+students/*-report.html
