@@ -135,37 +135,19 @@
     
         <tr>
             <td>
-                32
+                25
             </td>
             <td class="">
                 <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
             </td>
             <td>
-                Blogueiro
+                Contribuição (simples) aceita!
             </td>
             <td>
-                Criou tutorial de um software ou biblioteca em um blog (ou sites como Medium)
+                Um PR simples (só testes ou documentação) foi aceito por um projeto externo.
             </td>
             <td>
-                <span class="">5XP</span>
-            </td>
-        </tr>
-    
-        <tr>
-            <td>
-                33
-            </td>
-            <td class="">
-                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
-            </td>
-            <td>
-                youtuber
-            </td>
-            <td>
-                Criou video tutorial de um software ou biblioteca.
-            </td>
-            <td>
-                <span class="">5XP</span>
+                <span class="">2XP</span>
             </td>
         </tr>
     
