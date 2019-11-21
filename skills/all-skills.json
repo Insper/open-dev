@@ -188,7 +188,7 @@
         "xp": 5,
         "image_path": "nop.png",
         "unique": false,
-        "type": "Code"
+        "type": "Docs"
     },
     {
         "id": 33,
@@ -197,8 +197,18 @@
         "xp": 5,
         "image_path": "nop.png",
         "unique": false,
-        "type": "Code"
+        "type": "Docs"
     },
+    {
+        "id": 34,
+        "name": "Revisor",
+        "descr": "Revisou pequenos erros na documentação de um projeto.",
+        "xp": 2,
+        "image_path": "nop.png",
+        "unique": false,
+        "type": "Docs"
+    },
+
 
     
     {
@@ -254,6 +264,16 @@
         "image_path": "nop.png",
         "unique": false,
         "type": "Community"
-    }
+    },
+    {
+        "id": 46,
+        "name": "Convidado VIP",
+        "descr": "Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill.",
+        "xp": 5,
+        "image_path": "nop.png",
+        "unique": true,
+        "type": "Community"
+    } 
+
     
 ]

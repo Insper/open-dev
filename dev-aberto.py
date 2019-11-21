@@ -7,6 +7,9 @@ import json
 import pprint
 import io
 import re
+import copy
+import markdown
+
 import sys
 import time
 
@@ -19,7 +22,7 @@ import click
 
 from collections import namedtuple
 
-PR = namedtuple('PR', ['project_name', 'url'])
+PR = namedtuple('PR', ['project_name', 'url', 'status'])
 
 @click.group()
 def dev_aberto_cli():
@@ -66,6 +69,7 @@ def edit_achievements(student_login):
     save_encrypted(f'students/{student_login}-achievements', key, json_achievements)
 
     os.remove(f'students/{student_login}.temp')
+
 
 @dev_aberto_cli.command()
 @click.argument('student_login')
@@ -116,11 +120,80 @@ def add_achievement(student_login):
     save_encrypted(f'students/{student_login}-achievements', key, json_achievements)
 
 
+def load_skill_and_check_done(skill_name, st):
+    skill_list = [copy.deepcopy(sk) for sk in all_skills.values() if sk.type == skill_name]
+    for sk in skill_list:
+        sk.done = False
+        if sk.id in [3, 11]:
+            sk.done = True # nao eh obrigatoria
+        for ach in st.achievements:
+            if sk.id == ach.skill.id:
+                sk.done = True
+    return skill_list
+
+
+
 @dev_aberto_cli.command()
 @click.argument('student_login')
 def compute_grade(student_login):
-    print(all_students[student_login].compute_grade())
+    print(f'{student_login}:')
+    st = all_students[student_login]
 
+    env = j2.Environment(loader=j2.FileSystemLoader('templates/'))
+
+    feedback_template = env.get_template('report.md')
+    
+    sk_tutorial = load_skill_and_check_done('Tutorial', st)
+    sk_docs = load_skill_and_check_done('Docs', st)
+    sk_code = load_skill_and_check_done('Code', st)
+    sk_comm = load_skill_and_check_done('Community', st)    
+
+    xp = st.compute_grade()
+
+    print('------------')
+    conceito = 'I'
+    if all([sk.done for sk in sk_tutorial]):
+        conceito = 'D'
+        print('Conceito D alcançado.')
+        if (any([sk.done for sk in sk_docs]) and 
+            any([sk.done for sk in sk_code]) and 
+            any([sk.done for sk in sk_comm])) and xp >= 60:
+            conceito = 'C'
+        else:
+            print('------------')
+            if any([sk.done for sk in sk_docs]) == False:
+                print('Conceito C: Skill de Documentação faltando.')
+            if any([sk.done for sk in sk_code]) == False:
+                print('Conceito C: Skill de Código faltando.')
+            if any([sk.done for sk in sk_comm]) == False:
+                print('Conceito C: Skill de Comunidade faltando.')
+    else:
+        for sk in sk_tutorial:
+            if sk.done == False:
+                print('Skill de tutorial faltante:', sk.name)
+    
+    report = feedback_template.render(sk_tutorial=sk_tutorial,
+                                      sk_code=sk_code,
+                                      sk_docs=sk_docs,
+                                      sk_comm=sk_comm,
+                                      xp_total=xp, st=st, conceito=conceito)
+    html = markdown.markdown(report, extensions=['pymdownx.extra', 'pymdownx.tasklist'])
+    with open(f'students/{student_login}-report.html', 'w') as f:
+        f.write(html)
+
+    print('------------')
+    print('Conceito final:', conceito)
+    print(xp)
+
+@dev_aberto_cli.command()
+@click.pass_context
+def report_cards(ctx):
+    print(ctx, all_students.keys())
+    for st_login in all_students.keys():
+        print('st_login', st_login)        
+        ctx.invoke(compute_grade, student_login=st_login)
+
+    # TODO: envia e-mail
 
 @dev_aberto_cli.command()
 def list_users():
@@ -154,10 +227,15 @@ def render_skill_type(template, sk_type):
         f.write(template.render(skills=skills_type))
 
 def parse_url(url):
-    m = re.match('https?://github.com/.*/([\w\-]+)/(pull|issues)/(\d+)', url)
+    m = re.match('https?://github.com/(.*)/([\w\-]+)/(pull|issues)/(\d+)', url)
     if m:
-        return PR(m.group(1), url)
-    return PR('Outros', url)
+        if m.group(3) == "pull":
+            pulls_issues = "pulls"
+        else:
+            pulls_issues = "issues"
+        status = "https://img.shields.io/github/"+ pulls_issues +"/detail/state/" + m.group(1)+"/"+m.group(2)+"/"+ m.group(4)+ "?label=%20"
+        return PR(m.group(2), url, status)
+    return PR('Outros', url, '')
 
 def dict_add_to_list(d, el, url):
     if not el in d:
@@ -200,8 +278,9 @@ def build_site():
                 else:
                     url = ach.metadata
                 print(url)
+
                 data = parse_url(url)
-                dict_add_to_dict(info, data.project_name, 'Pull Requests', data.url)
+                dict_add_to_dict(info, data.project_name, 'Pull Requests', data)
 
             
             if ach.skill.id in [20, 21]:
@@ -210,17 +289,10 @@ def build_site():
                 else:
                     url = ach.metadata
                 data = parse_url(url)
-                dict_add_to_dict(info, data.project_name, 'Issues', data.url)
+                dict_add_to_dict(info, data.project_name, 'Issues', data)
 
     with open('docs/_snippets/impacto.md', 'w') as f:
         f.write(impacto_template.render(data=info))
-
-
-
-
-
-    # TODO: chamar gh-deploy
-
 
 
 
