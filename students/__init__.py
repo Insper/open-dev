@@ -56,8 +56,9 @@ class Student:
                             except KeyError:
                                 print(f'Arquivo students/{self.login}-achievements mal formatado!')
 
-                    if type(metadata) == dict and 'copy_to' in metadata:
-                        for login in metadata['copy_to']:
+                    if type(metadata) == dict and ('copy_to' in metadata or 'copy-to' in metadata):
+                        student_list = metadata.get('copy-to', metadata.get('copy_to'))
+                        for login in student_list:
                             try:
                                 all_students[login].achievements.append(Achievement(skill, metadata, self))
                             except KeyError:
