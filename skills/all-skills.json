@@ -101,11 +101,21 @@
         "id": 11,
         "name": "Apresentação Final",
         "descr": "Fez uma apresentação de um tema relacionado a software livre e código aberto.",
-        "xp": 10,
+        "xp": 5,
         "image_path": "nop.png",
         "unique": true,
         "type": "Tutorial"
     },
+    {
+        "id": 12,
+        "name": "Projeto",
+        "descr": "",
+        "xp": 0,
+        "image_path": "nop.png",
+        "unique": true,
+        "type": "Tutorial"
+    },
+    
 
     {
         "id": 20,

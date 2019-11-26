@@ -44,8 +44,24 @@ class Student:
                     self.achievements.append(Achievement(skill, metadata, self))
                     if 'shared_with' in metadata:
                         for login in metadata['shared_with']:
-                            all_students[login].achievements.append(Achievement(skill, metadata, self))
+                            try:
+                                all_students[login].achievements.append(Achievement(skill, metadata, self))
+                            except KeyError:
+                                print(f'Arquivo students/{self.login}-achievements mal formatado!')
+                    if type(metadata) == dict and 'project' in metadata:
+                        group_size = len(metadata['project']) 
+                        for login in metadata['project']:
+                            try:
+                                project_points[login] += self.achievements[-1].xp() / group_size
+                            except KeyError:
+                                print(f'Arquivo students/{self.login}-achievements mal formatado!')
 
+                    if type(metadata) == dict and 'copy_to' in metadata:
+                        for login in metadata['copy_to']:
+                            try:
+                                all_students[login].achievements.append(Achievement(skill, metadata, self))
+                            except KeyError:
+                                print(f'Arquivo students/{self.login}-achievements mal formatado!')
 
             except json.JSONDecodeError:
                 print(f'Arquivo students/{self.login}-achievements mal formatado!')
@@ -100,7 +116,7 @@ student_folder = os.path.dirname(__file__)
 student_logins = [s.split('-')[0] for s in os.listdir(student_folder) if s.endswith('-achievements')]
 
 all_students = {login:Student.load(login) for login in student_logins}
+project_points = {login: 0 for login in student_logins}
 
 [s.load_skills() for s in all_students.values()]
-
 all_teams = [Team.load(t[5:]) for t in os.listdir(student_folder) if t.startswith('team-')]

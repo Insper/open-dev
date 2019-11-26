@@ -74,7 +74,7 @@ def load_skill_and_check_done(skill_name, st):
     skill_list = [copy.deepcopy(sk) for sk in all_skills.values() if sk.type == skill_name]
     for sk in skill_list:
         sk.done = False
-        if sk.id in [3, 11]:
+        if sk.id in [3, 11, 12]:
             sk.done = True # nao eh obrigatoria
         for ach in st.achievements:
             if sk.id == ach.skill.id:
