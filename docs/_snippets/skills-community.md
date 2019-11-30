@@ -115,5 +115,23 @@
             </td>
         </tr>
     
+        <tr>
+            <td>
+                46
+            </td>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                Convidado VIP
+            </td>
+            <td>
+                Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill.
+            </td>
+            <td>
+                <span class="">5XP</span>
+            </td>
+        </tr>
+    
 </tbody>
 </table>
