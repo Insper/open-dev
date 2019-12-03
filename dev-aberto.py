@@ -53,7 +53,10 @@ def edit_achievements(student_login):
     with open(f'students/{student_login}.temp', 'w') as f:
         f.write(json_achievements)
     
-    editor = os.getenv('EDITOR', default='vi')
+    if 'win32' in sys.platform:
+        editor = os.getenv('EDITOR', default='notepad.exe')
+    else:
+        editor = os.getenv('EDITOR', default='vi')
     
     valid_json = False
     while not valid_json:
