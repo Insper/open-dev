@@ -261,7 +261,7 @@
         "id": 44,
         "name": "Hacktoberfest",
         "descr": "Teve 4 PRs feitos em Outubro e foi validado pelo site do evento.",
-        "xp": 15,
+        "xp": 20,
         "image_path": "nop.png",
         "unique": false,
         "type": "Community"
