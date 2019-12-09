@@ -93,7 +93,7 @@
                 Teve 4 PRs feitos em Outubro e foi validado pelo site do evento.
             </td>
             <td>
-                <span class="">15XP</span>
+                <span class="">20XP</span>
             </td>
         </tr>
     

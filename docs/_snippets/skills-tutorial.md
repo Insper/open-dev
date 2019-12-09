@@ -165,7 +165,25 @@
                 Fez uma apresentação de um tema relacionado a software livre e código aberto.
             </td>
             <td>
-                <span class="">10XP</span>
+                <span class="">5XP</span>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                12
+            </td>
+            <td class="">
+                <img class="skill-img" src="https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/nop.png"/>
+            </td>
+            <td>
+                Projeto
+            </td>
+            <td>
+                
+            </td>
+            <td>
+                <span class="">0XP</span>
             </td>
         </tr>
     
