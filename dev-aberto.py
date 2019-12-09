@@ -14,7 +14,7 @@ import sys
 import time
 
 from utils import load_key, create_key, write_string_to_file, load_encrypted, save_encrypted
-from students import Student, all_students, Team, all_teams
+from students import Student, all_students, Team, all_teams, project_points
 from skills import Skill, all_skills
 
 
@@ -136,6 +136,7 @@ def compute_grade(student_login):
     print('------------')
     print('Conceito final:', conceito)
     print(xp)
+    print('Nota de grupo:', project_points[student_login])
 
 @dev_aberto_cli.command()
 @click.pass_context
