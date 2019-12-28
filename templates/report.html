@@ -1,0 +1,70 @@
+<h1>Relatório de acompanhamento - {{st.name}}</h1>
+
+Esta página lista todas as skills obtidas por {{ st.name }} e os critérios de barreira que já foram alcançados. 
+
+<p class="pontuacao">Pontuação total: {{ xp_total }}</p>
+<p>Conceito atual: {{ conceito }}</p>
+
+
+<h2>Tutorial</h2>
+
+As seguintes atividades de sala de aula foram completadas e enviadas no repositório:
+
+<div class="skill-list-done">
+<ul class="achievements">
+{% for sk in sk_tutorial %} 
+    {% if sk.done %}
+        <li> <input type="checkbox" checked> {{ sk.name}}  </li>
+    {% else %}
+        <li> <input type="checkbox"> {{ sk.name}} </li>
+    {% endif %}
+{% endfor %}
+</ul>
+</div>
+
+<h2>Código</h2>
+
+<div class="skill-list-done">
+<ul class="achievements">
+{% for sk in sk_code %} 
+    {% if sk.done %}
+        <li> <input type="checkbox" checked> {{ sk.name}}  </li>
+    {% else %}
+        <li> <input type="checkbox"> {{ sk.name}} </li>
+    {% endif %}
+{% endfor %}
+</ul>
+</div>
+
+
+<h2>Tradução e Documentação </h2>
+
+<div class="skill-list-done">
+<ul class="achievements">
+{% for sk in sk_docs %} 
+    {% if sk.done %}
+        <li> <input type="checkbox" checked> {{ sk.name}}  </li>
+    {% else %}
+        <li> <input type="checkbox"> {{ sk.name}} </li>
+    {% endif %}
+{% endfor %}
+</ul>
+</div>
+
+
+<h2>Comunidade</h2>
+
+
+<div class="skill-list-done">
+<ul class="achievements">
+{% for sk in sk_comm %} 
+    {% if sk.done %}
+        <li> <input type="checkbox" checked> {{ sk.name}}  </li>
+    {% else %}
+        <li> <input type="checkbox"> {{ sk.name}} </li>
+    {% endif %}
+{% endfor %}
+</ul>
+</div>
+
+

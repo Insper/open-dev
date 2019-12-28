@@ -93,7 +93,7 @@ def compute_grade(student_login):
 
     env = j2.Environment(loader=j2.FileSystemLoader('templates/'))
 
-    feedback_template = env.get_template('report.md')
+    feedback_template = env.get_template('report.html')
     
     sk_tutorial = load_skill_and_check_done('Tutorial', st)
     sk_docs = load_skill_and_check_done('Docs', st)
@@ -124,12 +124,11 @@ def compute_grade(student_login):
             if sk.done == False:
                 print('Skill de tutorial faltante:', sk.name)
     
-    report = feedback_template.render(sk_tutorial=sk_tutorial,
+    html = feedback_template.render(sk_tutorial=sk_tutorial,
                                       sk_code=sk_code,
                                       sk_docs=sk_docs,
                                       sk_comm=sk_comm,
                                       xp_total=xp, st=st, conceito=conceito)
-    html = markdown.markdown(report, extensions=['pymdownx.extra', 'pymdownx.tasklist'])
     with open(f'students/{student_login}-report.html', 'w') as f:
         f.write(html)
 
