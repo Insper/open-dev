@@ -11,18 +11,19 @@
 </head>
 <body>
 
-
 <h1>Relatório de acompanhamento - {{st.name}}</h1>
-
-Esta página lista todas as skills obtidas por {{ st.name }} e os critérios de barreira que já foram alcançados. 
 
 <p class="pontuacao">Pontuação total: {{ xp_total }}</p>
 <p>Conceito atual: {{ conceito }}</p>
 
+{% if comentario_conceito %}
+<h4> Avisos </h4>
+<pre>{{comentario_conceito}}</pre>
+{% endif %}
 
-<h2>Tutorial</h2>
+<h2>Atividades Tutorial</h2>
 
-As seguintes atividades de sala de aula foram completadas e enviadas no repositório:
+As seguintes atividades de sala de aula foram completadas e enviadas no repositório.
 
 <div class="skill-list-done">
 <ul class="achievements">

@@ -104,6 +104,7 @@ def compute_grade(student_login):
 
     print('------------')
     conceito = 'I'
+    comentario_conceito = 'Atividades de sala de aula não concluídas\n'
     if all([sk.done for sk in sk_tutorial]):
         conceito = 'D'
         print('Conceito D alcançado.')
@@ -113,22 +114,29 @@ def compute_grade(student_login):
             conceito = 'C'
         else:
             print('------------')
+            comentario_conceito = ''
             if any([sk.done for sk in sk_docs]) == False:
                 print('Conceito C: Skill de Documentação faltando.')
+                comentario_conceito = '\tSkill de Documentação faltando.\n'
             if any([sk.done for sk in sk_code]) == False:
                 print('Conceito C: Skill de Código faltando.')
+                comentario_conceito += '\tSkill de Código faltando.\n'
             if any([sk.done for sk in sk_comm]) == False:
                 print('Conceito C: Skill de Comunidade faltando.')
+                comentario_conceito += '\tSkill de Comunidade faltando.\n'
     else:
         for sk in sk_tutorial:
             if sk.done == False:
                 print('Skill de tutorial faltante:', sk.name)
+                comentario_conceito += f'\t{sk.name}\n'
     
     html = feedback_template.render(sk_tutorial=sk_tutorial,
                                       sk_code=sk_code,
                                       sk_docs=sk_docs,
                                       sk_comm=sk_comm,
-                                      xp_total=xp, st=st, conceito=conceito)
+                                      xp_total=xp, st=st, conceito=conceito,
+                                      comentario_conceito=comentario_conceito
+                                    )
     with open(f'students/{student_login}-report.html', 'w') as f:
         f.write(html)
 
