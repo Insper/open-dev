@@ -9,6 +9,7 @@ import io
 import re
 import copy
 import markdown
+import tabulate
 
 import sys
 import time
@@ -181,10 +182,12 @@ def list_teams():
     for t in all_teams:
         print(t.name)
 
-def render_skill_type(template, sk_type):
-    skills_type = [sk for sk in all_skills.values() if sk.type == sk_type.title()]
+def render_skill_type(sk_type):
+    table = [(sk.id, 
+                f'![{sk.descr}]({sk.full_image_path})', sk.name, sk.descr, sk.xp)
+                for sk in all_skills.values() if sk.type == sk_type.title()]
     with open(f'docs/_snippets/skills-{sk_type}.md', 'w') as f:
-        f.write(template.render(skills=skills_type))
+        f.write(tabulate.tabulate(table, headers=('id', '', 'Nome', 'Descrição', 'XP'), tablefmt='pipe'))
 
 def parse_url(url):
     m = re.match('https?://github.com/(.*)/([\w\-]+)/(pull|issues)/(\d+)', url)
@@ -213,23 +216,18 @@ def dict_add_to_dict(d, el, sub, url):
 def build_site():
     env = j2.Environment(loader=j2.FileSystemLoader('templates/'))
 
-    skill_template = env.get_template('skills.html')
-    render_skill_type(skill_template, 'tutorial')
-    render_skill_type(skill_template, 'code')
-    render_skill_type(skill_template, 'community')
-    render_skill_type(skill_template, 'docs')
+    render_skill_type('tutorial')
+    render_skill_type('code')
+    render_skill_type('community')
+    render_skill_type('docs')
     
+    students = [(all_students[st].name.title(),f'{st} __at__ al.insper.edu.br')
+                for st in sorted(all_students.keys())]
     with open('docs/_snippets/alunos.md', 'w') as f:
-        for student in sorted(all_students.keys()):
-            student = all_students[student]
-            f.write(f'* [{student.name.title()}](mailto:{student.login}@al.insper.edu.br)\n') 
+        f.write(tabulate.tabulate(students, headers=('Aluno', 'Contato'), tablefmt='pipe'))
         
     impacto_template = env.get_template('impact.html')
-    
-
     info = {}    
-    #info = {'projeto': {'Pull Requests': [],'issues': []}}
-
     for student in all_students.values():
         for ach in student.achievements:
             if ach.skill.id in [4, 5] and ach.user == student:
@@ -253,9 +251,6 @@ def build_site():
 
     with open('docs/_snippets/impacto.md', 'w') as f:
         f.write(impacto_template.render(data=info))
-
-
-
 
 if __name__ == '__main__':
 

@@ -1,6 +1,11 @@
 site_name: Desenvolvimento Aberto 2019/2
 repo_url: https://github.com/insper/dev-aberto/
 
+theme:
+    name: 'material'
+    logo: 
+      icon: 'developer_mode'
+
 nav:
   - 'Home': 'index.md'
   - 'Skills e avaliação': 'regras.md'
