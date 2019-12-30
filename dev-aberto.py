@@ -234,7 +234,7 @@ def build_site():
                 data = parse_url(url)
                 dict_add_to_dict(info, data.project_name, 'Issues', data)
 
-    with open('docs/_snippets/impacto.md', 'w') as f:
+    with open('docs/impacto.md', 'w') as f:
         f.write(impacto_template.render(data=info))
 
 if __name__ == '__main__':
