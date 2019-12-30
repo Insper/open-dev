@@ -50,7 +50,7 @@ def load_from_json(json_path, class_obj):
     return objs
 try:
     with open('.gh-credentials') as f:
-        ghauth = f.read().split()
+        ghauth = tuple(f.read().split())
 except FileNotFoundError:
     ghauth = ('', '')
 

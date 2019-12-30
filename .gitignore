@@ -33,3 +33,6 @@ site/*
 students/*-report*
 students/*-report.md
 students/*-report.html
+
+.credentials
+.gh-credentials
