@@ -4,7 +4,7 @@
         "name": "Primeiros passos",
         "descr": "Se adicionou no repositório da disciplina.",
         "xp": 2,
-        "image_path": "primeiros-passos.png",
+        "icon": "person_add",
         "unique": true,
         "type": "Tutorial"
     },
@@ -14,7 +14,7 @@
         "name": "Expectativas",
         "descr": "Completou atividade de expectativas da disciplina.",
         "xp": 2,
-        "image_path": "expectativas.png",
+        "icon": "work",
         "unique": true,
         "type": "Tutorial"
     },
@@ -24,36 +24,27 @@
         "name": "Explorando o entorno de um projeto",
         "descr": "Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.",
         "xp": 2,
-        "image_path": "nop.png",
+        "icon": "monetization_on",
         "unique": true,
         "type": "Tutorial"
     },
 
     {
         "id": 4,
-        "name": "BUG simples",
-        "descr": "Enviou um PR corrigindo um bug simples.",
+        "name": "Minha primeira contribuição",
+        "descr": "Primeiro PR enviado corrigindo um bug simples.",
         "xp": 5,
-        "image_path": "pikachu.png",
+        "icon": "flight_takeoff",
         "unique": false,
-        "type": "Code"
+        "type": "Tutorial"
     },
 
     {
-        "id": 5,
-        "name": "BUG complexo",
-        "descr": "Enviou um PR corrigindo um bug complexo.",
-        "xp": 10,
-        "image_path": "raichu.png",
-        "unique": false,
-        "type": "Code"
-    },
-    {
         "id": 6,
         "name": "Projeto não documentado",
-        "descr": "Conseguiu rodar o sistema flask de desafios.",
+        "descr": "Recebeu um sistema sem documentação e o pôs para funcionar.",
         "xp": 2,
-        "image_path": "mapa.png",
+        "icon": "explore",
         "unique": true,
         "type": "Tutorial"
     },
@@ -63,7 +54,7 @@
         "name": "Tradução básica",
         "descr": "Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando.",
         "xp": 2,
-        "image_path": "cli-pt-br.png",
+        "icon": "font_download",
         "unique": true,
         "type": "Tutorial"
     },
@@ -73,7 +64,7 @@
         "name": "Projeto Profissional",
         "descr": "Reformou um código mal feito e criou uma página web para ele.",
         "xp": 5,
-        "image_path": "nop.png",
+        "icon": "star",
         "unique": true,
         "type": "Tutorial"
     },
@@ -83,7 +74,7 @@
         "name": "Pacote Python",
         "descr": "Criou um pacote python instalável via pip.",
         "xp": 2,
-        "image_path": "cobra.png",
+        "icon": "work",
         "unique": true,
         "type": "Tutorial"
     },
@@ -93,7 +84,7 @@
         "name": "Projeto DIY",
         "descr": "Contribuiu com um projeto educacional livre do Insper",
         "xp": 5,
-        "image_path": "nop.png",
+        "icon": "build",
         "unique": true,
         "type": "Tutorial"
     },
@@ -102,7 +93,7 @@
         "name": "Apresentação Final",
         "descr": "Fez uma apresentação de um tema relacionado a software livre e código aberto.",
         "xp": 5,
-        "image_path": "nop.png",
+        "icon": "record_voice_over",
         "unique": true,
         "type": "Tutorial"
     },
@@ -111,7 +102,7 @@
         "name": "Projeto",
         "descr": "",
         "xp": 0,
-        "image_path": "nop.png",
+        "icon": "work",
         "unique": true,
         "type": "Tutorial"
     },
@@ -122,7 +113,7 @@
         "name": "Bug Report",
         "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
         "xp": 1,
-        "image_path": "bug.png",
+        "icon": "report_problem",
         "unique": false,
         "type": "Code"
     },
@@ -131,7 +122,7 @@
         "name": "Feature Request",
         "descr": "Fez um pedido de nova funcionalidade a um software.",
         "xp": 1,
-        "image_path": "nop.png",
+        "icon": "add_shopping_cart",
         "unique": false,
         "type": "Code"
     },
@@ -140,7 +131,7 @@
         "name": "Contribuição aceita!",
         "descr": "Um PR não trivial foi aceito por um projeto externo.",
         "xp": 5,
-        "image_path": "nop.png",
+        "icon": "done_all",
         "unique": false,
         "type": "Code"
     },
@@ -149,7 +140,7 @@
         "name": "Issue indireta",
         "descr": "Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias. ",
         "xp": 2,
-        "image_path": "nop.png",
+        "icon": "swap_calls",
         "unique": false,
         "type": "Code"
     },
@@ -158,7 +149,7 @@
         "name": "Beta tester",
         "descr": "Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue.",
         "xp": 2,
-        "image_path": "nop.png",
+        "icon": "bug_report",
         "unique": false,
         "type": "Code"
     },
@@ -167,7 +158,7 @@
         "name": "Contribuição (simples) aceita!",
         "descr": "Um PR simples (só testes ou documentação) foi aceito por um projeto externo.",
         "xp": 2,
-        "image_path": "nop.png",
+        "icon": "done",
         "unique": false,
         "type": "Code"
     },
@@ -178,7 +169,7 @@
         "name": "Tradução aceita!",
         "descr": "Fez uma tradução que foi aceita em um software aberto.",
         "xp": 5,
-        "image_path": "traducao-aceita.png",
+        "icon": "g_translate",
         "unique": false,
         "type": "Docs"
     },
@@ -187,7 +178,7 @@
         "name": "Novas línguas",
         "descr": "Adicionou suporte a traduções em um software que não era traduzível.",
         "xp": 10,
-        "image_path": "nova-lingua.png",
+        "icon": "language",
         "unique": false,
         "type": "Docs"
     },
@@ -196,7 +187,7 @@
         "name": "Blogueiro",
         "descr": "Criou tutorial de um software ou biblioteca em um blog (ou sites como Medium)",
         "xp": 5,
-        "image_path": "nop.png",
+        "icon": "create",
         "unique": false,
         "type": "Docs"
     },
@@ -205,7 +196,7 @@
         "name": "youtuber",
         "descr": "Criou video tutorial de um software ou biblioteca.",
         "xp": 5,
-        "image_path": "nop.png",
+        "icon": "videocam",
         "unique": false,
         "type": "Docs"
     },
@@ -214,7 +205,7 @@
         "name": "Revisor",
         "descr": "Revisou pequenos erros na documentação de um projeto.",
         "xp": 2,
-        "image_path": "nop.png",
+        "icon": "text_format",
         "unique": false,
         "type": "Docs"
     },
@@ -226,7 +217,7 @@
         "name": "Participação em Evento",
         "descr": "Participou de um evento da área de Tecnologia.",
         "xp": 7,
-        "image_path": "nop.png",
+        "icon": "event_available",
         "unique": false,
         "type": "Community"
     },
@@ -235,7 +226,7 @@
         "name": "Metacontribuição",
         "descr": "Fez uma contribuição simples no repositório da matéria.",
         "xp": 2,
-        "image_path": "nop.png",
+        "icon": "refresh",
         "unique": false,
         "type": "Community"
     },
@@ -244,7 +235,7 @@
         "name": "Palestrante",
         "descr": "Fez uma palestra sobre bibliotecas ou softwares livres.",
         "xp": 10,
-        "image_path": "nop.png",
+        "icon": "mic",
         "unique": false,
         "type": "Community"
     },
@@ -253,7 +244,7 @@
         "name": "Helpdesk",
         "descr": "Teve uma resposta aceita em sites como StackOverflow ou em listas de email",
         "xp": 4,
-        "image_path": "nop.png",
+        "icon": "question_answer",
         "unique": false,
         "type": "Community"
     },
@@ -262,7 +253,7 @@
         "name": "Hacktoberfest",
         "descr": "Teve 4 PRs feitos em Outubro e foi validado pelo site do evento.",
         "xp": 20,
-        "image_path": "nop.png",
+        "icon": "nop",
         "unique": false,
         "type": "Community"
     },
@@ -271,7 +262,7 @@
         "name": "Hacktoberfest groupie",
         "descr": "Sua camiseta chegou a tempo para usá-la na disciplina e você veio com ela um dia.",
         "xp": 1,
-        "image_path": "nop.png",
+        "icon": "nop",
         "unique": false,
         "type": "Community"
     },
@@ -280,7 +271,7 @@
         "name": "Convidado VIP",
         "descr": "Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill.",
         "xp": 5,
-        "image_path": "nop.png",
+        "icon": "call",
         "unique": true,
         "type": "Community"
     } 

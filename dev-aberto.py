@@ -183,8 +183,7 @@ def list_teams():
         print(t.name)
 
 def render_skill_type(sk_type):
-    table = [(sk.id, 
-                f'![{sk.descr}]({sk.full_image_path})', sk.name, sk.descr, sk.xp)
+    table = [(sk.id, sk.material_icon, sk.name, sk.descr, sk.xp)
                 for sk in all_skills.values() if sk.type == sk_type.title()]
     with open(f'docs/_snippets/skills-{sk_type}.md', 'w') as f:
         f.write(tabulate.tabulate(table, headers=('id', '', 'Nome', 'Descrição', 'XP'), tablefmt='pipe'))

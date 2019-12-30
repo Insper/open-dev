@@ -5,13 +5,13 @@ import pprint
 import os.path
 
 class Skill:
-    def __init__(self, id, name, descr, xp, image_path, unique, type):
+    def __init__(self, id, name, descr, xp, icon, unique, type):
         self.id = id
         self.name = name
         self.descr = descr
         self.xp = int(xp)
-        self.image_path = image_path
-        self.full_image_path = 'https://raw.githubusercontent.com/insper/dev-aberto/master/skills/assets/' + image_path
+        self.icon = icon
+        self.material_icon = f'!material-large:{icon}'
         self.unique = unique
         self.type = type
 
