@@ -11,7 +11,6 @@ class Student:
         self.name = name
         self.ghuser = ghuser
         self.avatar = get_gh_picture(ghuser)
-        print(ghuser, self.avatar)
         self.has_key = False
 
         self.achievements = achievements

@@ -211,17 +211,18 @@ def build_site():
     with open('docs/_snippets/alunos.md', 'w') as f:
         f.write(tabulate.tabulate(students, headers=('', '', ''), tablefmt='pipe'))
         
-    impacto_template = env.get_template('impact.html')
-    info = {}    
+    impacto_template = env.get_template('impacto.html')
+    info = {}
+    num_aceitos = 0
     for student in all_students.values():
         for ach in student.achievements:
+            if ach.skill.id == 22 and ach.user == student:
+                num_aceitos += 1
             if ach.skill.id in [4, 5] and ach.user == student:
                 if isinstance(ach.metadata, dict):
                     url = ach.metadata['url']
                 else:
                     url = ach.metadata
-                print(url)
-
                 data = parse_url(url)
                 dict_add_to_dict(info, data.project_name, 'Pull Requests', data)
 
@@ -235,7 +236,17 @@ def build_site():
                 dict_add_to_dict(info, data.project_name, 'Issues', data)
 
     with open('docs/impacto.md', 'w') as f:
-        f.write(impacto_template.render(data=info))
+        num_projetos = len(info)
+        num_prs = 0
+        for proj in info:
+            prs_proj = info[proj].get('Pull Requests', [])
+            num_prs += len(prs_proj)
+        sorted_keys = sorted(info.keys(), key=lambda t: -len(info[t].get('Pull Requests', [])))
+        f.write(impacto_template.render(data=info,
+                                        sorted_keys=sorted_keys, 
+                                        num_projetos=num_projetos, 
+                                        num_prs=num_prs, 
+                                        num_aceitos=num_aceitos))
 
 if __name__ == '__main__':
 

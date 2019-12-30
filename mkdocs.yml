@@ -23,4 +23,5 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_png
   - pymdownx.tasklist
+  - pymdownx.details
   - material_icons

@@ -1,0 +1,19 @@
+Um dos grandes objetivos de *Desenvolvimento Aberto* é participar de maneira efetiva de projetos de software existentes. Na edição de 2019/2 os alunos enviaram trabalharam em **{{ num_projetos }}** projetos diferentes, contribuindo com **{{ num_prs }}** modificações de código, sendo que **{{ num_aceitos }}** foram incorporados aos projetos originais.
+
+{% for d in sorted_keys %}
+<details class="note" open="">
+<summary> {{d.title()}}</summary>
+{% for el in data[d] %}
+<h4> {{el.title()}}</h4>
+<ul style="list-style-type:none;">
+{% for sub in data[d][el] %}
+{% if sub.status %}
+<li><a href={{sub.url}}> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src={{sub.status}}></span> - {{sub.url}}</a></li>  
+{% else %}
+<li><a href={{sub.url}}> {{sub.url}} </a></li>
+{% endif %}
+{% endfor %}
+</ul>
+{% endfor %}
+</details>
+{% endfor %}
