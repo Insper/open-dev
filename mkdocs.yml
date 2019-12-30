@@ -6,6 +6,9 @@ theme:
     logo: 
       icon: 'developer_mode'
 
+extra_css:
+  - css/custom.css
+
 nav:
   - 'Home': 'index.md'
   - 'Skills e avaliação': 'regras.md'
@@ -13,6 +16,7 @@ nav:
   - 'Impacto': 'impacto.md'
 
 markdown_extensions:
+  - attr_list
   - pymdownx.snippets:
       base_path: "docs/_snippets"
       check_paths: true

@@ -1,6 +1,7 @@
 from cryptography.fernet import Fernet
 import sys
 import json
+import requests
 
 def create_key(key_file):
     key = Fernet.generate_key()
@@ -37,8 +38,6 @@ def load_from_file(filename):
     with open(filename, encoding = "utf-8") as f:
         return f.read()
 
-
-
 def load_from_json(json_path, class_obj):
     objs = []
 
@@ -49,8 +48,19 @@ def load_from_json(json_path, class_obj):
         objs.append(class_obj(**ob))
     
     return objs
+try:
+    with open('.gh-credentials') as f:
+        ghauth = f.read().split()
+except FileNotFoundError:
+    ghauth = ('', '')
 
 
-def load_all_data():
-
-    return skills
+def get_gh_picture(ghname):
+    if ghname == '':
+        return ''
+    rq = requests.get(f'https://api.github.com/users/{ghname}', auth=ghauth)
+    if rq.status_code == 404:
+        return ''
+    else:
+        user_data = rq.json()
+        return user_data.get('avatar_url', '')

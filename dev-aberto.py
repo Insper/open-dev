@@ -15,7 +15,7 @@ import sys
 import time
 
 from utils import load_key, create_key, write_string_to_file, load_encrypted, save_encrypted
-from students import Student, all_students, Team, all_teams, project_points
+from students import Student, all_students, project_points
 from skills import Skill, all_skills
 
 
@@ -162,26 +162,6 @@ def list_users():
         k = '*' if st.has_key else ''
         print(f'{st.name}{k}')
 
-@dev_aberto_cli.command()
-@click.argument('team_name')
-def new_team(team_name):
-    students = []
-    while True:
-        student_login = input('Login:')
-        if student_login == '':
-            break
-        students.append(student_login)
-    
-    t = Team(team_name, students, [])
-
-    with open(f'students/team-{team_name}', 'w') as f:
-        f.write(t.toJSON())
-
-@dev_aberto_cli.command()
-def list_teams():
-    for t in all_teams:
-        print(t.name)
-
 def render_skill_type(sk_type):
     table = [(sk.id, sk.material_icon, sk.name, sk.descr, sk.xp)
                 for sk in all_skills.values() if sk.type == sk_type.title()]
@@ -220,10 +200,16 @@ def build_site():
     render_skill_type('community')
     render_skill_type('docs')
     
-    students = [(all_students[st].name.title(),f'{st} __at__ al.insper.edu.br')
-                for st in sorted(all_students.keys())]
+    students = []
+    for st_login in sorted(all_students.keys()):
+        st = all_students[st_login]
+        students.append([
+            f'![{st.name}]({st.avatar}){{: style="max-width:64px; valign="center"}}',
+            st.name.title(), 
+            f'[![](css/github.png)](http://github.com/{st.ghuser})'
+        ])
     with open('docs/_snippets/alunos.md', 'w') as f:
-        f.write(tabulate.tabulate(students, headers=('Aluno', 'Contato'), tablefmt='pipe'))
+        f.write(tabulate.tabulate(students, headers=('', '', ''), tablefmt='pipe'))
         
     impacto_template = env.get_template('impact.html')
     info = {}    
