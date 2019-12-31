@@ -2,19 +2,46 @@
 <head>
     <title> Relat√≥rio de acompanhamento - {{st.name}} </title>
     <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <style>
+        .cabecalho {
+            list-style: none;
+        }
+
+        .cabecalho li span {
+            font-weight: bold;
+            width: 120px;
+            display: inline-block;
+        }
+
         h2 {
             border-top: 1px solid #ccc;
             padding-top: 5px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        .material-icons.green {
+            color: rgb(0, 200, 0);
+        }
+
+        .material-icons.red {
+            color: rgb(200, 0, 0);
         }
     </style>
 </head>
 <body>
 
-<h1>Relat√≥rio de acompanhamento - {{st.name}}</h1>
+<h1>Relat√≥rio de acompanhamento</h1>
 
-<p class="pontuacao">Pontua√ß√£o total: {{ xp_total }}</p>
-<p>Conceito atual: {{ conceito }}</p>
+<ul class="cabecalho">
+    <li><span>Aluno</span> {{ st.name }}</li>
+    <li><span>XP</span> {{ xp_total }}</li>
+    <li><span>Conceito</span> {{ conceito }}</li>
+</ul>
 
 {% if comentario_conceito %}
 <h4> Avisos </h4>
@@ -29,9 +56,9 @@ As seguintes atividades de sala de aula foram completadas e enviadas no reposit√
 <ul class="achievements">
 {% for sk in sk_tutorial %} 
     {% if sk.done %}
-        <li> <input type="checkbox" checked> {{ sk.name}}  </li>
+        <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
     {% else %}
-        <li> <input type="checkbox"> {{ sk.name}} </li>
+        <li> <i class="material-icons red" > {{ sk.icon }} </i> {{ sk.name}} </li>
     {% endif %}
 {% endfor %}
 </ul>
@@ -43,9 +70,9 @@ As seguintes atividades de sala de aula foram completadas e enviadas no reposit√
 <ul class="achievements">
 {% for sk in sk_code %} 
     {% if sk.done %}
-        <li> <input type="checkbox" checked> {{ sk.name}}  </li>
+        <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
     {% else %}
-        <li> <input type="checkbox"> {{ sk.name}} </li>
+        <li> <i class="material-icons red"> {{ sk.icon }} </i> {{ sk.name}} </li>
     {% endif %}
 {% endfor %}
 </ul>
@@ -58,9 +85,9 @@ As seguintes atividades de sala de aula foram completadas e enviadas no reposit√
 <ul class="achievements">
 {% for sk in sk_docs %} 
     {% if sk.done %}
-        <li> <input type="checkbox" checked> {{ sk.name}}  </li>
+        <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
     {% else %}
-        <li> <input type="checkbox"> {{ sk.name}} </li>
+        <li> <i class="material-icons red"> {{ sk.icon }} </i> {{ sk.name}} </li>
     {% endif %}
 {% endfor %}
 </ul>
@@ -74,9 +101,9 @@ As seguintes atividades de sala de aula foram completadas e enviadas no reposit√
 <ul class="achievements">
 {% for sk in sk_comm %} 
     {% if sk.done %}
-        <li> <input type="checkbox" checked> {{ sk.name}}  </li>
+        <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
     {% else %}
-        <li> <input type="checkbox"> {{ sk.name}} </li>
+        <li> <i class="material-icons red"> {{ sk.icon }} </i> {{ sk.name}} </li>
     {% endif %}
 {% endfor %}
 </ul>
