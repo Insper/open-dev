@@ -1,9 +1,23 @@
 ---
 marp: true
 title: Ciclo de vida de um Bug
+footer: 'Igor Montagner ![License CC BY-NC-SA 4.0](../cc-by-nc-sa.png)'
 ---
 
 <!-- $theme: default -->
+
+<style>
+	footer {
+		position: fixed;
+		bottom: 10px;
+		left: 1050px;
+		width: 400px;
+	}
+
+	footer img {
+		vertical-align: middle;
+	}
+</style>
 
 Desenvolvimento Aberto
 ===
@@ -13,7 +27,7 @@ Desenvolvimento Aberto
 ##### Apresentação da Disciplina + Ciclo de vida de um Bug
 
 
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )  
 
 ---
 
@@ -31,7 +45,7 @@ Desenvolvimento Aberto
 ### Avaliação
 - Curso baseado em projetos feitos individualmente com apoio de um grupo.
 
-----
+---
 
 # Livro texto
 
@@ -40,7 +54,7 @@ Desenvolvimento Aberto
 
 Disponível onnline em [https://producingoss.com](https://producingoss.com/)
 
-----
+---
 
 # Objetivos de Aprendizagem
 
@@ -64,7 +78,7 @@ Ao final da disciplina o estudante será capaz de:
 	- Documentação / Internacionalização
 	- Comunidades de usuários
 
-----
+---
 
 # Programa do curso
 
@@ -77,7 +91,7 @@ Ao final da disciplina o estudante será capaz de:
 7. Aspectos humanos e comunitários em desenvolvimento de software;
 8. Estudo de casos de sucesso.
 
------
+---
 
 # Materiais do curso 
 
@@ -150,7 +164,7 @@ No mercado, normalmente trabalhamos em um projeto existente
 
 * Aceito: [[1]](https://github.com/CleverRaven/Cataclysm-DDA/pull/25764)
 
-----
+---
 
 # Efeiche - Turma 1
 
@@ -185,19 +199,19 @@ No mercado, normalmente trabalhamos em um projeto existente
 	* Se você tiver algo parecido, cole junto
 4. Elejam um do grupo para mostrar seu trabalho.
 
-----------
+---
 
 # Motivação (Igor)
 
 ![](trios-1.png)
 
-----------
+---
 
 # Motivação (Igor)
 
 ![](trios-2.png)
 
-----------
+---
  
 # Motivação (Igor)
 
@@ -215,7 +229,7 @@ No mercado, normalmente trabalhamos em um projeto existente
 * É possível que eu tenha resolvido um problema que nunca ninguém teve!
 
 
----- 
+--- 
 
 # Motivação (Igor)
 
@@ -230,7 +244,7 @@ No mercado, normalmente trabalhamos em um projeto existente
 
 ## 
 
-----------
+---
 
 # Atividade: Por que vocês estão aqui?
 
@@ -243,7 +257,7 @@ No mercado, normalmente trabalhamos em um projeto existente
 
 ### Revisitaremos esse painel no fim do curso
 
------
+---
 
 
 # Apresentação do curso
@@ -270,7 +284,7 @@ No mercado, normalmente trabalhamos em um projeto existente
 - Comunidade: 
 	* agregam valor à comunidades externas (eventos, palestras, blogs) ou à comunidade Insper
 
------
+---
 
 # Apresentação do curso (plano de aulas)
 
@@ -285,7 +299,7 @@ No mercado, normalmente trabalhamos em um projeto existente
 
 #### Serão formados grupos para a primeira e para a segunda parte
 
-----
+---
 
 # Apresentação do curso (avaliação)
 
@@ -295,7 +309,7 @@ No mercado, normalmente trabalhamos em um projeto existente
 * Nota é baseada na quantidade de *XP* obtida.
 	- Liberdade para decidir onde investir tempo/esforço.
 
-----
+---
 
 # Apresentação do curso (avaliação)
 
@@ -305,7 +319,7 @@ No mercado, normalmente trabalhamos em um projeto existente
 * **Conceito B**: 100XP **E** *PR aceito* ou equivalente
 * **Conceito A+**: 200XP
 
-----------
+---
 
 # Apresentação do curso (grupos)
 
@@ -325,7 +339,7 @@ No mercado, normalmente trabalhamos em um projeto existente
 
 **Objetivo**: Enviar seu primeiro *Pull Request* para o repositório da disciplina. 
 
-----
+---
 
 # Atividade: Expectativas
 
@@ -334,7 +348,7 @@ No mercado, normalmente trabalhamos em um projeto existente
 
 **Objetivo**: Criar uma equipe no repositório da disciplina e adicionar a foto do painel criado na aula de hoje. 
 
-----
+---
 
 # Tarefa complementar
 
