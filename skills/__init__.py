@@ -3,9 +3,10 @@ from collections import namedtuple
 import json
 import pprint
 import os.path
+import datetime
 
 class Skill:
-    def __init__(self, id, name, descr, xp, icon, unique, type):
+    def __init__(self, id, name, descr, xp, icon, unique, type, mandatory='-'):
         self.id = id
         self.name = name
         self.descr = descr
@@ -14,6 +15,7 @@ class Skill:
         self.material_icon = f'!material-large:{icon}'
         self.unique = unique
         self.type = type
+        self.mandatory = mandatory
 
     def __str__(self):
         return self.name
@@ -22,10 +24,11 @@ class Skill:
         return pprint.pformat(vars(self))
 
 class Achievement:
-    def __init__(self, skill, metadata, user):
+    def __init__(self, skill, metadata, user, date=datetime.date.today()):
         self.skill = skill
         self.metadata = metadata
         self.user = user
+        self.date = date
     
     def xp(self):
         if 'xp' in self.metadata:

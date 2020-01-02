@@ -31,6 +31,22 @@
         .material-icons.red {
             color: rgb(200, 0, 0);
         }
+
+        .material-icons.yellow {
+            color: rgb(200, 200, 0);
+        }
+
+        .material-icons.blue {
+            color: rgb(0, 0, 200);
+        }
+
+        .material-icons.purple {
+            color: rgb(200, 0, 200);
+        }
+
+        .material-icons.orange {
+            color: rgb(200, 100, 0);
+        }
     </style>
 </head>
 <body>
@@ -43,19 +59,14 @@
     <li><span>Conceito</span> {{ conceito }}</li>
 </ul>
 
-{% if comentario_conceito %}
-<h4> Avisos </h4>
-<pre>{{comentario_conceito}}</pre>
-{% endif %}
+<h2> Conceito D </h2> 
 
-<h2>Atividades Tutorial</h2>
-
-As seguintes atividades de sala de aula foram completadas e enviadas no repositório.
+Para obter este conceito é necessário obter as seguintes skills:
 
 <div class="skill-list-done">
 <ul class="achievements">
-{% for sk in sk_tutorial %} 
-    {% if sk.done %}
+{% for done,sk in doneD %} 
+    {% if done %}
         <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
     {% else %}
         <li> <i class="material-icons red" > {{ sk.icon }} </i> {{ sk.name}} </li>
@@ -64,50 +75,81 @@ As seguintes atividades de sala de aula foram completadas e enviadas no reposit�
 </ul>
 </div>
 
-<h2>Código</h2>
+<h2> Conceito C </h2>
+
+Para obter este conceito é necessário no mínimo <b>60XP</b> e obter as seguintes skills:
 
 <div class="skill-list-done">
 <ul class="achievements">
-{% for sk in sk_code %} 
-    {% if sk.done %}
+{% for done,sk in doneC %} 
+    {% if done %}
         <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
     {% else %}
-        <li> <i class="material-icons red"> {{ sk.icon }} </i> {{ sk.name}} </li>
+        <li> <i class="material-icons red" > {{ sk.icon }} </i> {{ sk.name}} </li>
     {% endif %}
 {% endfor %}
 </ul>
 </div>
 
+<h2> Conceito B </h2>
 
-<h2>Tradução e Documentação </h2>
+Para obter este conceito é necessário no mínimo <b>100XP</b> e obter as seguintes skills:
 
 <div class="skill-list-done">
 <ul class="achievements">
-{% for sk in sk_docs %} 
-    {% if sk.done %}
+{% for done,sk in doneB %} 
+    {% if done %}
         <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
     {% else %}
-        <li> <i class="material-icons red"> {{ sk.icon }} </i> {{ sk.name}} </li>
+        <li> <i class="material-icons red" > {{ sk.icon }} </i> {{ sk.name}} </li>
     {% endif %}
 {% endfor %}
 </ul>
 </div>
 
+<h2> Conceito A+ </h2>
 
-<h2>Comunidade</h2>
+Para obter este conceito é necessário obter <b>200XP</b>. 
 
+<h2> Outras atividades </h2>
 
-<div class="skill-list-done">
-<ul class="achievements">
-{% for sk in sk_comm %} 
-    {% if sk.done %}
-        <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
-    {% else %}
-        <li> <i class="material-icons red"> {{ sk.icon }} </i> {{ sk.name}} </li>
-    {% endif %}
+As seguintes atividades foram realizadas e estão contribuindo para sua nota. A lista de todas as atividades pode ser consultada na <a href="http://insper.github.io/dev-aberto/regras">página da disciplina.</a>
+
+<ul class="skill-list-done">
+{% for ach in doneAll %}
+    <li> 
+        {% if ach.skill.type == 'Code'%}
+            <i class="material-icons blue">
+        {% elif ach.skill.type == 'Docs'%}
+            <i class="material-icons purple">
+        {% elif ach.skill.type == 'Community'%}
+            <i class="material-icons orange">
+        {% else %}
+            <i class="material-icons">
+        {% endif %}
+         {{ ach.skill.icon }} </i> <b>{{ ach.date }}</b> - {{ ach.skill.name }}: {{ ach.xp() }}XP </li>
 {% endfor %}
 </ul>
-</div>
+
+<h3> Legendas </h3>
+
+Skills obrigatórias:
+
+<ul class="skill-list-done">
+    <li>  <i class="material-icons green"> code </i> - entregue na data </li>
+    <li>  <i class="material-icons red"> code </i> - não entregue </li>
+    <li>  <i class="material-icons yellow"> code </i> - entregue atrasada </li>
+</ul>
+
+Skills eletivas:
+
+<ul class="skill-list-done">
+    <li>  <i class="material-icons blue"> code </i> - skill de código </li>
+    <li>  <i class="material-icons purple"> code </i> - skill de documentação </li>
+    <li>  <i class="material-icons orange"> code </i> - skill de comunidade </li>
+</ul>
+
+
 
 </body>
 </html>

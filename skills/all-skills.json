@@ -6,7 +6,8 @@
         "xp": 2,
         "icon": "person_add",
         "unique": true,
-        "type": "Tutorial"
+        "type": "Tutorial",
+        "mandatory": "D"
     },
 
     {
@@ -16,7 +17,8 @@
         "xp": 2,
         "icon": "work",
         "unique": true,
-        "type": "Tutorial"
+        "type": "Tutorial",
+        "mandatory": "D"
     },
 
     {
@@ -26,7 +28,8 @@
         "xp": 2,
         "icon": "monetization_on",
         "unique": true,
-        "type": "Tutorial"
+        "type": "Tutorial",
+        "mandatory": "D"
     },
 
     {
@@ -36,9 +39,10 @@
         "xp": 5,
         "icon": "flight_takeoff",
         "unique": false,
-        "type": "Tutorial"
+        "type": "Tutorial",
+        "mandatory": "D"
     },
-
+    
     {
         "id": 6,
         "name": "Projeto não documentado",
@@ -46,7 +50,8 @@
         "xp": 2,
         "icon": "explore",
         "unique": true,
-        "type": "Tutorial"
+        "type": "Tutorial",
+        "mandatory": "D"
     },
     
     {
@@ -56,7 +61,8 @@
         "xp": 2,
         "icon": "font_download",
         "unique": true,
-        "type": "Tutorial"
+        "type": "Tutorial",
+        "mandatory": "D"
     },
 
     {
@@ -66,7 +72,8 @@
         "xp": 5,
         "icon": "star",
         "unique": true,
-        "type": "Tutorial"
+        "type": "Tutorial",
+        "mandatory": "D"
     },
 
     {
@@ -76,7 +83,8 @@
         "xp": 2,
         "icon": "work",
         "unique": true,
-        "type": "Tutorial"
+        "type": "Tutorial",
+        "mandatory": "D"
     },
 
     {
@@ -86,7 +94,8 @@
         "xp": 5,
         "icon": "build",
         "unique": true,
-        "type": "Tutorial"
+        "type": "Tutorial",
+        "mandatory": "D"
     },
     {
         "id": 11,
@@ -95,7 +104,8 @@
         "xp": 5,
         "icon": "record_voice_over",
         "unique": true,
-        "type": "Tutorial"
+        "type": "Tutorial",
+        "mandatory": "D"
     },
     {
         "id": 12,
@@ -107,6 +117,18 @@
         "type": "Tutorial"
     },
     
+
+
+    {
+        "id": 5,
+        "name": "Minha primeira contribuição II",
+        "descr": "Primeiro PR enviado corrigindo um bug simples.",
+        "xp": 5,
+        "icon": "flight_takeoff",
+        "unique": false,
+        "type": "Code",
+        "mandatory": "C"
+    },
 
     {
         "id": 20,
@@ -133,7 +155,8 @@
         "xp": 5,
         "icon": "done_all",
         "unique": false,
-        "type": "Code"
+        "type": "Code",
+        "mandatory": "B"
     },
     {
         "id": 23,
@@ -171,7 +194,8 @@
         "xp": 5,
         "icon": "g_translate",
         "unique": false,
-        "type": "Docs"
+        "type": "Docs",
+        "mandatory": "C"
     },
     {
         "id": 31,
@@ -219,7 +243,8 @@
         "xp": 7,
         "icon": "event_available",
         "unique": false,
-        "type": "Community"
+        "type": "Community",
+        "mandatory": "C"
     },
     {
         "id": 41,

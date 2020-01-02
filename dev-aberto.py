@@ -85,6 +85,11 @@ def load_skill_and_check_done(skill_name, st):
                 sk.done = True
     return skill_list
 
+def student_has_skill(st, skill):
+    for ach in st.achievements:
+        if ach.skill.id == skill.id:
+            return True
+    return False
 
 @dev_aberto_cli.command()
 @click.argument('student_login')
@@ -96,47 +101,27 @@ def compute_grade(student_login):
 
     feedback_template = env.get_template('report.html')
     
-    sk_tutorial = load_skill_and_check_done('Tutorial', st)
-    sk_docs = load_skill_and_check_done('Docs', st)
-    sk_code = load_skill_and_check_done('Code', st)
-    sk_comm = load_skill_and_check_done('Community', st)    
+    mandatoryD = [sk for sk in all_skills.values() if sk.mandatory == 'D']
+    doneD = [(student_has_skill(st, sk), sk) for sk in mandatoryD]
+
+    mandatoryC = [sk for sk in all_skills.values() if sk.mandatory == 'C']
+    doneC = [(student_has_skill(st, sk), sk) for sk in mandatoryC]
+
+    mandatoryB = [sk for sk in all_skills.values() if sk.mandatory == 'B']
+    doneB = [(student_has_skill(st, sk), sk) for sk in mandatoryB]
+
+    done_all = [ach for ach in st.achievements if ach.skill.mandatory == '-']
+    done_all = sorted(done_all, key=lambda t: t.date)
+
+    conceito = 'I'
 
     xp = st.compute_grade()
 
-    print('------------')
-    conceito = 'I'
-    comentario_conceito = 'Atividades de sala de aula não concluídas\n'
-    if all([sk.done for sk in sk_tutorial]):
-        conceito = 'D'
-        print('Conceito D alcançado.')
-        if (any([sk.done for sk in sk_docs]) and 
-            any([sk.done for sk in sk_code]) and 
-            any([sk.done for sk in sk_comm])) and xp >= 60:
-            conceito = 'C'
-        else:
-            print('------------')
-            comentario_conceito = ''
-            if any([sk.done for sk in sk_docs]) == False:
-                print('Conceito C: Skill de Documentação faltando.')
-                comentario_conceito = '\tSkill de Documentação faltando.\n'
-            if any([sk.done for sk in sk_code]) == False:
-                print('Conceito C: Skill de Código faltando.')
-                comentario_conceito += '\tSkill de Código faltando.\n'
-            if any([sk.done for sk in sk_comm]) == False:
-                print('Conceito C: Skill de Comunidade faltando.')
-                comentario_conceito += '\tSkill de Comunidade faltando.\n'
-    else:
-        for sk in sk_tutorial:
-            if sk.done == False:
-                print('Skill de tutorial faltante:', sk.name)
-                comentario_conceito += f'\t{sk.name}\n'
-    
-    html = feedback_template.render(sk_tutorial=sk_tutorial,
-                                      sk_code=sk_code,
-                                      sk_docs=sk_docs,
-                                      sk_comm=sk_comm,
-                                      xp_total=xp, st=st, conceito=conceito,
-                                      comentario_conceito=comentario_conceito
+    html = feedback_template.render(doneD=doneD,
+                                    doneC=doneC,
+                                    doneB=doneB,
+                                    doneAll=done_all,
+                                    xp_total=xp, st=st, conceito=conceito,
                                     )
     with open(f'students/{student_login}-report.html', 'w') as f:
         f.write(html)
