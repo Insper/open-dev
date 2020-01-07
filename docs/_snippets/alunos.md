@@ -1,16 +1,18 @@
-* [Alessandra Blücher](mailto:alessandrab4@al.insper.edu.br)
-* [Alexandre Edington](mailto:alexandreae@al.insper.edu.br)
-* [Antonio João Andraues Junior](mailto:antoniojaj@al.insper.edu.br)
-* [Elisa Mochetti Malzoni](mailto:elisamm@al.insper.edu.br)
-* [Gabriel Lopes Monteiro](mailto:gabriellm1@al.insper.edu.br)
-* [Gabriel Do Vale Rios](mailto:gabrielvr@al.insper.edu.br)
-* [Giulia Braga Passarelli](mailto:giuliabp@al.insper.edu.br)
-* [Guilherme Leite](mailto:guilhermepl3@al.insper.edu.br)
-* [Hugo Ebert Carl](mailto:hugoec@al.insper.edu.br)
-* [Igor Montagner](mailto:igorsm1@al.insper.edu.br)
-* [Leonardo Pereira Medeiros](mailto:leonardopm3@al.insper.edu.br)
-* [Lucas Scarlato Astur](mailto:lucassa3@al.insper.edu.br)
-* [Pedro Cunial Campos](mailto:pedrocc4@al.insper.edu.br)
-* [Samuel Vinicius Granato De Barros](mailto:samuelvgb@al.insper.edu.br)
-* [Vinicius Gomes De Lima](mailto:viniciusgl1@al.insper.edu.br)
-* [Vitor Liu](mailto:vitorhl2@al.insper.edu.br)
+|                                                                                                                                       |                                   |                                                          |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------|:---------------------------------------------------------|
+| ![Alessandra Blücher](https://avatars3.githubusercontent.com/u/26482194?v=4){: style="max-width:64px; valign="center"}                | Alessandra Blücher                | [![](css/github.png)](http://github.com/aleblucher)      |
+| ![Alexandre Edington](https://avatars0.githubusercontent.com/u/26481954?v=4){: style="max-width:64px; valign="center"}                | Alexandre Edington                | [![](css/github.png)](http://github.com/alexandreae)     |
+| ![Antonio João Andraues Junior](https://avatars2.githubusercontent.com/u/26484794?v=4){: style="max-width:64px; valign="center"}      | Antonio João Andraues Junior      | [![](css/github.png)](http://github.com/antonioandraues) |
+| ![Elisa Mochetti Malzoni](https://avatars3.githubusercontent.com/u/18201769?v=4){: style="max-width:64px; valign="center"}            | Elisa Mochetti Malzoni            | [![](css/github.png)](http://github.com/elisamalzoni)    |
+| ![Gabriel Lopes Monteiro](https://avatars3.githubusercontent.com/u/26482095?v=4){: style="max-width:64px; valign="center"}            | Gabriel Lopes Monteiro            | [![](css/github.png)](http://github.com/gabriellm1)      |
+| ![gabriel do vale rios](https://avatars0.githubusercontent.com/u/11521474?v=4){: style="max-width:64px; valign="center"}              | Gabriel Do Vale Rios              | [![](css/github.png)](http://github.com/gabrielvalerios) |
+| ![Giulia Braga Passarelli](https://avatars2.githubusercontent.com/u/26484700?v=4){: style="max-width:64px; valign="center"}           | Giulia Braga Passarelli           | [![](css/github.png)](http://github.com/giupassarelli)   |
+| ![Guilherme Leite](https://avatars3.githubusercontent.com/u/26471482?v=4){: style="max-width:64px; valign="center"}                   | Guilherme Leite                   | [![](css/github.png)](http://github.com/guipleite)       |
+| ![hugo ebert carl](https://avatars2.githubusercontent.com/u/30904672?v=4){: style="max-width:64px; valign="center"}                   | Hugo Ebert Carl                   | [![](css/github.png)](http://github.com/hugoecarl)       |
+| ![igor montagner](https://avatars3.githubusercontent.com/u/221446?v=4){: style="max-width:64px; valign="center"}                      | Igor Montagner                    | [![](css/github.png)](http://github.com/igordsm)         |
+| ![Leonardo Pereira Medeiros](https://avatars1.githubusercontent.com/u/18487422?v=4){: style="max-width:64px; valign="center"}         | Leonardo Pereira Medeiros         | [![](css/github.png)](http://github.com/leostayner)      |
+| ![Lucas Scarlato Astur](https://avatars3.githubusercontent.com/u/17275576?v=4){: style="max-width:64px; valign="center"}              | Lucas Scarlato Astur              | [![](css/github.png)](http://github.com/lucassa3)        |
+| ![Pedro Cunial Campos](https://avatars0.githubusercontent.com/u/11504078?v=4){: style="max-width:64px; valign="center"}               | Pedro Cunial Campos               | [![](css/github.png)](http://github.com/pedrocunial)     |
+| ![Samuel Vinicius Granato de Barros](https://avatars3.githubusercontent.com/u/13368721?v=4){: style="max-width:64px; valign="center"} | Samuel Vinicius Granato De Barros | [![](css/github.png)](http://github.com/samuelgranato)   |
+| ![Vinicius Gomes de Lima](https://avatars3.githubusercontent.com/u/26411921?v=4){: style="max-width:64px; valign="center"}            | Vinicius Gomes De Lima            | [![](css/github.png)](http://github.com/vinigl)          |
+| ![Vitor Liu](https://avatars3.githubusercontent.com/u/8919126?v=4){: style="max-width:64px; valign="center"}                          | Vitor Liu                         | [![](css/github.png)](http://github.com/liuseeker)       |

@@ -13,7 +13,9 @@ nav:
   - 'Home': 'index.md'
   - 'Skills e avaliação': 'regras.md'
   - 'Alunos': 'alunos.md'
-  - 'Impacto': 'impacto.md'
+  - 'Impacto': 
+    - '2019/2': 'impacto-2019.md'
+    - '2020/1': 'impacto.md'
 
 markdown_extensions:
   - attr_list

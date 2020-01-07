@@ -2,6 +2,7 @@ from cryptography.fernet import Fernet
 import sys
 import json
 import requests
+import requests.exceptions
 
 def create_key(key_file):
     key = Fernet.generate_key()
@@ -58,9 +59,13 @@ except FileNotFoundError:
 def get_gh_picture(ghname):
     if ghname == '':
         return ''
-    rq = requests.get(f'https://api.github.com/users/{ghname}', auth=ghauth)
-    if rq.status_code == 404:
+    try:
+        rq = requests.get(f'https://api.github.com/users/{ghname}', auth=ghauth)
+        if rq.status_code == 404:
+            return ''
+        else:
+            user_data = rq.json()
+            return user_data.get('avatar_url', '')
+    except requests.exceptions.RequestException:
         return ''
-    else:
-        user_data = rq.json()
-        return user_data.get('avatar_url', '')
+        

@@ -198,9 +198,20 @@ def build_site():
         
     impacto_template = env.get_template('impacto.html')
     info = {}
+    info_insper = []
+    eventos = set()
+    num_eventos = 0
     num_aceitos = 0
     for student in all_students.values():
         for ach in student.achievements:
+            if ach.skill.id == 10 and ach.user == student:
+                info_insper.append(ach)
+
+            if ach.skill.id == 40 and ach.user == student:
+                num_eventos += 1
+                if 'picture' in ach.metadata:
+                    eventos.add((ach.metadata['picture'], ach.metadata.get('url', '#')))
+
             if ach.skill.id == 22 and ach.user == student:
                 num_aceitos += 1
             if ach.skill.id in [4, 5] and ach.user == student:
@@ -228,6 +239,9 @@ def build_site():
             num_prs += len(prs_proj)
         sorted_keys = sorted(info.keys(), key=lambda t: -len(info[t].get('Pull Requests', [])))
         f.write(impacto_template.render(data=info,
+                                        info_insper=info_insper,
+                                        eventos=eventos,
+                                        num_eventos=num_eventos,
                                         sorted_keys=sorted_keys, 
                                         num_projetos=num_projetos, 
                                         num_prs=num_prs, 

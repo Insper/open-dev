@@ -1,8 +1,34 @@
-Um dos grandes objetivos de *Desenvolvimento Aberto* é participar de maneira efetiva de projetos de software existentes. Na edição de 2019/2 os alunos enviaram trabalharam em **19** projetos diferentes, contribuindo com **46** modificações de código, sendo que **14** foram incorporados aos projetos originais. Além destes projetos, os alunos também trabalharam no [Servidor de Desafios](http://github.com/insper/servidor-de-desafios), um software desenvolvido pelos professores do Insper para ser usado na disciplina Design de Software. Foram <b>12</b> modificações aceitas que já foram usadas durante o próprio semestre. 
+ 
+# Edição 2019/2
+
+Na edição de 2019/2 os alunos enviaram trabalharam em **19** projetos diferentes, contribuindo com **46** modificações de código, sendo que **14** foram incorporados aos projetos originais. Além destes projetos, os alunos também trabalharam no [Servidor de Desafios](http://github.com/insper/servidor-de-desafios), um software desenvolvido pelos professores do Insper para ser usado na disciplina Design de Software. Foram <b>12</b> modificações aceitas que já foram usadas durante o próprio semestre. 
 
 Também incentivamos os alunos a participar de eventos externos de tecnologia e experimentar o mundo fora do Insper. No total, os alunos participaram em <b>10</b> eventos. 
 
-<h2> Melhorias de código enviadas </h2>
+
+## Alunos
+
+|                                                                                                                                       |                                   |                                                          |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------|:---------------------------------------------------------|
+| ![Alessandra Blücher](https://avatars3.githubusercontent.com/u/26482194?v=4){: style="max-width:64px; valign="center"}                | Alessandra Blücher                | [![](css/github.png)](http://github.com/aleblucher)      |
+| ![Alexandre Edington](https://avatars0.githubusercontent.com/u/26481954?v=4){: style="max-width:64px; valign="center"}                | Alexandre Edington                | [![](css/github.png)](http://github.com/alexandreae)     |
+| ![Antonio João Andraues Junior](https://avatars2.githubusercontent.com/u/26484794?v=4){: style="max-width:64px; valign="center"}      | Antonio João Andraues Junior      | [![](css/github.png)](http://github.com/antonioandraues) |
+| ![Elisa Mochetti Malzoni](https://avatars3.githubusercontent.com/u/18201769?v=4){: style="max-width:64px; valign="center"}            | Elisa Mochetti Malzoni            | [![](css/github.png)](http://github.com/elisamalzoni)    |
+| ![Gabriel Lopes Monteiro](https://avatars3.githubusercontent.com/u/26482095?v=4){: style="max-width:64px; valign="center"}            | Gabriel Lopes Monteiro            | [![](css/github.png)](http://github.com/gabriellm1)      |
+| ![gabriel do vale rios](https://avatars0.githubusercontent.com/u/11521474?v=4){: style="max-width:64px; valign="center"}              | Gabriel Do Vale Rios              | [![](css/github.png)](http://github.com/gabrielvalerios) |
+| ![Giulia Braga Passarelli](https://avatars2.githubusercontent.com/u/26484700?v=4){: style="max-width:64px; valign="center"}           | Giulia Braga Passarelli           | [![](css/github.png)](http://github.com/giupassarelli)   |
+| ![Guilherme Leite](https://avatars3.githubusercontent.com/u/26471482?v=4){: style="max-width:64px; valign="center"}                   | Guilherme Leite                   | [![](css/github.png)](http://github.com/guipleite)       |
+| ![hugo ebert carl](https://avatars2.githubusercontent.com/u/30904672?v=4){: style="max-width:64px; valign="center"}                   | Hugo Ebert Carl                   | [![](css/github.png)](http://github.com/hugoecarl)       |
+| ![igor montagner](https://avatars3.githubusercontent.com/u/221446?v=4){: style="max-width:64px; valign="center"}                      | Igor Montagner                    | [![](css/github.png)](http://github.com/igordsm)         |
+| ![Leonardo Pereira Medeiros](https://avatars1.githubusercontent.com/u/18487422?v=4){: style="max-width:64px; valign="center"}         | Leonardo Pereira Medeiros         | [![](css/github.png)](http://github.com/leostayner)      |
+| ![Lucas Scarlato Astur](https://avatars3.githubusercontent.com/u/17275576?v=4){: style="max-width:64px; valign="center"}              | Lucas Scarlato Astur              | [![](css/github.png)](http://github.com/lucassa3)        |
+| ![Pedro Cunial Campos](https://avatars0.githubusercontent.com/u/11504078?v=4){: style="max-width:64px; valign="center"}               | Pedro Cunial Campos               | [![](css/github.png)](http://github.com/pedrocunial)     |
+| ![Samuel Vinicius Granato de Barros](https://avatars3.githubusercontent.com/u/13368721?v=4){: style="max-width:64px; valign="center"} | Samuel Vinicius Granato De Barros | [![](css/github.png)](http://github.com/samuelgranato)   |
+| ![Vinicius Gomes de Lima](https://avatars3.githubusercontent.com/u/26411921?v=4){: style="max-width:64px; valign="center"}            | Vinicius Gomes De Lima            | [![](css/github.png)](http://github.com/vinigl)          |
+| ![Vitor Liu](https://avatars3.githubusercontent.com/u/8919126?v=4){: style="max-width:64px; valign="center"}                          | Vitor Liu                         | [![](css/github.png)](http://github.com/liuseeker)       |
+
+## Contribuições de código
+
 
 <details class="nota" open="">
     <summary> Servidor de desafios </summary>
@@ -485,36 +511,33 @@ Também incentivamos os alunos a participar de eventos externos de tecnologia e 
 </details>
 
 
-<h2> Eventos </h2>
+
+## Eventos
 
 <div class="event-grid">
     
-    <a href="https://thedevconf.com/tdc/2019/index.html">
-        <img src="../eventos/gabrielvr-tdc.jpg" class="event-picture">
-    </a>
-    
     <a href="https://www.meetup.com/pt-BR/Docker-Sao-Paulo/events/266295675/">
-        <img src="../eventos/evento_docker_lucas.jpeg" class="event-picture">
-    </a>
-    
-    <a href="https://www.sympla.com.br/dgy-5-data-science-saude-e-genomica__669340#info">
-        <img src="../eventos/hgg_event.jpeg" class="event-picture">
-    </a>
-    
-    <a href="#">
-        <img src="../eventos/gabrielvr-cubo.jpg" class="event-picture">
-    </a>
-    
-    <a href="https://www.meetup.com/pt-BR/Docker-Sao-Paulo/events/266295675/">
-        <img src="../eventos/pedrocc4_docker.jpeg" class="event-picture">
+        <img src="../eventos/2019/pedrocc4_docker.jpeg" class="event-picture">
     </a>
     
     <a href="https://www.meetup.com/pt-BR/arte-e-programacao/events/gtnklryzpbjc/">
-        <img src="../eventos/garoa-processing-1.jpg" class="event-picture">
+        <img src="../eventos/2019/garoa-processing-1.jpg" class="event-picture">
     </a>
     
     <a href="https://events.docker.com/events/details/docker-sao-paulo-presents-docker-sao-paulo-meetup-30-sumup-workshop/">
-        <img src="../eventos/gabrielvr-dockerWorkshop.jpeg" class="event-picture">
+        <img src="../eventos/2019/gabrielvr-dockerWorkshop.jpeg" class="event-picture">
+    </a>
+    
+    <a href="https://thedevconf.com/tdc/2019/index.html">
+        <img src="../eventos/2019/gabrielvr-tdc.jpg" class="event-picture">
+    </a>
+    
+    <a href="https://www.meetup.com/pt-BR/Docker-Sao-Paulo/events/266295675/">
+        <img src="../eventos/2019/evento_docker_lucas.jpeg" class="event-picture">
+    </a>
+    
+    <a href="https://www.sympla.com.br/dgy-5-data-science-saude-e-genomica__669340#info">
+        <img src="../eventos/2019/hgg_event.jpeg" class="event-picture">
     </a>
     
 </div>

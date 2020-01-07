@@ -1,3 +1,11 @@
 #alunos ~ table td, #avaliacao ~ table td {
     vertical-align: middle;
 }
+
+
+img.event-picture {
+    width: 32%;
+    height: 200px;
+    display: inline-block;
+    object-fit: cover;
+}
