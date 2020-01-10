@@ -59,17 +59,32 @@ def edit_achievements(student_login):
     else:
         editor = os.getenv('EDITOR', default='vi')
     
-    valid_json = False
-    while not valid_json:
+    while True:
         os.system(f'{editor} students/{student_login}.temp')
         with open(f'students/{student_login}.temp') as f:
             json_achievements = f.read()
         try:
             _ = json.loads(json_achievements)
-            valid_json = True
         except json.JSONDecodeError:
             print("Arquivo mal formatado.")
             time.sleep(2)
+            continue
+    
+        print('Validando skills no arquivo JSON....')
+        s = Student.load(student_login)
+        s._load_skills_from_string(json_achievements)
+        valid_skills = True
+        for ach in s.achievements:
+            try:
+                ach.validate_metadata()
+            except ValueError as e:
+                print('- ', ach, '\n\t', e)
+                valid_skills = False
+        if valid_skills:
+            break
+        time.sleep(2)
+        print('\n\n==================')
+    print('Nenhum erro encontrado!')
     save_encrypted(f'students/{student_login}-achievements', key, json_achievements)
 
     os.remove(f'students/{student_login}.temp')

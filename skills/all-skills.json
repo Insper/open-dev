@@ -29,7 +29,8 @@
         "icon": "monetization_on",
         "unique": true,
         "type": "Tutorial",
-        "mandatory": "D"
+        "mandatory": "D",
+        "metadata_requirements": ["group|List[str]"]
     },
 
     {
@@ -40,7 +41,8 @@
         "icon": "flight_takeoff",
         "unique": false,
         "type": "Tutorial",
-        "mandatory": "D"
+        "mandatory": "D",
+        "metadata_requirements": ["url|str"]
     },
     
     {

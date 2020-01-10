@@ -33,38 +33,41 @@ class Student:
         s = Student(json_dict['login'], json_dict['name'], json_dict.get('ghuser', ''), [])
         return s
 
+    def _load_skills_from_string(self, filename):
+        json_achievements = json.loads(filename)
+        for ach in json_achievements:
+            skill = all_skills[int(ach['skill_id'])]
+            metadata = ach['metadata']
+            self.achievements.append(Achievement(skill, metadata, self))
+            if 'shared_with' in metadata:
+                for login in metadata['shared_with']:
+                    try:
+                        all_students[login].achievements.append(Achievement(skill, metadata, self))
+                    except KeyError:
+                        print(f'Arquivo students/{self.login}-achievements mal formatado!')
+            if type(metadata) == dict and 'project' in metadata:
+                group_size = len(metadata['project']) 
+                for login in metadata['project']:
+                    try:
+                        project_points[login] += self.achievements[-1].xp() / group_size
+                    except KeyError:
+                        print(f'Arquivo students/{self.login}-achievements mal formatado!')
+
+            if type(metadata) == dict and ('copy_to' in metadata or 'copy-to' in metadata):
+                student_list = metadata.get('copy-to', metadata.get('copy_to'))
+                for login in student_list:
+                    try:
+                        all_students[login].achievements.append(Achievement(skill, metadata, self))
+                    except KeyError:
+                        print(f'Arquivo students/{self.login}-achievements mal formatado!')
+
+
     def load_skills(self):
         key = load_key(f'students/{self.login}.key')
         if key:
             json_achievements = load_encrypted(f'students/{self.login}-achievements', key)
             try:
-                json_achievements = json.loads(json_achievements)
-                for ach in json_achievements:
-                    skill = all_skills[int(ach['skill_id'])]
-                    metadata = ach['metadata']
-                    self.achievements.append(Achievement(skill, metadata, self))
-                    if 'shared_with' in metadata:
-                        for login in metadata['shared_with']:
-                            try:
-                                all_students[login].achievements.append(Achievement(skill, metadata, self))
-                            except KeyError:
-                                print(f'Arquivo students/{self.login}-achievements mal formatado!')
-                    if type(metadata) == dict and 'project' in metadata:
-                        group_size = len(metadata['project']) 
-                        for login in metadata['project']:
-                            try:
-                                project_points[login] += self.achievements[-1].xp() / group_size
-                            except KeyError:
-                                print(f'Arquivo students/{self.login}-achievements mal formatado!')
-
-                    if type(metadata) == dict and ('copy_to' in metadata or 'copy-to' in metadata):
-                        student_list = metadata.get('copy-to', metadata.get('copy_to'))
-                        for login in student_list:
-                            try:
-                                all_students[login].achievements.append(Achievement(skill, metadata, self))
-                            except KeyError:
-                                print(f'Arquivo students/{self.login}-achievements mal formatado!')
-
+                self._load_skills_from_string(json_achievements)
             except json.JSONDecodeError:
                 print(f'Arquivo students/{self.login}-achievements mal formatado!')
             self.has_key = True
