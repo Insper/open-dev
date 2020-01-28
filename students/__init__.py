@@ -23,7 +23,7 @@ class Student:
 {{
     "login": "{self.login}",
     "name": "{self.name}",
-    "avatar": "{self.avatar}"
+    "ghuser": "{self.ghuser}"
 }}'''
 
     @staticmethod

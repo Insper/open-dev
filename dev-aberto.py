@@ -38,8 +38,8 @@ def new_user():
 
     student_key = create_key(f'students/{student_login}.key')
     student_name = input('nome completo: ')
-    student_avatar = input('imagem de avatar: ')
-    s = Student(student_login, student_name, student_avatar, [])
+    ghname = input('usuário do github: ')
+    s = Student(student_login, student_name, ghname, [])
     write_string_to_file(f'students/{student_login}', s.toJSON())
     
     save_encrypted(f'students/{student_login}-achievements', student_key, '[]')
