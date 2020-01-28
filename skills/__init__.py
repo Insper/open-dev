@@ -12,7 +12,13 @@ def validate_type(obj, type_string):
         if not isinstance(obj, list):
             return False
         return all(isinstance(el, element_type) for el in obj) and len(obj) > 0
-    
+    if type_string == 'date':
+        try:
+            d = datetime.datetime.strptime(obj, '%Y-%m-%d')
+        except ValueError:
+            return False
+        return True
+
     return isinstance(obj, eval(type_string))
 
 class Skill:
@@ -27,7 +33,7 @@ class Skill:
         self.type = type
         self.mandatory = mandatory
 
-        self.metadata_requirements = []
+        self.metadata_requirements = [('date', 'date')]
         for mt in metadata_requirements:
             field_name, field_type = mt.split('|')
             self.metadata_requirements.append((field_name, field_type))        
@@ -58,14 +64,15 @@ class Achievement:
             if not validate_type(self.metadata[field_name], field_type):
                 raise ValueError(f'Campo {field_name} não é do tipo {field_type}')
 
-
     def xp(self):
-        if not self.validate_metadata():
+        try:
+            self.validate_metadata()
+            if 'xp' in self.metadata:
+                return float(self.metadata['xp'])
+            else:
+                return self.skill.xp
+        except ValueError:
             return 0
-        if 'xp' in self.metadata:
-            return float(self.metadata['xp'])
-        else:
-            return self.skill.xp
 
 skills_file = os.path.dirname(__file__) + '/all-skills.json'
 with open(skills_file) as f:
