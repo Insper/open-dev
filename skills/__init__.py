@@ -22,7 +22,7 @@ def validate_type(obj, type_string):
     return isinstance(obj, eval(type_string))
 
 class Skill:
-    def __init__(self, id, name, descr, xp, icon, unique, type, mandatory='-', metadata_requirements=[]):
+    def __init__(self, id, name, descr, xp, icon, unique, type, mandatory='-', metadata_requirements=[], date_limit='2020-12-31'):
         self.id = id
         self.name = name
         self.descr = descr
@@ -32,6 +32,7 @@ class Skill:
         self.unique = unique
         self.type = type
         self.mandatory = mandatory
+        self.date_limit = datetime.datetime.strptime(date_limit, '%Y-%m-%d')
 
         self.metadata_requirements = [('date', 'date')]
         for mt in metadata_requirements:
@@ -45,14 +46,13 @@ class Skill:
         return pprint.pformat(vars(self))
 
 class Achievement:
-    def __init__(self, skill, metadata, user, date=datetime.date.today()):
+    def __init__(self, skill, metadata, user):
         self.skill = skill
         self.metadata = metadata
         self.user = user
-        self.date = date
     
     def __str__(self):
-        return f'Achievement: skill_id: {self.skill.id}, date: {self.date}'
+        return f'Achievement: skill_id: {self.skill.id}'
 
 
     def validate_metadata(self):
@@ -67,6 +67,9 @@ class Achievement:
     def xp(self):
         try:
             self.validate_metadata()
+            date = datetime.datetime.strptime(self.metadata['date'], '%Y-%m-%d')
+            if date > self.skill.date_limit:
+                return 0
             if 'xp' in self.metadata:
                 return float(self.metadata['xp'])
             else:

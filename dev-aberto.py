@@ -103,8 +103,8 @@ def load_skill_and_check_done(skill_name, st):
 def student_has_skill(st, skill):
     for ach in st.achievements:
         if ach.skill.id == skill.id:
-            return True
-    return False
+            return ach.xp()
+    return -1
 
 @dev_aberto_cli.command()
 @click.argument('student_login')

@@ -65,9 +65,11 @@ Para obter este conceito é necessário obter as seguintes skills:
 
 <div class="skill-list-done">
 <ul class="achievements">
-{% for done,sk in doneD %} 
-    {% if done %}
+{% for xp,sk in doneD %} 
+    {% if xp > 0 %}
         <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
+    {% elif xp == 0 %}
+        <li> <i class="material-icons yellow"> {{ sk.icon }} </i> {{ sk.name}}  </li>
     {% else %}
         <li> <i class="material-icons red" > {{ sk.icon }} </i> {{ sk.name}} </li>
     {% endif %}
@@ -81,13 +83,16 @@ Para obter este conceito é necessário no mínimo <b>60XP</b> e obter as seguin
 
 <div class="skill-list-done">
 <ul class="achievements">
-{% for done,sk in doneC %} 
-    {% if done %}
+{% for xp,sk in doneC %} 
+    {% if xp > 0 %}
         <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
+    {% elif xp == 0 %}
+        <li> <i class="material-icons yellow"> {{ sk.icon }} </i> {{ sk.name}}  </li>
     {% else %}
         <li> <i class="material-icons red" > {{ sk.icon }} </i> {{ sk.name}} </li>
     {% endif %}
 {% endfor %}
+
 </ul>
 </div>
 
@@ -97,9 +102,11 @@ Para obter este conceito é necessário no mínimo <b>100XP</b> e obter as segui
 
 <div class="skill-list-done">
 <ul class="achievements">
-{% for done,sk in doneB %} 
-    {% if done %}
+{% for xp,sk in doneB %} 
+    {% if xp > 0 %}
         <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
+    {% elif xp == 0 %}
+        <li> <i class="material-icons yellow"> {{ sk.icon }} </i> {{ sk.name}}  </li>
     {% else %}
         <li> <i class="material-icons red" > {{ sk.icon }} </i> {{ sk.name}} </li>
     {% endif %}
