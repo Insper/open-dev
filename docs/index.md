@@ -1,4 +1,4 @@
-# Desenvolvimento aberto 2019/2
+# Desenvolvimento aberto 2020/1
 
 Bem-vindo à pagina de Desenvolvimento Aberto de 2019/2. Neste site você encontrará todas as aulas da disciplina, as regras de aprovação e as atividades aceitas. Os objetivos de aprendizagem trabalhados são:
 
