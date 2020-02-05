@@ -4,8 +4,6 @@ title: Ciclo de vida de um Bug
 footer: 'Igor Montagner ![License CC BY-NC-SA 4.0](../cc-by-nc-sa.png)'
 ---
 
-<!-- $theme: default -->
-
 <style>
 	footer {
 		position: fixed;
