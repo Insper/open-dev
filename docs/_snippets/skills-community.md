@@ -4,6 +4,4 @@
 |   41 | !material-large:refresh         | Metacontribuição       | Fez uma contribuição simples no repositório da matéria.                                                                 |    2 |
 |   42 | !material-large:mic             | Palestrante            | Fez uma palestra sobre bibliotecas ou softwares livres.                                                                 |   10 |
 |   43 | !material-large:question_answer | Helpdesk               | Teve uma resposta aceita em sites como StackOverflow ou em listas de email                                              |    4 |
-|   44 | !material-large:nop             | Hacktoberfest          | Teve 4 PRs feitos em Outubro e foi validado pelo site do evento.                                                        |   20 |
-|   45 | !material-large:nop             | Hacktoberfest groupie  | Sua camiseta chegou a tempo para usá-la na disciplina e você veio com ela um dia.                                       |    1 |
-|   46 | !material-large:call            | Convidado VIP          | Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill. |    5 |
+|   44 | !material-large:call            | Convidado VIP          | Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill. |    5 |

@@ -8,8 +8,8 @@ Conceito | Pontuação            | Critérios extras
 -------- | -------------------- | ------------------------------------------
 I        | ----                 | Não fez alguma das atividades de tutorial
 D        | ----                 | Completou todas atividades de aula, mas não completou as atividades para o *C*
-C        | 60XP                 | Obteve skill dos três tipos: <li>Contribuição de código</li><li>Tradução aceita!</li><li>Atividade de comunidade</li>
-B        | 100XP                | <li>Contribuição de código aceita</li><li>Participação em evento de tecnologia</li>
+C        | 60XP                 | <li>Contribuição de código</li><li>Tradução aceita!</li><li>Participação em evento</li>
+B        | 100XP                | <li>Contribuição de código aceita</li>
 A        | 200XP                | 
 
 Durante o semestre as pontuações da tabela acima podem passar por revisões para baixo, mas nunca para cima. 

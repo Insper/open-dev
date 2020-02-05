@@ -1,13 +1,11 @@
 |   id |                                   | Nome                               | Descrição                                                                                       |   XP |
 |-----:|:----------------------------------|:-----------------------------------|:------------------------------------------------------------------------------------------------|-----:|
 |    1 | !material-large:person_add        | Primeiros passos                   | Se adicionou no repositório da disciplina.                                                      |    2 |
-|    2 | !material-large:work              | Expectativas                       | Completou atividade de expectativas da disciplina.                                              |    2 |
-|    3 | !material-large:monetization_on   | Explorando o entorno de um projeto | Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.         |    2 |
-|    4 | !material-large:flight_takeoff    | Minha primeira contribuição        | Primeiro PR enviado corrigindo um bug simples.                                                  |    5 |
-|    6 | !material-large:explore           | Projeto não documentado            | Recebeu um sistema sem documentação e o pôs para funcionar.                                     |    2 |
-|    7 | !material-large:font_download     | Tradução básica                    | Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando. |    2 |
-|    8 | !material-large:star              | Projeto Profissional               | Reformou um código mal feito e criou uma página web para ele.                                   |    5 |
-|    9 | !material-large:work              | Pacote Python                      | Criou um pacote python instalável via pip.                                                      |    2 |
-|   10 | !material-large:build             | Projeto DIY                        | Contribuiu com um projeto educacional livre do Insper                                           |    5 |
-|   11 | !material-large:record_voice_over | Apresentação Final                 | Fez uma apresentação de um tema relacionado a software livre e código aberto.                   |    5 |
-|   12 | !material-large:work              | Projeto                            |                                                                                                 |    0 |
+|    2 | !material-large:monetization_on   | Explorando o entorno de um projeto | Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.         |    2 |
+|    3 | !material-large:flight_takeoff    | Minha primeira contribuição        | Primeiro PR enviado corrigindo um bug simples.                                                  |    5 |
+|    4 | !material-large:explore           | Projeto não documentado            | Recebeu um sistema sem documentação e o pôs para funcionar.                                     |    2 |
+|    5 | !material-large:font_download     | Tradução básica                    | Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando. |    2 |
+|    6 | !material-large:star              | Projeto Profissional               | Reformou um código mal feito e criou uma página web para ele.                                   |    5 |
+|    7 | !material-large:work              | Pacote Python                      | Criou um pacote python instalável via pip.                                                      |    2 |
+|    8 | !material-large:build             | Projeto DIY                        | Contribuiu com um projeto educacional livre do Insper                                           |    5 |
+|    9 | !material-large:record_voice_over | Apresentação Final                 | Fez uma apresentação de um tema relacionado a software livre e código aberto.                   |    5 |
