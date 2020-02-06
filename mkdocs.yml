@@ -11,6 +11,7 @@ extra_css:
 
 nav:
   - 'Home': 'index.md'
+  - 'burocracias.md'
   - 'Skills e avaliação': 'regras.md'
   - 'Alunos': 'alunos.md'
   - 'Impacto': 
