@@ -341,7 +341,16 @@ A partir do momento em que é lançado, uma série de serviços e processos acom
 
 **Objetivo**: Enviar seu primeiro *Pull Request* para o repositório da disciplina. 
 
+**Parte 2** do handout da aula de hoje. 
+
 ---
+
+# Atividade extra
+
+Olhar as issues do arquivo *issues-pandas.txt* e começar a construir um ambiente de desenvolvimento. 
+
+**Só fazer isto se o seu grupo tiver seus PRs aceitos durante a aula**. 
+
 
 Desenvolvimento Aberto
 ===
