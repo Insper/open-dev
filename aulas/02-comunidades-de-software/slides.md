@@ -269,6 +269,14 @@ Nem sempre o que é financiado termina em um formato "aproveitável" por terceir
 
 ---
 
+# Erro 0: o arquivo *login-achievements*
+
+![width:1000px](erro0-data-errada.png)
+
+**Como consertar**: Crie um novo commit com a data certa e veja o erro 2.
+
+-----
+
 # Erro 1: arquivos extras no PR
 
 **Erro**: modificar arquivos não relacionados a sua mudança proposta.
@@ -342,6 +350,13 @@ Fonte: https://www.atlassian.com/git/tutorials/
 ![width:1000px](erro3-msg-commit.png)
 
 **Como consertar**: `git commit --amend` permite modificar o último commit feito. 
+
+----
+# Erro 4: Pull Request com descrição ruim
+
+![width:1000px](erro4-descricao-pr.png)
+
+**Como consertar**: Só editar na interface do Github. 
 
 ---
 
