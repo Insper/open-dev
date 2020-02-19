@@ -14,7 +14,7 @@
         "id": 2,
         "name": "Explorando o entorno de um projeto",
         "descr": "Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.",
-        "xp": 2,
+        "xp": 3,
         "icon": "monetization_on",
         "unique": true,
         "type": "Tutorial",
@@ -31,7 +31,7 @@
         "unique": false,
         "type": "Tutorial",
         "mandatory": "D",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str", "group|List[str]"]
     },
     
     {
