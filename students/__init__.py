@@ -1,6 +1,7 @@
 
 import os
 from collections import namedtuple
+import itertools
 
 from skills import Skill, Achievement, all_skills
 from utils import *
@@ -30,37 +31,34 @@ class Student:
     def load(student_login):
         json_dict = load_from_file(f'students/{student_login}')
         json_dict = json.loads(json_dict)
-        s = Student(json_dict['login'], json_dict['name'], json_dict.get('ghuser', ''), [])
+        s = Student(json_dict['login'], json_dict['name'], json_dict.get('ghuser', ''), {})
         return s
+
+    @property
+    def all_achievements(self):
+        return itertools.chain(*self.achievements.values())
+
+    def _add_achievement(self, ach):
+        if not ach.skill.id in self.achievements:
+            self.achievements[ach.skill.id] = []
+
+        self.achievements[ach.skill.id].append(ach)
 
     def _load_skills_from_string(self, filename):
         json_achievements = json.loads(filename)
         for ach in json_achievements:
-            skill = all_skills[int(ach['skill_id'])]
+            skill_id = all_skills[int(ach['skill_id'])]
             metadata = ach['metadata']
-            self.achievements.append(Achievement(skill, metadata, self))
-            if 'shared_with' in metadata:
-                for login in metadata['shared_with']:
-                    try:
-                        all_students[login].achievements.append(Achievement(skill, metadata, self))
-                    except KeyError:
-                        print(f'Arquivo students/{self.login}-achievements mal formatado!')
-            if type(metadata) == dict and 'project' in metadata:
-                group_size = len(metadata['project']) 
-                for login in metadata['project']:
-                    try:
-                        project_points[login] += self.achievements[-1].xp() / group_size
-                    except KeyError:
-                        print(f'Arquivo students/{self.login}-achievements mal formatado!')
 
-            if type(metadata) == dict and ('copy_to' in metadata or 'copy-to' in metadata):
-                student_list = metadata.get('copy-to', metadata.get('copy_to'))
-                for login in student_list:
+            self._add_achievement(Achievement(skill_id, metadata, self))
+
+            if 'group' in metadata:
+                for login in metadata['group']:
                     try:
-                        all_students[login].achievements.append(Achievement(skill, metadata, self))
+                        all_students[login]._add_achievement(Achievement(skill_id, metadata, self))
                     except KeyError:
                         print(f'Arquivo students/{self.login}-achievements mal formatado!')
-
+            
 
     def load_skills(self):
         key = load_key(f'students/{self.login}.key')
@@ -74,7 +72,7 @@ class Student:
 
     def compute_grade(self):
         total_xp = 0
-        for ach in self.achievements:
+        for ach in self.all_achievements:
             if 'shared_with' in ach.metadata:
                 xp_achi = ach.xp() / (len(ach.metadata['shared_with'])+1)
             else:

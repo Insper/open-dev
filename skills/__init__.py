@@ -11,7 +11,7 @@ def validate_type(obj, type_string):
         element_type = eval(type_string.split('[')[1][:-1])
         if not isinstance(obj, list):
             return False
-        return all(isinstance(el, element_type) for el in obj) and len(obj) > 0
+        return all(isinstance(el, element_type) for el in obj)
     if type_string == 'date':
         try:
             d = datetime.datetime.strptime(obj, '%Y-%m-%d')
@@ -48,6 +48,7 @@ class Skill:
 class Achievement:
     def __init__(self, skill, metadata, user):
         self.skill = skill
+        self.date = datetime.datetime.strptime(metadata['date'], '%Y-%m-%d')
         self.metadata = metadata
         self.user = user
     
@@ -67,8 +68,7 @@ class Achievement:
     def xp(self):
         try:
             self.validate_metadata()
-            date = datetime.datetime.strptime(self.metadata['date'], '%Y-%m-%d')
-            if date > self.skill.date_limit:
+            if self.date > self.skill.date_limit:
                 return 0
             if 'xp' in self.metadata:
                 return float(self.metadata['xp'])

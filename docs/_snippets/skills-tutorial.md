@@ -1,7 +1,7 @@
 |   id |                                   | Nome                               | Descrição                                                                                       |   XP |
 |-----:|:----------------------------------|:-----------------------------------|:------------------------------------------------------------------------------------------------|-----:|
 |    1 | !material-large:person_add        | Primeiros passos                   | Se adicionou no repositório da disciplina.                                                      |    2 |
-|    2 | !material-large:monetization_on   | Explorando o entorno de um projeto | Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.         |    2 |
+|    2 | !material-large:monetization_on   | Explorando o entorno de um projeto | Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.         |    3 |
 |    3 | !material-large:flight_takeoff    | Minha primeira contribuição        | Primeiro PR enviado corrigindo um bug simples.                                                  |    5 |
 |    4 | !material-large:explore           | Projeto não documentado            | Recebeu um sistema sem documentação e o pôs para funcionar.                                     |    2 |
 |    5 | !material-large:font_download     | Tradução básica                    | Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando. |    2 |

@@ -10,6 +10,7 @@ import re
 import copy
 import markdown
 import tabulate
+import itertools
 
 import sys
 import time
@@ -74,7 +75,7 @@ def edit_achievements(student_login):
         s = Student.load(student_login)
         s._load_skills_from_string(json_achievements)
         valid_skills = True
-        for ach in s.achievements:
+        for ach in s.all_achievements:
             try:
                 ach.validate_metadata()
             except ValueError as e:
@@ -101,10 +102,10 @@ def load_skill_and_check_done(skill_name, st):
     return skill_list
 
 def student_has_skill(st, skill):
-    for ach in st.achievements:
-        if ach.skill.id == skill.id:
-            return ach.xp()
-    return -1
+    xp_total = -1
+    for ach in st.achievements.get(skill.id, []):
+        xp_total += ach.xp()
+    return xp_total
 
 @dev_aberto_cli.command()
 @click.argument('student_login')
@@ -125,7 +126,7 @@ def compute_grade(student_login):
     mandatoryB = [sk for sk in all_skills.values() if sk.mandatory == 'B']
     doneB = [(student_has_skill(st, sk), sk) for sk in mandatoryB]
 
-    done_all = [ach for ach in st.achievements if ach.skill.mandatory == '-']
+    done_all = [ach for ach in st.all_achievements if ach.skill.mandatory == '-']
     done_all = sorted(done_all, key=lambda t: t.date)
 
     conceito = 'I'
@@ -218,7 +219,7 @@ def build_site():
     num_eventos = 0
     num_aceitos = 0
     for student in all_students.values():
-        for ach in student.achievements:
+        for ach in student.all_achievements:
             if ach.skill.id == 10 and ach.user == student:
                 info_insper.append(ach)
 
@@ -229,7 +230,9 @@ def build_site():
 
             if ach.skill.id == 22 and ach.user == student:
                 num_aceitos += 1
-            if ach.skill.id in [4, 5] and ach.user == student:
+
+            # Skill Minha primeira contribuição
+            if ach.skill.id == 3 and ach.user == student:
                 if isinstance(ach.metadata, dict):
                     url = ach.metadata['url']
                 else:

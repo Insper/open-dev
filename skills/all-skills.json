@@ -18,10 +18,9 @@
         "icon": "monetization_on",
         "unique": true,
         "type": "Tutorial",
-        "mandatory": "D",
-        "metadata_requirements": ["group|List[str]"]
+        "metadata_requirements": ["group|List[str]"],
+        "date_limit": "2020-04-01"
     },
-
     {
         "id": 3,
         "name": "Minha primeira contribuição",
@@ -31,7 +30,8 @@
         "unique": false,
         "type": "Tutorial",
         "mandatory": "D",
-        "metadata_requirements": ["url|str", "group|List[str]"]
+        "metadata_requirements": ["url|str", "group|List[str]"],
+        "date_limit": "2020-04-01"
     },
     
     {
