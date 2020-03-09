@@ -5,3 +5,5 @@
 |   42 | !material-large:mic             | Palestrante            | Fez uma palestra sobre bibliotecas ou softwares livres.                                                                 |   10 |
 |   43 | !material-large:question_answer | Helpdesk               | Teve uma resposta aceita em sites como StackOverflow ou em listas de email                                              |    4 |
 |   44 | !material-large:call            | Convidado VIP          | Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill. |    5 |
+|   45 | !material-large:public          | Contribuição publicada | Uma contribuição sua foi incluída em um release.                                                                        |    5 |
+|   46 | !material-large:replay_10       | Replay de PR           | Apresentou (em 10 minutos) o processo de resolução de um bug na aula.                                                   |    5 |
