@@ -7,3 +7,4 @@
 |   24 | !material-large:swap_calls        | Issue indireta                 | Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias.         |    2 |
 |   25 | !material-large:bug_report        | Beta tester                    | Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue.     |    2 |
 |   26 | !material-large:done              | Contribuição (simples) aceita! | Um PR simples (com mudanças triviais ou pequenas refatorações de código) foi aceito por um projeto externo. |    2 |
+|   27 | !material-large:school            | Projeto INSPER                 | Fez mais contribuições a um projeto educacional do INSPER                                                   |    5 |
