@@ -18,7 +18,7 @@
         "icon": "monetization_on",
         "unique": true,
         "type": "Tutorial",
-        "metadata_requirements": ["group|List[str]"],
+        "metadata_requirements": ["group|List[str]", "filename|str"],
         "date_limit": "2020-04-01"
     },
     {
@@ -42,7 +42,8 @@
         "icon": "explore",
         "unique": true,
         "type": "Tutorial",
-        "mandatory": "D"
+        "mandatory": "D",
+        "date_limit": "2020-04-01"
     },
     
     {
@@ -53,7 +54,8 @@
         "icon": "font_download",
         "unique": true,
         "type": "Tutorial",
-        "mandatory": "D"
+        "mandatory": "D",
+        "date_limit": "2020-04-01"
     },
 
     {
@@ -84,16 +86,6 @@
         "descr": "Contribuiu com um projeto educacional livre do Insper",
         "xp": 5,
         "icon": "build",
-        "unique": true,
-        "type": "Tutorial",
-        "mandatory": "D"
-    },
-    {
-        "id": 9,
-        "name": "Apresentação Final",
-        "descr": "Fez uma apresentação de um tema relacionado a software livre e código aberto.",
-        "xp": 5,
-        "icon": "record_voice_over",
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D"
@@ -166,7 +158,15 @@
         "unique": false,
         "type": "Code"
     },
-
+    {
+        "id": 27,
+        "name": "Projeto INSPER",
+        "descr": "Fez mais contribuições a um projeto educacional do INSPER",
+        "xp": 5,
+        "icon": "school",
+        "unique": false,
+        "type": "Code"
+    },
 
     {
         "id": 30,
@@ -262,7 +262,28 @@
         "icon": "call",
         "unique": true,
         "type": "Community"
-    } 
+    },
+    { 
+        "id": 45,
+        "name": "Contribuição publicada",
+        "descr": "Uma contribuição sua foi incluída em um release.",
+        "xp": 5,
+        "icon": "public",
+        "unique": false,
+        "type": "Community",
+       "metadata_requirements": ["commit_url|str", "release_url|str"]
+    },
+    { 
+        "id": 46,
+        "name": "Replay de PR",
+        "descr": "Apresentou (em 10 minutos) o processo de resolução de um bug na aula.",
+        "xp": 5,
+        "icon": "replay_10",
+        "unique": false,
+        "type": "Community",
+       "metadata_requirements": ["url|str"]
+    }   
+ 
 
     
 ]
