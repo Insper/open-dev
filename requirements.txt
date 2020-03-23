@@ -4,3 +4,4 @@ click
 markdown
 pymdown-extensions
 tabulate
+requests
