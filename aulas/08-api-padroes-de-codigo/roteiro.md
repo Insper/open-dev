@@ -18,7 +18,7 @@ Nosso código está mal formatado e tem várias práticas ruins de programação
 
 Ele não precisa estar 100%, mas você precisa eliminar grande parte dos erros mais bizarros. 
 
-# Parte 2 - trabalhando com Sphinx
+# Parte 2 - trabalhando com MkDocs
 
 
 Agora vamos trabalhar com [mkdocs](https://www.mkdocs.org/) para gerar uma página web de documentação para o projeto. As seguintes páginas deverão ser criadas.
