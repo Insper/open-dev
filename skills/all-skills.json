@@ -100,6 +100,7 @@
         "icon": "flight_takeoff",
         "unique": false,
         "type": "Code",
+        "metadata_requirements": ["url|str"],
         "mandatory": "C"
     },
 
@@ -110,6 +111,7 @@
         "xp": 1,
         "icon": "report_problem",
         "unique": false,
+        "metadata_requirements": ["url|str"],
         "type": "Code"
     },
     {
@@ -119,6 +121,7 @@
         "xp": 1,
         "icon": "add_shopping_cart",
         "unique": false,
+        "metadata_requirements": ["url|str"],
         "type": "Code"
     },
     {
@@ -129,6 +132,7 @@
         "icon": "done_all",
         "unique": false,
         "type": "Code",
+        "metadata_requirements": ["url|str"],
         "mandatory": "B"
     },
     {
@@ -224,8 +228,7 @@
         "xp": 7,
         "icon": "event_available",
         "unique": false,
-        "type": "Community",
-        "mandatory": "C"
+        "type": "Community"
     },
     {
         "id": 41,
