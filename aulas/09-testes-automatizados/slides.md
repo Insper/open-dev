@@ -1,6 +1,6 @@
 ---
 marp: true
-title: Documentação de API e linters
+title: Testes automatizados
 footer: 'Igor Montagner ![License CC BY-NC-SA 4.0](../cc-by-nc-sa.png)'
 ---
 
@@ -146,7 +146,7 @@ Permite fazer scripts que interagem com uma página web, realizando entrada de d
 
 ----
 
-# Atividade prática: Projeto profissional
+# Atividade prática: Testado e aprovado
 
 
 ![width:256px](https://fonts.gstatic.com/s/i/materialicons/sentiment_very_satisfied/v4/24px.svg?download=true)
@@ -157,7 +157,7 @@ Permite fazer scripts que interagem com uma página web, realizando entrada de d
 
 ----
 
-# Atividade prática: Projeto profissional
+# Atividade prática: Testado e aprovado
 
 1. Criar testes de interface de usuário usando *Selenium*
     - [tutorial](https://selenium-python.readthedocs.io/)

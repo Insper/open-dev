@@ -131,7 +131,7 @@ Ajudam a manter código limpo e legível. Podem ser plugadas no seu editor favor
 
 # Atividade prática: Projeto profissional
 
-![width:256px](https://fonts.gstatic.com/s/i/materialicons/explore/v4/24px.svg?download=true)
+![width:256px](https://fonts.gstatic.com/s/i/materialicons/star/v4/24px.svg?download=true)
 
 
 **Objetivo**: Transformar um código perdido em um projeto "completo"
