@@ -1,10 +1,11 @@
-|   id |                                 | Nome                               | Descrição                                                                                       |   XP |
-|-----:|:--------------------------------|:-----------------------------------|:------------------------------------------------------------------------------------------------|-----:|
-|    1 | !material-large:person_add      | Primeiros passos                   | Se adicionou no repositório da disciplina.                                                      |    2 |
-|    2 | !material-large:monetization_on | Explorando o entorno de um projeto | Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.         |    3 |
-|    3 | !material-large:flight_takeoff  | Minha primeira contribuição        | Primeiro PR enviado corrigindo um bug simples.                                                  |    5 |
-|    4 | !material-large:explore         | Projeto não documentado            | Recebeu um sistema sem documentação e o pôs para funcionar.                                     |    2 |
-|    5 | !material-large:font_download   | Tradução básica                    | Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando. |    2 |
-|    6 | !material-large:star            | Projeto Profissional               | Reformou um código mal feito e criou uma página web para ele.                                   |    5 |
-|    7 | !material-large:work            | Pacote Python                      | Criou um pacote python instalável via pip.                                                      |    2 |
-|    8 | !material-large:build           | Projeto DIY                        | Contribuiu com um projeto educacional livre do Insper                                           |    5 |
+|   id |                                          | Nome                               | Descrição                                                                                       |   XP |
+|-----:|:-----------------------------------------|:-----------------------------------|:------------------------------------------------------------------------------------------------|-----:|
+|    1 | !material-large:person_add               | Primeiros passos                   | Se adicionou no repositório da disciplina.                                                      |    2 |
+|    2 | !material-large:monetization_on          | Explorando o entorno de um projeto | Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.         |    3 |
+|    3 | !material-large:flight_takeoff           | Minha primeira contribuição        | Primeiro PR enviado corrigindo um bug simples.                                                  |    5 |
+|    4 | !material-large:explore                  | Projeto não documentado            | Recebeu um sistema sem documentação e o pôs para funcionar.                                     |    2 |
+|    5 | !material-large:font_download            | Tradução básica                    | Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando. |    2 |
+|    6 | !material-large:star                     | Projeto Profissional               | Reformou um código mal feito e criou uma página web para ele.                                   |    5 |
+|    7 | !material-large:sentiment_very_satisfied | Testado e Aprovado                 | Criou testes de unidade e de interface para o servidor de desafios.                             |    5 |
+|    8 | !material-large:work                     | Pacote Python                      | Criou um pacote python instalável via pip.                                                      |    3 |
+|    9 | !material-large:build                    | Projeto DIY                        | Contribuiu com um projeto educacional livre do Insper                                           |    5 |
