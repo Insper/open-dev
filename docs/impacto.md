@@ -1,4 +1,4 @@
-Um dos grandes objetivos de *Desenvolvimento Aberto* é participar de maneira efetiva de projetos de software existentes. Na edição de 2019/2 os alunos enviaram trabalharam em **1** projetos diferentes, contribuindo com **1** modificações de código, sendo que **0** foram incorporados aos projetos originais. Além destes projetos, os alunos também trabalharam no [Servidor de Desafios](http://github.com/insper/servidor-de-desafios), um software desenvolvido pelos professores do Insper para ser usado na disciplina Design de Software. Foram <b>0</b> modificações aceitas que já foram usadas durante o próprio semestre. 
+Um dos grandes objetivos de *Desenvolvimento Aberto* é participar de maneira efetiva de projetos de software existentes. Na edição de 2019/2 os alunos enviaram trabalharam em **3** projetos diferentes, contribuindo com **3** modificações de código, sendo que **0** foram incorporados aos projetos originais. Além destes projetos, os alunos também trabalharam no [Servidor de Desafios](http://github.com/insper/servidor-de-desafios), um software desenvolvido pelos professores do Insper para ser usado na disciplina Design de Software. Foram <b>0</b> modificações aceitas que já foram usadas durante o próprio semestre. 
 
 Também incentivamos os alunos a participar de eventos externos de tecnologia e experimentar o mundo fora do Insper. No total, os alunos participaram em <b>0</b> eventos. 
 
@@ -11,6 +11,34 @@ Também incentivamos os alunos a participar de eventos externos de tecnologia e 
     </ul>
 </details>
 
+
+<details class="note">
+<summary> Btroblox</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/AntiBoomz/BTRoblox/pull/24> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/AntiBoomz/BTRoblox/24?label=%20></span> - https://github.com/AntiBoomz/BTRoblox/pull/24</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Pydash</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/dgilland/pydash/pull/137> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/dgilland/pydash/137?label=%20></span> - https://github.com/dgilland/pydash/pull/137</a></li>  
+
+
+</ul>
+
+</details>
 
 <details class="note">
 <summary> Files</summary>

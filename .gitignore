@@ -8,6 +8,7 @@ __pycache__
 
 site/*
 .vscode
+oss/*
 
 
 ## Alguns outros gerados no gitignore.io

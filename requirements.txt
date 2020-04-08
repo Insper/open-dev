@@ -4,3 +4,5 @@ click
 markdown
 pymdown-extensions
 tabulate
+requests
+mkdocs-material

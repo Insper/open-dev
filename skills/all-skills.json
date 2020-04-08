@@ -66,22 +66,38 @@
         "icon": "star",
         "unique": true,
         "type": "Tutorial",
-        "mandatory": "D"
+        "mandatory": "D",
+        "metadata_requirements": ["url|str", "group|List[str]"]
     },
 
     {
         "id": 7,
-        "name": "Pacote Python",
-        "descr": "Criou um pacote python instalável via pip.",
-        "xp": 2,
-        "icon": "work",
+        "name": "Testado e Aprovado",
+        "descr": "Criou testes de unidade e de interface para o servidor de desafios.",
+        "xp": 5,
+        "icon": "sentiment_very_satisfied",
         "unique": true,
         "type": "Tutorial",
-        "mandatory": "D"
+        "mandatory": "D",
+        "metadata_requirements": ["url|str", "group|List[str]"]
+
     },
 
     {
         "id": 8,
+        "name": "Pacote Python",
+        "descr": "Criou um pacote python instalável via pip.",
+        "xp": 3,
+        "icon": "work",
+        "unique": true,
+        "type": "Tutorial",
+        "mandatory": "D",
+        "metadata_requirements": ["url|str"]
+
+    },
+
+    {
+        "id": 9,
         "name": "Projeto DIY",
         "descr": "Contribuiu com um projeto educacional livre do Insper",
         "xp": 5,
@@ -100,6 +116,7 @@
         "icon": "flight_takeoff",
         "unique": false,
         "type": "Code",
+        "metadata_requirements": ["url|str"],
         "mandatory": "C"
     },
 
@@ -110,6 +127,7 @@
         "xp": 1,
         "icon": "report_problem",
         "unique": false,
+        "metadata_requirements": ["url|str"],
         "type": "Code"
     },
     {
@@ -119,6 +137,7 @@
         "xp": 1,
         "icon": "add_shopping_cart",
         "unique": false,
+        "metadata_requirements": ["url|str"],
         "type": "Code"
     },
     {
@@ -129,6 +148,7 @@
         "icon": "done_all",
         "unique": false,
         "type": "Code",
+        "metadata_requirements": ["url|str"],
         "mandatory": "B"
     },
     {
@@ -224,8 +244,7 @@
         "xp": 7,
         "icon": "event_available",
         "unique": false,
-        "type": "Community",
-        "mandatory": "C"
+        "type": "Community"
     },
     {
         "id": 41,
