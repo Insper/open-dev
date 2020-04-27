@@ -8,7 +8,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2020-04-01"
+        "date_limit": "2020-04-24"
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@
         "unique": true,
         "type": "Tutorial",
         "metadata_requirements": ["group|List[str]", "filename|str"],
-        "date_limit": "2020-04-01"
+        "date_limit": "2020-04-24"
     },
     {
         "id": 3,
@@ -31,7 +31,7 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2020-04-01"
+        "date_limit": "2020-04-24"
     },
     
     {
@@ -43,7 +43,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2020-04-01"
+        "date_limit": "2020-04-24"
     },
     
     {
@@ -55,7 +55,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2020-04-01"
+        "date_limit": "2020-04-24"
     },
 
     {
@@ -67,7 +67,8 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "metadata_requirements": ["url|str", "group|List[str]"]
+        "metadata_requirements": ["url|str", "group|List[str]"],
+        "date_limit": "2020-04-24"
     },
 
     {
@@ -79,7 +80,8 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "metadata_requirements": ["url|str", "group|List[str]"]
+        "metadata_requirements": ["url|str", "group|List[str]"],
+        "date_limit": "2020-04-24"
 
     },
 
@@ -92,7 +94,8 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2020-04-24"
 
     },
 
@@ -104,7 +107,8 @@
         "icon": "build",
         "unique": true,
         "type": "Tutorial",
-        "mandatory": "D"
+        "mandatory": "D",
+        "date_limit": "2020-05-08"
     },
 
 
