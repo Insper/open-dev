@@ -304,8 +304,41 @@
         "icon": "replay_10",
         "unique": false,
         "type": "Community",
-       "metadata_requirements": ["url|str"]
-    }   
+        "metadata_requirements": ["url|str"]
+    } ,
+
+    {
+        "id": 47,
+        "name": "Pitch de projeto",
+        "descr": "Apresentou um Pitch de projeto.",
+        "xp": 0,
+        "icon": "record_voice_over",
+        "unique": false,
+        "type": "Community",
+        "metadata_requirements": ["url|str", "filename|str"]
+    },
+
+    {
+        "id": 48,
+        "name": "Pitch aceito!",
+        "descr": "Enviou contribuição para um projeto apresentado em sala.",
+        "xp": 5,
+        "icon": "assignment_turned_in",
+        "unique": true,
+        "type": "Community",
+        "metadata_requirements": ["url|str"]
+    },
+
+    {
+        "id": 49,
+        "name": "Sugestão aceita!",
+        "descr": "Outro aluno enviou contribuição para o projeto que você fez Pitch.",
+        "xp": 3,
+        "icon": "supervised_user_circle",
+        "unique": false,
+        "type": "Community",
+        "metadata_requirements": ["url|str"]
+    }
  
 
     
