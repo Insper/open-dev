@@ -22,12 +22,13 @@ def validate_type(obj, type_string):
     return isinstance(obj, eval(type_string))
 
 class Skill:
-    def __init__(self, id, name, descr, xp, icon, unique, type, mandatory='-', metadata_requirements=[], date_limit='2020-12-31'):
+    def __init__(self, id, name, descr, xp, icon, unique, type, mandatory='-', metadata_requirements=[], date_limit='2020-12-31', icon_version=4):
         self.id = id
         self.name = name
         self.descr = descr
         self.xp = int(xp)
         self.icon = icon
+        self.icon_version = icon_version
         self.material_icon = f'!material-large:{icon}'
         self.unique = unique
         self.type = type
