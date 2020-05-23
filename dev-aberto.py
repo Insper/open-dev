@@ -102,10 +102,14 @@ def load_skill_and_check_done(skill_name, st):
     return skill_list
 
 def student_has_skill(st, skill):
-    xp_total = -1
+    xp_total = 0
+    has_skill = False
     for ach in st.achievements.get(skill.id, []):
         xp_total += ach.xp()
-    return xp_total
+        has_skill = True
+    if has_skill:
+        return xp_total
+    return -1
 
 @dev_aberto_cli.command()
 @click.argument('student_login')
