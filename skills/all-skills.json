@@ -8,7 +8,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2020-04-01"
+        "date_limit": "2020-04-24"
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@
         "unique": true,
         "type": "Tutorial",
         "metadata_requirements": ["group|List[str]", "filename|str"],
-        "date_limit": "2020-04-01"
+        "date_limit": "2020-04-24"
     },
     {
         "id": 3,
@@ -27,11 +27,12 @@
         "descr": "Primeiro PR enviado corrigindo um bug simples.",
         "xp": 5,
         "icon": "flight_takeoff",
+        "icon_version": "7",
         "unique": false,
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2020-04-01"
+        "date_limit": "2020-04-24"
     },
     
     {
@@ -43,7 +44,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2020-04-01"
+        "date_limit": "2020-04-24"
     },
     
     {
@@ -55,7 +56,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2020-04-01"
+        "date_limit": "2020-04-24"
     },
 
     {
@@ -67,7 +68,8 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "metadata_requirements": ["url|str", "group|List[str]"]
+        "metadata_requirements": ["url|str", "group|List[str]"],
+        "date_limit": "2020-04-24"
     },
 
     {
@@ -79,7 +81,8 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "metadata_requirements": ["url|str", "group|List[str]"]
+        "metadata_requirements": ["url|str", "group|List[str]"],
+        "date_limit": "2020-04-24"
 
     },
 
@@ -92,7 +95,8 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2020-04-24"
 
     },
 
@@ -104,7 +108,8 @@
         "icon": "build",
         "unique": true,
         "type": "Tutorial",
-        "mandatory": "D"
+        "mandatory": "D",
+        "date_limit": "2020-06-01"
     },
 
 
@@ -114,6 +119,7 @@
         "descr": "PR enviado corrigindo um bug.",
         "xp": 5,
         "icon": "flight_takeoff",
+        "icon_version": "7",
         "unique": false,
         "type": "Code",
         "metadata_requirements": ["url|str"],
@@ -124,7 +130,7 @@
         "id": 21,
         "name": "Bug Report",
         "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
-        "xp": 1,
+        "xp": 2,
         "icon": "report_problem",
         "unique": false,
         "metadata_requirements": ["url|str"],
@@ -134,7 +140,7 @@
         "id": 22,
         "name": "Feature Request",
         "descr": "Fez um pedido de nova funcionalidade a um software.",
-        "xp": 1,
+        "xp": 2,
         "icon": "add_shopping_cart",
         "unique": false,
         "metadata_requirements": ["url|str"],
@@ -144,7 +150,7 @@
         "id": 23,
         "name": "Contribuição aceita!",
         "descr": "Um PR não trivial foi aceito por um projeto externo.",
-        "xp": 5,
+        "xp": 10,
         "icon": "done_all",
         "unique": false,
         "type": "Code",
@@ -155,7 +161,7 @@
         "id": 24,
         "name": "Issue indireta",
         "descr": "Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias. ",
-        "xp": 2,
+        "xp": 3,
         "icon": "swap_calls",
         "unique": false,
         "type": "Code"
@@ -164,7 +170,7 @@
         "id": 25,
         "name": "Beta tester",
         "descr": "Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue.",
-        "xp": 2,
+        "xp": 3,
         "icon": "bug_report",
         "unique": false,
         "type": "Code"
@@ -173,7 +179,7 @@
         "id": 26,
         "name": "Contribuição (simples) aceita!",
         "descr": "Um PR simples (com mudanças triviais ou pequenas refatorações de código) foi aceito por um projeto externo.",
-        "xp": 2,
+        "xp": 5,
         "icon": "done",
         "unique": false,
         "type": "Code"
@@ -234,6 +240,15 @@
         "unique": false,
         "type": "Docs"
     },
+    {
+        "id": 35,
+        "name": "Contribuição de documentação",
+        "descr": "Fechou uma *issue* marcada como `docs`",
+        "xp": 7,
+        "icon": "book",
+        "unique": false,
+        "type": "Docs"
+    },
 
 
     
@@ -241,7 +256,7 @@
         "id": 40,
         "name": "Participação em Evento",
         "descr": "Participou de um evento da área de Tecnologia.",
-        "xp": 7,
+        "xp": 3,
         "icon": "event_available",
         "unique": false,
         "type": "Community"
@@ -300,8 +315,52 @@
         "icon": "replay_10",
         "unique": false,
         "type": "Community",
-       "metadata_requirements": ["url|str"]
-    }   
+        "metadata_requirements": ["url|str"]
+    } ,
+
+    {
+        "id": 47,
+        "name": "Pitch de projeto",
+        "descr": "Apresentou um Pitch de projeto.",
+        "xp": 0,
+        "icon": "record_voice_over",
+        "unique": false,
+        "type": "Community",
+        "metadata_requirements": ["url|str", "filename|str"]
+    },
+
+    {
+        "id": 48,
+        "name": "Pitch aceito!",
+        "descr": "Enviou contribuição para um projeto apresentado em sala.",
+        "xp": 5,
+        "icon": "assignment_turned_in",
+        "unique": true,
+        "type": "Community",
+        "metadata_requirements": ["url|str"]
+    },
+
+    {
+        "id": 49,
+        "name": "Sugestão aceita!",
+        "descr": "Outro aluno enviou contribuição para o projeto que você fez Pitch.",
+        "xp": 3,
+        "icon": "supervised_user_circle",
+        "unique": false,
+        "type": "Community",
+        "metadata_requirements": ["url|str"]
+    },
+
+    {
+        "id": 50,
+        "name": "Dojo de testes",
+        "descr": "Participou do dojo de testes em 18/05.",
+        "xp": 3,
+        "icon": "present_to_all",
+        "unique": true,
+        "type": "Community",
+        "metadata_requirements": ["group|List[str]"]
+    }
  
 
     

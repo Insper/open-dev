@@ -1,5 +1,6 @@
 |                                                                                        |                                         |                                                        |
 |:---------------------------------------------------------------------------------------|:----------------------------------------|:-------------------------------------------------------|
+| ![Isabella Rocha de Oliveira](){: style="max-width:64px; valign="center"}              | Isabella Rocha De Oliveira              | [![](css/github.png)](http://github.com/Isabellaro)    |
 | ![Bruna Mayumi Kimura](){: style="max-width:64px; valign="center"}                     | Bruna Mayumi Kimura                     | [![](css/github.png)](http://github.com/brunakimura)   |
 | ![Bruno Arthur Cesconetto](){: style="max-width:64px; valign="center"}                 | Bruno Arthur Cesconetto                 | [![](css/github.png)](http://github.com/brunoartc)     |
 | ![Eli Jose Abi Ghosn](){: style="max-width:64px; valign="center"}                      | Eli Jose Abi Ghosn                      | [![](css/github.png)](http://github.com/elijose55)     |

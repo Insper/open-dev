@@ -24,28 +24,28 @@
             font-size: 2em;
         }
 
-        .material-icons.green {
-            color: rgb(0, 200, 0);
+        .green {
+            background: rgba(0, 200, 0, 0.2);
         }
 
-        .material-icons.red {
-            color: rgb(200, 0, 0);
+        .red {
+            background: rgba(200, 0, 0, 0.2);
         }
 
-        .material-icons.yellow {
-            color: rgb(200, 200, 0);
+        .yellow {
+            background: rgba(200, 200, 0, 0.2);
         }
 
-        .material-icons.blue {
-            color: rgb(0, 0, 200);
+        .blue {
+            background: rgba(0, 0, 200, 0.2);
         }
 
-        .material-icons.purple {
-            color: rgb(200, 0, 200);
+        .purple {
+            background: rgba(200, 0, 200, 0.4);
         }
 
-        .material-icons.orange {
-            color: rgb(200, 100, 0);
+        .orange {
+            background: rgba(200, 100, 0, 0.4);
         }
     </style>
 </head>
@@ -67,11 +67,11 @@ Para obter este conceito é necessário obter as seguintes skills:
 <ul class="achievements">
 {% for xp,sk in doneD %} 
     {% if xp > 0 %}
-        <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
+        <li class="green"> <img src="https://fonts.gstatic.com/s/i/materialicons/{{sk.icon}}/v{{sk.icon_version}}/24px.svg"> {{ sk.name}}  </li>
     {% elif xp == 0 %}
-        <li> <i class="material-icons yellow"> {{ sk.icon }} </i> {{ sk.name}}  </li>
+        <li class="yellow"> <img src="https://fonts.gstatic.com/s/i/materialicons/{{sk.icon}}/v{{sk.icon_version}}/24px.svg">  {{ sk.name}}  </li>
     {% else %}
-        <li> <i class="material-icons red" > {{ sk.icon }} </i> {{ sk.name}} </li>
+        <li class="red"> <img src="https://fonts.gstatic.com/s/i/materialicons/{{sk.icon}}/v{{sk.icon_version}}/24px.svg">  {{ sk.name}}  </li>
     {% endif %}
 {% endfor %}
 </ul>
@@ -85,11 +85,11 @@ Para obter este conceito é necessário no mínimo <b>60XP</b> e obter as seguin
 <ul class="achievements">
 {% for xp,sk in doneC %} 
     {% if xp > 0 %}
-        <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
+        <li class="green"> <img src="https://fonts.gstatic.com/s/i/materialicons/{{sk.icon}}/v{{sk.icon_version}}/24px.svg"> {{ sk.name}}  </li>
     {% elif xp == 0 %}
-        <li> <i class="material-icons yellow"> {{ sk.icon }} </i> {{ sk.name}}  </li>
+        <li class="yellow"> <img src="https://fonts.gstatic.com/s/i/materialicons/{{sk.icon}}/v{{sk.icon_version}}/24px.svg">  {{ sk.name}}  </li>
     {% else %}
-        <li> <i class="material-icons red" > {{ sk.icon }} </i> {{ sk.name}} </li>
+        <li class="red"> <img src="https://fonts.gstatic.com/s/i/materialicons/{{sk.icon}}/v{{sk.icon_version}}/24px.svg">  {{ sk.name}}  </li>
     {% endif %}
 {% endfor %}
 
@@ -104,11 +104,11 @@ Para obter este conceito é necessário no mínimo <b>100XP</b> e obter as segui
 <ul class="achievements">
 {% for xp,sk in doneB %} 
     {% if xp > 0 %}
-        <li> <i class="material-icons green"> {{ sk.icon }} </i> {{ sk.name}}  </li>
+        <li class="green"> <img src="https://fonts.gstatic.com/s/i/materialicons/{{sk.icon}}/v{{sk.icon_version}}/24px.svg"> {{ sk.name}}  </li>
     {% elif xp == 0 %}
-        <li> <i class="material-icons yellow"> {{ sk.icon }} </i> {{ sk.name}}  </li>
+        <li class="yellow"> <img src="https://fonts.gstatic.com/s/i/materialicons/{{sk.icon}}/v{{sk.icon_version}}/24px.svg">  {{ sk.name}}  </li>
     {% else %}
-        <li> <i class="material-icons red" > {{ sk.icon }} </i> {{ sk.name}} </li>
+        <li class="red"> <img src="https://fonts.gstatic.com/s/i/materialicons/{{sk.icon}}/v{{sk.icon_version}}/24px.svg">  {{ sk.name}}  </li>
     {% endif %}
 {% endfor %}
 </ul>
@@ -124,17 +124,17 @@ As seguintes atividades foram realizadas e estão contribuindo para sua nota. A 
 
 <ul class="skill-list-done">
 {% for ach in doneAll %}
-    <li> 
         {% if ach.skill.type == 'Code'%}
-            <i class="material-icons blue">
+            <li class="blue"> 
         {% elif ach.skill.type == 'Docs'%}
-            <i class="material-icons purple">
+            <li class="purple"> 
         {% elif ach.skill.type == 'Community'%}
-            <i class="material-icons orange">
+            <li class="orange"> 
         {% else %}
-            <i class="material-icons">
+            <li>
         {% endif %}
-         {{ ach.skill.icon }} </i> {{ ach.skill.name }} </li>
+
+        <img src="https://fonts.gstatic.com/s/i/materialicons/{{ach.skill.icon}}/v{{ach.skill.icon_version}}/24px.svg">  {{ ach.skill.name}}  </li>
 {% endfor %}
 </ul>
 
@@ -143,17 +143,18 @@ As seguintes atividades foram realizadas e estão contribuindo para sua nota. A 
 Skills obrigatórias:
 
 <ul class="skill-list-done">
-    <li>  <i class="material-icons green"> developer_mode </i> - entregue na data </li>
-    <li>  <i class="material-icons red"> developer_mode </i> - não entregue </li>
-    <li>  <i class="material-icons yellow"> developer_mode </i> - entregue atrasada </li>
+    <li class="green">  <img src="https://fonts.gstatic.com/s/i/materialicons/developer_mode/v4/24px.svg">  - entregue na data  </li>
+    <li class="red">  <img src="https://fonts.gstatic.com/s/i/materialicons/developer_mode/v4/24px.svg">  - não entregue   </li>
+    <li class="yellow">  <img src="https://fonts.gstatic.com/s/i/materialicons/developer_mode/v4/24px.svg">  - entregue atrasada  </li>
 </ul>
 
 Skills eletivas:
 
 <ul class="skill-list-done">
-    <li>  <i class="material-icons blue"> developer_mode </i> - skill de código </li>
-    <li>  <i class="material-icons purple"> developer_mode </i> - skill de documentação </li>
-    <li>  <i class="material-icons orange"> developer_mode </i> - skill de comunidade </li>
+
+    <li class="blue">  <img src="https://fonts.gstatic.com/s/i/materialicons/developer_mode/v4/24px.svg"> - skill de código </li>
+    <li class="purple">  <img src="https://fonts.gstatic.com/s/i/materialicons/developer_mode/v4/24px.svg"> - skill de documentação  </li>
+    <li class="orange">  <img src="https://fonts.gstatic.com/s/i/materialicons/developer_mode/v4/24px.svg"> - skill de comunidade  </li>
 </ul>
 
 

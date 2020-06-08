@@ -31,7 +31,7 @@ def dev_aberto_cli():
     pass
 
 @dev_aberto_cli.command()
-def new_user():
+def newUser():
     student_login = ''
 
     while student_login == '':
@@ -102,10 +102,14 @@ def load_skill_and_check_done(skill_name, st):
     return skill_list
 
 def student_has_skill(st, skill):
-    xp_total = -1
+    xp_total = 0
+    has_skill = False
     for ach in st.achievements.get(skill.id, []):
         xp_total += ach.xp()
-    return xp_total
+        has_skill = True
+    if has_skill:
+        return xp_total
+    return -1
 
 @dev_aberto_cli.command()
 @click.argument('student_login')
@@ -177,7 +181,7 @@ def parse_url(url):
         else:
             pulls_issues = "issues"
         status = "https://img.shields.io/github/"+ pulls_issues +"/detail/state/" + m.group(1)+"/"+m.group(2)+"/"+ m.group(4)+ "?label=%20"
-        return PR(m.group(2), url, status)
+        return PR(m.group(1) + '/' + m.group(2), url, status)
     return PR('Outros', url, '')
 
 def dict_add_to_list(d, el, url):
