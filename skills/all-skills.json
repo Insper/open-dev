@@ -202,7 +202,8 @@
         "icon": "g_translate",
         "unique": false,
         "type": "Docs",
-        "mandatory": "C"
+        "mandatory": "C",
+        "metadata_requirements": ["url|str"]
     },
     {
         "id": 31,
@@ -247,7 +248,8 @@
         "xp": 7,
         "icon": "book",
         "unique": false,
-        "type": "Docs"
+        "type": "Docs",
+        "metadata_requirements": ["url|str"]
     },
 
 
@@ -345,7 +347,7 @@
         "name": "Sugestão aceita!",
         "descr": "Outro aluno enviou contribuição para o projeto que você fez Pitch.",
         "xp": 3,
-        "icon": "supervised_user_circle",
+        "icon": "supervisor_account",
         "unique": false,
         "type": "Community",
         "metadata_requirements": ["url|str"]
