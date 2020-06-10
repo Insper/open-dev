@@ -112,6 +112,18 @@
         "date_limit": "2020-06-01"
     },
 
+    {
+        "id": 10,
+        "name": "Pesquisa de temas FLOSS",
+        "descr": "Fez uma apresentação longa envolvendo um tema recente e relevante relacionado a software livre.",
+        "xp": 5,
+        "icon": "present_to_all",
+        "unique": true,
+        "type": "Tutorial",
+        "metadata_requirements": ["group|List[str]", "filename|str"],
+        "date_limit": "2020-06-30"
+    },
+
 
     {
         "id": 20,
@@ -123,7 +135,8 @@
         "unique": false,
         "type": "Code",
         "metadata_requirements": ["url|str"],
-        "mandatory": "C"
+        "mandatory": "C",
+        "multiplier": 2
     },
 
     {
@@ -155,7 +168,8 @@
         "unique": false,
         "type": "Code",
         "metadata_requirements": ["url|str"],
-        "mandatory": "B"
+        "mandatory": "B",
+        "multiplier": 2
     },
     {
         "id": 24,
@@ -182,7 +196,8 @@
         "xp": 5,
         "icon": "done",
         "unique": false,
-        "type": "Code"
+        "type": "Code",
+        "multiplier": 1.5
     },
     {
         "id": 27,
@@ -191,7 +206,8 @@
         "xp": 5,
         "icon": "school",
         "unique": false,
-        "type": "Code"
+        "type": "Code",
+        "multiplier": 1.5
     },
 
     {
@@ -261,7 +277,8 @@
         "xp": 3,
         "icon": "event_available",
         "unique": false,
-        "type": "Community"
+        "type": "Community", 
+        "multiplier": 0.5
     },
     {
         "id": 41,

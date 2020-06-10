@@ -9,3 +9,4 @@
 |    7 | !material-large:sentiment_very_satisfied | Testado e Aprovado                 | Criou testes de unidade e de interface para o servidor de desafios.                             |    5 |
 |    8 | !material-large:work                     | Pacote Python                      | Criou um pacote python instalável via pip.                                                      |    3 |
 |    9 | !material-large:build                    | Projeto DIY                        | Contribuiu com um projeto educacional livre do Insper                                           |    5 |
+|   10 | !material-large:present_to_all           | Pesquisa de temas FLOSS            | Fez uma apresentação longa envolvendo um tema recente e relevante relacionado a software livre. |    5 |
