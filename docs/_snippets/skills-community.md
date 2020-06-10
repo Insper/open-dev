@@ -1,9 +1,13 @@
-|   id |                                 | Nome                   | Descrição                                                                                                               |   XP |
-|-----:|:--------------------------------|:-----------------------|:------------------------------------------------------------------------------------------------------------------------|-----:|
-|   40 | !material-large:event_available | Participação em Evento | Participou de um evento da área de Tecnologia.                                                                          |    7 |
-|   41 | !material-large:refresh         | Metacontribuição       | Fez uma contribuição simples no repositório da matéria.                                                                 |    2 |
-|   42 | !material-large:mic             | Palestrante            | Fez uma palestra sobre bibliotecas ou softwares livres.                                                                 |   10 |
-|   43 | !material-large:question_answer | Helpdesk               | Teve uma resposta aceita em sites como StackOverflow ou em listas de email                                              |    4 |
-|   44 | !material-large:call            | Convidado VIP          | Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill. |    5 |
-|   45 | !material-large:public          | Contribuição publicada | Uma contribuição sua foi incluída em um release.                                                                        |    5 |
-|   46 | !material-large:replay_10       | Replay de PR           | Apresentou (em 10 minutos) o processo de resolução de um bug na aula.                                                   |    5 |
+|   id |                                      | Nome                   | Descrição                                                                                                               |   XP |
+|-----:|:-------------------------------------|:-----------------------|:------------------------------------------------------------------------------------------------------------------------|-----:|
+|   40 | !material-large:event_available      | Participação em Evento | Participou de um evento da área de Tecnologia.                                                                          |    3 |
+|   41 | !material-large:refresh              | Metacontribuição       | Fez uma contribuição simples no repositório da matéria.                                                                 |    2 |
+|   42 | !material-large:mic                  | Palestrante            | Fez uma palestra sobre bibliotecas ou softwares livres.                                                                 |   10 |
+|   43 | !material-large:question_answer      | Helpdesk               | Teve uma resposta aceita em sites como StackOverflow ou em listas de email                                              |    4 |
+|   44 | !material-large:call                 | Convidado VIP          | Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill. |    5 |
+|   45 | !material-large:public               | Contribuição publicada | Uma contribuição sua foi incluída em um release.                                                                        |    5 |
+|   46 | !material-large:replay_10            | Replay de PR           | Apresentou (em 10 minutos) o processo de resolução de um bug na aula.                                                   |    5 |
+|   47 | !material-large:record_voice_over    | Pitch de projeto       | Apresentou um Pitch de projeto.                                                                                         |    0 |
+|   48 | !material-large:assignment_turned_in | Pitch aceito!          | Enviou contribuição para um projeto apresentado em sala.                                                                |    5 |
+|   49 | !material-large:supervisor_account   | Sugestão aceita!       | Outro aluno enviou contribuição para o projeto que você fez Pitch.                                                      |    3 |
+|   50 | !material-large:present_to_all       | Dojo de testes         | Participou do dojo de testes em 18/05.                                                                                  |    3 |
