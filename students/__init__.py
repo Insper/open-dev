@@ -11,10 +11,17 @@ class Student:
         self.login = login
         self.name = name
         self.ghuser = ghuser
-        self.avatar = get_gh_picture(ghuser)
+        self._avatar = None
         self.has_key = False
 
         self.achievements = achievements
+
+    @property
+    def avatar(self):
+        if not self._avatar:
+            self._avatar = get_gh_picture(self.ghuser)
+            
+        return self._avatar
 
     def __str__(self):
         return self.name
@@ -72,17 +79,26 @@ class Student:
 
     def compute_grade(self):
         total_xp = 0
-        for ach in self.all_achievements:
-            if 'shared_with' in ach.metadata:
-                xp_achi = ach.xp() / (len(ach.metadata['shared_with'])+1)
-            else:
-                xp_achi = ach.xp()
+        for ach_list in self.achievements.values():
+            xp_skill = 0
+            multiplier = 1
+            for ach in ach_list:
+                if 'shared_with' in ach.metadata:
+                    xp_achi = ach.xp() / (len(ach.metadata['shared_with'])+1)
+                else:
+                    xp_achi = ach.xp()
 
-            if ach.user != self:
-                print('Skill:', str(ach.skill), 'xp:', xp_achi, 'origem:', str(ach.user))
-            else:
-                print('Skill:', str(ach.skill), 'xp:', xp_achi)
-            total_xp += xp_achi
+                xp_achi *= multiplier
+
+                if ach.user != self:
+                    print('Skill:', str(ach.skill), 'xp:', xp_achi, 'origem:', str(ach.user))
+                else:
+                    print('Skill:', str(ach.skill), 'xp:', xp_achi)
+
+                xp_skill += xp_achi
+                multiplier = multiplier * ach.skill.multiplier
+
+            total_xp += xp_skill
             
         return total_xp
     
@@ -90,7 +106,7 @@ class Student:
 student_folder = os.path.dirname(__file__)
 student_logins = [s.split('-')[0] for s in os.listdir(student_folder) if s.endswith('-achievements')]
 
-all_students = {login:Student.load(login) for login in student_logins}
+all_students = {login: Student.load(login) for login in student_logins}
 project_points = {login: 0 for login in student_logins}
 
 [s.load_skills() for s in all_students.values()]

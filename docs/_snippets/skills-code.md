@@ -1,10 +1,10 @@
 |   id |                                   | Nome                           | Descrição                                                                                                   |   XP |
 |-----:|:----------------------------------|:-------------------------------|:------------------------------------------------------------------------------------------------------------|-----:|
 |   20 | !material-large:flight_takeoff    | Contribuição de código         | PR enviado corrigindo um bug.                                                                               |    5 |
-|   21 | !material-large:report_problem    | Bug Report                     | Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.                                   |    1 |
-|   22 | !material-large:add_shopping_cart | Feature Request                | Fez um pedido de nova funcionalidade a um software.                                                         |    1 |
-|   23 | !material-large:done_all          | Contribuição aceita!           | Um PR não trivial foi aceito por um projeto externo.                                                        |    5 |
-|   24 | !material-large:swap_calls        | Issue indireta                 | Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias.         |    2 |
-|   25 | !material-large:bug_report        | Beta tester                    | Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue.     |    2 |
-|   26 | !material-large:done              | Contribuição (simples) aceita! | Um PR simples (com mudanças triviais ou pequenas refatorações de código) foi aceito por um projeto externo. |    2 |
+|   21 | !material-large:report_problem    | Bug Report                     | Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.                                   |    2 |
+|   22 | !material-large:add_shopping_cart | Feature Request                | Fez um pedido de nova funcionalidade a um software.                                                         |    2 |
+|   23 | !material-large:done_all          | Contribuição aceita!           | Um PR não trivial foi aceito por um projeto externo.                                                        |   10 |
+|   24 | !material-large:swap_calls        | Issue indireta                 | Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias.         |    3 |
+|   25 | !material-large:bug_report        | Beta tester                    | Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue.     |    3 |
+|   26 | !material-large:done              | Contribuição (simples) aceita! | Um PR simples (com mudanças triviais ou pequenas refatorações de código) foi aceito por um projeto externo. |    5 |
 |   27 | !material-large:school            | Projeto INSPER                 | Fez mais contribuições a um projeto educacional do INSPER                                                   |    5 |
