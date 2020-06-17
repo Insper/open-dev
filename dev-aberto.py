@@ -133,9 +133,16 @@ def compute_grade(student_login):
     done_all = [ach for ach in st.all_achievements if ach.skill.mandatory == '-']
     done_all = sorted(done_all, key=lambda t: t.date)
 
+    xp = st.compute_grade()
     conceito = 'I'
 
-    xp = st.compute_grade()
+    if all([s[0] >= 0 for s in doneD]):
+        conceito = 'D'
+        
+        if xp >= 60 and st.achievements.get(20, False) and\
+           (st.achievements.get(30, False) or st.achievements.get(35, False)):
+            conceito = 'C'
+
 
     html = feedback_template.render(doneD=doneD,
                                     doneC=doneC,

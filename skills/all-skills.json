@@ -109,7 +109,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2020-06-01",
+        "date_limit": "2020-07-01",
         "metadata_requirements": ["url|str", "group|List[str]"]
     },
 
@@ -264,8 +264,10 @@
         "descr": "Fechou uma *issue* marcada como `docs`",
         "xp": 7,
         "icon": "book",
+        "icon_version": "7",
         "unique": false,
         "type": "Docs",
+        "mandatory": "C",
         "metadata_requirements": ["url|str"]
     },
 
@@ -335,6 +337,7 @@
         "icon": "replay_10",
         "unique": false,
         "type": "Community",
+        "icon_version": "7",
         "metadata_requirements": ["url|str"]
     } ,
 
