@@ -229,7 +229,8 @@
         "xp": 10,
         "icon": "language",
         "unique": false,
-        "type": "Docs"
+        "type": "Docs",
+        "metadata_requirements": ["url|str"]
     },
     {
         "id": 32,
@@ -238,7 +239,8 @@
         "xp": 5,
         "icon": "create",
         "unique": false,
-        "type": "Docs"
+        "type": "Docs",
+        "metadata_requirements": ["url|str"]
     },
     {
         "id": 33,
@@ -247,7 +249,8 @@
         "xp": 5,
         "icon": "videocam",
         "unique": false,
-        "type": "Docs"
+        "type": "Docs",
+        "metadata_requirements": ["url|str"]
     },
     {
         "id": 34,
@@ -256,7 +259,8 @@
         "xp": 2,
         "icon": "text_format",
         "unique": false,
-        "type": "Docs"
+        "type": "Docs",
+        "metadata_requirements": ["url|str"]
     },
     {
         "id": 35,
@@ -306,7 +310,8 @@
         "xp": 4,
         "icon": "question_answer",
         "unique": false,
-        "type": "Community"
+        "type": "Community",
+        "metadata_requirements": ["url|str"]
     },
     {
         "id": 44,
@@ -315,7 +320,8 @@
         "xp": 5,
         "icon": "call",
         "unique": true,
-        "type": "Community"
+        "type": "Community",
+        "metadata_requirements": ["url|str"]
     },
     { 
         "id": 45,
