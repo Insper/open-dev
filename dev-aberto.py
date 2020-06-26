@@ -142,6 +142,9 @@ def compute_grade(student_login):
         if xp >= 60 and st.achievements.get(20, False) and\
            (st.achievements.get(30, False) or st.achievements.get(35, False)):
             conceito = 'C'
+        
+        if xp >= 100 and st.achievements.get(23, False):
+            conceito = 'B'
 
 
     html = feedback_template.render(doneD=doneD,
