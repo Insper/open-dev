@@ -283,12 +283,9 @@ def build_site():
 
 @dev_aberto_cli.command()
 def export_csv():
-
-    csv_dict = [('url', 'usuario', 'ano')]
     with open('students.csv', 'w') as f:
         w = csv.writer(f)
         w.writerow(('url', 'usuario', 'ano', 'tipo'))
-
 
         for st in all_students.values():
             usuario = st.login
@@ -307,7 +304,7 @@ def export_csv():
 
                     if ach.skill.id == 30:
                         w.writerow((ach.metadata['url'], usuario, ano, 'trans'))
-                        
+
 
 if __name__ == '__main__':
 
