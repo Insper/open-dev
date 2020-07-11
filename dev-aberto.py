@@ -301,6 +301,13 @@ def export_csv():
                         w.writerow((ach.metadata['url'], usuario, ano, 'simples'))
                     if ach.skill.id == 3:
                         w.writerow((ach.metadata['url'], usuario, ano, 'primeiro'))
+                    
+                    if ach.skill.id == 35:
+                        w.writerow((ach.metadata['url'], usuario, ano, 'docs'))
+
+                    if ach.skill.id == 30:
+                        w.writerow((ach.metadata['url'], usuario, ano, 'trans'))
+                        
 
 if __name__ == '__main__':
 
