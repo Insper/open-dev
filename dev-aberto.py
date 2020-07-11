@@ -11,6 +11,7 @@ import copy
 import markdown
 import tabulate
 import itertools
+import csv
 
 import sys
 import time
@@ -278,6 +279,28 @@ def build_site():
                                         num_projetos=num_projetos, 
                                         num_prs=num_prs, 
                                         num_aceitos=num_aceitos))
+
+
+@dev_aberto_cli.command()
+def export_csv():
+
+    csv_dict = [('url', 'usuario', 'ano')]
+    with open('students.csv', 'w') as f:
+        w = csv.writer(f)
+        w.writerow(('url', 'usuario', 'ano', 'tipo'))
+
+
+        for st in all_students.values():
+            usuario = st.login
+            ano = 2020
+            for l in st.achievements.values():
+                for ach in l:
+                    if ach.skill.id == 20:
+                        w.writerow((ach.metadata['url'], usuario, ano, 'complexo'))
+                    if ach.skill.id == 26:
+                        w.writerow((ach.metadata['url'], usuario, ano, 'simples'))
+                    if ach.skill.id == 3:
+                        w.writerow((ach.metadata['url'], usuario, ano, 'primeiro'))
 
 if __name__ == '__main__':
 
