@@ -4,8 +4,16 @@
 
 
 img.event-picture {
-    width: 32%;
+    width: 40%;
     height: 200px;
     display: inline-block;
     object-fit: cover;
+}
+
+.skill-icon > svg {
+    max-width: 40px !important;
+    max-height: 40px !important;
+
+    width: 40px !important;
+    height: 40px !important;
 }
