@@ -1,5 +1,7 @@
 site_name: Desenvolvimento Aberto 2021/2
 repo_url: https://github.com/insper/dev-aberto/
+repo_name: Dev Aberto
+site_url: https://insper.github.io/dev-aberto/
 
 theme:
     name: 'material'
@@ -17,14 +19,33 @@ nav:
     - '2020/1': 'impacto-2020.md'
     - '2019/2': 'impacto-2019.md'
 
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js
+  - js/markdown-enhancer.js
+
 markdown_extensions:
   - attr_list
+  - markdown.extensions.admonition
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.magiclink
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
   - pymdownx.snippets:
       base_path: "docs/_snippets"
       check_paths: true
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.tasklist
-  - pymdownx.details
-  - material_icons
+
+plugins: 
+  - git-revision-date-localized
