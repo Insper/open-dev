@@ -13,9 +13,9 @@ Serão enviados relatórios quinzenais com um resumo do que foi entregue e de qu
 
 ## Horários
 
-* SEG 18:00-20:00
-* QUA 18:00-20:00
-* **Atendimento**: SEG 16:30-18:00
+* TER 18:00-20:00
+* QUI 18:00-20:00
+* **Atendimento**: SEX 09:00 - 10:30
 
 ## Plano de aulas
 

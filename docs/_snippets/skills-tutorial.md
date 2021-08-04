@@ -1,12 +1,12 @@
-|   id |                                                     | Nome                               | Descrição                                                                                       |   XP |
-|-----:|:----------------------------------------------------|:-----------------------------------|:------------------------------------------------------------------------------------------------|-----:|
-|    1 | :material-account-check:{: .skill-icon }            | Primeiros passos                   | Se adicionou no repositório da disciplina.                                                      |    2 |
-|    2 | :material-cash-multiple:{: .skill-icon }            | Explorando o entorno de um projeto | Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.         |    3 |
-|    3 | :material-airplane-takeoff:{: .skill-icon }         | Minha primeira contribuição        | Primeiro PR enviado corrigindo um bug simples.                                                  |    5 |
-|    4 | :material-explore:{: .skill-icon }                  | Projeto não documentado            | Recebeu um sistema sem documentação e o pôs para funcionar.                                     |    2 |
-|    5 | :material-font_download:{: .skill-icon }            | Tradução básica                    | Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando. |    2 |
-|    6 | :material-star:{: .skill-icon }                     | Projeto Profissional               | Reformou um código mal feito e criou uma página web para ele.                                   |    5 |
-|    7 | :material-sentiment_very_satisfied:{: .skill-icon } | Testado e Aprovado                 | Criou testes de unidade e de interface para o servidor de desafios.                             |    5 |
-|    8 | :material-work:{: .skill-icon }                     | Pacote Python                      | Criou um pacote python instalável via pip.                                                      |    3 |
-|    9 | :material-build:{: .skill-icon }                    | Projeto DIY                        | Contribuiu com um projeto educacional livre do Insper                                           |    5 |
-|   10 | :material-present_to_all:{: .skill-icon }           | Pesquisa de temas FLOSS            | Fez uma apresentação longa envolvendo um tema recente e relevante relacionado a software livre. |    5 |
+|   id |                                                   | Nome                               | Descrição                                                                                       |   XP |
+|-----:|:--------------------------------------------------|:-----------------------------------|:------------------------------------------------------------------------------------------------|-----:|
+|    1 | :material-account-check:{: .skill-icon }          | Primeiros passos                   | Se adicionou no repositório da disciplina.                                                      |    2 |
+|    2 | :material-cash-multiple:{: .skill-icon }          | Explorando o entorno de um projeto | Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.         |    3 |
+|    3 | :material-compass:{: .skill-icon }                | Projeto não documentado            | Recebeu um sistema sem documentação e o pôs para funcionar.                                     |    5 |
+|    4 | :material-star:{: .skill-icon }                   | Projeto Profissional               | Reformou um código mal feito e criou uma página web para ele.                                   |    5 |
+|    5 | :material-emoticon-outline:{: .skill-icon }       | Testado e Aprovado                 | Criou testes de unidade e de interface para o servidor de desafios.                             |    5 |
+|    6 | :material-briefcase:{: .skill-icon }              | Pacote Python                      | Criou um pacote python instalável via pip.                                                      |    3 |
+|    7 | :material-docker:{: .skill-icon }                 | Dockerfile                         | Criou um pacote python instalável via pip.                                                      |    3 |
+|    8 | :material-translate:{: .skill-icon }              | Tradução básica                    | Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando. |    2 |
+|    9 | :material-bus-school:{: .skill-icon }             | Projeto DIY                        | Contribuiu com um projeto educacional livre do Insper                                           |    5 |
+|   10 | :material-open-source-initiative:{: .skill-icon } | Pesquisa de temas FLOSS            | Fez uma apresentação longa envolvendo um tema recente e relevante relacionado a software livre. |    5 |

@@ -1,13 +1,12 @@
-|   id |                                                 | Nome                   | Descrição                                                                                                               |   XP |
-|-----:|:------------------------------------------------|:-----------------------|:------------------------------------------------------------------------------------------------------------------------|-----:|
-|   40 | :material-event_available:{: .skill-icon }      | Participação em Evento | Participou de um evento da área de Tecnologia.                                                                          |    3 |
-|   41 | :material-refresh:{: .skill-icon }              | Metacontribuição       | Fez uma contribuição simples no repositório da matéria.                                                                 |    2 |
-|   42 | :material-mic:{: .skill-icon }                  | Palestrante            | Fez uma palestra sobre bibliotecas ou softwares livres.                                                                 |   10 |
-|   43 | :material-question_answer:{: .skill-icon }      | Helpdesk               | Teve uma resposta aceita em sites como StackOverflow ou em listas de email                                              |    4 |
-|   44 | :material-call:{: .skill-icon }                 | Convidado VIP          | Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill. |    5 |
-|   45 | :material-public:{: .skill-icon }               | Contribuição publicada | Uma contribuição sua foi incluída em um release.                                                                        |    5 |
-|   46 | :material-replay_10:{: .skill-icon }            | Replay de PR           | Apresentou (em 10 minutos) o processo de resolução de um bug na aula.                                                   |    5 |
-|   47 | :material-record_voice_over:{: .skill-icon }    | Pitch de projeto       | Apresentou um Pitch de projeto.                                                                                         |    0 |
-|   48 | :material-assignment_turned_in:{: .skill-icon } | Pitch aceito!          | Enviou contribuição para um projeto apresentado em sala.                                                                |    5 |
-|   49 | :material-supervisor_account:{: .skill-icon }   | Sugestão aceita!       | Outro aluno enviou contribuição para o projeto que você fez Pitch.                                                      |    3 |
-|   50 | :material-present_to_all:{: .skill-icon }       | Dojo de testes         | Participou do dojo de testes em 18/05.                                                                                  |    3 |
+|   id |                                             | Nome                         | Descrição                                                                                               |   XP |
+|-----:|:--------------------------------------------|:-----------------------------|:--------------------------------------------------------------------------------------------------------|-----:|
+|   40 | :material-call-split:{: .skill-icon }       | Issue indireta               | Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias.     |    3 |
+|   41 | :material-beta:{: .skill-icon }             | Beta tester                  | Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue. |    3 |
+|   42 | :material-google-translate:{: .skill-icon } | Tradução aceita!             | Fez uma tradução que foi aceita em um software aberto.                                                  |    5 |
+|   43 | :material-web:{: .skill-icon }              | Novas línguas                | Adicionou suporte a traduções em um software que não era traduzível.                                    |   10 |
+|   44 | :material-book-edit:{: .skill-icon }        | Revisor                      | Revisou pequenos erros na documentação de um projeto e teve suas modificações aceitas.                  |    2 |
+|   45 | :material-book-check:{: .skill-icon }       | Contribuição de documentação | Fechou uma *issue* marcada como `docs`                                                                  |    7 |
+|   46 | :material-account-voice:{: .skill-icon }    | Pitch de projeto             | Apresentou um Pitch de projeto.                                                                         |    0 |
+|   47 | :material-receipt:{: .skill-icon }          | Pitch aceito!                | Enviou contribuição para um projeto apresentado em sala.                                                |    5 |
+|   48 | :material-receipt:{: .skill-icon }          | Sugestão aceita!             | Outro aluno enviou contribuição para o projeto que você fez Pitch.                                      |    3 |
+|   49 | :material-replay:{: .skill-icon }           | Replay de PR                 | Apresentou (em 15 minutos) o processo de resolução de um bug na aula.                                   |    5 |

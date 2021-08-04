@@ -1,2 +1,9 @@
-| id   |    | Nome   | Descrição   | XP   |
-|------|----|--------|-------------|------|
+|   id |                                                     | Nome                   | Descrição                                                                                                               |   XP |
+|-----:|:----------------------------------------------------|:-----------------------|:------------------------------------------------------------------------------------------------------------------------|-----:|
+|   60 | :material-presentation-play:{: .skill-icon }        | Palestrante            | Fez uma palestra sobre bibliotecas ou softwares livres.                                                                 |   20 |
+|   61 | :material-chat-question:{: .skill-icon }            | Helpdesk               | Teve uma resposta aceita em sites como StackOverflow ou em listas de email                                              |    4 |
+|   62 | :material-earth:{: .skill-icon }                    | Contribuição publicada | Uma contribuição sua foi incluída em um release.                                                                        |   10 |
+|   63 | :material-phone:{: .skill-icon }                    | Convidado VIP          | Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill. |    5 |
+|   64 | :material-source-branch:{: .skill-icon }            | 3 PRs enviados         | 3 PRs enviados para o mesmo projeto                                                                                     |   10 |
+|   65 | :material-source-branch-check:{: .skill-icon }      | 3 PRs aceitos          | 3 PRs que você enviou para um projeto foram aceitos.                                                                    |   30 |
+|   66 | :material-human-greeting-proximity:{: .skill-icon } | Jabá                   | Algo que você fez foi citado pelo projeto em redes sociais ou algum meio oficial.                                       |   10 |

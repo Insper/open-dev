@@ -8,7 +8,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2020-04-24"
+        "date_limit": "2021-10-09"
     },
     {
         "id": 2,
@@ -19,47 +19,23 @@
         "unique": true,
         "type": "Tutorial",
         "metadata_requirements": ["group|List[str]", "filename|str"],
-        "date_limit": "2020-04-24"
-    },
-    {
-        "id": 3,
-        "name": "Minha primeira contribuição",
-        "descr": "Primeiro PR enviado corrigindo um bug simples.",
-        "xp": 5,
-        "icon": "airplane-takeoff",
-        "unique": false,
-        "type": "Tutorial",
-        "mandatory": "D",
-        "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2020-04-24"
-    },
-    
-    {
-        "id": 4,
-        "name": "Projeto não documentado",
-        "descr": "Recebeu um sistema sem documentação e o pôs para funcionar.",
-        "xp": 2,
-        "icon": "explore",
-        "unique": true,
-        "type": "Tutorial",
-        "mandatory": "D",
-        "date_limit": "2020-04-24"
-    },
-    
-    {
-        "id": 5,
-        "name": "Tradução básica",
-        "descr": "Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando.",
-        "xp": 2,
-        "icon": "font_download",
-        "unique": true,
-        "type": "Tutorial",
-        "mandatory": "D",
-        "date_limit": "2020-04-24"
+        "date_limit": "2021-10-09"
     },
 
     {
-        "id": 6,
+        "id": 3,
+        "name": "Projeto não documentado",
+        "descr": "Recebeu um sistema sem documentação e o pôs para funcionar.",
+        "xp": 5,
+        "icon": "compass",
+        "unique": true,
+        "type": "Tutorial",
+        "mandatory": "D",
+        "date_limit": "2021-10-09"
+    },
+
+    {
+        "id": 4,
         "name": "Projeto Profissional",
         "descr": "Reformou um código mal feito e criou uma página web para ele.",
         "xp": 5,
@@ -68,328 +44,326 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2020-04-24"
+        "date_limit": "2021-10-09"
     },
-
     {
-        "id": 7,
+        "id": 5,
         "name": "Testado e Aprovado",
         "descr": "Criou testes de unidade e de interface para o servidor de desafios.",
         "xp": 5,
-        "icon": "sentiment_very_satisfied",
+        "icon": "emoticon-outline",
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2020-04-24"
+        "date_limit": "2021-10-09"
 
     },
-
     {
-        "id": 8,
+        "id": 6,
         "name": "Pacote Python",
         "descr": "Criou um pacote python instalável via pip.",
         "xp": 3,
-        "icon": "work",
+        "icon": "briefcase",
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2020-04-24"
+        "date_limit": "2021-10-09"
+    },
+    {
+        "id": 7,
+        "name": "Dockerfile",
+        "descr": "Criou um pacote python instalável via pip.",
+        "xp": 3,
+        "icon": "docker",
+        "unique": true,
+        "type": "Tutorial",
+        "mandatory": "D",
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2021-10-09"
 
     },
-
+    {
+        "id": 8,
+        "name": "Tradução básica",
+        "descr": "Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando.",
+        "xp": 2,
+        "icon": "translate",
+        "unique": true,
+        "type": "Tutorial",
+        "mandatory": "D",
+        "date_limit": "2021-10-09"
+    },
     {
         "id": 9,
         "name": "Projeto DIY",
         "descr": "Contribuiu com um projeto educacional livre do Insper",
         "xp": 5,
-        "icon": "build",
+        "icon": "bus-school",
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2020-07-01",
+        "date_limit": "2021-10-15",
         "metadata_requirements": ["url|str", "group|List[str]"]
     },
-
     {
         "id": 10,
         "name": "Pesquisa de temas FLOSS",
         "descr": "Fez uma apresentação longa envolvendo um tema recente e relevante relacionado a software livre.",
         "xp": 5,
-        "icon": "present_to_all",
+        "icon": "open-source-initiative",
         "unique": true,
         "type": "Tutorial",
         "metadata_requirements": ["group|List[str]", "filename|str"],
-        "date_limit": "2020-06-30"
+        "date_limit": "2021-12-01"
     },
+
+
+
 
 
     {
         "id": 20,
+        "name": "Minha primeira contribuição (pode ser em grupo)",
+        "descr": "Primeiro PR enviado corrigindo um bug simples.",
+        "xp": 5,
+        "icon": "airplane-takeoff",
+        "unique": false,
+        "type": "Code",
+        "mandatory": "D",
+        "metadata_requirements": ["url|str", "group|List[str]"]
+    },
+    {
+        "id": 21,
         "name": "Contribuição de código",
         "descr": "PR enviado corrigindo um bug.",
         "xp": 5,
-        "icon": "flight_takeoff",
+        "icon": "code-braces-box",
         "icon_version": "7",
         "unique": false,
         "type": "Code",
         "metadata_requirements": ["url|str"],
-        "mandatory": "C",
-        "multiplier": 2
-    },
-
-    {
-        "id": 21,
-        "name": "Bug Report",
-        "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
-        "xp": 2,
-        "icon": "report_problem",
-        "unique": false,
-        "metadata_requirements": ["url|str"],
-        "type": "Code"
+        "mandatory": "C"
     },
     {
         "id": 22,
-        "name": "Feature Request",
-        "descr": "Fez um pedido de nova funcionalidade a um software.",
-        "xp": 2,
-        "icon": "add_shopping_cart",
-        "unique": false,
-        "metadata_requirements": ["url|str"],
-        "type": "Code"
-    },
-    {
-        "id": 23,
         "name": "Contribuição aceita!",
         "descr": "Um PR não trivial foi aceito por um projeto externo.",
         "xp": 10,
-        "icon": "done_all",
+        "icon": "check-all",
         "unique": false,
         "type": "Code",
         "metadata_requirements": ["url|str"],
-        "mandatory": "B",
-        "multiplier": 2
+        "mandatory": "B"
+    },
+    {
+        "id": 23,
+        "name": "Contribuição (simples) aceita!",
+        "descr": "Um PR simples (com mudanças triviais ou pequenas refatorações de código) foi aceito por um projeto externo.",
+        "xp": 5,
+        "icon": "check",
+        "unique": false,
+        "type": "Code"
     },
     {
         "id": 24,
-        "name": "Issue indireta",
-        "descr": "Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias. ",
-        "xp": 3,
-        "icon": "swap_calls",
+        "name": "Bug Report",
+        "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
+        "xp": 5,
+        "icon": "bug",
         "unique": false,
+        "metadata_requirements": ["url|str"],
         "type": "Code"
     },
     {
         "id": 25,
-        "name": "Beta tester",
-        "descr": "Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue.",
-        "xp": 3,
-        "icon": "bug_report",
+        "name": "Feature Request",
+        "descr": "Fez um pedido de nova funcionalidade a um software.",
+        "xp": 2,
+        "icon": "cart-plus",
         "unique": false,
+        "metadata_requirements": ["url|str"],
         "type": "Code"
     },
     {
         "id": 26,
-        "name": "Contribuição (simples) aceita!",
-        "descr": "Um PR simples (com mudanças triviais ou pequenas refatorações de código) foi aceito por um projeto externo.",
-        "xp": 5,
-        "icon": "done",
-        "unique": false,
-        "type": "Code",
-        "multiplier": 1.5
-    },
-    {
-        "id": 27,
         "name": "Projeto INSPER",
         "descr": "Fez mais contribuições a um projeto educacional do INSPER",
         "xp": 5,
         "icon": "school",
         "unique": false,
-        "type": "Code",
-        "multiplier": 1.5
+        "type": "Code"
     },
 
-    {
-        "id": 30,
-        "name": "Tradução aceita!",
-        "descr": "Fez uma tradução que foi aceita em um software aberto.",
-        "xp": 5,
-        "icon": "g_translate",
-        "unique": false,
-        "type": "Docs",
-        "mandatory": "C",
-        "metadata_requirements": ["url|str"]
-    },
-    {
-        "id": 31,
-        "name": "Novas línguas",
-        "descr": "Adicionou suporte a traduções em um software que não era traduzível.",
-        "xp": 10,
-        "icon": "language",
-        "unique": false,
-        "type": "Docs",
-        "metadata_requirements": ["url|str"]
-    },
-    {
-        "id": 32,
-        "name": "Blogueiro",
-        "descr": "Criou tutorial de um software ou biblioteca em um blog (ou sites como Medium)",
-        "xp": 5,
-        "icon": "create",
-        "unique": false,
-        "type": "Docs",
-        "metadata_requirements": ["url|str"]
-    },
-    {
-        "id": 33,
-        "name": "youtuber",
-        "descr": "Criou video tutorial de um software ou biblioteca.",
-        "xp": 5,
-        "icon": "videocam",
-        "unique": false,
-        "type": "Docs",
-        "metadata_requirements": ["url|str"]
-    },
-    {
-        "id": 34,
-        "name": "Revisor",
-        "descr": "Revisou pequenos erros na documentação de um projeto e teve suas modificações aceitas.",
-        "xp": 2,
-        "icon": "text_format",
-        "unique": false,
-        "type": "Docs",
-        "metadata_requirements": ["url|str"]
-    },
-    {
-        "id": 35,
-        "name": "Contribuição de documentação",
-        "descr": "Fechou uma *issue* marcada como `docs`",
-        "xp": 7,
-        "icon": "book",
-        "icon_version": "7",
-        "unique": false,
-        "type": "Docs",
-        "mandatory": "C",
-        "metadata_requirements": ["url|str"]
-    },
-
-
-    
     {
         "id": 40,
-        "name": "Participação em Evento",
-        "descr": "Participou de um evento da área de Tecnologia.",
+        "name": "Issue indireta",
+        "descr": "Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias. ",
         "xp": 3,
-        "icon": "event_available",
+        "icon": "call-split",
         "unique": false,
-        "type": "Community", 
-        "multiplier": 0.5
+        "type": "Community"
     },
     {
         "id": 41,
-        "name": "Metacontribuição",
-        "descr": "Fez uma contribuição simples no repositório da matéria.",
-        "xp": 2,
-        "icon": "refresh",
+        "name": "Beta tester",
+        "descr": "Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue.",
+        "xp": 3,
+        "icon": "beta",
         "unique": false,
         "type": "Community"
     },
     {
         "id": 42,
-        "name": "Palestrante",
-        "descr": "Fez uma palestra sobre bibliotecas ou softwares livres.",
-        "xp": 10,
-        "icon": "mic",
+        "name": "Tradução aceita!",
+        "descr": "Fez uma tradução que foi aceita em um software aberto.",
+        "xp": 5,
+        "icon": "google-translate",
         "unique": false,
-        "type": "Community"
+        "type": "Community",
+        "mandatory": "C",
+        "metadata_requirements": ["url|str"]
     },
     {
         "id": 43,
-        "name": "Helpdesk",
-        "descr": "Teve uma resposta aceita em sites como StackOverflow ou em listas de email",
-        "xp": 4,
-        "icon": "question_answer",
+        "name": "Novas línguas",
+        "descr": "Adicionou suporte a traduções em um software que não era traduzível.",
+        "xp": 10,
+        "icon": "web",
         "unique": false,
         "type": "Community",
         "metadata_requirements": ["url|str"]
     },
     {
         "id": 44,
-        "name": "Convidado VIP",
-        "descr": "Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill.",
-        "xp": 5,
-        "icon": "call",
-        "unique": true,
+        "name": "Revisor",
+        "descr": "Revisou pequenos erros na documentação de um projeto e teve suas modificações aceitas.",
+        "xp": 2,
+        "icon": "book-edit",
+        "unique": false,
         "type": "Community",
         "metadata_requirements": ["url|str"]
     },
-    { 
+    {
         "id": 45,
-        "name": "Contribuição publicada",
-        "descr": "Uma contribuição sua foi incluída em um release.",
-        "xp": 5,
-        "icon": "public",
+        "name": "Contribuição de documentação",
+        "descr": "Fechou uma *issue* marcada como `docs`",
+        "xp": 7,
+        "icon": "book-check",
         "unique": false,
         "type": "Community",
-       "metadata_requirements": ["commit_url|str", "release_url|str"]
-    },
-    { 
-        "id": 46,
-        "name": "Replay de PR",
-        "descr": "Apresentou (em 10 minutos) o processo de resolução de um bug na aula.",
-        "xp": 5,
-        "icon": "replay_10",
-        "unique": false,
-        "type": "Community",
-        "icon_version": "7",
+        "mandatory": "C",
         "metadata_requirements": ["url|str"]
-    } ,
+    },
 
     {
-        "id": 47,
+        "id": 46,
         "name": "Pitch de projeto",
         "descr": "Apresentou um Pitch de projeto.",
         "xp": 0,
-        "icon": "record_voice_over",
+        "icon": "account-voice",
         "unique": false,
         "type": "Community",
         "metadata_requirements": ["url|str", "filename|str"]
     },
-
     {
-        "id": 48,
+        "id": 47,
         "name": "Pitch aceito!",
         "descr": "Enviou contribuição para um projeto apresentado em sala.",
         "xp": 5,
-        "icon": "assignment_turned_in",
+        "icon": "receipt",
         "unique": true,
         "type": "Community",
         "metadata_requirements": ["url|str"]
     },
-
     {
-        "id": 49,
+        "id": 48,
         "name": "Sugestão aceita!",
         "descr": "Outro aluno enviou contribuição para o projeto que você fez Pitch.",
         "xp": 3,
-        "icon": "supervisor_account",
+        "icon": "receipt",
+        "unique": false,
+        "type": "Community",
+        "metadata_requirements": ["url|str"]
+    },
+    { 
+        "id": 49,
+        "name": "Replay de PR",
+        "descr": "Apresentou (em 15 minutos) o processo de resolução de um bug na aula.",
+        "xp": 5,
+        "icon": "replay",
         "unique": false,
         "type": "Community",
         "metadata_requirements": ["url|str"]
     },
 
-    {
-        "id": 50,
-        "name": "Dojo de testes",
-        "descr": "Participou do dojo de testes em 18/05.",
-        "xp": 3,
-        "icon": "present_to_all",
-        "unique": true,
-        "type": "Community",
-        "metadata_requirements": ["group|List[str]"]
-    }
- 
 
-    
+
+    {
+        "id": 60,
+        "name": "Palestrante",
+        "descr": "Fez uma palestra sobre bibliotecas ou softwares livres.",
+        "xp": 20,
+        "icon": "presentation-play",
+        "unique": false,
+        "type": "Impact"
+    },
+    {
+        "id": 61,
+        "name": "Helpdesk",
+        "descr": "Teve uma resposta aceita em sites como StackOverflow ou em listas de email",
+        "xp": 4,
+        "icon": "chat-question",
+        "unique": false,
+        "type": "Impact",
+        "metadata_requirements": ["url|str"]
+    },
+    { 
+        "id": 62,
+        "name": "Contribuição publicada",
+        "descr": "Uma contribuição sua foi incluída em um release.",
+        "xp": 10,
+        "icon": "earth",
+        "unique": false,
+        "type": "Impact",
+       "metadata_requirements": ["commit_url|str", "release_url|str"]
+    },
+    {
+        "id": 63,
+        "name": "Convidado VIP",
+        "descr": "Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill.",
+        "xp": 5,
+        "icon": "phone",
+        "unique": true,
+        "type": "Impact",
+        "metadata_requirements": ["url|str"]
+    },
+    {
+        "id": 64,
+        "name": "3 PRs enviados",
+        "descr": "3 PRs enviados para o mesmo projeto",
+        "xp": 10,
+        "icon": "source-branch",
+        "unique": true,
+        "type": "Impact"
+    },
+    {
+        "id": 65,
+        "name": "3 PRs aceitos",
+        "descr": "3 PRs que você enviou para um projeto foram aceitos.",
+        "xp": 30,
+        "icon": "source-branch-check",
+        "unique": true,
+        "type": "Impact"
+    },
+    {
+        "id": 66,
+        "name": "Jabá",
+        "descr": "Algo que você fez foi citado pelo projeto em redes sociais ou algum meio oficial.",
+        "xp": 10,
+        "icon": "human-greeting-proximity",
+        "unique": true,
+        "type": "Impact"
+    }
 ]
