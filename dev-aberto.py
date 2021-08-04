@@ -17,7 +17,7 @@ import sys
 import time
 
 from utils import load_key, create_key, write_string_to_file, load_encrypted, save_encrypted
-from students import Student, all_students, project_points
+from students import Student, all_students
 from skills import Skill, all_skills
 
 
@@ -139,13 +139,15 @@ def compute_grade(student_login):
 
     if all([s[0] >= 0 for s in doneD]):
         conceito = 'D'
+
+        # TODO: fazer os próximos conceitos ao longo do semestre, quando os ids estiverem prontos
         
-        if xp >= 60 and st.achievements.get(20, False) and\
-           (st.achievements.get(30, False) or st.achievements.get(35, False)):
-            conceito = 'C'
+        # if xp >= 60 and st.achievements.get(20, False) and\
+        #    (st.achievements.get(30, False) or st.achievements.get(35, False)):
+        #     conceito = 'C'
         
-        if xp >= 100 and st.achievements.get(23, False):
-            conceito = 'B'
+        # if xp >= 100 and st.achievements.get(23, False):
+        #     conceito = 'B'
 
 
     html = feedback_template.render(doneD=doneD,
@@ -160,7 +162,6 @@ def compute_grade(student_login):
     print('------------')
     print('Conceito final:', conceito)
     print(xp)
-    print('Nota de grupo:', project_points[student_login])
 
 @dev_aberto_cli.command()
 @click.pass_context
@@ -214,7 +215,7 @@ def build_site():
     render_skill_type('tutorial')
     render_skill_type('code')
     render_skill_type('community')
-    render_skill_type('docs')
+    render_skill_type('impact')
     
     students = []
     for st_login in sorted(all_students.keys()):

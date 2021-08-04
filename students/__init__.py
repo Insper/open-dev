@@ -107,6 +107,5 @@ student_folder = os.path.dirname(__file__)
 student_logins = [s.split('-')[0] for s in os.listdir(student_folder) if s.endswith('-achievements')]
 
 all_students = {login: Student.load(login) for login in student_logins}
-project_points = {login: 0 for login in student_logins}
 
 [s.load_skills() for s in all_students.values()]

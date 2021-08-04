@@ -7,10 +7,11 @@ A composição da nota é um misto da quantidade total de *XP* recebida por envi
 Conceito | Pontuação            | Critérios extras
 -------- | -------------------- | ------------------------------------------
 I        | ----                 | Não fez alguma das atividades de tutorial
-D        | ----                 | Completou todas atividades de aula, mas não completou as atividades para o *C*
-C        | 60XP                 | <li>Contribuição de código</li><li>Tradução aceita!</li><li>Participação em evento</li>
-B        | 100XP                | <li>Contribuição de código aceita</li>
-A        | 200XP                | 
+D        | ----                 | Completou todas atividades de aula, mas não chegou no *C*
+C        | 50XP                 | <li>1 x Contribuição de código + </li><li>1 x (Contribuição (simples) aceita! <b>ou</b> Minha primeira contribuição <b>ou</b> Contribuição de código)! + </li><li>Tradução aceita! <b>ou</b> Contribuição de documentação</li>
+B        | 90XP                 | <li>Contribuição de código aceita </li>
+A        | 150XP                | 
+A+       | 200XP                |
 
 Durante o semestre as pontuações da tabela acima podem passar por revisões para baixo, mas nunca para cima. 
 
@@ -30,19 +31,20 @@ Toda atividade que resulte em uma contribuição de código com projetos de soft
 
 --8<-- "skills-code.md"
 
-## Tradução e documentação
-
-Contribuições para documentações e traduções de softwares e materiais de ensino ligados a tecnologia e software livres são aceitas neste eixo.
-
---8<-- "skills-docs.md"
-
-
 ## Comunidade
 
-Um projeto de software também é definido pelas interações de todas as pessoas ao seu redor: usuários, desenvolvedores e tradutores. Neste quesito entram atividades de interação com pessoas em um âmbito menos acadêmico e mais profissional, como:
-
-1. participação em eventos
-1. palestras
-1. contribuições em projetos internos do Insper
+Um projeto de software também é definido pelas interações de todas as pessoas ao seu redor: usuários, desenvolvedores e tradutores. Nesta categoria entram contribuições não-técnicas que beneficiam essas pessoas.
 
 --8<-- "skills-community.md"
+
+
+## Impacto
+
+Nesta categoria entram skills que representam o impacto que as atividades feitas no contexto da disciplina geraram tanto em um projeto de software como na comunidade a sua volta. Isto inclui, 
+
+1. palestras dadas pelo alunos
+1. grande número de contribuições aceitas em um único projeto
+1. citação de trabalhos feitos pelo aluno em redes sociais do projeto
+1. releases contendo commits feitos no contexto da disciplina
+
+--8<-- "skills-impact.md"

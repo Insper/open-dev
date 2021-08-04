@@ -10,9 +10,9 @@ Esta disciplina é gameficada e feita inteiramente usando um repositório *git*.
 
 A disciplina é centrada em 4 tipos de atividades:
 
-* **Tutorial**: atividades preparatórias em sala de aula
+* **Tutorial**: atividades preparatórias (guiadas) em sala de aula
 * **Código**: contribuições de código para projetos externos
-* **Tradução e documentação**: contribuições de documentações e traduções de materiais ligados a tecnologia e software livre
-* **Comunidade**: interação com pessoas em um contexto menos acadêmico e mais profissional no contexto de desenvolvimento de software.
+* **Comunidade**: contribuições não técnicas que podem beneficiar usuários e desenvolvedores de um projeto, como documentações e traduções
+* **Impacto**: resultados significativos alcançados pela participação do aluno em projetos abertos
 
 Mais informações sobre todas as atividades possíveis podem ser lidas na página de [Regras e avaliação](regras.md).
