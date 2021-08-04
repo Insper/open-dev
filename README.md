@@ -1,4 +1,4 @@
-# Desenvolvimento Aberto 2020/1
+# Desenvolvimento Aberto 2021/2
 
 ![Gitter room](https://badges.gitter.im/insper-eng-comp/dev-aberto.svg) ![License CC-BY-NC-SA 4.0](aulas/cc-by-nc-sa-small.png)
 

@@ -32,7 +32,7 @@ class Skill:
         self.xp = int(xp)
         self.icon = icon
         self.icon_version = icon_version
-        self.material_icon = f'!material-large:{icon}'
+        self.material_icon = f':material-{icon}:' + '{: .skill-icon }'
         self.unique = unique
         self.type = type
         self.multiplier = multiplier

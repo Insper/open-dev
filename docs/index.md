@@ -1,6 +1,6 @@
-# Desenvolvimento aberto 2020/1
+# Desenvolvimento aberto 2021/2
 
-Bem-vindo à pagina de Desenvolvimento Aberto de 2019/2. Neste site você encontrará todas as aulas da disciplina, as regras de aprovação e as atividades aceitas. Os objetivos de aprendizagem trabalhados são:
+Bem-vindo à pagina de Desenvolvimento Aberto de 2021/2. Neste site você encontrará todas as aulas da disciplina, as regras de aprovação e as atividades aceitas. Os objetivos de aprendizagem trabalhados são:
 
 * o estudante é capaz de compreender um projeto de software e corrigir um bug ou implementar uma melhoria.
 * o estudante é capaz de criar modificações que atendam aos requisitos técnicos e não técnicos de um projeto de software. 

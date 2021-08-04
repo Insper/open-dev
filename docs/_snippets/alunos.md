@@ -1,19 +1,3 @@
-|                                                                                        |                                         |                                                        |
-|:---------------------------------------------------------------------------------------|:----------------------------------------|:-------------------------------------------------------|
-| ![Isabella Rocha de Oliveira](){: style="max-width:64px; valign="center"}              | Isabella Rocha De Oliveira              | [![](css/github.png)](http://github.com/Isabellaro)    |
-| ![Bruna Mayumi Kimura](){: style="max-width:64px; valign="center"}                     | Bruna Mayumi Kimura                     | [![](css/github.png)](http://github.com/brunakimura)   |
-| ![Bruno Arthur Cesconetto](){: style="max-width:64px; valign="center"}                 | Bruno Arthur Cesconetto                 | [![](css/github.png)](http://github.com/brunoartc)     |
-| ![Eli Jose Abi Ghosn](){: style="max-width:64px; valign="center"}                      | Eli Jose Abi Ghosn                      | [![](css/github.png)](http://github.com/elijose55)     |
-| ![Eric Fernando Otofuji Abrantes](){: style="max-width:64px; valign="center"}          | Eric Fernando Otofuji Abrantes          | [![](css/github.png)](http://github.com/otofuji)       |
-| ![Francisco Ciol Rodrigues Aveiro](){: style="max-width:64px; valign="center"}         | Francisco Ciol Rodrigues Aveiro         | [![](css/github.png)](http://github.com/franciol)      |
-| ![Gabriel Fonseca Moreira](){: style="max-width:64px; valign="center"}                 | Gabriel Fonseca Moreira                 | [![](css/github.png)](http://github.com/gabsmoreira)   |
-| ![Gabriel Valente Francato](){: style="max-width:64px; valign="center"}                | Gabriel Valente Francato                | [![](css/github.png)](http://github.com/gabrielvf1)    |
-| ![hugo silva pereira mendes](){: style="max-width:64px; valign="center"}               | Hugo Silva Pereira Mendes               | [![](css/github.png)](http://github.com/hugosoftdev)   |
-| ![Igor dos Santos Montagner](){: style="max-width:64px; valign="center"}               | Igor Dos Santos Montagner               | [![](css/github.png)](http://github.com/igordsm)       |
-| ![Lucca Delchiaro Costabile](){: style="max-width:64px; valign="center"}               | Lucca Delchiaro Costabile               | [![](css/github.png)](http://github.com/Veronur)       |
-| ![Martim Ferreira Jose](){: style="max-width:64px; valign="center"}                    | Martim Ferreira Jose                    | [![](css/github.png)](http://github.com/martimfj)      |
-| ![Pedro de la Peña Ferreira Bueno Fonseca](){: style="max-width:64px; valign="center"} | Pedro De La Peña Ferreira Bueno Fonseca | [![](css/github.png)](http://github.com/pedrodelapena) |
-| ![Pedro Oliveira de Azambuja](){: style="max-width:64px; valign="center"}              | Pedro Oliveira De Azambuja              | [![](css/github.png)](http://github.com/pedrooa)       |
-| ![Raphael Costa](){: style="max-width:64px; valign="center"}                           | Raphael Costa                           | [![](css/github.png)](http://github.com/raphacosta27)  |
-| ![sabrina sampaio simao](){: style="max-width:64px; valign="center"}                   | Sabrina Sampaio Simao                   | [![](css/github.png)](http://github.com/SabrinaSimao)  |
-| ![Victor Laperuta de Moura](){: style="max-width:64px; valign="center"}                | Victor Laperuta De Moura                | [![](css/github.png)](http://github.com/VictorLMoura)  |
+|                                                                                                                 |                |                                                  |
+|:----------------------------------------------------------------------------------------------------------------|:---------------|:-------------------------------------------------|
+| ![Igor Montagner](https://avatars.githubusercontent.com/u/221446?v=4){: style="max-width:64px; valign="center"} | Igor Montagner | [![](css/github.png)](http://github.com/igordsm) |

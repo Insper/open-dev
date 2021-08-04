@@ -9,7 +9,7 @@ __pycache__
 site/*
 .vscode
 oss/*
-
+open-dev/*
 
 ## Alguns outros gerados no gitignore.io
 # Checkpoint do jupyter

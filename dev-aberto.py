@@ -235,7 +235,7 @@ def build_site():
     num_aceitos = 0
     for student in all_students.values():
         for ach in student.all_achievements:
-            if ach.skill.id == 10 and ach.user == student:
+            if ach.skill.id == 9 and ach.user == student:
                 info_insper.append(ach)
 
             if ach.skill.id == 40 and ach.user == student:
@@ -243,11 +243,11 @@ def build_site():
                 if 'picture' in ach.metadata:
                     eventos.add((ach.metadata['picture'], ach.metadata.get('url', '#')))
 
-            if ach.skill.id == 22 and ach.user == student:
+            if ach.skill.id in [23, 26] and ach.user == student:
                 num_aceitos += 1
 
             # Skill Minha primeira contribuição
-            if ach.skill.id == 3 and ach.user == student:
+            if ach.skill.id in [3, 20] and ach.user == student:
                 if isinstance(ach.metadata, dict):
                     url = ach.metadata['url']
                 else:
@@ -256,7 +256,7 @@ def build_site():
                 dict_add_to_dict(info, data.project_name, 'Pull Requests', data)
 
             
-            if ach.skill.id in [20, 21] and ach.user == student:
+            if ach.skill.id in [21, 22] and ach.user == student:
                 if isinstance(ach.metadata, dict):
                     url = ach.metadata['url']
                 else:

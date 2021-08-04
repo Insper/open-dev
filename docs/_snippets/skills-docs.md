@@ -1,8 +1,8 @@
-|   id |                             | Nome                         | Descrição                                                                              |   XP |
-|-----:|:----------------------------|:-----------------------------|:---------------------------------------------------------------------------------------|-----:|
-|   30 | !material-large:g_translate | Tradução aceita!             | Fez uma tradução que foi aceita em um software aberto.                                 |    5 |
-|   31 | !material-large:language    | Novas línguas                | Adicionou suporte a traduções em um software que não era traduzível.                   |   10 |
-|   32 | !material-large:create      | Blogueiro                    | Criou tutorial de um software ou biblioteca em um blog (ou sites como Medium)          |    5 |
-|   33 | !material-large:videocam    | youtuber                     | Criou video tutorial de um software ou biblioteca.                                     |    5 |
-|   34 | !material-large:text_format | Revisor                      | Revisou pequenos erros na documentação de um projeto e teve suas modificações aceitas. |    2 |
-|   35 | !material-large:book        | Contribuição de documentação | Fechou uma *issue* marcada como `docs`                                                 |    7 |
+|   id |                                        | Nome                         | Descrição                                                                              |   XP |
+|-----:|:---------------------------------------|:-----------------------------|:---------------------------------------------------------------------------------------|-----:|
+|   30 | :material-g_translate:{: .skill-icon } | Tradução aceita!             | Fez uma tradução que foi aceita em um software aberto.                                 |    5 |
+|   31 | :material-language:{: .skill-icon }    | Novas línguas                | Adicionou suporte a traduções em um software que não era traduzível.                   |   10 |
+|   32 | :material-create:{: .skill-icon }      | Blogueiro                    | Criou tutorial de um software ou biblioteca em um blog (ou sites como Medium)          |    5 |
+|   33 | :material-videocam:{: .skill-icon }    | youtuber                     | Criou video tutorial de um software ou biblioteca.                                     |    5 |
+|   34 | :material-text_format:{: .skill-icon } | Revisor                      | Revisou pequenos erros na documentação de um projeto e teve suas modificações aceitas. |    2 |
+|   35 | :material-book:{: .skill-icon }        | Contribuição de documentação | Fechou uma *issue* marcada como `docs`                                                 |    7 |

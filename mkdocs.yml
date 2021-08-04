@@ -1,10 +1,8 @@
-site_name: Desenvolvimento Aberto 2020/1
+site_name: Desenvolvimento Aberto 2021/2
 repo_url: https://github.com/insper/dev-aberto/
 
 theme:
     name: 'material'
-    logo: 
-      icon: 'developer_mode'
 
 extra_css:
   - css/custom.css
@@ -15,7 +13,8 @@ nav:
   - 'Skills e avaliação': 'regras.md'
   - 'Alunos': 'alunos.md'
   - 'Impacto': 
-    - '2020/1': 'impacto.md'
+    - '2021/2': 'impacto.md'
+    - '2020/1': 'impacto-2020.md'
     - '2019/2': 'impacto-2019.md'
 
 markdown_extensions:
@@ -24,7 +23,8 @@ markdown_extensions:
       base_path: "docs/_snippets"
       check_paths: true
   - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_png
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tasklist
   - pymdownx.details
   - material_icons
