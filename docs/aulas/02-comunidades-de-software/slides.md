@@ -323,11 +323,6 @@ Nem sempre o que é financiado termina em um formato "aproveitável" por terceir
 	- Resolver um problema de seu interesse
 
 ---
-# Como começar a contribuir?
-
-![width:300px](capa.png)
-
----
 # Atividade: Explorando o entorno de um projeto
 
 ![width:256px](https://fonts.gstatic.com/s/i/materialicons/monetization_on/v4/24px.svg)
