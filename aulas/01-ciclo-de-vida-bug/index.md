@@ -1,8 +1,4 @@
-% 01 - Ciclo de vida de um bug
-% Desenvolvimento aberto 2020/1
-% Igor Montagner
-
-# Discussão inicial e motivação
+# 01 - Workflow de desenvolvimento distribuído
 
 Suponha que você decidiu liberar um projeto que você desenvolveu nos últimos semestres. Um usuário de seu software teve um problema e te contactou pedindo ajuda. Como você lidaria com isto? Seu grupo deverá responder à seguinte pergunta:
 
@@ -13,9 +9,6 @@ Suponha que você decidiu liberar um projeto que você desenvolveu nos últimos 
 <!--- **Como você garantiria que esse erro não ocorra novamente? Responda considerando os seguintes tipos de problemas: site fora do ar, programa devolve resultado errado e usuário precisa que uma funcionalidade existente aceite uma nova opção.** --->
 <!--- **Qual infraestrutura você teria que disponibilizar para que outros clientes também possam enviar relatos de bugs? Que informações sobre você estaria disposto a compartilhar?**  --->
 
-
-
-# Workflow distribuídos usando `git`
 
 Neste roteiro trabalharemos no workflow padrão para contribuir com
 projetos hospedados no Github (mas que também serve para projetos git em
@@ -95,14 +88,11 @@ Verifique que seu usuário foi criado corretamente listando novamente os
 usuários existentes. Seu usuário deverá apresentar um \* ao lado do
 nome, o que significa que o arquivo login.key está presente no sistema.
 
-------
+!!! danger
+    Você não deverá incluir em seu PR o arquivo `*.key`. Ele deverá ser
+    enviado por email para o professor. Faça isto agora antes que esqueça!
 
-Você não deverá incluir em seu PR o arquivo `*.key`. Ele deverá ser
-enviado por email para o professor. Faça isto agora antes que esqueça!
-
------
-
-Verifique também que você consegue usar o comando compute-grade. Se
+Verifique também que você consegue usar o comando `dev-aberto.py compute-grade igorsm1`. Se
 estiver tudo ok, passe para o próximo item.
 
 ### Adicionando uma skill
@@ -118,21 +108,15 @@ um exemplo de como a skill deverá ser incluida:
 Isto abrirá um arquivo para edição no *Vi*. Veja o formato usado para
 incluir a skill e faça o mesmo para o seu usuário.
 
--------
-
-Se você quiser usar outro editor de texto pode setar a variável de
-ambiente `EDITOR` logo antes de chamar o `dev-aberto.py`.
-
---------------
+!!! tip
+    Se você quiser usar outro editor de texto pode setar a variável de
+    ambiente `EDITOR` logo antes de chamar o `dev-aberto.py`.
 
 Confira que sua skill foi corretamente adicionada usando o comando
 compute-grade.
 
----------------
-
-Se seu repositório estiver *OK* ajude os colegas do seu grupo.
-
---------------
+!!! tip
+    Se seu repositório estiver *OK* ajude seus colegas
 
 ## Parte 2 - enviando as modificações para o projeto original
 

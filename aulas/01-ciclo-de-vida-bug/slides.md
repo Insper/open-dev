@@ -1,6 +1,6 @@
 ---
 marp: true
-title: Ciclo de vida de um Bug
+title: Workflow de trabalho distribuído 
 footer: 'Igor Montagner ![License CC BY-NC-SA 4.0](../cc-by-nc-sa.png)'
 ---
 
@@ -22,7 +22,7 @@ Desenvolvimento Aberto
 
 # ![width:500px](capa.svg)
 
-##### Apresentação da Disciplina + Ciclo de vida de um Bug
+##### Apresentação da Disciplina + Workflow de trabalho distribuído
 
 
 ###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )  
@@ -33,15 +33,15 @@ Desenvolvimento Aberto
 
 ### Horários de aula:
 
-* SEG 18:00 - 20:00
-* QUA 18:00 - 20:00
+* TER 18:00 - 20:00
+* QUI 18:00 - 20:00
 
 ### Atendimento:
 
-* SEG 16:30 - 18:00
+* SEX 09:00 - 10:30
 
 ### Avaliação
-- Curso baseado em projetos feitos individualmente com apoio de um grupo.
+- Curso baseado em projetos feitos individualmente e/ou com apoio de um grupo.
 
 ---
 
@@ -118,25 +118,6 @@ No mercado, normalmente trabalhamos em um projeto existente
 - realizando melhorias
 - que é usado por vários usuários
 
----
-
-# Discussão
-
-Suponha que você decidiu liberar um projeto que você desenvolveu nos últimos semestres. Um usuário de seu software teve um problema e te contactou pedindo ajuda. 
-
-#
-
-Como você lidaria com isto? **10 minutos**
-
-
----
-
-# Software é mais que um repositório!
-
-![](projeto-software.svg)
-
-A partir do momento em que é lançado, uma série de serviços e processos acompanha um software.
-
 
 ----
 
@@ -190,7 +171,7 @@ A partir do momento em que é lançado, uma série de serviços e processos acom
 
 ---
 
-# Vitória - Turma 2
+# Vitória - 2018/2
 
 ## Spyder
 
@@ -204,7 +185,7 @@ A partir do momento em que é lançado, uma série de serviços e processos acom
 
 ---
 
-# Paulo - Turma 2
+# Paulo - 2018/2
 
 ## Cataclysm: DDA
 
@@ -216,45 +197,47 @@ A partir do momento em que é lançado, uma série de serviços e processos acom
 
 ---
 
-# Participações no Pandas - 2019/2
+# Turma - 2019/2
 
-![](pandas1.png)
+## 15 estudantes
+
+## 19 projetos diferentes, 14 PRs aceitos
+
+## Pandas - 6 contribuições aceitas
 
 ---
-
-# Participações no Pandas - 2019/2
 
 ![](pandas2.png)
 
 ---
 
-# Participações no Pandas - 2019/2
+# Turma 2020/1
 
-![](pandas3.png)
+## 16 estudantes
 
----
+## 15 projetos diferentes, 17 PRs aceitos
 
-# Participações no Pandas - 2019/2
-
-![](pandas4.png)
+## Pandas, Matplotlib, Bokeh, Pygame
 
 ---
 
-# Participações no Pandas - 2019/2
-
-![](pandas5.png)
+![](matplotlib.png)
 
 ---
 
-# Participações no Pandas - 2019/2
+# Minhas contribuições
 
-![](pandas6.png)
+![width:150px](elementary.svg)
+
+## 18 PRs aceitos
+
+## Participação como palestrante em evento
 
 ---
 
-# Participações em projetos Insper - 2019
+# Minhas contribuições
 
-![](foto-agradecimentos.png)
+![width:700px](elementary-edw.png)
 
 ---
 
@@ -321,36 +304,35 @@ A partir do momento em que é lançado, uma série de serviços e processos acom
 * Relatório quinzenal enviado por email
 * Condições completas na [página de regras e skills](https://insper.github.io/dev-aberto/regras/)
 
+---
+
+# Discussão: workflow de desenvolvimento
+
+## Como Git funciona?
+
+----
+
+![width:800px](pr-model1.jpg)
+
+Fonte: https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github 
 
 ---
 
-# Apresentação do curso (grupos)
+![width:800px](pr-model2.jpg)
 
-* Grupos servem de apoio técnico e motivacional
-* Bom desempenho em grupo resulta em bônus de nota :smile:
-	- **Tutorial**: todos completarem as atividades antes da *AI*.
-	- **Projeto**: a combinar
-* Aprovação só depende do seu próprio esforço
-* Alcançar conceitos altos depende da interação com seus colegas
+Fonte: https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github 
 
----
+
+----
 
 # Atividade: Primeiros passos
 
-![width:256px](https://fonts.gstatic.com/s/i/materialicons/person_add/v4/24px.svg?download=true)
+![width:300px](account-check.svg)
 
 **Objetivo**: Enviar seu primeiro *Pull Request* para o repositório da disciplina. 
 
-**Parte 2** do handout da aula de hoje. 
 
 ---
-
-# Atividade extra
-
-Olhar as issues do arquivo *issues-pandas.txt* e começar a construir um ambiente de desenvolvimento. 
-
-**Só fazer isto se o seu grupo tiver seus PRs aceitos durante a aula**. 
-
 
 Desenvolvimento Aberto
 ===
