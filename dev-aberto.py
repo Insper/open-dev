@@ -32,7 +32,7 @@ def dev_aberto_cli():
     pass
 
 @dev_aberto_cli.command()
-def newUser():
+def new_user():
     student_login = ''
 
     while student_login == '':

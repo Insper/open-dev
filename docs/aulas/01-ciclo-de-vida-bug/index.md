@@ -1,14 +1,5 @@
 # 01 - Workflow de desenvolvimento distribuído
 
-Suponha que você decidiu liberar um projeto que você desenvolveu nos últimos semestres. Um usuário de seu software teve um problema e te contactou pedindo ajuda. Como você lidaria com isto? Seu grupo deverá responder à seguinte pergunta:
-
-
-<!--- **Como você implantaria a correção?** --->
-<!--- **Quem paga por esse novo desenvolvimento?** --->
-<!--- **Quais serviços você precisaria ter para comunicar este relato à equipe de desenvolvimento e acompanhar sua solução?** --->
-<!--- **Como você garantiria que esse erro não ocorra novamente? Responda considerando os seguintes tipos de problemas: site fora do ar, programa devolve resultado errado e usuário precisa que uma funcionalidade existente aceite uma nova opção.** --->
-<!--- **Qual infraestrutura você teria que disponibilizar para que outros clientes também possam enviar relatos de bugs? Que informações sobre você estaria disposto a compartilhar?**  --->
-
 
 Neste roteiro trabalharemos no workflow padrão para contribuir com
 projetos hospedados no Github (mas que também serve para projetos git em
@@ -33,7 +24,7 @@ Alguns pontos a serem destacados no fluxo de trabalho acima:
     propostas de modificações e as melhorem. Todo commit feito após a
     criação do PR é incluido e pode ser testado por qualquer um.
 
-## Parte 1 - Criando uma cópia local
+## Criando uma cópia própria
 
 Iremos começar nosso fluxo de trabalho criando um *fork* do repositório
 insper/dev-aberto. Todas nossas modificações serão feitas no nosso
@@ -62,14 +53,19 @@ realizar modificações.
 ### Interagindo com o repositório da disciplina
 
 A criação de usuários e adição de skills é feita usando o comando
-dev-aberto.py. Para utilizá-lo é necessário instalar os pacotes listados
-no arquivo requirements.txt. Sua execução no terminal deverá listar os
+`dev-aberto.py`. 
+
+!!! tip
+    Para utilizá-lo é necessário instalar os pacotes listados
+no arquivo requirements.txt. 
+
+Sua execução no terminal deverá listar os
 comandos disponíveis.
 
     $ python3 dev-aberto.py
 
 Para checar se tudo está funcionando direito, liste todos os usuários
-cadastrados.
+cadastrados. Só deverá ter um usuário cadastrado (`igorsm1`).
 
 ### Criando um usuário
 
@@ -79,10 +75,10 @@ A criação de usuários é feita com o comando:
 
 Isto criará 3 arquivos na pasta \`students\`:
 
--   `login`: informações básicas do usuário em formato JSON.
--   `login-achievements`: arquivo criptografado contendo as entregas de
+-   `seu-login`: informações básicas do usuário em formato JSON.
+-   `seu-login-achievements`: arquivo criptografado contendo as entregas de
     cada aluno em formato JSON.
--   `login.key`: chave criptográfica do arquivo acima.
+-   `seu-login.key`: chave criptográfica do arquivo acima.
 
 Verifique que seu usuário foi criado corretamente listando novamente os
 usuários existentes. Seu usuário deverá apresentar um \* ao lado do
@@ -92,7 +88,7 @@ nome, o que significa que o arquivo login.key está presente no sistema.
     Você não deverá incluir em seu PR o arquivo `*.key`. Ele deverá ser
     enviado por email para o professor. Faça isto agora antes que esqueça!
 
-Verifique também que você consegue usar o comando `dev-aberto.py compute-grade igorsm1`. Se
+Verifique também que você consegue usar o comando `dev-aberto.py compute-grade seu-login`. Se
 estiver tudo ok, passe para o próximo item.
 
 ### Adicionando uma skill
@@ -112,23 +108,23 @@ incluir a skill e faça o mesmo para o seu usuário.
     Se você quiser usar outro editor de texto pode setar a variável de
     ambiente `EDITOR` logo antes de chamar o `dev-aberto.py`.
 
-Confira que sua skill foi corretamente adicionada usando o comando
+
+Agora adicione a skill no seu usuário seguindo o mesmo padrão visto acima. Confira que sua skill foi corretamente adicionada usando o comando
 compute-grade.
 
 !!! tip
     Se seu repositório estiver *OK* ajude seus colegas
 
-## Parte 2 - enviando as modificações para o projeto original
+## Enviando as modificações para o projeto original
 
 Vamos agora criar um commit e enviá-lo como *Pull Request* para o
 repositório da disciplina. Adicione os arquivos criados (menor o arquivo
 `*.key`!) e faça um commit com a seguinte mensagem (substituindo o *X*
 pelo número da sua issue no repositório):
 
-    Fixes issue #X
+    Adiciona usuário seu-login.
 
-Isto faz com que a issue seja automaticamente fechada quando (e se) este
-commit for integrado ao repositório. Execute um `git push` e continue.
+Execute um `git push` e continue.
 
 Com as suas modificações já presentes no seu *fork* é hora de enviá-las
 para o repositório original. Isto é feito na interface do Github.
@@ -140,39 +136,37 @@ presentes no repositório original.](PR-github.png){width="90%"}
 
 O título de seu Pull Request deverá ser *Cria usuário login*. Seu PR
 deverá conter somente um commit e deverá ter como origem o branch
-`issue-X` criado acima. Ele só será aceito se estiver tudo em ordem
-**E** se você tiver enviado o arquivo `*.key` para o professor.
+`issue-X` criado acima. Na descrição do seu PR, adicione o texto
 
---------------
+    Closes #X
 
-Não serão aceitos PRs feitos a partir do `master` nem que tenham mais de
-um commit.
+onde `X` é o número da issue de seu usuário. Isto faz com que a issue seja automaticamente fechada quando (e se) este PR for aceito. 
 
---------------
+
+!!! warning
+    Não serão aceitos PRs feitos a partir do `main` nem que tenham mais de um commit.
+
+Use o checklist abaixo para ajudar a verificar se o seu trabalho está correto:
+
+ - [ ] criou usuário novo com `new-user`
+ - [ ] adicionou a skill "Primeiros passos"
+ - [ ] checou se o usuário novo está com a nova skill usando `compute-grade`
+ - [ ] criou PR contendo somente um commit e com os arquivos corretos
+ - [ ] enviou arquivo `.key` por email para o professor
+ - [ ] não adicionou arquivo `.key` no PR
 
 Assim que seu PR for aceito você pode remover o branch issue-X.
 
-## Parte 3 - atualizando seu *fork*
+## Atualizando seu *fork*
 
 Ao ter seu PR aceito você deve ter notado que seu commit aparece no
-`master` do projeto original mas não aparece no seu fork. Isto ocorre
+`main` do projeto original mas não aparece no seu fork. Isto ocorre
 pois um fork não é automaticamente atualizado quando seu repositório
-original correspondente receber novos commits. Para que isto ocorra é
-necessário realizar a sincronização *manualmente*. Isto envolve duas
-etapas. Na primeira, que só precisa ser feita uma vez, é adicionado um
-novo repositório remoto que aponta para o repositório original. Na
-segunda baixamos os arquivos deste repositório remoto e os incorporamos
-aos nossos.
+original correspondente receber novos commits. 
 
-O Github tem uma excelente documentação explicando como fazer [o
-primeiro
-passo](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
-(<https://help.github.com/articles/configuring-a-remote-for-a-fork/>) e
-depois como [sincronizar seu
-fork](https://help.github.com/articles/syncing-a-fork/) com o
-repositório original
-(<https://help.github.com/articles/syncing-a-fork/>).
+Para que isto ocorra é necessário realizar a sincronização *manualmente*. Por enquanto vamos nos contentar em usar a interface do Github para fazer isto. 
 
-Ao executar este passos agora você deverá estar vendo o seu commit
-aparecer no branch `master` de seu repositório local. Publique as
-modificações importadas no seu fork dando um `git push`.
+Visite novamente seu *fork*. Agora deverá aparecer uma opção para sincronizar seu *fork* com o repositório original. Use-a para fazer com o que o seu `main` receba os novo commits. 
+
+!!! warning
+    Sincronize seu repositório sempre que for trabalhar em um novo PR. Isso evitará muitos conflitos na hora de juntar suas modificações ao repositório original.

@@ -29,7 +29,7 @@ Desenvolvimento Aberto
 
 ---
 
-# Burocracias 
+# Burocracias
 
 ### Horários de aula:
 
@@ -118,6 +118,11 @@ No mercado, normalmente trabalhamos em um projeto existente
 - realizando melhorias
 - que é usado por vários usuários
 
+---
+
+# Por que vocês estão aqui?
+
+https://forms.office.com/r/qzH223URmA
 
 ----
 
@@ -229,7 +234,7 @@ No mercado, normalmente trabalhamos em um projeto existente
 
 ![width:150px](elementary.svg)
 
-## 18 PRs aceitos
+## ~20 PRs aceitos
 
 ## Participação como palestrante em evento
 
@@ -260,14 +265,10 @@ No mercado, normalmente trabalhamos em um projeto existente
 # Apresentação do curso (Skills)
 
 
-- Código: 
-	* Pull Requests enviados a projetos;
-
-- Tradução e documentação: 
-	* melhorias em documentação de projetos e traduções de/para português;
-
-- Comunidade: 
-	* agregam valor à comunidades externas (eventos, palestras, blogs) ou à comunidade Insper
+* **Tutorial**: atividades preparatórias (guiadas) em sala de aula
+* **Código**: contribuições de código para projetos externos
+* **Comunidade**: contribuições não técnicas que podem beneficiar usuários e desenvolvedores de um projeto, como documentações e traduções
+* **Impacto**: resultados significativos alcançados pela participação do aluno em projetos abertos
 
 ## [Lista completa de skills](https://insper.github.io/dev-aberto/regras/)
 
@@ -282,8 +283,6 @@ No mercado, normalmente trabalhamos em um projeto existente
 - Outubro/Novembro: Projeto
 	- **Autonomia** para definir quais tarefas serão feitas
 	- Escolha de projetos será semi-livre
-
-#### Serão formados grupos para a primeira e para a segunda parte
 
 ---
 
