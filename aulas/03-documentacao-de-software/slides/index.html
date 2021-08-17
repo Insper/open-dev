@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/dev-aberto/aulas/02-comunidades-de-software/slides/">
+        <link rel="canonical" href="https://insper.github.io/dev-aberto/aulas/03-documentacao-de-software/slides/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
     
     
       
-        <title>Fluxo de trabalho distribuído e Comunidades de Software - Desenvolvimento Aberto 2021/2</title>
+        <title>Tradução e localização de software - Desenvolvimento Aberto 2021/2</title>
       
     
     
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Fluxo de trabalho distribuído e Comunidades de Software
+              Tradução e localização de software
             
           </span>
         </div>
@@ -264,7 +264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../02-comunidades-de-software/" class="md-nav__link">
         02 - Comunidades de Software
       </a>
     </li>
@@ -276,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../03-documentacao-de-software/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         03 - Explorando um projeto desconhecido
       </a>
     </li>
@@ -396,7 +396,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/insper/dev-aberto/edit/master/docs/aulas/02-comunidades-de-software/slides.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/insper/dev-aberto/edit/master/docs/aulas/03-documentacao-de-software/slides.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -415,213 +415,129 @@
 </style>
 
 <h1 id="desenvolvimento-aberto">Desenvolvimento Aberto</h1>
-<h1 id="_1"><img alt="height:350px" src="../capa.png" /></h1>
+<h1 id="_1"><img alt="height:350px" src="../../02-comunidades-de-software/capa.png" /></h1>
 <h5 id="fluxo-de-trabalho-distribuido-e-comunidades-de-software">Fluxo de trabalho distribuído e Comunidades de Software</h5>
 <h6 id="igor-dos-santos-montagner-igorsm1insperedubr">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
 <hr />
-<h1 id="modelo-github-fork-pull-request">Modelo Github <em>fork + pull request</em></h1>
-<p><img alt="scale:150%" src="../pr-model1.jpg" /></p>
-<p>Fonte: <a href="https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github">https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github</a> </p>
-<hr />
-<h1 id="modelo-github-fork-pull-request_1">Modelo Github <em>fork + pull request</em></h1>
-<p><img alt="center 150%" src="../pr-model2.jpg" /></p>
-<p>Fonte: <a href="https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github">https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github</a> </p>
-<hr />
-<h1 id="fluxo-de-trabalho-outros-modelos">Fluxo de Trabalho: outros modelos</h1>
+<h1 id="ordem-das-apresentacoes">Ordem das apresentações</h1>
 <ol>
-<li>Enviar patch via lista de e-mails (ex. Linux)</li>
-<li>Ferramentas de <em>code review</em> (ex. KDE - Phabricator)</li>
-<li>Patch é anexado no Bug Tracker (ex. Haiku, KDE)</li>
-<li>Não recebe contribuições externas</li>
+<li>Docker</li>
+<li>GIMP</li>
+<li>Kubernetes</li>
+<li>flatpak</li>
+<li>Godot engine</li>
+<li>KDE</li>
 </ol>
-<hr />
-<h1 id="revisao-dos-prs-da-aula-passada">Revisão dos PRs da aula passada</h1>
-<h2 id="erros-comuns">Erros comuns</h2>
-<hr />
-<h1 id="erro-0-o-arquivo-login-achievements">Erro 0: o arquivo <em>login-achievements</em></h1>
-<p><img alt="width:1000px" src="../erro0-data-errada.png" /></p>
-<p><strong>Como consertar</strong>: Crie um novo commit com a data certa e veja o erro 2.</p>
-<hr />
-<h1 id="erro-1-arquivos-extras-no-pr">Erro 1: arquivos extras no PR</h1>
-<p><strong>Erro</strong>: modificar arquivos não relacionados a sua mudança proposta.</p>
-<h1 id="_2"></h1>
-<p><strong>Ideal</strong>: </p>
-<ol>
-<li>Um Pull Request deverá conter o somente os arquivos relacionados a modificação proposta. </li>
-<li>Cada modificação proposta está em um Pull Request separado</li>
-</ol>
-<hr />
-<p><img alt="width:900px" src="../erro1-arquivos-extras.png" /></p>
-<hr />
-<h1 id="erro-1-arquivos-extras-no-pr_1">Erro 1: arquivos extras no PR</h1>
-<p><strong>Como consertar</strong>: <code>git revert</code> cria um commit que desfaz alterações anteriores.</p>
-<p><img alt="width:800px" src="https://wac-cdn.atlassian.com/dam/jcr:b6fcf82b-5b15-4569-8f4f-a76454f9ca5b/03%20(7).svg?cdnVersion=501" /></p>
-<p><strong>Opções extras</strong>:</p>
-<ul>
-<li><code>--no-commit</code>: só adiciona as modificações, mas não faz o commit. Permite desfazer parcialmente um commit. </li>
-</ul>
-<p>Fonte: <a href="https://www.atlassian.com/git/tutorials/">https://www.atlassian.com/git/tutorials/</a></p>
-<hr />
-<h1 id="erro-2-pr-contem-mais-de-um-commit">Erro 2: PR contém mais de um commit</h1>
-<p><strong>Erro</strong>: o PR está espalhado em vários commits. </p>
-<h1 id="_3"></h1>
-<p><strong>Ideal</strong>: </p>
-<ol>
-<li>Colocar toda sua modificação em um só commit ajuda a entender o que foi modificado no PR.</li>
-<li>Mantém histórico limpo, com um commit por bug consertado ou funcionalidade adicionada.</li>
-<li>Facilita encontrar erros e desfazer a modificação caso ela seja problemática (usando `git revert')</li>
-</ol>
-<hr />
-<h1 id="erro-2-pr-contem-mais-de-um-commit_1">Erro 2: PR contém mais de um commit</h1>
-<p><img alt="width:900px" src="../erro2-multiplos-commits.png" /></p>
-<hr />
-<h1 id="erro-2-pr-contem-mais-de-um-commit_2">Erro 2: PR contém mais de um commit</h1>
-<p><strong>Como consertar</strong>: <code>git rebase -i master</code> permite remover e juntar commits do branch atual que não estejam no <code>master</code>. </p>
-<p><img alt="width:600px" src="https://wac-cdn.atlassian.com/dam/jcr:2d03f5b6-eaa6-4e78-9dd7-3686ba2a7665/05.svg?cdnVersion=501" /></p>
-<p>Fonte: <a href="https://www.atlassian.com/git/tutorials/">https://www.atlassian.com/git/tutorials/</a></p>
-<hr />
-<h1 id="erro-3-mensagens-de-commit-nao-descritivas">Erro 3: Mensagens de commit não descritivas</h1>
-<p><img alt="width:1000px" src="../erro3-msg-commit.png" /></p>
-<p><strong>Como consertar</strong>: <code>git commit --amend</code> permite modificar o último commit feito. </p>
-<hr />
-<h1 id="erro-4-pull-request-com-descricao-ruim">Erro 4: Pull Request com descrição ruim</h1>
-<p><img alt="width:1000px" src="../erro4-descricao-pr.png" /></p>
-<p><strong>Como consertar</strong>: Só editar na interface do Github. </p>
-<hr />
-<h1 id="consertar-em-casa-e-pedir-review-via-github">Consertar em casa e pedir review via Github</h1>
-<h3 id="lembrete-se-nao-der-push-nao-estragou-nada">Lembrete: se não der push não estragou nada</h3>
-<h3 id="lembrete-ii-git-log-mostra-seu-historico-atual">Lembrete II: <code>git log</code> mostra seu histórico atual</h3>
-<h3 id="dica-se-modificou-commits-ja-publicados-use-git-push-f-para-sobrescrever">Dica: se modificou commits já publicados use <code>git push -f</code> para sobrescrever</h3>
-<hr />
-<h1 id="comunidades-de-software">Comunidades de software</h1>
-<hr />
-<h1 id="discussao">Discussão</h1>
-<h1 id="_4"></h1>
-<p><strong>Pergunta</strong>: quais são os softwares que vocês mais utilizam no dia a dia?</p>
-<h1 id="_5"></h1>
-<h1 id="_6"></h1>
-<h1 id="_7"></h1>
-<p><strong>Pergunta 2</strong>: quem é o principal desenvolvedor do projeto?</p>
-<hr />
-<h1 id="exemplo-kernel-linux">Exemplo: Kernel Linux</h1>
-<p><img alt="width:300px" src="../linuxfoundationlogo.png" /></p>
-<p>Fundação dá suporte ao desenvolvimento do Kernel Linux e à criação de um ecossistema de software de código aberto ao seu redor.</p>
-<p>Apoio:</p>
-<ul>
-<li>Financeiro</li>
-<li>Propriedade intelectual</li>
-<li>Infraestrutura</li>
-<li>Serviços e treinamento</li>
-</ul>
-<hr />
-<h1 id="exemplo-kernel-linux_1">Exemplo: Kernel Linux</h1>
-<p>Empresas que patrocinam desenvolvimento:</p>
-<ol>
-<li>Individuais (11,95%)</li>
-<li>Intel (10,01%)</li>
-<li>Red Hat (8,90%)</li>
-<li>Desconhecido (4,09%)</li>
-<li>IBM (3,79)</li>
-<li>SUSE (3,49%)</li>
-<li>Linaro (2,96%)</li>
-<li>Consultores (2,96%)</li>
-<li>Google (2,79%)</li>
-<li>Samsung (2,28%)</li>
-</ol>
-<p>Fonte: "2020 Linux Kernel Development Report"</p>
-<hr />
-<h1 id="exemplo-ubuntu">Exemplo: Ubuntu</h1>
-<h1 id="_8"></h1>
-<h1 id="_9"></h1>
-<p><img alt="" src="https://assets.ubuntu.com/v1/5d6da5c4-logo-canonical-aubergine.svg" /></p>
-<h1 id="_10"></h1>
-<h1 id="_11"></h1>
-<p>Empresa privada controla o desenvolvimento do Ubuntu. Obtem recursos via</p>
-<ul>
-<li>Doações</li>
-<li>Serviços de desenvolvimento e consultoria</li>
-<li>Treinamento</li>
-</ul>
-<hr />
-<h1 id="exemplo-gitlab">Exemplo: Gitlab</h1>
-<h1 id="_12"></h1>
-<h1 id="_13"></h1>
-<p><img alt="width:300px" src="https://cdn-images-1.medium.com/max/1600/1*FtYgYG_G6rplUmF5fLzuXA.png" /></p>
-<h1 id="_14"></h1>
-<h1 id="_15"></h1>
-<p>Empresa financiada até agora por VC (Venture Capital) em busca de lucro. </p>
-<ul>
-<li>Opção de planos grátis com software de código aberto</li>
-<li>Opção de planos corporativos com mais funcionalidades e <strong>suporte</strong></li>
-<li>Instalações locais</li>
-</ul>
-<hr />
-<h1 id="exemplo-elementary">Exemplo: Elementary</h1>
-<h1 id="_16"></h1>
-<p><img alt="" src="https://elementary.io/images/icons/places/128/distributor-logo.svg" /></p>
-<h1 id="_17"></h1>
-<p>Distribuição linux comandada por uma empresa "minúscula" focada em experiência de usuário. Recursos são obtidos via</p>
-<ul>
-<li>Patrocínios individuais e por empresas</li>
-<li>Modelo pay-what-you-want (loja de aplicativos e sistema operacional)</li>
-<li>Hardware com o sistema pré-instalado</li>
-</ul>
-<hr />
-<p><img alt="center" src="../donations.png" /></p>
-<hr />
-<h1 id="exemplo-linux-mint">Exemplo: Linux Mint</h1>
-<p><img alt="width:500px" src="https://www.linuxmint.com/img/logo.png" /></p>
-<h1 id="_18"></h1>
-<p>Distribuição linux cujo objetivo é que tudo funcione direto na instalação. É considerada boa para iniciantes. </p>
-<hr />
-<p><img alt="width:800px" src="../mint-2018.png" /></p>
-<hr />
-<p><img alt="width:800px" src="../mint-2020.png" /></p>
-<hr />
-<p><img alt="width:800px" src="../mint-values.png" /></p>
-<hr />
-<h1 id="outras-fontes">Outras fontes</h1>
-<p><img alt="height:500px" src="../fontes-fundos.png" />
-Diversas outras maneiras de conseguir suporte e financiamento</p>
-<hr />
-<h1 id="razoes-para-financiar-empresa">Razões para financiar (empresa)</h1>
-<h1 id="_19"></h1>
-<ul>
-<li>"Adquirir" especialistas em uma tecnologia</li>
-<li>Vender suporte ou consultoria</li>
-<li>Marketing</li>
-<li>Licença de software "obriga" </li>
-</ul>
-<h1 id="_20"></h1>
-<h1 id="_21"></h1>
-<p>Nem sempre o que é financiado termina em um formato "aproveitável" por terceiros (ex: Android/Linux, TiVO)</p>
-<hr />
-<h1 id="razoes-para-contribuir-individuo">Razões para contribuir (indivíduo)</h1>
-<ul>
-<li>Profissionais<ul>
-<li>Reputação / Currículo</li>
-<li>Necessidade de negócio</li>
-</ul>
-</li>
-<li>Pessoais<ul>
-<li>Altruísmo / Ideologia</li>
-<li>Sensação de realização pessoal</li>
-<li>Exercício de criatividade</li>
-<li>Resolver um problema de seu interesse</li>
-</ul>
-</li>
-</ul>
+<h2 id="10-minutos-cada-uma">10 minutos cada uma</h2>
 <hr />
 <h1 id="atividade-explorando-o-entorno-de-um-projeto">Atividade: Explorando o entorno de um projeto</h1>
 <p><img alt="width:256px" src="https://fonts.gstatic.com/s/i/materialicons/monetization_on/v4/24px.svg" /></p>
-<ul>
-<li>Pesquisar como as comunidades de alguns projetos estão organizadas</li>
-<li>Produzir uma apresentação resumindo suas descobertas</li>
-</ul>
+<div class="highlight"><pre><span></span><code>&quot;metadata&quot;: {
+    &quot;filename&quot;: &quot;nome do arquivo na pasta da aula passada&quot;,
+    &quot;group&quot;: [&quot;login1&quot;, &quot;login2&quot;]
+}
+</code></pre></div>
+<h4 id="no-group-incluir-os-outros-membros-do-grupo-somente">No <code>group</code> incluir os outros membros do grupo somente</h4>
 <hr />
 <h1 id="desenvolvimento-aberto_1">Desenvolvimento Aberto</h1>
-<h1 id="_22"><img alt="height:350px" src="../capa.png" /></h1>
-<h5 id="fluxo-de-trabalho-distribuido-e-comunidades-de-software_1">Fluxo de trabalho distribuído e Comunidades de Software</h5>
+<p><img alt="width:300px" src="../capa.svg" /></p>
+<h5 id="documentacao-de-software">Documentação de software</h5>
+<h6 id="igor-dos-santos-montagner-igorsm1insperedubr_1">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
+<hr />
+<h1 id="desenvolvimento-aberto_2">Desenvolvimento Aberto</h1>
+<p><img alt="width:300px" src="../capa.svg" /></p>
+<h5 id="a-ausencia-de-documentacao-de-software">(A ausência de d)ocumentação de software</h5>
+<h6 id="igor-dos-santos-montagner-igorsm1insperedubr_2">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
+<hr />
+<h1 id="documentacao-de-software_1">Documentação de software</h1>
+<p><strong>Documentação de usuário</strong>:</p>
+<h1 id="_2"></h1>
+<h1 id="_3"></h1>
+<h1 id="_4"></h1>
+<p><strong>Documentação de desenvolvimento</strong>:</p>
+<h1 id="_5"></h1>
+<h1 id="_6"></h1>
+<h1 id="_7"></h1>
+<hr />
+<h1 id="documentacao-de-software_2">Documentação de software</h1>
+<p><strong>Documentação de usuário</strong>:</p>
+<ul>
+<li>Instalação</li>
+<li>Funcionalidades</li>
+<li>Onde obter ajuda</li>
+</ul>
+<hr />
+<h1 id="documentacao-de-software_3">Documentação de software</h1>
+<p><strong>Documentação de desenvolvimento</strong>:</p>
+<ul>
+<li>Como compilar (dependências, ferramentas usadas, etc)</li>
+<li>Como testar (dependências, ferramentas usadas, etc)</li>
+<li>Estilo de código e outras orientações relacionadas</li>
+<li>Organização do código e arquitetura da aplicação</li>
+</ul>
+<hr />
+<h1 id="documentacao-de-software_4">Documentação de software</h1>
+<p>Às vezes as coisas se confundem! O que vocês colocariam na documentação de usuário do <em>Python</em>?</p>
+<p>E na de desenvolvedor?</p>
+<hr />
+<h1 id="exemplo-spyder">Exemplo: Spyder</h1>
+<p><img alt="width:900px" src="../spyder-user.png" /></p>
+<p><a href="https://pythonhosted.org/spyder/">https://pythonhosted.org/spyder/</a></p>
+<hr />
+<h1 id="exemplo-spyder_1">Exemplo: Spyder</h1>
+<p><img alt="width:900px" src="../spyder-dev.png" /></p>
+<p><a href="https://github.com/spyder-ide/spyder/wiki">https://github.com/spyder-ide/spyder/wiki</a></p>
+<hr />
+<h1 id="sistemas-de-documentacao">Sistemas de documentação</h1>
+<p><img alt="width:900px" src="../sphinx.png" /></p>
+<p><a href="http://www.sphinx-doc.org/en/master/">Sphinx</a></p>
+<hr />
+<h1 id="sistemas-de-documentacao_1">Sistemas de documentação</h1>
+<p><img alt="width:900px" src="../mkdocs.png" /></p>
+<p><a href="www.mkdocs.org">Mkdocs</a></p>
+<hr />
+<h1 id="sistemas-de-documentacao-hospedagem">Sistemas de documentação (hospedagem)</h1>
+<p><img alt="width:900px" src="../readthedocs.png" /></p>
+<p><a href="https://readthedocs.org/">https://readthedocs.org/</a></p>
+<hr />
+<h1 id="atividade">Atividade</h1>
+<p>Vocês receberão um <em>zip</em> com o código de um software e zero instruções. Vocês deverão:</p>
+<ol>
+<li>Aprender como rodar o software</li>
+<li>Documentar os passos que vocês seguiram para fazê-lo</li>
+<li>Fazer uma análise crítica do projeto com relação a<ul>
+<li>Arquitetura</li>
+<li>Qualidade do código</li>
+<li>Segurança da solução</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h1 id="objetivos-desta-atividade">Objetivos desta atividade</h1>
+<ol>
+<li>Entender na prática a necessidade de documentação;</li>
+<li>Identificar quais são as dependências de um software. Isto inclui bibliotecas/frameworks usados e serviços aos quais esse software se conecta.</li>
+<li>Rodar sua própria versão de um software de terceiros</li>
+</ol>
+<hr />
+<h1 id="nao-sao-objetivos-desta-atividade">Não são objetivos desta atividade</h1>
+<ol>
+<li>Mostrar nenhum tipo de boa prática de programação</li>
+<li>Modificar o software analisado</li>
+<li>Criticar o desenvolvedor que trabalhou antes no projeto</li>
+</ol>
+<hr />
+<h1 id="atividade-pratica-projeto-nao-documentado">Atividade prática: Projeto não documentado</h1>
+<p><img alt="width:256px" src="https://fonts.gstatic.com/s/i/materialicons/explore/v4/24px.svg?download=true" /></p>
+<p><strong>Objetivo</strong>: entender como rodar um código sem instruções. </p>
+<p><strong>Validação</strong>: apresentação do sistema funcionando. </p>
+<p><strong>Grupos de até 3 pessoas</strong></p>
+<h4 id="tempo-restante-de-hoje-hora-inicial-de-quinta-usem-handout-como-guia">Tempo restante de hoje + hora inicial de quinta. Usem handout como guia</h4>
+<hr />
+<h1 id="desenvolvimento-aberto_3">Desenvolvimento Aberto</h1>
+<p><img alt="width:300px" src="../capa.svg" /></p>
+<h5 id="documentacao-de-software_5">Documentação de software</h5>
+<h6 id="igor-dos-santos-montagner-igorsm1insperedubr_3">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
                 
                   
                     
@@ -630,7 +546,7 @@ Diversas outras maneiras de conseguir suporte e financiamento</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 9, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2021</span>
       
     
   </small>
