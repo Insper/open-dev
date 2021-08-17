@@ -17,6 +17,8 @@ nav:
   - 'Aulas':
     - 'aulas/01-ciclo-de-vida-bug/index.md'
     - 'aulas/02-comunidades-de-software/index.md'
+    - 'aulas/03-documentacao-de-software/index.md'
+    - 'aulas/04-discussao-documentacao-de-software/index.md'
   - 'Impacto': 
     - '2021/2': 'impacto.md'
     - '2020/1': 'impacto-2020.md'

@@ -34,4 +34,4 @@ pontos.
     -   Quanto foi arrecadado? E gasto? Com quais fins?
     -   Quem decide como gastar?
 
-O trabalho do grupo será, então, criar uma apresentação de 5 minutos que responda as perguntas acima.
+O trabalho do grupo será, então, criar uma apresentação de 10 minutos que responda as perguntas acima.
