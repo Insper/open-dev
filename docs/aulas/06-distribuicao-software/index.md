@@ -1,19 +1,8 @@
-% 10 - Distribuição de programas escritos em Python 
-% Desenvolvimento Aberto - 2020/2
-% Igor Montagner
+# 06 - Distribuição de Software
 
+Nesta aula complementaremos as últimas discussões criando um pequeno pacote Python instalável via `pip`. Com isto chegamos mais perto de um projeto que esteja preparado para que outras pessoas o utilizem e colaborem em seu desenvolvimento. 
 
-Na última aula trabalhamos com qualidade de software e documentação. Nesta aula completaremos essa dinâmica criando um pequeno pacote Python instalável via `pip`. Com isto teremos visto
-
-1. Documentação de software para usuários e desenvolvedores
-2. Tradução de interface de usuário
-3. Distribuição de software
-
-O único tópico restante é **Licenças de Software**, que será abordado na segunda parte do curso. 
-
-# Distribuindo software para desenvolvedores
-
-## Parte 1 - nosso pacote
+## Distribuindo software para desenvolvedores: pacote Python básico
 
 Nosso módulo se chamará `dev_aberto` e disponibilizará um programa executável `hello.py` (disponível nessa pasta). Crie a seguinte estrutura de pastas para nosso pacote. 
 
@@ -28,16 +17,20 @@ pacote_exemplo/
     LICENSE
 ~~~
 
-**Exercício**: com a estrutura acima, qual seria o `import` a ser feito para usar a função `hello` do arquivo *dev_aberto.py*?
+!!! exercise
+    com a estrutura acima, qual seria o `import` a ser feito para usar a função `hello` do arquivo *dev_aberto.py*?
 
-**Exercício**: pesquise para que serve o arquivo **`__init__.py`** e use-o para permitir importar `hello` usando somente `import dev_aberto`.
+!!! exercise
+    Pesquise para que serve o arquivo **`__init__.py`** e use-o para permitir importar `hello` usando somente `import dev_aberto`.
 
-**Exercício**: crie um projeto no github para esta atividade. Faça um primeiro commit nele com o conteúdo "zerado" do projeto.
+!!! exercise
+    Crie um projeto no github para esta atividade. Faça um primeiro commit nele com o conteúdo "zerado" do projeto.
 
-- Um arquivo *README* contendo uma frase de descrição do pacote e um link para o repositório da disciplina. 
-- Um arquivo *LICENSE* com a licença MIT. 
+    - Um arquivo *README* contendo uma frase de descrição do pacote e um link para o repositório da disciplina. 
+    - Um arquivo *LICENSE* com a licença MIT. 
 
-## Parte 2 - o arquivo `setup.py`
+
+### O arquivo `setup.py`
 
 A descrição de um pacote Python é feita usando um arquivo setup.py  Veja abaixo uma versão inicial deste arquivo:
 
@@ -50,13 +43,16 @@ setup(name='dev_aberto_seunome',
       )
 ~~~
 
-**Exercício**: crie o arquivo acima no seu projeto, substituindo *seunome* por .... seu nome. Instale o seu próprio pacote usando 
+!!! exercise
+    Crie o arquivo acima no seu projeto, substituindo *seunome* por .... seu nome. Instale o seu próprio pacote usando 
 
     > pip install .
     
-**Exercício**: em outra pasta, abra um console Python e tente importar seu módulo. 
+!!! exercise
+    Em outra pasta, abra um console Python e tente importar seu módulo. 
 
-**Exercício**: pesquise quais argumentos são usados para especificar o autor do pacote, as versões de Python e sistemas operacionais suportados. Preencha estes valores com suas informações. Note que o `pip` leva estas informações em conta e só instalará um pacote se ele estiver em um ambiente suportado. 
+!!! exercise
+    Pesquise quais argumentos são usados para especificar o autor do pacote, as versões de Python e sistemas operacionais suportados. Preencha estes valores com suas informações. Note que o `pip` leva estas informações em conta e só instalará um pacote se ele estiver em um ambiente suportado. 
 
 ### Dependências
 
@@ -72,13 +68,15 @@ Para adicionar pacotes que são automaticamente instalados quando instalamos nos
 ~~~
 
 
-**Exercício**: Verifique as dependências do código e adicione-as no `setup.py`. 
+!!! exercise
+    Verifique as dependências do código e adicione-as no `setup.py`. 
 
 ### requirements.txt
 
 Muitos softwares usam também um arquivo *requirements.txt* para listar **todas** as dependências do software de modo a obter uma instalação idêntica à do desenvolvedor. Isto é importante para uniformizar os ambientes de desenvolvimento. Ou seja, este arquivo nunca será usado por usuários finais. 
 
-**Exercício**: crie um *requirements.txt* para seu projeto com as mesmas dependências listadas no seu *setup.py*. 
+!!! exercise
+    Crie um *requirements.txt* para seu projeto com as mesmas dependências listadas no seu *setup.py*. 
 
 ### Scripts executáveis
 
@@ -98,7 +96,7 @@ Não se esqueça de adicionar a seguinte linha no topo de seu arquivo para que e
 
 No Windows é criado um executável que chama nosso script, de modo que as chamdas do executável continuarão funcionando normalmente. Note que isto não cria menus em nenhum tipo de interface gráfica. 
 
-## Parte 3 - criando arquivos de distribuição
+### Criando arquivos de distribuição
 
 Dois tipos de arquivos de distribuição podem ser usados:
 
@@ -111,7 +109,7 @@ A criação de um arquivo de distribuição de fontes é bem simples:
     
 A instalação deste pacote pode ser feita via `pip`.
 
-## Parte 4 - envio para o PyPI
+### Envio para o PyPI
 
 Vamos agora enviar nosso pacote para o *Python Package Index* para que ele possa ser instalado diretamente via `pip`. Para não poluir o repositório com pacotes temporários e de teste, podemos usar o *TestPyPI*. Toda sua infraestrutura é igual ao oficial, mas ele é limpo de maneira regular. 
 
@@ -125,24 +123,32 @@ Você poderá, então, instalar seu pacote a partir do test PyPI usando o seguin
 
     > pip install --index-url https://test.pypi.org/simple/ my_hello_nome
 
-
-
-# Distribuindo software para usuários
-
-Apesar do método acima ser muito útil para desenvolvedores Python, nossos usuários gostariam somente de receber um pacote que eles possam simplesmente executar em seus computadores. Ou seja, a preocupação com dependências e instalações em linha de comando não deveria existir. 
-
-Neste caso podemos usar outras soluções de distribuição, desta vez focando usuários finais. Para Python nossa opção neste roteiro será o [PyInstaller](https://www.pyinstaller.org/). 
-
-**Exercício**: Visite o site desta ferramenta e aprenda a usá-la.
-
-**Exercício**: O Github suporta adicionar *Releases* em um repositório. Adicione uma nova release com o arquivo executável criado pelo PyInstaller. 
-
-# Entrega
+### Entrega
 
 Faça a entrega de sua atividade adicionando a skill *Pacote Python* e inclua nela a url do seu repositório no github.
 
-![Skill Pacote Python](skill-python.png){height=250}
+![Skill Pacote Python](skill-python.svg){ style="height:150px" }
 
 **Objetivo**: Primeira experiência distribuindo software Python.
 
 > "metadata": {"url": "repo-seu-pacote"}
+
+## Distribuindo software para usuários finais
+
+Vamos agora trabalhar (em grupo) no Servidor de Desafios novamente. Seu trabalho será criar um `Dockerfile` que roda o software de maneira "completa". Ou seja, o script de criação do container deverá
+
+- [ ] instalar todas as dependências do sistema
+- [ ] criar a base de dados, se necessário
+- [ ] adicionar os usuários presentes no arquivo `users.csv`, se necessário
+- [ ] executar o servidor e serví-lo na porta `8080` do `host`
+- [ ] manter os dados adicionados ao reiniciar o container
+
+### Entrega
+
+Faça a entrega de sua atividade adicionando a skill *Dockerfile* segundo o modelo abaixo.
+
+![Skill Dockerfile](skill-docker.svg){ style="height:150px" }
+
+**Objetivo**: Criou deploy automatizado para sistema web Python
+
+> "metadata": {"url": "repo-servidor-de-desafios", "group": ["login1", "login2"]}

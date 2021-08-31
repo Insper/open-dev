@@ -74,13 +74,13 @@
     {
         "id": 7,
         "name": "Dockerfile",
-        "descr": "Criou um pacote python instalável via pip.",
+        "descr": "Criou deploy automatizado para sistema web Python",
         "xp": 3,
         "icon": "docker",
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "metadata_requirements": ["url|str"],
+        "metadata_requirements": ["url|str", "group|List[str]"],
         "date_limit": "2021-10-09"
 
     },
