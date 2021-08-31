@@ -8,7 +8,7 @@ Conceito | Pontuação            | Critérios extras
 -------- | -------------------- | ------------------------------------------
 I        | ----                 | Não fez alguma das atividades de tutorial
 D        | ----                 | Completou todas atividades de aula, mas não chegou no *C*
-C        | 50XP                 | <li>1 x Contribuição de código + </li><li>1 x (Contribuição (simples) aceita! <b>ou</b> Minha primeira contribuição <b>ou</b> Contribuição de código)! + </li><li>Tradução aceita! <b>ou</b> Contribuição de documentação</li>
+C        | 50XP                 | <li>1 x Contribuição de código + </li><li>Tradução aceita! <b>ou</b> Contribuição de documentação</li>
 B        | 90XP                 | <li>Contribuição de código aceita </li>
 A        | 150XP                | 
 A+       | 200XP                |

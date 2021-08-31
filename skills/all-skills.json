@@ -97,10 +97,10 @@
     },
     {
         "id": 9,
-        "name": "Projeto DIY",
-        "descr": "Contribuiu com um projeto educacional livre do Insper",
+        "name": "Minha primeira contribuição",
+        "descr": "Primeiro PR enviado corrigindo um bug simples.",
         "xp": 5,
-        "icon": "bus-school",
+        "icon": "airplane-takeoff",
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
@@ -124,21 +124,10 @@
 
 
     {
-        "id": 20,
-        "name": "Minha primeira contribuição (pode ser em grupo)",
-        "descr": "Primeiro PR enviado corrigindo um bug simples.",
-        "xp": 5,
-        "icon": "airplane-takeoff",
-        "unique": false,
-        "type": "Code",
-        "mandatory": "D",
-        "metadata_requirements": ["url|str", "group|List[str]"]
-    },
-    {
         "id": 21,
         "name": "Contribuição de código",
         "descr": "PR enviado corrigindo um bug.",
-        "xp": 5,
+        "xp": 7,
         "icon": "code-braces-box",
         "icon_version": "7",
         "unique": false,
@@ -150,7 +139,7 @@
         "id": 22,
         "name": "Contribuição aceita!",
         "descr": "Um PR não trivial foi aceito por um projeto externo.",
-        "xp": 10,
+        "xp": 13,
         "icon": "check-all",
         "unique": false,
         "type": "Code",
@@ -363,6 +352,15 @@
         "descr": "Algo que você fez foi citado pelo projeto em redes sociais ou algum meio oficial.",
         "xp": 10,
         "icon": "human-greeting-proximity",
+        "unique": true,
+        "type": "Impact"
+    },
+    {
+        "id": 77,
+        "name": "Hacktoberfest",
+        "descr": "Participou da Hacktoberfest, enviando 3 PRs para projetos externos.",
+        "xp": 20,
+        "icon": "glass-mug",
         "unique": true,
         "type": "Impact"
     }
