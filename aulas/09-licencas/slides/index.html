@@ -1,0 +1,818 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="canonical" href="https://insper.github.io/dev-aberto/aulas/09-licencas/slides/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
+    
+    
+      
+        <title>Licenças de software - Desenvolvimento Aberto 2021/2</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1118c9be.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ba0d045b.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../css/custom.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#desenvolvimento-aberto" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Desenvolvimento Aberto 2021/2" class="md-header__button md-logo" aria-label="Desenvolvimento Aberto 2021/2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Desenvolvimento Aberto 2021/2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Licenças de software
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/insper/dev-aberto/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Dev Aberto
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Desenvolvimento Aberto 2021/2" class="md-nav__button md-logo" aria-label="Desenvolvimento Aberto 2021/2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Desenvolvimento Aberto 2021/2
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/insper/dev-aberto/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Dev Aberto
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../burocracias/" class="md-nav__link">
+        Burocracias
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../regras/" class="md-nav__link">
+        Skills e avaliação
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../alunos/" class="md-nav__link">
+        Alunos
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Aulas
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Aulas" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Aulas
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-ciclo-de-vida-bug/" class="md-nav__link">
+        01 - Workflow de desenvolvimento distribuído
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02-comunidades-de-software/" class="md-nav__link">
+        02 - Comunidades de Software
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-documentacao-de-software/" class="md-nav__link">
+        03 - Explorando um projeto desconhecido
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-discussao-documentacao-de-software/" class="md-nav__link">
+        04 - Discussões: documentação de projetos
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05-projeto-profissional/" class="md-nav__link">
+        05 - Projeto Profissional
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06-distribuicao-software/" class="md-nav__link">
+        06 - Distribuição de Software
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07-localizacao/" class="md-nav__link">
+        07 - Localização
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Impacto
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Impacto" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Impacto
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../impacto/" class="md-nav__link">
+        2021/2
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../impacto-2020/" class="md-nav__link">
+        2020/1
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../impacto-2019/" class="md-nav__link">
+        2019/2
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#licencas-de-software" class="md-nav__link">
+    Licenças de Software
+  </a>
+  
+    <nav class="md-nav" aria-label="Licenças de Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#igor-dos-santos-montagner-igorsm1insperedubr" class="md-nav__link">
+    Igor dos Santos Montagner ( igorsm1@insper.edu.br )
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/insper/dev-aberto/edit/master/docs/aulas/09-licencas/slides.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <style>
+    footer {
+        position: fixed;
+        bottom: 10px;
+        left: 1050px;
+        width: 400px;
+    }
+
+    footer img {
+        vertical-align: middle;
+    }
+</style>
+
+<h1 id="desenvolvimento-aberto">Desenvolvimento Aberto</h1>
+<p><img alt="width:300px" src="../capa.png" /></p>
+<h5 id="licencas-de-software">Licenças de Software</h5>
+<h6 id="igor-dos-santos-montagner-igorsm1insperedubr">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
+<hr />
+<h1 id="ate-agora">Até agora</h1>
+<ul>
+<li>Ferramentas de colaboração</li>
+<li>Modificações de código</li>
+<li>Tradução de UI e documentação</li>
+<li>Distribuiçao de software</li>
+</ul>
+<p>### Conteúdo técnico: ferramentas, fluxos de trabalho, etc</p>
+<hr />
+<h1 id="hoje">Hoje</h1>
+<h2 id="licencas-de-software_1">Licenças de software</h2>
+<hr />
+<h1 id="licencas-de-software_2">Licenças de software</h1>
+<ul>
+<li>Governam a <strong>distribuição</strong> de um software</li>
+<li>Cessão de direitos do autor para outras pessoas</li>
+<li>Listam quais permissões um usuário (não) tem</li>
+</ul>
+<hr />
+<h1 id="disclaimer">Disclaimer</h1>
+<h2 id="eu-nao-sou-especialista-em-direito-autoral-brasileiro-toda-informacao-disponibilizada-foi-fruto-de-pesquisa-e-nao-constitui-aconselhamento-legal">Eu não sou especialista em direito autoral brasileiro. Toda informação disponibilizada foi fruto de pesquisa e não constitui aconselhamento legal.</h2>
+<hr />
+<h1 id="distribuicao-de-software">Distribuição de software</h1>
+<p>Escrever software é considerado um <em>trabalho intelectual</em>, estando então sujeito às leis de direitos autorais.</p>
+<ul>
+<li>Essas leis são específicas de cada país</li>
+<li>Autoria <em>vs</em> exploração econômica</li>
+<li>Engloba tanto código fonte como binários</li>
+</ul>
+<hr />
+<h1 id="direito-autoral-brasileiro">Direito autoral brasileiro</h1>
+<p>Não é necessário registro. Não vale para ideias. </p>
+<ul>
+<li><strong>Direito moral</strong>: <ul>
+<li>assegura a autoria da obra ao autor original</li>
+<li>integridade da obra</li>
+<li>instransferível e irrevogável</li>
+</ul>
+</li>
+<li><strong>Direito patrimonial</strong>: <ul>
+<li>exploração econômica da obra. </li>
+<li>licenciado ou cedido</li>
+<li><strong>copyright</strong> em inglês</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="por-que-isto-e-importante">Por que isto é importante?</h1>
+<p>O dono dos direitos autorais (patrimoniais) pode controlar:</p>
+<ol>
+<li>Distribuição, parcial ou total;</li>
+<li>Criação de obras derivadas</li>
+<li>Reprodução (execução)</li>
+</ol>
+<hr />
+<h1 id="por-que-isto-e-importante_1">Por que isto é importante?</h1>
+<p>De quem é o código nos seguintes cenários?</p>
+<h3 id="um-funcionario-trabalhando-para-uma-empresa-produz-sotfware-durante-o-expediente">Um funcionário trabalhando para uma empresa produz sotfware durante o expediente.</h3>
+<hr />
+<h1 id="por-que-isto-e-importante_2">Por que isto é importante?</h1>
+<p>De quem é o código nos seguintes cenários?</p>
+<h3 id="um-funcionario-trabalhando-para-uma-empresa-produz-sotfware-fora-do-expediente-e-decide-lancar-um-produto-nao-relacionado">Um funcionário trabalhando para uma empresa produz sotfware fora do expediente e decide lançar um produto não relacionado.</h3>
+<hr />
+<h1 id="por-que-isto-e-importante_3">Por que isto é importante?</h1>
+<p>De quem é o código nos seguintes cenários?</p>
+<h3 id="um-funcionario-trabalhando-para-uma-empresa-produz-sotfware-fora-do-expediente-e-decide-lancar-um-produto-concorrente">Um funcionário trabalhando para uma empresa produz sotfware fora do expediente e decide lançar um produto concorrente.</h3>
+<hr />
+<h1 id="por-que-isto-e-importante_4">Por que isto é importante?</h1>
+<p>De quem é o código nos seguintes cenários?</p>
+<h3 id="um-programador-faz-um-freelance-e-entrega-um-projeto-para-uma-empresa-ele-pode-reutilzar-parte-do-codigo-em-outros-projetos-para-outras-empresas">Um programador faz um freelance e entrega um projeto para uma empresa. Ele pode reutilzar parte do código em outros projetos (para outras empresas)?</h3>
+<hr />
+<h1 id="por-que-isto-e-importante_5">Por que isto é importante?</h1>
+<p>De quem é o código nos seguintes cenários?</p>
+<h3 id="um-prestador-de-servicos-contratado-como-empresa-via-cnpj-participa-de-um-projeto-terceirizado-junto-com-outros-pjs">Um prestador de serviços (contratado como empresa via CNPJ) participa de um projeto terceirizado, junto com outros PJs.</h3>
+<hr />
+<h1 id="por-que-isto-e-importante_6">Por que isto é importante?</h1>
+<p>Nenhum dos casos acima tem respostas fixas. Tudo depende de um monte de fatores jurídicos e do quê cada um assinou. Alguns guias interessantes:</p>
+<ul>
+<li><a href="https://asp-software.org/www/misv_resources/business-articles/who-owns-the-code/">Association of Software Professionals</a></li>
+<li><a href="https://www.startse.com/noticia/mercado/17252/cinco-cuidados-na-contratacao-de-desenvolvimento-de-software">Start-se</a></li>
+<li><a href="https://help.legalnature.com/articles/the-basics-of-software-license-agreements">Legal Nature - EULA</a></li>
+</ul>
+<hr />
+<h1 id="contexto-1-propriedade-intelectual-e-work-for-hire">Contexto 1: Propriedade intelectual e <em>work-for-hire</em></h1>
+<ul>
+<li>Contexto brasilero: "Pela nossa lei de software, a não ser que expressamente dito o contrário, aquele que contrata o desenvolvimento é titular original do software resultante" [1]</li>
+<li>Contexto americano: <em>work-for-hire</em> determina que software feito sob encomenda pertence a quem contratou o serviço [2]</li>
+</ul>
+<p>Fontes <a href="https://www.startse.com/noticia/mercado/17252/cinco-cuidados-na-contratacao-de-desenvolvimento-de-software">1</a> <a href="https://asp-software.org/www/misv_resources/business-articles/who-owns-the-code/">2</a></p>
+<hr />
+<h1 id="contexto-2-projetos-open-source">Contexto 2: projetos <em>open source</em></h1>
+<p><strong>Contributor License Agreement</strong> é um documento de cessão de copyright (direitos de exploração comercial). </p>
+<ul>
+<li>Dá ao projeto uma licença não exclusiva (normalmente) e irrevogável para o projeto explorar sua contribuição</li>
+<li>Mantém autoria</li>
+<li>Isenta o projeto de responsabilidades sobre suas contribuições</li>
+</ul>
+<hr />
+<h1 id="contexto-3-comercializacao-de-software">Contexto 3: comercialização de software</h1>
+<p><strong>End User License Agreement</strong>: Termo usado para aquelas condições que (não lemos) aceitamos ao instalar software proprietário ou nos registramos em um site/serviço.</p>
+<h1 id="_1"></h1>
+<p>Ignorado por aproximadamente 90% dos usuários (<a href="https://measuringu.com/eula/">fonte</a>)</p>
+<hr />
+<h1 id="end-user-license-agreement">End User License Agreement</h1>
+<p><img alt="center" src="../safari_windows.png" /></p>
+<p>E por algumas empresas... <a href="https://www.makeuseof.com/tag/10-ridiculous-eula-clauses-agreed/">Fonte</a></p>
+<hr />
+<h1 id="end-user-license-agreement_1">End User License Agreement</h1>
+<p><img alt="center" src="../itunes_nuclear.png" /></p>
+<p>E por algumas empresas... <a href="https://www.makeuseof.com/tag/10-ridiculous-eula-clauses-agreed/">Fonte</a></p>
+<hr />
+<h1 id="end-user-license-agreement_2">End User License Agreement</h1>
+<p>Restrições típicas encontradas em EULAs:</p>
+<ul>
+<li>Software é licenciado, não vendido;</li>
+<li>É proibido engenharia reversa</li>
+<li>Não pode modificar ou explorar limitações / vulnerabilidades</li>
+<li>Isenta responsabilidades pelo (mau) uso do software</li>
+</ul>
+<hr />
+<h1 id="eula-servicos">EULA (serviços)</h1>
+<p>Informações típicas encontradas em EULAs de serviços:</p>
+<ul>
+<li>Restrições de idade;</li>
+<li>Uso dos dados coletados:</li>
+<li>Término unilateral do serviço</li>
+<li>Garantias de disponibilidade e responsabilidade</li>
+</ul>
+<p><a href="https://help.legalnature.com/articles/the-basics-of-software-license-agreements">Legal Nature - EULA</a></p>
+<hr />
+<h1 id="eula-aws">EULA (AWS)</h1>
+<p><img alt="center" src="../aws-zombies.png" /></p>
+<p><a href="https://aws.amazon.com/service-terms/">fonte</a>: <a href="https://aws.amazon.com/service-terms/">https://aws.amazon.com/service-terms/</a></p>
+<hr />
+<h1 id="end-user-license-agreement_3">End User License Agreement</h1>
+<p><img alt="center" src="https://imgs.xkcd.com/comics/faust_20.png" /></p>
+<p><a href="https://xkcd.com/501/">fonte</a></p>
+<hr />
+<h1 id="um-pouco-de-historia">Um pouco de história</h1>
+<p><img alt="width:600px" src="../stallman.JPG" /></p>
+<p>Richard Stallman fez um interpretador Lisp (MIT ~ 1985)</p>
+<hr />
+<h1 id="um-pouco-de-historia_1">Um pouco de história</h1>
+<p><img alt="width:200px" src="../lisp-machine.JPG" /></p>
+<ul>
+<li>Uma empresa chamada <em>Symbolics</em> licenciou o LISP do MIT para rodar em máquinas como a acima</li>
+</ul>
+<hr />
+<h1 id="um-pouco-de-historia_2">Um pouco de história</h1>
+<ul>
+<li>Uma empresa chamada <em>Symbolics</em> licenciou o LISP do MIT para rodar em máquinas como a acima</li>
+<li>Fez modificações no software</li>
+<li>Deu um jeito de não devolvê-las para o MIT....</li>
+<li>E eliminou a competição...</li>
+</ul>
+<hr />
+<h1 id="um-pouco-de-historia_3">Um pouco de história</h1>
+<ul>
+<li>Stallman ficou #$@#$@#$@</li>
+<li>e criou a primeira licença de software <em>livre</em>: <em>Emacs General Public License</em></li>
+</ul>
+<h3 id="principal-caracteristica">Principal característica:</h3>
+<ol>
+<li>Toda cópia do programa deverá estar acompanhada do código fonte;</li>
+<li>Se uma modificação do software for distribuída, ela deverá estar sujeita aos mesmos termos do software original;</li>
+</ol>
+<hr />
+<h1 id="um-pouco-de-historia-1985">Um pouco de história - 1985</h1>
+<p><img alt="width:400px" src="../fsf.svg" /><img alt="width:100px" src="../gnu.png" /></p>
+<ul>
+<li><a href="https://www.gnu.org/gnu/manifesto.html">GNU Manifesto</a>: descrevia um esforço em criar um sistema completamente livre cujo destino estivesse nas mãos dos usuários</li>
+<li>GNU/Hurd: todas as ferramentas de linha de comando das distribuições modernas vieram desse projeto</li>
+</ul>
+<hr />
+<h1 id="um-pouco-de-historia-1990">Um pouco de história - 1990</h1>
+<p><img alt="width:400px" src="../fsf.svg" /><img alt="width:200px" src="../gnu-linux.jpg" /></p>
+<ul>
+<li>Linus Torvalds tinha um kernel <strong>experimental</strong> "pronto".</li>
+<li>Liberava uma versão nova toda semana;</li>
+<li>Recebia contribuições de outros interessados.</li>
+</ul>
+<hr />
+<h1 id="um-pouco-de-historia_4">Um pouco de história</h1>
+<p><strong>Leitura complementar:</strong> Free Software, Free Society: Selected Essays of Richard M. Stallman. </p>
+<p><img alt="width:400px" src="../stallman.JPG" /></p>
+<hr />
+<h1 id="um-pouco-de-historia_5">Um pouco de história</h1>
+<p><strong>Leitura complementar:</strong> Just for Fun: The Story of an Accidental Revolutionary, Linus Torvalds and David Diamond</p>
+<p><img alt="120% center" src="../torvalds.jpg" /></p>
+<hr />
+<h1 id="licencas-de-software-livre">Licenças de software (livre)</h1>
+<p>Criadas pela Free Software Foundation visando garantir 4 liberdades para um usuário ao usar um software:</p>
+<ol>
+<li>Execução sem restrições</li>
+<li>Estudo e modificação do software; </li>
+<li>Redistribuir cópias;</li>
+<li>Redistribuir cópias das suas modificações.</li>
+</ol>
+<p><strong>Distribuir os fontes é pré-requisito dos itens 1 e 3!</strong></p>
+<p>Chamadas também de <em>recíprocas</em>.</p>
+<hr />
+<h1 id="licencas-de-software-livre_1">Licenças de software (livre)</h1>
+<p><img alt="width:600px" src="../freedoms.svg" /></p>
+<hr />
+<h1 id="licencas-de-software-livre-reciprocas">Licenças de software livre - recíprocas</h1>
+<p><img alt="width:200px" src="../capa.png" /></p>
+<p><strong>Copyleft</strong>: Símbolo é o contrário do copyright, cujo objetivo seria restringir os usuários</p>
+<hr />
+<h1 id="open-source-iniciative">Open Source Iniciative</h1>
+<p><img alt="width:200px" src="https://opensource.org/files/osi_keyhole_300X300_90ppi_0.png" /></p>
+<ul>
+<li>Fundada para difundir um discurso menos anti-comercial e ideológico</li>
+<li>Também difunde benefícios "pragmáticos" do uso de software "de código aberto"</li>
+<li><em>Free</em> causa confusão em inglês<ul>
+<li>Grátis (<em>free as in beer</em>) </li>
+<li>Livre (<em>free as in freedom</em>)</li>
+</ul>
+</li>
+<li>Fundada por Eric Raymond e Bruce Perens</li>
+</ul>
+<hr />
+<h1 id="licencas-de-software-de-codigo-aberto">Licenças de software de código aberto</h1>
+<p>Mais associadas a <a href="http://opensource.org">Open Source Iniciative</a>, são consideradas menos "ideológicas".</p>
+<ul>
+<li>Muitas vezes chamadas de <em>permissivas</em>;</li>
+<li>Normalmente não garatem a liberdade 4;</li>
+<li>Podem fazer outras pequenas exigências ou restrições</li>
+</ul>
+<p>Exemplos: MIT, BSD</p>
+<ul>
+<li>Permitem a distribuição de software com partes proprietárias</li>
+<li>Permitem a venda e completo <em>rebranding</em> do software sem nenhuma contribuição para o autor original.</li>
+</ul>
+<hr />
+<h1 id="atividade">Atividade</h1>
+<p><strong>Cultura livre</strong>: fez uma pesquisa profunda e apresentou seminário sobre licenças de software e casos recentes em que licenças tem papel de destaque</p>
+<h3 id="sua-apresentacao-nao-pode-ser-somente-slides">Sua apresentação não pode ser somente slides</h3>
+<ul>
+<li>kahoot, socrative, etc</li>
+<li>debate</li>
+<li>painel com votações</li>
+</ul>
+<hr />
+<h1 id="atividade-sugestoes-de-temas">Atividade - sugestões de temas</h1>
+<ul>
+<li>Commons Clause e outras licenças "contra" empresas de cloud</li>
+<li>Tretas FLOSS 1: Richard Stallman renuncia da Free Software Foundation</li>
+<li>Tretas FLOSS 2: Eric Raymond é expulso da Open Source Initiative </li>
+<li>Tretas FLOSS 3: Comportamento de Linus Torvalds e códigos de conduta no kernel do Linux</li>
+<li>TiVo e GPLv3</li>
+<li>"Ethical Software"</li>
+<li>Obsolescência programa e smartphones (postmarketOS, PinePhone e Librem 5)</li>
+</ul>
+<hr />
+<h1 id="atividade-datas-de-apresentacao">Atividade - datas de apresentação</h1>
+<ul>
+<li>03/06 - 2 trabalho</li>
+<li>08/06 - 2 trabalhos</li>
+<li>10/06 - 2 trabalhos</li>
+</ul>
+<h3 id="45-minutos-de-apresentacaoatividade-10-minutos-para-perguntas">45 minutos de apresentação/atividade + 10 minutos para perguntas</h3>
+<hr />
+<h1 id="hoje_1">Hoje</h1>
+<ul>
+<li>Definição de temas e datas de apresentação</li>
+<li>Prévia de 5 minutos do seu tema na próxima aula</li>
+</ul>
+<hr />
+<h1 id="desenvolvimento-aberto_1">Desenvolvimento Aberto</h1>
+<p><img alt="width:300px" src="../capa.png" /></p>
+<h5 id="licencas-de-software_3">Licenças de Software</h5>
+<h6 id="igor-dos-santos-montagner-igorsm1insperedubr_1">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 31, 2021</span>
+      
+    
+  </small>
+</div>
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.2b46852b.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
+      
+        <script src="../../../js/markdown-enhancer.js"></script>
+      
+    
+  </body>
+</html>

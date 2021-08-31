@@ -9,7 +9,7 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/dev-aberto/aulas/04-discussao-documentacao-de-software/slides/">
+        <link rel="canonical" href="https://insper.github.io/dev-aberto/aulas/07-localizacao/slides/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
@@ -288,7 +288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../04-discussao-documentacao-de-software/" class="md-nav__link">
         04 - Discussões: documentação de projetos
       </a>
     </li>
@@ -324,7 +324,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../07-localizacao/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         07 - Localização
       </a>
     </li>
@@ -429,11 +429,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#a-ausencia-de-documentacao-de-software" class="md-nav__link">
-    (A ausência de d)ocumentação de software
+  <a href="#localizacao-e-internacionalizacao-de-software" class="md-nav__link">
+    Localização e internacionalização de software
   </a>
   
-    <nav class="md-nav" aria-label="(A ausência de d)ocumentação de software">
+    <nav class="md-nav" aria-label="Localização e internacionalização de software">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -460,7 +460,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/insper/dev-aberto/edit/master/docs/aulas/04-discussao-documentacao-de-software/slides.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/insper/dev-aberto/edit/master/docs/aulas/07-localizacao/slides.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -479,48 +479,180 @@
 </style>
 
 <h1 id="desenvolvimento-aberto">Desenvolvimento Aberto</h1>
-<p><img alt="width:300px" src="../../03-documentacao-de-software/capa.svg" /></p>
-<h5 id="a-ausencia-de-documentacao-de-software">(A ausência de d)ocumentação de software</h5>
+<p><img alt="width:300px" src="../capa.svg" /></p>
+<h5 id="localizacao-e-internacionalizacao-de-software">Localização e internacionalização de software</h5>
 <h6 id="igor-dos-santos-montagner-igorsm1insperedubr">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
 <hr />
-<h1 id="discussao-o-que-faz-o-projeto">Discussão: o que faz o projeto?</h1>
+<h1 id="traducao-de-software">Tradução de software</h1>
+<h2 id="qual-a-diferenca-de-localizacao-e-internacionalizacao">Qual a diferença de localização e internacionalização?</h2>
 <hr />
-<h1 id="servidor-de-desafios">Servidor de desafios</h1>
-<p>Vocês rodaram um MVP do servidor de desafios. Veja abaixo seu estado atual:</p>
-<p><a href="https://github.com/Insper/servidor-de-desafios">https://github.com/Insper/servidor-de-desafios</a></p>
-<hr />
-<h1 id="servidor-de-desafios_1">Servidor de desafios</h1>
-<p><img alt="" src="../foto-dessoft.png" /></p>
-<hr />
-<h1 id="discussao-como-o-projeto-esta-organizado-tecnologias">Discussão: como o projeto está organizado? (tecnologias)</h1>
-<hr />
-<h1 id="discussao-como-o-projeto-esta-organizado-codigo">Discussão: como o projeto está organizado? (código)</h1>
-<hr />
-<h1 id="discussao-avalie-a-arquitetura-do-projeto">Discussão: avalie a arquitetura do projeto</h1>
-<h2 id="0-a-10">0 a 10</h2>
-<hr />
-<h1 id="discussao-avalie-a-qualidade-de-codigo-do-projeto">Discussão: avalie a qualidade de código do projeto.</h1>
-<h2 id="0-a-10_1">0 a 10</h2>
-<hr />
-<h1 id="discussao-avalie-a-seguranca-do-projeto">Discussão: avalie a segurança do projeto.</h1>
-<h2 id="0-a-10_2">0 a 10</h2>
-<hr />
-<h1 id="discussao-esse-projeto-e-um-projeto-profissional">Discussão: esse projeto é um projeto "profissional"?</h1>
-<h2 id="0-a-10_3">0 a 10</h2>
-<hr />
-<h1 id="discussao-o-que-voce-incluiria-na-documentacao-do-projeto">Discussão: o que você incluiria na documentação do projeto?</h1>
-<hr />
-<h1 id="proximas-aula">Próximas aula</h1>
-<p>Entender o quê é um projeto <strong>profissional</strong>: </p>
+<h1 id="internacionalizacao-i18n">Internacionalização (I18N)</h1>
 <ul>
-<li>documentação de usuário e desenvolvedor</li>
-<li>boas práticas de programação e qualidade de código</li>
-<li>integração de código e documentação em um mesmo repositório</li>
+<li>
+<p>Consiste em traduzir a interface de usuário de um software para outros idiomas. </p>
+</li>
+<li>
+<p>Sistema Operacional guarda configurações de idioma e as disponibiliza para aplicações</p>
+</li>
+<li>
+<p>Tipicamente "invisível"</p>
+</li>
 </ul>
 <hr />
+<h1 id="internacionalizacao-i18n_1">Internacionalização (I18N)</h1>
+<h5 id="exemplo">exemplo</h5>
+<hr />
+<h1 id="localizacao-l10n">Localização (L10N)</h1>
+<p>Consiste em adaptar a maneira de mostrar </p>
+<ul>
+<li>números fracionários<ul>
+<li>marcador de decimais</li>
+<li>marcador de milhares</li>
+</ul>
+</li>
+<li>datas<ul>
+<li>nomes de meses</li>
+<li>ordem de exibição </li>
+</ul>
+</li>
+<li>nomes de países, fusos horários, etc</li>
+</ul>
+<p>de acordo com as preferências de um usuário e relativos a sua cultura. </p>
+<hr />
+<h1 id="l10n-e-i18n">L10N e I18N</h1>
+<p>Precisam ser</p>
+<ul>
+<li>independentes:<ul>
+<li>idioma inglês e datas no formato brasileiro</li>
+</ul>
+</li>
+<li>configuráveis<ul>
+<li>posso precisar trocar entre línguas e entre formatos</li>
+</ul>
+</li>
+</ul>
+<h3 id="o-suporte-a-l10n-e-i18n-implica-modificar-codigo-fonte">O suporte a L10N e I18N implica modificar código fonte.</h3>
+<hr />
+<h1 id="locales">Locales</h1>
+<p>Um <em>locale</em> é uma tripla</p>
+<h1 id="_1"></h1>
+<pre><code>&lt;lingua&gt;_&lt;pais&gt;.&lt;codificacao&gt;
+</code></pre>
+<h1 id="_2"></h1>
+<p>que representa configurações de I18N e/ou L10N para uma determinada cultura. </p>
+<hr />
+<h1 id="locales_1">Locales</h1>
+<p>Exemplos:</p>
+<ul>
+<li>Tradução de <em>File</em>: <ul>
+<li><code>pt</code> = Ficheiro</li>
+<li><code>pt_BR</code> = Arquivo</li>
+</ul>
+</li>
+<li>Formato de datas:<ul>
+<li><code>en_US</code>: <em>MM/DD/YY</em></li>
+<li><code>en_GB</code>: <em>DD/MM/YY</em></li>
+</ul>
+</li>
+</ul>
+<h3 id="posso-usar-locales-diferentes-para-a-lingua-da-interface-de-usuario-e-para-mostrar-datas">Posso usar <em>locales</em> diferentes para a língua da interface de usuário e para mostrar datas.</h3>
+<hr />
+<h1 id="configuracoes-possiveis-linux">Configurações possíveis (Linux)</h1>
+<div class="highlight"><pre><span></span><code># saída do comando locale
+LANG=en_US.UTF-8
+LC_CTYPE=&quot;en_US.UTF-8&quot;
+LC_NUMERIC=pt_BR.UTF-8
+LC_TIME=pt_BR.UTF-8
+LC_COLLATE=pt_BR.UTF-8
+LC_MONETARY=pt_BR.UTF-8
+LC_MESSAGES=&quot;en_US.UTF-8&quot;
+LC_PAPER=pt_BR.UTF-8
+LC_NAME=pt_BR.UTF-8
+LC_ADDRESS=pt_BR.UTF-8
+LC_TELEPHONE=pt_BR.UTF-8
+LC_MEASUREMENT=pt_BR.UTF-8
+LC_IDENTIFICATION=pt_BR.UTF-8
+</code></pre></div>
+<hr />
+<h1 id="implementando-suporte-a-l10n">Implementando suporte a L10N</h1>
+<ol>
+<li>Baixar uma biblioteca de Localização</li>
+<li>Encontrar todas as exibições de números, datas, etc</li>
+<li>Pré-processá-las usando funções da biblioteca</li>
+</ol>
+<h1 id="_3"></h1>
+<div class="highlight"><pre><span></span><code><span class="c1"># Antes </span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Numero:&#39;</span><span class="p">,</span> <span class="mf">10.5</span><span class="p">)</span> 
+<span class="c1"># Depois</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Numero&#39;</span><span class="p">,</span> <span class="n">format_number</span><span class="p">(</span><span class="mf">10.5</span><span class="p">))</span>
+</code></pre></div>
+<h1 id="_4"></h1>
+<p>Não é complicado, mas é <strong>trabalhoso</strong></p>
+<hr />
+<h1 id="suporte-a-i18n">Suporte a I18N</h1>
+<p>Envolve 4 etapas:</p>
+<ol>
+<li>Marcar todas strings que devem ser traduzidas</li>
+<li>Extraí-las do código fonte</li>
+<li>Criar um arquivo de traduções para cada <em>locale</em> suportado</li>
+<li>Empacotar as traduções junto com o programa</li>
+</ol>
+<h1 id="_5"></h1>
+<p>É um pouco mais complicado, mas pode ser integrado ao processo de compilação de um programa. </p>
+<hr />
+<h1 id="suporte-a-i18n-posix">Suporte a I18N (POSIX)</h1>
+<p>Sistemas POSIX suportam determinação de lingua e locale usando variáveis de ambiente.</p>
+<ul>
+<li><code>LANG</code> para língua</li>
+<li><code>LC_TIME</code> para data</li>
+<li><code>LC_NUMERIC</code> para números</li>
+</ul>
+<p>Um locale sempre é expresso no formato </p>
+<pre><code>&lt;lingua&gt;_&lt;pais&gt;.&lt;codificacao&gt;
+</code></pre>
+<hr />
+<h1 id="suporte-a-i18n-posix_1">Suporte a I18N (POSIX)</h1>
+<p>O comando <code>locale</code> mostra todas as opções disponíveis:</p>
+<div class="highlight"><pre><span></span><code># saída do comando locale
+LANG=en_US.UTF-8
+LC_CTYPE=&quot;en_US.UTF-8&quot;
+LC_NUMERIC=pt_BR.UTF-8
+LC_TIME=pt_BR.UTF-8
+LC_COLLATE=pt_BR.UTF-8
+LC_MONETARY=pt_BR.UTF-8
+LC_MESSAGES=&quot;en_US.UTF-8&quot;
+LC_PAPER=pt_BR.UTF-8
+LC_NAME=pt_BR.UTF-8
+LC_ADDRESS=pt_BR.UTF-8
+LC_TELEPHONE=pt_BR.UTF-8
+LC_MEASUREMENT=pt_BR.UTF-8
+LC_IDENTIFICATION=pt_BR.UTF-8
+</code></pre></div>
+<hr />
+<h1 id="suporte-a-i18n-web">Suporte a I18N (Web)</h1>
+<p>Existem diversas maneiras de determinar um bom locale em sistemas Web:</p>
+<ul>
+<li>Cabeçalho HTTP <code>Accept-Language</code>  inclui as linguagens de exibição suportadas pelo browser do visitante. </li>
+<li>Geolocalização via IP</li>
+<li>Preferência armazenada em banco de dados</li>
+</ul>
+<h1 id="_6"></h1>
+<h4 id="web-e-desktop-usam-as-mesmas-tecnologias-l10n-e-i18n">Web e desktop usam as mesmas tecnologias (l10n e i18n)</h4>
+<hr />
+<h1 id="suporte-a-i18n-em-python">Suporte a I18N (em Python)</h1>
+<ul>
+<li>Módulo <code>gettext</code> da biblioteca padrão</li>
+<li>Módulo <code>datetime</code> aceita o uso de locales</li>
+<li>Módulo <code>babel</code> faz I18N e L10N</li>
+</ul>
+<hr />
+<h1 id="atividade-pratica-traducao-basica">Atividade prática: Tradução básica</h1>
+<p><img alt="width:256px" src="../skill-traducao.svg" /></p>
+<p><strong>Objetivo</strong>: usar o módulo <em>Babel</em> para traduzir uma aplicação do terminal.</p>
+<hr />
 <h1 id="desenvolvimento-aberto_1">Desenvolvimento Aberto</h1>
-<p><img alt="width:300px" src="../../03-documentacao-de-software/capa.svg" /></p>
-<h5 id="a-ausencia-de-documentacao-de-software_1">(A ausência de d)ocumentação de software</h5>
+<p><img alt="width:300px" src="../capa.svg" /></p>
+<h5 id="localizacao-e-internacionalizacao-de-software_1">Localização e internacionalização de software</h5>
 <h6 id="igor-dos-santos-montagner-igorsm1insperedubr_1">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
                 
                   
@@ -530,7 +662,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 31, 2021</span>
       
     
   </small>
