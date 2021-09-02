@@ -1,8 +1,6 @@
-% 07 - Internacionalização e Localização
-% Desenvolvimento Aberto - 2020/1
-% Igor Montagner
- 
-Na parte expositiva da aula tivemos uma introdução aos problemas de Internacionalização (i18n) e Localização (L10N). Neste roteiro iremos praticar o uso destas técnicas em duas situações: uma aplicação linha de comando de exemplo e em um sistema Web feito em Flask.
+# 07 - Localização 
+
+Na parte expositiva da aula tivemos uma introdução aos problemas de Internacionalização (i18n) e Localização (L10N). Neste roteiro iremos praticar o uso destas técnicas em uma aplicação linha de comando de exemplo simples. 
 
 Em ambos exemplos vamos trabalhar com o módulo *Babel*, que é feito para facilitar a tradução e localização de aplicações feitas em Python. Outras linguagens de programação possuem bibliotecas similares que seguem a mesma sequência de comandos e usam os mesmos tipos de arquivos. 
 
@@ -17,14 +15,23 @@ Já executando o comando abaixo elas devem aparecer em português.
  
 De maneira mais geral, existe uma série de variáveis *LC_\** que controlam qual locale é usado para determinado tipo de dados. Veremos a seguir como usar `LC_TIME` e `LC_NUMERIC` para controlar como datas e números são exibidos e `LANGUAGE` para definir a lingua de exibição de um programa. 
 
-# Parte 1 - linha de comando 
+## Localizando um programa em Python
 
 Vamos trabalhar com uma aplicação de linha de comando que nada mais faz que imprimir alguns dados simples como data em extenso, um número fracionário grande e uma mensagem pré-definida. O código completo (arquivo *cli.py*) está abaixo.
 
-\newpage
+```python 
+from datetime import date
 
-<div class="include code" id="cli.py" language="py"></div>
+if __name__ == '__main__':
+    today = date.today()
+    print(today)
 
+    number = 240000000000.32212
+    print(number)
+    
+    name = input('Input your name: ')
+    print('Hello {}'.format(name))
+```
 Uma saída possível seria
 
     2018-08-28
@@ -38,17 +45,21 @@ Como já visto em aula, este programa reúne três das principais saídas que pr
 
 A formatação de datas é governada para variável `LC_TIME`. O módulo `babel.dates` já possui diversas funções que automaticamente a utilizam para fazer a localização de variáveis do tipo `Date` (usando a função `format_date`) ou `DateTime` (usando `format_datetime`). 
 
-**Exercício**: pesquise como usar estas funções e utilize-as no seu programa para localizar a data por extenso (ou seja, 29 de agosto de 2018).
+!!! exercise
+    Pesquise como usar estas funções e utilize-as no seu programa para localizar a data por extenso (ou seja, 31 de agosto de 2021).
 
-**Exercício**: o quê acontece quando definimos a variável de ambiente `LC_TIME=en_US.utf8` e rodamos o programa? E se usamos `LC_TIME=pt_BR.utf8`?
+!!! exercise
+    O quê acontece quando definimos a variável de ambiente `LC_TIME=en_US.utf8` e rodamos o programa? E se usamos `LC_TIME=pt_BR.utf8`?
 
 ## Formatando números
 
 A formatação de datas é governada para variável `LC_NUMERIC`. O módulo `babel.numbers` possui a função `format_number` que formata um número de acordo com esta configuração.
 
-**Exercício**: pesquise como usar estas funções e utilize-as no seu programa para localizar o número fracionário mostrado.
+!!! exercise
+    Pesquise como usar estas funções e utilize-as no seu programa para localizar o número fracionário mostrado.
 
-**Exercício**: teste seu programa com `LC_NUMERIC=en_US.utf8` e `LC_NUMERIC=pt_BR.utf8`. Os efeitos são os esperados?s
+!!! exercise 
+    Teste seu programa com `LC_NUMERIC=en_US.utf8` e `LC_NUMERIC=pt_BR.utf8`. Os efeitos são os esperados?s
 
 ## Traduzindo mensagens
 
@@ -63,7 +74,7 @@ A implantação do framework de tradução é feita em quatro passos:
 
 No arquivo principal de nossa aplicação podemos "instalar" o framework de tradução e marcar todas nossas strings a serem traduzidas com a função `_()`. A instalação é feita pelo seguinte trecho de código.
 
-```{py}
+```python
 import gettext
 gettext.install('cli', localedir='locale') 
 # cli é o nome do arquivo em que guardamos nossas traduções
@@ -72,7 +83,7 @@ gettext.install('cli', localedir='locale')
 
 Devemos então marcar todas as strings para serem traduzidas com `_()`. Podemos usar `_()` em qualquer arquivo do projeto, mesmo que a instalação tenha sido feita somente no arquivo principal.
 
-```{py}
+```python
 print(_("Hello!"))
 ```
 
@@ -99,13 +110,22 @@ Com as strings traduzidas vamos finalmente compilar nossos resultados. Isto é f
 
 Isto gerará os arquivos `.mo` correspondentes a ao locale `pt_BR`. São estes os arquivos carregados durante a execução do programa.
 
-## Tudo pronto!
+## Teste final
 
 Podemos definir a variável `LANGUAGE` para modificar a lingua de um programa (como visto anteriormente com `ls`). Execute seu programa diretamente e depois setando `LANGUAGE=pt_BR.utf8`. Os resultados foram os esperados?
 
-Valide sua solução com o professor neste momento. Se tudo estiver correto você poderá adicionar a skill *Tradução básica* em seu usuário.
+## Entrega
 
-# Parte 2 - Traduzindo no mundo real
+Modifique o exercício da aula passada (pacote python) para suportar datas e mensagens em Inglês e Português. Faça a entrega de sua atividade adicionando a skill *Tradução básica* segundo o modelo abaixo.
+
+![Skill Tradução básica](skill-traducao.svg){ style="height:150px" }
+
+**Objetivo**: Aplicou ferramentas de localização para traduzir um programa simples em linha de comando.
+
+> "metadata": {"url": "repo-pacote-python"}
+
+
+## Traduzindo no mundo real
 
 Agora que você já conhece os passos necessários para traduzir um software é o momento de colocar esse conhecimento em prática. O trabalho de seu grupo será encontrar softwares que necessitem de traduções para o Português brasileiro e realizá-las. Alguns projetos também disponibilizam arquivos *.po para tradução de guias de usuário e isto também é válido neste item. 
 
@@ -113,6 +133,7 @@ Agora que você já conhece os passos necessários para traduzir um software é 
 * KDE - [status de traduções](https://l10n.kde.org/stats/gui/trunk-kf5/team/pt_BR/) e [brasileiros tradutores](https://br.kde.org/i18n-faq/#como_colaborar).
 * [Inkscape](https://inkscape.org/contribute/translations/)
 * [Openshot](https://translations.launchpad.net/openshot)
+* [Elementary Linux](https://elementary.io/docs/translation-guide#translation-guide)
 * Aplicativos móveis livres no [fdroid.org](http://f-droid.org)
 
-Ao ter traduções aceitas por um projeto vocês receberão a skill *Tradução aceita!*. Cada membro do grupo deverá mandar ao menos um "pacote" de traduções, seja de strings de UI ou guias de usuário/documentações traduzidas. Contanto que algo seja feito manipulando arquivos *.po está valendo.  
+Ao ter traduções aceitas por um projeto vocês receberão a skill *Tradução aceita!*
