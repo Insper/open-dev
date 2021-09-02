@@ -27,56 +27,6 @@ Desenvolvimento Aberto
 
 ###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
 
----
-
-# Skills até agora
-
-## Primeiros passos
-
-![width:256px](https://fonts.gstatic.com/s/i/materialicons/person_add/v4/24px.svg?download=true)
-
-----
-
-# Skills até agora
-
-## Explorando o entorno de um projeto
-
-![width:256px](https://fonts.gstatic.com/s/i/materialicons/monetization_on/v4/24px.svg)
-
-
-
-----
-
-# Skills até agora
-
-## Minha primeira contribuição de código
-
-![width:256px](https://fonts.gstatic.com/s/i/materialicons/flight_takeoff/v6/24px.svg)
-
-----
-
-# Nova skill
-
-## Replay de PR
-
-![width:256px](https://fonts.gstatic.com/s/i/materialicons/replay_10/v6/24px.svg)
-
-**Atividade** (opcional): apresentação de 10 minutos mostrando suas primeiras contribuições.
-
----
-
-# Avisos
-
-* Este curso exige e exercita autonomia. 
-    - Não serão mais cobradas as skills de sala de aula
-	- Não **enviar** skills implica em reprovação
-	- PRs vindos do `master` serão negados
-
-* Algumas skills tem data para podermos discutir experiências e resultados
-
-* Tudo que for feito em grupo é para gerar aprendizado, não pelo resultado.
-	- se alguém não se envolver não vai conseguir reproduzir no futuro
-
 
 ---
 # Tradução de software
@@ -88,14 +38,14 @@ Desenvolvimento Aberto
 
 * Consiste em traduzir a interface de usuário de um software para outros idiomas. 
 
-* SO guarda configurações de idioma e as disponibiliza para aplicações
+* Sistema Operacional guarda configurações de idioma e as disponibiliza para aplicações
 
 * Tipicamente "invisível"
 
 ---
 # Internacionalização (I18N)
 
-(exemplo com okular)
+##### exemplo
 
 ---
 # Localização (L10N)
@@ -110,7 +60,7 @@ Consiste em adaptar a maneira de mostrar
 	- ordem de exibição 
 * nomes de países, fusos horários, etc
 
-de acordo com as preferências (registradas no SO) de um usuário e de sua cultura. 
+de acordo com as preferências de um usuário e relativos a sua cultura. 
 
 --- 
 # L10N e I18N
@@ -193,12 +143,12 @@ Não é complicado, mas é **trabalhoso**
 ---
 # Suporte a I18N
 
-Envolve 3 etapas:
+Envolve 4 etapas:
 
 1. Marcar todas strings que devem ser traduzidas
 2. Extraí-las do código fonte
 3. Criar um arquivo de traduções para cada *locale* suportado
-4. Empacoter as traduções junto com o programa
+4. Empacotar as traduções junto com o programa
 
 #
 
@@ -261,18 +211,14 @@ Existem diversas maneiras de determinar um bom locale em sistemas Web:
 
 
 ----
+
 # Atividade prática: Tradução básica
 
-![width:256px](https://fonts.gstatic.com/s/i/materialicons/font_download/v4/24px.svg?download=true)
+![width:256px](skill-traducao.svg)
 
 
 **Objetivo**: usar o módulo *Babel* para traduzir uma aplicação do terminal.
 
---- 
-
-# Aviso
-
-## esta atividade é curta de propósito, usem bem o tempo da aula!
 
 ---
 Desenvolvimento Aberto

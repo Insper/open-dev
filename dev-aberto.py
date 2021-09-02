@@ -236,19 +236,22 @@ def build_site():
     num_aceitos = 0
     for student in all_students.values():
         for ach in student.all_achievements:
-            if ach.skill.id == 9 and ach.user == student:
+            # Projeto INSPER
+            if ach.skill.id == 26 and ach.user == student:
                 info_insper.append(ach)
 
-            if ach.skill.id == 40 and ach.user == student:
-                num_eventos += 1
-                if 'picture' in ach.metadata:
-                    eventos.add((ach.metadata['picture'], ach.metadata.get('url', '#')))
 
-            if ach.skill.id in [23, 26] and ach.user == student:
+            # if ach.skill.id == 40 and ach.user == student:
+            #     num_eventos += 1
+            #     if 'picture' in ach.metadata:
+            #         eventos.add((ach.metadata['picture'], ach.metadata.get('url', '#')))
+
+            # Contribuições aceitas
+            if ach.skill.id in [22, 23] and ach.user == student:
                 num_aceitos += 1
 
-            # Skill Minha primeira contribuição
-            if ach.skill.id in [3, 20] and ach.user == student:
+            # Skill Minha primeira contribuição ou Contribuição de Código
+            if ach.skill.id in [9, 21] and ach.user == student:
                 if isinstance(ach.metadata, dict):
                     url = ach.metadata['url']
                 else:
@@ -256,8 +259,8 @@ def build_site():
                 data = parse_url(url)
                 dict_add_to_dict(info, data.project_name, 'Pull Requests', data)
 
-            
-            if ach.skill.id in [21, 22] and ach.user == student:
+            # Issues abertas
+            if ach.skill.id in [24, 25] and ach.user == student:
                 if isinstance(ach.metadata, dict):
                     url = ach.metadata['url']
                 else:

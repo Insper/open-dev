@@ -1,6 +1,5 @@
-import babel
 from datetime import date
-from datetime import date, datetime, time
+from gettext import _
 
 if __name__ == '__main__':
     today = date.today()
@@ -9,5 +8,5 @@ if __name__ == '__main__':
     number = 240000000000.32212
     print(number)
     
-    name = input('Input your name: ')
+    name = input(_('Input your name: '))
     print('Hello {}'.format(name))

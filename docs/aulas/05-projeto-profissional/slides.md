@@ -27,17 +27,16 @@ Desenvolvimento Aberto
 
 ###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
 
----
+----
 
-# Dinâmicas online
+# Servidor de desafios
 
-* Todo calendário foi adiado em uma semana
-	* Datas limite de entregas de skills também
-* Aulas continuam iguais (expositiva pequena + prática)
-	* Dúvidas pelo chat
-	* Pedir atendimento usando Forms no canal *General*
-	* Ligação direta para dúvidas
-* Recados gerais dados na aba *General*
+* Arquitetura
+* Qualidade de código
+* Segurança
+
+## Software tem história e depende de pessoas para evoluir
+
 ---
 
 # Código *vs* software profissional
@@ -124,14 +123,13 @@ Em geral podem ser plugadas em alguma ferramenta de documentação de projetos.
 
 Ajudam a manter código limpo e legível. Podem ser plugadas no seu editor favorito.
 
-
 ## Execução obrigatória para muitos projetos grandes
 
 ----
 
 # Atividade prática: Projeto profissional
 
-![width:256px](https://fonts.gstatic.com/s/i/materialicons/star/v4/24px.svg?download=true)
+![width:256px](star.svg)
 
 
 **Objetivo**: Transformar um código perdido em um projeto "completo"
