@@ -313,6 +313,3 @@ def export_csv():
 if __name__ == '__main__':
 
     dev_aberto_cli()
-
-    
-print("Exemplo Deb")
