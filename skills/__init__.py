@@ -25,7 +25,7 @@ def validate_type(obj, type_string):
 class Skill:
     def __init__(self, id, name, descr, xp, icon, unique, type, multiplier=1,
                  mandatory='-', metadata_requirements=[], 
-                 date_limit='2020-12-31', icon_version=4):
+                 date_limit='2021-12-31', icon_version=4):
         self.id = id
         self.name = name
         self.descr = descr
