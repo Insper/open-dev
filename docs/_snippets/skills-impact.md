@@ -7,3 +7,4 @@
 |   64 | :material-source-branch:{: .skill-icon }            | 3 PRs enviados         | 3 PRs enviados para o mesmo projeto                                                                                     |   10 |
 |   65 | :material-source-branch-check:{: .skill-icon }      | 3 PRs aceitos          | 3 PRs que você enviou para um projeto foram aceitos.                                                                    |   30 |
 |   66 | :material-human-greeting-proximity:{: .skill-icon } | Jabá                   | Algo que você fez foi citado pelo projeto em redes sociais ou algum meio oficial.                                       |   10 |
+|   77 | :material-glass-mug:{: .skill-icon }                | Hacktoberfest          | Participou da Hacktoberfest, enviando 3 PRs para projetos externos.                                                     |   20 |
