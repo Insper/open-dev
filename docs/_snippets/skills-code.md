@@ -2,7 +2,7 @@
 |-----:|:-------------------------------------------|:-------------------------------|:------------------------------------------------------------------------------------------------------------|-----:|
 |   21 | :material-code-braces-box:{: .skill-icon } | Contribuição de código         | PR enviado corrigindo um bug.                                                                               |    7 |
 |   22 | :material-check-all:{: .skill-icon }       | Contribuição aceita!           | Um PR não trivial foi aceito por um projeto externo.                                                        |   13 |
-|   23 | :material-check:{: .skill-icon }           | Contribuição (simples) aceita! | Um PR simples (com mudanças triviais ou pequenas refatorações de código) foi aceito por um projeto externo. |    5 |
+|   23 | :material-check:{: .skill-icon }           | Contribuição (simples) aceita! | Um PR simples (com mudanças triviais ou pequenas refatorações de código) foi aceito por um projeto externo. |    3 |
 |   24 | :material-bug:{: .skill-icon }             | Bug Report                     | Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.                                   |    5 |
 |   25 | :material-cart-plus:{: .skill-icon }       | Feature Request                | Fez um pedido de nova funcionalidade a um software.                                                         |    2 |
 |   26 | :material-school:{: .skill-icon }          | Projeto INSPER                 | Fez mais contribuições a um projeto educacional do INSPER                                                   |    5 |

@@ -240,7 +240,7 @@ Richard Stallman fez um interpretador Lisp (MIT ~ 1985)
 ---
 # Um pouco de história
 
-* Stallman ficou #$@#$@#$@
+* Stallman ficou `#$@#$@#$@`
 * e criou a primeira licença de software *livre*: *Emacs General Public License*
 
 ### Principal característica:
@@ -350,20 +350,19 @@ Exemplos: MIT, BSD
 ---
 # Atividade - sugestões de temas
 
-* Commons Clause e outras licenças "contra" empresas de cloud
-* Tretas FLOSS 1: Richard Stallman renuncia da Free Software Foundation
-* Tretas FLOSS 2: Eric Raymond é expulso da Open Source Initiative 
-* Tretas FLOSS 3: Comportamento de Linus Torvalds e códigos de conduta no kernel do Linux
-* TiVo e GPLv3
-* "Ethical Software"
-* Obsolescência programa e smartphones (postmarketOS, PinePhone e Librem 5)
+* Epic vs Apple - distribuição de software em iOS
+* Regulamentações recentes na Europa sobre durabilidade de smartphones (bateria, right to repair, etc)
+* There is no "Linux" platform
+* Telemetria é "ético"? (caso Audacity e outros)
+* Maintainer burnout (caso Hacktober fest e outros)
+* GitHub CoPilot é "ético"? Respeita licenças de software?
 
 -----
 # Atividade - datas de apresentação
 
-* 03/06 - 2 trabalho
-* 08/06 - 2 trabalhos
-* 10/06 - 2 trabalhos
+* 23/11 - 2 trabalho
+* 25/11 - 2 trabalhos
+* 30/11 - 2 trabalhos
 
 ### 45 minutos de apresentação/atividade + 10 minutos para perguntas
 
@@ -373,6 +372,8 @@ Exemplos: MIT, BSD
 
 * Definição de temas e datas de apresentação
 * Prévia de 5 minutos do seu tema na próxima aula
+
+### Registrar seu grupo, escolha de tema e dia de apresentação na issue `#369`
 
 ----
 
