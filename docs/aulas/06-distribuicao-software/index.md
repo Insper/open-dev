@@ -4,7 +4,10 @@ Nesta aula complementaremos as últimas discussões criando um pequeno pacote Py
 
 ## Distribuindo software para desenvolvedores: pacote Python básico
 
-Nosso módulo se chamará `dev_aberto` e disponibilizará um programa executável `hello.py` (disponível nessa pasta). Crie a seguinte estrutura de pastas para nosso pacote. 
+Nosso módulo se chamará `dev_aberto` e disponibilizará um programa executável `hello.py`. Crie a seguinte estrutura de pastas para nosso pacote. 
+
+!!! important
+    Baixe os arquivos que usaremos [neste link](https://github.com/Insper/dev-aberto/tree/master/docs/aulas/06-distribuicao-software)
 
 ~~~
 pacote_exemplo/
