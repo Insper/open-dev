@@ -146,6 +146,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://insper.github.io/dev-aberto/aulas/09-licencas/</loc>
+         <lastmod>2021-09-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://insper.github.io/dev-aberto/aulas/09-licencas/slides/</loc>
+         <lastmod>2021-09-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://insper.github.io/dev-aberto/plugins/notification/</loc>
          <lastmod>2021-09-09</lastmod>
          <changefreq>daily</changefreq>
