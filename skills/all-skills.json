@@ -150,7 +150,7 @@
         "id": 23,
         "name": "Contribuição (simples) aceita!",
         "descr": "Um PR simples (com mudanças triviais ou pequenas refatorações de código) foi aceito por um projeto externo.",
-        "xp": 5,
+        "xp": 3,
         "icon": "check",
         "unique": false,
         "type": "Code"
