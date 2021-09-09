@@ -153,18 +153,4 @@ Permite fazer scripts que interagem com uma página web, realizando entrada de d
 
 **Objetivo**: Primeira experiência com testes automatizado de código.
 
-> "metadata": {"url": "repo-servidor-desagios", "group": ["igual", "6"]}
-
-----
-
-# Atividade prática: Testado e aprovado
-
-1. Criar testes de interface de usuário usando *Selenium*
-    - [tutorial](https://selenium-python.readthedocs.io/)
-    - ideia é reproduzir os mesmos testes apresentados no manual do usuário
-    - testar usando Firefox e Chrome
-1. Criar testes para a função que executa a função submetida pelo usuário (`lambda_handler`) usando *pytest*
-    - [tutorial](https://docs.pytest.org/en/latest/contents.html#toc)
-    - ideia é verificar se alguns programas bem e mal formatados dão o resultado esperado
-
-Os scripts devem ser colocados dentro da pasta *test* nos fontes de vocês. 
+> "metadata": {"url": "repo-servidor-desafios", "group": ["igual", "6"]}
