@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/dev-aberto/aulas/04-discussao-documentacao-de-software/">
+        <link rel="canonical" href="https://insper.github.io/dev-aberto/aulas/08-testes-automatizados/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.6">
     
     
       
-        <title>04 - Discussões: documentação de projetos - Desenvolvimento Aberto 2021/2</title>
+        <title>08 - Testes automatizados - Desenvolvimento Aberto 2021/2</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#04-discussoes-documentacao-de-projetos" class="md-skip">
+        <a href="#08-testes-automatizados" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              04 - Discussões: documentação de projetos
+              08 - Testes automatizados
             
           </span>
         </div>
@@ -288,21 +288,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../04-discussao-documentacao-de-software/" class="md-nav__link">
         04 - Discussões: documentação de projetos
       </a>
-      
     </li>
   
 
@@ -346,11 +336,65 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../08-testes-automatizados/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          08 - Testes automatizados
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         08 - Testes automatizados
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#testes-de-unidade" class="md-nav__link">
+    Testes de unidade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-de-interface-de-usuario" class="md-nav__link">
+    Testes de interface de usuário
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    Entrega
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -446,6 +490,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#testes-de-unidade" class="md-nav__link">
+    Testes de unidade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-de-interface-de-usuario" class="md-nav__link">
+    Testes de interface de usuário
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    Entrega
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -456,13 +529,38 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/insper/dev-aberto/edit/master/docs/aulas/04-discussao-documentacao-de-software/index.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/insper/dev-aberto/edit/master/docs/aulas/08-testes-automatizados/index.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="04-discussoes-documentacao-de-projetos">04 - Discussões: documentação de projetos</h1>
-<p>A aula de hoje é estúdio para trabalhar na atividade da aula passada mais tempo para discussões. </p>
+                <h1 id="08-testes-automatizados">08 - Testes automatizados</h1>
+<p>O objetivo da atividade de hoje é criar testes automatizados para o servidor de desafios. Com isso completamos nossa jornada rumo a software que possa ser desenvolvido de maneira colaborativa e que possa ser usado em situações reais. </p>
+<ol>
+<li>Documentação (usuários e desenvolvedor)</li>
+<li>Distribuição de software e versionamento </li>
+<li>Localização e internacionalização</li>
+<li>Testes automatizados</li>
+</ol>
+<h2 id="testes-de-unidade">Testes de unidade</h2>
+<p>Uma parte do programa do servidor de desafios que pode ser testada com testes de unidade é a função <code>lambda_handler</code>, que executa a função submetida pelo usuário. Seu trabalho será criar testes usando o <a href="https://docs.pytest.org/en/latest/contents.html#toc">pytest</a> e cobrir  os seguintes casos:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> programa submetido está correto</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> programa submetido não contém a função pedida</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> programa submetido retorna resultado incorreto</li>
+</ul>
+<h2 id="testes-de-interface-de-usuario">Testes de interface de usuário</h2>
+<p>Iremos criar testes de interface de usuário para o Servidor de Desafios usando o <a href="https://selenium-python.readthedocs.io/"><em>Selenium</em></a>. Este software permite imitar interações reais de um usuário usando código e criar testes baseado nessas interações. </p>
+<p>Vocês devem simular os seguintes cenários:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Aluno faz login com sucesso</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Aluno entra senha incorreta</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Aluno envia desafio com resposta incorreta</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Aluno envia desafio com resposta correta</li>
+</ul>
+<p>A ideia básica seria reproduzir os mesmos testes apresentados no manual do usuário.</p>
+<h2 id="entrega">Entrega</h2>
+<p>Coloquem os scripts de teste na pasta <em>test</em> do repositório e adicionem instruções de como rodar os testes no <code>README</code>.</p>
                 
                   
                     
@@ -471,7 +569,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 9, 2021</span>
       
     
   </small>
@@ -496,7 +594,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../03-documentacao-de-software/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 03 - Explorando um projeto desconhecido" rel="prev">
+        <a href="../07-localizacao/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 07 - Localização" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -505,20 +603,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              03 - Explorando um projeto desconhecido
+              07 - Localização
             </div>
           </div>
         </a>
       
       
         
-        <a href="../05-projeto-profissional/" class="md-footer__link md-footer__link--next" aria-label="Next: 05 - Projeto Profissional" rel="next">
+        <a href="../../impacto/" class="md-footer__link md-footer__link--next" aria-label="Next: 2021/2" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              05 - Projeto Profissional
+              2021/2
             </div>
           </div>
           <div class="md-footer__button md-icon">
