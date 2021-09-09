@@ -23,6 +23,7 @@ nav:
     - 'aulas/06-distribuicao-software/index.md'
     - 'aulas/07-localizacao/index.md'
     - 'aulas/08-testes-automatizados/index.md'
+    - 'aulas/09-licencas/index.md'
   - 'Impacto': 
     - '2021/2': 'impacto.md'
     - '2020/1': 'impacto-2020.md'
