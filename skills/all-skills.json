@@ -363,5 +363,14 @@
         "icon": "glass-mug",
         "unique": true,
         "type": "Impact"
+    },
+    {
+        "id": 78,
+        "name": "Sprint de Tradução Elementary",
+        "descr": "Participou do sprint de tradução com ao menos 40 strings traduzidas.",
+        "xp": 15,
+        "icon": "shoe-sneaker",
+        "unique": true,
+        "type": "Impact"
     }
 ]

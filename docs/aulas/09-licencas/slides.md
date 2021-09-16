@@ -377,6 +377,16 @@ Exemplos: MIT, BSD
 
 ----
 
+# Desafio de tradução **(21/06)**
+
+### Skill "Tradução aceita!" *(5XP)*: Ao menos 40 string traduzidas
+
+### Extra: "Sprint de tradução Elementary" *(15XP)*
+
+![width:300px](shoe-snicker.svg)
+
+----
+
 Desenvolvimento Aberto
 ===
 
