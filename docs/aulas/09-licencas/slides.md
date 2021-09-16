@@ -377,7 +377,7 @@ Exemplos: MIT, BSD
 
 ----
 
-# Desafio de tradução **(21/06)**
+# Desafio de tradução **(21/09)**
 
 ### Skill "Tradução aceita!" *(5XP)*: Ao menos 40 string traduzidas
 
