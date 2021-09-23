@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/dev-aberto/plugins/notification/">
+        <link rel="canonical" href="https://insper.github.io/dev-aberto/aulas/10-minha-primeira-contribuicao/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
     
     
       
-        <title>Toast Notifications - Desenvolvimento Aberto 2021/2</title>
+        <title>10 - Minha primeira contribuição - Desenvolvimento Aberto 2021/2</title>
       
     
     
@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#toast-notifications" class="md-skip">
+        <a href="#10-minha-primeira-contribuicao" class="md-skip">
           Skip to content
         </a>
       
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Toast Notifications
+              10 - Minha primeira contribuição
             
           </span>
         </div>
@@ -229,12 +229,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       <label class="md-nav__link" for="__nav_5">
         Aulas
@@ -252,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/01-ciclo-de-vida-bug/" class="md-nav__link">
+      <a href="../01-ciclo-de-vida-bug/" class="md-nav__link">
         01 - Workflow de desenvolvimento distribuído
       </a>
     </li>
@@ -264,7 +266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/02-comunidades-de-software/" class="md-nav__link">
+      <a href="../02-comunidades-de-software/" class="md-nav__link">
         02 - Comunidades de Software
       </a>
     </li>
@@ -276,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/03-documentacao-de-software/" class="md-nav__link">
+      <a href="../03-documentacao-de-software/" class="md-nav__link">
         03 - Explorando um projeto desconhecido
       </a>
     </li>
@@ -288,7 +290,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/04-discussao-documentacao-de-software/" class="md-nav__link">
+      <a href="../04-discussao-documentacao-de-software/" class="md-nav__link">
         04 - Discussões: documentação de projetos
       </a>
     </li>
@@ -300,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/05-projeto-profissional/" class="md-nav__link">
+      <a href="../05-projeto-profissional/" class="md-nav__link">
         05 - Projeto Profissional
       </a>
     </li>
@@ -312,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/06-distribuicao-software/" class="md-nav__link">
+      <a href="../06-distribuicao-software/" class="md-nav__link">
         06 - Distribuição de Software
       </a>
     </li>
@@ -324,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/07-localizacao/" class="md-nav__link">
+      <a href="../07-localizacao/" class="md-nav__link">
         07 - Localização
       </a>
     </li>
@@ -336,7 +338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/08-testes-automatizados/" class="md-nav__link">
+      <a href="../08-testes-automatizados/" class="md-nav__link">
         08 - Testes automatizados
       </a>
     </li>
@@ -348,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aulas/09-licencas/" class="md-nav__link">
+      <a href="../09-licencas/" class="md-nav__link">
         09 - Licenças de Software
       </a>
     </li>
@@ -358,11 +360,21 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../aulas/10-minha-primeira-contribuicao/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         10 - Minha primeira contribuição
       </a>
+      
     </li>
   
 
@@ -468,68 +480,13 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/insper/dev-aberto/edit/master/docs/plugins/notification/index.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/insper/dev-aberto/edit/master/docs/aulas/10-minha-primeira-contribuicao/index.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="toast-notifications">Toast Notifications</h1>
-<p>This page illustrates how to create toast (or snackbar) notifications. This is intended for plugin development and probably shouldn't be called directly from the markdown content.</p>
-<p>In your plugin, whenever you want to show a toast notification, just call <code>notification.toast()</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">notification</span><span class="p">.</span><span class="nx">toast</span><span class="p">(</span><span class="s2">&quot;Go crazy!&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">bgColor</span><span class="o">:</span> <span class="s2">&quot;#FFFF00&quot;</span><span class="p">,</span> <span class="nx">color</span><span class="o">:</span> <span class="s2">&quot;#ff4498&quot;</span> <span class="p">});</span>
-<span class="nx">notification</span><span class="p">.</span><span class="nx">toast</span><span class="p">(</span><span class="s1">&#39;bgColor &quot;danger&quot;&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">bgColor</span><span class="o">:</span> <span class="s2">&quot;danger&quot;</span> <span class="p">});</span>
-<span class="nx">notification</span><span class="p">.</span><span class="nx">toast</span><span class="p">(</span><span class="s2">&quot;Notification with click event (reload page)&quot;</span><span class="p">,</span> <span class="p">{</span>
-  <span class="nx">onClick</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">reload</span><span class="p">(),</span>
-<span class="p">});</span>
-<span class="nx">notification</span><span class="p">.</span><span class="nx">toast</span><span class="p">(</span><span class="s2">&quot;Toasts have an optional timeout argument&quot;</span><span class="p">,</span> <span class="p">{</span>
-  <span class="nx">timeout</span><span class="o">:</span> <span class="mf">3000</span><span class="p">,</span>
-<span class="p">});</span>
-</code></pre></div>
-<p>The following values are accepted for <code>bgColor</code>:</p>
-<ul>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: var(--md-primary-fg-color)">primary (your theme's primary color)</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #448aff">note</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #00b0ff">abstract</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #00b0ff">summary</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #00b0ff">tldr</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #00b8d4">info</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #00b8d4">todo</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #00bfa5">tip</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #00bfa5">hint</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #00bfa5">important</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #00c853">success</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #00c853">check</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #00c853">done</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #64dd17">question</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #64dd17">help</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #64dd17">faq</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #ff9100">warning</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #ff9100">caution</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #ff9100">attention</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #ff5252">failure</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #ff5252">fail</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #ff5252">missing</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #ff1744">danger</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #ff1744">error</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #f50057">bug</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #7c4dff">example</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #9e9e9e">quote</span></li>
-<li><span style="display: block; padding: 0.2rem 0.5rem; color: white; background-color: #9e9e9e">cite</span></li>
-<li>a color in hex notation (e.g. <span style="padding: 0.2rem; color: white; background-color: #FF00FF">"#FF00FF"</span>)</li>
-</ul>
-<script type="module">
-import notification from "../../js/notification.js";
-
-notification.toast("Go crazy!", { bgColor: "#FFFF00", color: "#ff4498" });
-notification.toast('bgColor "danger"', { bgColor: "danger" });
-notification.toast("Notification with click event (reload page)", {
-  onClick: () => window.location.reload(),
-});
-notification.toast("Toasts have an optional timeout argument", {
-  timeout: 3000,
-});
-
-</script>
+                <h1 id="10-minha-primeira-contribuicao">10 - Minha primeira contribuição</h1>
+<p>Esta aula não tem atividade prática guidada. Faremos aula estúdio com atendimento para encontrar projetos e issues interessantes.</p>
                 
                   
                     
@@ -538,7 +495,7 @@ notification.toast("Toasts have an optional timeout argument", {
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 3, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2021</span>
       
     
   </small>
@@ -559,6 +516,41 @@ notification.toast("Toasts have an optional timeout argument", {
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../09-licencas/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 09 - Licenças de Software" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              09 - Licenças de Software
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../impacto/" class="md-footer__link md-footer__link--next" aria-label="Next: 2021/2" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              2021/2
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
