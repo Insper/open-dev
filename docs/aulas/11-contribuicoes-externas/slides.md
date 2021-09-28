@@ -24,30 +24,10 @@ Desenvolvimento Aberto
 
 # ![height:350px](capa.svg)
 
-##### Contribuição de código
+##### Dicas de Debug
 
 
 ###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
-
----
-# Atividade: Explorando o entorno de um projeto
-
-![width:256px](https://fonts.gstatic.com/s/i/materialicons/monetization_on/v4/24px.svg)
-
-> {"skill_id": 2, "metadata": {"group": [], "filename": "arquivo.pdf", "date": "--"}
-
-Colocar os arquivos na pasta `docs/apresentacoes`.
-
----
-# Minha primeira contribuição de código
-
-![width:256px](https://fonts.gstatic.com/s/i/materialicons/flight_takeoff/v6/24px.svg)
-
-* Projetos e issues pré-selecionados
-* Será feita em duplas/trios duas vezes
-	* cada vez um será o responsável
-	* ajudar a desempacar
-* Teremos mais duas aulas dedicadas para esta primeira contribuição
 
 ---
 
@@ -201,7 +181,7 @@ Comando `grep` ([man page](https://linux.die.net/man/1/egrep))
 
 ----
 
-# 6. KEEP AN AUDIT TRAIL
+# 6. Keep an audit trail
 
 ## Registre suas descobertas
 
@@ -222,7 +202,7 @@ Comando `grep` ([man page](https://linux.die.net/man/1/egrep))
 
 ---
 
-# 8. GET A FRESH VIEW
+# 8. Get a fresh view
 
 ## Empacou?
 
@@ -238,7 +218,7 @@ Me chame!
 
 ---
 
-# 9. IF YOU DIDN'T FIX IT, IT AIN'T FIXED
+# 9. If you didn't fix it, it ain't fixed
 
 ![](doesnt-work.png)
 
@@ -249,6 +229,22 @@ Me chame!
 
 ### Tentem aplicar estas ideias aos seus problemas
 
+----
+
+![](hacktoberfest.png)
+
+## Envie 4 PRs para projetos participantes e ganhe uma camiseta
+
+----
+
+# Atividade extra: hacktoberfest
+
+
+![width:256px](hacktoberfest.svg)
+
+**Objetivo**: Enviar 3 PRs para projetos externos no mês de outubro.
+
+> "metadata": {"date": "2021-10-31"}
 
 ----
 
@@ -257,7 +253,7 @@ Desenvolvimento Aberto
 
 # ![width:300px](capa.svg)
 
-##### Explorando seu projeto 
+##### Dicas de debug
 
 
 ###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
