@@ -9,14 +9,14 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/dev-aberto/aulas/03-documentacao-de-software/slides/">
+        <link rel="canonical" href="https://insper.github.io/dev-aberto/aulas/11-contribuicoes-externas/slides/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
     
     
       
-        <title>Tradução e localização de software - Desenvolvimento Aberto 2021/2</title>
+        <title>Dicas de Debug - Desenvolvimento Aberto 2021/2</title>
       
     
     
@@ -95,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tradução e localização de software
+              Dicas de Debug
             
           </span>
         </div>
@@ -276,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../03-documentacao-de-software/" class="md-nav__link">
         03 - Explorando um projeto desconhecido
       </a>
     </li>
@@ -372,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../11-contribuicoes-externas/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         11 - Contribuições externas
       </a>
     </li>
@@ -480,7 +480,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/insper/dev-aberto/edit/master/docs/aulas/03-documentacao-de-software/slides.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/insper/dev-aberto/edit/master/docs/aulas/11-contribuicoes-externas/slides.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -499,129 +499,175 @@
 </style>
 
 <h1 id="desenvolvimento-aberto">Desenvolvimento Aberto</h1>
-<h1 id="_1"><img alt="height:350px" src="../../02-comunidades-de-software/capa.png" /></h1>
-<h5 id="fluxo-de-trabalho-distribuido-e-comunidades-de-software">Fluxo de trabalho distribuído e Comunidades de Software</h5>
+<h1 id="_1"><img alt="height:350px" src="../capa.svg" /></h1>
+<h5 id="dicas-de-debug">Dicas de Debug</h5>
 <h6 id="igor-dos-santos-montagner-igorsm1insperedubr">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
 <hr />
-<h1 id="ordem-das-apresentacoes">Ordem das apresentações</h1>
+<h1 id="minha-primeira-contribuicao-de-codigo">Minha primeira contribuição de código</h1>
+<p><img alt="" src="../meu-pr.png" /></p>
+<hr />
+<h1 id="dicas-para-debugar-qualquer-coisa">Dicas para debugar (qualquer coisa)</h1>
+<p><img alt="" src="../livro.jpg" /></p>
+<hr />
+<h1 id="9-regras-de-debug">9 regras de debug</h1>
 <ol>
-<li>Docker</li>
-<li>GIMP</li>
-<li>Kubernetes</li>
-<li>flatpak</li>
-<li>Godot engine</li>
-<li>KDE</li>
+<li>UNDERSTAND THE SYSTEM</li>
+<li>MAKE IT FAIL</li>
+<li>QUIT THINKING AND LOOK</li>
+<li>DIVIDE AND CONQUER</li>
+<li>CHANGE ONE THING AT A TIME</li>
+<li>KEEP AN AUDIT TRAIL</li>
+<li>CHECK THE PLUG</li>
+<li>GET A FRESH VIEW</li>
+<li>IF YOU DIDN'T FIX IT, IT AIN'T FIXED</li>
 </ol>
-<h2 id="10-minutos-cada-uma">10 minutos cada uma</h2>
 <hr />
-<h1 id="atividade-explorando-o-entorno-de-um-projeto">Atividade: Explorando o entorno de um projeto</h1>
-<p><img alt="width:256px" src="https://fonts.gstatic.com/s/i/materialicons/monetization_on/v4/24px.svg" /></p>
-<div class="highlight"><pre><span></span><code>&quot;metadata&quot;: {
-    &quot;filename&quot;: &quot;nome do arquivo na pasta da aula passada&quot;,
-    &quot;group&quot;: [&quot;login1&quot;, &quot;login2&quot;]
-}
-</code></pre></div>
-<h4 id="no-group-incluir-os-outros-membros-do-grupo-somente">No <code>group</code> incluir os outros membros do grupo somente</h4>
-<hr />
-<h1 id="desenvolvimento-aberto_1">Desenvolvimento Aberto</h1>
-<p><img alt="width:300px" src="../capa.svg" /></p>
-<h5 id="documentacao-de-software">Documentação de software</h5>
-<h6 id="igor-dos-santos-montagner-igorsm1insperedubr_1">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
-<hr />
-<h1 id="desenvolvimento-aberto_2">Desenvolvimento Aberto</h1>
-<p><img alt="width:300px" src="../capa.svg" /></p>
-<h5 id="a-ausencia-de-documentacao-de-software">(A ausência de d)ocumentação de software</h5>
-<h6 id="igor-dos-santos-montagner-igorsm1insperedubr_2">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
-<hr />
-<h1 id="documentacao-de-software_1">Documentação de software</h1>
-<p><strong>Documentação de usuário</strong>:</p>
-<h1 id="_2"></h1>
-<h1 id="_3"></h1>
-<h1 id="_4"></h1>
-<p><strong>Documentação de desenvolvimento</strong>:</p>
-<h1 id="_5"></h1>
-<h1 id="_6"></h1>
-<h1 id="_7"></h1>
-<hr />
-<h1 id="documentacao-de-software_2">Documentação de software</h1>
-<p><strong>Documentação de usuário</strong>:</p>
-<ul>
-<li>Instalação</li>
-<li>Funcionalidades</li>
-<li>Onde obter ajuda</li>
-</ul>
-<hr />
-<h1 id="documentacao-de-software_3">Documentação de software</h1>
-<p><strong>Documentação de desenvolvimento</strong>:</p>
-<ul>
-<li>Como compilar (dependências, ferramentas usadas, etc)</li>
-<li>Como testar (dependências, ferramentas usadas, etc)</li>
-<li>Estilo de código e outras orientações relacionadas</li>
-<li>Organização do código e arquitetura da aplicação</li>
-</ul>
-<hr />
-<h1 id="documentacao-de-software_4">Documentação de software</h1>
-<p>Às vezes as coisas se confundem! O que vocês colocariam na documentação de usuário do <em>Python</em>?</p>
-<p>E na de desenvolvedor?</p>
-<hr />
-<h1 id="exemplo-spyder">Exemplo: Spyder</h1>
-<p><img alt="width:900px" src="../spyder-user.png" /></p>
-<p><a href="https://pythonhosted.org/spyder/">https://pythonhosted.org/spyder/</a></p>
-<hr />
-<h1 id="exemplo-spyder_1">Exemplo: Spyder</h1>
-<p><img alt="width:900px" src="../spyder-dev.png" /></p>
-<p><a href="https://github.com/spyder-ide/spyder/wiki">https://github.com/spyder-ide/spyder/wiki</a></p>
-<hr />
-<h1 id="sistemas-de-documentacao">Sistemas de documentação</h1>
-<p><img alt="width:900px" src="../sphinx.png" /></p>
-<p><a href="http://www.sphinx-doc.org/en/master/">Sphinx</a></p>
-<hr />
-<h1 id="sistemas-de-documentacao_1">Sistemas de documentação</h1>
-<p><img alt="width:900px" src="../mkdocs.png" /></p>
-<p><a href="www.mkdocs.org">Mkdocs</a></p>
-<hr />
-<h1 id="sistemas-de-documentacao-hospedagem">Sistemas de documentação (hospedagem)</h1>
-<p><img alt="width:900px" src="../readthedocs.png" /></p>
-<p><a href="https://readthedocs.org/">https://readthedocs.org/</a></p>
-<hr />
-<h1 id="atividade">Atividade</h1>
-<p>Vocês receberão um <em>zip</em> com o código de um software e zero instruções. Vocês deverão:</p>
+<h1 id="1-understand-the-system">1. Understand the system</h1>
+<h2 id="nada-acontece-se-nao-conseguirmos">Nada acontece se não conseguirmos</h2>
 <ol>
-<li>Aprender como rodar o software</li>
-<li>Documentar os passos que vocês seguiram para fazê-lo</li>
-<li>Fazer uma análise crítica do projeto com relação a<ul>
-<li>Arquitetura</li>
-<li>Qualidade do código</li>
-<li>Segurança da solução</li>
+<li>Baixar a versão de desenvolvimento</li>
+<li>Instalar todas as dependências</li>
+<li>Compilar nossa própria versão</li>
+<li>Rodar testes na versão do <code>master</code></li>
+</ol>
+<hr />
+<h1 id="1-understand-the-system_1">1. Understand the system</h1>
+<h2 id="ferramentas-importantes">Ferramentas importantes:</h2>
+<ol>
+<li><a href="https://realpython.com/python-virtual-environments-a-primer/">Virtual environments</a>: venv, virtualenv, pipenv, conda</li>
+<li><a href="https://setuptools.readthedocs.io/en/latest/setuptools.html#development-mode">setuptools</a> - <em>development mode</em></li>
+<li>Debugging<ul>
+<li><em>pdb</em></li>
+<li>função <code>breakpoint()</code> (<a href="https://hackernoon.com/python-3-7s-new-builtin-breakpoint-a-quick-tour-4f1aebc444c">tutorial</a>)</li>
 </ul>
 </li>
 </ol>
 <hr />
-<h1 id="objetivos-desta-atividade">Objetivos desta atividade</h1>
+<h1 id="1-understand-the-system_2">1. Understand the system</h1>
+<h2 id="conheca-suas-ferramentas">Conheça suas ferramentas</h2>
+<ul>
+<li>Debugging visual linha a linha</li>
+<li>Stacktrace</li>
+<li>Busca em projeto inteiro</li>
+<li>Ir para definição de função</li>
+</ul>
+<h3 id="debugar-usando-print-e-perda-de-tempo">Debugar usando <code>print</code> é perda de tempo</h3>
+<hr />
+<h1 id="2-make-it-fail">2. Make it fail</h1>
+<h2 id="reproduza-seu-bug">Reproduza seu bug</h2>
+<ul>
+<li>Crie um exemplo mínimo que reproduza o bug desejado ou que usaria a feature que quer implementar<ul>
+<li>entrada de exemplo e saída esperada vs saída obtida</li>
+</ul>
+</li>
+<li>Possivelmente isto já foi descrito na <em>issue</em> escolhida.</li>
+<li>Anote elementos que te ajudem a encontrar onde isto ocorre no código (funções usadas, elementos de interface gráfica, mensagens de erro.)</li>
+</ul>
+<hr />
+<h1 id="3-quit-thinking-and-look">3. Quit thinking and look</h1>
+<h2 id="encontre-onde-esta-o-problema-e-leia-o-codigo-com-atencao">Encontre onde está o problema e leia o código com atenção</h2>
 <ol>
-<li>Entender na prática a necessidade de documentação;</li>
-<li>Identificar quais são as dependências de um software. Isto inclui bibliotecas/frameworks usados e serviços aos quais esse software se conecta.</li>
-<li>Rodar sua própria versão de um software de terceiros</li>
+<li>Encontre no código onde o bug pode estar</li>
+<li>Comece geral (em qual arquivo está a funcionalidade?) e vá restringindo (em qual função o bug "explode"?)</li>
+<li>Ferramentas de debug são essenciais. Veja o item 1.<ul>
+<li>Não atenderei ninguém que esteja debugando só com <code>print</code></li>
+</ul>
+</li>
 </ol>
 <hr />
-<h1 id="nao-sao-objetivos-desta-atividade">Não são objetivos desta atividade</h1>
+<h1 id="3-quit-thinking-and-look_1">3. Quit thinking and look</h1>
+<h2 id="buscando-por-nomes-de-arquivos">Buscando por nomes de arquivos</h2>
+<p>Comando <code>find</code> (<a href="http://man7.org/linux/man-pages/man1/find.1.html">man page</a>)</p>
+<p><strong>Exemplo</strong>: procurar por arquivos cujo nome é aceito por uma certa expressão regular começando no diretório atual.</p>
+<blockquote>
+<p><code>$ find -iname "regexp" .</code></p>
+</blockquote>
+<hr />
+<h1 id="3-quit-thinking-and-look_2">3. Quit thinking and look</h1>
+<h2 id="buscando-no-conteudo-dos-arquivos">Buscando no conteúdo dos arquivos</h2>
+<p>Comando <code>grep</code> (<a href="https://linux.die.net/man/1/egrep">man page</a>)</p>
+<blockquote>
+<p><code>$ grep [OPTIONS] PATTERN FILES</code></p>
+</blockquote>
+<ul>
+<li><code>PATTERN</code>: expressão regular</li>
+<li><code>FILES</code>: lista de diretórios ou arquivos</li>
+</ul>
+<hr />
+<h1 id="3-quit-thinking-and-look-grep">3. Quit thinking and look - grep</h1>
+<p><strong>Exemplo 1</strong>: buscar todos arquivos nas pasta atual (.) e subpastas com o texto "dialog" ignorando maiúsculas/minúsculas.</p>
+<blockquote>
+<p><code>$ grep -r -i dialog .</code></p>
+</blockquote>
+<h1 id="_2"></h1>
+<p><strong>Exemplo 2</strong>: Listas todos os arquivos <em>.cpp</em> que fazem algum include</p>
+<blockquote>
+<p><code>$ grep -r --include "*cpp" "#include" .</code></p>
+</blockquote>
+<h3 id="sua-ideeditor-devem-ter-algo-parecido-procure-e-use">Sua IDE/editor devem ter algo parecido. Procure e use.</h3>
+<hr />
+<h1 id="4-divide-and-conquer">4. Divide and Conquer</h1>
+<h2 id="crie-um-plano-de-acao">Crie um plano de ação</h2>
 <ol>
-<li>Mostrar nenhum tipo de boa prática de programação</li>
-<li>Modificar o software analisado</li>
-<li>Criticar o desenvolvedor que trabalhou antes no projeto</li>
+<li>Por que o bug ocorre? <ul>
+<li>Está relacionado a qual função? </li>
+<li>Qual variável tem o valor errado?</li>
+</ul>
+</li>
+<li>O que deve ser mudado para que pare de ocorrer?</li>
 </ol>
+<p><strong>Pré-requisito</strong>: debugar visualmente usando alguma IDE / editor</p>
 <hr />
-<h1 id="atividade-pratica-projeto-nao-documentado">Atividade prática: Projeto não documentado</h1>
-<p><img alt="width:256px" src="https://fonts.gstatic.com/s/i/materialicons/explore/v4/24px.svg?download=true" /></p>
-<p><strong>Objetivo</strong>: entender como rodar um código sem instruções. </p>
-<p><strong>Validação</strong>: apresentação do sistema funcionando. </p>
-<p><strong>Grupos de até 3 pessoas</strong></p>
-<h4 id="tempo-restante-de-hoje-hora-inicial-de-quinta-usem-handout-como-guia">Tempo restante de hoje + hora inicial de quinta. Usem handout como guia</h4>
+<h1 id="5-change-one-thing-at-a-time">5. Change one thing at a time</h1>
+<h2 id="um-bom-pr-muda-o-minimo-possivel">Um bom PR muda o mínimo possível</h2>
+<ul>
+<li>use várias branches se quiser testar ideias diferentes</li>
+<li><code>git commit</code> é grátis. Quando chegar na versão final é só juntar tudo e mandar. </li>
+<li><code>git rebase</code> para atualizar seu branch com o <code>master upstream</code> caso necessário.</li>
+</ul>
 <hr />
-<h1 id="desenvolvimento-aberto_3">Desenvolvimento Aberto</h1>
-<p><img alt="width:300px" src="../capa.svg" /></p>
-<h5 id="documentacao-de-software_5">Documentação de software</h5>
-<h6 id="igor-dos-santos-montagner-igorsm1insperedubr_3">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
+<h1 id="6-keep-an-audit-trail">6. Keep an audit trail</h1>
+<h2 id="registre-suas-descobertas">Registre suas descobertas</h2>
+<ul>
+<li>Log de como você encontrou onde mexer</li>
+<li>Log de todos arquivos de interesse e seus usos</li>
+<li>Log de todas as pesquisas feitas</li>
+<li>Log de todas as modificações feitas</li>
+<li><code>git commit</code> é útil para registrar testes também</li>
+</ul>
+<p><strong>Não se esqueça</strong>:<code>git diff</code> é seu melhor amigo</p>
+<hr />
+<h1 id="7-check-the-plug">7. Check the plug</h1>
+<h2 id="nunca-se-esqueca-de-testar-a-solucoes-mais-simples-primeiro">Nunca se esqueça de testar a soluções mais simples primeiro</h2>
+<hr />
+<h1 id="8-get-a-fresh-view">8. Get a fresh view</h1>
+<h2 id="empacou">Empacou?</h2>
+<p>É por isso que vocês trabalham em grupo no primeiro bug. </p>
+<h2 id="empacou-mesmo">Empacou mesmo?</h2>
+<p>Para isto serve seu grupo. </p>
+<h2 id="empacou-mesmo_1">Empacou mesmo!?!?!?!?</h2>
+<p>Me chame!</p>
+<hr />
+<h1 id="9-if-you-didnt-fix-it-it-aint-fixed">9. If you didn't fix it, it ain't fixed</h1>
+<p><img alt="" src="../doesnt-work.png" /></p>
+<hr />
+<h1 id="hora-de-programar">Hora de programar</h1>
+<h3 id="tentem-aplicar-estas-ideias-aos-seus-problemas">Tentem aplicar estas ideias aos seus problemas</h3>
+<hr />
+<p><img alt="" src="../hacktoberfest.png" /></p>
+<h2 id="envie-4-prs-para-projetos-participantes-e-ganhe-uma-camiseta">Envie 4 PRs para projetos participantes e ganhe uma camiseta</h2>
+<hr />
+<h1 id="atividade-extra-hacktoberfest">Atividade extra: hacktoberfest</h1>
+<p><img alt="width:256px" src="../hacktoberfest.svg" /></p>
+<p><strong>Objetivo</strong>: Enviar 3 PRs para projetos externos no mês de outubro.</p>
+<blockquote>
+<p>"metadata": {"date": "2021-10-31"}</p>
+</blockquote>
+<hr />
+<h1 id="desenvolvimento-aberto_1">Desenvolvimento Aberto</h1>
+<h1 id="_3"><img alt="width:300px" src="../capa.svg" /></h1>
+<h5 id="dicas-de-debug_1">Dicas de debug</h5>
+<h6 id="igor-dos-santos-montagner-igorsm1insperedubr_1">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
                 
                   
                     
@@ -630,7 +676,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 28, 2021</span>
       
     
   </small>
