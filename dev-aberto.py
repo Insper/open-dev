@@ -41,8 +41,8 @@ def new_user():
     student_key = create_key(f'students/{student_login}.key')
     student_name = input('nome completo: ')
     ghname = input('usuário do github: ')
-    s = Student(student_login, student_name, ghname, [])
-    write_string_to_file(f'students/{student_login}', s.toJSON())
+    student = Student(student_login, student_name, ghname, [])
+    write_string_to_file(f'students/{student_login}', student.toJSON())
 
     save_encrypted(f'students/{student_login}-achievements', student_key, '[]')
 
@@ -73,14 +73,14 @@ def edit_achievements(student_login):
             continue
 
         print('Validando skills no arquivo JSON....')
-        s = Student.load(student_login)
-        s._load_skills_from_string(json_achievements)
+        student = Student.load(student_login)
+        student._load_skills_from_string(json_achievements)
         valid_skills = True
-        for ach in s.all_achievements:
+        for ach in student.all_achievements:
             try:
                 ach.validate_metadata()
-            except ValueError as e:
-                print('- ', ach, '\n\t', e)
+            except ValueError as err:
+                print('- ', ach, '\n\t', err)
                 valid_skills = False
         if valid_skills:
             break
