@@ -50,7 +50,7 @@ def new_user():
     ghname = input('usuário do github: ')
     s = Student(student_login, student_name, ghname, [])
     write_string_to_file(f'students/{student_login}', s.toJSON())
-    
+
     save_encrypted(f'students/{student_login}-achievements', student_key, '[]')
 
 def choose_editor():
@@ -85,12 +85,12 @@ def edit_achievements(student_login):
 
     with open(f'students/{student_login}.temp', 'w') as f:
         f.write(json_achievements)
-    
+
     if 'win32' in sys.platform:
         editor = os.getenv('EDITOR', default='notepad.exe')
     else:
         editor = os.getenv('EDITOR', default=choose_editor())
-    
+
     while True:
         os.system(f'{editor} students/{student_login}.temp')
         with open(f'students/{student_login}.temp') as f:
@@ -101,7 +101,7 @@ def edit_achievements(student_login):
             print("Arquivo mal formatado.")
             time.sleep(2)
             continue
-    
+
         print('Validando skills no arquivo JSON....')
         s = Student.load(student_login)
         s._load_skills_from_string(json_achievements)
@@ -151,7 +151,7 @@ def compute_grade(student_login):
     env = j2.Environment(loader=j2.FileSystemLoader('templates/'))
 
     feedback_template = env.get_template('report.html')
-    
+
     mandatoryD = [sk for sk in all_skills.values() if sk.mandatory == 'D']
     doneD = [(student_has_skill(st, sk), sk) for sk in mandatoryD]
 
@@ -171,14 +171,19 @@ def compute_grade(student_login):
         conceito = 'D'
 
         # TODO: fazer os próximos conceitos ao longo do semestre, quando os ids estiverem prontos
-        
-        # if xp >= 60 and st.achievements.get(20, False) and\
-        #    (st.achievements.get(30, False) or st.achievements.get(35, False)):
-        #     conceito = 'C'
-        
-        # if xp >= 100 and st.achievements.get(23, False):
-        #     conceito = 'B'
 
+        if xp >= 50 and st.achievements.get(21, False) and \
+            (st.achievements.get(42, False) or st.achievements.get(45, False)):
+            conceito = 'C'
+
+            if xp >= 90 and st.achievements.get(22, False):
+                conceito = 'B'
+
+                if xp >= 150:
+                    conceito = 'A'
+
+                if xp >= 200:
+                    conceito = 'A+'
 
     html = feedback_template.render(doneD=doneD,
                                     doneC=doneC,
@@ -198,7 +203,7 @@ def compute_grade(student_login):
 def report_cards(ctx):
     print(ctx, all_students.keys())
     for st_login in all_students.keys():
-        print('st_login', st_login)        
+        print('st_login', st_login)
         ctx.invoke(compute_grade, student_login=st_login)
 
     # TODO: envia e-mail
@@ -246,18 +251,18 @@ def build_site():
     render_skill_type('code')
     render_skill_type('community')
     render_skill_type('impact')
-    
+
     students = []
     for st_login in sorted(all_students.keys()):
         st = all_students[st_login]
         students.append([
             f'![{st.name}]({st.avatar}){{: style="max-width:64px; valign="center"}}',
-            st.name.title(), 
+            st.name.title(),
             f'[![](css/github.png)](http://github.com/{st.ghuser})'
         ])
     with open('docs/_snippets/alunos.md', 'w') as f:
         f.write(tabulate.tabulate(students, headers=('', '', ''), tablefmt='pipe'))
-        
+
     impacto_template = env.get_template('impacto.html')
     info = {}
     info_insper = []
@@ -309,9 +314,9 @@ def build_site():
                                         info_insper=info_insper,
                                         eventos=eventos,
                                         num_eventos=num_eventos,
-                                        sorted_keys=sorted_keys, 
-                                        num_projetos=num_projetos, 
-                                        num_prs=num_prs, 
+                                        sorted_keys=sorted_keys,
+                                        num_projetos=num_projetos,
+                                        num_prs=num_prs,
                                         num_aceitos=num_aceitos))
 
 
@@ -332,7 +337,7 @@ def export_csv():
                         w.writerow((ach.metadata['url'], usuario, ano, 'simples'))
                     if ach.skill.id == 3:
                         w.writerow((ach.metadata['url'], usuario, ano, 'primeiro'))
-                    
+
                     if ach.skill.id == 35:
                         w.writerow((ach.metadata['url'], usuario, ano, 'docs'))
 
