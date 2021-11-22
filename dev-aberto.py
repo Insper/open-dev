@@ -25,6 +25,13 @@ import click
 
 from collections import namedtuple
 
+DEFAULT_EDITOR = 'nano'
+
+EDITORS = {
+  1: DEFAULT_EDITOR,
+  2: 'vi',
+}
+
 PR = namedtuple('PR', ['project_name', 'url', 'status'])
 
 @click.group()
@@ -46,6 +53,29 @@ def new_user():
     
     save_encrypted(f'students/{student_login}-achievements', student_key, '[]')
 
+def choose_editor():
+    while True:
+        try:
+            print('\nEscolha o editor:')
+            print('1) nano (default)')
+            print('2) vi')
+            editor_input = input('Editor: ')
+            if not editor_input:
+                break
+
+            int_editor_input = int(editor_input)
+            if int_editor_input not in EDITORS.keys():
+                print("Digite o numero do editor desejado")
+                continue
+                
+            return EDITORS[int_editor_input]
+        except ValueError:
+            print("Digite o numero do editor desejado")
+            continue
+        else:
+            break
+      
+    return DEFAULT_EDITOR
 
 @dev_aberto_cli.command()
 @click.argument('student_login')
@@ -59,7 +89,7 @@ def edit_achievements(student_login):
     if 'win32' in sys.platform:
         editor = os.getenv('EDITOR', default='notepad.exe')
     else:
-        editor = os.getenv('EDITOR', default='vi')
+        editor = os.getenv('EDITOR', default=choose_editor())
     
     while True:
         os.system(f'{editor} students/{student_login}.temp')
