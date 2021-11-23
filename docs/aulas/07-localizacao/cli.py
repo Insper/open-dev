@@ -1,3 +1,4 @@
+# pylint: disable=missing-module-docstring
 from datetime import date
 from gettext import _
 
