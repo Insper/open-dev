@@ -63,9 +63,8 @@ def get_gh_picture(ghname):
         rq = requests.get(f'https://api.github.com/users/{ghname}', auth=ghauth)
         if rq.status_code == 404:
             return ''
-        else:
-            user_data = rq.json()
-            return user_data.get('avatar_url', '')
+        user_data = rq.json()
+        return user_data.get('avatar_url', '')
     except requests.exceptions.RequestException:
         return ''
         
