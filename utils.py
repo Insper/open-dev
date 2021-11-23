@@ -16,14 +16,14 @@ def load_key(key_file):
             key = f.read()
     except IOError:
         return None
-        
+
     return key
 
 def save_encrypted(filename, key, content):
     cypher = Fernet(key)
     with open(filename, 'w') as f:
         f.write(cypher.encrypt(content.encode('utf-8')).decode('utf-8'))
-    
+
 
 def load_encrypted(filename, key):
     cypher = Fernet(key)
@@ -44,10 +44,10 @@ def load_from_json(json_path, class_obj):
 
     with open(json_path, encoding = "utf-8") as f:
         objs_json = json.load(f)
-    
+
     for ob in objs_json:
         objs.append(class_obj(**ob))
-    
+
     return objs
 try:
     with open('.gh-credentials') as f:
