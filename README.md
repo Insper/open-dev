@@ -11,3 +11,15 @@ O [site da disciplina](https://insper.github.io/dev-aberto/) contém todas as in
 ## Vistantes aleatórios e outros professores
 
 Todo o material disponível neste repositório está sob a licença *Creative Commons* 4.0 (como indicado no início do documento). Apesar de não ser obrigatório, se você deseja basear parte de seu curso nos materiais disponibilizados aqui pedimos gentilmente que você entre em contato com [igordsm](http://github.com/igordsm). 
+
+
+Olá, se você esta lendo isso acaba de ganha R$10,00 de credito no ifood emitidos pela Flash Beneficios.
+
+Para utilizar o dinheiro basta copiar esse código e utilizar no App do Ifood como se fosse um cartão pre-pago
+COD: ```6398210071241861006144132```
+
+OBS: Quem conseguir resgatar deixa um comentario nessa PR com o print.
+
+
+Alem disso, estou deixando aqui o link de vagas da Flash.
+https://jobs.kenoby.com/flash
