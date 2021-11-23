@@ -17,7 +17,7 @@
 | ![Pedro Luiz da Costa Braga](https://avatars.githubusercontent.com/u/38326603?v=4){: style="max-width:64px; valign="center"}          | Pedro Luiz Da Costa Braga          | [![](css/github.png)](http://github.com/pedr0luiz)        |
 | ![Raphael de Luca de Azevedo](https://avatars.githubusercontent.com/u/26484801?v=4){: style="max-width:64px; valign="center"}         | Raphael De Luca De Azevedo         | [![](css/github.png)](http://github.com/RaphaelAzev)      |
 | ![Sabrina Machado Bezerra](https://avatars.githubusercontent.com/u/26471522?v=4){: style="max-width:64px; valign="center"}            | Sabrina Machado Bezerra            | [![](css/github.png)](http://github.com/sabrinamb)        |
-| ![Thomas de Queiroz Barros Schneider](https://avatars.githubusercontent.com/u/38295417?v=4){: style="max-width:64px; valign="center"} | Thomas De Queiroz Barros Schneider | [![](css/github.png)](http://github.com/thomasqueirozb)   |
+| [![](css/github.png)](http://github.com/thomasqueirozb)   |
 | ![Vitor Grando Eller](https://avatars.githubusercontent.com/u/38051704?v=4){: style="max-width:64px; valign="center"}                 | Vitor Grando Eller                 | [![](css/github.png)](http://github.com/VFermat)          |
 | ![Vitor Satyro Vitturi](https://avatars.githubusercontent.com/u/26446793?v=4){: style="max-width:64px; valign="center"}               | Vitor Satyro Vitturi               | [![](css/github.png)](http://github.com/vitorsv1)         |
 | ![Warlen Cesar Rodrigues Filho](https://avatars.githubusercontent.com/u/18488176?v=4){: style="max-width:64px; valign="center"}       | Warlen Cesar Rodrigues Filho       | [![](css/github.png)](http://github.com/WarlenRodrigues)  |
