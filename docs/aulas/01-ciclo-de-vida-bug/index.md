@@ -65,7 +65,7 @@ comandos disponíveis.
     $ python3 dev-aberto.py
 
 Para checar se tudo está funcionando direito, liste todos os usuários
-cadastrados. Só deverá ter um usuário cadastrado (`igorsm1`).
+cadastrados. Só deverá ter um usuário cadastrado (`fabriciojb`).
 
 ### Criando um usuário
 
@@ -95,11 +95,11 @@ estiver tudo ok, passe para o próximo item.
 
 Com o usuário criado podemos adicionar a skill *Primeiros passos*. Você
 já deve ter notado que a chave do professor está disponível (arquivo
-`students/igorsm1.key`). Isto foi feito para que vocês possam ter ao
+`students/fabriciojb.key`). Isto foi feito para que vocês possam ter ao
 menos um exemplo de como cada skill deverá ser adicionada. Veja abaixo
 um exemplo de como a skill deverá ser incluida:
 
-    $ python3 dev-aberto.py edit-achievements igorsm1
+    $ python3 dev-aberto.py edit-achievements fabriciojb
 
 Isto abrirá um arquivo para edição no *Vi*. Veja o formato usado para
 incluir a skill e faça o mesmo para o seu usuário.

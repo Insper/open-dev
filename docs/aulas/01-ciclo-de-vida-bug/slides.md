@@ -25,7 +25,7 @@ Desenvolvimento Aberto
 ##### Apresentação da Disciplina + Workflow de trabalho distribuído
 
 
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )  
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) )  
 
 ---
 
@@ -33,12 +33,12 @@ Desenvolvimento Aberto
 
 ### Horários de aula:
 
-* TER 18:00 - 20:00
-* QUI 18:00 - 20:00
+* TER 09:45 - 11:45
+* QUI 09:45 - 11:45
 
 ### Atendimento:
 
-* SEX 09:00 - 10:30
+* TBD
 
 ### Avaliação
 - Curso baseado em projetos feitos individualmente e/ou com apoio de um grupo.
@@ -122,57 +122,11 @@ No mercado, normalmente trabalhamos em um projeto existente
 
 # Por que vocês estão aqui?
 
-https://forms.office.com/r/qzH223URmA
+https://forms.gle/UzvEtYKJxQBtm9f29
 
 ----
 
-# Minha motivação (Igor)
-
-## Por que a disciplina foi criada (por mim)?
-
-----
-
-# Minha motivação (Igor)
-
-![](trios-1.png)
-
----
-
-# Minha motivação (Igor)
-
-![](trios-2.png)
-
----
- 
-# Minha motivação (Igor)
-
-* Trabalhei **sozinho** durante **5 anos**
-* Gastei dezenas de horas escrevendo 
-	* um artigo científico sobre esta implementação.
-	* documentação para usuários e desenvolvedores
-
-#
-
-#
-
-* **Eu** obtive benefícios ao desenvolver esse projeto
-* É possível que eu tenha resolvido um problema que nunca ninguém teve!
-
---- 
-
-# Minha motivação (Igor)
-
-## Não basta mais criar software por diversão/aprendizado
-
-## Quero ter impacto
-
-* Criar/contribuir com software que alguém use
-* Escrever textos que alguém leia
-* Participar de comunidades que sentiriam falta de mim se eu as abandonasse
-
-----
-
-# Quais são os resultados disso?
+# Resultados alcançados nesta disciplina até agora
 
 ---
 
@@ -227,22 +181,6 @@ https://forms.office.com/r/qzH223URmA
 ---
 
 ![](matplotlib.png)
-
----
-
-# Minhas contribuições
-
-![width:150px](elementary.svg)
-
-## ~20 PRs aceitos
-
-## Participação como palestrante em evento
-
----
-
-# Minhas contribuições
-
-![width:700px](elementary-edw.png)
 
 ---
 
@@ -341,4 +279,4 @@ Desenvolvimento Aberto
 ##### Apresentação da Disciplina + Ciclo de vida de um Bug
 
 
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) )  
