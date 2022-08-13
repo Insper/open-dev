@@ -1,4 +1,4 @@
-# Desenvolvimento Aberto 2021/2
+# Desenvolvimento Aberto 2022/2
 
 ![License CC-BY-NC-SA 4.0](aulas/cc-by-nc-sa-small.png)
 
@@ -10,4 +10,4 @@ O [site da disciplina](https://insper.github.io/dev-aberto/) contém todas as in
 
 ## Vistantes aleatórios e outros professores
 
-Todo o material disponível neste repositório está sob a licença *Creative Commons* 4.0 (como indicado no início do documento). Apesar de não ser obrigatório, se você deseja basear parte de seu curso nos materiais disponibilizados aqui pedimos gentilmente que você entre em contato com [igordsm](http://github.com/igordsm). 
+Todo o material disponível neste repositório está sob a licença *Creative Commons* 4.0 (como indicado no início do documento). Apesar de não ser obrigatório, se você deseja basear parte de seu curso nos materiais disponibilizados aqui pedimos gentilmente que você entre em contato com [igordsm](http://github.com/igordsm) ou [fbarth](http://github.com/fbarth). 
