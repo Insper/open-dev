@@ -15,7 +15,7 @@ Serão enviados relatórios quinzenais com um resumo do que foi entregue e de qu
 
 * TER 09:45-11:45
 * QUI 09:45-11:45
-* **Atendimento**: TBD
+* **Atendimento**: SEG 13:30 - 15:00
 
 ## Plano de aulas
 

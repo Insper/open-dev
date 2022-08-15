@@ -38,7 +38,7 @@ Desenvolvimento Aberto
 
 ### Atendimento:
 
-* TBD
+* SEG 13:30 - 15:00
 
 ### Avaliação
 - Curso baseado em projetos feitos individualmente e/ou com apoio de um grupo.
