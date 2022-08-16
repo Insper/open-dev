@@ -37,3 +37,7 @@ students/*-report.html
 
 .credentials
 .gh-credentials
+
+# our files
+
+students/*.key
