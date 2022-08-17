@@ -58,6 +58,8 @@ def edit_achievements(student_login):
 
     if 'win32' in sys.platform:
         editor = os.getenv('EDITOR', default='notepad.exe')
+    elif 'linux' in sys.platform:
+        editor = os.getenv('EDITOR', default='gnome-text-editor')
     else:
         editor = os.getenv('EDITOR', default='vi')
 
