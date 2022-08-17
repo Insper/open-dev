@@ -165,6 +165,14 @@ Fonte: https://www.atlassian.com/git/tutorials/
 
 ---
 
+# Nem todos os alunos que estão matriculados na disciplina fizeram a atividade da última aula! 
+
+```bash
+python dev-aberto.py list-users
+```
+
+---
+
 # Comunidades de software
 
 ----
@@ -172,7 +180,7 @@ Fonte: https://www.atlassian.com/git/tutorials/
 
 #
 
-**Pergunta**: quais são os softwares que vocês mais utilizam no dia a dia?
+**Pergunta 1**: quais são os softwares que vocês mais utilizam no dia a dia?
 #
 #
 #
@@ -202,7 +210,7 @@ Empresas que patrocinam desenvolvimento:
 1. Intel (10,01%)
 3. Red Hat (8,90%)
 4. Desconhecido (4,09%)
-5. IBM (3,79)
+5. IBM (3,79%)
 6. SUSE (3,49%)
 7. Linaro (2,96%)
 8. Consultores (2,96%)
@@ -309,6 +317,10 @@ Diversas outras maneiras de conseguir suporte e financiamento
 #
 
 Nem sempre o que é financiado termina em um formato "aproveitável" por terceiros (ex: Android/Linux, TiVO)
+
+---
+
+*"Tivoization is the practice of designing hardware that incorporates software under the terms of a copyleft software license like the GNU General Public License (GNU GPL), but uses hardware restrictions or digital rights management (DRM) to prevent users from running modified versions of the software on that hardware"* [Wikipedia]
 
 ---
 # Razões para contribuir (indivíduo)

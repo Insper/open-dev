@@ -8,7 +8,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2021-10-19"
+        "date_limit": "2022-08-17"
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@
         "unique": true,
         "type": "Tutorial",
         "metadata_requirements": ["group|List[str]", "filename|str"],
-        "date_limit": "2021-10-19"
+        "date_limit": "2021-08-23"
     },
 
     {
