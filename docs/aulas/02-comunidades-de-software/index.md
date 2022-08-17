@@ -7,7 +7,10 @@ A atividade desta aula envolve a criação de uma apresentação explicando como
 3.  Kubernetes
 4.  flatpak
 5.  Godot engine
-6.  KDE
+6.  GNOME
+7.  TensorFlow
+8.  digiKam
+9.  Shotcut
 
 Cada grupo de 3 alunos deverá escolher um projeto acima e pesquisar os seguintes
 pontos.
