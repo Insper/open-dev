@@ -1,6 +1,6 @@
 # Desenvolvimento Aberto 2022/2
 
-![License CC-BY-NC-SA 4.0](aulas/cc-by-nc-sa-small.png)
+![License CC-BY-NC-SA 4.0](docs/aulas/cc-by-nc-sa-small.png)
 
 Bem vindo ao repositório de Desenvolvimento Aberto! Ele será nosso principal ponto de interação neste semestre. Todas as entregas serão feitas neste repositório, assim como estarão disponibilizados aqui todos os materiais da disciplina. 
 
