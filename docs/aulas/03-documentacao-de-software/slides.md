@@ -25,7 +25,7 @@ Desenvolvimento Aberto
 
 ##### Fluxo de trabalho distribuído e Comunidades de Software
 
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) )  
 
 ---------
 
