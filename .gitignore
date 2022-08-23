@@ -37,3 +37,6 @@ students/*-report.html
 
 .credentials
 .gh-credentials
+
+# folders
+.DS_Store
