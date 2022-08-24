@@ -206,7 +206,7 @@ Vocês receberão um *zip* com o código de um software e zero instruções. Voc
 
 **Grupos de até 3 pessoas**
 
-#### Tempo restante de hoje + hora inicial de quinta. Usem handout como guia
+#### Tempo restante de hoje + hora inicial da próxima aula. Usem handout como guia
 
 ---
 
