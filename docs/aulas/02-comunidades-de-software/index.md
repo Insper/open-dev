@@ -38,3 +38,15 @@ pontos.
     -   Quem decide como gastar?
 
 O trabalho do grupo será, então, criar uma apresentação de 10 minutos que responda as perguntas acima.
+
+As apresentações da versão do curso 2022/2 podem ser acessadas nos links abaixo: 
+
+1.  [Docker](../../apresentacoes/2022/ApresDocker.pdf)
+2.  [GIMP](../../apresentacoes/2022/GIMP.pdf)
+3.  [Kubernetes](../../apresentacoes/2022/Kubernetes.pdf)
+4.  [flatpak](../../apresentacoes/2022/flatpak.pdf)
+5.  Godot engine
+6.  [GNOME](../../apresentacoes/2022/gnome.pdf)
+7.  [TensorFlow](../../apresentacoes/2022/tensorflow.pdf)
+8.  digiKam
+9.  [Shotcut](../../apresentacoes/2022/ShotCut.pdf)
