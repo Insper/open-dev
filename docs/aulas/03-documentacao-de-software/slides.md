@@ -31,19 +31,22 @@ Desenvolvimento Aberto
 
 # Ordem das apresentações
 
-1.  Docker
-2.  GIMP
-3.  Kubernetes
-4.  flatpak
-5.  Godot engine
-6.  KDE
+1. Docker
+2. GIMP
+3. Kubernetes
+4. flatpak
+5. Godot engine
+6. GNOME
+7. TensorFlow
+8. digiKam
+9. Shotcut
 
 ## 10 minutos cada uma
 
 -----
 # Atividade: Explorando o entorno de um projeto
 
-![width:256px](https://fonts.gstatic.com/s/i/materialicons/monetization_on/v4/24px.svg)
+![width:156px](https://fonts.gstatic.com/s/i/materialicons/monetization_on/v4/24px.svg)
 
 ```
 "metadata": {
@@ -52,7 +55,9 @@ Desenvolvimento Aberto
 }
 ```
 
-#### No `group` incluir os outros membros do grupo somente
+* No `group` incluir os outros membros do grupo somente
+
+* Um membro da equipe deve fazer um PR para o projeto incluindo o arquivo da apresentação. O mesmo deve ser colocado na pasta `apresentacoes/2022`
 
 ------
 
@@ -65,7 +70,7 @@ Desenvolvimento Aberto
 
 
 
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) )  
 
 ---
 
@@ -77,7 +82,7 @@ Desenvolvimento Aberto
 ##### (A ausência de d)ocumentação de software
 
 
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) )  
 
 ---
 # Documentação de software
@@ -129,7 +134,7 @@ E na de desenvolvedor?
 
 ![width:900px](spyder-user.png)
 
-https://pythonhosted.org/spyder/
+https://www.spyder-ide.org/
 
 ---
 # Exemplo: Spyder
@@ -201,7 +206,7 @@ Vocês receberão um *zip* com o código de um software e zero instruções. Voc
 
 **Grupos de até 3 pessoas**
 
-#### Tempo restante de hoje + hora inicial de quinta. Usem handout como guia
+#### Tempo restante de hoje + hora inicial da próxima aula. Usem handout como guia
 
 ---
 
@@ -214,4 +219,4 @@ Desenvolvimento Aberto
 ##### Documentação de software
 
 
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) ) 
