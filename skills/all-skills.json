@@ -31,7 +31,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2022-10-19"
+        "date_limit": "2022-08-30"
     },
 
     {
@@ -44,7 +44,7 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2022-10-19"
+        "date_limit": "2022-09-05"
     },
     {
         "id": 5,
@@ -56,7 +56,7 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2022-10-19"
+        "date_limit": "2022-09-10"
 
     },
     {
