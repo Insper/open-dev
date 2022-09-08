@@ -134,7 +134,7 @@ Faça a entrega de sua atividade adicionando a skill *Pacote Python* e inclua ne
 
 **Objetivo**: Primeira experiência distribuindo software Python.
 
-> "metadata": {"url": "repo-seu-pacote"}
+> "skill_id": 6, "metadata": {"url": "repo-seu-pacote"}
 
 ## Distribuindo software para usuários finais
 
@@ -154,4 +154,11 @@ Faça a entrega de sua atividade adicionando a skill *Dockerfile* segundo o mode
 
 **Objetivo**: Criou deploy automatizado para sistema web Python
 
-> "metadata": {"url": "repo-servidor-de-desafios", "group": ["login1", "login2"]}
+> "skill_id": 7, "metadata": {"url": "repo-servidor-de-desafios", "group": ["login1", "login2"]}
+
+### Referências
+
+Algumas referências que podem ser úteis: 
+
+* [https://docker-curriculum.com/](https://docker-curriculum.com/)
+* [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
