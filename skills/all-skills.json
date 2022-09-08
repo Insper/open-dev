@@ -44,7 +44,7 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2022-09-05"
+        "date_limit": "2022-09-10"
     },
     {
         "id": 5,
