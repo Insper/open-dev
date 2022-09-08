@@ -6,6 +6,10 @@ Seu trabalho neste roteiro será preparar o projeto para ser apresentado "oficia
 
 Para entregar esta tarefa você deverá criar um repositório softdes-desafios em seu usuário, colocar o servidor de desafios lá e hospedar sua documentação usando [Github Pages](https://pages.github.com/). Com isto pronto envie o trabalho de vocês via PR para o repositório da disciplina. 
 
+````
+{"skill_id": 4, "metadata": {"date": "2022-09-01", "url": "http...", "group": []}
+````
+
 Os itens obrigatórios são descritos nos itens abaixo. 
 
 
