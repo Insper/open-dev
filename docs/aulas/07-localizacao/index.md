@@ -4,7 +4,7 @@ Na parte expositiva da aula tivemos uma introdução aos problemas de Internacio
 
 Em ambos exemplos vamos trabalhar com o módulo *Babel*, que é feito para facilitar a tradução e localização de aplicações feitas em Python. Outras linguagens de programação possuem bibliotecas similares que seguem a mesma sequência de comandos e usam os mesmos tipos de arquivos. 
 
-Sistemas POSIX suportam a determinação de do *locale* utilizado por meio da variável de ambiente *LANGUAGE*, que pode ser modificada para cada execução de um programa. O formato padrão usado é `<lingua>_<pais>.<codificacao>`. Para português do Brasil usando codificação UTF8 usamos o locale `pt_BR.utf8`. Rodando o seguinte comando as mensagens de ajuda do `ls` devem aparecer em inglês.
+Sistemas POSIX suportam a determinação do *locale* utilizado por meio da variável de ambiente *LANGUAGE*, que pode ser modificada para cada execução de um programa. O formato padrão usado é `<lingua>_<pais>.<codificacao>`. Para português do Brasil usando codificação UTF8 usamos o locale `pt_BR.utf8`. Rodando o seguinte comando as mensagens de ajuda do `ls` devem aparecer em inglês.
 
 > `LANGUAGE=en_US.utf8 ls --help`
 
@@ -122,7 +122,7 @@ Modifique o exercício da aula passada (pacote python) para suportar datas e men
 
 **Objetivo**: Aplicou ferramentas de localização para traduzir um programa simples em linha de comando.
 
-> "metadata": {"url": "repo-pacote-python"}
+> "skill_id": 8, "metadata": {"url": "repo-pacote-python"}
 
 
 ## Traduzindo no mundo real

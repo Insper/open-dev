@@ -25,13 +25,13 @@ Desenvolvimento Aberto
 ##### Localização e internacionalização de software
 
 
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) )  
 
 
 ---
 # Tradução de software
 
-## Qual a diferença de localização e internacionalização?
+## Qual a diferença de internacionalização e localização?
 
 ---
 # Internacionalização (I18N)
@@ -42,10 +42,6 @@ Desenvolvimento Aberto
 
 * Tipicamente "invisível"
 
----
-# Internacionalização (I18N)
-
-##### exemplo
 
 ---
 # Localização (L10N)
@@ -63,7 +59,7 @@ Consiste em adaptar a maneira de mostrar
 de acordo com as preferências de um usuário e relativos a sua cultura. 
 
 --- 
-# L10N e I18N
+# I18N e L10N
 
 Precisam ser
 
@@ -229,5 +225,5 @@ Desenvolvimento Aberto
 ##### Localização e internacionalização de software
 
 
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) )  
 
