@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/dev-aberto/aulas/07-localizacao/slides/">
+        <link rel="canonical" href="https://insper.github.io/dev-aberto/aulas/08-testes-automatizados/index_2022/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.0">
     
     
       
-        <title>Tradução e localização de software - Desenvolvimento Aberto 2022/2</title>
+        <title>08 - Testes automatizados - Desenvolvimento Aberto 2022/2</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#desenvolvimento-aberto" class="md-skip">
+        <a href="#08-testes-automatizados" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tradução e localização de software
+              08 - Testes automatizados
             
           </span>
         </div>
@@ -232,12 +232,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -344,7 +346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../07-localizacao/" class="md-nav__link">
         07 - Localização
       </a>
     </li>
@@ -356,11 +358,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../08-testes-automatizados/index_2022/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          08 - Testes automatizados
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         08 - Testes automatizados
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#biblioteca-para-implementacao-de-agentes-baseados-em-busca" class="md-nav__link">
+    Biblioteca para implementação de agentes baseados em busca
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#atividades" class="md-nav__link">
+    Atividades
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formato-de-entrega" class="md-nav__link">
+    Formato de entrega
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -489,22 +546,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#localizacao-e-internacionalizacao-de-software" class="md-nav__link">
-    Localização e internacionalização de software
-  </a>
-  
-    <nav class="md-nav" aria-label="Localização e internacionalização de software">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#versao-20222-fabricio-barth-fabriciojbinsperedubr" class="md-nav__link">
-    Versão 2022/2: Fabrício Barth ( fabriciojb@insper.edu.br )
+  <a href="#biblioteca-para-implementacao-de-agentes-baseados-em-busca" class="md-nav__link">
+    Biblioteca para implementação de agentes baseados em busca
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#atividades" class="md-nav__link">
+    Atividades
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formato-de-entrega" class="md-nav__link">
+    Formato de entrega
+  </a>
   
 </li>
       
@@ -520,205 +578,47 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/insper/dev-aberto/edit/master/docs/aulas/07-localizacao/slides.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/insper/dev-aberto/edit/master/docs/aulas/08-testes-automatizados/index_2022.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<style>
-    footer {
-        position: fixed;
-        bottom: 10px;
-        left: 1050px;
-        width: 400px;
-    }
-
-    footer img {
-        vertical-align: middle;
-    }
-</style>
-
-<h1 id="desenvolvimento-aberto">Desenvolvimento Aberto</h1>
-<p><img alt="width:300px" src="../capa.svg" /></p>
-<h5 id="localizacao-e-internacionalizacao-de-software">Localização e internacionalização de software</h5>
-<h6 id="versao-20222-fabricio-barth-fabriciojbinsperedubr">Versão 2022/2: Fabrício Barth ( <a href="mailto:fabriciojb@insper.edu.br">fabriciojb@insper.edu.br</a> )</h6>
-<hr />
-<h1 id="traducao-de-software">Tradução de software</h1>
-<h2 id="qual-a-diferenca-de-internacionalizacao-e-localizacao">Qual a diferença de internacionalização e localização?</h2>
-<hr />
-<h1 id="internacionalizacao-i18n">Internacionalização (I18N)</h1>
-<ul>
-<li>
-<p>Consiste em traduzir a interface de usuário de um software para outros idiomas. </p>
-</li>
-<li>
-<p>Sistema Operacional guarda configurações de idioma e as disponibiliza para aplicações</p>
-</li>
-<li>
-<p>Tipicamente "invisível"</p>
-</li>
-</ul>
-<hr />
-<h1 id="localizacao-l10n">Localização (L10N)</h1>
-<p>Consiste em adaptar a maneira de mostrar </p>
-<ul>
-<li>números fracionários<ul>
-<li>marcador de decimais</li>
-<li>marcador de milhares</li>
-</ul>
-</li>
-<li>datas<ul>
-<li>nomes de meses</li>
-<li>ordem de exibição </li>
-</ul>
-</li>
-<li>nomes de países, fusos horários, etc</li>
-</ul>
-<p>de acordo com as preferências de um usuário e relativos a sua cultura. </p>
-<hr />
-<h1 id="i18n-e-l10n">I18N e L10N</h1>
-<p>Precisam ser</p>
-<ul>
-<li>independentes:<ul>
-<li>idioma inglês e datas no formato brasileiro</li>
-</ul>
-</li>
-<li>configuráveis<ul>
-<li>posso precisar trocar entre línguas e entre formatos</li>
-</ul>
-</li>
-</ul>
-<h3 id="o-suporte-a-l10n-e-i18n-implica-modificar-codigo-fonte">O suporte a L10N e I18N implica modificar código fonte.</h3>
-<hr />
-<h1 id="locales">Locales</h1>
-<p>Um <em>locale</em> é uma tripla</p>
-<h1 id="_1"></h1>
-<pre><code>&lt;lingua&gt;_&lt;pais&gt;.&lt;codificacao&gt;
-</code></pre>
-<h1 id="_2"></h1>
-<p>que representa configurações de I18N e/ou L10N para uma determinada cultura. </p>
-<hr />
-<h1 id="locales_1">Locales</h1>
-<p>Exemplos:</p>
-<ul>
-<li>Tradução de <em>File</em>: <ul>
-<li><code>pt</code> = Ficheiro</li>
-<li><code>pt_BR</code> = Arquivo</li>
-</ul>
-</li>
-<li>Formato de datas:<ul>
-<li><code>en_US</code>: <em>MM/DD/YY</em></li>
-<li><code>en_GB</code>: <em>DD/MM/YY</em></li>
-</ul>
-</li>
-</ul>
-<h3 id="posso-usar-locales-diferentes-para-a-lingua-da-interface-de-usuario-e-para-mostrar-datas">Posso usar <em>locales</em> diferentes para a língua da interface de usuário e para mostrar datas.</h3>
-<hr />
-<h1 id="configuracoes-possiveis-linux">Configurações possíveis (Linux)</h1>
-<div class="highlight"><pre><span></span><code># saída do comando locale
-LANG=en_US.UTF-8
-LC_CTYPE=&quot;en_US.UTF-8&quot;
-LC_NUMERIC=pt_BR.UTF-8
-LC_TIME=pt_BR.UTF-8
-LC_COLLATE=pt_BR.UTF-8
-LC_MONETARY=pt_BR.UTF-8
-LC_MESSAGES=&quot;en_US.UTF-8&quot;
-LC_PAPER=pt_BR.UTF-8
-LC_NAME=pt_BR.UTF-8
-LC_ADDRESS=pt_BR.UTF-8
-LC_TELEPHONE=pt_BR.UTF-8
-LC_MEASUREMENT=pt_BR.UTF-8
-LC_IDENTIFICATION=pt_BR.UTF-8
-</code></pre></div>
-<hr />
-<h1 id="implementando-suporte-a-l10n">Implementando suporte a L10N</h1>
+<h1 id="08-testes-automatizados">08 - Testes automatizados</h1>
+<p>O objetivo da atividade de hoje é criar testes automatizados para um projeto específico de software. Com isso completamos nossa jornada rumo a software que possa ser desenvolvido de maneira colaborativa e que possa ser usado em situações reais. </p>
 <ol>
-<li>Baixar uma biblioteca de Localização</li>
-<li>Encontrar todas as exibições de números, datas, etc</li>
-<li>Pré-processá-las usando funções da biblioteca</li>
+<li>Documentação (usuários e desenvolvedor)</li>
+<li>Distribuição de software e versionamento </li>
+<li>Localização e internacionalização</li>
+<li>Testes automatizados</li>
 </ol>
-<h1 id="_3"></h1>
-<div class="highlight"><pre><span></span><code><span class="c1"># Antes </span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Numero:&#39;</span><span class="p">,</span> <span class="mf">10.5</span><span class="p">)</span> 
-<span class="c1"># Depois</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Numero&#39;</span><span class="p">,</span> <span class="n">format_number</span><span class="p">(</span><span class="mf">10.5</span><span class="p">))</span>
-</code></pre></div>
-<h1 id="_4"></h1>
-<p>Não é complicado, mas é <strong>trabalhoso</strong></p>
-<hr />
-<h1 id="suporte-a-i18n">Suporte a I18N</h1>
-<p>Envolve 4 etapas:</p>
-<ol>
-<li>Marcar todas strings que devem ser traduzidas</li>
-<li>Extraí-las do código fonte</li>
-<li>Criar um arquivo de traduções para cada <em>locale</em> suportado</li>
-<li>Empacotar as traduções junto com o programa</li>
-</ol>
-<h1 id="_5"></h1>
-<p>É um pouco mais complicado, mas pode ser integrado ao processo de compilação de um programa. </p>
-<hr />
-<h1 id="suporte-a-i18n-posix">Suporte a I18N (POSIX)</h1>
-<p>Sistemas POSIX suportam determinação de lingua e locale usando variáveis de ambiente.</p>
+<h2 id="biblioteca-para-implementacao-de-agentes-baseados-em-busca">Biblioteca para implementação de agentes baseados em busca</h2>
+<p>O projeto <a href="https://github.com/Insper/ai_code">AI Code</a> implementa uma biblioteca que possui diversos algoritmos de busca pré-prontos e alguns exemplos de utilização. </p>
+<p>Os exemplos de utilização já possuem arquivos de teste usando a biblioteca <code>pytest</code>, mas podem estar incompletos ou até mesmo errados. </p>
+<p>As implementações dos algoritmos de busca, da biblioteca em si, não possuem testes. Estes algoritmos estão implementados no arquivo <code>SearchAlgoritms.py</code>. </p>
+<h2 id="atividades">Atividades</h2>
 <ul>
-<li><code>LANG</code> para língua</li>
-<li><code>LC_TIME</code> para data</li>
-<li><code>LC_NUMERIC</code> para números</li>
+<li>Faça um fork do projeto; </li>
+<li>Leia a documentação para entender os exemplos e o propósito da biblioteca; </li>
+<li>Revise os testes;</li>
+<li>Implemente ou altere 3 novos testes para um dos exemplos apresentados na documentação. Justifique o motivo da sua nova implementação ou alteração no <em>pull request</em>; </li>
+<li>Implemente 3 novos testes para os algoritmos base da biblioteca. Faça isto em um <em>pull request</em> diferente do anterior. </li>
 </ul>
-<p>Um locale sempre é expresso no formato </p>
-<pre><code>&lt;lingua&gt;_&lt;pais&gt;.&lt;codificacao&gt;
-</code></pre>
-<hr />
-<h1 id="suporte-a-i18n-posix_1">Suporte a I18N (POSIX)</h1>
-<p>O comando <code>locale</code> mostra todas as opções disponíveis:</p>
-<div class="highlight"><pre><span></span><code># saída do comando locale
-LANG=en_US.UTF-8
-LC_CTYPE=&quot;en_US.UTF-8&quot;
-LC_NUMERIC=pt_BR.UTF-8
-LC_TIME=pt_BR.UTF-8
-LC_COLLATE=pt_BR.UTF-8
-LC_MONETARY=pt_BR.UTF-8
-LC_MESSAGES=&quot;en_US.UTF-8&quot;
-LC_PAPER=pt_BR.UTF-8
-LC_NAME=pt_BR.UTF-8
-LC_ADDRESS=pt_BR.UTF-8
-LC_TELEPHONE=pt_BR.UTF-8
-LC_MEASUREMENT=pt_BR.UTF-8
-LC_IDENTIFICATION=pt_BR.UTF-8
-</code></pre></div>
-<hr />
-<h1 id="suporte-a-i18n-web">Suporte a I18N (Web)</h1>
-<p>Existem diversas maneiras de determinar um bom locale em sistemas Web:</p>
+<p>Além da implementação dos testes, uma outra alternativa é executar o <code>pylint</code> e sugerir mudanças na formatação do código dos arquivos <code>search/SearchAlgorithms.py</code>, <code>search/Graph.py</code> e <code>ProblemSpecificationExample.py</code>. </p>
+<h2 id="formato-de-entrega">Formato de entrega</h2>
+<p>Para a entrega do exercício você deverá: </p>
 <ul>
-<li>Cabeçalho HTTP <code>Accept-Language</code>  inclui as linguagens de exibição suportadas pelo browser do visitante. </li>
-<li>Geolocalização via IP</li>
-<li>Preferência armazenada em banco de dados</li>
+<li>implementar os dois conjuntos de testes, ou;</li>
+<li>implementar um dos conjuntos de testes e as modificações sugeridas pelo <code>pylint</code>. </li>
 </ul>
-<h1 id="_6"></h1>
-<h4 id="web-e-desktop-usam-as-mesmas-tecnologias-l10n-e-i18n">Web e desktop usam as mesmas tecnologias (l10n e i18n)</h4>
-<hr />
-<h1 id="suporte-a-i18n-em-python">Suporte a I18N (em Python)</h1>
-<ul>
-<li>Módulo <code>gettext</code> da biblioteca padrão</li>
-<li>Módulo <code>datetime</code> aceita o uso de locales</li>
-<li>Módulo <code>babel</code> faz I18N e L10N</li>
-</ul>
-<hr />
-<h1 id="atividade-pratica-traducao-basica">Atividade prática: Tradução básica</h1>
-<p><img alt="width:256px" src="../skill-traducao.svg" /></p>
-<p><strong>Objetivo</strong>: usar o módulo <em>Babel</em> para traduzir uma aplicação do terminal.</p>
-<hr />
-<h1 id="desenvolvimento-aberto_1">Desenvolvimento Aberto</h1>
-<p><img alt="width:300px" src="../capa.svg" /></p>
-<h5 id="localizacao-e-internacionalizacao-de-software_1">Localização e internacionalização de software</h5>
-<h6 id="versao-20222-fabricio-barth-fabriciojbinsperedubr_1">Versão 2022/2: Fabrício Barth ( <a href="mailto:fabriciojb@insper.edu.br">fabriciojb@insper.edu.br</a> )</h6>
+<p>Esta atividade deve ser individual. Os PRs devem ser enviados e discutidos ao longo desta semana. </p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 12, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 20, 2022</span>
       
     
   </small>
@@ -736,6 +636,42 @@ LC_IDENTIFICATION=pt_BR.UTF-8
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../../07-localizacao/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 07 - Localização" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              07 - Localização
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../../impacto/" class="md-footer__link md-footer__link--next" aria-label="Next: 2022/2" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              2022/2
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
