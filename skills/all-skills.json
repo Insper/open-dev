@@ -55,7 +55,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "metadata_requirements": ["url|str", "group|List[str]"],
+        "metadata_requirements": ["url1|str", "url2|str", "group|List[str]"],
         "date_limit": "2022-09-10"
 
     },
