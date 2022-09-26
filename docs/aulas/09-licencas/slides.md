@@ -25,8 +25,7 @@ Desenvolvimento Aberto
 
 ##### Licenças de Software
 
-
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) ) 
 
 ---
 Até agora
@@ -36,6 +35,7 @@ Até agora
 * Modificações de código
 * Tradução de UI e documentação
 * Distribuiçao de software
+* Teste de software
 
  ### Conteúdo técnico: ferramentas, fluxos de trabalho, etc
 
@@ -158,18 +158,11 @@ Fontes [1](https://www.startse.com/noticia/mercado/17252/cinco-cuidados-na-contr
 ---
 # Contexto 3: comercialização de software
 
-**End User License Agreement**: Termo usado para aquelas condições que (não lemos) aceitamos ao instalar software proprietário ou nos registramos em um site/serviço.
+**End User License Agreement** (**EULA**): Termo usado para aquelas condições que (não lemos) aceitamos ao instalar software proprietário ou nos registramos em um site/serviço.
 
 # 
 
 Ignorado por aproximadamente 90% dos usuários ([fonte](https://measuringu.com/eula/))
-
----
-# End User License Agreement
-
-![center](safari_windows.png)
-
-E por algumas empresas... [Fonte](https://www.makeuseof.com/tag/10-ridiculous-eula-clauses-agreed/)
 
 ---
 # End User License Agreement
@@ -209,11 +202,8 @@ Informações típicas encontradas em EULAs de serviços:
 [fonte](https://aws.amazon.com/service-terms/): https://aws.amazon.com/service-terms/
 
 ---
-# End User License Agreement
 
-![center](https://imgs.xkcd.com/comics/faust_20.png )
-
-[fonte](https://xkcd.com/501/)
+# Um pouco de história
 
 ---
 # Um pouco de história
@@ -329,7 +319,7 @@ Chamadas também de *recíprocas*.
 Mais associadas a [Open Source Iniciative](http://opensource.org), são consideradas menos "ideológicas".
 
 * Muitas vezes chamadas de *permissivas*;
-* Normalmente não garatem a liberdade 4;
+* Normalmente não garatem a liberdade 3;
 * Podem fazer outras pequenas exigências ou restrições
 
 Exemplos: MIT, BSD
@@ -338,15 +328,23 @@ Exemplos: MIT, BSD
 * Permitem a venda e completo *rebranding* do software sem nenhuma contribuição para o autor original.
 
 ---
+
+# Licenças: qual usar? 
+
+https://choosealicense.com/licenses/
+
+---
 # Atividade
 
-**Cultura livre**: fez uma pesquisa profunda e apresentou seminário sobre licenças de software e casos recentes em que licenças tem papel de destaque
+**Cultura livre**: fazer uma pesquisa profunda e apresentar seminário sobre licenças de software e casos recentes em que licenças tem papel de destaque
 
-### Sua apresentação não pode ser somente slides
-* kahoot, socrative, etc
+### Sua apresentação precisa ter alguma forma de interação com a audiência
 * debate
 * painel com votações
 
+### Data das apresentações: TBD (final do semestre)
+
+<!-- 
 ---
 # Atividade - sugestões de temas
 
@@ -385,6 +383,8 @@ Exemplos: MIT, BSD
 
 ![width:300px](shoe-snicker.svg)
 
+-->
+
 ----
 
 Desenvolvimento Aberto
@@ -395,4 +395,4 @@ Desenvolvimento Aberto
 ##### Licenças de Software
 
 
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) ) 
