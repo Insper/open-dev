@@ -344,6 +344,8 @@ https://choosealicense.com/licenses/
 
 ### Data das apresentações: TBD (final do semestre)
 
+### Sugestões de temas serão entregues ao longo das próximas semanas
+
 <!-- 
 ---
 # Atividade - sugestões de temas
@@ -373,17 +375,17 @@ https://choosealicense.com/licenses/
 
 ### Registrar seu grupo, escolha de tema e dia de apresentação na issue `#369`
 
+-->
+
+
 ----
 
-# Desafio de tradução **(21/09)**
+# Desafio de tradução
 
 ### Skill "Tradução aceita!" *(5XP)*: Ao menos 40 string traduzidas
 
-### Extra: "Sprint de tradução Elementary" *(15XP)*
-
-![width:300px](shoe-snicker.svg)
-
--->
+<!-- ### Extra: "Sprint de tradução Elementary" *(15XP)*
+![width:300px](shoe-snicker.svg) --> 
 
 ----
 
