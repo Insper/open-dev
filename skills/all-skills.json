@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "Primeiros passos",
+        "name": "1 - Primeiros passos",
         "descr": "Se adicionou no repositório da disciplina.",
         "xp": 2,
         "icon": "account-check",
@@ -12,7 +12,7 @@
     },
     {
         "id": 2,
-        "name": "Explorando o entorno de um projeto",
+        "name": "2 - Explorando o entorno de um projeto",
         "descr": "Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.",
         "xp": 3,
         "icon": "cash-multiple",
@@ -24,7 +24,7 @@
 
     {
         "id": 3,
-        "name": "Projeto não documentado",
+        "name": "3 - Projeto não documentado",
         "descr": "Recebeu um sistema sem documentação e o pôs para funcionar.",
         "xp": 5,
         "icon": "compass",
@@ -36,7 +36,7 @@
 
     {
         "id": 4,
-        "name": "Projeto Profissional",
+        "name": "4 - Projeto Profissional",
         "descr": "Reformou um código mal feito e criou uma página web para ele.",
         "xp": 5,
         "icon": "star",
@@ -48,20 +48,19 @@
     },
     {
         "id": 5,
-        "name": "Testado e Aprovado",
+        "name": "5 - Testado e Aprovado",
         "descr": "Criou testes de unidade e de interface para o servidor de desafios.",
         "xp": 5,
         "icon": "emoticon-outline",
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "metadata_requirements": ["url1|str", "url2|str", "group|List[str]"],
-        "date_limit": "2022-09-10"
+        "date_limit": "2022-10-10"
 
     },
     {
         "id": 6,
-        "name": "Pacote Python",
+        "name": "6 - Pacote Python",
         "descr": "Criou um pacote python instalável via pip.",
         "xp": 3,
         "icon": "briefcase",
@@ -73,7 +72,7 @@
     },
     {
         "id": 7,
-        "name": "Dockerfile",
+        "name": "7 - Dockerfile",
         "descr": "Criou deploy automatizado para sistema web Python",
         "xp": 3,
         "icon": "docker",
@@ -86,7 +85,7 @@
     },
     {
         "id": 8,
-        "name": "Tradução básica",
+        "name": "8 - Tradução básica",
         "descr": "Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando.",
         "xp": 2,
         "icon": "translate",
@@ -97,7 +96,7 @@
     },
     {
         "id": 9,
-        "name": "Minha primeira contribuição",
+        "name": "9 - Minha primeira contribuição",
         "descr": "Primeiro PR enviado corrigindo um bug simples.",
         "xp": 5,
         "icon": "airplane-takeoff",
@@ -109,7 +108,7 @@
     },
     {
         "id": 10,
-        "name": "Pesquisa de temas FLOSS",
+        "name": "10 - Pesquisa de temas FLOSS",
         "descr": "Fez uma apresentação longa envolvendo um tema recente e relevante relacionado a software livre.",
         "xp": 5,
         "icon": "open-source-initiative",
