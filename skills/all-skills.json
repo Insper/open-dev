@@ -18,6 +18,7 @@
         "icon": "cash-multiple",
         "unique": true,
         "type": "Tutorial",
+        "mandatory": "D",
         "metadata_requirements": ["group|List[str]", "filename|str"],
         "date_limit": "2022-08-23"
     },
@@ -114,6 +115,7 @@
         "icon": "open-source-initiative",
         "unique": true,
         "type": "Tutorial",
+        "mandatory": "D",
         "metadata_requirements": ["group|List[str]", "filename|str"],
         "date_limit": "2022-12-01"
     },

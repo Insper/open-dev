@@ -1,0 +1,11 @@
+#
+# rename this file to email_config.txt and change the values below.
+#
+
+[user]
+address='YOUR EMAIL'
+password='YOUR PASSWORD'
+
+[server]
+host='smtp-mail.outlook.com' 
+port=587
