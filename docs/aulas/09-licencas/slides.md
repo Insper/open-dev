@@ -342,27 +342,29 @@ https://choosealicense.com/licenses/
 * debate
 * painel com votações
 
-### Data das apresentações: TBD (final do semestre)
 
-### Sugestões de temas serão entregues ao longo das próximas semanas
-
-<!-- 
 ---
 # Atividade - sugestões de temas
 
-* Epic vs Apple - distribuição de software em iOS
-* Regulamentações recentes na Europa sobre durabilidade de smartphones (bateria, right to repair, etc)
-* There is no "Linux" platform
-* Telemetria é "ético"? (caso Audacity e outros)
-* Maintainer burnout (caso Hacktober fest e outros)
+* [The new open-source economics (Yochai Benkler, 2005)](https://www.ted.com/talks/yochai_benkler_the_new_open_source_economics?language=en). O que mudou de 2005 para 2022?
+
+* There is no "Linux" platform.
+
+* Telemetria é "ético"? (exemplo VSCode e outros).
+
 * GitHub CoPilot é "ético"? Respeita licenças de software?
+
+* Regulamentações recentes na Europa sobre durabilidade de smartphones (bateria, right to repair, etc).
+
+* Maintainer burnout.
 
 -----
 # Atividade - datas de apresentação
 
-* 23/11 - 2 trabalho
-* 25/11 - 2 trabalhos
-* 30/11 - 2 trabalhos
+* 17/11 - 2 trabalho
+* 22/11 - 2 trabalhos
+* 24/11 - 2 trabalhos
+* 29/11 - 2 trabalhos
 
 ### 45 minutos de apresentação/atividade + 10 minutos para perguntas
 
@@ -373,10 +375,7 @@ https://choosealicense.com/licenses/
 * Definição de temas e datas de apresentação
 * Prévia de 5 minutos do seu tema na próxima aula
 
-### Registrar seu grupo, escolha de tema e dia de apresentação na issue `#369`
-
--->
-
+### Registrar seu grupo, escolha de tema e dia de apresentação na issue `#665`
 
 ----
 
