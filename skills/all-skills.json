@@ -103,7 +103,7 @@
         "icon": "airplane-takeoff",
         "unique": true,
         "type": "Tutorial",
-        "mandatory": "D",
+        
         "date_limit": "2022-10-19",
         "metadata_requirements": ["url|str", "group|List[str]"]
     },
@@ -126,7 +126,7 @@
 
     {
         "id": 21,
-        "name": "Contribuição de código",
+        "name": "21 - Contribuição de código",
         "descr": "PR enviado corrigindo um bug.",
         "xp": 7,
         "icon": "code-braces-box",
@@ -134,11 +134,12 @@
         "unique": false,
         "type": "Code",
         "metadata_requirements": ["url|str"],
-        "mandatory": "C"
+        "mandatory": "C",
+        "date_limit": "2022-12-30"
     },
     {
         "id": 22,
-        "name": "Contribuição aceita!",
+        "name": "22 - Contribuição aceita!",
         "descr": "Um PR não trivial foi aceito por um projeto externo.",
         "xp": 13,
         "icon": "check-all",
@@ -149,7 +150,7 @@
     },
     {
         "id": 23,
-        "name": "Contribuição (simples) aceita!",
+        "name": "23 - Contribuição (simples) aceita!",
         "descr": "Um PR simples (com mudanças triviais ou pequenas refatorações de código) foi aceito por um projeto externo.",
         "xp": 3,
         "icon": "check",
@@ -158,7 +159,7 @@
     },
     {
         "id": 24,
-        "name": "Bug Report",
+        "name": "24 - Bug Report",
         "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
         "xp": 5,
         "icon": "bug",
@@ -168,7 +169,7 @@
     },
     {
         "id": 25,
-        "name": "Feature Request",
+        "name": "25 - Feature Request",
         "descr": "Fez um pedido de nova funcionalidade a um software.",
         "xp": 2,
         "icon": "cart-plus",
@@ -178,7 +179,7 @@
     },
     {
         "id": 26,
-        "name": "Projeto INSPER",
+        "name": "26 - Projeto INSPER",
         "descr": "Fez mais contribuições a um projeto educacional do INSPER",
         "xp": 5,
         "icon": "school",
@@ -188,7 +189,7 @@
 
     {
         "id": 40,
-        "name": "Issue indireta",
+        "name": "40 - Issue indireta",
         "descr": "Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias. ",
         "xp": 3,
         "icon": "call-split",
@@ -197,7 +198,7 @@
     },
     {
         "id": 41,
-        "name": "Beta tester",
+        "name": "41 - Beta tester",
         "descr": "Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue.",
         "xp": 3,
         "icon": "beta",
@@ -206,7 +207,7 @@
     },
     {
         "id": 42,
-        "name": "Tradução aceita!",
+        "name": "42 - Tradução aceita!",
         "descr": "Fez uma tradução que foi aceita em um software aberto.",
         "xp": 5,
         "icon": "google-translate",
@@ -217,7 +218,7 @@
     },
     {
         "id": 43,
-        "name": "Novas línguas",
+        "name": "43 - Novas línguas",
         "descr": "Adicionou suporte a traduções em um software que não era traduzível.",
         "xp": 10,
         "icon": "web",
@@ -227,7 +228,7 @@
     },
     {
         "id": 44,
-        "name": "Revisor",
+        "name": "44 - Revisor",
         "descr": "Revisou pequenos erros na documentação de um projeto e teve suas modificações aceitas.",
         "xp": 2,
         "icon": "book-edit",
@@ -237,7 +238,7 @@
     },
     {
         "id": 45,
-        "name": "Contribuição de documentação",
+        "name": "45 - Contribuição de documentação",
         "descr": "Fechou uma *issue* marcada como `docs`",
         "xp": 7,
         "icon": "book-check",
@@ -249,7 +250,7 @@
 
     {
         "id": 46,
-        "name": "Pitch de projeto",
+        "name": "46 - Pitch de projeto",
         "descr": "Apresentou um Pitch de projeto.",
         "xp": 0,
         "icon": "account-voice",
@@ -259,7 +260,7 @@
     },
     {
         "id": 47,
-        "name": "Pitch aceito!",
+        "name": "47 - Pitch aceito!",
         "descr": "Enviou contribuição para um projeto apresentado em sala.",
         "xp": 5,
         "icon": "receipt",
@@ -269,7 +270,7 @@
     },
     {
         "id": 48,
-        "name": "Sugestão aceita!",
+        "name": "48 - Sugestão aceita!",
         "descr": "Outro aluno enviou contribuição para o projeto que você fez Pitch.",
         "xp": 3,
         "icon": "receipt",
@@ -279,7 +280,7 @@
     },
     {
         "id": 49,
-        "name": "Replay de PR",
+        "name": "49 - Replay de PR",
         "descr": "Apresentou (em 15 minutos) o processo de resolução de um bug na aula.",
         "xp": 5,
         "icon": "replay",
@@ -292,7 +293,7 @@
 
     {
         "id": 60,
-        "name": "Palestrante",
+        "name": "60 - Palestrante",
         "descr": "Fez uma palestra sobre bibliotecas ou softwares livres.",
         "xp": 20,
         "icon": "presentation-play",
@@ -301,7 +302,7 @@
     },
     {
         "id": 61,
-        "name": "Helpdesk",
+        "name": "61 - Helpdesk",
         "descr": "Teve uma resposta aceita em sites como StackOverflow ou em listas de email",
         "xp": 4,
         "icon": "chat-question",
@@ -311,7 +312,7 @@
     },
     {
         "id": 62,
-        "name": "Contribuição publicada",
+        "name": "62 - Contribuição publicada",
         "descr": "Uma contribuição sua foi incluída em um release.",
         "xp": 10,
         "icon": "earth",
@@ -321,7 +322,7 @@
     },
     {
         "id": 63,
-        "name": "Convidado VIP",
+        "name": "63 - Convidado VIP",
         "descr": "Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill.",
         "xp": 5,
         "icon": "phone",
@@ -331,7 +332,7 @@
     },
     {
         "id": 64,
-        "name": "3 PRs enviados",
+        "name": "64 - 3 PRs enviados",
         "descr": "3 PRs enviados para o mesmo projeto",
         "xp": 10,
         "icon": "source-branch",
@@ -340,7 +341,7 @@
     },
     {
         "id": 65,
-        "name": "3 PRs aceitos",
+        "name": "65 - 3 PRs aceitos",
         "descr": "3 PRs que você enviou para um projeto foram aceitos.",
         "xp": 30,
         "icon": "source-branch-check",
@@ -349,7 +350,7 @@
     },
     {
         "id": 66,
-        "name": "Jabá",
+        "name": "66 - Jabá",
         "descr": "Algo que você fez foi citado pelo projeto em redes sociais ou algum meio oficial.",
         "xp": 10,
         "icon": "human-greeting-proximity",
@@ -358,7 +359,7 @@
     },
     {
         "id": 77,
-        "name": "Hacktoberfest",
+        "name": "77 - Hacktoberfest",
         "descr": "Participou da Hacktoberfest, enviando 3 PRs para projetos externos.",
         "xp": 20,
         "icon": "glass-mug",
@@ -367,7 +368,7 @@
     },
     {
         "id": 78,
-        "name": "Sprint de Tradução Elementary",
+        "name": "78 - Sprint de Tradução Elementary",
         "descr": "Participou do sprint de tradução com ao menos 40 strings traduzidas.",
         "xp": 15,
         "icon": "shoe-sneaker",
