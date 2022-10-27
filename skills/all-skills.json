@@ -96,18 +96,6 @@
         "date_limit": "2022-10-19"
     },
     {
-        "id": 9,
-        "name": "9 - Minha primeira contribuição",
-        "descr": "Primeiro PR enviado corrigindo um bug simples.",
-        "xp": 5,
-        "icon": "airplane-takeoff",
-        "unique": true,
-        "type": "Tutorial",
-        
-        "date_limit": "2022-10-19",
-        "metadata_requirements": ["url|str", "group|List[str]"]
-    },
-    {
         "id": 10,
         "name": "10 - Pesquisa de temas FLOSS",
         "descr": "Fez uma apresentação longa envolvendo um tema recente e relevante relacionado a software livre.",

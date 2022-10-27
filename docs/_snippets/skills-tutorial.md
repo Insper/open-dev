@@ -8,5 +8,4 @@
 |    6 | :material-briefcase:{: .skill-icon }              | 6 - Pacote Python                      | Criou um pacote python instalável via pip.                                                      |    3 |
 |    7 | :material-docker:{: .skill-icon }                 | 7 - Dockerfile                         | Criou deploy automatizado para sistema web Python                                               |    3 |
 |    8 | :material-translate:{: .skill-icon }              | 8 - Tradução básica                    | Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando. |    2 |
-|    9 | :material-airplane-takeoff:{: .skill-icon }       | 9 - Minha primeira contribuição        | Primeiro PR enviado corrigindo um bug simples.                                                  |    5 |
 |   10 | :material-open-source-initiative:{: .skill-icon } | 10 - Pesquisa de temas FLOSS           | Fez uma apresentação longa envolvendo um tema recente e relevante relacionado a software livre. |    5 |
