@@ -24,7 +24,8 @@ nav:
     - 'aulas/07-localizacao/index.md'
     - 'aulas/08-testes-automatizados/index_2022.md'
     - 'aulas/09-licencas/index.md'
-#    - 'aulas/10-minha-primeira-contribuicao/index.md'
+    - 'aulas/09-cultura-livre/index.md'
+    - 'aulas/10-minha-primeira-contribuicao/index.md'
 #    - 'aulas/11-contribuicoes-externas/index.md'
   - 'Impacto': 
     - '2022/2': 'impacto.md'

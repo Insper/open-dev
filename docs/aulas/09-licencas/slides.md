@@ -333,52 +333,6 @@ Exemplos: MIT, BSD
 
 https://choosealicense.com/licenses/
 
----
-# Atividade
-
-**Cultura livre**: fazer uma pesquisa profunda e apresentar seminário sobre licenças de software e casos recentes em que licenças tem papel de destaque
-
-### Sua apresentação precisa ter alguma forma de interação com a audiência
-* debate
-* painel com votações
-
-### Data das apresentações: TBD (final do semestre)
-
-### Sugestões de temas serão entregues ao longo das próximas semanas
-
-<!-- 
----
-# Atividade - sugestões de temas
-
-* Epic vs Apple - distribuição de software em iOS
-* Regulamentações recentes na Europa sobre durabilidade de smartphones (bateria, right to repair, etc)
-* There is no "Linux" platform
-* Telemetria é "ético"? (caso Audacity e outros)
-* Maintainer burnout (caso Hacktober fest e outros)
-* GitHub CoPilot é "ético"? Respeita licenças de software?
-
------
-# Atividade - datas de apresentação
-
-* 23/11 - 2 trabalho
-* 25/11 - 2 trabalhos
-* 30/11 - 2 trabalhos
-
-### 45 minutos de apresentação/atividade + 10 minutos para perguntas
-
----
-
-# Hoje
-
-* Definição de temas e datas de apresentação
-* Prévia de 5 minutos do seu tema na próxima aula
-
-### Registrar seu grupo, escolha de tema e dia de apresentação na issue `#369`
-
--->
-
-
-----
 
 # Desafio de tradução
 
