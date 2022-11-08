@@ -202,7 +202,8 @@
         "unique": false,
         "type": "Community",
         "mandatory": "C",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2022-12-01"
     },
     {
         "id": 43,
@@ -233,7 +234,8 @@
         "unique": false,
         "type": "Community",
         "mandatory": "C",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2022-12-01"
     },
 
     {
