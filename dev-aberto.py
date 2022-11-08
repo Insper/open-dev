@@ -144,7 +144,7 @@ def compute_grade(student_login):
 
         # TODO: fazer os próximos conceitos ao longo do semestre, quando os ids estiverem prontos
 
-        if xp >= 50 and st.achievements.get(21, False) and \
+        if xp >= 45 and st.achievements.get(21, False) and \
             (st.achievements.get(42, False) or st.achievements.get(45, False)):
             conceito = 'C'
 
