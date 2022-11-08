@@ -39,3 +39,5 @@ students/*-report.html
 .gh-credentials
 
 email_config.txt
+enviar_email.log
+
