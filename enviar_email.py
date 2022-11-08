@@ -3,7 +3,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import logging 
-logging.basicConfig(filename='enviar_email.log', encoding='utf-8', level=logging.INFO)
+logging.basicConfig(filename='enviar_email.log', level=logging.INFO)
 
 class Email():
 
