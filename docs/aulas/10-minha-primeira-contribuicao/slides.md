@@ -27,8 +27,10 @@ Desenvolvimento Aberto
 ##### Contribuição de código
 
 
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) ) 
 
+
+<!--
 ---
 # Até agora
 
@@ -84,6 +86,7 @@ Desenvolvimento Aberto
 
 ### Início em 19/10
 
+-->
 ----
 
 # Minha primeira contribuição de código 
@@ -119,6 +122,7 @@ Biblioteca de tratamento de dados usada em Ciência dos Dados.
 
 [Tickets de testes](https://github.com/pandas-dev/pandas/labels/Needs%20Tests) são, em geral, fáceis para começar e úteis para a comunidade.
 
+<!--
 ---
 
 # Sugestão II - Elementary
@@ -129,16 +133,21 @@ Muitos aplicativos criados especialmente para o Elementary precisam de uma mão
 * Releases frequentes aumentam a chance de sua funcionalidade ser diretamente usada por alguém. 
 
 [Issues marcadas como *bitesize*](https://github.com/search?q=org%3Aelementary+is%3Aissue++label%3Abitesize+state%3Aopen&type=Issues)
+-->
 
 -----
 
-# Sugestão III: Escolha seu próprio projeto :)
+# Sugestão II: Escolha seu próprio projeto :)
+
+* https://github.com/MunGell/awesome-for-beginners
+* https://www.codetriage.com/
+* https://up-for-grabs.net/
+* http://github-help-wanted.com/
 
 ----
 
 # Hoje
 
-1. registrar o grupo e a issue escolhida no [repo da disciplina](https://github.com/Insper/dev-aberto/issues/198)
 1. escolher issue e projeto
 1. montar ambiente
 	* baixar código
