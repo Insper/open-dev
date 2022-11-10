@@ -14,6 +14,7 @@ nav:
   - 'burocracias.md'
   - 'Skills e avaliação': 'regras.md'
   - 'Alunos': 'alunos.md'
+  - 'Agenda apresentações': 'agenda_apresentacoes.md'
   - 'Aulas':
     - 'aulas/01-ciclo-de-vida-bug/index.md'
     - 'aulas/02-comunidades-de-software/index.md'
