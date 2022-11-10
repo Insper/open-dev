@@ -19,7 +19,8 @@ Este documento descreve a rubrica para avaliação do trabalho e a agenda das ap
 | 17/11 (10:45-11:45) | A relação entre Software as a Service (SaaS) e projetos de Código Aberto [Caroline Chaim, Felipe Lemos, João Farias Araujo]|
 | 22/11 (9:45-10:45) | Telemetria é "ético"? [Guilherme Lunetta, Rafael Monteiro e João Magalhães]| 
 | 22/11 (10:45-11:45) | Regulamentações futuras na Europa sobre responsabilidade legal dos criadores de IAs [Luiza Silvera, Guilherme Batista e Gabriel Zanetti]|
-| 24/11 (9:45-10:45) | Regulamentações recentes na Europa sobre durabilidade de smartphones. [Keiya Nishio e Bruno Freitas]|
-| 24/11 (10:45-11:45) | Por que Open Source é crítico para criptomoedas? [Paulo Kim, Raphael Lahiry e Rodrigo Coelho]|
-| 29/11 (9:45-10:45) | The new open-source economics (Yochai Benkler, 2005). O que mudou de 2005 para 2022? [João Pedro Meirelles, Gustavo Molina e Rafael Almada]| 
-| 29/11 (10:45-11:45) | Mantainer burnout [Cesar Ades e Jonathan Sutton]|
+| 24/11 | **Não teremos aula. Joga do Brasil na Copa do Mundo** |
+| 29/11 (9:45-10:45) | Regulamentações recentes na Europa sobre durabilidade de smartphones. [Keiya Nishio e Bruno Freitas]|
+| 29/11 (10:45-11:45) | Por que Open Source é crítico para criptomoedas? [Paulo Kim, Raphael Lahiry e Rodrigo Coelho]|
+| 01/12 (9:45-10:45) | The new open-source economics (Yochai Benkler, 2005). O que mudou de 2005 para 2022? [João Pedro Meirelles, Gustavo Molina e Rafael Almada]| 
+| 01/12 (10:45-11:45) | Mantainer burnout [Cesar Ades e Jonathan Sutton]|
