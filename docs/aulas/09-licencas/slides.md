@@ -25,8 +25,7 @@ Desenvolvimento Aberto
 
 ##### Licenças de Software
 
-
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) ) 
 
 ---
 Até agora
@@ -36,6 +35,7 @@ Até agora
 * Modificações de código
 * Tradução de UI e documentação
 * Distribuiçao de software
+* Teste de software
 
  ### Conteúdo técnico: ferramentas, fluxos de trabalho, etc
 
@@ -158,18 +158,11 @@ Fontes [1](https://www.startse.com/noticia/mercado/17252/cinco-cuidados-na-contr
 ---
 # Contexto 3: comercialização de software
 
-**End User License Agreement**: Termo usado para aquelas condições que (não lemos) aceitamos ao instalar software proprietário ou nos registramos em um site/serviço.
+**End User License Agreement** (**EULA**): Termo usado para aquelas condições que (não lemos) aceitamos ao instalar software proprietário ou nos registramos em um site/serviço.
 
 # 
 
 Ignorado por aproximadamente 90% dos usuários ([fonte](https://measuringu.com/eula/))
-
----
-# End User License Agreement
-
-![center](safari_windows.png)
-
-E por algumas empresas... [Fonte](https://www.makeuseof.com/tag/10-ridiculous-eula-clauses-agreed/)
 
 ---
 # End User License Agreement
@@ -209,11 +202,8 @@ Informações típicas encontradas em EULAs de serviços:
 [fonte](https://aws.amazon.com/service-terms/): https://aws.amazon.com/service-terms/
 
 ---
-# End User License Agreement
 
-![center](https://imgs.xkcd.com/comics/faust_20.png )
-
-[fonte](https://xkcd.com/501/)
+# Um pouco de história
 
 ---
 # Um pouco de história
@@ -329,7 +319,7 @@ Chamadas também de *recíprocas*.
 Mais associadas a [Open Source Iniciative](http://opensource.org), são consideradas menos "ideológicas".
 
 * Muitas vezes chamadas de *permissivas*;
-* Normalmente não garatem a liberdade 4;
+* Normalmente não garatem a liberdade 3;
 * Podem fazer outras pequenas exigências ou restrições
 
 Exemplos: MIT, BSD
@@ -338,52 +328,18 @@ Exemplos: MIT, BSD
 * Permitem a venda e completo *rebranding* do software sem nenhuma contribuição para o autor original.
 
 ---
-# Atividade
 
-**Cultura livre**: fez uma pesquisa profunda e apresentou seminário sobre licenças de software e casos recentes em que licenças tem papel de destaque
+# Licenças: qual usar? 
 
-### Sua apresentação não pode ser somente slides
-* kahoot, socrative, etc
-* debate
-* painel com votações
+https://choosealicense.com/licenses/
 
----
-# Atividade - sugestões de temas
 
-* Epic vs Apple - distribuição de software em iOS
-* Regulamentações recentes na Europa sobre durabilidade de smartphones (bateria, right to repair, etc)
-* There is no "Linux" platform
-* Telemetria é "ético"? (caso Audacity e outros)
-* Maintainer burnout (caso Hacktober fest e outros)
-* GitHub CoPilot é "ético"? Respeita licenças de software?
-
------
-# Atividade - datas de apresentação
-
-* 23/11 - 2 trabalho
-* 25/11 - 2 trabalhos
-* 30/11 - 2 trabalhos
-
-### 45 minutos de apresentação/atividade + 10 minutos para perguntas
-
----
-
-# Hoje
-
-* Definição de temas e datas de apresentação
-* Prévia de 5 minutos do seu tema na próxima aula
-
-### Registrar seu grupo, escolha de tema e dia de apresentação na issue `#369`
-
-----
-
-# Desafio de tradução **(21/09)**
+# Desafio de tradução
 
 ### Skill "Tradução aceita!" *(5XP)*: Ao menos 40 string traduzidas
 
-### Extra: "Sprint de tradução Elementary" *(15XP)*
-
-![width:300px](shoe-snicker.svg)
+<!-- ### Extra: "Sprint de tradução Elementary" *(15XP)*
+![width:300px](shoe-snicker.svg) --> 
 
 ----
 
@@ -395,4 +351,4 @@ Desenvolvimento Aberto
 ##### Licenças de Software
 
 
-###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
+###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) ) 

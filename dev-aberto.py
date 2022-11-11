@@ -20,6 +20,8 @@ from utils import load_key, create_key, write_string_to_file, load_encrypted, sa
 from students import Student, all_students
 from skills import Skill, all_skills
 
+from enviar_email import Email
+
 
 import click
 
@@ -142,7 +144,7 @@ def compute_grade(student_login):
 
         # TODO: fazer os próximos conceitos ao longo do semestre, quando os ids estiverem prontos
 
-        if xp >= 50 and st.achievements.get(21, False) and \
+        if xp >= 45 and st.achievements.get(21, False) and \
             (st.achievements.get(42, False) or st.achievements.get(45, False)):
             conceito = 'C'
 
@@ -171,12 +173,15 @@ def compute_grade(student_login):
 @dev_aberto_cli.command()
 @click.pass_context
 def report_cards(ctx):
+    e = Email()
     print(ctx, all_students.keys())
     for st_login in all_students.keys():
         print('st_login', st_login)
         ctx.invoke(compute_grade, student_login=st_login)
-
-    # TODO: envia e-mail
+        destinatario = st_login+'@al.insper.edu.br'
+        titulo_email = 'Relatório de Acompanhamento da disciplina de Desenvolvimento Aberto'
+        conteudo_email = 'students/'+st_login+'-report.html'
+        e.enviar(destinatario,titulo_email,conteudo_email)
 
 @dev_aberto_cli.command()
 def list_users():
