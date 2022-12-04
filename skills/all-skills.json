@@ -1,42 +1,43 @@
 [
     {
         "id": 1,
-        "name": "Primeiros passos",
+        "name": "1 - Primeiros passos",
         "descr": "Se adicionou no repositório da disciplina.",
         "xp": 2,
         "icon": "account-check",
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2022-08-19"
+        "date_limit": "2022-12-19"
     },
     {
         "id": 2,
-        "name": "Explorando o entorno de um projeto",
+        "name": "2 - Explorando o entorno de um projeto",
         "descr": "Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.",
         "xp": 3,
         "icon": "cash-multiple",
         "unique": true,
         "type": "Tutorial",
+        "mandatory": "D",
         "metadata_requirements": ["group|List[str]", "filename|str"],
-        "date_limit": "2022-08-23"
+        "date_limit": "2022-12-23"
     },
 
     {
         "id": 3,
-        "name": "Projeto não documentado",
+        "name": "3 - Projeto não documentado",
         "descr": "Recebeu um sistema sem documentação e o pôs para funcionar.",
         "xp": 5,
         "icon": "compass",
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2022-08-30"
+        "date_limit": "2022-12-30"
     },
 
     {
         "id": 4,
-        "name": "Projeto Profissional",
+        "name": "4 - Projeto Profissional",
         "descr": "Reformou um código mal feito e criou uma página web para ele.",
         "xp": 5,
         "icon": "star",
@@ -44,24 +45,23 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2022-09-10"
+        "date_limit": "2022-12-10"
     },
     {
         "id": 5,
-        "name": "Testado e Aprovado",
+        "name": "5 - Testado e Aprovado",
         "descr": "Criou testes de unidade e de interface para o servidor de desafios.",
         "xp": 5,
         "icon": "emoticon-outline",
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "metadata_requirements": ["url1|str", "url2|str", "group|List[str]"],
-        "date_limit": "2022-09-10"
+        "date_limit": "2022-12-10"
 
     },
     {
         "id": 6,
-        "name": "Pacote Python",
+        "name": "6 - Pacote Python",
         "descr": "Criou um pacote python instalável via pip.",
         "xp": 3,
         "icon": "briefcase",
@@ -69,11 +69,11 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2022-10-19"
+        "date_limit": "2022-12-19"
     },
     {
         "id": 7,
-        "name": "Dockerfile",
+        "name": "7 - Dockerfile",
         "descr": "Criou deploy automatizado para sistema web Python",
         "xp": 3,
         "icon": "docker",
@@ -81,42 +81,31 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2022-10-19"
+        "date_limit": "2022-12-19"
 
     },
     {
         "id": 8,
-        "name": "Tradução básica",
+        "name": "8 - Tradução básica",
         "descr": "Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando.",
         "xp": 2,
         "icon": "translate",
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2022-10-19"
-    },
-    {
-        "id": 9,
-        "name": "Minha primeira contribuição",
-        "descr": "Primeiro PR enviado corrigindo um bug simples.",
-        "xp": 5,
-        "icon": "airplane-takeoff",
-        "unique": true,
-        "type": "Tutorial",
-        "mandatory": "D",
-        "date_limit": "2022-10-19",
-        "metadata_requirements": ["url|str", "group|List[str]"]
+        "date_limit": "2022-12-19"
     },
     {
         "id": 10,
-        "name": "Pesquisa de temas FLOSS",
+        "name": "10 - Pesquisa de temas FLOSS",
         "descr": "Fez uma apresentação longa envolvendo um tema recente e relevante relacionado a software livre.",
         "xp": 5,
         "icon": "open-source-initiative",
         "unique": true,
         "type": "Tutorial",
+        "mandatory": "D",
         "metadata_requirements": ["group|List[str]", "filename|str"],
-        "date_limit": "2022-12-01"
+        "date_limit": "2022-12-20"
     },
 
 
@@ -125,7 +114,7 @@
 
     {
         "id": 21,
-        "name": "Contribuição de código",
+        "name": "21 - Contribuição de código",
         "descr": "PR enviado corrigindo um bug.",
         "xp": 7,
         "icon": "code-braces-box",
@@ -133,244 +122,269 @@
         "unique": false,
         "type": "Code",
         "metadata_requirements": ["url|str"],
-        "mandatory": "C"
+        "mandatory": "C",
+        "date_limit": "2022-12-30"
     },
     {
         "id": 22,
-        "name": "Contribuição aceita!",
+        "name": "22 - Contribuição aceita!",
         "descr": "Um PR não trivial foi aceito por um projeto externo.",
         "xp": 13,
         "icon": "check-all",
         "unique": false,
         "type": "Code",
         "metadata_requirements": ["url|str"],
-        "mandatory": "B"
+        "mandatory": "B",
+        "date_limit": "2022-12-20"
     },
     {
         "id": 23,
-        "name": "Contribuição (simples) aceita!",
+        "name": "23 - Contribuição (simples) aceita!",
         "descr": "Um PR simples (com mudanças triviais ou pequenas refatorações de código) foi aceito por um projeto externo.",
         "xp": 3,
         "icon": "check",
         "unique": false,
-        "type": "Code"
+        "type": "Code",
+        "date_limit": "2022-12-20"
     },
     {
         "id": 24,
-        "name": "Bug Report",
+        "name": "24 - Bug Report",
         "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
         "xp": 5,
         "icon": "bug",
         "unique": false,
         "metadata_requirements": ["url|str"],
-        "type": "Code"
+        "type": "Code",
+        "date_limit": "2022-12-20"
     },
     {
         "id": 25,
-        "name": "Feature Request",
+        "name": "25 - Feature Request",
         "descr": "Fez um pedido de nova funcionalidade a um software.",
         "xp": 2,
         "icon": "cart-plus",
         "unique": false,
         "metadata_requirements": ["url|str"],
-        "type": "Code"
+        "type": "Code",
+        "date_limit": "2022-12-20"
     },
     {
         "id": 26,
-        "name": "Projeto INSPER",
+        "name": "26 - Projeto INSPER",
         "descr": "Fez mais contribuições a um projeto educacional do INSPER",
         "xp": 5,
         "icon": "school",
         "unique": false,
-        "type": "Code"
+        "type": "Code",
+        "date_limit": "2022-12-20"
     },
 
     {
         "id": 40,
-        "name": "Issue indireta",
+        "name": "40 - Issue indireta",
         "descr": "Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias. ",
         "xp": 3,
         "icon": "call-split",
         "unique": false,
-        "type": "Community"
+        "type": "Community",
+        "date_limit": "2022-12-20"
     },
     {
         "id": 41,
-        "name": "Beta tester",
+        "name": "41 - Beta tester",
         "descr": "Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue.",
         "xp": 3,
         "icon": "beta",
         "unique": false,
-        "type": "Community"
+        "type": "Community",
+        "date_limit": "2022-12-20"
     },
     {
         "id": 42,
-        "name": "Tradução aceita!",
+        "name": "42 - Tradução aceita!",
         "descr": "Fez uma tradução que foi aceita em um software aberto.",
         "xp": 5,
         "icon": "google-translate",
         "unique": false,
         "type": "Community",
         "mandatory": "C",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2022-12-20"
     },
     {
         "id": 43,
-        "name": "Novas línguas",
+        "name": "43 - Novas línguas",
         "descr": "Adicionou suporte a traduções em um software que não era traduzível.",
         "xp": 10,
         "icon": "web",
         "unique": false,
         "type": "Community",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2022-12-20"
     },
     {
         "id": 44,
-        "name": "Revisor",
+        "name": "44 - Revisor",
         "descr": "Revisou pequenos erros na documentação de um projeto e teve suas modificações aceitas.",
         "xp": 2,
         "icon": "book-edit",
         "unique": false,
         "type": "Community",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2022-12-20"
     },
     {
         "id": 45,
-        "name": "Contribuição de documentação",
+        "name": "45 - Contribuição de documentação",
         "descr": "Fechou uma *issue* marcada como `docs`",
         "xp": 7,
         "icon": "book-check",
         "unique": false,
         "type": "Community",
         "mandatory": "C",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2022-12-01"
     },
 
     {
         "id": 46,
-        "name": "Pitch de projeto",
+        "name": "46 - Pitch de projeto",
         "descr": "Apresentou um Pitch de projeto.",
         "xp": 0,
         "icon": "account-voice",
         "unique": false,
         "type": "Community",
-        "metadata_requirements": ["url|str", "filename|str"]
+        "metadata_requirements": ["url|str", "filename|str"],
+        "date_limit": "2022-12-20"
     },
     {
         "id": 47,
-        "name": "Pitch aceito!",
+        "name": "47 - Pitch aceito!",
         "descr": "Enviou contribuição para um projeto apresentado em sala.",
         "xp": 5,
         "icon": "receipt",
         "unique": true,
         "type": "Community",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2022-12-20"
     },
     {
         "id": 48,
-        "name": "Sugestão aceita!",
+        "name": "48 - Sugestão aceita!",
         "descr": "Outro aluno enviou contribuição para o projeto que você fez Pitch.",
         "xp": 3,
         "icon": "receipt",
         "unique": false,
         "type": "Community",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2022-12-20"
     },
     {
         "id": 49,
-        "name": "Replay de PR",
+        "name": "49 - Replay de PR",
         "descr": "Apresentou (em 15 minutos) o processo de resolução de um bug na aula.",
         "xp": 5,
         "icon": "replay",
         "unique": false,
         "type": "Community",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2022-12-20"
     },
 
 
 
     {
         "id": 60,
-        "name": "Palestrante",
+        "name": "60 - Palestrante",
         "descr": "Fez uma palestra sobre bibliotecas ou softwares livres.",
         "xp": 20,
         "icon": "presentation-play",
         "unique": false,
-        "type": "Impact"
+        "type": "Impact",
+        "date_limit": "2022-12-20"
     },
     {
         "id": 61,
-        "name": "Helpdesk",
+        "name": "61 - Helpdesk",
         "descr": "Teve uma resposta aceita em sites como StackOverflow ou em listas de email",
         "xp": 4,
         "icon": "chat-question",
         "unique": false,
         "type": "Impact",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2022-12-20"
     },
     {
         "id": 62,
-        "name": "Contribuição publicada",
+        "name": "62 - Contribuição publicada",
         "descr": "Uma contribuição sua foi incluída em um release.",
         "xp": 10,
         "icon": "earth",
         "unique": false,
         "type": "Impact",
-       "metadata_requirements": ["commit_url|str", "release_url|str"]
+       "metadata_requirements": ["commit_url|str", "release_url|str"],
+       "date_limit": "2022-12-20"
     },
     {
         "id": 63,
-        "name": "Convidado VIP",
+        "name": "63 - Convidado VIP",
         "descr": "Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill.",
         "xp": 5,
         "icon": "phone",
         "unique": true,
         "type": "Impact",
-        "metadata_requirements": ["url|str"]
+        "metadata_requirements": ["url|str"],
+        "date_limit": "2022-12-20"
     },
     {
         "id": 64,
-        "name": "3 PRs enviados",
+        "name": "64 - 3 PRs enviados",
         "descr": "3 PRs enviados para o mesmo projeto",
         "xp": 10,
         "icon": "source-branch",
         "unique": true,
-        "type": "Impact"
+        "type": "Impact",
+        "date_limit": "2022-12-20"
     },
     {
         "id": 65,
-        "name": "3 PRs aceitos",
+        "name": "65 - 3 PRs aceitos",
         "descr": "3 PRs que você enviou para um projeto foram aceitos.",
         "xp": 30,
         "icon": "source-branch-check",
         "unique": true,
-        "type": "Impact"
+        "type": "Impact",
+        "date_limit": "2022-12-20"
     },
     {
         "id": 66,
-        "name": "Jabá",
+        "name": "66 - Jabá",
         "descr": "Algo que você fez foi citado pelo projeto em redes sociais ou algum meio oficial.",
         "xp": 10,
         "icon": "human-greeting-proximity",
         "unique": true,
-        "type": "Impact"
+        "type": "Impact",
+        "date_limit": "2022-12-20"
     },
     {
         "id": 77,
-        "name": "Hacktoberfest",
+        "name": "77 - Hacktoberfest",
         "descr": "Participou da Hacktoberfest, enviando 3 PRs para projetos externos.",
         "xp": 20,
         "icon": "glass-mug",
         "unique": true,
-        "type": "Impact"
+        "type": "Impact",
+        "date_limit": "2022-12-20"
     },
     {
         "id": 78,
-        "name": "Sprint de Tradução Elementary",
+        "name": "78 - Sprint de Tradução Elementary",
         "descr": "Participou do sprint de tradução com ao menos 40 strings traduzidas.",
         "xp": 15,
         "icon": "shoe-sneaker",
         "unique": true,
-        "type": "Impact"
+        "type": "Impact",
+        "date_limit": "2022-12-20"
     }
 ]
