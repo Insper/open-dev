@@ -244,7 +244,7 @@
         "type": "Community",
         "mandatory": "C",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2022-12-01"
+        "date_limit": "2022-12-20"
     },
 
     {

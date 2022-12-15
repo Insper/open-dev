@@ -1,4 +1,4 @@
-Um dos grandes objetivos de *Desenvolvimento Aberto* é participar de maneira efetiva de projetos de software existentes. Na edição de 2021/2 os alunos enviaram trabalharam em **14** projetos diferentes, contribuindo com **18** modificações de código, sendo que **4** foram incorporados aos projetos originais. Além destes projetos, os alunos também trabalharam em softwares desenvolvido pelos professores do Insper para serem usados na em diversas disciplinas. Foram <b>0</b> modificações aceitas nestes projetos.
+Um dos grandes objetivos de *Desenvolvimento Aberto* é participar de maneira efetiva de projetos de software existentes. Na edição de 2021/2 os alunos enviaram trabalharam em **15** projetos diferentes, contribuindo com **20** modificações de código, sendo que **4** foram incorporados aos projetos originais. Além destes projetos, os alunos também trabalharam em softwares desenvolvido pelos professores do Insper para serem usados na em diversas disciplinas. Foram <b>0</b> modificações aceitas nestes projetos.
 
 Também incentivamos os alunos a participar de eventos externos de tecnologia e experimentar o mundo fora do Insper. No total, os alunos participaram em <b>0</b> eventos. 
 
@@ -28,6 +28,10 @@ Também incentivamos os alunos a participar de eventos externos de tecnologia e 
 
 
 <li><a href=https://github.com/geekquad/AlgoBook/pull/562> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/geekquad/AlgoBook/562?label=%20></span> - https://github.com/geekquad/AlgoBook/pull/562</a></li>  
+
+
+
+<li><a href=https://github.com/geekquad/AlgoBook/pull/564> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/geekquad/AlgoBook/564?label=%20></span> - https://github.com/geekquad/AlgoBook/pull/564</a></li>  
 
 
 </ul>
@@ -92,6 +96,20 @@ Também incentivamos os alunos a participar de eventos externos de tecnologia e 
 
 
 <li><a href=https://github.com/grafana/oncall/pull/790> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/grafana/oncall/790?label=%20></span> - https://github.com/grafana/oncall/pull/790</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Neetcode-Gh/Leetcode</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/neetcode-gh/leetcode/pull/1524> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/neetcode-gh/leetcode/1524?label=%20></span> - https://github.com/neetcode-gh/leetcode/pull/1524</a></li>  
 
 
 </ul>
