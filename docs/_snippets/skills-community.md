@@ -1,12 +1,12 @@
-|   id |                                             | Nome                              | Descrição                                                                                               |   XP |
-|-----:|:--------------------------------------------|:----------------------------------|:--------------------------------------------------------------------------------------------------------|-----:|
-|   40 | :material-call-split:{: .skill-icon }       | 40 - Issue indireta               | Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias.     |    3 |
-|   41 | :material-beta:{: .skill-icon }             | 41 - Beta tester                  | Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue. |    3 |
-|   42 | :material-google-translate:{: .skill-icon } | 42 - Tradução aceita!             | Fez uma tradução que foi aceita em um software aberto.                                                  |    5 |
-|   43 | :material-web:{: .skill-icon }              | 43 - Novas línguas                | Adicionou suporte a traduções em um software que não era traduzível.                                    |   10 |
-|   44 | :material-book-edit:{: .skill-icon }        | 44 - Revisor                      | Revisou pequenos erros na documentação de um projeto e teve suas modificações aceitas.                  |    2 |
-|   45 | :material-book-check:{: .skill-icon }       | 45 - Contribuição de documentação | Fechou uma *issue* marcada como `docs`                                                                  |    7 |
-|   46 | :material-account-voice:{: .skill-icon }    | 46 - Pitch de projeto             | Apresentou um Pitch de projeto.                                                                         |    0 |
-|   47 | :material-receipt:{: .skill-icon }          | 47 - Pitch aceito!                | Enviou contribuição para um projeto apresentado em sala.                                                |    5 |
-|   48 | :material-receipt:{: .skill-icon }          | 48 - Sugestão aceita!             | Outro aluno enviou contribuição para o projeto que você fez Pitch.                                      |    3 |
-|   49 | :material-replay:{: .skill-icon }           | 49 - Replay de PR                 | Apresentou (em 15 minutos) o processo de resolução de um bug na aula.                                   |    5 |
+|   id |                                             | Nome                            | Descrição                                                                                                 |   XP |
+|-----:|:--------------------------------------------|:--------------------------------|:----------------------------------------------------------------------------------------------------------|-----:|
+|   40 | :material-call-split:{: .skill-icon }       | 40 - Indirect Issue             | Conversations in an issue or pull request led other users to open issues reporting new bugs/improvements. |    3 |
+|   41 | :material-beta:{: .skill-icon }             | 41 - Beta Tester                | When reproducing a bug, you discovered that it had already been fixed and caused the closure of an issue. |    3 |
+|   42 | :material-google-translate:{: .skill-icon } | 42 - Translation Accepted!      | Made a translation that was accepted in an open-source software.                                          |    5 |
+|   43 | :material-web:{: .skill-icon }              | 43 - New Languages              | Added support for translations in a previously non-translatable software.                                 |   10 |
+|   44 | :material-book-edit:{: .skill-icon }        | 44 - Reviewer                   | Reviewed minor errors in the documentation of a project, and your modifications were accepted.            |    2 |
+|   45 | :material-book-check:{: .skill-icon }       | 45 - Documentation Contribution | Closed an issue marked as `docs`.                                                                         |    7 |
+|   46 | :material-account-voice:{: .skill-icon }    | 46 - Project Pitch              | Delivered a project pitch.                                                                                |    0 |
+|   47 | :material-receipt:{: .skill-icon }          | 47 - Pitch Accepted!            | Contributed to a project presented in class.                                                              |    5 |
+|   48 | :material-receipt:{: .skill-icon }          | 48 - Accepted Suggestion!       | Another student contributed to the project you pitched.                                                   |    3 |
+|   49 | :material-replay:{: .skill-icon }           | 49 - PR Replay                  | Presented (in 15 minutes) the process of resolving a bug in class.                                        |    5 |
