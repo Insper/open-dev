@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "1 - Primeiros passos",
-        "descr": "Se adicionou no repositório da disciplina.",
+        "name": "1 - First Steps",
+        "descr": "Added to the discipline's repository.",
         "xp": 2,
         "icon": "account-check",
         "unique": true,
@@ -12,8 +12,8 @@
     },
     {
         "id": 2,
-        "name": "2 - Explorando o entorno de um projeto",
-        "descr": "Pesquisou sobre a história e a comunidade de pessoas e serviços ao redor de um projeto.",
+        "name": "2 - Exploring a Project's Environment",
+        "descr": "Researched the history and community of people and services around a project.",
         "xp": 3,
         "icon": "cash-multiple",
         "unique": true,
@@ -25,8 +25,8 @@
 
     {
         "id": 3,
-        "name": "3 - Projeto não documentado",
-        "descr": "Recebeu um sistema sem documentação e o pôs para funcionar.",
+        "name": "3 - Undocumented Project",
+        "descr": "Received an undocumented system and got it up and running.",
         "xp": 5,
         "icon": "compass",
         "unique": true,
@@ -37,8 +37,8 @@
 
     {
         "id": 4,
-        "name": "4 - Projeto Profissional",
-        "descr": "Reformou um código mal feito e criou uma página web para ele.",
+        "name": "4 - Professional Project",
+        "descr": "Refactored poorly written code and created a web page for it.",
         "xp": 5,
         "icon": "star",
         "unique": true,
@@ -49,8 +49,8 @@
     },
     {
         "id": 5,
-        "name": "5 - Testado e Aprovado",
-        "descr": "Criou testes de unidade e de interface para o servidor de desafios.",
+        "name": "5 - Tested and Approved",
+        "descr": "Created unit tests and interface tests for the challenge server.",
         "xp": 5,
         "icon": "emoticon-outline",
         "unique": true,
@@ -61,8 +61,8 @@
     },
     {
         "id": 6,
-        "name": "6 - Pacote Python",
-        "descr": "Criou um pacote python instalável via pip.",
+        "name": "6 - Python Package",
+        "descr": "Created a Python package installable via pip.",
         "xp": 3,
         "icon": "briefcase",
         "unique": true,
@@ -74,7 +74,7 @@
     {
         "id": 7,
         "name": "7 - Dockerfile",
-        "descr": "Criou deploy automatizado para sistema web Python",
+        "descr": "Created automated deployment for a Python web system.",
         "xp": 3,
         "icon": "docker",
         "unique": true,
@@ -86,8 +86,8 @@
     },
     {
         "id": 8,
-        "name": "8 - Tradução básica",
-        "descr": "Usou ferramentas de tradução para traduzir e localizar um pequeno programa em linha de comando.",
+        "name": "8 - Basic Translation",
+        "descr": "Used translation tools to translate and localize a small command-line program.",
         "xp": 2,
         "icon": "translate",
         "unique": true,
@@ -97,8 +97,8 @@
     },
     {
         "id": 10,
-        "name": "10 - Pesquisa de temas FLOSS",
-        "descr": "Fez uma apresentação longa envolvendo um tema recente e relevante relacionado a software livre.",
+        "name": "10 - FLOSS Research",
+        "descr": "Delivered a long presentation on a recent and relevant topic related to free and open-source software.",
         "xp": 5,
         "icon": "open-source-initiative",
         "unique": true,
@@ -114,8 +114,8 @@
 
     {
         "id": 21,
-        "name": "21 - Contribuição de código",
-        "descr": "PR enviado corrigindo um bug.",
+        "name": "21 - Code Contribution",
+        "descr": "Submitted a pull request fixing a bug.",
         "xp": 7,
         "icon": "code-braces-box",
         "icon_version": "7",
@@ -127,8 +127,8 @@
     },
     {
         "id": 22,
-        "name": "22 - Contribuição aceita!",
-        "descr": "Um PR não trivial foi aceito por um projeto externo.",
+        "name": "22 - Contribution Accepted!",
+        "descr": "A non-trivial pull request was accepted by an external project.",
         "xp": 13,
         "icon": "check-all",
         "unique": false,
@@ -139,8 +139,8 @@
     },
     {
         "id": 23,
-        "name": "23 - Contribuição (simples) aceita!",
-        "descr": "Um PR simples (com mudanças triviais ou pequenas refatorações de código) foi aceito por um projeto externo.",
+        "name": "23 - Simple Contribution Accepted!",
+        "descr": "A simple pull request (with trivial changes or small code refactorings) was accepted by an external project.",
         "xp": 3,
         "icon": "check",
         "unique": false,
@@ -150,7 +150,7 @@
     {
         "id": 24,
         "name": "24 - Bug Report",
-        "descr": "Reportou um bug em um repositório e outro usuário conseguiu reproduzí-lo.",
+        "descr": "Reported a bug in a repository, and another user was able to reproduce it.",
         "xp": 5,
         "icon": "bug",
         "unique": false,
@@ -161,7 +161,7 @@
     {
         "id": 25,
         "name": "25 - Feature Request",
-        "descr": "Fez um pedido de nova funcionalidade a um software.",
+        "descr": "Made a request for a new feature in a software.",
         "xp": 2,
         "icon": "cart-plus",
         "unique": false,
@@ -171,8 +171,8 @@
     },
     {
         "id": 26,
-        "name": "26 - Projeto INSPER",
-        "descr": "Fez mais contribuições a um projeto educacional do INSPER",
+        "name": "26 - INSPER Project",
+        "descr": "Made additional contributions to an INSPER educational project.",
         "xp": 5,
         "icon": "school",
         "unique": false,
@@ -182,8 +182,8 @@
 
     {
         "id": 40,
-        "name": "40 - Issue indireta",
-        "descr": "Conversas em uma issue ou PR fizeram outros usuários abrirem issues relatando novos bugs/melhorias. ",
+        "name": "40 - Indirect Issue",
+        "descr": "Conversations in an issue or pull request led other users to open issues reporting new bugs/improvements.",
         "xp": 3,
         "icon": "call-split",
         "unique": false,
@@ -192,8 +192,8 @@
     },
     {
         "id": 41,
-        "name": "41 - Beta tester",
-        "descr": "Ao reproduzir um bug você descobriu que ele já tinha sido corrigido e causou o fechamento de uma issue.",
+        "name": "41 - Beta Tester",
+        "descr": "When reproducing a bug, you discovered that it had already been fixed and caused the closure of an issue.",
         "xp": 3,
         "icon": "beta",
         "unique": false,
@@ -202,8 +202,8 @@
     },
     {
         "id": 42,
-        "name": "42 - Tradução aceita!",
-        "descr": "Fez uma tradução que foi aceita em um software aberto.",
+        "name": "42 - Translation Accepted!",
+        "descr": "Made a translation that was accepted in an open-source software.",
         "xp": 5,
         "icon": "google-translate",
         "unique": false,
@@ -214,8 +214,8 @@
     },
     {
         "id": 43,
-        "name": "43 - Novas línguas",
-        "descr": "Adicionou suporte a traduções em um software que não era traduzível.",
+        "name": "43 - New Languages",
+        "descr": "Added support for translations in a previously non-translatable software.",
         "xp": 10,
         "icon": "web",
         "unique": false,
@@ -225,8 +225,8 @@
     },
     {
         "id": 44,
-        "name": "44 - Revisor",
-        "descr": "Revisou pequenos erros na documentação de um projeto e teve suas modificações aceitas.",
+        "name": "44 - Reviewer",
+        "descr": "Reviewed minor errors in the documentation of a project, and your modifications were accepted.",
         "xp": 2,
         "icon": "book-edit",
         "unique": false,
@@ -236,8 +236,8 @@
     },
     {
         "id": 45,
-        "name": "45 - Contribuição de documentação",
-        "descr": "Fechou uma *issue* marcada como `docs`",
+        "name": "45 - Documentation Contribution",
+        "descr": "Closed an issue marked as `docs`.",
         "xp": 7,
         "icon": "book-check",
         "unique": false,
@@ -249,8 +249,8 @@
 
     {
         "id": 46,
-        "name": "46 - Pitch de projeto",
-        "descr": "Apresentou um Pitch de projeto.",
+        "name": "46 - Project Pitch",
+        "descr": "Delivered a project pitch.",
         "xp": 0,
         "icon": "account-voice",
         "unique": false,
@@ -260,8 +260,8 @@
     },
     {
         "id": 47,
-        "name": "47 - Pitch aceito!",
-        "descr": "Enviou contribuição para um projeto apresentado em sala.",
+        "name": "47 - Pitch Accepted!",
+        "descr": "Contributed to a project presented in class.",
         "xp": 5,
         "icon": "receipt",
         "unique": true,
@@ -271,8 +271,8 @@
     },
     {
         "id": 48,
-        "name": "48 - Sugestão aceita!",
-        "descr": "Outro aluno enviou contribuição para o projeto que você fez Pitch.",
+        "name": "48 - Accepted Suggestion!",
+        "descr": "Another student contributed to the project you pitched.",
         "xp": 3,
         "icon": "receipt",
         "unique": false,
@@ -282,8 +282,8 @@
     },
     {
         "id": 49,
-        "name": "49 - Replay de PR",
-        "descr": "Apresentou (em 15 minutos) o processo de resolução de um bug na aula.",
+        "name": "49 - PR Replay",
+        "descr": "Presented (in 15 minutes) the process of resolving a bug in class.",
         "xp": 5,
         "icon": "replay",
         "unique": false,
@@ -296,8 +296,8 @@
 
     {
         "id": 60,
-        "name": "60 - Palestrante",
-        "descr": "Fez uma palestra sobre bibliotecas ou softwares livres.",
+        "name": "60 - Speaker",
+        "descr": "Gave a talk about libraries or open-source software.",
         "xp": 20,
         "icon": "presentation-play",
         "unique": false,
@@ -307,7 +307,7 @@
     {
         "id": 61,
         "name": "61 - Helpdesk",
-        "descr": "Teve uma resposta aceita em sites como StackOverflow ou em listas de email",
+        "descr": "Had an accepted answer on sites like StackOverflow or email lists.",
         "xp": 4,
         "icon": "chat-question",
         "unique": false,
@@ -317,19 +317,19 @@
     },
     {
         "id": 62,
-        "name": "62 - Contribuição publicada",
-        "descr": "Uma contribuição sua foi incluída em um release.",
+        "name": "62 - Published Contribution",
+        "descr": "One of your contributions was included in a release.",
         "xp": 10,
         "icon": "earth",
         "unique": false,
         "type": "Impact",
-       "metadata_requirements": ["commit_url|str", "release_url|str"],
-       "date_limit": "2022-12-20"
+        "metadata_requirements": ["commit_url|str", "release_url|str"],
+        "date_limit": "2022-12-20"
     },
     {
         "id": 63,
-        "name": "63 - Convidado VIP",
-        "descr": "Após alguma contribuição alguém do projeto te pediu para fazer uma tarefa. Após entregar a tarefa, adicione esta skill.",
+        "name": "63 - VIP Guest",
+        "descr": "After making a contribution, someone from the project asked you to perform a task. After delivering the task, add this skill.",
         "xp": 5,
         "icon": "phone",
         "unique": true,
@@ -339,8 +339,8 @@
     },
     {
         "id": 64,
-        "name": "64 - 3 PRs enviados",
-        "descr": "3 PRs enviados para o mesmo projeto",
+        "name": "64 - 3 Submitted PRs",
+        "descr": "Submitted 3 pull requests to the same project.",
         "xp": 10,
         "icon": "source-branch",
         "unique": true,
@@ -349,8 +349,8 @@
     },
     {
         "id": 65,
-        "name": "65 - 3 PRs aceitos",
-        "descr": "3 PRs que você enviou para um projeto foram aceitos.",
+        "name": "65 - 3 Accepted PRs",
+        "descr": "3 pull requests you submitted to a project were accepted.",
         "xp": 30,
         "icon": "source-branch-check",
         "unique": true,
@@ -359,8 +359,8 @@
     },
     {
         "id": 66,
-        "name": "66 - Jabá",
-        "descr": "Algo que você fez foi citado pelo projeto em redes sociais ou algum meio oficial.",
+        "name": "66 - Shoutout",
+        "descr": "Something you did was mentioned by the project on social media or through an official channel.",
         "xp": 10,
         "icon": "human-greeting-proximity",
         "unique": true,
@@ -370,21 +370,12 @@
     {
         "id": 77,
         "name": "77 - Hacktoberfest",
-        "descr": "Participou da Hacktoberfest, enviando 3 PRs para projetos externos.",
+        "descr": "Participated in Hacktoberfest by submitting 3 pull requests to external projects.",
         "xp": 20,
         "icon": "glass-mug",
         "unique": true,
         "type": "Impact",
         "date_limit": "2022-12-20"
-    },
-    {
-        "id": 78,
-        "name": "78 - Sprint de Tradução Elementary",
-        "descr": "Participou do sprint de tradução com ao menos 40 strings traduzidas.",
-        "xp": 15,
-        "icon": "shoe-sneaker",
-        "unique": true,
-        "type": "Impact",
-        "date_limit": "2022-12-20"
     }
 ]
+
