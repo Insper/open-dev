@@ -16,3 +16,7 @@ A disciplina é centrada em 4 tipos de atividades:
 * **Impacto**: resultados significativos alcançados pela participação do aluno em projetos abertos
 
 Mais informações sobre todas as atividades possíveis podem ser lidas na página de [Regras e avaliação](regras.md).
+
+!!! people "Current and past instructors"
+    - ![Igor](https://avatars.githubusercontent.com/u/221446?v=4) **Igor Montagner**
+    - ![Fabrício](https://avatars.githubusercontent.com/u/361008?v=4) **Fabrício Barth**
