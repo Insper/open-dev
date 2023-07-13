@@ -278,7 +278,7 @@ def build_site():
                 data = parse_url(url)
                 dict_add_to_dict(info, data.project_name, 'Issues', data)
 
-    with open('docs/impacto.md', 'w') as f:
+    with open('docs/impact.md', 'w') as f:
         num_projetos = len(info)
         num_prs = 0
         for proj in info:

@@ -1,7 +1,6 @@
-Um dos grandes objetivos de *Desenvolvimento Aberto* é participar de maneira efetiva de projetos de software existentes. Na edição de 2021/2 os alunos enviaram trabalharam em **15** projetos diferentes, contribuindo com **20** modificações de código, sendo que **4** foram incorporados aos projetos originais. Além destes projetos, os alunos também trabalharam em softwares desenvolvido pelos professores do Insper para serem usados na em diversas disciplinas. Foram <b>0</b> modificações aceitas nestes projetos.
+One of the main objectives of *Open Development* is to actively participate in existing software projects. In the 2022/2 edition, students worked on **15** different projects, contributing with **20** code modifications, of which **4** were incorporated into the original projects. In addition to these projects, students also worked on software developed by Insper professors to be used in various courses. A total of <b>0</b> modifications were accepted in these projects.
 
-Também incentivamos os alunos a participar de eventos externos de tecnologia e experimentar o mundo fora do Insper. No total, os alunos participaram em <b>0</b> eventos. 
-
+We also encourage students to participate in external technology events and experience the world outside Insper. In total, students participated in <b>0</b> events.
 
 ??? details "Alunos participantes"
     |                                                                                                                                               |                                            |                                                                    |

@@ -1,9 +1,9 @@
  
 # Edição 2019/2
 
-Na edição de 2019/2 os alunos enviaram trabalharam em **19** projetos diferentes, contribuindo com **46** modificações de código, sendo que **14** foram incorporados aos projetos originais. Além destes projetos, os alunos também trabalharam no [Servidor de Desafios](http://github.com/insper/servidor-de-desafios), um software desenvolvido pelos professores do Insper para ser usado na disciplina Design de Software. Foram <b>12</b> modificações aceitas que já foram usadas durante o próprio semestre. 
+In the 2019/2 edition, students worked on **19** different projects, contributing with **46** code modifications, of which **14** were incorporated into the original projects. In addition to these projects, students also worked on the [Servidor de Desafios](http://github.com/insper/servidor-de-desafios), a software developed by Insper professors to be used in the Software Design course. A total of <b>12</b> accepted modifications have already been used during the semester.
 
-Também incentivamos os alunos a participar de eventos externos de tecnologia e experimentar o mundo fora do Insper. No total, os alunos participaram em <b>10</b> eventos. 
+We also encourage students to participate in external technology events and experience the world outside Insper. In total, students participated in <b>10</b> events.
 
 
 ## Alunos

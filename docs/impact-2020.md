@@ -1,6 +1,7 @@
-Na edição de 2020/1 os alunos enviaram trabalharam em **15** projetos diferentes, contribuindo com **27** modificações de código, sendo que **17** foram incorporados aos projetos originais. Além destes projetos, os alunos também trabalharam no [Servidor de Desafios](http://github.com/insper/servidor-de-desafios), um software desenvolvido pelos professores do Insper para ser usado na disciplina Design de Software. Foram <b>7</b> modificações aceitas que já foram usadas durante o próprio semestre. 
 
-## Alunos
+In the 2020/1 edition, students worked on **15** different projects, contributing with **27** code modifications, of which **17** were incorporated into the original projects. In addition to these projects, students also worked on the [Challenge Server](http://github.com/insper/servidor-de-desafios), a software developed by Insper professors to be used in the Software Design course. A total of <b>7</b> accepted modifications have already been used during the semester.
+
+# Alunos
 
 |                                                                                                                                            |                                         |                                                        |
 |:-------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------|:-------------------------------------------------------|
