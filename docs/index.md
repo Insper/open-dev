@@ -1,21 +1,21 @@
-# Desenvolvimento aberto 2022/2
+# Open Development 2023/2
 
-Bem-vindo à pagina de Desenvolvimento Aberto de 2022/2. Neste site você encontrará todas as aulas da disciplina, as regras de aprovação e as atividades aceitas. Os objetivos de aprendizagem trabalhados são:
+Welcome to the Open Development page for 2023/2. On this site, you will find all the course lessons and syllabus. The learning objectives covered are:
 
-* o estudante é capaz de compreender um projeto de software e corrigir um bug ou implementar uma melhoria.
-* o estudante é capaz de criar modificações que atendam aos requisitos técnicos e não técnicos de um projeto de software. 
-* o estudante é capaz de interagir com uma equipe (remota) de desenvolvimento.
+1. The student is capable of understanding a software project and fixing a bug or implementing an improvement.
+2. The student is capable of making modifications that meet the technical and non-technical requirements of a software project.
+3. The student is capable of interacting with a (remote) development team.
 
-Esta disciplina é gameficada e feita inteiramente usando um repositório *git*. Cada aluno cria um usuário seguindo o roteiro da Aula 01 e cria um Pull Request para se inserir no repositório. Cada atividade feita é entregue via PR no repositório da disciplina e funcionam como evidências para os objetivos de aprendizagem acima. 
+This course is gamified and entirely done using a *git* repository. Each student creates a user following the instructions in Lesson 01 and submits a Pull Request to be included in the repository. Each completed activity is delivered via a PR in the course repository and serves as evidence for the learning objectives mentioned above.
 
-A disciplina é centrada em 4 tipos de atividades:
+The course revolves around four types of activities:
 
-* **Tutorial**: atividades preparatórias (guiadas) em sala de aula
-* **Código**: contribuições de código para projetos externos
-* **Comunidade**: contribuições não técnicas que podem beneficiar usuários e desenvolvedores de um projeto, como documentações e traduções
-* **Impacto**: resultados significativos alcançados pela participação do aluno em projetos abertos
+* **Tutorial**: (Guided) Preparatory activities in the classroom.
+* **Code**: Code contributions to external projects.
+* **Community**: Non-technical contributions that can benefit users and developers of a project, such as documentation and translations.
+* **Impact**: Significant results achieved through the student's participation in open projects.
 
-Mais informações sobre todas as atividades possíveis podem ser lidas na página de [Regras e avaliação](regras.md).
+More information about all possible activities can be found on the [Assessment](assessment.md) page.
 
 !!! people "Current and past instructors"
     - ![Igor](https://avatars.githubusercontent.com/u/221446?v=4) **Igor Montagner**

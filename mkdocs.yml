@@ -12,11 +12,11 @@ extra_css:
 
 nav:
   - 'Home': 'index.md'
-  - 'burocracias.md'
-  - 'Skills e avaliação': 'regras.md'
-  - 'Alunos': 'alunos.md'
+  - 'syllabus.md'
+  - 'assessment.md'
+  - 'students.md'
     # - 'Agenda apresentações': 'agenda_apresentacoes.md'
-  - 'Aulas':
+  - 'Lessons':
     - 'aulas/01-ciclo-de-vida-bug/index.md'
       # - 'aulas/02-comunidades-de-software/index.md'
       # - 'aulas/03-documentacao-de-software/index.md'
