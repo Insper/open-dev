@@ -1,0 +1,723 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://insper.github.io/open-dev/lessons/01-distributed-workflow/">
+      
+      
+        <link rel="prev" href="../../students/">
+      
+      
+        <link rel="next" href="../../impact/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
+    
+    
+      
+        <title>01 - Distributed Development Workflow - Open Source Development 2023/2</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+      <link rel="stylesheet" href="../../css/people.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#01-distributed-development-workflow" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Open Source Development 2023/2" class="md-header__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Open Source Development 2023/2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              01 - Distributed Development Workflow
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/insper/open-dev/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Open Dev
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Open Source Development 2023/2" class="md-nav__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Open Source Development 2023/2
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/insper/open-dev/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Open Dev
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../syllabus/" class="md-nav__link">
+        Syllabus
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../assessment/" class="md-nav__link">
+        Assessment
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../students/" class="md-nav__link">
+        Students
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Lessons
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          01 - Distributed Development Workflow
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        01 - Distributed Development Workflow
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-your-own-copy" class="md-nav__link">
+    Creating your own copy
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating your own copy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interacting-with-the-course-repository" class="md-nav__link">
+    Interacting with the course repository
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-user" class="md-nav__link">
+    Creating a user
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-skill" class="md-nav__link">
+    Adding a skill
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sending-modifications-to-the-original-project" class="md-nav__link">
+    Sending modifications to the original project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-your-fork" class="md-nav__link">
+    Updating your fork
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Impact
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Impact
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../impact/" class="md-nav__link">
+        2023/2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../impact-2022/" class="md-nav__link">
+        2022/2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../impact-2021/" class="md-nav__link">
+        2021/2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../impact-2020/" class="md-nav__link">
+        2020/1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../impact-2019/" class="md-nav__link">
+        2019/2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-your-own-copy" class="md-nav__link">
+    Creating your own copy
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating your own copy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interacting-with-the-course-repository" class="md-nav__link">
+    Interacting with the course repository
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-user" class="md-nav__link">
+    Creating a user
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-skill" class="md-nav__link">
+    Adding a skill
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sending-modifications-to-the-original-project" class="md-nav__link">
+    Sending modifications to the original project
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-your-fork" class="md-nav__link">
+    Updating your fork
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="01-distributed-development-workflow">01 - Distributed Development Workflow</h1>
+<div style="height: 400px; width: 600px; margin-left: auto; margin-right: auto">
+    <iframe width="100%" height="100%" src="slides.html"></iframe>
+</div>
+
+<p>In this guide, we will work on the standard workflow for contributing to projects hosted on GitHub (which also applies to Git projects in general). Before starting, each student should locate the corresponding issue on the course's GitHub repository for creating their user.</p>
+<p>Our workflow will be based on three main parts. In the first part, we will create a copy of the repository "insper/dev-aberto" where we will make all the necessary changes. In the second part, we will send our modifications to the original repository using a <em>Pull Request</em>, which is a request to accept the changes from a forked repository into the original repository. Finally, we will update our fork with modifications sent by colleagues.</p>
+<p>Some key points to highlight in the above workflow:</p>
+<ol>
+<li>Even if a user does not have access to the original repository, they can work on their own copy and only submit their modifications to the original repository when everything is ready.</li>
+<li>It is necessary for a developer from the original project to "take responsibility" for the accepted external modifications.</li>
+<li>The <em>Pull requests</em> tab allows developers to discuss proposed modifications and improve them. Every commit made after the creation of the PR is included and can be tested by anyone.</li>
+</ol>
+<h2 id="creating-your-own-copy">Creating your own copy</h2>
+<p>We will start our workflow by creating a fork of the repository "insper/dev-aberto". All our modifications will be made in our fork, on a separate branch (it is recommended to use a different branch for each issue). This way, our modifications are completely isolated from the original code, and we can test them alongside the original code.</p>
+<p>First, create the fork through the GitHub interface. Then, clone your fork and create a new branch called "issue-X," where "X" is the number of your issue in the original project.</p>
+<div class="highlight"><pre><span></span><code>$ git checkout -b issue-X
+</code></pre></div>
+<p>To ensure that you are in the directory of your fork, execute the following command:</p>
+<div class="highlight"><pre><span></span><code>$ git remote -vv
+</code></pre></div>
+<p>The displayed addresses should be those of your fork, not the original project.</p>
+<p>With the fork created and being on the "issue-X" branch (you can check using <code>git branch</code> and switch using <code>git checkout issue-X</code>), we will begin making modifications.</p>
+<h3 id="interacting-with-the-course-repository">Interacting with the course repository</h3>
+<p>The creation of users and addition of skills is done using the command <code>dev-aberto.py</code>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To use it, you need to install the packages listed in the requirements.txt file.</p>
+</div>
+<p>Running it in the terminal should list the available commands.</p>
+<div class="highlight"><pre><span></span><code>$ python3 dev-aberto.py
+</code></pre></div>
+<p>To check if everything is working correctly, list all registered users. There should be only one registered user (<code>fabriciojb</code>).</p>
+<h3 id="creating-a-user">Creating a user</h3>
+<p>User creation is done with the command:</p>
+<div class="highlight"><pre><span></span><code>$ python3 dev-aberto.py new-user
+</code></pre></div>
+<p>This will create three files in the <code>students</code> folder:</p>
+<ul>
+<li><code>your-login</code>: basic user information in JSON format.</li>
+<li><code>your-login-achievements</code>: encrypted file containing the deliveries of each student in JSON format.</li>
+<li><code>your-login.key</code>: cryptographic key for the above file.</li>
+</ul>
+<p>Verify that your user was created correctly by listing the existing users again. Your user should have an asterisk (*) next to the name, indicating that the login.key file is present in the system.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Do not include the <code>*.key</code> file in your PR. It should be sent by email to the professor. Do this now before you forget!</p>
+</div>
+<p>Also, verify that you can use the command <code>dev-aberto.py compute-grade your-login</code>. If everything is okay, proceed to the next item.</p>
+<h3 id="adding-a-skill">Adding a skill</h3>
+<p>With the user created, we can add the skill "First Steps." You may have noticed that the professor's key is available (file <code>students/fabriciojb.key</code>). This was done so that you have at least one example of how each skill should be added. See below for an example of how the skill should be included:</p>
+<div class="highlight"><pre><span></span><code>$ python3 dev-aberto.py edit-achievements fabriciojb
+</code></pre></div>
+<p>This will open a file for editing in <em>Vi</em>. See the format used to include the skill and do the same for your user.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you want to use another text editor, you can set the environment variable <code>EDITOR</code> just before calling <code>dev-aberto.py</code>.</p>
+</div>
+<p>Now add the skill to your user following the same pattern seen above. Verify that your skill was correctly added using the <code>compute-grade</code> command.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If your repository is <em>OK</em>, help your classmates.</p>
+</div>
+<h2 id="sending-modifications-to-the-original-project">Sending modifications to the original project</h2>
+<p>Now let's create a commit and send it as a <em>Pull Request</em> to the course's repository. Add the created files (excluding the <code>*.key</code> file!) and make a commit with the following message (replace the <em>X</em> with the number of your issue in the repository):</p>
+<div class="highlight"><pre><span></span><code>Add user your-login.
+</code></pre></div>
+<p>Execute <code>git push</code> and continue.</p>
+<p>With your modifications already in your fork, it's time to send them to the original repository. This is done on the GitHub interface. First, access your fork in the browser, locate your <em>issue-X</em> branch, and click the "Pull request" button.</p>
+<p><img alt="This message appears when your fork has commits that are not present in the original repository." src="PR-github.png" width="90%" /></p>
+<p>The title of your Pull Request should be <em>Create user login</em>. Your PR should contain only one commit and should have the branch <code>issue-X</code> created above as the source. In the description of your PR, add the text:</p>
+<div class="highlight"><pre><span></span><code>Closes #X
+</code></pre></div>
+<p>where <code>X</code> is the number of your user's issue. This automatically closes the issue when (and if) this PR is accepted.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>PRs made from <code>main</code> or with more than one commit will not be accepted.</p>
+</div>
+<p>Use the checklist below to help verify if your work is correct:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Created a new user with <code>new-user</code>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Added the "First Steps" skill.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Checked that the new user has the new skill using <code>compute-grade</code>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Created a PR with only one commit and the correct files.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Sent the <code>.key</code> file by email to the professor.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Did not include the <code>.key</code> file in the PR.</li>
+</ul>
+<p>Once your PR is accepted, you can remove the issue-X branch.</p>
+<h2 id="updating-your-fork">Updating your fork</h2>
+<p>After having your PR accepted, you may have noticed that your commit appears in the original project's <code>main</code> branch but does not appear in your fork. This is because a fork is not automatically updated when its corresponding original repository receives new commits.</p>
+<p>To make this happen, you need to perform a manual synchronization. For now, we will use the GitHub interface to do this.</p>
+<p>Visit your fork again. Now, there should be an option to sync your fork with the original repository. Use it to make your <code>main</code> branch receive the new commits.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Sync your repository whenever you work on a new PR. This will prevent many conflicts when merging your modifications into the original repository.</p>
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 18, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
+        
+      
+        
+          <script src="../../js/markdown-enhancer.js"></script>
+        
+      
+    
+  </body>
+</html>

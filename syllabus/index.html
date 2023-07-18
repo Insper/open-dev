@@ -8,16 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/open-dev/agenda_apresentacoes/">
+        <link rel="canonical" href="https://insper.github.io/open-dev/syllabus/">
       
       
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../assessment/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>Apresentações sobre cultura livre - Open Source Development 2023/2</title>
+        <title>Syllabus - Open Source Development 2023/2</title>
       
     
     
@@ -63,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#apresentacoes-sobre-cultura-livre" class="md-skip">
+        <a href="#syllabus" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Apresentações sobre cultura livre
+              Syllabus
             
           </span>
         </div>
@@ -188,11 +192,66 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../syllabus/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Syllabus
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Syllabus
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    Assessment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schedule" class="md-nav__link">
+    Schedule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    Lesson Plan
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -408,15 +467,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#rubrica" class="md-nav__link">
-    Rubrica
+  <a href="#assessment" class="md-nav__link">
+    Assessment
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#agenda" class="md-nav__link">
-    Agenda
+  <a href="#schedule" class="md-nav__link">
+    Schedule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesson-plan" class="md-nav__link">
+    Lesson Plan
   </a>
   
 </li>
@@ -439,75 +505,202 @@
   
 
 
-<h1 id="apresentacoes-sobre-cultura-livre">Apresentações sobre cultura livre</h1>
-<p>Este documento descreve a rubrica para avaliação do trabalho e a agenda das apresentações.</p>
-<h2 id="rubrica">Rubrica</h2>
+<h1 id="syllabus">Syllabus</h1>
+<h2 id="assessment">Assessment</h2>
+<p>This course has a gamified assessment system. At any time, you can check your grade by running:</p>
+<div class="highlight"><pre><span></span><code>$ ./dev-aberto.py compute-grade your-blackboard-login
+</code></pre></div>
+<p>Biweekly reports will be sent with a summary of what has been delivered and which criteria have been met, as well as the student's current grade. There is no possibility of losing points. Although the report is for informational purposes only, if the student is not failing due to absences, they should receive the grade indicated in the biweekly reports.</p>
+<div class="admonition warning">
+<p class="admonition-title">Attention</p>
+<p>The complete list of rules is available on the <a href="../assessment/">Course Rules</a> page and is the official reference for grade calculation. If there is a discrepancy between the report and the rules page, consider the report to be buggy.</p>
+</div>
+<h2 id="schedule">Schedule</h2>
+<ul>
+<li>MON 07:30 - 09:30 </li>
+<li>WED 07:30 - 09:30 </li>
+<li><strong>Office Hours</strong>: on demand</li>
+</ul>
+<h2 id="lesson-plan">Lesson Plan</h2>
+<p>The following activities are <em>planned</em>. The program is subject to changes and adaptations as the course progresses.</p>
 <table>
 <thead>
 <tr>
-<th align="center">Conceito</th>
-<th align="left">Descrição</th>
+<th align="left">Date</th>
+<th align="left">Question/Problem/Challenge</th>
+<th align="left">Content</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">A</td>
-<td align="left">Apresentação realizada dentro do tempo estipulado. O tema foi organizado de forma excelente, com boa sequência lógica das ideias. O trabalho foi apresentado de forma clara e concisa, usando so slides de forma coesa com a fala. Tem boa postura e segurança, estabelece contato visual com os participantes durante a apresentação. Incorporou elementos visuais de qualidade no material: figuras, tabelas e gráficos são claros e contêm informações suficientes. Fez uso de no mínimo uma técnica para interação com a audiência (por exemplo, debate, painel com votações, entre outros).</td>
+<td align="left">14/08</td>
+<td align="left">Introduction to the course and its challenges</td>
+<td align="left">Workflow with distributed version control: forks, patches, pull requests, and local repositories. Technical and non-technical aspects surrounding software: infrastructure, support, marketing, funding. Reference: FOGEL Ch. 3; Additional reading: TAPSCOTT &amp; WILLIAMS.</td>
 </tr>
 <tr>
-<td align="center">B</td>
-<td align="left">O tempo de apresentação foi de mais ou menos 5 min do estabelecido. O tema foi parcialmente bem organizado, com sequência de apresentação razoável. Expõe o trabalho corretamente, mas não usa os slides de forma coesa com a fala. Postura e segurança razoáveis. Os elementos visuais são de baixa qualidade: figuras, tabelas e gráficos não são totalmente claros e não contêm informações suficientes para compreensão. Fez uso de no mínimo uma técnica para interação com a audiência (por exemplo, debate, painel com votações, entre outros).</td>
+<td align="left">16/08</td>
+<td align="left">First code contribution</td>
+<td align="left">Workflow with distributed version control: ammend, rebase, revert.</td>
 </tr>
 <tr>
-<td align="center">C</td>
-<td align="left">Tempo de apresentação foi de mais ou menos 10 min do estabelecido. A organização da apresentação é confusa, o que prejudica o acompanhamento e compreensão das ideias. Comunicação deficiente, com dificuldade de expor ideias. Não usa adequadamente os slides. Não tem boa postura e segurança durante a apresentação. Os recursos visuas prejudicam a apresentação. Fez uso de no mínimo uma técnica para interação com a audiência (por exemplo, debate, painel com votações, entre outros).</td>
-</tr>
-</tbody>
-</table>
-<h2 id="agenda">Agenda</h2>
-<table>
-<thead>
-<tr>
-<th align="left">Data e horário</th>
-<th align="left">Tema</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">17/11 (9:45-10:45)</td>
-<td align="left">GitHub Copilot é ético? [Eiki Yamashiro e Marcelo Miguel]</td>
+<td align="left">21/08</td>
+<td align="left">Project documentation and what to do when it doesn't exist</td>
+<td align="left">Types of documentation (user, developer). Source code documentation systems: doxygen, Javadoc, pydoc, sphinx; Reference: FOGEL Ch. 3 (Wikis, Website)</td>
 </tr>
 <tr>
-<td align="left">17/11 (10:45-11:45)</td>
-<td align="left">A relação entre Software as a Service (SaaS) e projetos de Código Aberto [Caroline Chaim, Felipe Lemos, João Farias Araujo]</td>
+<td align="left">23/08</td>
+<td align="left">Studio class for "Professional Project" activity</td>
+<td align="left">Studio class for "Professional Project" activity</td>
 </tr>
 <tr>
-<td align="left">22/11 (9:45-10:45)</td>
-<td align="left">Telemetria é "ético"? [Guilherme Lunetta, Rafael Monteiro e João Magalhães]</td>
+<td align="left">28/08</td>
+<td align="left">Ensuring others can work on the project: API documentation</td>
+<td align="left">code quality</td>
 </tr>
 <tr>
-<td align="left">22/11 (10:45-11:45)</td>
-<td align="left">Regulamentações futuras na Europa sobre responsabilidade legal dos criadores de IAs [Luiza Silvera, Guilherme Batista e Gabriel Zanetti]</td>
+<td align="left">30/08</td>
+<td align="left">Software distribution and versioning</td>
+<td align="left">Software distribution tools. Types of distribution. Versioning schemes. Reference: FOGEL Ch. 7</td>
 </tr>
 <tr>
-<td align="left">24/11</td>
-<td align="left"><strong>Não teremos aula. Joga do Brasil na Copa do Mundo</strong></td>
+<td align="left">04/09</td>
+<td align="left">How to make software work in multiple countries?</td>
+<td align="left">Localization and internationalization. Gettext tool for translations and .po format.</td>
 </tr>
 <tr>
-<td align="left">29/11 (9:45-10:45)</td>
-<td align="left">Regulamentações recentes na Europa sobre durabilidade de smartphones. [Keiya Nishio e Bruno Freitas]</td>
+<td align="left">06/09</td>
+<td align="left">Software testing</td>
+<td align="left">Types of software testing: unit, integration, and interface. Testing tools: pytest, selenium.</td>
 </tr>
 <tr>
-<td align="left">29/11 (10:45-11:45)</td>
-<td align="left">Por que Open Source é crítico para criptomoedas? [Paulo Kim, Raphael Lahiry e Rodrigo Coelho]</td>
+<td align="left">11/09</td>
+<td align="left">Studio class for "Software Testing" activity</td>
+<td align="left">Studio class for "Software Testing" activity</td>
 </tr>
 <tr>
-<td align="left">01/12 (9:45-10:45)</td>
-<td align="left">The new open-source economics (Yochai Benkler, 2005). O que mudou de 2005 para 2022? [João Pedro Meirelles, Gustavo Molina e Rafael Almada]</td>
+<td align="left">13/09</td>
+<td align="left">Software licenses</td>
+<td align="left">Copyrights in Brazil, patents, and software licenses; Reference: LAURENT Ch. 1 and 5, STALLMAN Ch. 6</td>
 </tr>
 <tr>
-<td align="left">01/12 (10:45-11:45)</td>
-<td align="left">Mantainer burnout [Cesar Ades e Jonathan Sutton]</td>
+<td align="left">18/09</td>
+<td align="left">Introduction to contributions in open projects - Activity "My First Contribution"</td>
+<td align="left">Studio class for group activity "My First Contribution"</td>
+</tr>
+<tr>
+<td align="left">20/09</td>
+<td align="left">Studio class for group activity "My First Contribution"</td>
+<td align="left">Studio class for group activity "My First Contribution"</td>
+</tr>
+<tr>
+<td align="left">25/09</td>
+<td align="left">Studio class for group activity "My First Contribution"</td>
+<td align="left">Studio class for group activity "My First Contribution"</td>
+</tr>
+<tr>
+<td align="left">27/09</td>
+<td align="left">Working in software communities</td>
+<td align="left">Assessment metrics for the second part of the course; Communication and teamwork. Reference: RAYMOND Ch. 4</td>
+</tr>
+<tr>
+<td align="left">02/10</td>
+<td align="left">Course project</td>
+<td align="left">Studio class for project development</td>
+</tr>
+<tr>
+<td align="left">04/10</td>
+<td align="left">Course project</td>
+<td align="left">Studio class for project development</td>
+</tr>
+<tr>
+<td align="left">09/10</td>
+<td align="left">EXAM WEEK</td>
+<td align="left">EXAM WEEK</td>
+</tr>
+<tr>
+<td align="left">11/10</td>
+<td align="left">EXAM WEEK</td>
+<td align="left">EXAM WEEK</td>
+</tr>
+<tr>
+<td align="left">16/10</td>
+<td align="left">Course project</td>
+<td align="left">Studio class for project development</td>
+</tr>
+<tr>
+<td align="left">18/10</td>
+<td align="left">Course project</td>
+<td align="left">Studio class for project development</td>
+</tr>
+<tr>
+<td align="left">23/10</td>
+<td align="left">Course project</td>
+<td align="left">Studio class for project development</td>
+</tr>
+<tr>
+<td align="left">25/10</td>
+<td align="left">Course project</td>
+<td align="left">Studio class for project development</td>
+</tr>
+<tr>
+<td align="left">30/10</td>
+<td align="left">Course project</td>
+<td align="left">Studio class for project development</td>
+</tr>
+<tr>
+<td align="left">01/11</td>
+<td align="left">Course project</td>
+<td align="left">Studio class for project development</td>
+</tr>
+<tr>
+<td align="left">06/11</td>
+<td align="left">Course project</td>
+<td align="left">Studio class for project development</td>
+</tr>
+<tr>
+<td align="left">08/11</td>
+<td align="left">Course project</td>
+<td align="left">Studio class for project development</td>
+</tr>
+<tr>
+<td align="left">13/11</td>
+<td align="left">Course project</td>
+<td align="left">Studio class for project development</td>
+</tr>
+<tr>
+<td align="left">15/11</td>
+<td align="left">PUBLIC HOLIDAY</td>
+<td align="left">PUBLIC HOLIDAY</td>
+</tr>
+<tr>
+<td align="left">20/11</td>
+<td align="left">Topics on free culture and software communities</td>
+<td align="left">nan</td>
+</tr>
+<tr>
+<td align="left">22/11</td>
+<td align="left">Topics on free culture and software communities</td>
+<td align="left">nan</td>
+</tr>
+<tr>
+<td align="left">27/11</td>
+<td align="left">Topics on free culture and software communities</td>
+<td align="left">nan</td>
+</tr>
+<tr>
+<td align="left">29/11</td>
+<td align="left">Topics on free culture and software communities</td>
+<td align="left">nan</td>
+</tr>
+<tr>
+<td align="left">04/12</td>
+<td align="left">EXAM WEEK</td>
+<td align="left">EXAM WEEK</td>
+</tr>
+<tr>
+<td align="left">06/12</td>
+<td align="left">EXAM WEEK</td>
+<td align="left">EXAM WEEK</td>
 </tr>
 </tbody>
 </table>
@@ -517,7 +710,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 10, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 15, 2023</span>
       
     
   </small>

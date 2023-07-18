@@ -1,0 +1,862 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://insper.github.io/open-dev/impact-2022/">
+      
+      
+        <link rel="prev" href="../impact/">
+      
+      
+        <link rel="next" href="../impact-2021/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
+    
+    
+      
+        <title>2022/2 - Open Source Development 2023/2</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+      <link rel="stylesheet" href="../css/people.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Open Source Development 2023/2" class="md-header__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Open Source Development 2023/2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2022/2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/insper/open-dev/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Open Dev
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Open Source Development 2023/2" class="md-nav__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Open Source Development 2023/2
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/insper/open-dev/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Open Dev
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syllabus/" class="md-nav__link">
+        Syllabus
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../assessment/" class="md-nav__link">
+        Assessment
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../students/" class="md-nav__link">
+        Students
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Lessons
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Lessons
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lessons/01-distributed-workflow/" class="md-nav__link">
+        01 - Distributed Development Workflow
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Impact
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Impact
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../impact/" class="md-nav__link">
+        2023/2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        2022/2
+      </a>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../impact-2021/" class="md-nav__link">
+        2021/2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../impact-2020/" class="md-nav__link">
+        2020/1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../impact-2019/" class="md-nav__link">
+        2019/2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>2022/2</h1>
+
+<p>One of the main objectives of <em>Open Development</em> is to actively participate in existing software projects. In the 2022/2 edition, students worked on <strong>15</strong> different projects, contributing with <strong>20</strong> code modifications, of which <strong>4</strong> were incorporated into the original projects. In addition to these projects, students also worked on software developed by Insper professors to be used in various courses. A total of <b>0</b> modifications were accepted in these projects.</p>
+<p>We also encourage students to participate in external technology events and experience the world outside Insper. In total, students participated in <b>0</b> events.</p>
+<details class="details">
+<summary>Alunos participantes</summary>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left"></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><img alt="Bruno Freitas do Nascimento Rodrigues" center_="center&quot;" src="https://avatars.githubusercontent.com/u/34194649?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Bruno Freitas Do Nascimento Rodrigues</td>
+<td align="left"><a href="http://github.com/BrunoFNRodrigues"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Caroline Chaim de Lima Carneiro" center_="center&quot;" src="https://avatars.githubusercontent.com/u/49568505?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Caroline Chaim De Lima Carneiro</td>
+<td align="left"><a href="http://github.com/carolinechaim"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Cesar Ezra Ades" center_="center&quot;" src="https://avatars.githubusercontent.com/u/62568082?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Cesar Ezra Ades</td>
+<td align="left"><a href="http://github.com/Cesar0106"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Eiki Luis Yamashiro" center_="center&quot;" src="https://avatars.githubusercontent.com/u/99688976?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Eiki Luis Yamashiro</td>
+<td align="left"><a href="http://github.com/Eikinho"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Fabricio Barth" center_="center&quot;" src="https://avatars.githubusercontent.com/u/361008?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Fabricio Barth</td>
+<td align="left"><a href="http://github.com/fbarth"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Felipe Lemos" center_="center&quot;" src="https://avatars.githubusercontent.com/u/62957465?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Felipe Lemos</td>
+<td align="left"><a href="http://github.com/felipebpl"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Gabriel Zanetti" center_="center&quot;" src="https://avatars.githubusercontent.com/u/38334108?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Gabriel Zanetti</td>
+<td align="left"><a href="http://github.com/gabrielztk"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Guilherme Carneiro Lunetta" center_="center&quot;" src="https://avatars.githubusercontent.com/u/49534365?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Guilherme Carneiro Lunetta</td>
+<td align="left"><a href="http://github.com/guishas"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Guilherme Teixeira Batista" center_="center&quot;" src="https://avatars.githubusercontent.com/u/38350062?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Guilherme Teixeira Batista</td>
+<td align="left"><a href="http://github.com/guidiamond"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Gustavo Molina Freneda Benites" center_="center&quot;" src="https://avatars.githubusercontent.com/u/26482986?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Gustavo Molina Freneda Benites</td>
+<td align="left"><a href="http://github.com/gubenites"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="joao pedro farias de araujo" center_="center&quot;" src="https://avatars.githubusercontent.com/u/49197663?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Joao Pedro Farias De Araujo</td>
+<td align="left"><a href="http://github.com/jpfa1406"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="joao pedro montefeltro junqueira meirelles" center_="center&quot;" src="https://avatars.githubusercontent.com/u/26440584?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Joao Pedro Montefeltro Junqueira Meirelles</td>
+<td align="left"><a href="http://github.com/joaopmjm"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="joão vitor menezes de magalhães" center_="center&quot;" src="https://avatars.githubusercontent.com/u/62967766?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">João Vitor Menezes De Magalhães</td>
+<td align="left"><a href="http://github.com/JoaoVitorMenezesMagalhaes"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Jonathan Sutton" center_="center&quot;" src="https://avatars.githubusercontent.com/u/62657975?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Jonathan Sutton</td>
+<td align="left"><a href="http://github.com/jonathansutton1"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Keiya Nishio" center_="center&quot;" src="https://avatars.githubusercontent.com/u/62714338?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Keiya Nishio</td>
+<td align="left"><a href="http://github.com/keiyanishio"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Luiza Rodrigues Silveira" center_="center&quot;" src="https://avatars.githubusercontent.com/u/38442561?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Luiza Rodrigues Silveira</td>
+<td align="left"><a href="http://github.com/luizasilveira"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Marcelo Cesario Miguel" center_="center&quot;" src="https://avatars.githubusercontent.com/u/49695393?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Marcelo Cesario Miguel</td>
+<td align="left"><a href="http://github.com/MarceloCMiguel"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Paulo Wook Kim" center_="center&quot;" src="https://avatars.githubusercontent.com/u/61331156?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Paulo Wook Kim</td>
+<td align="left"><a href="http://github.com/paulokim1"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Rafael Alves de Mello Almada" center_="center&quot;" src="https://avatars.githubusercontent.com/u/26484664?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Rafael Alves De Mello Almada</td>
+<td align="left"><a href="http://github.com/slimkaki"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Rafael Evangelista Monteiro" center_="center&quot;" src="https://avatars.githubusercontent.com/u/62569684?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Rafael Evangelista Monteiro</td>
+<td align="left"><a href="http://github.com/rafaelem2"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Raphael Lahiry" center_="center&quot;" src="https://avatars.githubusercontent.com/u/62894435?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Raphael Lahiry</td>
+<td align="left"><a href="http://github.com/Lahiry"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+<tr>
+<td align="left"><img alt="Rodrigo Guimarães Coelho" center_="center&quot;" src="https://avatars.githubusercontent.com/u/62903468?v=4" style="max-width:64px; valign=" /></td>
+<td align="left">Rodrigo Guimarães Coelho</td>
+<td align="left"><a href="http://github.com/rodrigogcoelhoo"><img alt="" src="../css/github.png" /></a></td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2> Melhorias de código enviadas </h2>
+
+<!--<details class="nota" open="">
+    <summary> Servidor de desafios </summary>
+    <ul style="list-style-type:none;">
+
+    </ul>
+</details>-->
+
+<details class="note">
+<summary> Geekquad/Algobook</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/geekquad/AlgoBook/pull/563> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/geekquad/AlgoBook/563?label=%20></span> - https://github.com/geekquad/AlgoBook/pull/563</a></li>  
+
+
+
+<li><a href=https://github.com/geekquad/AlgoBook/pull/561> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/geekquad/AlgoBook/561?label=%20></span> - https://github.com/geekquad/AlgoBook/pull/561</a></li>  
+
+
+
+<li><a href=https://github.com/geekquad/AlgoBook/pull/562> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/geekquad/AlgoBook/562?label=%20></span> - https://github.com/geekquad/AlgoBook/pull/562</a></li>  
+
+
+
+<li><a href=https://github.com/geekquad/AlgoBook/pull/564> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/geekquad/AlgoBook/564?label=%20></span> - https://github.com/geekquad/AlgoBook/pull/564</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Data-8/Datascience</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/data-8/datascience/pull/563> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/data-8/datascience/563?label=%20></span> - https://github.com/data-8/datascience/pull/563</a></li>  
+
+
+
+<li><a href=https://github.com/data-8/datascience/pull/564> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/data-8/datascience/564?label=%20></span> - https://github.com/data-8/datascience/pull/564</a></li>  
+
+
+
+<li><a href=https://github.com/data-8/datascience/pull/562> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/data-8/datascience/562?label=%20></span> - https://github.com/data-8/datascience/pull/562</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Adafruit/Adafruit_Circuitpython_Requests</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/adafruit/Adafruit_CircuitPython_Requests/pull/117> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/adafruit/Adafruit_CircuitPython_Requests/117?label=%20></span> - https://github.com/adafruit/Adafruit_CircuitPython_Requests/pull/117</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Ros-Planning/Moveit2</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/ros-planning/moveit2/pull/1693> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/ros-planning/moveit2/1693?label=%20></span> - https://github.com/ros-planning/moveit2/pull/1693</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Grafana/Oncall</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/grafana/oncall/pull/790> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/grafana/oncall/790?label=%20></span> - https://github.com/grafana/oncall/pull/790</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Neetcode-Gh/Leetcode</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/neetcode-gh/leetcode/pull/1524> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/neetcode-gh/leetcode/1524?label=%20></span> - https://github.com/neetcode-gh/leetcode/pull/1524</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Outros</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/jfilter/clean-text> https://github.com/jfilter/clean-text </a></li>
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Vael1/-Awesome-Python-Scripts</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/vael1/-Awesome-Python-Scripts/pull/27> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/vael1/-Awesome-Python-Scripts/27?label=%20></span> - https://github.com/vael1/-Awesome-Python-Scripts/pull/27</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Civiwiki/Openciviwiki</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/CiviWiki/OpenCiviWiki/pull/1469> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/CiviWiki/OpenCiviWiki/1469?label=%20></span> - https://github.com/CiviWiki/OpenCiviWiki/pull/1469</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Aylton-Almeida/Rabbitmq-Pika-Flask</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/aylton-almeida/rabbitmq-pika-flask/pull/47> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/aylton-almeida/rabbitmq-pika-flask/47?label=%20></span> - https://github.com/aylton-almeida/rabbitmq-pika-flask/pull/47</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Nidhaloff/Deep-Translator</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/nidhaloff/deep-translator/pull/166> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/nidhaloff/deep-translator/166?label=%20></span> - https://github.com/nidhaloff/deep-translator/pull/166</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Kra53N/Getgit</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/kra53n/getgit/pull/16> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/kra53n/getgit/16?label=%20></span> - https://github.com/kra53n/getgit/pull/16</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Commons-App/Apps-Android-Commons</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/commons-app/apps-android-commons/issues/5100> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/issues/detail/state/commons-app/apps-android-commons/5100?label=%20></span> - https://github.com/commons-app/apps-android-commons/issues/5100</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Tbillington/Kondo</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/tbillington/kondo/pull/66> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/tbillington/kondo/66?label=%20></span> - https://github.com/tbillington/kondo/pull/66</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Matplotlib/Matplotlib</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/matplotlib/matplotlib/pull/24576> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/matplotlib/matplotlib/24576?label=%20></span> - https://github.com/matplotlib/matplotlib/pull/24576</a></li>  
+
+
+</ul>
+
+</details>
+
+<h2> Eventos </h2>
+
+<div class="event-grid">
+
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
+        
+      
+        
+          <script src="../js/markdown-enhancer.js"></script>
+        
+      
+    
+  </body>
+</html>

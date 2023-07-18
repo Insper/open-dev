@@ -1,0 +1,31 @@
+.admonition.people ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.admonition.people ul li {
+    display: flex;
+    flex-direction: column;
+    width: 9em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.admonition.people ul li em, .admonition.people ul li strong {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 120%;
+}
+
+.admonition.people ul li img {
+    border-radius: 2em;
+    border: 1px black;
+    max-width: 4em;
+    max-height: 4em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+

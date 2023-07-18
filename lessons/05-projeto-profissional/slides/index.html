@@ -8,18 +8,20 @@
       
       
       
+        <link rel="canonical" href="https://insper.github.io/open-dev/lessons/05-projeto-profissional/slides/">
       
       
-      <link rel="icon" href="/open-dev/assets/images/favicon.png">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>Open Source Development 2023/2</title>
+        <title>Documentação de API e linters - Open Source Development 2023/2</title>
       
     
     
-      <link rel="stylesheet" href="/open-dev/assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.26e3688c.min.css">
       
       
 
@@ -35,11 +37,11 @@
       
     
     
-      <link rel="stylesheet" href="/open-dev/css/custom.css">
+      <link rel="stylesheet" href="../../../css/custom.css">
     
-      <link rel="stylesheet" href="/open-dev/css/people.css">
+      <link rel="stylesheet" href="../../../css/people.css">
     
-    <script>__md_scope=new URL("/open-dev/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,6 +62,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#desenvolvimento-aberto" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -72,7 +79,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/open-dev/." title="Open Source Development 2023/2" class="md-header__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
+    <a href="../../.." title="Open Source Development 2023/2" class="md-header__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -91,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Documentação de API e linters
             
           </span>
         </div>
@@ -137,7 +144,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/open-dev/." title="Open Source Development 2023/2" class="md-nav__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
+    <a href="../../.." title="Open Source Development 2023/2" class="md-nav__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -168,7 +175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -183,7 +190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/syllabus/" class="md-nav__link">
+      <a href="../../../syllabus/" class="md-nav__link">
         Syllabus
       </a>
     </li>
@@ -198,7 +205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/assessment/" class="md-nav__link">
+      <a href="../../../assessment/" class="md-nav__link">
         Assessment
       </a>
     </li>
@@ -213,7 +220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/students/" class="md-nav__link">
+      <a href="../../../students/" class="md-nav__link">
         Students
       </a>
     </li>
@@ -255,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/lessons/01-distributed-workflow/" class="md-nav__link">
+      <a href="../../01-distributed-workflow/" class="md-nav__link">
         01 - Distributed Development Workflow
       </a>
     </li>
@@ -304,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/impact/" class="md-nav__link">
+      <a href="../../../impact/" class="md-nav__link">
         2023/2
       </a>
     </li>
@@ -318,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/impact-2022/" class="md-nav__link">
+      <a href="../../../impact-2022/" class="md-nav__link">
         2022/2
       </a>
     </li>
@@ -332,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/impact-2021/" class="md-nav__link">
+      <a href="../../../impact-2021/" class="md-nav__link">
         2021/2
       </a>
     </li>
@@ -346,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/impact-2020/" class="md-nav__link">
+      <a href="../../../impact-2020/" class="md-nav__link">
         2020/1
       </a>
     </li>
@@ -360,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/impact-2019/" class="md-nav__link">
+      <a href="../../../impact-2019/" class="md-nav__link">
         2019/2
       </a>
     </li>
@@ -391,6 +398,36 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#documentacao-de-api-e-linters" class="md-nav__link">
+    Documentação de API e linters
+  </a>
+  
+    <nav class="md-nav" aria-label="Documentação de API e linters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#igor-dos-santos-montagner-igorsm1insperedubr" class="md-nav__link">
+    Igor dos Santos Montagner ( igorsm1@insper.edu.br )
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -402,8 +439,150 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<style>
+    footer {
+        position: fixed;
+        bottom: 10px;
+        left: 1050px;
+        width: 400px;
+    }
+
+    footer img {
+        vertical-align: middle;
+    }
+</style>
+
+<h1 id="desenvolvimento-aberto">Desenvolvimento Aberto</h1>
+<p><img alt="100%" src="../capa.svg" /></p>
+<h5 id="documentacao-de-api-e-linters">Documentação de API e linters</h5>
+<h6 id="igor-dos-santos-montagner-igorsm1insperedubr">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
+<hr />
+<h1 id="servidor-de-desafios">Servidor de desafios</h1>
+<ul>
+<li>Arquitetura</li>
+<li>Qualidade de código</li>
+<li>Segurança</li>
+</ul>
+<h2 id="software-tem-historia-e-depende-de-pessoas-para-evoluir">Software tem história e depende de pessoas para evoluir</h2>
+<hr />
+<h1 id="codigo-vs-software-profissional">Código <em>vs</em> software profissional</h1>
+<p>Os seguintes pontos transformam um código que fiz para mim em algo útil para outras pessoas</p>
+<ol>
+<li>Traduções e internacionalização (datas)</li>
+<li>Documentação de usuário e de desenvolvimento</li>
+<li>Algum processo de qualidade de software<ul>
+<li>testes automatizados</li>
+<li>formatação de código e estrutura de repo</li>
+</ul>
+</li>
+<li>pacotes de instalação</li>
+</ol>
+<hr />
+<h1 id="hoje">Hoje</h1>
+<ul>
+<li>Ferramentas de documentação</li>
+<li>Documentação de API usando</li>
+<li>Padrões de formatação de código<ul>
+<li>linters</li>
+<li>PEP8</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="documentacao-de-api">Documentação de API</h1>
+<p><strong>Objetivo</strong>: explicar o funcionamento das funções, classes e módulos de um programa. </p>
+<ul>
+<li>Focado em detalhes</li>
+<li>Documenta os argumentos esperados e em quais situações a função funciona </li>
+<li>Tipicamente obtida direto do código</li>
+<li>Não detalha como as funções são usadas em conjunto</li>
+</ul>
+<hr />
+<h1 id="documentacao-de-api_1">Documentação de API</h1>
+<p><img alt="center" src="../api-doc.svg" /></p>
+<hr />
+<h1 id="documentacao-de-api_2">Documentação de API</h1>
+<p><img alt="2000% center" src="../np-doc-api.png" /></p>
+<p><a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html">ref</a></p>
+<hr />
+<h1 id="ferramentas">Ferramentas</h1>
+<ul>
+<li>Python:<ul>
+<li>pydoc, numpydoc</li>
+</ul>
+</li>
+<li>C/C++<ul>
+<li>Doxygen</li>
+</ul>
+</li>
+<li>Java<ul>
+<li>Javadoc</li>
+</ul>
+</li>
+</ul>
+<p>Em geral podem ser plugadas em alguma ferramenta de documentação de projetos. </p>
+<hr />
+<h1 id="padroes-de-codificacao">Padrões de codificação</h1>
+<p><img alt="width:500px" src="../porco.png" /></p>
+<hr />
+<h1 id="padroes-de-codificacao_1">Padrões de codificação</h1>
+<p><img alt="width:900px" src="../porco-pylint.png" /></p>
+<hr />
+<h1 id="padroes-de-codificacao_2">Padrões de codificação</h1>
+<ul>
+<li>Cada projeto tem o seu</li>
+<li>Algumas linguagens tem um estilo padrão<ul>
+<li>Python - PEP8</li>
+</ul>
+</li>
+<li>Ferramentas ajudam a conferir (forçar) um estilo específico</li>
+</ul>
+<hr />
+<h1 id="ferramentas_1">Ferramentas</h1>
+<ul>
+<li>Python: pylint, black</li>
+<li>C/C++: splint, cppchecker, gcc (opções -Wall, -Wextra)</li>
+<li>Java: flag <code>-Xlint</code></li>
+<li>Javascript: ESlint, TSlint (typescript)</li>
+</ul>
+<h1 id="_1"></h1>
+<p>Ajudam a manter código limpo e legível. Podem ser plugadas no seu editor favorito.</p>
+<h2 id="execucao-obrigatoria-para-muitos-projetos-grandes">Execução obrigatória para muitos projetos grandes</h2>
+<hr />
+<h1 id="atividade-pratica-projeto-profissional">Atividade prática: Projeto profissional</h1>
+<p><img alt="width:256px" src="../star.svg" /></p>
+<p><strong>Objetivo</strong>: Transformar um código perdido em um projeto "completo"</p>
+<blockquote>
+<p>"metadata": {"url": "github pages criado", "group": ["ate três", "alunos"]}</p>
+</blockquote>
+<hr />
+<h1 id="desenvolvimento-aberto_1">Desenvolvimento Aberto</h1>
+<p><img alt="100%" src="../capa.svg" /></p>
+<h5 id="documentacao-de-api-testes">Documentação de API + testes</h5>
+<h6 id="igor-dos-santos-montagner-igorsm1insperedubr_1">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 18, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -435,17 +614,17 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/open-dev/", "features": [], "search": "/open-dev/assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/open-dev/assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
           <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
         
       
         
-          <script src="/open-dev/js/markdown-enhancer.js"></script>
+          <script src="../../../js/markdown-enhancer.js"></script>
         
       
     

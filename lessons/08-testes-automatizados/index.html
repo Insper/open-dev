@@ -8,18 +8,20 @@
       
       
       
+        <link rel="canonical" href="https://insper.github.io/open-dev/lessons/08-testes-automatizados/">
       
       
-      <link rel="icon" href="/open-dev/assets/images/favicon.png">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>Open Source Development 2023/2</title>
+        <title>08 - Testes automatizados - Open Source Development 2023/2</title>
       
     
     
-      <link rel="stylesheet" href="/open-dev/assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
       
 
@@ -35,11 +37,11 @@
       
     
     
-      <link rel="stylesheet" href="/open-dev/css/custom.css">
+      <link rel="stylesheet" href="../../css/custom.css">
     
-      <link rel="stylesheet" href="/open-dev/css/people.css">
+      <link rel="stylesheet" href="../../css/people.css">
     
-    <script>__md_scope=new URL("/open-dev/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,6 +62,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#08-testes-automatizados" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -72,7 +79,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/open-dev/." title="Open Source Development 2023/2" class="md-header__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
+    <a href="../.." title="Open Source Development 2023/2" class="md-header__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -91,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              08 - Testes automatizados
             
           </span>
         </div>
@@ -137,7 +144,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/open-dev/." title="Open Source Development 2023/2" class="md-nav__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
+    <a href="../.." title="Open Source Development 2023/2" class="md-nav__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -168,7 +175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -183,7 +190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/syllabus/" class="md-nav__link">
+      <a href="../../syllabus/" class="md-nav__link">
         Syllabus
       </a>
     </li>
@@ -198,7 +205,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/assessment/" class="md-nav__link">
+      <a href="../../assessment/" class="md-nav__link">
         Assessment
       </a>
     </li>
@@ -213,7 +220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/students/" class="md-nav__link">
+      <a href="../../students/" class="md-nav__link">
         Students
       </a>
     </li>
@@ -255,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/lessons/01-distributed-workflow/" class="md-nav__link">
+      <a href="../01-distributed-workflow/" class="md-nav__link">
         01 - Distributed Development Workflow
       </a>
     </li>
@@ -304,7 +311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/impact/" class="md-nav__link">
+      <a href="../../impact/" class="md-nav__link">
         2023/2
       </a>
     </li>
@@ -318,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/impact-2022/" class="md-nav__link">
+      <a href="../../impact-2022/" class="md-nav__link">
         2022/2
       </a>
     </li>
@@ -332,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/impact-2021/" class="md-nav__link">
+      <a href="../../impact-2021/" class="md-nav__link">
         2021/2
       </a>
     </li>
@@ -346,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/impact-2020/" class="md-nav__link">
+      <a href="../../impact-2020/" class="md-nav__link">
         2020/1
       </a>
     </li>
@@ -360,7 +367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/open-dev/impact-2019/" class="md-nav__link">
+      <a href="../../impact-2019/" class="md-nav__link">
         2019/2
       </a>
     </li>
@@ -391,6 +398,37 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#testes-de-unidade" class="md-nav__link">
+    Testes de unidade
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testes-de-interface-de-usuario" class="md-nav__link">
+    Testes de interface de usuário
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrega" class="md-nav__link">
+    Entrega
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -402,8 +440,56 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+<h1 id="08-testes-automatizados">08 - Testes automatizados</h1>
+<p>O objetivo da atividade de hoje é criar testes automatizados para o servidor de desafios. Com isso completamos nossa jornada rumo a software que possa ser desenvolvido de maneira colaborativa e que possa ser usado em situações reais. </p>
+<ol>
+<li>Documentação (usuários e desenvolvedor)</li>
+<li>Distribuição de software e versionamento </li>
+<li>Localização e internacionalização</li>
+<li>Testes automatizados</li>
+</ol>
+<h2 id="testes-de-unidade">Testes de unidade</h2>
+<p>Uma parte do programa do servidor de desafios que pode ser testada com testes de unidade é a função <code>lambda_handler</code>, que executa a função submetida pelo usuário. Seu trabalho será criar testes usando o <a href="https://docs.pytest.org/en/latest/contents.html#toc">pytest</a> e cobrir  os seguintes casos:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> programa submetido está correto</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> programa submetido não contém a função pedida</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> programa submetido retorna resultado incorreto</li>
+</ul>
+<h2 id="testes-de-interface-de-usuario">Testes de interface de usuário</h2>
+<p>Iremos criar testes de interface de usuário para o Servidor de Desafios usando o <a href="https://selenium-python.readthedocs.io/"><em>Selenium</em></a>. Este software permite imitar interações reais de um usuário usando código e criar testes baseado nessas interações. </p>
+<p>Vocês devem simular os seguintes cenários:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Aluno faz login com sucesso</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Aluno entra senha incorreta</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Aluno envia desafio com resposta incorreta</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Aluno envia desafio com resposta correta</li>
+</ul>
+<p>A ideia básica seria reproduzir os mesmos testes apresentados no manual do usuário.</p>
+<h2 id="entrega">Entrega</h2>
+<p>Coloquem os scripts de teste na pasta <em>test</em> do repositório e adicionem instruções de como rodar os testes no <code>README</code>.</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 18, 2023</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -435,17 +521,17 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "/open-dev/", "features": [], "search": "/open-dev/assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/open-dev/assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
           <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
         
       
         
-          <script src="/open-dev/js/markdown-enhancer.js"></script>
+          <script src="../../js/markdown-enhancer.js"></script>
         
       
     
