@@ -2,7 +2,6 @@ extensions:
   - quiz
   - short-questions
   - progress-check
-  - slides
   - counter
   - videos
   - notify-old-page
