@@ -32,7 +32,7 @@ Desenvolvimento Aberto
 
 # Modelo Github *fork + pull request*
 
-f[scale:150%](pr-model1.jpg)
+![scale:150%](pr-model1.jpg)
 
   Fonte: https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github 
 

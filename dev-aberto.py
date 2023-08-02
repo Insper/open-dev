@@ -190,10 +190,10 @@ def list_users():
         print(f'{st.name}{k}')
 
 def render_skill_type(sk_type):
-    table = [(sk.id, sk.material_icon, sk.name, sk.descr, sk.xp)
+    table = [(sk.id, sk.material_icon, sk.name, sk.descr, sk.xp, sk.date_limit.strftime('%d/%m'))
                 for sk in all_skills.values() if sk.type == sk_type.title()]
     with open(f'docs/_snippets/skills-{sk_type}.md', 'w') as f:
-        f.write(tabulate.tabulate(table, headers=('id', '', 'Nome', 'Descrição', 'XP'), tablefmt='pipe'))
+        f.write(tabulate.tabulate(table, headers=('id', '', 'Name', 'Description', 'XP', 'Date'), tablefmt='pipe'))
 
 def parse_url(url):
     m = re.match('https?://github.com/(.*)/([\w\-]+)/(pull|issues)/(\d+)', url)

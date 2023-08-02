@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "1 - First Steps",
+        "name": "First Steps",
         "descr": "Added to the discipline's repository.",
         "xp": 2,
         "icon": "account-check",
@@ -12,7 +12,7 @@
     },
     {
         "id": 2,
-        "name": "2 - Exploring a Project's Environment",
+        "name": "Exploring a Project's Environment",
         "descr": "Researched the history and community of people and services around a project.",
         "xp": 3,
         "icon": "cash-multiple",
@@ -22,10 +22,9 @@
         "metadata_requirements": ["group|List[str]", "filename|str"],
         "date_limit": "2023-08-21"
     },
-
     {
         "id": 3,
-        "name": "3 - Undocumented Project",
+        "name": "Undocumented Project",
         "descr": "Received an undocumented system and got it up and running.",
         "xp": 5,
         "icon": "compass",
@@ -34,10 +33,9 @@
         "mandatory": "D",
         "date_limit": "2023-08-28"
     },
-
     {
         "id": 4,
-        "name": "4 - Professional Project",
+        "name": "Professional Project",
         "descr": "Refactored poorly written code and created a web page for it.",
         "xp": 5,
         "icon": "star",
@@ -49,7 +47,7 @@
     },
     {
         "id": 5,
-        "name": "5 - Tested and Approved",
+        "name": "Tested and Approved",
         "descr": "Created unit tests and interface tests for the challenge server.",
         "xp": 5,
         "icon": "emoticon-outline",
@@ -61,7 +59,7 @@
     },
     {
         "id": 6,
-        "name": "6 - Python Package",
+        "name": "Python Package",
         "descr": "Created a Python package installable via pip.",
         "xp": 3,
         "icon": "briefcase",
@@ -73,7 +71,7 @@
     },
     {
         "id": 7,
-        "name": "7 - Dockerfile",
+        "name": "Dockerfile",
         "descr": "Created automated deployment for a Python web system.",
         "xp": 3,
         "icon": "docker",
@@ -86,7 +84,7 @@
     },
     {
         "id": 8,
-        "name": "8 - Basic Translation",
+        "name": "Basic Translation",
         "descr": "Used translation tools to translate and localize a small command-line program.",
         "xp": 2,
         "icon": "translate",
@@ -97,7 +95,7 @@
     },
     {
         "id": 10,
-        "name": "10 - FLOSS Research",
+        "name": "FLOSS Research",
         "descr": "Delivered a long presentation on a recent and relevant topic related to free and open-source software.",
         "xp": 5,
         "icon": "open-source-initiative",
@@ -107,14 +105,9 @@
         "metadata_requirements": ["group|List[str]", "filename|str"],
         "date_limit": "2023-12-04"
     },
-
-
-
-
-
     {
         "id": 21,
-        "name": "21 - Code Contribution",
+        "name": "Code Contribution",
         "descr": "Submitted a pull request fixing a bug.",
         "xp": 7,
         "icon": "code-braces-box",
@@ -127,7 +120,7 @@
     },
     {
         "id": 22,
-        "name": "22 - Contribution Accepted!",
+        "name": "Contribution Accepted!",
         "descr": "A non-trivial pull request was accepted by an external project.",
         "xp": 13,
         "icon": "check-all",
@@ -139,7 +132,7 @@
     },
     {
         "id": 23,
-        "name": "23 - Simple Contribution Accepted!",
+        "name": "Simple Contribution Accepted!",
         "descr": "A simple pull request (with trivial changes or small code refactorings) was accepted by an external project.",
         "xp": 3,
         "icon": "check",
@@ -149,7 +142,7 @@
     },
     {
         "id": 24,
-        "name": "24 - Bug Report",
+        "name": "Bug Report",
         "descr": "Reported a bug in a repository, and another user was able to reproduce it.",
         "xp": 5,
         "icon": "bug",
@@ -160,7 +153,7 @@
     },
     {
         "id": 25,
-        "name": "25 - Feature Request",
+        "name": "Feature Request",
         "descr": "Made a request for a new feature in a software.",
         "xp": 2,
         "icon": "cart-plus",
@@ -171,7 +164,7 @@
     },
     {
         "id": 26,
-        "name": "26 - INSPER Project",
+        "name": "INSPER Project",
         "descr": "Made additional contributions to an INSPER educational project.",
         "xp": 5,
         "icon": "school",
@@ -179,10 +172,9 @@
         "type": "Code",
         "date_limit": "2023-12-04"
     },
-
     {
         "id": 40,
-        "name": "40 - Indirect Issue",
+        "name": "Indirect Issue",
         "descr": "Conversations in an issue or pull request led other users to open issues reporting new bugs/improvements.",
         "xp": 3,
         "icon": "call-split",
@@ -192,7 +184,7 @@
     },
     {
         "id": 41,
-        "name": "41 - Beta Tester",
+        "name": "Beta Tester",
         "descr": "When reproducing a bug, you discovered that it had already been fixed and caused the closure of an issue.",
         "xp": 3,
         "icon": "beta",
@@ -202,7 +194,7 @@
     },
     {
         "id": 42,
-        "name": "42 - Translation Accepted!",
+        "name": "Translation Accepted!",
         "descr": "Made a translation that was accepted in an open-source software.",
         "xp": 5,
         "icon": "google-translate",
@@ -214,7 +206,7 @@
     },
     {
         "id": 43,
-        "name": "43 - New Languages",
+        "name": "New Languages",
         "descr": "Added support for translations in a previously non-translatable software.",
         "xp": 10,
         "icon": "web",
@@ -225,7 +217,7 @@
     },
     {
         "id": 44,
-        "name": "44 - Reviewer",
+        "name": "Reviewer",
         "descr": "Reviewed minor errors in the documentation of a project, and your modifications were accepted.",
         "xp": 2,
         "icon": "book-edit",
@@ -236,7 +228,7 @@
     },
     {
         "id": 45,
-        "name": "45 - Documentation Contribution",
+        "name": "Documentation Contribution",
         "descr": "Closed an issue marked as `docs`.",
         "xp": 7,
         "icon": "book-check",
@@ -246,10 +238,9 @@
         "metadata_requirements": ["url|str"],
         "date_limit": "2023-12-04"
     },
-
     {
         "id": 46,
-        "name": "46 - Project Pitch",
+        "name": "Project Pitch",
         "descr": "Delivered a project pitch.",
         "xp": 0,
         "icon": "account-voice",
@@ -260,7 +251,7 @@
     },
     {
         "id": 47,
-        "name": "47 - Pitch Accepted!",
+        "name": "Pitch Accepted!",
         "descr": "Contributed to a project presented in class.",
         "xp": 5,
         "icon": "receipt",
@@ -271,7 +262,7 @@
     },
     {
         "id": 48,
-        "name": "48 - Accepted Suggestion!",
+        "name": "Accepted Suggestion!",
         "descr": "Another student contributed to the project you pitched.",
         "xp": 3,
         "icon": "receipt",
@@ -282,7 +273,7 @@
     },
     {
         "id": 49,
-        "name": "49 - PR Replay",
+        "name": "PR Replay",
         "descr": "Presented (in 15 minutes) the process of resolving a bug in class.",
         "xp": 5,
         "icon": "replay",
@@ -291,12 +282,9 @@
         "metadata_requirements": ["url|str"],
         "date_limit": "2023-12-04"
     },
-
-
-
     {
         "id": 60,
-        "name": "60 - Speaker",
+        "name": "Speaker",
         "descr": "Gave a talk about libraries or open-source software.",
         "xp": 20,
         "icon": "presentation-play",
@@ -306,7 +294,7 @@
     },
     {
         "id": 61,
-        "name": "61 - Helpdesk",
+        "name": "Helpdesk",
         "descr": "Had an accepted answer on sites like StackOverflow or email lists.",
         "xp": 4,
         "icon": "chat-question",
@@ -317,7 +305,7 @@
     },
     {
         "id": 62,
-        "name": "62 - Published Contribution",
+        "name": "Published Contribution",
         "descr": "One of your contributions was included in a release.",
         "xp": 10,
         "icon": "earth",
@@ -328,7 +316,7 @@
     },
     {
         "id": 63,
-        "name": "63 - VIP Guest",
+        "name": "VIP Guest",
         "descr": "After making a contribution, someone from the project asked you to perform a task. After delivering the task, add this skill.",
         "xp": 5,
         "icon": "phone",
@@ -339,7 +327,7 @@
     },
     {
         "id": 64,
-        "name": "64 - 3 Submitted PRs",
+        "name": "3 Submitted PRs",
         "descr": "Submitted 3 pull requests to the same project.",
         "xp": 10,
         "icon": "source-branch",
@@ -349,7 +337,7 @@
     },
     {
         "id": 65,
-        "name": "65 - 3 Accepted PRs",
+        "name": "3 Accepted PRs",
         "descr": "3 pull requests you submitted to a project were accepted.",
         "xp": 30,
         "icon": "source-branch-check",
@@ -359,7 +347,7 @@
     },
     {
         "id": 66,
-        "name": "66 - Shoutout",
+        "name": "Shoutout",
         "descr": "Something you did was mentioned by the project on social media or through an official channel.",
         "xp": 10,
         "icon": "human-greeting-proximity",
@@ -369,7 +357,7 @@
     },
     {
         "id": 77,
-        "name": "77 - Hacktoberfest",
+        "name": "Hacktoberfest",
         "descr": "Participated in Hacktoberfest by submitting 3 pull requests to external projects.",
         "xp": 20,
         "icon": "glass-mug",
@@ -378,4 +366,3 @@
         "date_limit": "2023-12-04"
     }
 ]
-

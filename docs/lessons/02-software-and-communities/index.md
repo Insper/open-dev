@@ -1,4 +1,4 @@
-# 02 - Comunidades de Software
+# 02 - Software and Communities 
 
 <div style="height: 400px; width: 600px; margin-left: auto; margin-right: auto">
     <iframe width="100%" height="100%" src="slides.html"></iframe>
