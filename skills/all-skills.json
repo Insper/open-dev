@@ -8,7 +8,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2022-12-19"
+        "date_limit": "2023-08-21"
     },
     {
         "id": 2,
@@ -20,7 +20,7 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["group|List[str]", "filename|str"],
-        "date_limit": "2022-12-23"
+        "date_limit": "2023-08-21"
     },
 
     {
@@ -32,7 +32,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2022-12-30"
+        "date_limit": "2023-08-28"
     },
 
     {
@@ -45,7 +45,7 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2022-12-10"
+        "date_limit": "2023-09-06"
     },
     {
         "id": 5,
@@ -56,7 +56,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2022-12-10"
+        "date_limit": "2023-09-13"
 
     },
     {
@@ -69,7 +69,7 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2022-12-19"
+        "date_limit": "2023-09-11"
     },
     {
         "id": 7,
@@ -81,7 +81,7 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2022-12-19"
+        "date_limit": "2023-09-11"
 
     },
     {
@@ -93,7 +93,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2022-12-19"
+        "date_limit": "2023-09-11"
     },
     {
         "id": 10,
@@ -105,7 +105,7 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["group|List[str]", "filename|str"],
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
 
 
@@ -123,7 +123,7 @@
         "type": "Code",
         "metadata_requirements": ["url|str"],
         "mandatory": "C",
-        "date_limit": "2022-12-30"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 22,
@@ -135,7 +135,7 @@
         "type": "Code",
         "metadata_requirements": ["url|str"],
         "mandatory": "B",
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 23,
@@ -145,7 +145,7 @@
         "icon": "check",
         "unique": false,
         "type": "Code",
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 24,
@@ -156,7 +156,7 @@
         "unique": false,
         "metadata_requirements": ["url|str"],
         "type": "Code",
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 25,
@@ -167,7 +167,7 @@
         "unique": false,
         "metadata_requirements": ["url|str"],
         "type": "Code",
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 26,
@@ -177,7 +177,7 @@
         "icon": "school",
         "unique": false,
         "type": "Code",
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
 
     {
@@ -188,7 +188,7 @@
         "icon": "call-split",
         "unique": false,
         "type": "Community",
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 41,
@@ -198,7 +198,7 @@
         "icon": "beta",
         "unique": false,
         "type": "Community",
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 42,
@@ -210,7 +210,7 @@
         "type": "Community",
         "mandatory": "C",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 43,
@@ -221,7 +221,7 @@
         "unique": false,
         "type": "Community",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 44,
@@ -232,7 +232,7 @@
         "unique": false,
         "type": "Community",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 45,
@@ -244,7 +244,7 @@
         "type": "Community",
         "mandatory": "C",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
 
     {
@@ -256,7 +256,7 @@
         "unique": false,
         "type": "Community",
         "metadata_requirements": ["url|str", "filename|str"],
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 47,
@@ -267,7 +267,7 @@
         "unique": true,
         "type": "Community",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 48,
@@ -278,7 +278,7 @@
         "unique": false,
         "type": "Community",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 49,
@@ -289,7 +289,7 @@
         "unique": false,
         "type": "Community",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
 
 
@@ -302,7 +302,7 @@
         "icon": "presentation-play",
         "unique": false,
         "type": "Impact",
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 61,
@@ -313,7 +313,7 @@
         "unique": false,
         "type": "Impact",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 62,
@@ -324,7 +324,7 @@
         "unique": false,
         "type": "Impact",
         "metadata_requirements": ["commit_url|str", "release_url|str"],
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 63,
@@ -335,7 +335,7 @@
         "unique": true,
         "type": "Impact",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 64,
@@ -345,7 +345,7 @@
         "icon": "source-branch",
         "unique": true,
         "type": "Impact",
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 65,
@@ -355,7 +355,7 @@
         "icon": "source-branch-check",
         "unique": true,
         "type": "Impact",
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 66,
@@ -365,7 +365,7 @@
         "icon": "human-greeting-proximity",
         "unique": true,
         "type": "Impact",
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     },
     {
         "id": 77,
@@ -375,7 +375,7 @@
         "icon": "glass-mug",
         "unique": true,
         "type": "Impact",
-        "date_limit": "2022-12-20"
+        "date_limit": "2023-12-04"
     }
 ]
 
