@@ -1,8 +1,7 @@
 # 01 - Distributed Development Workflow
 
-<div style="height: 400px; width: 600px; margin-left: auto; margin-right: auto">
-    <iframe width="100%" height="100%" src="slides.html"></iframe>
-</div>
+<ah-external-content src="../slides.html" />
+
 
 In this guide, we will work on the standard workflow for contributing to projects hosted on GitHub (which also applies to Git projects in general). Before starting, each student should locate the corresponding issue on the course's GitHub repository for creating their user.
 
@@ -20,15 +19,15 @@ We will start our workflow by creating a fork of the repository "insper/dev-aber
 
 First, create the fork through the GitHub interface. Then, clone your fork and create a new branch called "issue-X," where "X" is the number of your issue in the original project.
 
-```
+<ah-terminal>
 $ git checkout -b issue-X
-```
+</ah-terminal>
 
 To ensure that you are in the directory of your fork, execute the following command:
 
-```
+<ah-terminal>
 $ git remote -vv
-```
+</ah-terminal>
 
 The displayed addresses should be those of your fork, not the original project.
 
@@ -43,9 +42,9 @@ The creation of users and addition of skills is done using the command `dev-aber
 
 Running it in the terminal should list the available commands.
 
-```
+<ah-terminal>
 $ python3 dev-aberto.py
-```
+</ah-terminal>
 
 To check if everything is working correctly, list all registered users. There should be only one registered user (`fabriciojb`).
 
@@ -53,9 +52,9 @@ To check if everything is working correctly, list all registered users. There sh
 
 User creation is done with the command:
 
-```
+<ah-terminal>
 $ python3 dev-aberto.py new-user
-```
+</ah-terminal>
 
 This will create three files in the `students` folder:
 
@@ -74,9 +73,9 @@ Also, verify that you can use the command `dev-aberto.py compute-grade your-logi
 
 With the user created, we can add the skill "First Steps." You may have noticed that the professor's key is available (file `students/fabriciojb.key`). This was done so that you have at least one example of how each skill should be added. See below for an example of how the skill should be included:
 
-```
+<ah-terminal>
 $ python3 dev-aberto.py edit-achievements fabriciojb
-```
+</ah-terminal>
 
 This will open a file for editing in *Vi*. See the format used to include the skill and do the same for your user.
 

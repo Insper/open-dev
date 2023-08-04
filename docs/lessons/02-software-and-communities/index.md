@@ -1,8 +1,6 @@
 # 02 - Software and Communities 
 
-<div style="height: 400px; width: 600px; margin-left: auto; margin-right: auto">
-    <iframe width="100%" height="100%" src="slides.html"></iframe>
-</div>
+<ah-external-content src="../slides.html" />
 
 The activity for this class involves creating a presentation explaining how the communities around the following software projects are organized:
 
