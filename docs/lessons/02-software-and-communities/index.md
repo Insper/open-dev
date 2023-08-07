@@ -1,6 +1,6 @@
 # 02 - Software and Communities 
 
-<ah-external-content src="../slides.html" />
+<ah-external-content src="slides.html" />less02in
 
 The activity for this class involves creating a presentation explaining how the communities around the following software projects are organized:
 

@@ -18,70 +18,69 @@ footer: 'Igor Montagner ![License CC BY-NC-SA 4.0](../cc-by-nc-sa.png)'
 </style>
 
 
-Desenvolvimento Aberto
+Open Source Development
 ===
 
 # ![height:350px](capa.png)
 
-##### Fluxo de trabalho distribuído e Comunidades de Software
+##### Software and Communities
 
 
-###### Versão 2023/2: Igor Montagner ( igorsm1@insper.edu.br) )
+###### 2023/2: Igor Montagner ( igorsm1@insper.edu.br) )
 
 -----
-
-# Modelo Github *fork + pull request*
+# Github Model: *fork + pull request*
 
 ![scale:150%](pr-model1.jpg)
 
-  Fonte: https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github 
+Source: https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github
 
 
 
 ---
 
-# Modelo Github *fork + pull request*
+# Github Model: *fork + pull request*
 
 ![center 150%](pr-model2.jpg)
 
-  Fonte: https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github 
+Source: https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github
 
 ---
 
-# Fluxo de Trabalho: outros modelos
+# Workflow: other models
 
-1. Enviar patch via lista de e-mails (ex. Linux)
-2. Ferramentas de *code review* (ex. KDE - Phabricator)
-3. Patch é anexado no Bug Tracker (ex. Haiku, KDE)
-4. Não recebe contribuições externas
+1. Send patch via email list (e.g., Linux)
+2. *Code review* tools (e.g., KDE - Phabricator)
+3. Patch is attached to the Bug Tracker (e.g., Haiku, KDE)
+4. Does not receive external contributions
 
 ----
 
 
-# Revisão dos PRs da aula passada
+# Review of last class's PRs
 
-## Erros comuns
+## Common Errors
 
 ---
 
-# Erro 0: o arquivo *login-achievements* tem erros
+# Error 0: *login-achievements* file has errors
 
 ![width:1000px](erro0-data-errada.png)
 
-**Como consertar**: Crie um novo commit com a data certa.
+**How to fix**: Create a new commit with the correct date.
 
 -----
 
-# Erro 1: arquivos extras no PR
+# Error 1: Extra files in the PR
 
-**Erro**: modificar arquivos não relacionados a sua mudança proposta.
+**Error**: Modifying files not related to your proposed changes.
 
 #
 
-**Ideal**: 
+**Ideal**:
 
-1. Um Pull Request deverá conter o somente os arquivos relacionados a modificação proposta. 
-1. Cada modificação proposta está em um Pull Request separado
+1. A Pull Request should contain only the files related to the proposed modification.
+2. Each proposed modification is in a separate Pull Request.
 
 ----
 
@@ -89,49 +88,45 @@ Desenvolvimento Aberto
 
 ---
 
-# Erro 1: arquivos extras no PR
+# Error 1: Extra files in the PR
 
-**Como consertar**: `git revert` cria um commit que desfaz alterações anteriores.
-
+**How to fix**: `git revert` creates a commit that undoes previous changes.
 
 ![width:800px](https://wac-cdn.atlassian.com/dam/jcr:b6fcf82b-5b15-4569-8f4f-a76454f9ca5b/03%20(7).svg?cdnVersion=501)
 
+**Extra options**:
 
+- `--no-commit`: Only adds the modifications, but does not make the commit. Allows undoing part of a commit.
 
-**Opções extras**:
-
-* `--no-commit`: só adiciona as modificações, mas não faz o commit. Permite desfazer parcialmente um commit. 
-
-Fonte: https://www.atlassian.com/git/tutorials/
-
+Source: https://www.atlassian.com/git/tutorials/
 
 ----
-# Erro 2: Mensagens de commit não descritivas
+# Error 2: Non-descriptive commit messages
 
 ![width:1000px](erro3-msg-commit.png)
 
-**Como consertar**: `git commit --amend` permite modificar o último commit feito. 
+**How to fix**: `git commit --amend` allows modifying the last commit made.
 
 ----
-# Erro 3: Pull Request com descrição ruim
+# Error 3: Pull Request with a poor description
 
 ![width:1000px](erro4-descricao-pr.png)
 
-**Como consertar**: Só editar na interface do Github. 
+**How to fix**: Simply edit it in the Github interface.
 
 ---
 
-# Consertar em casa e pedir review via Github
+# Fix at home and request review via Github
 
-### Lembrete: se não der push não estragou nada
+### Reminder: If you don't push, nothing is broken
 
-### Lembrete II: `git log` mostra seu histórico atual
+### Reminder II: `git log` shows your current history
 
-### Dica: se modificou commits já publicados use `git push -f` para sobrescrever 
+### Tip: If you modified already published commits, use `git push -f` to overwrite
 
 ---
 
-# Nem todos os alunos que estão matriculados na disciplina fizeram a atividade da última aula! 
+# Not all students enrolled in the course did the activity from the last class!
 
 ```bash
 python dev-aberto.py list-users
@@ -139,54 +134,54 @@ python dev-aberto.py list-users
 
 ---
 
-# Comunidades de software
+# Software Communities
 
 ----
-# Discussão
+# Discussion
 
 #
 
-**Pergunta 1**: quais são os softwares que vocês mais utilizam no dia a dia?
+**Question 1**: What are the software you use the most in your daily life?
 #
 #
 #
-**Pergunta 2**: quem é o principal desenvolvedor do projeto?
+**Question 2**: Who is the main developer of the project?
 
 ----
 
-# Exemplo: Kernel Linux
+# Example: Linux Kernel
 
 ![width:300px](linuxfoundationlogo.png)
 
-Fundação dá suporte ao desenvolvimento do Kernel Linux e à criação de um ecossistema de software de código aberto ao seu redor.
+Foundation supports the development of the Linux Kernel and the creation of an open-source software ecosystem around it.
 
-Apoio:
+Support:
 
-* Financeiro
-* Propriedade intelectual
-* Infraestrutura
-* Serviços e treinamento
-
----
-# Exemplo: Kernel Linux
-
-Empresas que patrocinam desenvolvimento:
-
-1. Individuais (11,95%)
-1. Intel (10,01%)
-3. Red Hat (8,90%)
-4. Desconhecido (4,09%)
-5. IBM (3,79%)
-6. SUSE (3,49%)
-7. Linaro (2,96%)
-8. Consultores (2,96%)
-9. Google (2,79%)
-10. Samsung (2,28%)
-
-Fonte: "2020 Linux Kernel Development Report"
+- Financial
+- Intellectual property
+- Infrastructure
+- Services and training
 
 ---
-# Exemplo: Ubuntu
+# Example: Linux Kernel
+
+Companies that sponsor development:
+
+1. Individual (11.95%)
+2. Intel (10.01%)
+3. Red Hat (8.90%)
+4. Unknown (4.09%)
+5. IBM (3.79%)
+6. SUSE (3.49%)
+7. Linaro (2.96%)
+8. Consultants (2.96%)
+9. Google (2.79%)
+10. Samsung (2.28%)
+
+Source: "2020 Linux Kernel Development Report"
+
+---
+# Example: Ubuntu
 
 #
 #
@@ -196,14 +191,14 @@ Fonte: "2020 Linux Kernel Development Report"
 #
 #
 
-Empresa privada controla o desenvolvimento do Ubuntu. Obtem recursos via
+Private company controls the development of Ubuntu. Obtains resources via:
 
-* Doações
-* Serviços de desenvolvimento e consultoria
-* Treinamento
+- Donations
+- Development and consulting services
+- Training
 
 ---
-# Exemplo: Gitlab
+# Example: Gitlab
 
 #
 #
@@ -211,16 +206,16 @@ Empresa privada controla o desenvolvimento do Ubuntu. Obtem recursos via
 ![width:300px](https://cdn-images-1.medium.com/max/1600/1*FtYgYG_G6rplUmF5fLzuXA.png)
 
 #
-# 
+#
 
-Empresa financiada até agora por VC (Venture Capital) em busca de lucro. 
+Company funded so far by VC (Venture Capital) in search of profit.
 
-* Opção de planos grátis com software de código aberto
-* Opção de planos corporativos com mais funcionalidades e **suporte**
-* Instalações locais
+- Option of free plans with open-source software
+- Option of corporate plans with more features and **support**
+- On-premises installations
 
 ---
-# Exemplo: Elementary
+# Example: Elementary
 
 #
 
@@ -228,11 +223,11 @@ Empresa financiada até agora por VC (Venture Capital) em busca de lucro.
 
 #
 
-Distribuição linux comandada por uma empresa "minúscula" focada em experiência de usuário. Recursos são obtidos via
+Linux distribution led by a "tiny" company focused on the user experience. Resources are obtained through:
 
-* Patrocínios individuais e por empresas
-* Modelo pay-what-you-want (loja de aplicativos e sistema operacional)
-* Hardware com o sistema pré-instalado
+- Individual and corporate sponsorships
+- Pay-what-you-want model (app store and operating system)
+- Hardware with the pre-installed system
 
 ---
 
@@ -240,17 +235,17 @@ Distribuição linux comandada por uma empresa "minúscula" focada em experiênc
 
 ---
 
-# Exemplo: Linux Mint
+# Example: Linux Mint
 
 ![width:500px](https://www.linuxmint.com/img/logo.png)
 
 
 #
 
-Distribuição linux cujo objetivo é que tudo funcione direto na instalação. É considerada boa para iniciantes. 
+Linux distribution aimed at everything working right after installation. Considered good for beginners.
 
 
----	
+---
 
 ![width:800px](mint-2018.png)
 
@@ -266,55 +261,53 @@ Distribuição linux cujo objetivo é que tudo funcione direto na instalação. 
 
 ---
 
-# Outras fontes
+# Other sources
 
 ![height:500px](fontes-fundos.png)
-Diversas outras maneiras de conseguir suporte e financiamento
+Various other ways of getting support and funding
 
 
 ---
-# Razões para financiar (empresa)
+# Reasons for funding (company)
 #
-- "Adquirir" especialistas em uma tecnologia
-- Vender suporte ou consultoria
+- "Acquire" experts in a technology
+- Sell support or consulting services
 - Marketing
-- Licença de software "obriga" 
+- Software license "obliges"
 #
 #
 
-Nem sempre o que é financiado termina em um formato "aproveitável" por terceiros (ex: Android/Linux, TiVO)
+Not everything funded ends up in a "usable" format for others (e.g., Android/Linux, TiVO)
 
 ---
 
 *"Tivoization is the practice of designing hardware that incorporates software under the terms of a copyleft software license like the GNU General Public License (GNU GPL), but uses hardware restrictions or digital rights management (DRM) to prevent users from running modified versions of the software on that hardware"* [Wikipedia]
 
 ---
-# Razões para contribuir (indivíduo)
+# Reasons for contributing (individual)
 
-- Profissionais
-	- Reputação / Currículo
-	- Necessidade de negócio
-- Pessoais
-	- Altruísmo / Ideologia
-	- Sensação de realização pessoal
-	- Exercício de criatividade
-	- Resolver um problema de seu interesse
+- Professional
+	- Reputation / CV
+	- Business needs
+- Personal
+	- Altruism / Ideology
+	- Sense of personal fulfillment
+	- Exercise creativity
+	- Solve a problem of personal interest
 
 ---
-# Atividade: Explorando o entorno de um projeto
+# Activity: Exploring the environment of a project
 
 ![width:256px](https://fonts.gstatic.com/s/i/materialicons/monetization_on/v4/24px.svg)
 
-* Pesquisar como as comunidades de alguns projetos estão organizadas
-* Produzir uma apresentação resumindo suas descobertas
-
-
+- Research how the communities of some projects are organized
+- Produce a presentation summarizing your findings
 ------------
 
-Desenvolvimento Aberto
+Open Source Development
 ===
 
 # ![height:350px](capa.png)
 
-##### Fluxo de trabalho distribuído e Comunidades de Software
+##### Software and Communities
 
