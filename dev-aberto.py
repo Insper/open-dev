@@ -61,7 +61,7 @@ def edit_achievements(student_login):
     if 'win32' in sys.platform:
         editor = os.getenv('EDITOR', default='notepad.exe')
     else:
-        editor = os.getenv('EDITOR', default='vi')
+        editor = os.getenv('EDITOR', default='lvim')
 
     while True:
         os.system(f'{editor} students/{student_login}.temp')
