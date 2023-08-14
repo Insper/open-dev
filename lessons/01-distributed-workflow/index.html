@@ -17,7 +17,7 @@
         <link rel="next" href="../02-software-and-communities/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -609,10 +609,7 @@
 
 
 <h1 id="01-distributed-development-workflow">01 - Distributed Development Workflow</h1>
-<div style="height: 400px; width: 600px; margin-left: auto; margin-right: auto">
-    <iframe width="100%" height="100%" src="slides.html"></iframe>
-</div>
-
+<p><ah-external-content src="slides.html" /></p>
 <p>In this guide, we will work on the standard workflow for contributing to projects hosted on GitHub (which also applies to Git projects in general). Before starting, each student should locate the corresponding issue on the course's GitHub repository for creating their user.</p>
 <p>Our workflow will be based on three main parts. In the first part, we will create a copy of the repository "insper/dev-aberto" where we will make all the necessary changes. In the second part, we will send our modifications to the original repository using a <em>Pull Request</em>, which is a request to accept the changes from a forked repository into the original repository. Finally, we will update our fork with modifications sent by colleagues.</p>
 <p>Some key points to highlight in the above workflow:</p>
@@ -624,11 +621,13 @@
 <h2 id="creating-your-own-copy">Creating your own copy</h2>
 <p>We will start our workflow by creating a fork of the repository "insper/dev-aberto". All our modifications will be made in our fork, on a separate branch (it is recommended to use a different branch for each issue). This way, our modifications are completely isolated from the original code, and we can test them alongside the original code.</p>
 <p>First, create the fork through the GitHub interface. Then, clone your fork and create a new branch called "issue-X," where "X" is the number of your issue in the original project.</p>
-<div class="highlight"><pre><span></span><code>$ git checkout -b issue-X
-</code></pre></div>
+<p><ah-terminal>
+$ git checkout -b issue-X
+</ah-terminal></p>
 <p>To ensure that you are in the directory of your fork, execute the following command:</p>
-<div class="highlight"><pre><span></span><code>$ git remote -vv
-</code></pre></div>
+<p><ah-terminal>
+$ git remote -vv
+</ah-terminal></p>
 <p>The displayed addresses should be those of your fork, not the original project.</p>
 <p>With the fork created and being on the "issue-X" branch (you can check using <code>git branch</code> and switch using <code>git checkout issue-X</code>), we will begin making modifications.</p>
 <h3 id="interacting-with-the-course-repository">Interacting with the course repository</h3>
@@ -638,13 +637,15 @@
 <p>To use it, you need to install the packages listed in the requirements.txt file.</p>
 </div>
 <p>Running it in the terminal should list the available commands.</p>
-<div class="highlight"><pre><span></span><code>$ python3 dev-aberto.py
-</code></pre></div>
+<p><ah-terminal>
+$ python3 dev-aberto.py
+</ah-terminal></p>
 <p>To check if everything is working correctly, list all registered users. There should be only one registered user (<code>fabriciojb</code>).</p>
 <h3 id="creating-a-user">Creating a user</h3>
 <p>User creation is done with the command:</p>
-<div class="highlight"><pre><span></span><code>$ python3 dev-aberto.py new-user
-</code></pre></div>
+<p><ah-terminal>
+$ python3 dev-aberto.py new-user
+</ah-terminal></p>
 <p>This will create three files in the <code>students</code> folder:</p>
 <ul>
 <li><code>your-login</code>: basic user information in JSON format.</li>
@@ -659,9 +660,14 @@
 <p>Also, verify that you can use the command <code>dev-aberto.py compute-grade your-login</code>. If everything is okay, proceed to the next item.</p>
 <h3 id="adding-a-skill">Adding a skill</h3>
 <p>With the user created, we can add the skill "First Steps." You may have noticed that the professor's key is available (file <code>students/fabriciojb.key</code>). This was done so that you have at least one example of how each skill should be added. See below for an example of how the skill should be included:</p>
-<div class="highlight"><pre><span></span><code>$ python3 dev-aberto.py edit-achievements fabriciojb
+<p><ah-terminal>
+$ python3 dev-aberto.py edit-achievements fabriciojb
+</ah-terminal></p>
+<p>This will open a file for editing in <em>Vi</em>. The format is a list of objects containing two fields: "skill_id" and "metadata". See the example below for the first skill</p>
+<div class="highlight"><pre><span></span><code>[
+{&quot;skill_id&quot;: 1, &quot;metadata&quot;: {&quot;date&quot;: &quot;YYYY-MM-DD&quot;} }
+]
 </code></pre></div>
-<p>This will open a file for editing in <em>Vi</em>. See the format used to include the skill and do the same for your user.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you want to use another text editor, you can set the environment variable <code>EDITOR</code> just before calling <code>dev-aberto.py</code>.</p>
@@ -745,10 +751,6 @@
     
     
       <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
-      
-        
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js"></script>
-        
       
         
           <script src="../../js/markdown-enhancer.js"></script>
