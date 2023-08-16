@@ -17,7 +17,7 @@
         <link rel="next" href="../02-software-and-communities/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -640,7 +640,7 @@ $ git remote -vv
 <p><ah-terminal>
 $ python3 dev-aberto.py
 </ah-terminal></p>
-<p>To check if everything is working correctly, list all registered users. There should be only one registered user (<code>fabriciojb</code>).</p>
+<p>To check if everything is working correctly, list all registered users. There should be only one registered user (<code>igorsm1</code>).</p>
 <h3 id="creating-a-user">Creating a user</h3>
 <p>User creation is done with the command:</p>
 <p><ah-terminal>
@@ -659,11 +659,15 @@ $ python3 dev-aberto.py new-user
 </div>
 <p>Also, verify that you can use the command <code>dev-aberto.py compute-grade your-login</code>. If everything is okay, proceed to the next item.</p>
 <h3 id="adding-a-skill">Adding a skill</h3>
-<p>With the user created, we can add the skill "First Steps." You may have noticed that the professor's key is available (file <code>students/fabriciojb.key</code>). This was done so that you have at least one example of how each skill should be added. See below for an example of how the skill should be included:</p>
+<p>With the user created, we can add the skill "First Steps." You may have noticed that the professor's key is available (file <code>students/igorsm1.key</code>). This was done so that you have at least one example of how each skill should be added. See below for an example of how the skill should be included:</p>
 <p><ah-terminal>
-$ python3 dev-aberto.py edit-achievements fabriciojb
+$ python3 dev-aberto.py edit-achievements igorsm1
 </ah-terminal></p>
-<p>This will open a file for editing in <em>Vi</em>. See the format used to include the skill and do the same for your user.</p>
+<p>This will open a file for editing in <em>Vi</em>. The format is a list of objects containing two fields: "skill_id" and "metadata". See the example below for the first skill</p>
+<div class="highlight"><pre><span></span><code>[
+{&quot;skill_id&quot;: 1, &quot;metadata&quot;: {&quot;date&quot;: &quot;YYYY-MM-DD&quot;} }
+]
+</code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you want to use another text editor, you can set the environment variable <code>EDITOR</code> just before calling <code>dev-aberto.py</code>.</p>
