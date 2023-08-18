@@ -1,6 +1,6 @@
 ---
 marp: true
-title: Tradução e localização de software
+title: Documentação de Software
 footer: 'Igor Montagner ![License CC BY-NC-SA 4.0](../cc-by-nc-sa.png)'
 ---
 
@@ -21,25 +21,19 @@ footer: 'Igor Montagner ![License CC BY-NC-SA 4.0](../cc-by-nc-sa.png)'
 Desenvolvimento Aberto
 ===
 
-# ![height:350px](../02-comunidades-de-software/capa.png)
+# ![height:350px](../02-software-and-communities/capa.png)
 
 ##### Fluxo de trabalho distribuído e Comunidades de Software
 
-###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) )  
-
+###### Versão 2023/2 - Igor Montagner (igorsm1@insper.edu.br)
 ---------
 
 # Ordem das apresentações
 
-1. Docker
-2. GIMP
-3. Kubernetes
-4. flatpak
-5. Godot engine
-6. GNOME
-7. TensorFlow
-8. digiKam
-9. Shotcut
+1. VSCode
+2. Blender
+3. KDENlive
+4. NeoVim
 
 ## 10 minutos cada uma
 
@@ -50,14 +44,14 @@ Desenvolvimento Aberto
 
 ```
 "metadata": {
-	"filename": "nome do arquivo na pasta da aula passada",
+	"filename": "nome do arquivo",
 	"group": ["login1", "login2"]
 }
 ```
 
-* No `group` incluir os outros membros do grupo somente
+- No `group` incluir os outros membros do grupo somente
 
-* Um membro da equipe deve fazer um PR para o projeto incluindo o arquivo da apresentação. O mesmo deve ser colocado na pasta `apresentacoes/2022`
+- Um membro da equipe deve fazer um PR para o projeto incluindo o arquivo da apresentação. O mesmo deve ser colocado na pasta `apresentacoes/2023`
 
 ------
 
@@ -70,8 +64,7 @@ Desenvolvimento Aberto
 
 
 
-###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) )  
-
+###### Versão 2023/2 - Igor Montagner (igorsm1@insper.edu.br)
 ---
 
 Desenvolvimento Aberto
@@ -82,8 +75,7 @@ Desenvolvimento Aberto
 ##### (A ausência de d)ocumentação de software
 
 
-###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) )  
-
+###### Versão 2023/2 - Igor Montagner (igorsm1@insper.edu.br)
 ---
 # Documentação de software
 
@@ -177,7 +169,6 @@ Vocês receberão um *zip* com o código de um software e zero instruções. Voc
 	- Qualidade do código
 	- Segurança da solução
 
-
 ---
 
 # Objetivos desta atividade
@@ -219,4 +210,4 @@ Desenvolvimento Aberto
 ##### Documentação de software
 
 
-###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) ) 
+###### Versão 2023/2 - Igor Montagner (igorsm1@insper.edu.br)

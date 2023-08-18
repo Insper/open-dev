@@ -1,8 +1,11 @@
 # 03 - Explorando um projeto desconhecido
 
+<ah-external-content src="slides.html" />
+
 Este roteiro tem algumas perguntas com o objetivo de guiar a exploração do código e documentar suas descobertas. Você também pode aplicá-lo para qualquer outro projeto mal documentado em que precisar trabalhar no futuro.
 
 Baixe o código do projeto a ser analisado [aqui](codigo.zip) e siga as perguntas. Elas são um guia de como explorar um projeto que vocês não conhecem.
+
 
 ## Dependências e serviços usados
 
