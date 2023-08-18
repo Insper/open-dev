@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/open-dev/aulas/03-documentacao-de-software/">
+        <link rel="canonical" href="https://insper.github.io/open-dev/lessons/03-software-documentation/slides/">
       
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
     
     
       
-        <title>03 - Explorando um projeto desconhecido - Open Source Development 2023/2</title>
+        <title>Documentação de Software - Open Source Development 2023/2</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.eebd395e.min.css">
       
       
 
@@ -37,11 +37,11 @@
       
     
     
-      <link rel="stylesheet" href="../../css/custom.css">
+      <link rel="stylesheet" href="../../../css/custom.css">
     
-      <link rel="stylesheet" href="../../css/people.css">
+      <link rel="stylesheet" href="../../../css/people.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#03-explorando-um-projeto-desconhecido" class="md-skip">
+        <a href="#desenvolvimento-aberto" class="md-skip">
           Skip to content
         </a>
       
@@ -79,7 +79,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Open Source Development 2023/2" class="md-header__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
+    <a href="../../.." title="Open Source Development 2023/2" class="md-header__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              03 - Explorando um projeto desconhecido
+              Documentação de Software
             
           </span>
         </div>
@@ -177,7 +177,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Open Source Development 2023/2" class="md-nav__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
+    <a href="../../.." title="Open Source Development 2023/2" class="md-nav__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -208,7 +208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -223,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../syllabus/" class="md-nav__link">
+      <a href="../../../syllabus/" class="md-nav__link">
         Syllabus
       </a>
     </li>
@@ -238,7 +238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../assessment/" class="md-nav__link">
+      <a href="../../../assessment/" class="md-nav__link">
         Assessment
       </a>
     </li>
@@ -253,7 +253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../students/" class="md-nav__link">
+      <a href="../../../students/" class="md-nav__link">
         Students
       </a>
     </li>
@@ -295,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lessons/01-distributed-workflow/" class="md-nav__link">
+      <a href="../../01-distributed-workflow/" class="md-nav__link">
         01 - Distributed Development Workflow
       </a>
     </li>
@@ -309,8 +309,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lessons/02-software-and-communities/" class="md-nav__link">
+      <a href="../../02-software-and-communities/" class="md-nav__link">
         02 - Software and Communities
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        03 - Explorando um projeto desconhecido
       </a>
     </li>
   
@@ -358,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../impact/" class="md-nav__link">
+      <a href="../../../impact/" class="md-nav__link">
         2023/2
       </a>
     </li>
@@ -372,7 +386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../impact-2022/" class="md-nav__link">
+      <a href="../../../impact-2022/" class="md-nav__link">
         2022/2
       </a>
     </li>
@@ -386,7 +400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../impact-2021/" class="md-nav__link">
+      <a href="../../../impact-2021/" class="md-nav__link">
         2021/2
       </a>
     </li>
@@ -400,7 +414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../impact-2020/" class="md-nav__link">
+      <a href="../../../impact-2020/" class="md-nav__link">
         2020/1
       </a>
     </li>
@@ -414,7 +428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../impact-2019/" class="md-nav__link">
+      <a href="../../../impact-2019/" class="md-nav__link">
         2019/2
       </a>
     </li>
@@ -448,35 +462,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dependencias-e-servicos-usados" class="md-nav__link">
-    Dependências e serviços usados
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deploy-inicial" class="md-nav__link">
-    Deploy inicial
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentacao-do-projeto" class="md-nav__link">
-    Documentação do projeto
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -493,44 +478,148 @@
   
 
 
-<h1 id="03-explorando-um-projeto-desconhecido">03 - Explorando um projeto desconhecido</h1>
-<p>Este roteiro tem algumas perguntas com o objetivo de guiar a exploração do código e documentar suas descobertas. Você também pode aplicá-lo para qualquer outro projeto mal documentado em que precisar trabalhar no futuro.</p>
-<p>Baixe o código do projeto a ser analisado <a href="codigo.zip">aqui</a> e siga as perguntas. Elas são um guia de como explorar um projeto que vocês não conhecem.</p>
-<h2 id="dependencias-e-servicos-usados">Dependências e serviços usados</h2>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>Quais tecnologias são usadas no código? Além da linguagem de programação, liste também as bibliotecas/módulos externos usados.</p>
-</div>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>A aplicação utiliza um banco de dados. Qual gerenciador? Onde a aplicação busca a base de dados? Quais são as tabelas usadas? Como elas são criadas? </p>
-</div>
-<h2 id="deploy-inicial">Deploy inicial</h2>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>A aplicação usa autenticação? Se sim, qual tipo? Como usuários são criados? Existe algum usuário administrador? Como é feita a segurança das senhas? Qual a senha padrão?</p>
-</div>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>Quais comandos você usou para rodar a aplicação? Escreva todos desde a criação do banco de dados e dos usuários até o funcionamento completo do projeto.</p>
-</div>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>Agora que você consegue rodar a aplicação, explore-a um pouco e descreva em poucas frases para quê ela serve.</p>
-</div>
-<h2 id="documentacao-do-projeto">Documentação do projeto</h2>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>Se você fosse criar um guia de usuário (aluno) para esta aplicação, quais tarefas descreveria? </p>
-</div>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>Se você fosse criar um guia de usuário (professor) para esta aplicação, quais tarefas descreveria?</p>
-</div>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>O quê você descreveria em um guia de desenvolvedor para esta aplicação?</p>
-</div>
+<style>
+    footer {
+        position: fixed;
+        bottom: 10px;
+        left: 1050px;
+        width: 400px;
+    }
+
+    footer img {
+        vertical-align: middle;
+    }
+</style>
+
+<h1 id="desenvolvimento-aberto">Desenvolvimento Aberto</h1>
+<h1 id="_1"><img alt="height:350px" src="../../02-software-and-communities/capa.png" /></h1>
+<h5 id="fluxo-de-trabalho-distribuido-e-comunidades-de-software">Fluxo de trabalho distribuído e Comunidades de Software</h5>
+<h6 id="versao-20232-igor-montagner-amp105amp103amp111amp114amp115amp109amp49amp64amp105amp110amp115amp112amp101amp114amp46amp101amp100amp117amp46amp98amp114">Versão 2023/2 - Igor Montagner (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;">&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;</a>)</h6>
+<hr />
+<h1 id="ordem-das-apresentacoes">Ordem das apresentações</h1>
+<ol>
+<li>VSCode</li>
+<li>Blender</li>
+<li>KDENlive</li>
+<li>NeoVim</li>
+</ol>
+<h2 id="10-minutos-cada-uma">10 minutos cada uma</h2>
+<hr />
+<h1 id="atividade-explorando-o-entorno-de-um-projeto">Atividade: Explorando o entorno de um projeto</h1>
+<p><img alt="width:156px" src="https://fonts.gstatic.com/s/i/materialicons/monetization_on/v4/24px.svg" /></p>
+<div class="highlight"><pre><span></span><code>&quot;metadata&quot;: {
+    &quot;filename&quot;: &quot;nome do arquivo&quot;,
+    &quot;group&quot;: [&quot;login1&quot;, &quot;login2&quot;]
+}
+</code></pre></div>
+<ul>
+<li>
+<p>No <code>group</code> incluir os outros membros do grupo somente</p>
+</li>
+<li>
+<p>Um membro da equipe deve fazer um PR para o projeto incluindo o arquivo da apresentação. O mesmo deve ser colocado na pasta <code>apresentacoes/2023</code></p>
+</li>
+</ul>
+<hr />
+<h1 id="desenvolvimento-aberto_1">Desenvolvimento Aberto</h1>
+<p><img alt="width:300px" src="../capa.svg" /></p>
+<h5 id="documentacao-de-software">Documentação de software</h5>
+<h6 id="versao-20232-igor-montagner-amp105amp103amp111amp114amp115amp109amp49amp64amp105amp110amp115amp112amp101amp114amp46amp101amp100amp117amp46amp98amp114_1">Versão 2023/2 - Igor Montagner (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;">&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;</a>)</h6>
+<hr />
+<h1 id="desenvolvimento-aberto_2">Desenvolvimento Aberto</h1>
+<p><img alt="width:300px" src="../capa.svg" /></p>
+<h5 id="a-ausencia-de-documentacao-de-software">(A ausência de d)ocumentação de software</h5>
+<h6 id="versao-20232-igor-montagner-amp105amp103amp111amp114amp115amp109amp49amp64amp105amp110amp115amp112amp101amp114amp46amp101amp100amp117amp46amp98amp114_2">Versão 2023/2 - Igor Montagner (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;">&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;</a>)</h6>
+<hr />
+<h1 id="documentacao-de-software_1">Documentação de software</h1>
+<p><strong>Documentação de usuário</strong>:</p>
+<h1 id="_2"></h1>
+<h1 id="_3"></h1>
+<h1 id="_4"></h1>
+<p><strong>Documentação de desenvolvimento</strong>:</p>
+<h1 id="_5"></h1>
+<h1 id="_6"></h1>
+<h1 id="_7"></h1>
+<hr />
+<h1 id="documentacao-de-software_2">Documentação de software</h1>
+<p><strong>Documentação de usuário</strong>:</p>
+<ul>
+<li>Instalação</li>
+<li>Funcionalidades</li>
+<li>Onde obter ajuda</li>
+</ul>
+<hr />
+<h1 id="documentacao-de-software_3">Documentação de software</h1>
+<p><strong>Documentação de desenvolvimento</strong>:</p>
+<ul>
+<li>Como compilar (dependências, ferramentas usadas, etc)</li>
+<li>Como testar (dependências, ferramentas usadas, etc)</li>
+<li>Estilo de código e outras orientações relacionadas</li>
+<li>Organização do código e arquitetura da aplicação</li>
+</ul>
+<hr />
+<h1 id="documentacao-de-software_4">Documentação de software</h1>
+<p>Às vezes as coisas se confundem! O que vocês colocariam na documentação de usuário do <em>Python</em>?</p>
+<p>E na de desenvolvedor?</p>
+<hr />
+<h1 id="exemplo-spyder">Exemplo: Spyder</h1>
+<p><img alt="width:900px" src="../spyder-user.png" /></p>
+<p><a href="https://www.spyder-ide.org/">https://www.spyder-ide.org/</a></p>
+<hr />
+<h1 id="exemplo-spyder_1">Exemplo: Spyder</h1>
+<p><img alt="width:900px" src="../spyder-dev.png" /></p>
+<p><a href="https://github.com/spyder-ide/spyder/wiki">https://github.com/spyder-ide/spyder/wiki</a></p>
+<hr />
+<h1 id="sistemas-de-documentacao">Sistemas de documentação</h1>
+<p><img alt="width:900px" src="../sphinx.png" /></p>
+<p><a href="http://www.sphinx-doc.org/en/master/">Sphinx</a></p>
+<hr />
+<h1 id="sistemas-de-documentacao_1">Sistemas de documentação</h1>
+<p><img alt="width:900px" src="../mkdocs.png" /></p>
+<p><a href="www.mkdocs.org">Mkdocs</a></p>
+<hr />
+<h1 id="sistemas-de-documentacao-hospedagem">Sistemas de documentação (hospedagem)</h1>
+<p><img alt="width:900px" src="../readthedocs.png" /></p>
+<p><a href="https://readthedocs.org/">https://readthedocs.org/</a></p>
+<hr />
+<h1 id="atividade">Atividade</h1>
+<p>Vocês receberão um <em>zip</em> com o código de um software e zero instruções. Vocês deverão:</p>
+<ol>
+<li>Aprender como rodar o software</li>
+<li>Documentar os passos que vocês seguiram para fazê-lo</li>
+<li>Fazer uma análise crítica do projeto com relação a<ul>
+<li>Arquitetura</li>
+<li>Qualidade do código</li>
+<li>Segurança da solução</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h1 id="objetivos-desta-atividade">Objetivos desta atividade</h1>
+<ol>
+<li>Entender na prática a necessidade de documentação;</li>
+<li>Identificar quais são as dependências de um software. Isto inclui bibliotecas/frameworks usados e serviços aos quais esse software se conecta.</li>
+<li>Rodar sua própria versão de um software de terceiros</li>
+</ol>
+<hr />
+<h1 id="nao-sao-objetivos-desta-atividade">Não são objetivos desta atividade</h1>
+<ol>
+<li>Mostrar nenhum tipo de boa prática de programação</li>
+<li>Modificar o software analisado</li>
+<li>Criticar o desenvolvedor que trabalhou antes no projeto</li>
+</ol>
+<hr />
+<h1 id="atividade-pratica-projeto-nao-documentado">Atividade prática: Projeto não documentado</h1>
+<p><img alt="width:256px" src="https://fonts.gstatic.com/s/i/materialicons/explore/v4/24px.svg?download=true" /></p>
+<p><strong>Objetivo</strong>: entender como rodar um código sem instruções. </p>
+<p><strong>Validação</strong>: apresentação do sistema funcionando. </p>
+<p><strong>Grupos de até 3 pessoas</strong></p>
+<h4 id="tempo-restante-de-hoje-hora-inicial-da-proxima-aula-usem-handout-como-guia">Tempo restante de hoje + hora inicial da próxima aula. Usem handout como guia</h4>
+<hr />
+<h1 id="desenvolvimento-aberto_3">Desenvolvimento Aberto</h1>
+<p><img alt="width:300px" src="../capa.svg" /></p>
+<h5 id="documentacao-de-software_5">Documentação de software</h5>
+<h6 id="versao-20232-igor-montagner-amp105amp103amp111amp114amp115amp109amp49amp64amp105amp110amp115amp112amp101amp114amp46amp101amp100amp117amp46amp98amp114_3">Versão 2023/2 - Igor Montagner (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;">&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;</a>)</h6>
 
 
 
@@ -568,13 +657,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
-          <script src="../../js/markdown-enhancer.js"></script>
+          <script src="../../../js/markdown-enhancer.js"></script>
         
       
     
