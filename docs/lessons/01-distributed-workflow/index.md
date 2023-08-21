@@ -46,7 +46,7 @@ Running it in the terminal should list the available commands.
 $ python3 dev-aberto.py
 </ah-terminal>
 
-To check if everything is working correctly, list all registered users. There should be only one registered user (`fabriciojb`).
+To check if everything is working correctly, list all registered users. There should be only one registered user (`igorsm1`).
 
 ### Creating a user
 
@@ -71,13 +71,19 @@ Also, verify that you can use the command `dev-aberto.py compute-grade your-logi
 
 ### Adding a skill
 
-With the user created, we can add the skill "First Steps." You may have noticed that the professor's key is available (file `students/fabriciojb.key`). This was done so that you have at least one example of how each skill should be added. See below for an example of how the skill should be included:
+With the user created, we can add the skill "First Steps." You may have noticed that the professor's key is available (file `students/igorsm1.key`). This was done so that you have at least one example of how each skill should be added. See below for an example of how the skill should be included:
 
 <ah-terminal>
-$ python3 dev-aberto.py edit-achievements fabriciojb
+$ python3 dev-aberto.py edit-achievements igorsm1
 </ah-terminal>
 
-This will open a file for editing in *Vi*. See the format used to include the skill and do the same for your user.
+This will open a file for editing in *Vi*. The format is a list of objects containing two fields: "skill_id" and "metadata". See the example below for the first skill
+
+```
+[
+{"skill_id": 1, "metadata": {"date": "YYYY-MM-DD"} }
+]
+```
 
 !!! tip
     If you want to use another text editor, you can set the environment variable `EDITOR` just before calling `dev-aberto.py`.
