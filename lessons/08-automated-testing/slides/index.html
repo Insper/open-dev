@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/open-dev/_snippets/skills-tutorial/">
+        <link rel="canonical" href="https://insper.github.io/open-dev/lessons/08-automated-testing/slides/">
       
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
-        <title>Skills tutorial - Open Source Development 2023/2</title>
+        <title>Testes automatizados - Open Source Development 2023/2</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.eebd395e.min.css">
       
       
 
@@ -37,11 +37,11 @@
       
     
     
-      <link rel="stylesheet" href="../../css/custom.css">
+      <link rel="stylesheet" href="../../../css/custom.css">
     
-      <link rel="stylesheet" href="../../css/people.css">
+      <link rel="stylesheet" href="../../../css/people.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,6 +62,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#desenvolvimento-aberto" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -74,7 +79,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Open Source Development 2023/2" class="md-header__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
+    <a href="../../.." title="Open Source Development 2023/2" class="md-header__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -93,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Skills tutorial
+              Testes automatizados
             
           </span>
         </div>
@@ -172,7 +177,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Open Source Development 2023/2" class="md-nav__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
+    <a href="../../.." title="Open Source Development 2023/2" class="md-nav__button md-logo" aria-label="Open Source Development 2023/2" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -203,7 +208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -218,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../syllabus/" class="md-nav__link">
+      <a href="../../../syllabus/" class="md-nav__link">
         Syllabus
       </a>
     </li>
@@ -233,7 +238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../assessment/" class="md-nav__link">
+      <a href="../../../assessment/" class="md-nav__link">
         Assessment
       </a>
     </li>
@@ -248,7 +253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../students/" class="md-nav__link">
+      <a href="../../../students/" class="md-nav__link">
         Students
       </a>
     </li>
@@ -290,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lessons/01-distributed-workflow/" class="md-nav__link">
+      <a href="../../01-distributed-workflow/" class="md-nav__link">
         01 - Distributed Development Workflow
       </a>
     </li>
@@ -304,7 +309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lessons/02-software-and-communities/" class="md-nav__link">
+      <a href="../../02-software-and-communities/" class="md-nav__link">
         02 - Software and Communities
       </a>
     </li>
@@ -318,7 +323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lessons/03-software-documentation/" class="md-nav__link">
+      <a href="../../03-software-documentation/" class="md-nav__link">
         03 - Explorando um projeto desconhecido
       </a>
     </li>
@@ -332,7 +337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lessons/04-professional-project/" class="md-nav__link">
+      <a href="../../04-professional-project/" class="md-nav__link">
         04 - Professional Project
       </a>
     </li>
@@ -346,7 +351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lessons/05-python-packaging/" class="md-nav__link">
+      <a href="../../05-python-packaging/" class="md-nav__link">
         05 - Distribuição de Software
       </a>
     </li>
@@ -360,7 +365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lessons/06-localization-translation/" class="md-nav__link">
+      <a href="../../06-localization-translation/" class="md-nav__link">
         06 - Localização e Tradução
       </a>
     </li>
@@ -374,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lessons/07-code-quality/" class="md-nav__link">
+      <a href="../../07-code-quality/" class="md-nav__link">
         07 - Code quality
       </a>
     </li>
@@ -388,7 +393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../lessons/08-automated-testing/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         08 - Automated testing
       </a>
     </li>
@@ -437,7 +442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../impact/" class="md-nav__link">
+      <a href="../../../impact/" class="md-nav__link">
         2023/2
       </a>
     </li>
@@ -451,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../impact-2022/" class="md-nav__link">
+      <a href="../../../impact-2022/" class="md-nav__link">
         2022/2
       </a>
     </li>
@@ -465,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../impact-2021/" class="md-nav__link">
+      <a href="../../../impact-2021/" class="md-nav__link">
         2021/2
       </a>
     </li>
@@ -479,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../impact-2020/" class="md-nav__link">
+      <a href="../../../impact-2020/" class="md-nav__link">
         2020/1
       </a>
     </li>
@@ -493,7 +498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../impact-2019/" class="md-nav__link">
+      <a href="../../../impact-2019/" class="md-nav__link">
         2019/2
       </a>
     </li>
@@ -524,6 +529,36 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#testes-automatizados" class="md-nav__link">
+    Testes automatizados
+  </a>
+  
+    <nav class="md-nav" aria-label="Testes automatizados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#igor-dos-santos-montagner-igorsm1insperedubr" class="md-nav__link">
+    Igor dos Santos Montagner ( igorsm1@insper.edu.br )
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -541,102 +576,127 @@
   
 
 
-  <h1>Skills tutorial</h1>
+<style>
+    footer {
+        position: fixed;
+        bottom: 10px;
+        left: 1050px;
+        width: 400px;
+    }
 
-<table>
-<thead>
-<tr>
-<th style="text-align: right;">id</th>
-<th style="text-align: left;"></th>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: right;">XP</th>
-<th style="text-align: left;">Date</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;"><span class="twemoji skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.1 12.5 1.4 1.41-6.53 6.59L12.5 17l1.4-1.41 2.07 2.08 5.13-5.17M10 17l3 3H3v-2c0-2.21 3.58-4 8-4l1.89.11L10 17m1-13a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4Z"/></svg></span></td>
-<td style="text-align: left;">First Steps</td>
-<td style="text-align: left;">Added to the discipline's repository.</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">21/08</td>
-</tr>
-<tr>
-<td style="text-align: right;">2</td>
-<td style="text-align: left;"><span class="twemoji skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 6h18v12H5V6m9 3a3 3 0 0 1 3 3 3 3 0 0 1-3 3 3 3 0 0 1-3-3 3 3 0 0 1 3-3M9 8a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2v-4a2 2 0 0 1-2-2H9m-8 2h2v10h16v2H1V10Z"/></svg></span></td>
-<td style="text-align: left;">Exploring a Project's Environment</td>
-<td style="text-align: left;">Researched the history and community of people and services around a project.</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: left;">21/08</td>
-</tr>
-<tr>
-<td style="text-align: right;">3</td>
-<td style="text-align: left;"><span class="twemoji skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.19 14.19 6 18l3.81-8.19L18 6m-6-4A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 8.9a1.1 1.1 0 0 0-1.1 1.1 1.1 1.1 0 0 0 1.1 1.1 1.1 1.1 0 0 0 1.1-1.1 1.1 1.1 0 0 0-1.1-1.1Z"/></svg></span></td>
-<td style="text-align: left;">Undocumented Project</td>
-<td style="text-align: left;">Received an undocumented system and got it up and running.</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: left;">28/08</td>
-</tr>
-<tr>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;"><span class="twemoji skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21 12 17.27Z"/></svg></span></td>
-<td style="text-align: left;">Professional Project</td>
-<td style="text-align: left;">Refactored poorly written code and created a web page for it.</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: left;">01/09</td>
-</tr>
-<tr>
-<td style="text-align: right;">5</td>
-<td style="text-align: left;"><span class="twemoji skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.5c2.33 0 4.3-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5M8.5 11A1.5 1.5 0 0 0 10 9.5 1.5 1.5 0 0 0 8.5 8 1.5 1.5 0 0 0 7 9.5 1.5 1.5 0 0 0 8.5 11m7 0A1.5 1.5 0 0 0 17 9.5 1.5 1.5 0 0 0 15.5 8 1.5 1.5 0 0 0 14 9.5a1.5 1.5 0 0 0 1.5 1.5M12 20a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8m0-18C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/></svg></span></td>
-<td style="text-align: left;">Tested and Approved</td>
-<td style="text-align: left;">Created unit tests and interface tests for the challenge server.</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: left;">13/09</td>
-</tr>
-<tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: left;"><span class="twemoji skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 2h4a2 2 0 0 1 2 2v2h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8c0-1.11.89-2 2-2h4V4c0-1.11.89-2 2-2m4 4V4h-4v2h4Z"/></svg></span></td>
-<td style="text-align: left;">Python Package</td>
-<td style="text-align: left;">Created a Python package installable via pip.</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: left;">11/09</td>
-</tr>
-<tr>
-<td style="text-align: right;">7</td>
-<td style="text-align: left;"><span class="twemoji skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.81 10.25c-.06-.04-.56-.43-1.64-.43-.28 0-.56.03-.84.08-.21-1.4-1.38-2.11-1.43-2.14l-.29-.17-.18.27c-.24.36-.43.77-.51 1.19-.2.8-.08 1.56.33 2.21-.49.28-1.29.35-1.46.35H2.62c-.34 0-.62.28-.62.63 0 1.15.18 2.3.58 3.38.45 1.19 1.13 2.07 2 2.61.98.6 2.59.94 4.42.94.79 0 1.61-.07 2.42-.22 1.12-.2 2.2-.59 3.19-1.16A8.3 8.3 0 0 0 16.78 16c1.05-1.17 1.67-2.5 2.12-3.65h.19c1.14 0 1.85-.46 2.24-.85.26-.24.45-.53.59-.87l.08-.24-.19-.14m-17.96.99h1.76c.08 0 .16-.07.16-.16V9.5c0-.08-.07-.16-.16-.16H3.85c-.09 0-.16.07-.16.16v1.58c.01.09.07.16.16.16m2.43 0h1.76c.08 0 .16-.07.16-.16V9.5c0-.08-.07-.16-.16-.16H6.28c-.09 0-.16.07-.16.16v1.58c.01.09.07.16.16.16m2.47 0h1.75c.1 0 .17-.07.17-.16V9.5c0-.08-.06-.16-.17-.16H8.75c-.08 0-.15.07-.15.16v1.58c0 .09.06.16.15.16m2.44 0h1.77c.08 0 .15-.07.15-.16V9.5c0-.08-.06-.16-.15-.16h-1.77c-.08 0-.15.07-.15.16v1.58c0 .09.07.16.15.16M6.28 9h1.76c.08 0 .16-.09.16-.18V7.25c0-.09-.07-.16-.16-.16H6.28c-.09 0-.16.06-.16.16v1.57c.01.09.07.18.16.18m2.47 0h1.75c.1 0 .17-.09.17-.18V7.25c0-.09-.06-.16-.17-.16H8.75c-.08 0-.15.06-.15.16v1.57c0 .09.06.18.15.18m2.44 0h1.77c.08 0 .15-.09.15-.18V7.25c0-.09-.07-.16-.15-.16h-1.77c-.08 0-.15.06-.15.16v1.57c0 .09.07.18.15.18m0-2.28h1.77c.08 0 .15-.07.15-.16V5c0-.1-.07-.17-.15-.17h-1.77c-.08 0-.15.06-.15.17v1.56c0 .08.07.16.15.16m2.46 4.52h1.76c.09 0 .16-.07.16-.16V9.5c0-.08-.07-.16-.16-.16h-1.76c-.08 0-.15.07-.15.16v1.58c0 .09.07.16.15.16"/></svg></span></td>
-<td style="text-align: left;">Dockerfile</td>
-<td style="text-align: left;">Created automated deployment for a Python web system.</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: left;">11/09</td>
-</tr>
-<tr>
-<td style="text-align: right;">8</td>
-<td style="text-align: left;"><span class="twemoji skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24Z"/></svg></span></td>
-<td style="text-align: left;">Basic Translation</td>
-<td style="text-align: left;">Used translation tools to translate and localize a small command-line program.</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">11/09</td>
-</tr>
-<tr>
-<td style="text-align: right;">10</td>
-<td style="text-align: left;"><span class="twemoji skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 22h-.19a.46.46 0 0 1-.26-.27l-2.22-5.8c-.09-.24.03-.51.26-.61.71-.26 1.28-.82 1.58-1.49.64-1.43 0-3.1-1.43-3.74-1.43-.64-3.1 0-3.74 1.41-.3.71-.32 1.5-.05 2.19.3.74.89 1.31 1.64 1.59.24.09.37.36.28.61L9 21.69c-.04.12-.13.22-.25.27-.12.04-.25.04-.36 0C3.24 19.97.67 14.18 2.66 9.03c1.99-5.15 7.78-7.72 12.93-5.73 2.47.96 4.46 2.85 5.54 5.27a9.905 9.905 0 0 1 .2 7.65c-1.01 2.66-3.1 4.78-5.75 5.78h-.17M12 3.59c-4.97-.13-9.1 3.8-9.23 8.77a9.007 9.007 0 0 0 5.55 8.54l1.89-4.9c-1.83-1-2.52-3.28-1.53-5.11a3.784 3.784 0 0 1 5.11-1.53 3.775 3.775 0 0 1 0 6.64l1.89 4.93a9.113 9.113 0 0 0 4.76-5c1.84-4.62-.4-9.85-5.02-11.7A9.107 9.107 0 0 0 12 3.59Z"/></svg></span></td>
-<td style="text-align: left;">FLOSS Research</td>
-<td style="text-align: left;">Delivered a long presentation on a recent and relevant topic related to free and open-source software.</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: left;">04/12</td>
-</tr>
-<tr>
-<td style="text-align: right;">11</td>
-<td style="text-align: left;"><span class="twemoji skill-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6V5a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v1h-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v1H3v14h10.09a5.47 5.47 0 0 1-.09-1 6 6 0 0 1 8-5.66V6m-1 9v3h3v2h-3v3h-2v-3h-3v-2h3v-3Z"/></svg></span></td>
-<td style="text-align: left;">Better code</td>
-<td style="text-align: left;">Addressed linting problems in a poorly written project</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: left;">15/09</td>
-</tr>
-</tbody>
-</table>
+    footer img {
+        vertical-align: middle;
+    }
+</style>
+
+<h1 id="desenvolvimento-aberto">Desenvolvimento Aberto</h1>
+<p><img alt="100%" src="../capa.svg" /></p>
+<h5 id="testes-automatizados">Testes automatizados</h5>
+<h6 id="igor-dos-santos-montagner-igorsm1insperedubr">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
+<hr />
+<h1 id="projeto-profissional">Projeto profissional</h1>
+<ul>
+<li>Qualidade de código<ul>
+<li>Linting - formatação e erros comuns</li>
+</ul>
+</li>
+<li>Documentação<ul>
+<li>Usuário</li>
+<li>Desenvolvedor</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="projeto-profissional_1">Projeto profissional</h1>
+<ul>
+<li>Qualidade de código<ul>
+<li>Linting - formatação e erros comuns</li>
+<li><strong>O código funciona?</strong></li>
+</ul>
+</li>
+<li>Documentação<ul>
+<li>Usuário</li>
+<li>Desenvolvedor</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="meu-programa-funciona">Meu programa funciona?</h1>
+<ul>
+<li>Sob quais condições?</li>
+<li>Em quais plataformas?</li>
+<li>Quais operações são suportadas? </li>
+<li>Consigo conferir o resultado de uma execução? Se sim, existe um valor de referência?</li>
+</ul>
+<hr />
+<h1 id="testes-automatizados_1">Testes automatizados</h1>
+<p><strong>Ideia</strong>: escrever um programa que verifica se um outro programa responde como esperado</p>
+<ul>
+<li>Definir situações a serem testadas ...</li>
+<li>e o resultado esperado em cada situação</li>
+</ul>
+<hr />
+<h1 id="testes-automatizados_2">Testes automatizados</h1>
+<p><strong>Não ajudam</strong>:</p>
+<ul>
+<li>a revelar novos bugs</li>
+<li>a garantir que um software é livre de bugs</li>
+</ul>
+<p><strong>Ajudam</strong></p>
+<ul>
+<li>a evitar que bugs descobertos voltem</li>
+<li>a evitar que mudanças não intencionais quebrem código que estava funcionando.</li>
+<li>a documentar em quais situações o software funciona.</li>
+</ul>
+<hr />
+<h1 id="testes-automatizados_3">Testes automatizados</h1>
+<ol>
+<li>Testes de unidade</li>
+<li>Testes de integração</li>
+<li>Testes de interface de usuário</li>
+</ol>
+<hr />
+<h1 id="testes-unitarios">Testes unitários</h1>
+<p><strong>Ideia</strong>: dada uma função, verificar se ela devolve o valor esperado para um certo conjunto de parâmetros. </p>
+<ul>
+<li>Testa as funções de maneira <strong>isolada</strong></li>
+<li><strong>Cobertura</strong>: porcentagem das linhas de código que é executada durante os testes de unidade.</li>
+<li>Serve como documentação da função</li>
+</ul>
+<hr />
+<h1 id="testes-unitarios-pytest">Testes unitários - pytest</h1>
+<p><img alt="width:900px" src="../pytest.png" /></p>
+<hr />
+<h1 id="testes-de-integracao">Testes de integração</h1>
+<p><strong>Ideia</strong>: dados um conjunto de classes com interdependências, verificar se elas funcionam bem <strong>em conjunto</strong>. </p>
+<ul>
+<li>Testa interação entre em objetos</li>
+<li>Possibilidade de criar <em>mocks</em>, que são objetos falsos feitos para simular a interação entre vários objetos. </li>
+</ul>
+<hr />
+<h1 id="testes-de-interface-de-usuario">Testes de interface de usuário</h1>
+<p><strong>Ideia</strong>: simula ações do usuário (cliques, entrada de dados, etc) e confere se a saída esperada é mostrada na tela</p>
+<ul>
+<li>Menos específico possível </li>
+<li>Mais fiel ao uso real de um usuário</li>
+</ul>
+<hr />
+<h1 id="testes-de-interface-de-usuario_1">Testes de interface de usuário</h1>
+<h2 id="selenium">Selenium</h2>
+<p>Permite fazer scripts que interagem com uma página web, realizando entrada de dados, rolagem de tela e cliques. Cada <code>assert</code> pode ser feito com o conteúdo de um objeto da página. </p>
+<hr />
+<h1 id="o-que-eu-preciso-testar">O quê eu preciso testar?</h1>
+<h2 id="_1"></h2>
+<hr />
+<h1 id="o-que-eu-preciso-testar_1">O quê eu preciso testar?</h1>
+<h2 id="ninguem-sabe">Ninguém sabe....</h2>
+<hr />
+<h1 id="atividade-pratica-testado-e-aprovado">Atividade prática: Testado e aprovado</h1>
+<p><img alt="width:256px" src="https://fonts.gstatic.com/s/i/materialicons/sentiment_very_satisfied/v4/24px.svg?download=true" /></p>
+<p><strong>Objetivo</strong>: Primeira experiência com testes automatizado de código.</p>
+<blockquote>
+<p>"metadata": {"url": "acceppted PR", "group": ["igual", "6"]}</p>
+</blockquote>
 
 
 
@@ -674,13 +734,13 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
-          <script src="../../js/markdown-enhancer.js"></script>
+          <script src="../../../js/markdown-enhancer.js"></script>
         
       
     

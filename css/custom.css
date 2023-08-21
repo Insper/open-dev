@@ -17,3 +17,14 @@ img.event-picture {
     width: 40px !important;
     height: 40px !important;
 }
+
+.md-typeset span.achicon {
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+
+.md-typeset span.achicon svg {
+    width: 100%;
+    height: 100%;
+}

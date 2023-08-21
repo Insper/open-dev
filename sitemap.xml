@@ -246,6 +246,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://insper.github.io/open-dev/lessons/08-automated-testing/</loc>
+         <lastmod>2023-08-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://insper.github.io/open-dev/lessons/08-automated-testing/slides/</loc>
+         <lastmod>2023-08-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://insper.github.io/open-dev/plugins/notification/</loc>
          <lastmod>2023-08-21</lastmod>
          <changefreq>daily</changefreq>
