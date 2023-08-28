@@ -43,7 +43,7 @@
         "type": "Tutorial",
         "mandatory": "D",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2023-09-06"
+        "date_limit": "2023-09-01"
     },
     {
         "id": 5,
@@ -105,6 +105,20 @@
         "metadata_requirements": ["group|List[str]", "filename|str"],
         "date_limit": "2023-12-04"
     },
+    {
+        "id": 11,
+        "name": "Better code",
+        "descr": "Addressed linting problems in a poorly written project",
+        "xp": 5,
+        "icon": "toy-brick-plus",
+        "unique": true,
+        "type": "Tutorial",
+        "mandatory": "D",
+        "metadata_requirements": ["group|List[str]", "url|str"],
+        "date_limit": "2023-09-15"
+    },
+
+
     {
         "id": 21,
         "name": "Code Contribution",
