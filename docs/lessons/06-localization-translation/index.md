@@ -7,6 +7,10 @@ Na parte expositiva da aula tivemos uma introdução aos problemas de Internacio
 
 Em ambos exemplos vamos trabalhar com o módulo *Babel*, que é feito para facilitar a tradução e localização de aplicações feitas em Python. Outras linguagens de programação possuem bibliotecas similares que seguem a mesma sequência de comandos e usam os mesmos tipos de arquivos. 
 
+<ah-terminal>
+$ pip install Babel
+</ah-terminal>
+
 Sistemas POSIX suportam a determinação do *locale* utilizado por meio da variável de ambiente *LANGUAGE*, que pode ser modificada para cada execução de um programa. O formato padrão usado é `<lingua>_<pais>.<codificacao>`. Para português do Brasil usando codificação UTF8 usamos o locale `pt_BR.utf8`. Rodando o seguinte comando as mensagens de ajuda do `ls` devem aparecer em inglês.
 
 <ah-terminal>
