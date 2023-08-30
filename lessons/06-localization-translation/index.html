@@ -684,6 +684,9 @@
 <p><ah-external-content src="slides.html" /></p>
 <p>Na parte expositiva da aula tivemos uma introdução aos problemas de Internacionalização (i18n) e Localização (L10N). Neste roteiro iremos praticar o uso destas técnicas em uma aplicação linha de comando de exemplo simples. </p>
 <p>Em ambos exemplos vamos trabalhar com o módulo <em>Babel</em>, que é feito para facilitar a tradução e localização de aplicações feitas em Python. Outras linguagens de programação possuem bibliotecas similares que seguem a mesma sequência de comandos e usam os mesmos tipos de arquivos. </p>
+<p><ah-terminal>
+$ pip install Babel
+</ah-terminal></p>
 <p>Sistemas POSIX suportam a determinação do <em>locale</em> utilizado por meio da variável de ambiente <em>LANGUAGE</em>, que pode ser modificada para cada execução de um programa. O formato padrão usado é <code>&lt;lingua&gt;_&lt;pais&gt;.&lt;codificacao&gt;</code>. Para português do Brasil usando codificação UTF8 usamos o locale <code>pt_BR.utf8</code>. Rodando o seguinte comando as mensagens de ajuda do <code>ls</code> devem aparecer em inglês.</p>
 <p><ah-terminal>
 $ LANGUAGE=en_US.utf8 ls --help
