@@ -61,6 +61,8 @@ class Student:
 
             if 'group' in metadata:
                 for login in metadata['group']:
+                    if login == self.login:
+                        continue
                     try:
                         all_students[login]._add_achievement(Achievement(skill_id, metadata, self))
                     except KeyError:
