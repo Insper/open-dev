@@ -1,4 +1,11 @@
-# Desenvolvimento Aberto 2022/2
+# Desenvolvimento Aberto 2023/2
+
+## Editando os achievemnts:
+    git checkout -b issue-skill
+    python3 dev-aberto.py edit-achievements login
+
+## Verificando a nota atual:
+    python3 dev-aberto.py compute-grade login
 
 ![License CC-BY-NC-SA 4.0](docs/aulas/cc-by-nc-sa-small.png)
 
