@@ -117,7 +117,18 @@
         "metadata_requirements": ["group|List[str]", "url|str"],
         "date_limit": "2023-09-15"
     },
-
+    {
+        "id": 12,
+        "name": "Release created",
+        "descr": "Created a release and published a binary package for users",
+        "xp": 5,
+        "icon": "package-up",
+        "unique": true,
+        "type": "Tutorial",
+        "mandatory": "D",
+        "metadata_requirements": ["group|List[str]", "url|str"],
+        "date_limit": "2023-09-25"
+    },
 
     {
         "id": 21,
