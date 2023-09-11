@@ -51,10 +51,7 @@ def new_user():
 
 @dev_aberto_cli.command()
 @click.argument('student_login')
-@click.option('-e', '--def_editor', default='nvim', 
-              type=click.Choice(['nvim', 'nano'], case_sensitive=False),
-              help='Editor de texto padrão')
-def edit_achievements(student_login, def_editor):
+def edit_achievements(student_login):
     key = load_key(f'students/{student_login}.key')
     json_achievements = load_encrypted(f'students/{student_login}-achievements', key)
 
@@ -64,7 +61,7 @@ def edit_achievements(student_login, def_editor):
     if 'win32' in sys.platform:
         editor = os.getenv('EDITOR', default='notepad.exe')
     else:
-        editor = os.getenv('EDITOR', default=def_editor)
+        editor = os.getenv('EDITOR', default='nvim')
 
     while True:
         os.system(f'{editor} students/{student_login}.temp')
