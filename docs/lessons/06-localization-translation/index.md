@@ -87,7 +87,10 @@ No arquivo principal de nossa aplicação podemos "instalar" o framework de trad
 
 ```python
 import gettext
-gettext.install('cli', localedir='locale') 
+gettext.bindtextdomain('cli', 'locale')
+gettext.textdomain('cli')
+_ = gettext.gettext
+
 # cli é o nome do arquivo em que guardamos nossas traduções
 # localedir é o caminho onde estão armazenadas as traduções. Pode ser um caminho relativo. 
 ```
