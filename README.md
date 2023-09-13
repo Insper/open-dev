@@ -1,4 +1,4 @@
-# Desenvolvimento Aberto 2023/2
+# Desenvolvimento Aberto 2022/2
 
 ![License CC-BY-NC-SA 4.0](docs/aulas/cc-by-nc-sa-small.png)
 
