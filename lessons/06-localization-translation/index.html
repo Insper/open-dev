@@ -17,7 +17,7 @@
         <link rel="next" href="../07-code-quality/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.1.21">
     
     
       
@@ -762,7 +762,10 @@ Hello Igor
 </ol>
 <p>No arquivo principal de nossa aplicação podemos "instalar" o framework de tradução e marcar todas nossas strings a serem traduzidas com a função <code>_()</code>. A instalação é feita pelo seguinte trecho de código.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">gettext</span>
-<span class="n">gettext</span><span class="o">.</span><span class="n">install</span><span class="p">(</span><span class="s1">&#39;cli&#39;</span><span class="p">,</span> <span class="n">localedir</span><span class="o">=</span><span class="s1">&#39;locale&#39;</span><span class="p">)</span> 
+<span class="n">gettext</span><span class="o">.</span><span class="n">bindtextdomain</span><span class="p">(</span><span class="s1">&#39;cli&#39;</span><span class="p">,</span> <span class="s1">&#39;locale&#39;</span><span class="p">)</span>
+<span class="n">gettext</span><span class="o">.</span><span class="n">textdomain</span><span class="p">(</span><span class="s1">&#39;cli&#39;</span><span class="p">)</span>
+<span class="n">_</span> <span class="o">=</span> <span class="n">gettext</span><span class="o">.</span><span class="n">gettext</span>
+
 <span class="c1"># cli é o nome do arquivo em que guardamos nossas traduções</span>
 <span class="c1"># localedir é o caminho onde estão armazenadas as traduções. Pode ser um caminho relativo. </span>
 </code></pre></div>
