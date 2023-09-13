@@ -1,12 +1,5 @@
 # Desenvolvimento Aberto 2023/2
 
-## Editando os achievemnts:
-    git checkout -b issue-skill
-    python3 dev-aberto.py edit-achievements login
-
-## Verificando a nota atual:
-    python3 dev-aberto.py compute-grade login
-
 ![License CC-BY-NC-SA 4.0](docs/aulas/cc-by-nc-sa-small.png)
 
 Bem vindo ao repositório de Desenvolvimento Aberto! Ele será nosso principal ponto de interação neste semestre. Todas as entregas serão feitas neste repositório, assim como estarão disponibilizados aqui todos os materiais da disciplina. 
