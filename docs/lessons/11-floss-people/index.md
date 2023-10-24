@@ -1,4 +1,4 @@
-# People and Companies from FLOSS
+# 11 - People and Companies from FLOSS
 
 Free and Open Source Software history is full of personalities that have contributed to shape the world we live in. In this activity pairs of students select a company or person with a strong history in FOSS and detail their contributions in a 30 minutes presentation followed by a 10 minutes guided discussion.
 
