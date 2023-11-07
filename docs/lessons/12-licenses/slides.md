@@ -25,17 +25,17 @@ Desenvolvimento Aberto
 
 ##### Licenças de Software
 
-###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) ) 
+###### 2023/2: Igor Montagner ( igorsm1@insper.edu.br) )
 
 ---
 Até agora
 =========
 
-* Ferramentas de colaboração
-* Modificações de código
-* Tradução de UI e documentação
-* Distribuiçao de software
-* Teste de software
+- Ferramentas de colaboração
+- Modificações de código
+- Tradução de UI e documentação
+- Distribuiçao de software
+- Teste de software
 
  ### Conteúdo técnico: ferramentas, fluxos de trabalho, etc
 
@@ -47,9 +47,9 @@ Até agora
 ---
 # Licenças de software
 
-* Governam a **distribuição** de um software
-* Cessão de direitos do autor para outras pessoas
-* Listam quais permissões um usuário (não) tem
+- Governam a **distribuição** de um software
+- Cessão de direitos do autor para outras pessoas
+- Listam quais permissões um usuário (não) tem
 
 ----
 
@@ -62,9 +62,9 @@ Até agora
 
 Escrever software é considerado um *trabalho intelectual*, estando então sujeito às leis de direitos autorais.
 
-* Essas leis são específicas de cada país
-* Autoria *vs* exploração econômica
-* Engloba tanto código fonte como binários
+- Essas leis são específicas de cada país
+- Autoria *vs* exploração econômica
+- Engloba tanto código fonte como binários
 
 ---
 # Direito autoral brasileiro
@@ -130,16 +130,16 @@ De quem é o código nos seguintes cenários?
 
 Nenhum dos casos acima tem respostas fixas. Tudo depende de um monte de fatores jurídicos e do quê cada um assinou. Alguns guias interessantes:
 
-* [Association of Software Professionals](https://asp-software.org/www/misv_resources/business-articles/who-owns-the-code/)
-* [Start-se](https://www.startse.com/noticia/mercado/17252/cinco-cuidados-na-contratacao-de-desenvolvimento-de-software)
-* [Legal Nature - EULA](https://help.legalnature.com/articles/the-basics-of-software-license-agreements)
+- [Association of Software Professionals](https://asp-software.org/www/misv_resources/business-articles/who-owns-the-code/)
+- [Start-se](https://www.startse.com/noticia/mercado/17252/cinco-cuidados-na-contratacao-de-desenvolvimento-de-software)
+- [Legal Nature - EULA](https://help.legalnature.com/articles/the-basics-of-software-license-agreements)
 
 
 ----
 # Contexto 1: Propriedade intelectual e *work-for-hire* 	
 
-* Contexto brasilero: "Pela nossa lei de software, a não ser que expressamente dito o contrário, aquele que contrata o desenvolvimento é titular original do software resultante" [1]
-* Contexto americano: *work-for-hire* determina que software feito sob encomenda pertence a quem contratou o serviço [2]
+- Contexto brasilero: "Pela nossa lei de software, a não ser que expressamente dito o contrário, aquele que contrata o desenvolvimento é titular original do software resultante" [1]
+- Contexto americano: *work-for-hire* determina que software feito sob encomenda pertence a quem contratou o serviço [2]
 
 
 
@@ -151,9 +151,9 @@ Fontes [1](https://www.startse.com/noticia/mercado/17252/cinco-cuidados-na-contr
 
 **Contributor License Agreement** é um documento de cessão de copyright (direitos de exploração comercial). 
 
-* Dá ao projeto uma licença não exclusiva (normalmente) e irrevogável para o projeto explorar sua contribuição
-* Mantém autoria
-* Isenta o projeto de responsabilidades sobre suas contribuições
+- Dá ao projeto uma licença não exclusiva (normalmente) e irrevogável para o projeto explorar sua contribuição
+- Mantém autoria
+- Isenta o projeto de responsabilidades sobre suas contribuições
 
 ---
 # Contexto 3: comercialização de software
@@ -176,20 +176,20 @@ E por algumas empresas... [Fonte](https://www.makeuseof.com/tag/10-ridiculous-eu
 
 Restrições típicas encontradas em EULAs:
 
-* Software é licenciado, não vendido;
-* É proibido engenharia reversa
-* Não pode modificar ou explorar limitações / vulnerabilidades
-* Isenta responsabilidades pelo (mau) uso do software
+- Software é licenciado, não vendido;
+- É proibido engenharia reversa
+- Não pode modificar ou explorar limitações / vulnerabilidades
+- Isenta responsabilidades pelo (mau) uso do software
 
 ---
 # EULA (serviços)
 
 Informações típicas encontradas em EULAs de serviços:
 
-* Restrições de idade;
-* Uso dos dados coletados:
-* Término unilateral do serviço
-* Garantias de disponibilidade e responsabilidade
+- Restrições de idade;
+- Uso dos dados coletados:
+- Término unilateral do serviço
+- Garantias de disponibilidade e responsabilidade
 
 [Legal Nature - EULA](https://help.legalnature.com/articles/the-basics-of-software-license-agreements)
 
@@ -205,55 +205,25 @@ Informações típicas encontradas em EULAs de serviços:
 
 # Um pouco de história
 
----
-# Um pouco de história
-
-![width:600px](stallman.JPG)
-
-Richard Stallman fez um interpretador Lisp (MIT ~ 1985)
-
----
-# Um pouco de história
-
-![width:200px](lisp-machine.JPG)
-
-* Uma empresa chamada *Symbolics* licenciou o LISP do MIT para rodar em máquinas como a acima
-
----
-# Um pouco de história
-
-* Uma empresa chamada *Symbolics* licenciou o LISP do MIT para rodar em máquinas como a acima
-* Fez modificações no software
-* Deu um jeito de não devolvê-las para o MIT....
-* E eliminou a competição...
-
----
-# Um pouco de história
-
-* Stallman ficou `#$@#$@#$@`
-* e criou a primeira licença de software *livre*: *Emacs General Public License*
-
-### Principal característica:
-
-1. Toda cópia do programa deverá estar acompanhada do código fonte;
-1. Se uma modificação do software for distribuída, ela deverá estar sujeita aos mesmos termos do software original;
-
 --- 
+
 # Um pouco de história - 1985
 
 ![width:400px](fsf.svg)![width:100px](gnu.png)
 
-* [GNU Manifesto](https://www.gnu.org/gnu/manifesto.html): descrevia um esforço em criar um sistema completamente livre cujo destino estivesse nas mãos dos usuários
-* GNU/Hurd: todas as ferramentas de linha de comando das distribuições modernas vieram desse projeto
+- [GNU Manifesto](https://www.gnu.org/gnu/manifesto.html): descrevia um esforço em criar um sistema completamente livre cujo destino estivesse nas mãos dos usuários
+- GNU/Hurd: todas as ferramentas de linha de comando das distribuições modernas vieram desse projeto
+- Desenvolvimento e distribuição centralizada
 
 --- 
 # Um pouco de história - 1990
 
 ![width:400px](fsf.svg)![width:200px](gnu-linux.jpg)
 
-* Linus Torvalds tinha um kernel **experimental** "pronto".
-* Liberava uma versão nova toda semana;
-* Recebia contribuições de outros interessados.
+- Linus Torvalds tinha um kernel **experimental** "pronto"
+- Liberava uma versão nova toda semana
+- Recebia contribuições de outros interessados
+- Desenvolvimento e distribuição participativos
 
 ---
 # Um pouco de história
@@ -296,7 +266,11 @@ Chamadas também de *recíprocas*.
 ![width:200px](capa.png)
 
 
-**Copyleft**: Símbolo é o contrário do copyright, cujo objetivo seria restringir os usuários
+- **Copyleft**: Símbolo é o contrário do copyright, cujo objetivo seria restringir os usuários
+- muitos apoiadores também tem uma postura anti-comercial
+- obriga a contribuição de volta para a comunidade
+- procura empoderar TODOS os envolvidos na comunidade
+- Principal figura: Richard Stallman
 
 
 ---
@@ -305,12 +279,12 @@ Chamadas também de *recíprocas*.
 
 ![width:200px](https://opensource.org/files/osi_keyhole_300X300_90ppi_0.png)
 
-* Fundada para difundir um discurso menos anti-comercial e ideológico
-* Também difunde benefícios "pragmáticos" do uso de software "de código aberto"
-* *Free* causa confusão em inglês
+- Fundada para difundir um discurso menos anti-comercial e ideológico
+- Também difunde benefícios "pragmáticos" do uso de software "de código aberto"
+- *Free* causa confusão em inglês
 	- Grátis (*free as in beer*) 
 	- Livre (*free as in freedom*)
-* Fundada por Eric Raymond e Bruce Perens
+- Fundada por Eric Raymond e Bruce Perens
 
 ----
 
@@ -318,28 +292,20 @@ Chamadas também de *recíprocas*.
 
 Mais associadas a [Open Source Iniciative](http://opensource.org), são consideradas menos "ideológicas".
 
-* Muitas vezes chamadas de *permissivas*;
-* Normalmente não garatem a liberdade 3;
-* Podem fazer outras pequenas exigências ou restrições
+- Muitas vezes chamadas de *permissivas*;
+- Normalmente não garatem a liberdade 3;
+- Podem fazer outras pequenas exigências ou restrições
 
 Exemplos: MIT, BSD
 
-* Permitem a distribuição de software com partes proprietárias
-* Permitem a venda e completo *rebranding* do software sem nenhuma contribuição para o autor original.
+- Permitem a distribuição de software com partes proprietárias
+- Permitem a venda e completo *rebranding* do software sem nenhuma contribuição para o autor original.
 
 ---
 
 # Licenças: qual usar? 
 
 https://choosealicense.com/licenses/
-
-
-# Desafio de tradução
-
-### Skill "Tradução aceita!" *(5XP)*: Ao menos 40 string traduzidas
-
-<!-- ### Extra: "Sprint de tradução Elementary" *(15XP)*
-![width:300px](shoe-snicker.svg) --> 
 
 ----
 
@@ -351,4 +317,4 @@ Desenvolvimento Aberto
 ##### Licenças de Software
 
 
-###### Versão 2022/2: Fabrício Barth ( [fabriciojb@insper.edu.br](mailto:fabriciojb@insper.edu.br) ) 
+###### 2023/2: Igor Montagner ( igorsm1@insper.edu.br) )
