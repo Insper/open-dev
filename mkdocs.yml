@@ -27,10 +27,8 @@ nav:
     - 'lessons/08-automated-testing/index.md'
     - 'lessons/09-releases/index.md'
     - 'lessons/10-first-contribution/index.md'
-      # - 'aulas/09-licencas/index.md'
-      # - 'aulas/09-cultura-livre/index.md'
-      # - 'aulas/10-minha-primeira-contribuicao/index.md'
-#    - 'aulas/11-contribuicoes-externas/index.md'
+    - lessons/11-floss-people/index.md
+    - lessons/12-licenses/index.md
   - 'Impact': 
     - '2023/2': 'impact.md'
     - '2022/2': 'impact-2022.md'
