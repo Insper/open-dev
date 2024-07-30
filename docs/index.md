@@ -1,6 +1,6 @@
-# Open Development 2023/2
+# Open Development 2024/2
 
-Welcome to the Open Development page for 2023/2. On this site, you will find all the course lessons and syllabus. The learning objectives covered are:
+Welcome to the Open Development page for 2024/2. On this site, you will find all the course lessons and syllabus. The learning objectives covered are:
 
 1. The student is capable of understanding a software project and fixing a bug or implementing an improvement.
 2. The student is capable of making modifications that meet the technical and non-technical requirements of a software project.

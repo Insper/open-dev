@@ -15,8 +15,8 @@ Biweekly reports will be sent with a summary of what has been delivered and whic
 
 ## Schedule
 
-* MON 07:30 - 09:30 
-* WED 07:30 - 09:30 
+* MON 13:30 - 15:30 
+* WED 13:30 - 15:30 
 * **Office Hours**: on demand
 
 ## Lesson Plan
