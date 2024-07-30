@@ -1,3 +1,4 @@
 |                                                                                                                 |                |                                                  |
 |:----------------------------------------------------------------------------------------------------------------|:---------------|:-------------------------------------------------|
+| ![Fabrício Barth](https://avatars.githubusercontent.com/u/361008?v=4){: style="max-width:64px; valign="center"} | Fabrício Barth | [![](css/github.png)](http://github.com/fbarth)  |
 | ![Igor Montagner](https://avatars.githubusercontent.com/u/221446?v=4){: style="max-width:64px; valign="center"} | Igor Montagner | [![](css/github.png)](http://github.com/igordsm) |
