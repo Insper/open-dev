@@ -1,0 +1,800 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://insper.github.io/open-dev/lessons/01-distributed-workflow/slides_fb/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.30">
+    
+    
+      
+        <title>Distributed coding workflow - Open Source Development 2024/2</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3cba04c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/custom.css">
+    
+      <link rel="stylesheet" href="../../../css/people.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#open-source-development" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Open Source Development 2024/2" class="md-header__button md-logo" aria-label="Open Source Development 2024/2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Open Source Development 2024/2
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Distributed coding workflow
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/insper/open-dev/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Open Dev
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Open Source Development 2024/2" class="md-nav__button md-logo" aria-label="Open Source Development 2024/2" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Open Source Development 2024/2
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/insper/open-dev/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Open Dev
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../syllabus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Syllabus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../assessment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Assessment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../students/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Students
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lessons
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 - Distributed Development Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Impact
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Impact
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../impact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2023/2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../impact-2022/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022/2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../impact-2021/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2021/2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../impact-2020/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2020/1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../impact-2019/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2019/2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<style>
+    footer {
+        position: fixed;
+        bottom: 10px;
+        left: 1050px;
+        width: 400px;
+    }
+
+    footer img {
+        vertical-align: middle;
+    }
+</style>
+
+<h1 id="open-source-development">Open Source Development</h1>
+<h1 id="_1"><img alt="width:500px" src="../capa.svg" /></h1>
+<h5 id="course-overview-distributed-coding-workflow">Course overview + Distributed coding workflow</h5>
+<h6 id="versao-20242-fabricio-barth-fabriciojbinsperedubr">Versão 2024/2: Fabricio Barth ( <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#97;&#98;&#114;&#105;&#99;&#105;&#111;&#106;&#98;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;">&#102;&#97;&#98;&#114;&#105;&#99;&#105;&#111;&#106;&#98;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;</a>) )</h6>
+<hr />
+<h1 id="burocracy">Burocracy</h1>
+<h3 id="meetings">Meetings</h3>
+<ul>
+<li>MON 1:30 PM - 3:30 PM</li>
+<li>WED 1:30 PM - 3:30 PM</li>
+</ul>
+<h3 id="office-hours">Office Hours</h3>
+<ul>
+<li>On demand</li>
+</ul>
+<h3 id="assessment">Assessment</h3>
+<ul>
+<li>Project based course with both individual and group work</li>
+</ul>
+<hr />
+<h1 id="learning-objectives">Learning Objectives</h1>
+<p>By the end of the course, the student will be able to:</p>
+<ul>
+<li>Analyze an unfamiliar medium/large codebase and modify it to make improvements and fix software issues.</li>
+<li>Interact with a remote team of developers to deliver code that meets the quality and code style standards of a project.</li>
+<li>Understand the differences in open-source software licenses and how they impact the distribution and reuse of a codebase.</li>
+</ul>
+<hr />
+<h1 id="objectives-summary-version">Objectives (summary version)</h1>
+<p>By the end of the course, the student will be able to:</p>
+<ul>
+<li>Download, understand, and <strong>modify</strong> the code of a project.</li>
+<li>Successfully have their modifications <strong>accepted by the original project</strong>.</li>
+<li>Understand aspects related to the <strong>distribution</strong> of software.<ul>
+<li>Licenses</li>
+<li>Bug Tracker, Version Control, Governance, etc.</li>
+<li>Documentation / Internationalization</li>
+<li>User communities</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="course-syllabus">Course Syllabus</h1>
+<ol>
+<li>Software development and commercialization models.</li>
+<li>Software licenses and their impact on reuse and distribution.</li>
+<li>Tools for collaborative software development (open source or proprietary).</li>
+<li>Software and code documentation.</li>
+<li>Software translation and internationalization.</li>
+<li>Source code compilation and distribution systems.</li>
+<li>Human and community aspects in software development.</li>
+<li>Case studies of successful projects.</li>
+</ol>
+<hr />
+<h1 id="textbook">Textbook</h1>
+<p><img alt="width:300px" src="https://producingoss.com/images/producingoss-cover-small.gif" /></p>
+<p>Available online at <a href="https://producingoss.com/">https://producingoss.com</a></p>
+<hr />
+<h1 id="course-materials">Course Materials</h1>
+<p>GitHub: <a href="https://github.com/insper/open-dev">https://github.com/insper/open-dev</a></p>
+<p>Website: <a href="https://insper.github.io/open-dev/">https://insper.github.io/open-dev/</a></p>
+<p><img alt="center" src="../qr-pagina.png" /></p>
+<p>Blackboard will be used for announcements only. All content will be available on GitHub.</p>
+<hr />
+<h1 id="justification-for-the-course">Justification for the Course</h1>
+<p>In previous courses, we worked on:</p>
+<ul>
+<li>Creating a new project.</li>
+<li>Projects that typically end after the course.</li>
+<li>Projects that are never used by anyone.</li>
+</ul>
+<h1 id="_2"></h1>
+<p>In the industry, we usually work on existing projects:</p>
+<ul>
+<li>Fixing issues.</li>
+<li>Making improvements.</li>
+<li>Projects used by multiple users.</li>
+</ul>
+<hr />
+<h1 id="why-are-you-here">Why are you here?</h1>
+<p><a href="https://forms.gle/oMEiX5JMDEiuN5BS8">https://forms.gle/oMEiX5JMDEiuN5BS8</a></p>
+<hr />
+<h1 id="achievements-in-this-course-so-far">Achievements in this Course So Far</h1>
+<hr />
+<h1 id="vitoria-20182">Vitória - 2018/2</h1>
+<h2 id="spyder">Spyder</h2>
+<ul>
+<li>Accepted: <a href="https://github.com/spyder-ide/spyder/pull/7698">[1]</a></li>
+</ul>
+<h2 id="pandas">Pandas</h2>
+<ul>
+<li>Accepted: <a href="https://github.com/pandas-dev/pandas/pull/22737">[1]</a></li>
+</ul>
+<p><img alt="bg right" src="../vitoria.jpg" /></p>
+<hr />
+<h1 id="paulo-20182">Paulo - 2018/2</h1>
+<h2 id="cataclysm-dda">Cataclysm: DDA</h2>
+<p><img alt="bg left" src="../paulo.jpg" /></p>
+<p><img alt="width:500px" src="https://github.com/CleverRaven/Cataclysm-DDA/raw/master/data/screenshots/ultica-showcase-sep-2021.png" /></p>
+<ul>
+<li>Accepted: <a href="https://github.com/CleverRaven/Cataclysm-DDA/pull/25764">[1]</a></li>
+</ul>
+<hr />
+<h1 id="class-20192">Class - 2019/2</h1>
+<h2 id="15-students">15 students</h2>
+<h2 id="19-different-projects-14-accepted-prs">19 different projects, 14 accepted PRs</h2>
+<h2 id="pandas-6-accepted-contributions">Pandas - 6 accepted contributions</h2>
+<hr />
+<p><img alt="" src="../pandas2.png" /></p>
+<hr />
+<h1 id="class-20201">Class 2020/1</h1>
+<h2 id="16-students">16 students</h2>
+<h2 id="15-different-projects-17-accepted-prs">15 different projects, 17 accepted PRs</h2>
+<h2 id="pandas-matplotlib-bokeh-pygame">Pandas, Matplotlib, Bokeh, Pygame</h2>
+<hr />
+<p><img alt="" src="../matplotlib.png" /></p>
+<hr />
+<h1 id="course-introduction">Course Introduction</h1>
+<hr />
+<h1 id="course-introduction_1">Course Introduction</h1>
+<p><strong>Proposal</strong>: The course will be <em>gamified</em>.</p>
+<ul>
+<li>Each student will create an <em>avatar</em> in the course.</li>
+<li>Activities for submission earn XP.</li>
+<li>Each activity is represented by a skill with a funny name.</li>
+<li>All work submissions are done via <em>Pull Request</em> on the course's repository.</li>
+<li><strong>Significant freedom of choice</strong></li>
+</ul>
+<hr />
+<h1 id="course-introduction-skills">Course Introduction (Skills)</h1>
+<ul>
+<li><strong>Tutorial</strong>: Guided preparatory activities in the classroom</li>
+<li><strong>Code</strong>: Code contributions to external projects</li>
+<li><strong>Community</strong>: Non-technical contributions that can benefit users and developers of a project, such as documentation and translations</li>
+<li><strong>Impact</strong>: Significant results achieved by the student's participation in open projects</li>
+</ul>
+<h2 id="full-list-of-skills"><a href="https://insper.github.io/open-dev/assessment/">Full list of skills</a></h2>
+<hr />
+<h1 id="course-introduction-syllabus">Course Introduction (syllabus)</h1>
+<ul>
+<li>August/September: <strong>Tutorial</strong><ul>
+<li>30-60 minutes of lecture/discussions</li>
+<li>Activities focused on specific topics</li>
+</ul>
+</li>
+<li>October/November: Project<ul>
+<li><strong>Autonomy</strong> to define which tasks will be done</li>
+<li>Semi-free choice of projects</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="course-introduction-assessment">Course Introduction (assessment)</h1>
+<ul>
+<li>All submissions are individual.</li>
+<li>Each learning objective is measured by several skills.<ul>
+<li>Some skills are mandatory.</li>
+<li>Repeating a skill can earn more or fewer points than the first time.</li>
+</ul>
+</li>
+<li>Grades are based on the amount of <em>XP</em> obtained.<ul>
+<li>Freedom to decide where to invest time/effort.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="course-introduction-assessment_1">Course Introduction (assessment)</h1>
+<ul>
+<li>Final grade is a combination of XP and acquired skills.</li>
+<li>Bi-weekly reports sent by email.</li>
+<li>Complete conditions on the <a href="https://insper.github.io/open-dev/assessment/">rules and skills page</a>.</li>
+</ul>
+<hr />
+<h1 id="discussion-development-workflow">Discussion: Development Workflow</h1>
+<h2 id="how-does-git-work">How does Git work?</h2>
+<hr />
+<p><img alt="width:800px" src="../pr-model1.jpg" /></p>
+<p>Source: <a href="https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github">https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github</a></p>
+<hr />
+<p><img alt="width:800px" src="../pr-model2.jpg" /></p>
+<p>Source: <a href="https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github">https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github</a></p>
+<hr />
+<h1 id="activity-first-steps">Activity: First Steps</h1>
+<p><img alt="width:300px" src="../account-check.svg" /></p>
+<p><strong>Objective</strong>: Submit your first <em>Pull Request</em> to the course's repository.</p>
+<hr />
+<h1 id="open-source-development_1">Open Source Development</h1>
+<h1 id="_3"><img alt="width:500px" src="../capa.svg" /></h1>
+<h5 id="course-overview-distributed-coding-workflow_1">Course overview + Distributed coding workflow</h5>
+<h6 id="versao-20242-fabricio-barth-fabriciojbinsperedubr_1">Versão 2024/2: Fabricio Barth ( <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#97;&#98;&#114;&#105;&#99;&#105;&#111;&#106;&#98;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;">&#102;&#97;&#98;&#114;&#105;&#99;&#105;&#111;&#106;&#98;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;</a>) )</h6>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="../../../js/markdown-enhancer.js"></script>
+      
+    
+  </body>
+</html>
