@@ -1,5 +1,4 @@
 # Open Source Development
-(README translated by Felipe Catapano)
 
 ![CC-BY-NC-SA 4.0 License](docs/aulas/cc-by-nc-sa-small.png)
 
