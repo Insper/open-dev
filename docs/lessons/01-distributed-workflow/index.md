@@ -1,6 +1,6 @@
 # 01 - Distributed Development Workflow
 
-<ah-external-content src="slides.html" />
+<ah-external-content src="slides_fb.html" />
 
 
 In this guide, we will work on the standard workflow for contributing to projects hosted on GitHub (which also applies to Git projects in general). Before starting, each student should locate the corresponding issue on the course's GitHub repository for creating their user.
