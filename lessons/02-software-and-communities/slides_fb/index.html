@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/open-dev/lessons/04-professional-project/slides/">
+        <link rel="canonical" href="https://insper.github.io/open-dev/lessons/02-software-and-communities/slides_fb/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Documentação de API e linters - Open Source Development 2024/2</title>
+        <title>Fluxo de trabalho distribuído e Comunidades de Software - Open Source Development 2024/2</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#desenvolvimento-aberto" class="md-skip">
+        <a href="#open-source-development" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Documentação de API e linters
+              Fluxo de trabalho distribuído e Comunidades de Software
             
           </span>
         </div>
@@ -353,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../02-software-and-communities/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,38 +541,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#documentacao-de-api-e-linters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentação de API e linters
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Documentação de API e linters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#igor-dos-santos-montagner-igorsm1insperedubr" class="md-nav__link">
-    <span class="md-ellipsis">
-      Igor dos Santos Montagner ( igorsm1@insper.edu.br )
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -602,135 +570,193 @@
     }
 </style>
 
-<h1 id="desenvolvimento-aberto">Desenvolvimento Aberto</h1>
-<p><img alt="100%" src="../capa.svg" /></p>
-<h5 id="documentacao-de-api-e-linters">Documentação de API e linters</h5>
-<h6 id="igor-dos-santos-montagner-igorsm1insperedubr">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
+<h1 id="open-source-development">Open Source Development</h1>
+<h1 id="_1"><img alt="height:350px" src="../capa.png" /></h1>
+<h5 id="software-and-communities">Software and Communities</h5>
+<h6 id="20242-fabricio-barth-fabriciojbinsperedubr">2024/2: Fabricio Barth ( <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#102;&#97;&#98;&#114;&#105;&#99;&#105;&#111;&#106;&#98;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;">&#102;&#97;&#98;&#114;&#105;&#99;&#105;&#111;&#106;&#98;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;</a>) )</h6>
 <hr />
-<h1 id="discussao-o-que-faz-o-projeto">Discussão: o que faz o projeto?</h1>
+<h1 id="github-model-fork-pull-request">Github Model: <em>fork + pull request</em></h1>
+<p><img alt="scale:150%" src="../pr-model1.jpg" /></p>
+<p>Source: <a href="https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github">https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github</a></p>
 <hr />
-<h1 id="servidor-de-desafios">Servidor de desafios</h1>
-<p>Vocês rodaram um MVP do servidor de desafios. Veja abaixo seu estado atual:</p>
-<p><a href="https://github.com/Insper/servidor-de-desafios">https://github.com/Insper/servidor-de-desafios</a></p>
+<h1 id="github-model-fork-pull-request_1">Github Model: <em>fork + pull request</em></h1>
+<p><img alt="center 150%" src="../pr-model2.jpg" /></p>
+<p>Source: <a href="https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github">https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github</a></p>
 <hr />
-<h1 id="servidor-de-desafios_1">Servidor de desafios</h1>
-<p><img alt="" src="../foto-dessoft.png" /></p>
-<hr />
-<h1 id="discussao-como-o-projeto-esta-organizado-tecnologias">Discussão: como o projeto está organizado? (tecnologias)</h1>
-<hr />
-<h1 id="discussao-como-o-projeto-esta-organizado-codigo">Discussão: como o projeto está organizado? (código)</h1>
-<hr />
-<h1 id="discussao-avalie-a-arquitetura-do-projeto">Discussão: avalie a arquitetura do projeto</h1>
-<h2 id="0-a-10">0 a 10</h2>
-<hr />
-<h1 id="discussao-avalie-a-qualidade-de-codigo-do-projeto">Discussão: avalie a qualidade de código do projeto.</h1>
-<h2 id="0-a-10_1">0 a 10</h2>
-<hr />
-<h1 id="discussao-avalie-a-seguranca-do-projeto">Discussão: avalie a segurança do projeto.</h1>
-<h2 id="0-a-10_2">0 a 10</h2>
-<hr />
-<h1 id="discussao-esse-projeto-e-um-projeto-profissional">Discussão: esse projeto é um projeto "profissional"?</h1>
-<h2 id="0-a-10_3">0 a 10</h2>
-<hr />
-<h1 id="discussao-o-que-voce-incluiria-na-documentacao-do-projeto">Discussão: o que você incluiria na documentação do projeto?</h1>
-<hr />
-<h2 id="software-tem-historia-e-depende-de-pessoas-para-evoluir">Software tem história e depende de pessoas para evoluir</h2>
-<hr />
-<h1 id="codigo-vs-software-profissional">Código <em>vs</em> software profissional</h1>
-<p>Os seguintes pontos transformam um código que fiz para mim em algo útil para outras pessoas</p>
+<h1 id="workflow-other-models">Workflow: other models</h1>
 <ol>
-<li>Traduções e internacionalização (datas)</li>
-<li>Documentação de usuário e de desenvolvimento</li>
-<li>Algum processo de qualidade de software<ul>
-<li>testes automatizados</li>
-<li>formatação de código e estrutura de repo</li>
-</ul>
-</li>
-<li>pacotes de instalação</li>
+<li>Send patch via email list (e.g., Linux)</li>
+</ol>
+<!--2. *Code review* tools (e.g., KDE - Phabricator)-->
+<ol>
+<li>Patch is attached to the Bug Tracker (e.g., Haiku, KDE)</li>
+<li>Does not receive external contributions</li>
 </ol>
 <hr />
-<h1 id="hoje">Hoje</h1>
+<h1 id="review-of-last-classs-prs">Review of last class's PRs</h1>
+<h2 id="common-errors">Common Errors</h2>
+<hr />
+<h1 id="error-0-login-achievements-file-has-errors">Error 0: <em>login-achievements</em> file has errors</h1>
+<p><img alt="width:1000px" src="../erro0-data-errada.png" /></p>
+<p><strong>Error</strong>: The date of the commit is incorrect, for example. Then, when we run the command <code>python dev-aberto.py compute-grade &lt;user&gt;</code> the result is not as expected.</p>
+<p><strong>How to fix</strong>: Create a new commit with the correct content.</p>
+<hr />
+<h1 id="error-1-extra-files-in-the-pr">Error 1: Extra files in the PR</h1>
+<p><strong>Error</strong>: Modifying files not related to your proposed changes.</p>
+<h1 id="_2"></h1>
+<p><strong>Ideal</strong>:</p>
+<ol>
+<li>A Pull Request should contain only the files related to the proposed modification.</li>
+<li>Each proposed modification is in a separate Pull Request.</li>
+</ol>
+<hr />
+<p><img alt="width:900px" src="../erro1-arquivos-extras.png" /></p>
+<hr />
+<h1 id="error-1-extra-files-in-the-pr_1">Error 1: Extra files in the PR</h1>
+<p><strong>How to fix</strong>: <code>git rm --cached &lt;file&gt;</code> removes the file from the repository, but keeps it in the working directory.</p>
+<p><strong>How to fix</strong>: <code>git revert &lt;commit_id&gt;</code> creates a commit that undoes the changes made by <code>commit_id</code>.</p>
+<p><img alt="width:800px" src="https://wac-cdn.atlassian.com/dam/jcr:b6fcf82b-5b15-4569-8f4f-a76454f9ca5b/03%20(7).svg?cdnVersion=501" /></p>
+<p><strong>Extra options</strong>:</p>
 <ul>
-<li>Ferramentas de documentação</li>
-<li>Documentação de API usando</li>
-<li>Padrões de formatação de código<ul>
-<li>linters</li>
-<li>PEP8</li>
+<li><code>--no-commit</code>: Only adds the modifications, but does not make the commit. Allows undoing part of a commit.</li>
+</ul>
+<p>Source: <a href="https://www.atlassian.com/git/tutorials/">https://www.atlassian.com/git/tutorials/</a></p>
+<hr />
+<h1 id="error-2-non-descriptive-commit-messages">Error 2: Non-descriptive commit messages</h1>
+<p><img alt="width:1000px" src="../erro3-msg-commit.png" /></p>
+<p><strong>How to fix</strong>: <code>git commit --amend</code> allows modifying the last commit made.</p>
+<hr />
+<h1 id="error-3-pull-request-with-a-poor-description">Error 3: Pull Request with a poor description</h1>
+<p><img alt="width:1000px" src="../erro4-descricao-pr.png" /></p>
+<p><strong>How to fix</strong>: Simply edit it in the Github interface.</p>
+<hr />
+<!--
+
+# Fix at home and request review via Github
+
+* Reminder: If you don't push, nothing is broken
+
+* Reminder II: `git log` shows your current history. I like `git log --oneline`
+---
+
+-->
+
+<h1 id="not-all-students-enrolled-in-the-course-did-the-activity-from-the-last-class">Not all students enrolled in the course did the activity from the last class!</h1>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>dev-aberto.py<span class="w"> </span>list-users
+</code></pre></div>
+<p>Please, do it as soon as possible!</p>
+<hr />
+<h1 id="software-communities">Software Communities</h1>
+<hr />
+<h1 id="discussion">Discussion</h1>
+<h1 id="_3"></h1>
+<h1 id="_4"></h1>
+<p><strong>Question 1</strong>: What are the software you use the most in your daily life?</p>
+<p><strong>Question 2</strong>: Who is the main developer of the project?</p>
+<p><strong>Question 3</strong>: How do you think the project is funded?</p>
+<hr />
+<h1 id="example-linux-kernel">Example: Linux Kernel</h1>
+<p><img alt="width:300px" src="../linuxfoundationlogo.png" /></p>
+<p>Foundation supports the development of the Linux Kernel and the creation of an open-source software ecosystem around it.</p>
+<p>Support:</p>
+<ul>
+<li>Financial</li>
+<li>Intellectual property</li>
+<li>Infrastructure</li>
+<li>Services and training</li>
+</ul>
+<hr />
+<h1 id="example-linux-kernel_1">Example: Linux Kernel</h1>
+<p>Companies that sponsor development:</p>
+<ol>
+<li>Individual (11.95%)</li>
+<li>Intel (10.01%)</li>
+<li>Red Hat (8.90%)</li>
+<li>Unknown (4.09%)</li>
+<li>IBM (3.79%)</li>
+<li>SUSE (3.49%)</li>
+<li>Linaro (2.96%)</li>
+<li>Consultants (2.96%)</li>
+<li>Google (2.79%)</li>
+<li>Samsung (2.28%)</li>
+</ol>
+<p>Source: "2020 Linux Kernel Development Report"</p>
+<hr />
+<h1 id="example-ubuntu">Example: Ubuntu</h1>
+<p><img alt="" src="https://assets.ubuntu.com/v1/5d6da5c4-logo-canonical-aubergine.svg" /></p>
+<p>Private company controls the development of Ubuntu. Obtains resources via:</p>
+<ul>
+<li>Donations</li>
+<li>Development and consulting services</li>
+<li>Training</li>
+</ul>
+<hr />
+<h1 id="example-gitlab">Example: Gitlab</h1>
+<p><img alt="width:300px" src="https://cdn-images-1.medium.com/max/1600/1*FtYgYG_G6rplUmF5fLzuXA.png" /></p>
+<p>Company funded so far by VC (Venture Capital) in search of profit.</p>
+<ul>
+<li>Option of free plans with open-source software</li>
+<li>Option of corporate plans with more features and <strong>support</strong></li>
+<li>On-premises installations</li>
+</ul>
+<hr />
+<h1 id="example-elementary">Example: Elementary</h1>
+<h1 id="_5"></h1>
+<p><img alt="" src="https://elementary.io/images/icons/places/128/distributor-logo.svg" /></p>
+<h1 id="_6"></h1>
+<p>Linux distribution led by a "tiny" company focused on the user experience. Resources are obtained through:</p>
+<ul>
+<li>Individual and corporate sponsorships</li>
+<li>Pay-what-you-want model (app store and operating system)</li>
+<li>Hardware with the pre-installed system</li>
+</ul>
+<hr />
+<p><img alt="center" src="../donations.png" /></p>
+<hr />
+<h1 id="reasons-for-funding-company">Reasons for funding (company)</h1>
+<h1 id="_7"></h1>
+<ul>
+<li>"Acquire" experts in a technology</li>
+<li>Sell support or consulting services</li>
+<li>Marketing</li>
+</ul>
+<!-- - Software license "obliges"
+
+Not everything funded ends up in a "usable" format for others (e.g., Android/Linux, TiVO)
+
+---
+
+*"Tivoization is the practice of designing hardware that incorporates software under the terms of a copyleft software license like the GNU General Public License (GNU GPL), but uses hardware restrictions or digital rights management (DRM) to prevent users from running modified versions of the software on that hardware"* [Wikipedia]
+
+-->
+
+<hr />
+<h1 id="reasons-for-contributing-individual">Reasons for contributing (individual)</h1>
+<ul>
+<li>Professional<ul>
+<li>Reputation / CV</li>
+<li>Business needs</li>
+</ul>
+</li>
+<li>Personal<ul>
+<li>Altruism / Ideology</li>
+<li>Sense of personal fulfillment</li>
+<li>Exercise creativity</li>
+<li>Solve a problem of personal interest</li>
 </ul>
 </li>
 </ul>
 <hr />
-<h1 id="documentacao-de-api">Documentação de API</h1>
-<p><strong>Objetivo</strong>: explicar o funcionamento das funções, classes e módulos de um programa. </p>
+<h1 id="activity-exploring-the-environment-of-a-project">Activity: Exploring the environment of a project</h1>
+<p><img alt="width:256px" src="https://fonts.gstatic.com/s/i/materialicons/monetization_on/v4/24px.svg" /></p>
 <ul>
-<li>Focado em detalhes</li>
-<li>Documenta os argumentos esperados e em quais situações a função funciona </li>
-<li>Tipicamente obtida direto do código</li>
-<li>Não detalha como as funções são usadas em conjunto</li>
+<li>Research how the communities of some projects are organized</li>
+<li>Produce a presentation summarizing your findings</li>
 </ul>
 <hr />
-<h1 id="documentacao-de-api_1">Documentação de API</h1>
-<p><img alt="center" src="../api-doc.svg" /></p>
-<hr />
-<h1 id="documentacao-de-api_2">Documentação de API</h1>
-<p><img alt="2000% center" src="../np-doc-api.png" /></p>
-<p><a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html">ref</a></p>
-<hr />
-<h1 id="ferramentas">Ferramentas</h1>
-<ul>
-<li>Python:<ul>
-<li>pydoc, numpydoc</li>
-</ul>
-</li>
-<li>C/C++<ul>
-<li>Doxygen</li>
-</ul>
-</li>
-<li>Java<ul>
-<li>Javadoc</li>
-</ul>
-</li>
-</ul>
-<p>Em geral podem ser plugadas em alguma ferramenta de documentação de projetos. </p>
-<hr />
-<h1 id="padroes-de-codificacao">Padrões de codificação</h1>
-<p><img alt="width:500px" src="../porco.png" /></p>
-<hr />
-<h1 id="padroes-de-codificacao_1">Padrões de codificação</h1>
-<p><img alt="width:900px" src="../porco-pylint.png" /></p>
-<hr />
-<h1 id="padroes-de-codificacao_2">Padrões de codificação</h1>
-<ul>
-<li>Cada projeto tem o seu</li>
-<li>Algumas linguagens tem um estilo padrão<ul>
-<li>Python - PEP8</li>
-</ul>
-</li>
-<li>Ferramentas ajudam a conferir (forçar) um estilo específico</li>
-</ul>
-<hr />
-<h1 id="ferramentas_1">Ferramentas</h1>
-<ul>
-<li>Python: pylint, black</li>
-<li>C/C++: splint, cppchecker, gcc (opções -Wall, -Wextra), clang-format/-tidy</li>
-<li>Java: flag <code>-Xlint</code></li>
-<li>Javascript: ESlint, TSlint (typescript)</li>
-</ul>
-<h1 id="_1"></h1>
-<p>Ajudam a manter código limpo e legível. Podem ser plugadas no seu editor favorito.</p>
-<h2 id="execucao-obrigatoria-para-muitos-projetos-grandes">Execução obrigatória para muitos projetos grandes</h2>
-<hr />
-<h1 id="atividade-pratica-projeto-profissional">Atividade prática: Projeto profissional</h1>
-<p><img alt="width:256px" src="../star.svg" /></p>
-<p><strong>Objetivo</strong>: Transformar um código perdido em um projeto </p>
-<blockquote>
-<p>"metadata": {"url": "github pages criado", "group": ["ate três", "alunos"]}</p>
-</blockquote>
-<hr />
-<h1 id="desenvolvimento-aberto_1">Desenvolvimento Aberto</h1>
-<p><img alt="100%" src="../capa.svg" /></p>
-<h5 id="documentacao-de-api-testes">Documentação de API + testes</h5>
-<h6 id="igor-dos-santos-montagner-igorsm1insperedubr_1">Igor dos Santos Montagner ( <a href="mailto:igorsm1@insper.edu.br">igorsm1@insper.edu.br</a> )</h6>
+<h1 id="open-source-development_1">Open Source Development</h1>
+<h1 id="_8"><img alt="height:350px" src="../capa.png" /></h1>
+<h5 id="software-and-communities_1">Software and Communities</h5>
 
 
 
