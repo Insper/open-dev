@@ -19,6 +19,10 @@ Biweekly reports will be sent with a summary of what has been delivered and whic
 * WED 13:30 - 15:30 
 * **Office Hours**: on demand
 
+## Student support hours
+
+* WED 10:00 - 11:30
+
 ## Lesson Plan
 
 The following activities are *planned*. The program is subject to changes and adaptations as the course progresses.
