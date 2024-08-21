@@ -6,18 +6,18 @@ Below is the order in which the presentations about software communities will be
 
 Wednesday (08/21):
 
-* [VS code]()
-* [NeoVim]()
-* [Django]()
+* [VS code](../../delivery/VS%20Code.pdf)
+* [NeoVim](../../delivery/neovim.pdf)
+* [Django](../../delivery/django-slides.pdf)
 * [Flask](../../delivery/flask-presentation.pdf)
 * [Sklearn](../../delivery/scikit-learn.pdf)
-* [TensorFlow]()
+* [TensorFlow](../../delivery/TensorFlow.pdf)
 
 Monday (08/26):
 
 * [OpenCV]()
 * [Blender]()
-* [PostgreSQL]()
+* [PostgreSQL](../../delivery/Postgresql.pdf)
 * [Pandas]()
 * TBD
 
