@@ -11,7 +11,7 @@ Wednesday (08/21):
 * [Django](../../delivery/django-slides.pdf)
 * [Flask](../../delivery/flask-presentation.pdf)
 * [Sklearn](../../delivery/scikit-learn.pdf)
-* [TensorFlow]()
+* [TensorFlow](../../delivery/TensorFlow.pdf)
 
 Monday (08/26):
 
