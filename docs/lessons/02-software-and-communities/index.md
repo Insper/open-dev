@@ -1,6 +1,6 @@
 # 02 - Software and Communities 
 
-<ah-external-content src="slides.html" />less02in
+<ah-external-content src="slides_fb.html" />
 
 The activity for this class involves creating a presentation explaining how the communities around the following software projects are organized:
 
@@ -10,6 +10,15 @@ The activity for this class involves creating a presentation explaining how the 
 4. Blender
 5. Kdenlive
 6. NewPipe
+7. Pandas
+8. Sklearn
+9. Keras
+10. Flask 
+11. Elasticsearch
+12. OpenCV
+13. TensorFlow
+14. Kodi
+15. PostgreSQL
 
 Each group of 3 students should choose one of the above projects and research the following points.
 
@@ -31,6 +40,8 @@ Each group of 3 students should choose one of the above projects and research th
     - Who decides how the funds are spent?
 
 Each group must create a 10 minutes presentation for the next meeting that addresses these questions.
+
+**TODO**: Create an issue on the subject repository with the title `Presentation: <project name>`. The issue description should contain the names of the group members.
 
 <!-- 
 As apresentações da versão do curso 2022/2 podem ser acessadas nos links abaixo: 
