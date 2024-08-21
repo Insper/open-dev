@@ -8,7 +8,7 @@ Wednesday (08/21):
 
 * [VS code]()
 * [NeoVim](../../delivery/neovim.pdf)
-* [Django]()
+* [Django](../../delivery/django-slides.pdf)
 * [Flask](../../delivery/flask-presentation.pdf)
 * [Sklearn](../../delivery/scikit-learn.pdf)
 * [TensorFlow]()
