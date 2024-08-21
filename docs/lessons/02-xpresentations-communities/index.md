@@ -6,7 +6,7 @@ Below is the order in which the presentations about software communities will be
 
 Wednesday (08/21):
 
-* [VS code]()
+* [VS code](../../delivery/VS%20Code.pdf)
 * [NeoVim](../../delivery/neovim.pdf)
 * [Django](../../delivery/django-slides.pdf)
 * [Flask](../../delivery/flask-presentation.pdf)
