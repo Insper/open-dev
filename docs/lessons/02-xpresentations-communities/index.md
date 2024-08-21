@@ -17,7 +17,7 @@ Monday (08/26):
 
 * [OpenCV]()
 * [Blender]()
-* [PostgreSQL]()
+* [PostgreSQL](../../delivery/Postgresql.pdf)
 * [Pandas]()
 * TBD
 
