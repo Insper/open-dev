@@ -18,7 +18,7 @@ Monday (08/26):
 * [OpenCV](../../delivery/OpenCV-Pesquisa.pdf)
 * [Blender](../../delivery/Blender.pdf)
 * [PostgreSQL](../../delivery/Postgresql.pdf)
-* [Pandas]()
+* [Pandas](../../delivery/OpenCV-Pandas.pdf)
 
 Each group will have 10 minutes for the presentation and 5 minutes for questions.
 
