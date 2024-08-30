@@ -19,9 +19,11 @@ class Email():
     def enviar(self, email_destino, subject, arquivo_mensagem):
 
         try:
+            print(f'Iniciando conexao com {self.host}:{self.port}')
             s = smtplib.SMTP(host=self.host, port=self.port)
             logging.info(f'Iniciando conexao com {self.host}:{self.port}')
             s.starttls()
+            logging.info(f'Fazendo logging com {self.my_address}')
             s.login(self.my_address, self.password)
             logging.info('Logging feito')
 
@@ -39,6 +41,6 @@ class Email():
             s.send_message(msg)
             logging.info(f'O email para {email_destino} foi enviado.')
             del msg
-        except:
+        except Exception as e:
             print(f'O email para {email_destino} nao foi enviado.')
-            logging.info(f'O email para {email_destino} nao foi enviado.')
+            logging.info(f'O email para {email_destino} nao foi enviado: {str(e)}')
