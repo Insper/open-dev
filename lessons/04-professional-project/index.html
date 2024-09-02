@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://insper.github.io/open-dev/lessons/04-professional-project/">
       
       
+        <link rel="prev" href="../03-software-documentation/">
+      
+      
+        <link rel="next" href="../../impact/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -294,17 +298,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -318,7 +324,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Lessons
@@ -404,6 +410,100 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    04 - Professional Project
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    04 - Professional Project
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#deliverables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deliverables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deliverables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software documentation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project quality
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -641,7 +741,10 @@
 
 
 <h1 id="04-professional-project">04 - Professional Project</h1>
-<p><ah-external-content src="slides.html" /></p>
+<!--
+<ah-external-content src="slides.html" />
+-->
+
 <p>There is a moment in a project's history where it is already useful for the author and other people are starting to get interested in it. Software documentation, clear install instructions and being free of errors are important to these people but are not necessarily essential to the authors, who are used to fix problem when they appear and are familiar with every aspect of the code. We will transform a project like this into a project that is ready to be used by other people and that can receive contributions from other developers. </p>
 <div class="highlight"><pre><span></span><code>{&quot;skill_id&quot;: 4, &quot;metadata&quot;: {&quot;date&quot;: &quot;2022-09-01&quot;, &quot;url&quot;: &quot;http...&quot;, &quot;group&quot;: []}
 </code></pre></div>
@@ -670,6 +773,7 @@
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Create README with project description, screenshot and links to documentation</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Organize repo with source code in a <code>src</code> folder and documentation in <code>docs</code></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Execute a linter in your project and export its output to one or more issues with names related to code quality improvements</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Execute pydoc, or any other similar tool, in your project and add the output to the project documentation. </li>
 </ul>
 
 
