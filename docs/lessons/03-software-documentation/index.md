@@ -1,6 +1,6 @@
 # 03 - Explorando um projeto desconhecido
 
-<ah-external-content src="slides.html" />
+<ah-external-content src="slides_fb.html" />
 
 Este roteiro tem algumas perguntas com o objetivo de guiar a exploração do código e documentar suas descobertas. Você também pode aplicá-lo para qualquer outro projeto mal documentado em que precisar trabalhar no futuro.
 
