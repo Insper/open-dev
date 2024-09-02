@@ -36,6 +36,8 @@ nav:
     - '2021/2': 'impact-2021.md'
     - '2020/1': 'impact-2020.md'
     - '2019/2': 'impact-2019.md'
+  - 'Ongoing projects':
+    - 'projects/2024/2/index.md'
 
 extra_javascript:
   - js/markdown-enhancer.js
