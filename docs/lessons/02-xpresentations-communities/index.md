@@ -11,15 +11,14 @@ Wednesday (08/21):
 * [Django](../../delivery/django-slides.pdf)
 * [Flask](../../delivery/flask-presentation.pdf)
 * [Sklearn](../../delivery/scikit-learn.pdf)
-* [TensorFlow](../../delivery/TensorFlow.pdf)
 
 Monday (08/26):
 
-* [OpenCV]()
-* [Blender]()
+* [TensorFlow](../../delivery/TensorFlow.pdf)
+* [OpenCV](../../delivery/OpenCV-Pesquisa.pdf)
+* [Blender](../../delivery/Blender.pdf)
 * [PostgreSQL](../../delivery/Postgresql.pdf)
-* [Pandas]()
-* TBD
+* [Pandas](../../delivery/OpenCV-Pandas.pdf)
 
 Each group will have 10 minutes for the presentation and 5 minutes for questions.
 
