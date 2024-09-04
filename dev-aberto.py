@@ -196,7 +196,7 @@ def render_skill_type(sk_type):
         f.write(tabulate.tabulate(table, headers=('id', '', 'Name', 'Description', 'XP', 'Date'), tablefmt='pipe'))
 
 def parse_url(url):
-    m = re.match('https?://github.com/(.*)/([\w\-]+)/(pull|issues)/(\d+)', url)
+    m = re.match(r'https?://github.com/(.*)/([\w\-]+)/(pull|issues)/(\d+)', url)
     if m:
         if m.group(3) == "pull":
             pulls_issues = "pulls"
