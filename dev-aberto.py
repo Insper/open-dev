@@ -294,6 +294,16 @@ def build_site():
                                         num_prs=num_prs,
                                         num_aceitos=num_aceitos))
 
+@dev_aberto_cli.command()
+def list_projects():
+    for student in all_students.values():
+        for ach in student.all_achievements:
+            # Projeto INSPER
+            if ach.skill.id == 4:
+                url = ach.metadata['url']
+                group = ach.metadata['group']
+                print(f'{ach.user} {group} [{url}]({url})')
+
 
 @dev_aberto_cli.command()
 def export_csv():

@@ -1,6 +1,8 @@
 # 04 - Professional Project
 
+<!--
 <ah-external-content src="slides.html" />
+-->
 
 There is a moment in a project's history where it is already useful for the author and other people are starting to get interested in it. Software documentation, clear install instructions and being free of errors are important to these people but are not necessarily essential to the authors, who are used to fix problem when they appear and are familiar with every aspect of the code. We will transform a project like this into a project that is ready to be used by other people and that can receive contributions from other developers. 
 
@@ -32,4 +34,5 @@ This is a project for more than one meeting and can be done in pairs.
 - [ ] Create README with project description, screenshot and links to documentation
 - [ ] Organize repo with source code in a `src` folder and documentation in `docs`
 - [ ] Execute a linter in your project and export its output to one or more issues with names related to code quality improvements
+- [ ] Execute pydoc, or any other similar tool, in your project and add the output to the project documentation. 
 
