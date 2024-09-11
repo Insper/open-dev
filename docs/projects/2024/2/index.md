@@ -14,4 +14,5 @@
 * [https://github.com/rafaelgpaves/projectjump-refatorado](https://github.com/rafaelgpaves/projectjump-refatorado)
 * [https://github.com/AndreCorreaSantos/Vulkan_Playground](https://github.com/AndreCorreaSantos/Vulkan_Playground)
 * [https://github.com/RodrigoAnciaes/Linguagem_Autoral_Aqua_Logcomp.git](https://github.com/RodrigoAnciaes/Linguagem_Autoral_Aqua_Logcomp.git)
+* [https://github.com/yuritaba/pygame_opendev](https://github.com/yuritaba/pygame_opendev)
 * [https://github.com/andrebrito16/toga-cli](https://github.com/andrebrito16/toga-cli)
