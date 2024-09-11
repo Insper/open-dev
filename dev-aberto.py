@@ -296,13 +296,15 @@ def build_site():
 
 @dev_aberto_cli.command()
 def list_projects():
+    projects = {}
     for student in all_students.values():
         for ach in student.all_achievements:
             # Projeto INSPER
             if ach.skill.id == 4:
-                url = ach.metadata['url']
-                group = ach.metadata['group']
-                print(f'{ach.user} {group} [{url}]({url})')
+                projects[ach.metadata['url']] = ach.metadata['group']
+    
+    for project in projects:
+        print(f'[{project}]({project})')
 
 
 @dev_aberto_cli.command()
