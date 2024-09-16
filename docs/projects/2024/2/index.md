@@ -3,7 +3,7 @@
 * [https://github.com/leonardopaloschi/equal-chatbot.git](https://github.com/leonardopaloschi/equal-chatbot.git)
 * [https://github.com/GuilhermeRameh/PythonNetworkScanningTool.git](https://github.com/GuilhermeRameh/PythonNetworkScanningTool.git)
 * [https://antonioaemartins.github.io/Vehicle-Routing-Problem/](https://antonioaemartins.github.io/Vehicle-Routing-Problem/)
-* [https: [https://github.com/insper-tecnologias-web/projeto-3-scraper-e-rest-api](https://github.com/insper-tecnologias-web/projeto-3-scraper-e-rest-api)
+* [https://github.com/insper-tecnologias-web/projeto-3-scraper-e-rest-api](https://github.com/insper-tecnologias-web/projeto-3-scraper-e-rest-api)
 * [https://github.com/devluisrodrigues/motion-detection](https://github.com/devluisrodrigues/motion-detection)
 * [https://github.com/RicardoRibeiroRodrigues/2D-Truss-Solver](https://github.com/RicardoRibeiroRodrigues/2D-Truss-Solver)
 * [https://github.com/Eduardoarcunha/key-motions](https://github.com/Eduardoarcunha/key-motions)
