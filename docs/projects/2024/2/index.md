@@ -2,6 +2,7 @@
 
 * [https://github.com/leonardopaloschi/equal-chatbot.git](https://github.com/leonardopaloschi/equal-chatbot.git)
 * [https://github.com/GuilhermeRameh/PythonNetworkScanningTool.git](https://github.com/GuilhermeRameh/PythonNetworkScanningTool.git)
+* [https://antonioaemartins.github.io/Vehicle-Routing-Problem/](https://antonioaemartins.github.io/Vehicle-Routing-Problem/)
 * [https://github.com/thiagohpr/ExposureStudy](https://github.com/thiagohpr/ExposureStudy)
 * [https://github.com/digomattar21/IronPeersApi](https://github.com/digomattar21/IronPeersApi)
 * [https://github.com/Joao-antonio-gg/CompVis.git](https://github.com/Joao-antonio-gg/CompVis.git)
@@ -12,6 +13,8 @@
 * [https://github.com/Arthur-Barreto/srp_illinois.git](https://github.com/Arthur-Barreto/srp_illinois.git)
 * [https://github.com/PedroBittarBarao/Custom_Language](https://github.com/PedroBittarBarao/Custom_Language)
 * [https://github.com/rafaelgpaves/projectjump-refatorado](https://github.com/rafaelgpaves/projectjump-refatorado)
+* [https://github.com/AndreBBM/Anki-Notes-Creator](https://github.com/AndreBBM/Anki-Notes-Creator)
 * [https://github.com/AndreCorreaSantos/Vulkan_Playground](https://github.com/AndreCorreaSantos/Vulkan_Playground)
-* [https://github.com/RodrigoAnciaes/Linguagem_Autoral_Aqua_Logcomp.git](https://github.com/RodrigoAnciaes/Linguagem_Autoral_Aqua_Logcomp.git)
+* [https://github.com/RodrigoAnciaes/Linguagem_Autoral_Aqua_Logcomp.git](https://github.com/RodrigoAnciaes/Linguagem_Autoral_Aqua_Logcomp.git) 
+* [https://github.com/yuritaba/pygame_opendev](https://github.com/yuritaba/pygame_opendev)
 * [https://github.com/andrebrito16/toga-cli](https://github.com/andrebrito16/toga-cli)
