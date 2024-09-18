@@ -2,7 +2,7 @@
 
 <ah-external-content src="slides.html" />
 
-We will now add (some) automated testing to one of the projects from [the discussion page](https://github.com/Insper/open-dev/discussions/775). Again, our objective in this activity is to get used to build and modify different projects. 
+We will now add (some) automated testing to one of the projects from [ongoing projects page](../../projects/2024/2/index.md). Again, our objective in this activity is to get used to build and modify different projects. 
 
 !!! warning
     You'll need to select a different project from the last Lesson [07 - Code Quality](../07-code-quality/index.md)
