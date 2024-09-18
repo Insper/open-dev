@@ -25,8 +25,8 @@ nav:
     - 'lessons/05-python-packaging/index.md'
     - 'lessons/06-localization-translation/index.md'
     - 'lessons/07-code-quality/index.md'
-#    - 'lessons/08-automated-testing/index.md'
-#    - 'lessons/09-releases/index.md'
+    - 'lessons/08-automated-testing/index.md'
+    - 'lessons/09-releases/index.md'
 #    - 'lessons/10-first-contribution/index.md'
 #    - lessons/11-floss-people/index.md
 #    - lessons/12-licenses/index.md
