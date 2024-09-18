@@ -22,7 +22,7 @@ The following checks will be used to verify if this skill is completed:
 
 - [ ] there is a release in the repo's *Releases* tab containing the description of the release and the source code
 - [ ] the release includes either an installer or a direccly executable file in one of the following formats:
-    - **Linux**: *.deb, .rpm* for installers,**AppImage** for executables
+    - **Linux**: *.deb, .rpm* for installers, **AppImage** for executables
     - **Windows**: *.msi* installer or single *.exe* (plus asses, if necessary)
     - **Other**: if the project is an extension, plugin or any other type of stoftware, the release must include a redistributable package in the official format
 
