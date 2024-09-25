@@ -1,13 +1,13 @@
-# Desenvolvimento Aberto 2022/2
+# Open Source Development
 
-![License CC-BY-NC-SA 4.0](docs/aulas/cc-by-nc-sa-small.png)
+![CC-BY-NC-SA 4.0 License](docs/aulas/cc-by-nc-sa-small.png)
 
-Bem vindo ao repositório de Desenvolvimento Aberto! Ele será nosso principal ponto de interação neste semestre. Todas as entregas serão feitas neste repositório, assim como estarão disponibilizados aqui todos os materiais da disciplina. 
+Welcome to the Open Development repository! He will be our main point of interaction this semester. All deliveries will be made in this repository, as well as all course materials will be available here.
 
-## Alunos
+## Students
 
-O [site da disciplina](https://insper.github.io/open-dev/) contém todas as informações burocráticas importantes, como horários de aulas e atendimentos, critérios de aprovação. Anúncios sobre o andamento da matéria serão feitos no blackboard e no canal do Teams da matéria.
+The [discipline website](https://insper.github.io/open-dev/) contains all important bureaucratic information, such as class and attendance schedules, approval criteria. Announcements about the progress of the story will be made on the blackboard and in the story's Teams channel.
 
-## Vistantes aleatórios e outros professores
+## Random visitors and other teachers
 
-Todo o material disponível neste repositório está sob a licença *Creative Commons* 4.0 (como indicado no início do documento). Apesar de não ser obrigatório, se você deseja basear parte de seu curso nos materiais disponibilizados aqui pedimos gentilmente que você entre em contato com [igordsm](http://github.com/igordsm) ou [fbarth](http://github.com/fbarth). 
+All material available in this repository is licensed under the *Creative Commons* 4.0 license (as indicated at the beginning of the document). Although it is not mandatory, if you wish to base part of your course on the materials available here we kindly ask you to contact [igordsm](http://github.com/igordsm) or [fbarth](http://github.com/fbarth).

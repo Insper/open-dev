@@ -196,7 +196,7 @@ def render_skill_type(sk_type):
         f.write(tabulate.tabulate(table, headers=('id', '', 'Name', 'Description', 'XP', 'Date'), tablefmt='pipe'))
 
 def parse_url(url):
-    m = re.match('https?://github.com/(.*)/([\w\-]+)/(pull|issues)/(\d+)', url)
+    m = re.match(r'https?://github.com/(.*)/([\w\-]+)/(pull|issues)/(\d+)', url)
     if m:
         if m.group(3) == "pull":
             pulls_issues = "pulls"
@@ -293,6 +293,18 @@ def build_site():
                                         num_projetos=num_projetos,
                                         num_prs=num_prs,
                                         num_aceitos=num_aceitos))
+
+@dev_aberto_cli.command()
+def list_projects():
+    projects = {}
+    for student in all_students.values():
+        for ach in student.all_achievements:
+            # Projeto INSPER
+            if ach.skill.id == 4:
+                projects[ach.metadata['url']] = ach.metadata['group']
+    
+    for project in projects:
+        print(f'[{project}]({project})')
 
 
 @dev_aberto_cli.command()
