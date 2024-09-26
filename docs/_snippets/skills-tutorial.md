@@ -4,7 +4,7 @@
 |    2 | :material-cash-multiple:{: .skill-icon }          | Exploring a Project's Environment | Researched the history and community of people and services around a project.                          |    3 | 25/09  |
 |    3 | :material-compass:{: .skill-icon }                | Undocumented Project              | Received an undocumented system and got it up and running.                                             |    5 | 25/09  |
 |    4 | :material-star:{: .skill-icon }                   | Professional Project              | Refactored poorly written code and created a web page for it.                                          |    5 | 25/09  |
-|    5 | :material-emoticon-outline:{: .skill-icon }       | Tested and Approved               | Created unit tests and interface tests for the challenge server.                                       |    5 | 25/09  |
+|    5 | :material-emoticon-outline:{: .skill-icon }       | Tested and Approved               | Created unit tests.                                       |    5 | 25/09  |
 |    6 | :material-briefcase:{: .skill-icon }              | Python Package                    | Created a Python package installable via pip.                                                          |    3 | 25/09  |
 |    7 | :material-docker:{: .skill-icon }                 | Dockerfile                        | Created automated deployment for a Python web system.                                                  |    3 | 25/09  |
 |    8 | :material-translate:{: .skill-icon }              | Basic Translation                 | Used translation tools to translate and localize a small command-line program.                         |    2 | 25/09  |
