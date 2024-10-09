@@ -41,3 +41,4 @@ students/*-report.html
 email_config.txt
 enviar_email.log
 
+.DS_Store
