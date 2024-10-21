@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/open-dev/delivery/README_paulohmf_leonardos15_rodrigosm11/">
+        <link rel="canonical" href="https://insper.github.io/open-dev/apresentacoes/2024/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Dependências e serviços usados - Open Source Development 2024/2</title>
+        <title>Index - Open Source Development 2024/2</title>
       
     
     
@@ -63,11 +63,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#dependencias-e-servicos-usados" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -100,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dependências e serviços usados
+              Index
             
           </span>
         </div>
@@ -790,34 +785,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#quais-tecnologias-sao-usadas-no-codigo-alem-da-linguagem-de-programacao-liste-tambem-as-bibliotecasmodulos-externos-usados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quais tecnologias são usadas no código? Além da linguagem de programação, liste também as bibliotecas/módulos externos usados.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-aplicacao-utiliza-um-banco-de-dados-qual-gerenciador-onde-a-aplicacao-busca-a-base-de-dados-quais-sao-as-tabelas-usadas-como-elas-sao-criadas" class="md-nav__link">
-    <span class="md-ellipsis">
-      A aplicação utiliza um banco de dados. Qual gerenciador? Onde a aplicação busca a base de dados? Quais são as tabelas usadas? Como elas são criadas?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -835,69 +802,9 @@
   
 
 
-<h1 id="dependencias-e-servicos-usados">Dependências e serviços usados</h1>
-<h2 id="quais-tecnologias-sao-usadas-no-codigo-alem-da-linguagem-de-programacao-liste-tambem-as-bibliotecasmodulos-externos-usados">Quais tecnologias são usadas no código? Além da linguagem de programação, liste também as bibliotecas/módulos externos usados.</h2>
-<ul>
-<li>Linguagens: Python, SQL, HTML, JS, CSS, SCSS</li>
-<li>Tecnologias: sqlite, hashlib, flask, bootstrap</li>
-</ul>
-<h2 id="a-aplicacao-utiliza-um-banco-de-dados-qual-gerenciador-onde-a-aplicacao-busca-a-base-de-dados-quais-sao-as-tabelas-usadas-como-elas-sao-criadas">A aplicação utiliza um banco de dados. Qual gerenciador? Onde a aplicação busca a base de dados? Quais são as tabelas usadas? Como elas são criadas?</h2>
-<p>Utiliza sim, o SQLite.</p>
-<ul>
-<li>
-<p>No arquivo softdes.py existem algumas consultas SQL para:
-  Pegar todos os Quizes,
-  Pegar um USERQUIZ,
-  Inserir na tabela USERQUIZ,
-  Pegar um Quiz,
-  Setar o password do usuário,</p>
-</li>
-<li>
-<p>No arquivo adduser.py existe uma consulta SQL para:
-  Adicionar um novo usuário</p>
-</li>
-<li>
-<p>As tabelas utilizadas são 3: USER, USERQUIZ, QUIZ. Elas são criadas no arquivo quiz.sql</p>
-</li>
-</ul>
-<h1 id="deploy-inicial">Deploy inicial</h1>
-<h2 id="a-aplicacao-usa-autenticacao-se-sim-qual-tipo-como-usuarios-sao-criados-existe-algum-usuario-administrador-como-e-feita-a-seguranca-das-senhas-qual-a-senha-padrao">A aplicação usa autenticação? Se sim, qual tipo? Como usuários são criados? Existe algum usuário administrador? Como é feita a segurança das senhas? Qual a senha padrão?</h2>
-<p>A aplicação utiliza autenticação, feita através do HTTPBasicAuth do flask. Os usuários são criados a partir do script adduser.py, que lê um arquivo csv e cria usuários no banco de dados. O nome do usuário é encriptado para um hash utilizando a hashlib. Pelo código que existe em softdes.py, sabemos que existe um usuário chamado admin e outro chamado fabioja. Dessa forma a senha dos dois será o hash dessas palavras.</p>
-<h2 id="quais-comandos-voce-usou-para-rodar-a-aplicacao-escreva-todos-desde-a-criacao-do-banco-de-dados-e-dos-usuarios-ate-o-funcionamento-completo-do-projeto">Quais comandos você usou para rodar a aplicação? Escreva todos desde a criação do banco de dados e dos usuários até o funcionamento completo do projeto.</h2>
-<p>Para criar o banco de dados:</p>
-<ul>
-<li>Criei um arquivo quiz.db</li>
-<li>Utilizando a CLI do sqlite3 criei as tabelas do banco de dados</li>
-</ul>
-<div class="highlight"><pre><span></span><code>sqlite3<span class="w"> </span>quiz.db
-.read<span class="w"> </span>user.sql
-</code></pre></div>
-<ul>
-<li>Criei um arquivo users.csv com os usuários admin e fabioja</li>
-<li>
-<p>Rodei o arquivo adduser.py</p>
-</li>
-<li>
-<p>Criei um python virtual environment</p>
-</li>
-<li>Fui tentando rodar o arquivo softdes.py e baixando as dependências necessárias: flask e flask_httpauth</li>
-<li>Troquei a porta 80, dado que não havia permissão necessária para rodar a aplicação nessa porta com usuário padrão do linux</li>
-<li>Aplicação rodando</li>
-</ul>
-<h2 id="agora-que-voce-consegue-rodar-a-aplicacao-explore-a-um-pouco-e-descreva-em-poucas-frases-para-que-ela-serve">Agora que você consegue rodar a aplicação, explore-a um pouco e descreva em poucas frases para quê ela serve.</h2>
-<p>Parece um site da matéria de SoftDes, existe um botão para logout, outro para trocar senha e os desafios/quizes.</p>
-<h1 id="documentacao-do-projeto">Documentação do projeto</h1>
-<h2 id="se-voce-fosse-criar-um-guia-de-usuario-aluno-para-esta-aplicacao-quais-tarefas-descreveria">Se você fosse criar um guia de usuário (aluno) para esta aplicação, quais tarefas descreveria?</h2>
-<h2 id="se-voce-fosse-criar-um-guia-de-usuario-professor-para-esta-aplicacao-quais-tarefas-descreveria">Se você fosse criar um guia de usuário (professor) para esta aplicação, quais tarefas descreveria?</h2>
-<h2 id="o-que-voce-descreveria-em-um-guia-de-desenvolvedor-para-esta-aplicacao">O quê você descreveria em um guia de desenvolvedor para esta aplicação?</h2>
-<ul>
-<li>Como baixar as dependências</li>
-<li>Como criar o banco de dados</li>
-<li>O que cada arquivo está fazendo</li>
-<li>O que cada rota está fazendo</li>
-<li>O que as funções estão fazendo</li>
-<li>...</li>
-</ul>
+  <h1>Index</h1>
+
+
 
 
 
