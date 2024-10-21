@@ -36,6 +36,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://insper.github.io/open-dev/impact-2023/</loc>
+         <lastmod>2024-10-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://insper.github.io/open-dev/impact/</loc>
          <lastmod>2024-10-21</lastmod>
          <changefreq>daily</changefreq>
