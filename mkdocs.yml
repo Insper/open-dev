@@ -28,7 +28,7 @@ nav:
     - 'lessons/08-automated-testing/index.md'
     - 'lessons/09-releases/index.md'
 #    - 'lessons/10-first-contribution/index.md'
-#    - lessons/11-floss-people/index.md
+    - lessons/11-floss-people/index.md
 #    - lessons/12-licenses/index.md
   - 'Impact': 
     - '2023/2': 'impact.md'
