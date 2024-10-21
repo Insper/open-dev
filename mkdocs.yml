@@ -28,10 +28,11 @@ nav:
     - 'lessons/08-automated-testing/index.md'
     - 'lessons/09-releases/index.md'
 #    - 'lessons/10-first-contribution/index.md'
-#    - lessons/11-floss-people/index.md
+    - lessons/11-floss-people/index.md
 #    - lessons/12-licenses/index.md
   - 'Impact': 
-    - '2023/2': 'impact.md'
+    - '2024/2': 'impact.md'
+    - '2023/2': 'impact-2023.md'
     - '2022/2': 'impact-2022.md'
     - '2021/2': 'impact-2021.md'
     - '2020/1': 'impact-2020.md'
