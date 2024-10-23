@@ -3,7 +3,7 @@
 In Lesson [04 - Professional Project](../04-professional-project) we created a repo and website for an old project developed during the course. Now we are going to improve its quality by fixing the issues each group found using a linter tool. 
 
 !!! warning
-    We won't work on our own projects this time! Select a project from [the discussion page](https://github.com/Insper/open-dev/discussions/775) and comment on the issue you'd like to do. Every project must have at least one issue with external participation. 
+    We won't work on our own projects this time! Select a project from [ongoing projects page](../../projects/2024/2/index.md) and comment on the issue you'd like to do or create a new issue that you'd like to work on. Every project must have at least one issue with external participation. 
 
 
 ## Deliverable

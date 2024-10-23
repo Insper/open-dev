@@ -144,8 +144,7 @@ def compute_grade(student_login):
 
         # TODO: fazer os próximos conceitos ao longo do semestre, quando os ids estiverem prontos
 
-        if xp >= 45 and st.achievements.get(21, False) and \
-            (st.achievements.get(42, False) or st.achievements.get(45, False)):
+        if xp >= 45 and (st.achievements.get(21, False) or st.achievements.get(22, False) or st.achievements.get(23, False)) and (st.achievements.get(42, False) or st.achievements.get(45, False)):
             conceito = 'C'
 
             if xp >= 90 and st.achievements.get(22, False):
@@ -296,13 +295,15 @@ def build_site():
 
 @dev_aberto_cli.command()
 def list_projects():
+    projects = {}
     for student in all_students.values():
         for ach in student.all_achievements:
             # Projeto INSPER
             if ach.skill.id == 4:
-                url = ach.metadata['url']
-                group = ach.metadata['group']
-                print(f'{ach.user} {group} [{url}]({url})')
+                projects[ach.metadata['url']] = ach.metadata['group']
+    
+    for project in projects:
+        print(f'[{project}]({project})')
 
 
 @dev_aberto_cli.command()
