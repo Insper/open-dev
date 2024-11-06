@@ -1,4 +1,4 @@
-One of the main objectives of Open Development is to actively participate in existing software projects. In the 2023/2 edition, students worked on 12 different projects, contributing with 10 code modifications, of which 12 were incorporated into the original projects. In addition to these projects, students also worked on software developed by Insper professors to be used in various courses. A total of <b>7</b> modifications were accepted in these projects.
+One of the main objectives of Open Development is to actively participate in existing software projects. In the 2023/2 edition, students worked on 12 different projects, contributing with 10 code modifications, of which 16 were incorporated into the original projects. In addition to these projects, students also worked on software developed by Insper professors to be used in various courses. A total of <b>7</b> modifications were accepted in these projects.
 
 We also encourage students to participate in external technology events and experience the world outside Insper. In total, students participated in <b>0</b> events.
 
