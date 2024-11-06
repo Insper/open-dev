@@ -22,20 +22,23 @@ nav:
     - 'lessons/02-xpresentations-communities/index.md'
     - 'lessons/03-software-documentation/index.md'
     - 'lessons/04-professional-project/index.md'
-#    - 'lessons/05-python-packaging/index.md'
-#    - 'lessons/06-localization-translation/index.md'
-#    - 'lessons/07-code-quality/index.md'
-#    - 'lessons/08-automated-testing/index.md'
-#    - 'lessons/09-releases/index.md'
+    - 'lessons/05-python-packaging/index.md'
+    - 'lessons/06-localization-translation/index.md'
+    - 'lessons/07-code-quality/index.md'
+    - 'lessons/08-automated-testing/index.md'
+    - 'lessons/09-releases/index.md'
 #    - 'lessons/10-first-contribution/index.md'
-#    - lessons/11-floss-people/index.md
+    - lessons/11-floss-people/index.md
 #    - lessons/12-licenses/index.md
   - 'Impact': 
-    - '2023/2': 'impact.md'
+    - '2024/2': 'impact.md'
+    - '2023/2': 'impact-2023.md'
     - '2022/2': 'impact-2022.md'
     - '2021/2': 'impact-2021.md'
     - '2020/1': 'impact-2020.md'
     - '2019/2': 'impact-2019.md'
+  - 'Ongoing projects':
+    - 'projects/2024/2/index.md'
 
 extra_javascript:
   - js/markdown-enhancer.js
