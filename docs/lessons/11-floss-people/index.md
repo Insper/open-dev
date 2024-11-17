@@ -27,11 +27,11 @@ The following presentation slots are available on a first-come first-served queu
 |------|-------|--------------|
 | 11/11| Fernando Alzueta, João Antonio Gomes, Luis Antonio Santana | Linus Torvalds and Linux|
 | 11/11| André Santos, Rafael Lima, Rafael Leventhal | Richard Stallman and the FSF|
-| 11/11| Felipe Catapano, Arthur Barreto, Lucas Hix | The Debian project|
 | 11/11| Guilherme Rameh, Ilana Finger, Ananda Campelo | RedHat|
 | 13/11| Ricardo R. R., Guilherme Fontana, Thiago Rocha | Canonical and Ubuntu|
 | 13/11| Enricco Gemha, André Brito, Antonio Martins | Problemas de licenças Open Source|
 | 13/11| Lidia Alves, Lincoln Rodrigo | Mozilla|
+| 13/11| Leonardo Scarlato, Paulo Falcão e Rodrigo Mattar | Eric Raymond (Cathedral and Bazaar)|
 | 18/11| Eric Possato, Pedro Barão, Rodrigo Anciães | KDE Community |
-| 18/11| Leonardo Scarlato, Paulo Falcão e Rodrigo Mattar | Eric Raymond (Cathedral and Bazaar)|
 | 18/11| Yuri Tabacof, Rafael Paves, André Melo | Larry Wall and Perl|
+| 18/11| Felipe Catapano, Arthur Barreto, Lucas Hix | The Debian project|
