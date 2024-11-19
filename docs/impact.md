@@ -1,4 +1,4 @@
-One of the main objectives of Open Development is to actively participate in existing software projects. In the 2023/2 edition, students worked on 12 different projects, contributing with 10 code modifications, of which 12 were incorporated into the original projects. In addition to these projects, students also worked on software developed by Insper professors to be used in various courses. A total of <b>7</b> modifications were accepted in these projects.
+One of the main objectives of Open Development is to actively participate in existing software projects. In the 2023/2 edition, students worked on 16 different projects, contributing with 12 code modifications, of which 34 were incorporated into the original projects. In addition to these projects, students also worked on software developed by Insper professors to be used in various courses. A total of <b>9</b> modifications were accepted in these projects.
 
 We also encourage students to participate in external technology events and experience the world outside Insper. In total, students participated in <b>0</b> events.
 
@@ -38,6 +38,20 @@ We also encourage students to participate in external technology events and expe
 </details>
 
 <details class="note">
+<summary> Matomo-Org/Matomo</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/matomo-org/matomo/pull/22739> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/matomo-org/matomo/22739?label=%20></span> - https://github.com/matomo-org/matomo/pull/22739</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
 <summary> Payam-Zahedi/Toastification</summary>
 
 <h4> Pull Requests</h4>
@@ -59,6 +73,20 @@ We also encourage students to participate in external technology events and expe
 
 
 <li><a href=https://github.com/Insper/ai_gym/pull/53> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/Insper/ai_gym/53?label=%20></span> - https://github.com/Insper/ai_gym/pull/53</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Lumiwealth/Quantstats_Lumi</summary>
+
+<h4> Pull Requests</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/Lumiwealth/quantstats_lumi/pull/64> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/pulls/detail/state/Lumiwealth/quantstats_lumi/64?label=%20></span> - https://github.com/Lumiwealth/quantstats_lumi/pull/64</a></li>  
 
 
 </ul>
@@ -159,6 +187,10 @@ We also encourage students to participate in external technology events and expe
 <li><a href=https://insper.github.io/mlops/contributions/> https://insper.github.io/mlops/contributions/ </a></li>
 
 
+
+<li><a href=https://github.com/up-for-grabs/up-for-grabs.net/issues/4907> https://github.com/up-for-grabs/up-for-grabs.net/issues/4907 </a></li>
+
+
 </ul>
 
 </details>
@@ -171,6 +203,34 @@ We also encourage students to participate in external technology events and expe
 
 
 <li><a href=https://github.com/brave/brave-browser/issues/41040> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/issues/detail/state/brave/brave-browser/41040?label=%20></span> - https://github.com/brave/brave-browser/issues/41040</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Bluz71/Nvim-Linefly</summary>
+
+<h4> Issues</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/bluz71/nvim-linefly/issues/9> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/issues/detail/state/bluz71/nvim-linefly/9?label=%20></span> - https://github.com/bluz71/nvim-linefly/issues/9</a></li>  
+
+
+</ul>
+
+</details>
+
+<details class="note">
+<summary> Kestra-Io/Kestra</summary>
+
+<h4> Issues</h4>
+<ul style="list-style-type:none;">
+
+
+<li><a href=https://github.com/kestra-io/kestra/issues/5503> <span style="width: 60px; display: inline-block;"><img style="margin: 0; border: 0;" alt="GitHub issue/pull request detail" src=https://img.shields.io/github/issues/detail/state/kestra-io/kestra/5503?label=%20></span> - https://github.com/kestra-io/kestra/issues/5503</a></li>  
 
 
 </ul>
