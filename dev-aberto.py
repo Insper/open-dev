@@ -144,11 +144,11 @@ def compute_grade(student_login):
 
         # TODO: fazer os próximos conceitos ao longo do semestre, quando os ids estiverem prontos
 
-        if xp >= 45 and st.achievements.get(21, False) and \
-            (st.achievements.get(42, False) or st.achievements.get(45, False)):
+        if xp >= 45 and (st.achievements.get(21, False) or st.achievements.get(22, False) or st.achievements.get(23, False)) and (st.achievements.get(42, False) or st.achievements.get(45, False)):
             conceito = 'C'
 
-            if xp >= 90 and st.achievements.get(22, False):
+            #if xp >= 90 and st.achievements.get(22, False):
+            if xp >= 90: # regra 2024/2
                 conceito = 'B'
 
                 if xp >= 150:
