@@ -1,6 +1,6 @@
-# Open Development 2024/2
+# Open Development 2025/2
 
-Welcome to the Open Development page for 2024/2. On this site, you will find all the course lessons and syllabus. The learning objectives covered are:
+Welcome to the Open Development page for 2025/2. On this site, you will find all the course lessons and syllabus. The learning objectives covered are:
 
 1. The student is capable of understanding a software project and fixing a bug or implementing an improvement.
 2. The student is capable of making modifications that meet the technical and non-technical requirements of a software project.
@@ -20,3 +20,4 @@ More information about all possible activities can be found on the [Assessment](
 !!! people "Current and past instructors"
     - ![Igor](https://avatars.githubusercontent.com/u/221446?v=4) **Igor Montagner**
     - ![Fabrício](https://avatars.githubusercontent.com/u/361008?v=4) **Fabrício Barth**
+    - ![Carlos](https://avatars.githubusercontent.com/u/3441195?v=4)  **Carlos Menezes**
