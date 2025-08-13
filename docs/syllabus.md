@@ -15,13 +15,13 @@ Biweekly reports will be sent with a summary of what has been delivered and whic
 
 ## Schedule
 
-* MON 13:30 - 15:30 
-* WED 13:30 - 15:30 
+* MON 14:15 - 16:15 
+* WED 14:15 - 16:15 
 * **Office Hours**: on demand
 
 ## Student support hours
 
-* WED 10:00 - 11:30
+* MON 16:15 - 17:45
 
 ## Lesson Plan
 
