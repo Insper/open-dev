@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Fluxo de trabalho distribuído e Comunidades de Software</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Fluxo de trabalho distribuído e Comunidades de Software</h1>
+</header>
+<style>
+    footer {
+        position: fixed;
+        bottom: 10px;
+        left: 1050px;
+        width: 400px;
+    }
+
+    footer img {
+        vertical-align: middle;
+    }
+</style>
+<h1 id="open-source-development">Open Source Development</h1>
+<h1 id="height350px"><img src="capa.png" alt="height:350px" /></h1>
+<h5 id="software-and-communities">Software and Communities</h5>
+<h6 id="carlos-menezes-carlosedminsper.edu.br">2025/2: Carlos Menezes ( carlosedm@insper.edu.br)</h6>
+<table style="width:8%;">
+<colgroup>
+<col style="width: 8%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># Github Model: <em>fork + pull request</em></td>
+</tr>
+<tr class="even">
+<td><img src="pr-model1.jpg" alt="scale:150%" /></td>
+</tr>
+<tr class="odd">
+<td>Source: https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github</td>
+</tr>
+</tbody>
+</table>
+<h1 id="github-model-fork-pull-request">Github Model: <em>fork + pull request</em></h1>
+<figure>
+<img src="pr-model2.jpg" alt="" /><figcaption>center 150%</figcaption>
+</figure>
+<p>Source: https://www.slideshare.net/abderrahmanebenbachir/continuous-integration-in-github</p>
+<hr />
+<h1 id="workflow-other-models">Workflow: other models</h1>
+<ol type="1">
+<li>Send patch via email list (e.g., Linux) <!--2. *Code review* tools (e.g., KDE - Phabricator)--></li>
+<li>Patch is attached to the Bug Tracker (e.g., Haiku, KDE)</li>
+<li>Does not receive external contributions</li>
+</ol>
+<hr />
+<h1 id="review-of-last-classs-prs">Review of last class’s PRs</h1>
+<h2 id="common-errors">Common Errors</h2>
+<hr />
+<h1 id="error-0-login-achievements-file-has-errors">Error 0: <em>login-achievements</em> file has errors</h1>
+<figure>
+<img src="erro0-data-errada.png" alt="" /><figcaption>width:1000px</figcaption>
+</figure>
+<p><strong>Error</strong>: The date of the commit is incorrect, for example. Then, when we run the command <code>python dev-aberto.py compute-grade &lt;user&gt;</code> the result is not as expected.</p>
+<p><strong>How to fix</strong>: Create a new commit with the correct content.</p>
+<hr />
+<h1 id="error-1-extra-files-in-the-pr">Error 1: Extra files in the PR</h1>
+<p><strong>Error</strong>: Modifying files not related to your proposed changes.</p>
+<h1 id="section"></h1>
+<p><strong>Ideal</strong>:</p>
+<ol type="1">
+<li>A Pull Request should contain only the files related to the proposed modification.</li>
+<li>Each proposed modification is in a separate Pull Request.</li>
+</ol>
+<hr />
+<figure>
+<img src="erro1-arquivos-extras.png" alt="" /><figcaption>width:900px</figcaption>
+</figure>
+<hr />
+<h1 id="error-1-extra-files-in-the-pr-1">Error 1: Extra files in the PR</h1>
+<p><strong>How to fix</strong>: <code>git rm --cached &lt;file&gt;</code> removes the file from the repository, but keeps it in the working directory.</p>
+<p><strong>How to fix</strong>: <code>git revert &lt;commit_id&gt;</code> creates a commit that undoes the changes made by <code>commit_id</code>.</p>
+<figure>
+<img src="https://wac-cdn.atlassian.com/dam/jcr:b6fcf82b-5b15-4569-8f4f-a76454f9ca5b/03%20(7).svg?cdnVersion=501" alt="" /><figcaption>width:800px</figcaption>
+</figure>
+<p><strong>Extra options</strong>:</p>
+<ul>
+<li><code>--no-commit</code>: Only adds the modifications, but does not make the commit. Allows undoing part of a commit.</li>
+</ul>
+<p>Source: https://www.atlassian.com/git/tutorials/</p>
+<table style="width:7%;">
+<colgroup>
+<col style="width: 6%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># Error 2: Non-descriptive commit messages</td>
+</tr>
+<tr class="even">
+<td><img src="erro3-msg-commit.png" alt="width:1000px" /></td>
+</tr>
+<tr class="odd">
+<td><strong>How to fix</strong>: <code>git commit --amend</code> allows modifying the last commit made.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="error-3-pull-request-with-a-poor-description">Error 3: Pull Request with a poor description</h1>
+<figure>
+<img src="erro4-descricao-pr.png" alt="" /><figcaption>width:1000px</figcaption>
+</figure>
+<p><strong>How to fix</strong>: Simply edit it in the Github interface.</p>
+<hr />
+<!--
+
+# Fix at home and request review via Github
+
+* Reminder: If you don't push, nothing is broken
+
+* Reminder II: `git log` shows your current history. I like `git log --oneline`
+---
+
+-->
+<h1 id="not-all-students-enrolled-in-the-course-did-the-activity-from-the-last-class">Not all students enrolled in the course did the activity from the last class!</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="ex">python</span> dev-aberto.py list-users</span></code></pre></div>
+<p>Please, do it as soon as possible!</p>
+<hr />
+<h1 id="software-communities">Software Communities</h1>
+<table style="width:7%;">
+<colgroup>
+<col style="width: 6%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># Discussion</td>
+</tr>
+<tr class="even">
+<td># #</td>
+</tr>
+<tr class="odd">
+<td><strong>Question 1</strong>: What are the software you use the most in your daily life?</td>
+</tr>
+<tr class="even">
+<td><strong>Question 2</strong>: Who is the main developer of the project?</td>
+</tr>
+<tr class="odd">
+<td><strong>Question 3</strong>: How do you think the project is funded?</td>
+</tr>
+</tbody>
+</table>
+<h1 id="example-linux-kernel">Example: Linux Kernel</h1>
+<figure>
+<img src="linuxfoundationlogo.png" alt="" /><figcaption>width:300px</figcaption>
+</figure>
+<p>Foundation supports the development of the Linux Kernel and the creation of an open-source software ecosystem around it.</p>
+<p>Support:</p>
+<ul>
+<li>Financial</li>
+<li>Intellectual property</li>
+<li>Infrastructure</li>
+<li>Services and training</li>
+</ul>
+<h1 id="example-ubuntu">Example: Ubuntu</h1>
+<p><img src="https://assets.ubuntu.com/v1/5d6da5c4-logo-canonical-aubergine.svg" /></p>
+<p>Private company controls the development of Ubuntu. Obtains resources via:</p>
+<ul>
+<li>Donations</li>
+<li>Development and consulting services</li>
+<li>Training</li>
+</ul>
+<hr />
+<h1 id="example-gitlab">Example: Gitlab</h1>
+<figure>
+<img src="https://cdn-images-1.medium.com/max/1600/1*FtYgYG_G6rplUmF5fLzuXA.png" alt="" /><figcaption>width:300px</figcaption>
+</figure>
+<p>Company funded so far by VC (Venture Capital) in search of profit.</p>
+<ul>
+<li>Option of free plans with open-source software</li>
+<li>Option of corporate plans with more features and <strong>support</strong></li>
+<li>On-premises installations</li>
+</ul>
+<hr />
+<h1 id="example-elementary">Example: Elementary</h1>
+<h1 id="section-1"></h1>
+<p><img src="https://elementary.io/images/icons/places/128/distributor-logo.svg" /></p>
+<h1 id="section-2"></h1>
+<p>Linux distribution led by a “tiny” company focused on the user experience. Resources are obtained through:</p>
+<ul>
+<li>Individual and corporate sponsorships</li>
+<li>Pay-what-you-want model (app store and operating system)</li>
+<li>Hardware with the pre-installed system</li>
+</ul>
+<hr />
+<figure>
+<img src="donations.png" alt="" /><figcaption>center</figcaption>
+</figure>
+<hr />
+<h1 id="reasons-for-funding-company">Reasons for funding (company)</h1>
+<h1 id="section-3"></h1>
+<ul>
+<li>“Acquire” experts in a technology</li>
+<li>Sell support or consulting services</li>
+<li>Marketing <!-- - Software license "obliges"
+
+Not everything funded ends up in a "usable" format for others (e.g., Android/Linux, TiVO)
+
+---
+
+*"Tivoization is the practice of designing hardware that incorporates software under the terms of a copyleft software license like the GNU General Public License (GNU GPL), but uses hardware restrictions or digital rights management (DRM) to prevent users from running modified versions of the software on that hardware"* [Wikipedia]
+
+--></li>
+</ul>
+<h1 id="activity-exploring-the-environment-of-a-project">Activity: Exploring the environment of a project</h1>
+<figure>
+<img src="https://fonts.gstatic.com/s/i/materialicons/monetization_on/v4/24px.svg" alt="" /><figcaption>width:256px</figcaption>
+</figure>
+<ul>
+<li>Research how the communities of some projects are organized</li>
+<li><h2 id="produce-a-presentation-summarizing-your-findings">Produce a presentation summarizing your findings</h2></li>
+</ul>
+<h1 id="open-source-development-1">Open Source Development</h1>
+<h1 id="height350px-1"><img src="capa.png" alt="height:350px" /></h1>
+<h5 id="software-and-communities-1">Software and Communities</h5>
+</body>
+</html>
