@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://insper.github.io/open-dev/delivery/class-03-guide/">
+        <link rel="canonical" href="https://insper.github.io/open-dev/delivery/2024-2/">
       
       
       
@@ -17,7 +17,7 @@
     
     
       
-        <title>Class 03 guide - Open Source Development 2025/2</title>
+        <title>Delivery folder - Open Source Development 2025/2</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#group-antonio-martins-enrrico-gemha-e-felipe-catapano" class="md-skip">
+        <a href="#delivery-folder" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Class 03 guide
+              Delivery folder
             
           </span>
         </div>
@@ -342,7 +342,7 @@
   
     <li class="md-nav__item">
       <a href="../../lessons/03-software-documentation/" class="md-nav__link">
-        03 - Explorando um projeto desconhecido
+        03 - Exploring an unknown project
       </a>
     </li>
   
@@ -638,89 +638,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#group-antonio-martins-enrrico-gemha-e-felipe-catapano" class="md-nav__link">
-    Group: Antonio Martins, Enrrico Gemha e Felipe Catapano
-  </a>
-  
-    <nav class="md-nav" aria-label="Group: Antonio Martins, Enrrico Gemha e Felipe Catapano">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#guia-para-rodar-a-plataforma-de-quiz" class="md-nav__link">
-    Guia para Rodar a Plataforma de Quiz
-  </a>
-  
-    <nav class="md-nav" aria-label="Guia para Rodar a Plataforma de Quiz">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-pre-requisitos" class="md-nav__link">
-    1. Pré-requisitos
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-instalacao-de-dependencias" class="md-nav__link">
-    2. Instalação de Dependências
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-criacao-do-arquivo-de-usuarios" class="md-nav__link">
-    3. Criação do Arquivo de Usuários
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-configuracao-do-banco-de-dados" class="md-nav__link">
-    4. Configuração do Banco de Dados
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-adicao-de-usuarios-ao-banco-de-dados" class="md-nav__link">
-    5. Adição de Usuários ao Banco de Dados
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-executando-a-aplicacao" class="md-nav__link">
-    6. Executando a Aplicação
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-acessando-a-plataforma" class="md-nav__link">
-    7. Acessando a Plataforma
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -739,44 +658,8 @@
 
 
 
-  <h1>Class 03 guide</h1>
-
-<h2 id="group-antonio-martins-enrrico-gemha-e-felipe-catapano">Group: Antonio Martins, Enrrico Gemha e Felipe Catapano</h2>
-<h3 id="guia-para-rodar-a-plataforma-de-quiz">Guia para Rodar a Plataforma de Quiz</h3>
-<p>Este guia fornece um passo a passo para configurar e executar a aplicação de quiz localmente. Siga as instruções abaixo para garantir que todos os componentes necessários estejam instalados e configurados corretamente.</p>
-<h4 id="1-pre-requisitos">1. <strong>Pré-requisitos</strong></h4>
-<ul>
-<li><strong>Python 3:</strong> Certifique-se de que o Python 3 está instalado em sua máquina.</li>
-<li><strong>pip:</strong> O gerenciador de pacotes <code>pip</code> deve estar instalado.</li>
-</ul>
-<h4 id="2-instalacao-de-dependencias">2. <strong>Instalação de Dependências</strong></h4>
-<p>Navegue até a pasta <code>/src</code> do projeto e instale as dependências necessárias executando o seguinte comando no terminal:</p>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>flask<span class="w"> </span>flask_httpauth
-</code></pre></div>
-<p>Este comando instala o Flask, um framework web leve para Python, e o <code>flask_httpauth</code>, uma extensão para autenticação HTTP básica.</p>
-<h4 id="3-criacao-do-arquivo-de-usuarios">3. <strong>Criação do Arquivo de Usuários</strong></h4>
-<p>Crie um arquivo <code>users.csv</code> para definir os usuários iniciais:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;enriccog,aluno&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>users.csv
-</code></pre></div>
-<p>Este comando cria um arquivo <code>users.csv</code> com um usuário chamado <code>enriccog</code> e define seu tipo como <code>aluno</code>.</p>
-<h4 id="4-configuracao-do-banco-de-dados">4. <strong>Configuração do Banco de Dados</strong></h4>
-<p>Inicialize o banco de dados SQLite com o seguinte comando:</p>
-<div class="highlight"><pre><span></span><code>sqlite3<span class="w"> </span>quiz.db<span class="w"> </span>&lt;<span class="w"> </span>quiz.sql
-</code></pre></div>
-<p>Este comando cria o banco de dados <code>quiz.db</code> usando o script SQL <code>quiz.sql</code>, que deve conter as instruções para criar as tabelas necessárias.</p>
-<h4 id="5-adicao-de-usuarios-ao-banco-de-dados">5. <strong>Adição de Usuários ao Banco de Dados</strong></h4>
-<p>Execute o script <code>adduser.py</code> para adicionar os usuários do arquivo <code>users.csv</code> ao banco de dados:</p>
-<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>adduser.py
-</code></pre></div>
-<p>Este script lê o arquivo <code>users.csv</code> e insere os usuários especificados no banco de dados <code>quiz.db</code>.</p>
-<h4 id="6-executando-a-aplicacao">6. <strong>Executando a Aplicação</strong></h4>
-<p>Defina a variável de ambiente <code>FLASK_APP</code> e inicie o servidor Flask com os comandos:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">FLASK_APP</span><span class="o">=</span>softdes.py<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>flask<span class="w"> </span>run
-</code></pre></div>
-<p>Este comando configura o arquivo <code>softdes.py</code> como a aplicação Flask a ser executada e inicia o servidor. Por padrão, o servidor Flask estará acessível em <code>http://localhost:5000</code>.</p>
-<h4 id="7-acessando-a-plataforma">7. <strong>Acessando a Plataforma</strong></h4>
-<p>Abra um navegador web e acesse <code>http://localhost:5000</code> para visualizar a plataforma de quiz.</p>
-<p>Você agora deve estar pronto para usar a plataforma! Se houver quaisquer problemas ou erros durante o processo de configuração, verifique se todas as dependências estão instaladas corretamente e se os arquivos necessários estão no diretório correto.</p>
+<h1 id="delivery-folder">Delivery folder</h1>
+<p>In this folder you will find files produced by students. </p>
 
 
 
