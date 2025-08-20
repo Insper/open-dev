@@ -27,7 +27,7 @@ Open Development
 
 
 
-###### Versão 2025/2 - Carlos Menezes (carlosedm@insper.edu.br)
+###### Edition 2025/2 - Carlos Menezes (carlosedm@insper.edu.br)
 ---
 
 # Software Documentation
