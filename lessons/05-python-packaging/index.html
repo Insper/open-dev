@@ -16,23 +16,24 @@
       
         <link rel="next" href="../06-localization-translation/">
       
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.11">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
-        <title>05 - Distribuição de Software - Open Source Development 2025/2</title>
+        <title>05 - Distribution of Software - Open Source Development 2025/2</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.0d440cfe.min.css">
-      
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
       
       
 
+
     
+    
+      
     
     
       
@@ -48,7 +49,7 @@
     
       <link rel="stylesheet" href="../../css/people.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -58,14 +59,8 @@
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr">
   
-    
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -73,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#05-distribuicao-de-software" class="md-skip">
+        <a href="#05-distribution-of-software" class="md-skip">
           Skip to content
         </a>
       
@@ -85,16 +80,19 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Open Source Development 2025/2" class="md-header__button md-logo" aria-label="Open Source Development 2025/2" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -106,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              05 - Distribuição de Software
+              05 - Distribution of Software
             
           </span>
         </div>
@@ -114,29 +112,38 @@
     </div>
     
     
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -147,13 +154,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/insper/open-dev/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     Open Dev
@@ -183,12 +191,13 @@
                     
 
 
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Open Source Development 2025/2" class="md-nav__button md-logo" aria-label="Open Source Development 2025/2" data-md-component="logo">
       
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     Open Source Development 2025/2
@@ -198,7 +207,7 @@
       <a href="https://github.com/insper/open-dev/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     Open Dev
@@ -210,14 +219,21 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../.." class="md-nav__link">
-        Home
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
       </a>
     </li>
   
@@ -225,14 +241,21 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../syllabus/" class="md-nav__link">
-        Syllabus
+        
+  
+  
+  <span class="md-ellipsis">
+    Syllabus
+    
+  </span>
+  
+
       </a>
     </li>
   
@@ -240,14 +263,21 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../assessment/" class="md-nav__link">
-        Assessment
+        
+  
+  
+  <span class="md-ellipsis">
+    Assessment
+    
+  </span>
+  
+
       </a>
     </li>
   
@@ -255,14 +285,21 @@
     
       
       
-      
-
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../students/" class="md-nav__link">
-        Students
+        
+  
+  
+  <span class="md-ellipsis">
+    Students
+    
+  </span>
+  
+
       </a>
     </li>
   
@@ -270,110 +307,165 @@
     
       
       
-      
-
   
   
     
   
   
+  
+    
+    
+    
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-          Lessons
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
-          Lessons
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
           
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Lessons
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Lessons
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../01-distributed-workflow/" class="md-nav__link">
-        01 - Distributed Development Workflow
+        
+  
+  
+  <span class="md-ellipsis">
+    01 - Distributed Development Workflow
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../02-software-and-communities/" class="md-nav__link">
-        02 - Software and Communities
+        
+  
+  
+  <span class="md-ellipsis">
+    02 - Software and Communities
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../02-xpresentations-communities/" class="md-nav__link">
-        02 - Software and Communities: presentations
+        
+  
+  
+  <span class="md-ellipsis">
+    02 - Software and Communities: presentations
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../03-software-documentation/" class="md-nav__link">
-        03 - Exploring an unknown project
+        
+  
+  
+  <span class="md-ellipsis">
+    03 - Exploring an unknown project
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../04-professional-project/" class="md-nav__link">
-        04 - Professional Project
+        
+  
+  
+  <span class="md-ellipsis">
+    04 - Professional Project
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
   
   
     
+  
   
   
     <li class="md-nav__item md-nav__item--active">
@@ -385,12 +477,28 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          05 - Distribuição de Software
+          
+  
+  
+  <span class="md-ellipsis">
+    05 - Distribution of Software
+    
+  </span>
+  
+
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        05 - Distribuição de Software
+        
+  
+  
+  <span class="md-ellipsis">
+    05 - Distribution of Software
+    
+  </span>
+  
+
       </a>
       
         
@@ -409,58 +517,74 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#distribuindo-software-para-desenvolvedores-pacote-python-basico" class="md-nav__link">
-    Distribuindo software para desenvolvedores: pacote Python básico
+  <a href="#distributing-software-to-developers-basic-python-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distributing software to developers: basic Python package
+    </span>
   </a>
   
-    <nav class="md-nav" aria-label="Distribuindo software para desenvolvedores: pacote Python básico">
+    <nav class="md-nav" aria-label="Distributing software to developers: basic Python package">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#o-arquivo-setuppy" class="md-nav__link">
-    O arquivo setup.py
+  <a href="#file-setuppy" class="md-nav__link">
+    <span class="md-ellipsis">
+      File setup.py
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dependencias" class="md-nav__link">
-    Dependências
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dependencies
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#requirementstxt" class="md-nav__link">
-    requirements.txt
+    <span class="md-ellipsis">
+      requirements.txt
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#scripts-executaveis" class="md-nav__link">
-    Scripts executáveis
+  <a href="#runnable-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Runnable Scripts
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#criando-arquivos-de-distribuicao" class="md-nav__link">
-    Criando arquivos de distribuição
+    <span class="md-ellipsis">
+      Criando arquivos de distribuição
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#envio-para-o-pypi" class="md-nav__link">
-    Envio para o PyPI
+    <span class="md-ellipsis">
+      Envio para o PyPI
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#entrega" class="md-nav__link">
-    Entrega
+    <span class="md-ellipsis">
+      Entrega
+    </span>
   </a>
   
 </li>
@@ -472,7 +596,9 @@
       
         <li class="md-nav__item">
   <a href="#distribuindo-software-para-usuarios-finais" class="md-nav__link">
-    Distribuindo software para usuários finais
+    <span class="md-ellipsis">
+      Distribuindo software para usuários finais
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Distribuindo software para usuários finais">
@@ -480,14 +606,18 @@
         
           <li class="md-nav__item">
   <a href="#entrega_1" class="md-nav__link">
-    Entrega
+    <span class="md-ellipsis">
+      Entrega
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#referencias" class="md-nav__link">
-    Referências
+    <span class="md-ellipsis">
+      Referências
+    </span>
   </a>
   
 </li>
@@ -504,248 +634,377 @@
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../06-localization-translation/" class="md-nav__link">
-        06 - Localização e Tradução
+        
+  
+  
+  <span class="md-ellipsis">
+    06 - Localização e Tradução
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../07-code-quality/" class="md-nav__link">
-        07 - Code quality
+        
+  
+  
+  <span class="md-ellipsis">
+    07 - Code quality
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../08-automated-testing/" class="md-nav__link">
-        08 - Automated testing
+        
+  
+  
+  <span class="md-ellipsis">
+    08 - Automated testing
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../09-releases/" class="md-nav__link">
-        09 - Releases
+        
+  
+  
+  <span class="md-ellipsis">
+    09 - Releases
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../11-floss-people/" class="md-nav__link">
-        11 - People and Companies from FLOSS
+        
+  
+  
+  <span class="md-ellipsis">
+    11 - People and Companies from FLOSS
+    
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-          Impact
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          Impact
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
           
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Impact
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Impact
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../impact/" class="md-nav__link">
-        2024/2
+        
+  
+  
+  <span class="md-ellipsis">
+    2024/2
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../impact-2023/" class="md-nav__link">
-        2023/2
+        
+  
+  
+  <span class="md-ellipsis">
+    2023/2
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../impact-2022/" class="md-nav__link">
-        2022/2
+        
+  
+  
+  <span class="md-ellipsis">
+    2022/2
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../impact-2021/" class="md-nav__link">
-        2021/2
+        
+  
+  
+  <span class="md-ellipsis">
+    2021/2
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../impact-2020/" class="md-nav__link">
-        2020/1
+        
+  
+  
+  <span class="md-ellipsis">
+    2020/1
+    
+  </span>
+  
+
       </a>
     </li>
   
 
-            
-          
+              
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../impact-2019/" class="md-nav__link">
-        2019/2
+        
+  
+  
+  <span class="md-ellipsis">
+    2019/2
+    
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
     
       
       
-      
-
+  
   
   
   
     
+    
+    
+    
+    
     <li class="md-nav__item md-nav__item--nested">
       
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-          Ongoing projects
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Ongoing projects
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
           
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ongoing projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Ongoing projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
+                
+  
   
   
   
     <li class="md-nav__item">
       <a href="../../projects/2024/2/" class="md-nav__link">
-        2024/2
+        
+  
+  
+  <span class="md-ellipsis">
+    2024/2
+    
+  </span>
+  
+
       </a>
     </li>
   
 
+              
             
-          
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -777,58 +1036,74 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#distribuindo-software-para-desenvolvedores-pacote-python-basico" class="md-nav__link">
-    Distribuindo software para desenvolvedores: pacote Python básico
+  <a href="#distributing-software-to-developers-basic-python-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      Distributing software to developers: basic Python package
+    </span>
   </a>
   
-    <nav class="md-nav" aria-label="Distribuindo software para desenvolvedores: pacote Python básico">
+    <nav class="md-nav" aria-label="Distributing software to developers: basic Python package">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#o-arquivo-setuppy" class="md-nav__link">
-    O arquivo setup.py
+  <a href="#file-setuppy" class="md-nav__link">
+    <span class="md-ellipsis">
+      File setup.py
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dependencias" class="md-nav__link">
-    Dependências
+  <a href="#dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dependencies
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#requirementstxt" class="md-nav__link">
-    requirements.txt
+    <span class="md-ellipsis">
+      requirements.txt
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#scripts-executaveis" class="md-nav__link">
-    Scripts executáveis
+  <a href="#runnable-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Runnable Scripts
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#criando-arquivos-de-distribuicao" class="md-nav__link">
-    Criando arquivos de distribuição
+    <span class="md-ellipsis">
+      Criando arquivos de distribuição
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#envio-para-o-pypi" class="md-nav__link">
-    Envio para o PyPI
+    <span class="md-ellipsis">
+      Envio para o PyPI
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#entrega" class="md-nav__link">
-    Entrega
+    <span class="md-ellipsis">
+      Entrega
+    </span>
   </a>
   
 </li>
@@ -840,7 +1115,9 @@
       
         <li class="md-nav__item">
   <a href="#distribuindo-software-para-usuarios-finais" class="md-nav__link">
-    Distribuindo software para usuários finais
+    <span class="md-ellipsis">
+      Distribuindo software para usuários finais
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Distribuindo software para usuários finais">
@@ -848,14 +1125,18 @@
         
           <li class="md-nav__item">
   <a href="#entrega_1" class="md-nav__link">
-    Entrega
+    <span class="md-ellipsis">
+      Entrega
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#referencias" class="md-nav__link">
-    Referências
+    <span class="md-ellipsis">
+      Referências
+    </span>
   </a>
   
 </li>
@@ -879,20 +1160,20 @@
                 
                   
 
+
   
   
 
 
-
-<h1 id="05-distribuicao-de-software">05 - Distribuição de Software</h1>
-<p>Nesta aula complementaremos as últimas discussões criando um pequeno pacote Python instalável via <code>pip</code>. Com isto chegamos mais perto de um projeto que esteja preparado para que outras pessoas o utilizem e colaborem em seu desenvolvimento. </p>
-<h2 id="distribuindo-software-para-desenvolvedores-pacote-python-basico">Distribuindo software para desenvolvedores: pacote Python básico</h2>
-<p>Nosso módulo se chamará <code>dev_aberto</code> e disponibilizará um programa executável <code>hello.py</code>. Crie a seguinte estrutura de pastas para nosso pacote. </p>
+<h1 id="05-distribution-of-software">05 - Distribution of Software</h1>
+<p>In this lesson we will complement the latest discussions creating a small Python package installed via <code>pip</code>. With this we come closer to a project that is prepared for others to use and collaborate in its development.</p>
+<h2 id="distributing-software-to-developers-basic-python-package">Distributing software to developers: basic Python package</h2>
+<p>Our module will be called <code>dev_aberto</code> and provide an executable program <code>hello.py</code>. Create the following folder structure for our package.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Baixe os arquivos que usaremos <a href="https://github.com/Insper/open-dev/tree/master/docs/lessons/05-python-packaging">neste link</a></p>
+<p>Download the files we will use at this <a href="https://github.com/Insper/open-dev/tree/master/docs/lessons/05-python-packaging">link</a></p>
 </div>
-<div class="highlight"><pre><span></span><code>pacote_exemplo/
+<div class="highlight"><pre><span></span><code>package_example/
     dev_aberto/
         __init__.py
         dev_aberto.py
@@ -903,65 +1184,67 @@
 </code></pre></div>
 <div class="admonition exercise">
 <p class="admonition-title">Exercise</p>
-<p>com a estrutura acima, qual seria o <code>import</code> a ser feito para usar a função <code>hello</code> do arquivo <em>dev_aberto.py</em>?</p>
+<p>Considering above structure, what would be the appropriate <code>import</code> command at a <em>Python</em> script to use <code>hello</code> function from <em>dev_aberto.py</em> file?</p>
 </div>
 <div class="admonition exercise">
 <p class="admonition-title">Exercise</p>
-<p>Pesquise para que serve o arquivo <strong><code>__init__.py</code></strong> e use-o para permitir importar <code>hello</code> usando somente <code>import dev_aberto</code>.</p>
+<p>Search what <strong><code>__init__.py</code></strong> file is for and use it to allow import <code>hello</code> function using only <code>import dev_aberto</code>.</p>
 </div>
 <div class="admonition exercise">
 <p class="admonition-title">Exercise</p>
-<p>Crie um projeto no github para esta atividade. Faça um primeiro commit nele com o conteúdo "zerado" do projeto.</p>
+<p>Create a project in github for this activity. Make a first commit to this project without programming content.</p>
 <ul>
-<li>Um arquivo <em>README</em> contendo uma frase de descrição do pacote e um link para o repositório da disciplina. </li>
-<li>Um arquivo <em>LICENSE</em> com a licença MIT. </li>
+<li>A <em>README</em> file containing a description phrase of the package and a link to discipline repository. </li>
+<li>A <em>LICENSE</em> file with MIT license. </li>
 </ul>
 </div>
-<h3 id="o-arquivo-setuppy">O arquivo <code>setup.py</code></h3>
-<p>A descrição de um pacote Python é feita usando um arquivo setup.py  Veja abaixo uma versão inicial deste arquivo:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span>
+<h3 id="file-setuppy">File <code>setup.py</code></h3>
+<p>Description of a Python package is made using a <code>setup.py</code> file. See below an initial version of this file:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">setuptools</span><span class="w"> </span><span class="kn">import</span> <span class="n">setup</span>
 
-<span class="n">setup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;dev_aberto_seunome&#39;</span><span class="p">,</span>
+<span class="n">setup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;dev_aberto_Your_Name&#39;</span><span class="p">,</span>
       <span class="n">version</span><span class="o">=</span><span class="s1">&#39;0.1&#39;</span><span class="p">,</span>
       <span class="n">packages</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;dev_aberto&#39;</span><span class="p">]</span>
       <span class="p">)</span>
 </code></pre></div>
 <div class="admonition exercise">
 <p class="admonition-title">Exercise</p>
-<p>Crie o arquivo acima no seu projeto, substituindo <em>seunome</em> por .... seu nome. Instale o seu próprio pacote usando </p>
+<p>Create the above file in your project by replacing <em>Your_name</em> by ... your name. Install your own package using</p>
 <blockquote>
 <p>pip install .</p>
 </blockquote>
 </div>
 <div class="admonition exercise">
 <p class="admonition-title">Exercise</p>
-<p>Em outra pasta, abra um console Python e tente importar seu módulo. </p>
+<p>In another folder, open a Python console and try to import your module. </p>
 </div>
 <div class="admonition exercise">
 <p class="admonition-title">Exercise</p>
-<p>Pesquise quais argumentos são usados para especificar o autor do pacote, as versões de Python e sistemas operacionais suportados. Preencha estes valores com suas informações. Note que o <code>pip</code> leva estas informações em conta e só instalará um pacote se ele estiver em um ambiente suportado. </p>
+<p>Find out what arguments are used to specify package author, Python versions, and supported operating systems. Fill these values with your information. Please note that <code>pip</code> take this information into account and will only install a package if it is in a supported environment.</p>
 </div>
-<h3 id="dependencias">Dependências</h3>
-<p>Para adicionar pacotes que são automaticamente instalados quando instalamos nosso pacote precisamos identificá-los no nosso arquivo <em>setup.py</em>. Para adicionar uma dependência de instalação basta adicionar o seguinte argumento:</p>
+<h3 id="dependencies">Dependencies</h3>
+<p>To add packages that are automatically installed when we install our package we need to identify them in our <em>setup.py</em> file. To add an installation dependency just add the following argument:</p>
 <div class="highlight"><pre><span></span><code>    ...
     install_requires=[
-        &#39;pacote&gt;=1.0&#39;,
-        &#39;pacote2&#39;
+        &#39;packaage1&gt;=1.0&#39;,
+        &#39;package2&#39;
     ],
     ...
 </code></pre></div>
 <div class="admonition exercise">
 <p class="admonition-title">Exercise</p>
-<p>Verifique as dependências do código e adicione-as no <code>setup.py</code>. </p>
+<p>Check the code dependencies and add them to <code>setup.py</code>...</p>
 </div>
 <h3 id="requirementstxt">requirements.txt</h3>
-<p>Muitos softwares usam também um arquivo <em>requirements.txt</em> para listar <strong>todas</strong> as dependências do software de modo a obter uma instalação idêntica à do desenvolvedor. Isto é importante para uniformizar os ambientes de desenvolvimento. Ou seja, este arquivo nunca será usado por usuários finais. </p>
+<p>Muitos softwares usam também um arquivo <em>requirements.txt</em> para listar <strong>todas</strong> as dependências do software de modo a obter uma instalação idêntica à do desenvolvedor. Isto é importante para uniformizar os ambientes de desenvolvimento. Ou seja, este arquivo nunca será usado por usuários finais. 
+Many software also use a <em>requirements.txt</em> file to list <strong>all</strong> software dependencies in order to obtain a installation identical to that of developer. This is important to standardize development environments. This file will never be used by end users.</p>
 <div class="admonition exercise">
 <p class="admonition-title">Exercise</p>
-<p>Crie um <em>requirements.txt</em> para seu projeto com as mesmas dependências listadas no seu <em>setup.py</em>. </p>
+<p>Create a <em>requirements.txt</em> file for your project with the same dependencies listed on your <em>setup.py</em>. </p>
 </div>
-<h3 id="scripts-executaveis">Scripts executáveis</h3>
+<h3 id="runnable-scripts">Runnable Scripts</h3>
 <p>Além de instalar o nosso módulo para uso via <code>import</code> desejamos também disponibilizar o arquivo <em>hello.py</em> como um executável para todo o sistema. Isto pode ser feito adicionando a seguinte linha no nosso <em>setup.py</em> indicando que <em>scripts/hello.py</em> deverá ser instalado como um executável. </p>
+<p>In addition to installing our module for use <em>via</em> <code>import</code>, we also want to make <em>hello.py</em> file available as an executable for entire system. This can be done by adding the following line to our <em>setup.py</em> indicating that <em>scripts/hello.py</em> should be installed as an executable.</p>
 <div class="highlight"><pre><span></span><code>    ...
     scripts=[&#39;scripts/hello.py&#39;],
     ...
@@ -1026,11 +1309,19 @@ $ pip install --index-url <a href="https://test.pypi.org/simple/">https://test.p
 
 
 
+
+
+
+
+
+
+
                 
               </article>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
       </main>
@@ -1058,10 +1349,13 @@ $ pip install --index-url <a href="https://test.pypi.org/simple/">https://test.p
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6df46069.min.js"></script>
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
       
         <script src="../../js/markdown-enhancer.js"></script>
       
