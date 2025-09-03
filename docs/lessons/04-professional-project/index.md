@@ -12,7 +12,9 @@ There is a moment in a project's history where it is already useful for the auth
 ````
 
 !!! done
-    Form a pair and select a project that one of you worked on during your degree. We will transform it into a complete project that other people can use and contribute to. 
+    Form a pair and select a project that one of you worked on during your degree. We will transform it into a complete project that other people can use and contribute to.
+
+    *Attention:* if you submit your achievement with **group** metadata, your colleague(s) should **not** do the same, because *dev-aberto* system manages individual points to all group member.
 
 ## Deliverables
 

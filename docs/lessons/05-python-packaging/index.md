@@ -1,16 +1,16 @@
-# 05 - Distribuição de Software
+# 05 - Distribution of Software
 
-Nesta aula complementaremos as últimas discussões criando um pequeno pacote Python instalável via `pip`. Com isto chegamos mais perto de um projeto que esteja preparado para que outras pessoas o utilizem e colaborem em seu desenvolvimento. 
+In this lesson we will complement the latest discussions creating a small Python package installed via `pip`. With this we come closer to a project that is prepared for others to use and collaborate in its development.
 
-## Distribuindo software para desenvolvedores: pacote Python básico
+## Distributing software to developers: basic Python package
 
-Nosso módulo se chamará `dev_aberto` e disponibilizará um programa executável `hello.py`. Crie a seguinte estrutura de pastas para nosso pacote. 
+Our module will be called `dev_aberto` and provide an executable program `hello.py`. Create the following folder structure for our package.
 
 !!! important
-    Baixe os arquivos que usaremos [neste link](https://github.com/Insper/open-dev/tree/master/docs/lessons/05-python-packaging)
+    Download the files we will use at this [link](https://github.com/Insper/open-dev/tree/master/docs/lessons/05-python-packaging)
 
 ~~~
-pacote_exemplo/
+package_example/
     dev_aberto/
         __init__.py
         dev_aberto.py
@@ -21,76 +21,79 @@ pacote_exemplo/
 ~~~
 
 !!! exercise
-    com a estrutura acima, qual seria o `import` a ser feito para usar a função `hello` do arquivo *dev_aberto.py*?
+    Considering above structure, what would be the appropriate `import` command at a *Python* script to use `hello` function from *dev_aberto.py* file?
 
 !!! exercise
-    Pesquise para que serve o arquivo **`__init__.py`** e use-o para permitir importar `hello` usando somente `import dev_aberto`.
+    Search what **`__init__.py`** file is for and use it to allow import `hello` function using only `import dev_aberto`.
+
 
 !!! exercise
-    Crie um projeto no github para esta atividade. Faça um primeiro commit nele com o conteúdo "zerado" do projeto.
+    Create a project in github for this activity. Make a first commit to this project without programming content.
 
-    - Um arquivo *README* contendo uma frase de descrição do pacote e um link para o repositório da disciplina. 
-    - Um arquivo *LICENSE* com a licença MIT. 
+    - A *README* file containing a description phrase of the package and a link to discipline repository. 
+    - A *LICENSE* file with MIT license. 
 
+### File `setup.py`
 
-### O arquivo `setup.py`
-
-A descrição de um pacote Python é feita usando um arquivo setup.py  Veja abaixo uma versão inicial deste arquivo:
+Description of a Python package is made using a `setup.py` file. See below an initial version of this file:
 
 ~~~{.py}
 from setuptools import setup
 
-setup(name='dev_aberto_seunome',
+setup(name='dev_aberto_Your_Name',
       version='0.1',
       packages=['dev_aberto']
       )
 ~~~
 
 !!! exercise
-    Crie o arquivo acima no seu projeto, substituindo *seunome* por .... seu nome. Instale o seu próprio pacote usando 
+    Create the above file in your project by replacing *Your_name* by ... your name. Install your own package using
 
     > pip install .
     
 !!! exercise
-    Em outra pasta, abra um console Python e tente importar seu módulo. 
+    In another folder, open a Python console and try to import your module. 
 
 !!! exercise
-    Pesquise quais argumentos são usados para especificar o autor do pacote, as versões de Python e sistemas operacionais suportados. Preencha estes valores com suas informações. Note que o `pip` leva estas informações em conta e só instalará um pacote se ele estiver em um ambiente suportado. 
+    Find out what arguments are used to specify package author, Python versions, and supported operating systems. Fill these values with your information. Please note that `pip` take this information into account and will only install a package if it is in a supported environment.
 
-### Dependências
+### Dependencies
 
-Para adicionar pacotes que são automaticamente instalados quando instalamos nosso pacote precisamos identificá-los no nosso arquivo *setup.py*. Para adicionar uma dependência de instalação basta adicionar o seguinte argumento:
+To add packages that are automatically installed when we install our package we need to identify them in our *setup.py* file. To add an installation dependency just add the following argument:
 
 ~~~
     ...
     install_requires=[
-        'pacote>=1.0',
-        'pacote2'
+        'packaage1>=1.0',
+        'package2'
     ],
     ...
 ~~~
 
 
 !!! exercise
-    Verifique as dependências do código e adicione-as no `setup.py`. 
+    Check the code dependencies and add them to `setup.py`...
 
 ### requirements.txt
 
 Muitos softwares usam também um arquivo *requirements.txt* para listar **todas** as dependências do software de modo a obter uma instalação idêntica à do desenvolvedor. Isto é importante para uniformizar os ambientes de desenvolvimento. Ou seja, este arquivo nunca será usado por usuários finais. 
+Many software also use a *requirements.txt* file to list **all** software dependencies in order to obtain a installation identical to that of developer. This is important to standardize development environments. This file will never be used by end users.
 
 !!! exercise
-    Crie um *requirements.txt* para seu projeto com as mesmas dependências listadas no seu *setup.py*. 
+    Create a *requirements.txt* file for your project with the same dependencies listed on your *setup.py*. 
 
-### Scripts executáveis
+### Runnable Scripts
 
 Além de instalar o nosso módulo para uso via `import` desejamos também disponibilizar o arquivo *hello.py* como um executável para todo o sistema. Isto pode ser feito adicionando a seguinte linha no nosso *setup.py* indicando que *scripts/hello.py* deverá ser instalado como um executável. 
+
+In addition to installing our module for use *via* `import`, we also want to make *hello.py* file available as an executable for entire system. This can be done by adding the following line to our *setup.py* indicating that *scripts/hello.py* should be installed as an executable.
 
 ~~~
     ...
     scripts=['scripts/hello.py'],
     ...
 ~~~
-
+            
 Não se esqueça de adicionar a seguinte linha no topo de seu arquivo para que ele possa ser executado diretamente do shell:
 
 ~~~

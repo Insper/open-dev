@@ -1,11 +1,11 @@
 # 01 - Distributed Development Workflow
 
-<ah-external-content src="slides_fb.html" />
+<ah-external-content src="slides_cedm.html" />
 
 
 In this guide, we will work on the standard workflow for contributing to projects hosted on GitHub (which also applies to Git projects in general). Before starting, each student should locate the corresponding issue on the course's GitHub repository for creating their user.
 
-Our workflow will be based on three main parts. In the first part, we will create a copy of the repository "insper/dev-aberto" where we will make all the necessary changes. In the second part, we will send our modifications to the original repository using a *Pull Request*, which is a request to accept the changes from a forked repository into the original repository. Finally, we will update our fork with modifications sent by colleagues.
+Our workflow will be based on three main parts. In the first part, we will create a copy of the repository "insper/open-dev" where we will make all the necessary changes. In the second part, we will send our modifications to the original repository using a *Pull Request*, which is a request to accept the changes from a forked repository into the original repository. Finally, we will update our fork with modifications sent by colleagues.
 
 Some key points to highlight in the above workflow:
 
@@ -15,7 +15,7 @@ Some key points to highlight in the above workflow:
 
 ## Creating your own copy
 
-We will start our workflow by creating a fork of the repository "insper/dev-aberto". All our modifications will be made in our fork, on a separate branch (it is recommended to use a different branch for each issue). This way, our modifications are completely isolated from the original code, and we can test them alongside the original code.
+We will start our workflow by creating a fork of the repository "insper/open-dev". All our modifications will be made in our fork, on a separate branch (it is recommended to use a different branch for each issue). This way, our modifications are completely isolated from the original code, and we can test them alongside the original code.
 
 First, create the fork through the GitHub interface. Then, clone your fork and create a new branch called "issue-X," where "X" is the number of your issue in the original project.
 
