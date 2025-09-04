@@ -33,3 +33,5 @@ You must add a new skill to the file with this format:
 ```
 
 where `["user1","user2","users3"]` is the list of the users that are part of the group.
+
+*Attention:* if you submit your achievement with **group** metadata, your colleague(s) should **not** do the same, because *dev-aberto* system manages individual points to all group member.
