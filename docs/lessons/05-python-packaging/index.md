@@ -64,7 +64,7 @@ To add packages that are automatically installed when we install our package we 
 ~~~
     ...
     install_requires=[
-        'packaage1>=1.0',
+        'package1>=1.0',
         'package2'
     ],
     ...
@@ -103,8 +103,8 @@ On Windows, an executable is created that runs our script, so that executable ca
 
 Two types of distribution files can be used:
 
-- sdist: This file  contains project's source code, including additional files specified by using `data_files` argument. This is used if your project is pure Python (only written in Python).
-- wheel: This is a precompiled, platform-specific format. Most commonly used when the project contains *C language* extensions.
+- **sdist**: This file  contains project's source code, including additional files specified by using `data_files` argument. This is used if your project is pure Python (only written in Python).
+- **wheel**: This is a precompiled, platform-specific format. Most commonly used when the project contains *C language* extensions.
 
 Creating a source code distribution file is quite simple:
 
