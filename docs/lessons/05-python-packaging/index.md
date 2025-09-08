@@ -75,8 +75,7 @@ To add packages that are automatically installed when we install our package we 
     Check the code dependencies and add them to `setup.py`...
 
 ### requirements.txt
-
-Muitos softwares usam também um arquivo *requirements.txt* para listar **todas** as dependências do software de modo a obter uma instalação idêntica à do desenvolvedor. Isto é importante para uniformizar os ambientes de desenvolvimento. Ou seja, este arquivo nunca será usado por usuários finais. 
+ 
 Many software also use a *requirements.txt* file to list **all** software dependencies in order to obtain a installation identical to that of developer. This is important to standardize development environments. This file will never be used by end users.
 
 !!! exercise
@@ -84,9 +83,7 @@ Many software also use a *requirements.txt* file to list **all** software depend
 
 ### Runnable Scripts
 
-Além de instalar o nosso módulo para uso via `import` desejamos também disponibilizar o arquivo *hello.py* como um executável para todo o sistema. Isto pode ser feito adicionando a seguinte linha no nosso *setup.py* indicando que *scripts/hello.py* deverá ser instalado como um executável. 
-
-In addition to installing our module for use *via* `import`, we also want to make *hello.py* file available as an executable for entire system. This can be done by adding the following line to our *setup.py* indicating that *scripts/hello.py* should be installed as an executable.
+In addition to install our module for using `import`, we also want to make *hello.py* file available as an executable file for entire system. This can be done by adding the following line to our *setup.py* indicating that *scripts/hello.py* should be installed as an executable.
 
 ~~~
     ...
@@ -94,81 +91,80 @@ In addition to installing our module for use *via* `import`, we also want to mak
     ...
 ~~~
             
-Não se esqueça de adicionar a seguinte linha no topo de seu arquivo para que ele possa ser executado diretamente do shell:
+Don't forget to add the following line to the top of your file so it can be run directly from shell:
 
 ~~~
 #!/usr/bin/env python3
 ~~~
 
-No Windows é criado um executável que chama nosso script, de modo que as chamadas do executável continuarão funcionando normalmente. Note que isto não cria menus em nenhum tipo de interface gráfica. 
+On Windows, an executable is created that runs our script, so that executable calls will work normally. Note that this does not create any type of graphical interface.
 
-### Criando arquivos de distribuição
+### Creating distribution files
 
-Dois tipos de arquivos de distribuição podem ser usados:
+Two types of distribution files can be used:
 
-- sdist: é um arquivo contendo os fontes do projeto, incluindo arquivos adicionais especificados usando o argumento `data_files`. Usado se seu projeto for Python-puro.
-- wheel: é um formato pré-compilado e específico para cada plataforma. Mais usado quando o projeto contém extensões em *C*.
+- sdist: This file  contains project's source code, including additional files specified by using `data_files` argument. This is used if your project is pure Python (only written in Python).
+- wheel: This is a precompiled, platform-specific format. Most commonly used when the project contains *C language* extensions.
 
-A criação de um arquivo de distribuição de fontes é bem simples:
+Creating a source code distribution file is quite simple:
 
 <ah-terminal>
-$  python setup.py sdist
+$ python setup.py sdist
 </ah-terminal>
-    
-A instalação deste pacote pode ser feita via `pip`.
 
-### Envio para o PyPI
+This package can be installed by `pip`.
 
-Vamos agora enviar nosso pacote para o *Python Package Index* para que ele possa ser instalado diretamente via `pip`. Para não poluir o repositório com pacotes temporários e de teste, podemos usar o *TestPyPI*. Toda sua infraestrutura é igual ao oficial, mas ele é limpo de maneira regular. 
+### Uploading to PyPI
 
-Visite [https://test.pypi.org/account/register/](https://test.pypi.org/account/register/) e registre-se no *TestPyPI*.
+Now let's upload our package to *Python Package Index*; so it can be installed directly by `pip`. To avoid cluttering the repository with temporary and test packages, we can use *TestPyPI*. Its entire infrastructure is the same as the official one, but it is cleaned regularly.
 
-Após o registro, usaremos o pacote *twine* (instalável via *pip*) para fazer o upload:
+Visit [https://test.pypi.org/account/register/](https://test.pypi.org/account/register/) and register yourself on *TestPyPI*.
 
+After registration, we'll use the *twine* package (installable by *pip*) to upload:
 
 <ah-terminal>
 $ twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 </ah-terminal>
 
-Você poderá, então, instalar seu pacote a partir do test PyPI usando o seguinte comando:
+You can then install your package from *TestPyPI* using the following command:
 
 <ah-terminal>
-$ pip install --index-url https://test.pypi.org/simple/ my_hello_nome
+$ pip install --index-url https://test.pypi.org/simple/ my_hello_pack
 </ah-terminal>
 
-### Entrega
+### Submit your assignment
 
-Faça a entrega de sua atividade adicionando a skill *Pacote Python* e inclua nela a url do seu repositório no github.
+Submit your assignment by adding *Python Package* skill and including URL of your GitHub repository.
 
-![Skill Pacote Python](skill-python.svg){ style="height:150px" }
+![Python Package Skill](skill-python.svg){ style="height:150px" }
 
-**Objetivo**: Primeira experiência distribuindo software Python.
+**Objective**: First experience distributing Python software.
 
-> "skill_id": 6, "metadata": {"url": "repo-seu-pacote"}
+> "skill_id": 6, "metadata": {"url": "repo-your-package"}
 
-## Distribuindo software para usuários finais
+## Distributing Software to End Users
 
-Vamos agora trabalhar (em duplas) no Servidor de Desafios novamente. Seu trabalho será criar um `Dockerfile` que roda o software de maneira "completa". Ou seja, o script de criação do container deverá
+Now we'll work (in pairs) on the *Challenge Server* again. Your job will be to create a Dockerfile that runs this software *completely*. In other words, container creation script must:
 
-- [ ] instalar todas as dependências do sistema
-- [ ] criar a base de dados, se necessário
-- [ ] adicionar os usuários presentes no arquivo `users.csv`, se necessário
-- [ ] executar o servidor e serví-lo na porta `8080` do `host`
-- [ ] manter os dados adicionados ao reiniciar o container
+- [ ] install all system dependencies
+- [ ] create database, if it is necessary
+- [ ] add all users present in `users.csv` file, if it is necessary
+- [ ] run server on host port `8080` 
+- [ ] retain added data when restarting the container
 
-### Entrega
+### Deliver this assignment
 
-Faça a entrega de sua atividade adicionando a skill *Dockerfile* segundo o modelo abaixo.
+Deliver your activity by adding skill *Dockerfile* according to template below:
 
 ![Skill Dockerfile](skill-docker.svg){ style="height:150px" }
 
-**Objetivo**: Criou deploy automatizado para sistema web Python
+**Objective**: Create an automated deployment for a Python web system
 
-> "skill_id": 7, "metadata": {"url": "repo-servidor-de-desafios", "group": ["login1", "login2"]}
+> "skill_id": 7, "metadata": {"url": "challenge-server-repo", "group": ["login1", "login2"]}
 
-### Referências
+### References
 
-Algumas referências que podem ser úteis: 
+Some references that may be useful:
 
 * [https://docker-curriculum.com/](https://docker-curriculum.com/)
 * [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
