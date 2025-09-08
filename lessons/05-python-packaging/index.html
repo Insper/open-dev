@@ -1226,7 +1226,7 @@
 <p>To add packages that are automatically installed when we install our package we need to identify them in our <em>setup.py</em> file. To add an installation dependency just add the following argument:</p>
 <div class="highlight"><pre><span></span><code>    ...
     install_requires=[
-        &#39;packaage1&gt;=1.0&#39;,
+        &#39;package1&gt;=1.0&#39;,
         &#39;package2&#39;
     ],
     ...
@@ -1254,8 +1254,8 @@
 <h3 id="creating-distribution-files">Creating distribution files</h3>
 <p>Two types of distribution files can be used:</p>
 <ul>
-<li>sdist: This file  contains project's source code, including additional files specified by using <code>data_files</code> argument. This is used if your project is pure Python (only written in Python).</li>
-<li>wheel: This is a precompiled, platform-specific format. Most commonly used when the project contains <em>C language</em> extensions.</li>
+<li><strong>sdist</strong>: This file  contains project's source code, including additional files specified by using <code>data_files</code> argument. This is used if your project is pure Python (only written in Python).</li>
+<li><strong>wheel</strong>: This is a precompiled, platform-specific format. Most commonly used when the project contains <em>C language</em> extensions.</li>
 </ul>
 <p>Creating a source code distribution file is quite simple:</p>
 <p><ah-terminal>
