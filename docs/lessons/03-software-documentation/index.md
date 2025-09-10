@@ -4,8 +4,15 @@
 
 This script has some questions with the aim of guiding the exploration of the code and documenting its findings. You can also apply it for any other poorly documented project you need to work on in the future.
 
-Download the project code to be analyzed [here](codigo.zip) and follow the questions. They are a guide to how to explore a project that you do not know.
+````
+{"skill_id": 3, "metadata": {"date": "YYYY-MM-DD", "group": ["user1","user2","users3"]}}
+````
 
+!!! done
+    Form a pair and download the project code to be analyzed [here](codigo.zip) and follow the questions. They are a guide to how to explore a project that you do not know.
+    Follow these questions below. After all, send an e-mail to your professor with your outcomes. Don't forget to submit a Pull-Request with your updated achievements.
+
+    *Attention:* if you submit your achievement with **group** metadata, your colleague(s) should **not** do the same, because *dev-aberto* system manages individual points to all group member.
 
 ## Dependencies and services used
 
