@@ -44,11 +44,12 @@ print('Hello {}'.format(name))
 
 A possible output would be
 
+```
 2025-09-15
 240000000000.3221
 Input your name: Carlos
 Hello Carlos
-
+```
 
 As already seen in class, this program combines three of the main outputs that need to be formatted: dates, fractional numbers, and messages to user.
 
