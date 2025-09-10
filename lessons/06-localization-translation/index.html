@@ -1082,10 +1082,11 @@ $ LANGUAGE=pt_BR.utf8 ls --help
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
 </code></pre></div>
 <p>A possible output would be</p>
-<p>2025-09-15
+<div class="highlight"><pre><span></span><code>2025-09-15
 240000000000.3221
 Input your name: Carlos
-Hello Carlos</p>
+Hello Carlos
+</code></pre></div>
 <p>As already seen in class, this program combines three of the main outputs that need to be formatted: dates, fractional numbers, and messages to user.</p>
 <h2 id="formatting-dates">Formatting Dates</h2>
 <p>Date formatting is ruled by <code>LC_TIME</code> variable. <code>babel.dates</code> module already has several functions that automatically use <code>LC_TIME</code> to locate variables of the <code>Date</code> type (using the <code>format_date</code> function) or <code>DateTime</code> (using <code>format_datetime</code>).</p>
