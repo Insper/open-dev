@@ -32,14 +32,15 @@ We'll work with a command-line application that does nothing more than print som
 from datetime import date
 
 if __name__ == '__main__':
-today = date.today()
-print(today)
+    today = date.today()
+    print(today)
 
-number = 240000000000.32212
-print(number)
+    number = 240000000000.32212
+    print(number)
 
-name = input('Input your name: ')
-print('Hello {}'.format(name))
+    name = input('Input your name: ')
+    print('Hello {}'.format(name))
+    
 ```
 
 A possible output would be
