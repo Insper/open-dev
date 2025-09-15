@@ -14,11 +14,11 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
       
-        <title>Software Translation and Localization - Open Source Development 2025/2</title>
+        <title>Tradução e localização de software - Open Source Development 2025/2</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#open-development" class="md-skip">
+        <a href="#desenvolvimento-aberto" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Software Translation and Localization
+              Tradução e localização de software
             
           </span>
         </div>
@@ -489,7 +489,7 @@
   
   
   <span class="md-ellipsis">
-    06 - Localization and Translation
+    06 - Localização e Tradução
     
   </span>
   
@@ -877,19 +877,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#software-localization-and-internationalization" class="md-nav__link">
+  <a href="#localizacao-e-internacionalizacao-de-software" class="md-nav__link">
     <span class="md-ellipsis">
-      Software Localization and Internationalization
+      Localização e internacionalização de software
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Software Localization and Internationalization">
+    <nav class="md-nav" aria-label="Localização e internacionalização de software">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#version-20232-igor-montagner-igorsm1insperedubr" class="md-nav__link">
+  <a href="#versao-20232-igor-montagner-igorsm1insperedubr" class="md-nav__link">
     <span class="md-ellipsis">
-      Version 2023/2: Igor Montagner (&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;)
+      Versão 2023/2: Igor Montagner (&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;)
     </span>
   </a>
   
@@ -932,84 +932,84 @@
     }
 </style>
 
-<h1 id="open-development">Open Development</h1>
+<h1 id="desenvolvimento-aberto">Desenvolvimento Aberto</h1>
 <p><img alt="width:300px" src="../capa.svg" /></p>
-<h5 id="software-localization-and-internationalization">Software Localization and Internationalization</h5>
-<h6 id="version-20232-igor-montagner-igorsm1insperedubr">Version 2023/2: Igor Montagner (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;">&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;</a>)</h6>
+<h5 id="localizacao-e-internacionalizacao-de-software">Localização e internacionalização de software</h5>
+<h6 id="versao-20232-igor-montagner-igorsm1insperedubr">Versão 2023/2: Igor Montagner (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;">&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;</a>)</h6>
 <hr />
-<h1 id="software-translation">Software Translation</h1>
-<h2 id="what-is-the-difference-between-internationalization-and-localization">What is the difference between internationalization and localization?</h2>
+<h1 id="traducao-de-software">Tradução de software</h1>
+<h2 id="qual-a-diferenca-de-internacionalizacao-e-localizacao">Qual a diferença de internacionalização e localização?</h2>
 <hr />
-<h1 id="internationalization-i18n">Internationalization (I18N)</h1>
+<h1 id="internacionalizacao-i18n">Internacionalização (I18N)</h1>
 <ul>
 <li>
-<p>This involves translating a software's user interface into other languages.</p>
+<p>Consiste em traduzir a interface de usuário de um software para outros idiomas. </p>
 </li>
 <li>
-<p>Operating system saves language settings and makes them available to applications.</p>
+<p>Sistema Operacional guarda configurações de idioma e as disponibiliza para aplicações</p>
 </li>
 <li>
-<p>"Invisible" typically.</p>
+<p>Tipicamente "invisível"</p>
 </li>
 </ul>
 <hr />
-<h1 id="localization-l10n">Localization (L10N)</h1>
-<p>This involves adapting the way it displays:</p>
+<h1 id="localizacao-l10n">Localização (L10N)</h1>
+<p>Consiste em adaptar a maneira de mostrar </p>
 <ul>
-<li>fractional numbers<ul>
-<li>decimal placeholders</li>
-<li>thousands placeholders</li>
+<li>números fracionários<ul>
+<li>marcador de decimais</li>
+<li>marcador de milhares</li>
 </ul>
 </li>
-<li>dates<ul>
-<li>month names</li>
-<li>display order</li>
+<li>datas<ul>
+<li>nomes de meses</li>
+<li>ordem de exibição </li>
 </ul>
 </li>
-<li>country names, time zones, etc.</li>
+<li>nomes de países, fusos horários, etc</li>
 </ul>
-<p>according to a user's preferences and cultural preferences.</p>
+<p>de acordo com as preferências de um usuário e relativos a sua cultura. </p>
 <hr />
-<h1 id="i18n-and-l10n">I18N and L10N</h1>
-<p>They must be</p>
+<h1 id="i18n-e-l10n">I18N e L10N</h1>
+<p>Precisam ser</p>
 <ul>
-<li>independent:<ul>
-<li>English language and dates in Brazilian format</li>
+<li>independentes:<ul>
+<li>idioma inglês e datas no formato brasileiro</li>
 </ul>
 </li>
-<li>configurable:<ul>
-<li>I may need to switch between languages ​​and formats</li>
+<li>configuráveis<ul>
+<li>posso precisar trocar entre línguas e entre formatos</li>
 </ul>
 </li>
 </ul>
-<h3 id="support-for-l10n-and-i18n-involves-modifying-source-code">Support for L10N and I18N involves modifying source code.</h3>
+<h3 id="o-suporte-a-l10n-e-i18n-implica-modificar-codigo-fonte">O suporte a L10N e I18N implica modificar código fonte.</h3>
 <hr />
 <h1 id="locales">Locales</h1>
-<p>A <em>locale</em> is a triple</p>
+<p>Um <em>locale</em> é uma tripla</p>
 <h1 id="_1"></h1>
-<pre><code>&lt;language&gt;_&lt;country&gt;.&lt;encoding&gt;
+<pre><code>&lt;lingua&gt;_&lt;pais&gt;.&lt;codificacao&gt;
 </code></pre>
 <h1 id="_2"></h1>
-<p>that represents I18N and/or L10N settings for a given culture.</p>
+<p>que representa configurações de I18N e/ou L10N para uma determinada cultura. </p>
 <hr />
 <h1 id="locales_1">Locales</h1>
-<p>Examples:</p>
+<p>Exemplos:</p>
 <ul>
-<li>Translation of <em>File</em> word:<ul>
+<li>Tradução de <em>File</em>: <ul>
 <li><code>pt</code> = Ficheiro</li>
 <li><code>pt_BR</code> = Arquivo</li>
 </ul>
 </li>
-<li>Date format:<ul>
+<li>Formato de datas:<ul>
 <li><code>en_US</code>: <em>MM/DD/YY</em></li>
 <li><code>en_GB</code>: <em>DD/MM/YY</em></li>
 </ul>
 </li>
 </ul>
-<h3 id="i-can-use-different-locales-for-the-user-interface-language-and-for-displaying-dates">I can use different <em>locales</em> for the user interface language and for displaying dates.</h3>
+<h3 id="posso-usar-locales-diferentes-para-a-lingua-da-interface-de-usuario-e-para-mostrar-datas">Posso usar <em>locales</em> diferentes para a língua da interface de usuário e para mostrar datas.</h3>
 <hr />
-<h1 id="possible-configurations-linux">Possible configurations (Linux)</h1>
-<div class="highlight"><pre><span></span><code># output of locale command
+<h1 id="configuracoes-possiveis-linux">Configurações possíveis (Linux)</h1>
+<div class="highlight"><pre><span></span><code># saída do comando locale
 LANG=en_US.UTF-8
 LC_CTYPE=&quot;en_US.UTF-8&quot;
 LC_NUMERIC=pt_BR.UTF-8
@@ -1025,45 +1025,46 @@ LC_MEASUREMENT=pt_BR.UTF-8
 LC_IDENTIFICATION=pt_BR.UTF-8
 </code></pre></div>
 <hr />
-<h1 id="implementing-l10n-support">Implementing L10N support</h1>
+<h1 id="implementando-suporte-a-l10n">Implementando suporte a L10N</h1>
 <ol>
-<li>Download a localization library</li>
-<li>Find all numbers, dates, etc ... displays</li>
-<li>Preprocess them using library functions</li>
+<li>Baixar uma biblioteca de Localização</li>
+<li>Encontrar todas as exibições de números, datas, etc</li>
+<li>Pré-processá-las usando funções da biblioteca</li>
 </ol>
 <h1 id="_3"></h1>
-<div class="highlight"><pre><span></span><code><span class="c1"># Before</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number:&#39;</span><span class="p">,</span> <span class="mf">10.5</span><span class="p">)</span>
-<span class="c1"># After</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number&#39;</span><span class="p">,</span> <span class="n">format_number</span><span class="p">(</span><span class="mf">10.5</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Antes </span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Numero:&#39;</span><span class="p">,</span> <span class="mf">10.5</span><span class="p">)</span> 
+<span class="c1"># Depois</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Numero&#39;</span><span class="p">,</span> <span class="n">format_number</span><span class="p">(</span><span class="mf">10.5</span><span class="p">))</span>
 </code></pre></div>
 <h1 id="_4"></h1>
-<p>It's not complicated, but it is <strong>laborious</strong></p>
+<p>Não é complicado, mas é <strong>trabalhoso</strong></p>
 <hr />
-<h1 id="i18n-support">I18N Support</h1>
-<p>Involves 4 steps:</p>
+<h1 id="suporte-a-i18n">Suporte a I18N</h1>
+<p>Envolve 4 etapas:</p>
 <ol>
-<li>Mark all strings that should be translated</li>
-<li>Extract them from the source code</li>
-<li>Create a translation file for each supported locale</li>
-<li>Package translations with program</li>
+<li>Marcar todas strings que devem ser traduzidas</li>
+<li>Extraí-las do código fonte</li>
+<li>Criar um arquivo de traduções para cada <em>locale</em> suportado</li>
+<li>Empacotar as traduções junto com o programa</li>
 </ol>
 <h1 id="_5"></h1>
-<p>It's a bit more complicated, but it can be integrated into a program's compilation process.</p>
+<p>É um pouco mais complicado, mas pode ser integrado ao processo de compilação de um programa. </p>
 <hr />
-<h1 id="i18n-support-posix">I18N Support (POSIX)</h1>
-<p>POSIX systems support determining language and locale by using environment variables.</p>
+<h1 id="suporte-a-i18n-posix">Suporte a I18N (POSIX)</h1>
+<p>Sistemas POSIX suportam determinação de lingua e locale usando variáveis de ambiente.</p>
 <ul>
-<li><code>LANG</code> for language</li>
-<li><code>LC_TIME</code> for date</li>
-<li><code>LC_NUMERIC</code> for numbers</li>
+<li><code>LANG</code> para língua</li>
+<li><code>LC_TIME</code> para data</li>
+<li><code>LC_NUMERIC</code> para números</li>
 </ul>
-<p>A locale is always expressed in the format</p>
-<p><language>_<country>.<encoding></p>
+<p>Um locale sempre é expresso no formato </p>
+<pre><code>&lt;lingua&gt;_&lt;pais&gt;.&lt;codificacao&gt;
+</code></pre>
 <hr />
-<h1 id="i18n-support-posix_1">I18N support (POSIX)</h1>
-<p><code>locale</code> command displays all available options:</p>
-<h2 id="locale-command-output-langen_usutf-8-lc_ctypeen_usutf-8-lc_numericpt_brutf-8-lc_timept_brutf-8-lc_collatept_brutf-8-lc_monetarypt_brutf-8-lc_messagesen_usutf-8-lc_paperpt_brutf-8-lc_namept_brutf-8-lc_addresspt_brutf-8-lc_telephonept_brutf-8-lc_measurementpt_brutf-8-lc_identificationpt_brutf-8"><div class="highlight"><pre><span></span><code># locale command output
+<h1 id="suporte-a-i18n-posix_1">Suporte a I18N (POSIX)</h1>
+<p>O comando <code>locale</code> mostra todas as opções disponíveis:</p>
+<div class="highlight"><pre><span></span><code># saída do comando locale
 LANG=en_US.UTF-8
 LC_CTYPE=&quot;en_US.UTF-8&quot;
 LC_NUMERIC=pt_BR.UTF-8
@@ -1077,32 +1078,33 @@ LC_ADDRESS=pt_BR.UTF-8
 LC_TELEPHONE=pt_BR.UTF-8
 LC_MEASUREMENT=pt_BR.UTF-8
 LC_IDENTIFICATION=pt_BR.UTF-8
-</code></pre></div></h2>
-<h1 id="i18n-support-web">I18N support (Web)</h1>
-<p>There are several ways to determine a good locale on Web systems:</p>
+</code></pre></div>
+<hr />
+<h1 id="suporte-a-i18n-web">Suporte a I18N (Web)</h1>
+<p>Existem diversas maneiras de determinar um bom locale em sistemas Web:</p>
 <ul>
-<li>HTTP header <code>Accept-Language</code> includes ​​supported display languages by visitor's browser.</li>
-<li>Geolocation <em>via</em> IP</li>
-<li>Preference stored in a database</li>
+<li>Cabeçalho HTTP <code>Accept-Language</code>  inclui as linguagens de exibição suportadas pelo browser do visitante. </li>
+<li>Geolocalização via IP</li>
+<li>Preferência armazenada em banco de dados</li>
 </ul>
 <h1 id="_6"></h1>
-<h4 id="web-and-desktop-use-the-same-technologies-l10n-and-i18n">Web and desktop use the same technologies (L10N and I18N)</h4>
+<h4 id="web-e-desktop-usam-as-mesmas-tecnologias-l10n-e-i18n">Web e desktop usam as mesmas tecnologias (l10n e i18n)</h4>
 <hr />
-<h1 id="i18n-support-in-python">I18N support (in Python)</h1>
+<h1 id="suporte-a-i18n-em-python">Suporte a I18N (em Python)</h1>
 <ul>
-<li><code>gettext</code> module from the standard library</li>
-<li><code>datetime</code> module supports locales</li>
-<li><code>babel</code> module supports I18N and L10N</li>
+<li>Módulo <code>gettext</code> da biblioteca padrão</li>
+<li>Módulo <code>datetime</code> aceita o uso de locales</li>
+<li>Módulo <code>babel</code> faz I18N e L10N</li>
 </ul>
 <hr />
-<h1 id="practical-activity-basic-translation">Practical activity: Basic translation</h1>
+<h1 id="atividade-pratica-traducao-basica">Atividade prática: Tradução básica</h1>
 <p><img alt="width:256px" src="../skill-traducao.svg" /></p>
-<p><strong>Objective</strong>: Use <em>Babel</em> module to translate a terminal (console) application.</p>
+<p><strong>Objetivo</strong>: usar o módulo <em>Babel</em> para traduzir uma aplicação do terminal.</p>
 <hr />
-<h1 id="open-development_1">Open Development</h1>
+<h1 id="desenvolvimento-aberto_1">Desenvolvimento Aberto</h1>
 <p><img alt="width:300px" src="../capa.svg" /></p>
-<h5 id="software-localization-and-internationalization_1">Software Localization and Internationalization</h5>
-<h6 id="version-20232-igor-montagner-igorsm1insperedubr_1">Version 2023/2: Igor Montagner (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;">&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;</a>)</h6>
+<h5 id="localizacao-e-internacionalizacao-de-software_1">Localização e internacionalização de software</h5>
+<h6 id="versao-20232-igor-montagner-igorsm1insperedubr_1">Versão 2023/2: Igor Montagner (<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;">&#105;&#103;&#111;&#114;&#115;&#109;&#49;&#64;&#105;&#110;&#115;&#112;&#101;&#114;&#46;&#101;&#100;&#117;&#46;&#98;&#114;</a>)</h6>
 
 
 
