@@ -8,7 +8,9 @@ In Lesson [04 - Professional Project](../04-professional-project) we created a r
 Combines tools like PyFlakes, pycodestyle, and McCabe.
 Detects syntax errors, style guide violations (PEP 8), and cyclomatic complexity.
 Lightweight and easy to integrate into CI/CD pipelines.
-![](./Flake8.png)
+![](./Flake8.png){ style="height:200px" }
+If you wants to use an automatic formatter, you can try Black Formatter.
+![](./BlackFormatter.png){ style="height:200px" }
 
 2. **Pylint:**
 Comprehensive linter that checks for errors, enforces coding standards, and suggests code refactoring.
