@@ -1,4 +1,4 @@
-# 10 - Minha primeira contribuição
+# 10 - My first contribution
 
 <ah-external-content src="slides.html" />
 
