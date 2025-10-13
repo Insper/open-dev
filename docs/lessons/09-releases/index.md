@@ -13,7 +13,7 @@ The skill *New Release* involves the creation of a release for your own project 
 
 ## Instructions
 
-The following guids might be useful.
+The following guides might be useful.
 
 - [Creating releases in Github](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository)
 - [PyInstaller](https://pyinstaller.org/en/stable/) for creating installers/binaries using Python
