@@ -1,6 +1,6 @@
 ---
 marp: true
-title: Testes automatizados
+title: Automated Tests
 footer: 'Igor Montagner ![License CC BY-NC-SA 4.0](../cc-by-nc-sa.png)'
 ---
 
@@ -18,139 +18,137 @@ footer: 'Igor Montagner ![License CC BY-NC-SA 4.0](../cc-by-nc-sa.png)'
 </style>
 
 
-Desenvolvimento Aberto
+Open Development
 ===
 
 ![100%](capa.svg)
 
-##### Testes automatizados
+##### Automated Testing
 
 ###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
 
 ---
 
-# Projeto profissional
+# Professional Project
 
-- Qualidade de código
-    - Linting - formatação e erros comuns
-- Documentação
-    - Usuário
-    - Desenvolvedor
+- Code Quality
+    - Linting - Formatting and Common Errors
+- Documentation
+    - User
+    - Developer
 
 ---
 
-# Projeto profissional
+# Professional Project
 
-- Qualidade de código
-    - Linting - formatação e erros comuns
-    - **O código funciona?**
-- Documentação
-    - Usuário
-    - Desenvolvedor
+- Code Quality
+    - Linting - Formatting and Common Errors
+    - **Does the code work?**
+- Documentation
+    - User
+    - Developer
 
 ----
 
-# Meu programa funciona?
+# Does my program work?
 
-- Sob quais condições?
-- Em quais plataformas?
-- Quais operações são suportadas? 
-- Consigo conferir o resultado de uma execução? Se sim, existe um valor de referência?
-
----
-
-# Testes automatizados
-
-**Ideia**: escrever um programa que verifica se um outro programa responde como esperado
-
-- Definir situações a serem testadas ...
-- e o resultado esperado em cada situação
-
----
-# Testes automatizados
-
-**Não ajudam**:
-
-- a revelar novos bugs
-- a garantir que um software é livre de bugs
-
-**Ajudam**
-
-- a evitar que bugs descobertos voltem
-- a evitar que mudanças não intencionais quebrem código que estava funcionando.
-- a documentar em quais situações o software funciona.
+- Under what conditions?
+- On which platforms?
+- Which operations are supported?
+- Can I check the result of an execution? If so, is there a reference value?
 
 ---
 
-# Testes automatizados
+# Automated Testing
 
-1. Testes de unidade
-2. Testes de integração
-3. Testes de interface de usuário
+**Idea**: Write a program that verifies whether another program responds as expected.
+
+- Define situations to be tested...
+- And the expected result in each situation.
+
+---
+# Automated Testing
+
+**Doesn't help**
+
+- Reveal new bugs
+- Ensure software is bug-free
+
+**Does help**
+
+- Prevent discovered bugs from returning
+- Prevent unintended changes from breaking previously working code.
+- Document in which situations the software works.
 
 ---
 
-# Testes unitários
+# Automated Testing
 
-**Ideia**: dada uma função, verificar se ela devolve o valor esperado para um certo conjunto de parâmetros. 
-
-- Testa as funções de maneira **isolada**
-- **Cobertura**: porcentagem das linhas de código que é executada durante os testes de unidade.
-- Serve como documentação da função
+1. Unit Testing
+2. Integration Testing
+3. User Interface Testing
 
 ---
-# Testes unitários - pytest
+
+# Unit Testing
+
+**Idea**: Given a function, verify whether it returns the expected value for a given set of parameters.
+
+- Test functions in **isolation**.
+- **Coverage**: Percentage of lines of code executed during unit testing.
+- Serves as function documentation
+
+
+---
+# Unit tests - pytest
 
 ![width:900px](pytest.png)
 
 ---
 
-# Testes de integração
+# Integration tests
 
-**Ideia**: dados um conjunto de classes com interdependências, verificar se elas funcionam bem **em conjunto**. 
+**Idea**: Given a set of classes with interdependencies, verify that they work well **together**.
 
-- Testa interação entre em objetos
-- Possibilidade de criar *mocks*, que são objetos falsos feitos para simular a interação entre vários objetos. 
-
+- Tests interaction between objects
+- Possibility of creating *mocks*, which are fake objects designed to simulate the interaction between multiple objects.
 ----
 
-# Testes de interface de usuário
+# User interface tests
 
-**Ideia**: simula ações do usuário (cliques, entrada de dados, etc) e confere se a saída esperada é mostrada na tela
+**Idea**: Simulates user actions (clicks, data entry, etc.) and checks if the expected output is displayed on the screen.
 
-- Menos específico possível 
-- Mais fiel ao uso real de um usuário
+- Must be designed as minimally specific as possible
+- Most faithful to a user's actual use
 
 ---
 
-# Testes de interface de usuário
-
+# User interface tests
 
 ## Selenium
 
-Permite fazer scripts que interagem com uma página web, realizando entrada de dados, rolagem de tela e cliques. Cada `assert` pode ser feito com o conteúdo de um objeto da página. 
+Allows you to create scripts that interact with a web page, performing data entry, scrolling, and clicks. Each `assert` can be made with the content of a page object.
 
 ---
 
-# O quê eu preciso testar?
+# What do I need to test?
 
 ## 
 
 ---
 
 
-# O quê eu preciso testar?
+# What do I need to test?
 
-## Ninguém sabe.... 
-
+## Nobody knows...
 
 ----
 
-# Atividade prática: Testado e aprovado
+# Practical activity: Tested and approved
 
 
 ![width:256px](https://fonts.gstatic.com/s/i/materialicons/sentiment_very_satisfied/v4/24px.svg?download=true)
 
-**Objetivo**: Primeira experiência com testes automatizado de código.
+**Objective**: First experience with automated code testing.
 
-> "metadata": {"url": "acceppted PR", "group": ["igual", "6"]}
+> "metadata": {"url": "acceppted PR", "group": [ "the same of class 6" ]}

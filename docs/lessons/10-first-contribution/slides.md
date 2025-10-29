@@ -19,53 +19,53 @@ footer: 'Igor Montagner ![License CC BY-NC-SA 4.0](../cc-by-nc-sa.png)'
 
 
 
-Desenvolvimento Aberto
+Open Development
 ===
 
 # ![height:350px](capa.svg)
 
-##### Contribuição de código
+##### Code Contribution
 
 
 ###### Igor dos Santos Montagner ( [igorsm1@insper.edu.br](mailto:igorsm1@insper.edu.br) )
 
 
 ---
-# Até agora
+# So far
 
-- Ferramentas de colaboração
-- Qualidade de código e ferramentas para qualidade de projeto
-- Tradução de UI e documentação
-- Aspectos não técnicos relacionados
-    - licenças
-    - comunidades
+- Collaboration tools
+- Code quality and tools for project quality
+- UI and documentation translation
+- Related non-technical aspects
+    - Licenses
+    - Communities
 ----
 
-# Primeira contribuição 
+# First contribution
 
 ![width:256px](airplane-takeoff.svg)
 
-- Ajuda na seleção de *issues- e projetos
-- Será feita em duplas/trios
+- Help with *issue* and project selection
+- Will be done in pairs/trios
 
-**Entrega final**: **02/10**
-
-----
-#  Etapa individual (Outubro)
-
-## Aprofundar habilidades desenvolvidas em grupo
-
-1. proporcionar uma experiência de trabalho em um projeto real **de escolha dos alunos**
-2. valorizar diversos tipos de contribuições, não somente de código
-3. exercitar **autonomia*- e **independência**
-
-### Início em 04/10
+**Final due date**: **October 20th**
 
 ----
+# Individual stage (October)
 
-# Minha primeira contribuição de código 
+## Deepen skills developed in groups
 
-Bons projetos usam tags para facilitar a recepção de novatos
+1. Provide work experience on a real project **of the students' choice**
+2. Value different types of contributions, not just code
+3. Exercise **autonomy** and **independence**
+
+### Starting on 10/20
+
+----
+
+# My first code contribution
+
+Good projects use tags to facilitate welcoming newcomers
 
 - good-first-issue
 - newcomers
@@ -75,36 +75,35 @@ Bons projetos usam tags para facilitar a recepção de novatos
 
 ----
 
-# Sugestão I - Pandas
+# Suggestion I - Pandas
 
-Biblioteca de tratamento de dados usada em Ciência dos Dados. 
+Data processing library used in Data Science.
 
-- Projeto complexo, com muitos casos de uso especiais
-- Toneladas de funcionalidades de visualização textual e gráfica de dados
-- Python é familiar para a maioria
+- Complex project, with many special use cases
+- Tons of textual and graphical data visualization features
+- Python is familiar to most
 
-[Tickets de testes](https://github.com/pandas-dev/pandas/labels/Needs%20Tests) são, em geral, fáceis para começar e úteis para a comunidade.
+[Test tickets](https://github.com/pandas-dev/pandas/labels/Needs%20Tests) are generally easy to get started with and useful for the community.
 
 -----
 
-# Sugestão II - Matplotlib
+# Suggestion II - Matplotlib
 
-Plotar gráficos em Python
+Plotting graphs in Python
 
-Lista de [Good first issues](https://github.com/matplotlib/matplotlib/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+first+issue%22) tem vários em aberto ou com PRs que estão parados há meses e podem ser assumidos por outras pessoas.
-
+The [Good first issues](https://github.com/matplotlib/matplotlib/issues?q=is%3Aissue+is%3Aopen+label%3A%22Good+first+issue%22) list has several open issues or PRs that have been stalled for months and can be taken over by others.
 
 ------
 
-# Sugestão III - Pyscript
+# Suggestion III - Pyscript
 
-Python rodando no Browser via WebAssembly
+Python running in the browser via WebAssembly
 
-[Lista de issues](https://github.com/pyscript/pyscript/issues) tem várias que parecem acessíveis
+[Issue List](https://github.com/pyscript/pyscript/issues) has several that seem accessible.
 
 ----
 
-# Sugestão III: Escolha seu próprio projeto :)
+# Suggestion III: Choose your own project :)
 
 - https://github.com/MunGell/awesome-for-beginners
 - https://www.codetriage.com/
@@ -113,12 +112,12 @@ Python rodando no Browser via WebAssembly
 
 ----
 
-# Hoje
+# Today
 
-1. escolher issue e projeto
-1. montar ambiente
-	- baixar código
-	- compilar
-	- rodar sua versão 
-1. reproduzir a issue
+1. Choose an issue and project
+1. Set up an environment
+	- download the code
+	- compile
+	- run your version
+1. Reproduce the issue
 

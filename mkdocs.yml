@@ -27,9 +27,9 @@ nav:
     - 'lessons/07-code-quality/index.md'
     - 'lessons/08-automated-testing/index.md'
     - 'lessons/09-releases/index.md'
-#    - 'lessons/10-first-contribution/index.md'
+    - 'lessons/10-first-contribution/index.md'
     - lessons/11-floss-people/index.md
-#    - lessons/12-licenses/index.md
+    - lessons/12-licenses/index.md
   - 'Impact': 
     - '2024/2': 'impact.md'
     - '2023/2': 'impact-2023.md'
@@ -39,6 +39,7 @@ nav:
     - '2019/2': 'impact-2019.md'
   - 'Ongoing projects':
     - 'projects/2024/2/index.md'
+    - 'projects/2025/2/index.md'
 
 extra_javascript:
   - js/markdown-enhancer.js
