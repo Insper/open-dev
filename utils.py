@@ -23,21 +23,27 @@ def save_encrypted(filename, key, content):
     cypher = Fernet(key)
     with open(filename, 'w') as f:
         f.write(cypher.encrypt(content.encode('utf-8')).decode('utf-8'))
-    
+
 
 def load_encrypted(filename, key):
-    cypher = Fernet(key)
-    with open(filename) as f:
-        encrypted = f.read()
-        return cypher.decrypt(encrypted.encode('utf-8')).decode('utf-8')
+    try:
+        cypher = Fernet(key)
+        with open(filename) as f:
+            encrypted = f.read()
+            return cypher.decrypt(encrypted.encode('utf-8')).decode('utf-8')
+    except Exception as e:
+        print(f'Problems loading encrypted file: {filename}\n{e}')
+        return None
 
 def write_string_to_file(filename, string):
     with open(filename, 'w', encoding = "utf-8") as f:
         f.write(string)
 
+
 def load_from_file(filename):
     with open(filename, encoding = "utf-8") as f:
         return f.read()
+
 
 def load_from_json(json_path, class_obj):
     objs = []
@@ -49,6 +55,8 @@ def load_from_json(json_path, class_obj):
         objs.append(class_obj(**ob))
     
     return objs
+
+
 try:
     with open('.gh-credentials') as f:
         ghauth = tuple(f.read().split())
