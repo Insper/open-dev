@@ -1,6 +1,6 @@
 ---
 marp: true
-title: Tradução e localização de software
+title: Software Translation and Localization
 footer: 'Igor Montagner ![License CC BY-NC-SA 4.0](../cc-by-nc-sa.png)'
 ---
 
@@ -17,92 +17,92 @@ footer: 'Igor Montagner ![License CC BY-NC-SA 4.0](../cc-by-nc-sa.png)'
 	}
 </style>
 
-Desenvolvimento Aberto
+Open Development
 ===
 
 ![width:300px](capa.svg)
 
-##### Localização e internacionalização de software
+##### Software Localization and Internationalization
 
 
-###### Versão 2023/2: Igor Montagner (igorsm1@insper.edu.br)
-
-
----
-# Tradução de software
-
-## Qual a diferença de internacionalização e localização?
-
----
-# Internacionalização (I18N)
-
-- Consiste em traduzir a interface de usuário de um software para outros idiomas. 
-
-- Sistema Operacional guarda configurações de idioma e as disponibiliza para aplicações
-
-- Tipicamente "invisível"
+###### Version 2023/2: Igor Montagner (igorsm1@insper.edu.br)
 
 
 ---
-# Localização (L10N)
+# Software Translation
 
-Consiste em adaptar a maneira de mostrar 
+## What is the difference between internationalization and localization?
 
-- números fracionários
-	- marcador de decimais
-	- marcador de milhares
-- datas
-	- nomes de meses
-	- ordem de exibição 
-- nomes de países, fusos horários, etc
+---
+# Internationalization (I18N)
 
-de acordo com as preferências de um usuário e relativos a sua cultura. 
+- This involves translating a software's user interface into other languages.
+
+- Operating system saves language settings and makes them available to applications.
+
+- "Invisible" typically.
+
+
+---
+# Localization (L10N)
+
+This involves adapting the way it displays:
+
+- fractional numbers
+	- decimal placeholders
+	- thousands placeholders
+- dates
+	- month names
+	- display order
+- country names, time zones, etc.
+
+according to a user's preferences and cultural preferences.
 
 --- 
-# I18N e L10N
+# I18N and L10N
 
-Precisam ser
+They must be
 
-- independentes:
-	- idioma inglês e datas no formato brasileiro
-- configuráveis
-	- posso precisar trocar entre línguas e entre formatos
+- independent:
+	- English language and dates in Brazilian format
+- configurable:
+	- I may need to switch between languages ​​and formats
 
-### O suporte a L10N e I18N implica modificar código fonte.
-
----
-# Locales
-
-Um *locale* é uma tripla
-
-#
-
-	<lingua>_<pais>.<codificacao>
-
-#
-
-que representa configurações de I18N e/ou L10N para uma determinada cultura. 
+### Support for L10N and I18N involves modifying source code.
 
 ---
 # Locales
 
-Exemplos:
+A *locale* is a triple
 
-- Tradução de *File*: 
+#
+
+	<language>_<country>.<encoding>
+
+#
+
+that represents I18N and/or L10N settings for a given culture.
+
+---
+# Locales
+
+Examples:
+
+- Translation of *File* word:
 	- `pt` = Ficheiro
 	- `pt_BR` = Arquivo
-- Formato de datas:
+- Date format:
 	- `en_US`: *MM/DD/YY*
 	- `en_GB`: *DD/MM/YY*
 
-### Posso usar *locales* diferentes para a língua da interface de usuário e para mostrar datas.
+### I can use different *locales* for the user interface language and for displaying dates.
 
 ---
 
-# Configurações possíveis (Linux)
+# Possible configurations (Linux)
 
 ```
-# saída do comando locale
+# output of locale command
 LANG=en_US.UTF-8
 LC_CTYPE="en_US.UTF-8"
 LC_NUMERIC=pt_BR.UTF-8
@@ -119,57 +119,59 @@ LC_IDENTIFICATION=pt_BR.UTF-8
 ```
 
 ---
-# Implementando suporte a L10N
+# Implementing L10N support
 
-1. Baixar uma biblioteca de Localização
-2. Encontrar todas as exibições de números, datas, etc
-3. Pré-processá-las usando funções da biblioteca
+1. Download a localization library
+2. Find all numbers, dates, etc ... displays
+3. Preprocess them using library functions
 
 #
 ```python
-# Antes 
-print('Numero:', 10.5) 
-# Depois
-print('Numero', format_number(10.5))
+# Before
+print('Number:', 10.5)
+# After
+print('Number', format_number(10.5))
 ```
 #
 
-Não é complicado, mas é **trabalhoso**
+It's not complicated, but it is **laborious**
 
 ---
-# Suporte a I18N
+# I18N Support
 
-Envolve 4 etapas:
+Involves 4 steps:
 
-1. Marcar todas strings que devem ser traduzidas
-2. Extraí-las do código fonte
-3. Criar um arquivo de traduções para cada *locale* suportado
-4. Empacotar as traduções junto com o programa
+1. Mark all strings that should be translated
+2. Extract them from the source code
+3. Create a translation file for each supported locale
+4. Package translations with program
 
 #
 
-É um pouco mais complicado, mas pode ser integrado ao processo de compilação de um programa. 
+It's a bit more complicated, but it can be integrated into a program's compilation process.
 
 ---
-# Suporte a I18N (POSIX)
+# I18N Support (POSIX)
 
-Sistemas POSIX suportam determinação de lingua e locale usando variáveis de ambiente.
+POSIX systems support determining language and locale by using environment variables.
 
-- `LANG` para língua
-- `LC_TIME` para data
-- `LC_NUMERIC` para números
+- `LANG` for language
+- `LC_TIME` for date
+- `LC_NUMERIC` for numbers
 
-Um locale sempre é expresso no formato 
 
-	<lingua>_<pais>.<codificacao>
+
+A locale is always expressed in the format
+
+<language>_<country>.<encoding>
 
 ---
-# Suporte a I18N (POSIX)
+# I18N support (POSIX)
 
-O comando `locale` mostra todas as opções disponíveis:
+`locale` command displays all available options:
 
 ```
-# saída do comando locale
+# locale command output
 LANG=en_US.UTF-8
 LC_CTYPE="en_US.UTF-8"
 LC_NUMERIC=pt_BR.UTF-8
@@ -184,46 +186,40 @@ LC_TELEPHONE=pt_BR.UTF-8
 LC_MEASUREMENT=pt_BR.UTF-8
 LC_IDENTIFICATION=pt_BR.UTF-8
 ```
-
 ---
-# Suporte a I18N (Web)
+# I18N support (Web)
 
-Existem diversas maneiras de determinar um bom locale em sistemas Web:
+There are several ways to determine a good locale on Web systems:
 
-- Cabeçalho HTTP `Accept-Language`  inclui as linguagens de exibição suportadas pelo browser do visitante. 
-- Geolocalização via IP
-- Preferência armazenada em banco de dados
+- HTTP header `Accept-Language` includes ​​supported display languages by visitor's browser.
+- Geolocation *via* IP
+- Preference stored in a database
 
 #
 
-#### Web e desktop usam as mesmas tecnologias (l10n e i18n)
+#### Web and desktop use the same technologies (L10N and I18N)
 
 ---
-# Suporte a I18N (em Python)
+# I18N support (in Python)
 
-- Módulo `gettext` da biblioteca padrão
-- Módulo `datetime` aceita o uso de locales
-- Módulo `babel` faz I18N e L10N
-
+- `gettext` module from the standard library
+- `datetime` module supports locales
+- `babel` module supports I18N and L10N
 
 ----
 
-# Atividade prática: Tradução básica
+# Practical activity: Basic translation
 
 ![width:256px](skill-traducao.svg)
 
-
-**Objetivo**: usar o módulo *Babel* para traduzir uma aplicação do terminal.
-
+**Objective**: Use *Babel* module to translate a terminal (console) application.
 
 ---
-Desenvolvimento Aberto
+Open Development
 ===
 
 ![width:300px](capa.svg)
 
-##### Localização e internacionalização de software
+##### Software Localization and Internationalization
 
-
-###### Versão 2023/2: Igor Montagner (igorsm1@insper.edu.br)
-
+###### Version 2023/2: Igor Montagner (igorsm1@insper.edu.br)

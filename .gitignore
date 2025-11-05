@@ -4,7 +4,7 @@ __pycache__
 *pyc
 *.temp*
 .vscode
-
+opendev
 
 site/*
 .vscode

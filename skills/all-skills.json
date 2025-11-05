@@ -8,7 +8,7 @@
         "unique": true,
         "type": "Tutorial",
         "mandatory": "D",
-        "date_limit": "2025-09-25"
+        "date_limit": "2025-12-04"
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@
         "unique": true,
         "type": "Tutorial",
         "metadata_requirements": ["group|List[str]", "filename|str"],
-        "date_limit": "2025-09-25"
+        "date_limit": "2025-12-04"
     },
     {
         "id": 3,
@@ -29,7 +29,7 @@
         "icon": "compass",
         "unique": true,
         "type": "Tutorial",
-        "date_limit": "2025-09-25"
+        "date_limit": "2025-12-04"
     },
     {
         "id": 4,
@@ -40,7 +40,7 @@
         "unique": true,
         "type": "Tutorial",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2025-09-25"
+        "date_limit": "2025-12-04"
     },
     {
         "id": 5,
@@ -50,7 +50,7 @@
         "icon": "emoticon-outline",
         "unique": true,
         "type": "Tutorial",
-        "date_limit": "2025-09-25"
+        "date_limit": "2025-12-04"
 
     },
     {
@@ -62,7 +62,7 @@
         "unique": true,
         "type": "Tutorial",
         "metadata_requirements": ["url|str"],
-        "date_limit": "2025-09-25"
+        "date_limit": "2025-12-04"
     },
     {
         "id": 7,
@@ -73,7 +73,7 @@
         "unique": true,
         "type": "Tutorial",
         "metadata_requirements": ["url|str", "group|List[str]"],
-        "date_limit": "2025-09-25"
+        "date_limit": "2025-12-04"
 
     },
     {
@@ -84,7 +84,7 @@
         "icon": "translate",
         "unique": true,
         "type": "Tutorial",
-        "date_limit": "2025-09-25"
+        "date_limit": "2025-12-04"
     },
     {
         "id": 10,
@@ -106,7 +106,7 @@
         "unique": true,
         "type": "Tutorial",
         "metadata_requirements": ["group|List[str]", "url|str"],
-        "date_limit": "2025-09-25"
+        "date_limit": "2025-12-04"
     },
     {
         "id": 12,
@@ -117,7 +117,7 @@
         "unique": true,
         "type": "Tutorial",
         "metadata_requirements": ["group|List[str]", "url|str"],
-        "date_limit": "2025-09-25"
+        "date_limit": "2025-12-04"
     },
 
     {

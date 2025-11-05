@@ -10,4 +10,4 @@ The [discipline website](https://insper.github.io/open-dev/) contains all import
 
 ## Random visitors and other teachers
 
-All material available in this repository is licensed under the *Creative Commons* 4.0 license (as indicated at the beginning of the document). Although it is not mandatory, if you wish to base part of your course on the materials available here we kindly ask you to contact [igordsm](http://github.com/igordsm) or [fbarth](http://github.com/fbarth).
+All material available in this repository is licensed under the *Creative Commons* 4.0 license (as indicated at the beginning of the document). Although it is not mandatory, if you wish to base part of your course on the materials available here we kindly ask you to contact [igordsm](http://github.com/igordsm), [fbarth](http://github.com/fbarth) or [carlosedm](http://github.com/cedmenezes).
