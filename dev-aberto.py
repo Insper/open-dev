@@ -1,31 +1,33 @@
 #!/usr/bin/env python3
 
-import jinja2 as j2
-import markdown
-import os
-import json
-import pprint
-import io
-import re
 import copy
-import markdown
-import tabulate
-import itertools
 import csv
-
+import io
+import itertools
+import json
+import os
+import pprint
+import re
 import sys
 import time
-
-from utils import load_key, create_key, write_string_to_file, load_encrypted, save_encrypted
-from students import Student, all_students
-from skills import Skill, all_skills
-
-from enviar_email import Email
-
+from collections import namedtuple
+from subprocess import STDOUT, Popen
 
 import click
+import jinja2 as j2
+import markdown
+import tabulate
 
-from collections import namedtuple
+from enviar_email import Email
+from skills import Skill, all_skills
+from students import Student, all_students
+from utils import (
+    create_key,
+    load_encrypted,
+    load_key,
+    save_encrypted,
+    write_string_to_file,
+)
 
 PR = namedtuple('PR', ['project_name', 'url', 'status'])
 
@@ -54,19 +56,29 @@ def new_user():
 def edit_achievements(student_login):
     key = load_key(f'students/{student_login}.key')
     json_achievements = load_encrypted(f'students/{student_login}-achievements', key)
-
     with open(f'students/{student_login}.temp', 'w') as f:
         f.write(json_achievements)
 
-    if 'win32' in sys.platform:
+    # implement cursor and vscode for windows too
+    path_env = os.getenv('PATH', '')
+
+    if 'cursor' in path_env:
+        editor = 'cursor --wait'
+    elif 'code' in path_env:
+        editor = 'code --wait'
+    elif 'win32' in sys.platform:
         editor = os.getenv('EDITOR', default='notepad.exe')
     else:
-        editor = os.getenv('EDITOR', default='nvim')
+        editor = 'nvim'
 
     while True:
-        os.system(f'{editor} students/{student_login}.temp')
+        command = f'{editor} students/{student_login}.temp'
+
+        os.system(command)
+
         with open(f'students/{student_login}.temp') as f:
-            json_achievements = f.read()
+            content = f.read()
+            json_achievements = content
         try:
             _ = json.loads(json_achievements)
         except json.JSONDecodeError:
