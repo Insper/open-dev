@@ -61,15 +61,22 @@ def edit_achievements(student_login):
 
     # implement cursor and vscode for windows too
     path_env = os.getenv('PATH', '')
-
-    if 'cursor' in path_env:
+    
+    user_editor = os.getenv('EDITOR')
+    if user_editor:
+        editor = user_editor
+    elif 'cursor' in path_env:
         editor = 'cursor --wait'
     elif 'code' in path_env:
         editor = 'code --wait'
     elif 'win32' in sys.platform:
-        editor = os.getenv('EDITOR', default='notepad.exe')
-    else:
+        editor = 'notepad.exe'
+    elif 'nvim' in path_env:
         editor = 'nvim'
+    elif 'nano' in path_env:
+        editor = 'nano'
+    else:
+        editor='vi'
 
     while True:
         command = f'{editor} students/{student_login}.temp'
